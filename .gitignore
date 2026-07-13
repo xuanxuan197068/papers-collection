@@ -3,9 +3,11 @@ node_modules
 /dist
 /cache
 /official_cache
+/cache_pdf
 __pycache__/
 .venv/
-.claude/
+.claude/*
+!.claude/skills/
 # local env files
 .env.local
 .env.*.local

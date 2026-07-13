@@ -4,7 +4,34 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-A Vue 3 + Vite web app displaying curated academic security papers from top-tier conferences (IEEE S&P, USENIX Security, ACM CCS, NDSS) and related venues (ICSE, ISSTA, FSE, ASPLOS, SOSP). Deployed to GitHub Pages at sec.c01dkit.com.
+A Vue 3 + Vite web app displaying curated academic security papers from top-tier conferences (IEEE S&P, USENIX Security, ACM CCS, NDSS) and related venues (ICSE, ISSTA, FSE, ASPLOS, SOSP).
+
+**This is a fork** (xuanxuan197068/papers-collection) of c01dkit/sec-papers-collection, extended into a personal "paper radar": an own DBLP-based update chain plus an in-session semantic digest workflow. See "Fork-specific notes" below.
+
+## Fork-specific notes
+
+### Two update chains
+
+- **Own chain (primary)**: `uv run tools/fetch_new.py` pulls venue TOCs from DBLP and fills abstracts via arXiv / Semantic Scholar / open-access PDFs. Driven by the `dblp_toc_template` / `source: dblp` fields in `data.yml`. See `.claude/skills/fetch-papers/`.
+- **Upstream chain (backup)**: the author's manual bib/csv + XPath-crawl flow still works untouched. Pull author updates with `git fetch upstream && git merge upstream/main` (remote `upstream` = c01dkit/sec-papers-collection). Keep meta_json field sets unchanged so merges stay clean.
+
+### Rebuilding official_cache
+
+Upstream ships original bib/csv sources in an AES-encrypted `private_source.zip` (password not available to this fork). `official_cache/*.json` intermediates are instead reconstructed from the committed meta_json files:
+
+```bash
+uv run tools/rebuild_official_cache.py   # one-time after fresh clone
+```
+
+`cache.zip` (crawl HTML cache) is a plain zip; unzip it into the repo root so USENIX/NDSS crawl-path years reproduce offline.
+
+### Environment
+
+No `.env` is needed for this fork's flows (`--llm-analyze` and `--zip`/`--unzip` are upstream-only; `PRIVATE_ZIP_PASSWD` is unknown anyway).
+
+### Radar semantic layer
+
+`radar/` holds the semantic outputs (direction maps, method cards, read/pick state) produced in-session via `.claude/skills/radar-digest/`. Extra information never goes into `src/assets/data/` files — those keep the upstream schema.
 
 ## Commands
 

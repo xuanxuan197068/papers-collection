@@ -1841,7 +1841,7 @@
     "title": "Interpolation-Based Optimization for Enforcing lp-Norm Metric Differential Privacy in Continuous and Fine-Grained Domains",
     "category": "top-tier",
     "publication": "USENIX Sec",
-    "paper": "https://www.usenix.org/conference/usenixsecurity26/presentation/qiu",
+    "paper": "https://www.usenix.org/conference/usenixsecurity26/presentation/qiu-chenxi",
     "status": "notchecked"
   },
   {
@@ -1859,7 +1859,7 @@
     "title": "JailbreakScope: Interpreting Jailbreak Mechanism through Representation and Circuit Analyses",
     "category": "top-tier",
     "publication": "USENIX Sec",
-    "paper": "https://www.usenix.org/conference/usenixsecurity26/presentation/he",
+    "paper": "https://www.usenix.org/conference/usenixsecurity26/presentation/he-zeqing",
     "status": "notchecked"
   },
   {
@@ -1967,7 +1967,7 @@
     "title": "Distributed Vector Commitments and Their Applications",
     "category": "top-tier",
     "publication": "USENIX Sec",
-    "paper": "https://www.usenix.org/conference/usenixsecurity26/presentation/gao",
+    "paper": "https://www.usenix.org/conference/usenixsecurity26/presentation/gao-rui",
     "status": "notchecked"
   },
   {
@@ -1985,7 +1985,7 @@
     "title": "LPG: Raise Your Location Privacy Game in Direct-to-Cell LEO Satellite Networks",
     "category": "top-tier",
     "publication": "USENIX Sec",
-    "paper": "https://www.usenix.org/conference/usenixsecurity26/presentation/shi",
+    "paper": "https://www.usenix.org/conference/usenixsecurity26/presentation/shi-quan",
     "status": "notchecked"
   },
   {
@@ -2012,7 +2012,7 @@
     "title": "Residual-PAC Privacy: Automatic Privacy Control Beyond the Gaussian Barrier",
     "category": "top-tier",
     "publication": "USENIX Sec",
-    "paper": "https://www.usenix.org/conference/usenixsecurity26/presentation/zhang-tao",
+    "paper": "https://www.usenix.org/conference/usenixsecurity26/presentation/zhang-tao-residual",
     "status": "notchecked"
   },
   {
@@ -2075,7 +2075,7 @@
     "title": "SophOMR: Improved Oblivious Message Retrieval from SIMD-Aware Homomorphic Compression",
     "category": "top-tier",
     "publication": "USENIX Sec",
-    "paper": "https://www.usenix.org/conference/usenixsecurity26/presentation/lee",
+    "paper": "https://www.usenix.org/conference/usenixsecurity26/presentation/lee-keewoo",
     "status": "notchecked"
   },
   {
@@ -2111,7 +2111,7 @@
     "title": "Security and Privacy Analysis of Tile's Location Tracking Protocol",
     "category": "top-tier",
     "publication": "USENIX Sec",
-    "paper": "https://www.usenix.org/conference/usenixsecurity26/presentation/kumar",
+    "paper": "https://www.usenix.org/conference/usenixsecurity26/presentation/kumar-akshaya",
     "status": "notchecked"
   },
   {
@@ -2228,7 +2228,7 @@
     "title": "DaLens: Charting DNS Self-Amplification Threats at Large",
     "category": "top-tier",
     "publication": "USENIX Sec",
-    "paper": "https://www.usenix.org/conference/usenixsecurity26/presentation/xu",
+    "paper": "https://www.usenix.org/conference/usenixsecurity26/presentation/xu-liwen",
     "status": "notchecked"
   },
   {
@@ -2318,7 +2318,7 @@
     "title": "From Easy to Hard++: Promoting Differentially Private Image Synthesis Through Spatial-Frequency Curriculum",
     "category": "top-tier",
     "publication": "USENIX Sec",
-    "paper": "https://www.usenix.org/conference/usenixsecurity26/presentation/gong",
+    "paper": "https://www.usenix.org/conference/usenixsecurity26/presentation/gong-easy-hard",
     "status": "notchecked"
   },
   {
@@ -2408,7 +2408,7 @@
     "title": "CuSafe: Capturing Memory Corruption on NVIDIA GPUs",
     "category": "top-tier",
     "publication": "USENIX Sec",
-    "paper": "https://www.usenix.org/conference/usenixsecurity26/presentation/lu",
+    "paper": "https://www.usenix.org/conference/usenixsecurity26/presentation/lu-hongyi",
     "status": "notchecked"
   },
   {
@@ -2417,7 +2417,7 @@
     "title": "Attacks on Approximate Caches in Text-to-Image Diffusion Models",
     "category": "top-tier",
     "publication": "USENIX Sec",
-    "paper": "https://www.usenix.org/conference/usenixsecurity26/presentation/sun",
+    "paper": "https://www.usenix.org/conference/usenixsecurity26/presentation/sun-desen",
     "status": "notchecked"
   },
   {
@@ -2516,7 +2516,7 @@
     "title": "PANGOLIN: Fuzzing Multilingual IoT Firmware with LLM-Driven Code Analysis",
     "category": "top-tier",
     "publication": "USENIX Sec",
-    "paper": "https://www.usenix.org/conference/usenixsecurity26/presentation/jia",
+    "paper": "https://www.usenix.org/conference/usenixsecurity26/presentation/jia-zhipeng",
     "status": "notchecked"
   },
   {
@@ -2642,7 +2642,7 @@
     "title": "Lost in Blockchain Address Misuse: Hidden Cross-Platform Risks and Their Security Impact",
     "category": "top-tier",
     "publication": "USENIX Sec",
-    "paper": "https://www.usenix.org/conference/usenixsecurity26/presentation/shao",
+    "paper": "https://www.usenix.org/conference/usenixsecurity26/presentation/shao-zhenzhe",
     "status": "notchecked"
   },
   {

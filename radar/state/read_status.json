@@ -1,0 +1,23 @@
+{
+  "cloakhoneytrapproactivedefensesagainstllmagents": {
+    "title": "Cloak, Honey, Trap: Proactive Defenses Against LLM Agents",
+    "venue": "USENIX Sec - 2025",
+    "state": "carded",
+    "card": "cards/cloak-honey-trap-llm-agents.md",
+    "date": "2026-07-11"
+  },
+  "campintheodysseyprovablyrobustreinforcementlearningwithcertifiedradiusmaximization": {
+    "title": "CAMP in the Odyssey: Provably Robust Reinforcement Learning with Certified Radius Maximization",
+    "venue": "USENIX Sec - 2025",
+    "state": "carded",
+    "card": "cards/camp-provably-robust-rl.md",
+    "date": "2026-07-11"
+  },
+  "cyberphysicaldeceptionthroughcoordinatediothoneypots": {
+    "title": "Cyber-Physical Deception Through Coordinated IoT Honeypots",
+    "venue": "USENIX Sec - 2025",
+    "state": "carded",
+    "card": "cards/coordinated-iot-honeypots.md",
+    "date": "2026-07-11"
+  }
+}

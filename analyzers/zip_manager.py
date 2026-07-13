@@ -3,7 +3,7 @@ import pyzipper
 import os
 from dotenv import load_dotenv
 load_dotenv()
-PRIVATE_ZIP_PASSWD = os.getenv('PRIVATE_ZIP_PASSWD').encode()
+PRIVATE_ZIP_PASSWD = (os.getenv('PRIVATE_ZIP_PASSWD') or '').encode()
 
 def generate_zip_cache():
     cache_dir = './cache'

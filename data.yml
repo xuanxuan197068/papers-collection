@@ -1,6 +1,7 @@
 oakland:
   name: IEEE S&P
   category: top-tier
+  dblp_toc_template: conf/sp/sp{year}
   sites:
     - year: 2026
       official_file: 'oakland26.bib'
@@ -76,6 +77,7 @@ oakland:
 ccs:
   name: ACM CCS
   category: top-tier
+  dblp_toc_template: conf/ccs/ccs{year}
   sites:
     - year: 2025
       official_file: 'ccs25.bib' # https://dl.acm.org/doi/proceedings/10.1145/3719027 # fix "Don't Look Up..." in bib
@@ -157,6 +159,7 @@ ccs:
 usenix_security:
   name: USENIX Sec
   category: top-tier
+  dblp_toc_template: conf/uss/uss{year}
   sites:
     - year: 2026
       url: https://www.usenix.org/conference/usenixsecurity26/cycle1-accepted-papers
@@ -279,8 +282,11 @@ usenix_security:
 ndss:
   name: NDSS
   category: top-tier
+  dblp_toc_template: conf/ndss/ndss{year}
   sites:
     - year: 2026
+      source: dblp
+      official_file: 'ndss26.json'
       url: https://www.ndss-symposium.org/ndss2026/accepted-papers/
       title_xpath: //h1[@class="entry-title"]
       link_xpath: //h2[@class="pt-cv-title"]/a[@class="_self"]/@href
@@ -390,6 +396,7 @@ ndss:
 ase:
   name: ASE
   category: software-engineering
+  dblp_toc_template: conf/kbse/ase{year}
   sites:
     - year: 2025
       official_file: 'ase25.csv'
@@ -424,6 +431,7 @@ ase:
 icse:
   name: ICSE
   category: software-engineering
+  dblp_toc_template: conf/icse/icse{year}
   sites:
     - year: 2025
       official_file: 'icse25.csv'
@@ -504,6 +512,7 @@ icse:
 issta:
   name: ISSTA
   category: software-engineering
+  dblp_toc_template: conf/issta/issta{year}
   sites:
     - year: 2025
       official_file: 'issta25.bib' # https://dl.acm.org/toc/pacmse/2025/2/ISSTA
@@ -574,6 +583,7 @@ issta:
 fse:
   name: FSE
   category: software-engineering
+  dblp_toc_template: conf/sigsoft/fse{year}
   sites:
     - year: 2025
       official_file: 'fse25.bib' # https://dl.acm.org/toc/pacmse/2025/2/FSE
@@ -598,6 +608,7 @@ fse:
 sosp:
   name: SOSP
   category: system
+  dblp_toc_template: conf/sosp/sosp{year}
   sites: # https://dl.acm.org/conference/sosp/proceedings
     - year: 2025
       official_file: 'sosp25.bib' 
@@ -630,6 +641,7 @@ sosp:
 asplos:
   name: ASPLOS
   category: system
+  dblp_toc_template: conf/asplos/asplos{year}
   sites: # https://dl.acm.org/conference/asplos/proceedings
     - year: 2025
       official_file: 
