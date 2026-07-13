@@ -1,6 +1,6 @@
 <template>
     <div class="card" v-for="category in categories" :key="category">
-        <h1 class="mt-0">{{ t('trends.title') }} - {{ categoryNameMap[category.replace('-', '').replace(' ','').toLowerCase()] }}</h1>
+        <h1 class="mt-0">{{ t('trends.title') }} - {{ categoryName(category) }}</h1>
             <Chart type="line" :data="chartDataByCategory[category]" :options="chartOptions" class="min-h-96"/>
     </div>
 </template>
@@ -25,8 +25,15 @@ const categories = ref([]);
 const categoryNameMap = computed(()=>({
     'toptier': t('abstract.topTier'),
     'softwareengineering': t('abstract.softwareEngineering'),
-    'system': t('abstract.system')
+    'system': t('abstract.system'),
+    'aiml': t('abstract.aiMl')
 }));
+// Fall back to the raw category key when a category has no localized name,
+// so a newly added category still renders a titled chart instead of a blank.
+const categoryName = (category) => {
+    const key = category.replace('-', '').replace(' ', '').toLowerCase();
+    return categoryNameMap.value[key] || category;
+};
 const chartOptions = ref(null);
 
 // 方法

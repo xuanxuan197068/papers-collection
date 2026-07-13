@@ -191,7 +191,7 @@ async function loadFullData() {
     try {
         let data;
         if (import.meta.env.PROD) {
-            const res = await fetch('https://raw.githubusercontent.com/c01dkit/sec-papers-collection/main/src/assets/data/data.json');
+            const res = await fetch('https://raw.githubusercontent.com/xuanxuan197068/papers-collection/main/src/assets/data/data.json');
             if (res.ok) {
                 data = await res.json();
             }

@@ -19,7 +19,7 @@
         "2015": 55
       },
       "fill": false,
-      "borderColor": "--p-purple-400",
+      "borderColor": "--p-emerald-400",
       "tension": 0.4
     },
     {
@@ -39,7 +39,7 @@
         "2015": 127
       },
       "fill": false,
-      "borderColor": "--p-blue-400",
+      "borderColor": "--p-lime-400",
       "tension": 0.4
     },
     {
@@ -60,7 +60,7 @@
         "2015": 76
       },
       "fill": false,
-      "borderColor": "--p-amber-400",
+      "borderColor": "--p-red-400",
       "tension": 0.4
     },
     {
@@ -81,7 +81,7 @@
         "2015": 73
       },
       "fill": false,
-      "borderColor": "--p-red-400",
+      "borderColor": "--p-amber-400",
       "tension": 0.4
     },
     {
@@ -100,7 +100,7 @@
         "2015": 100
       },
       "fill": false,
-      "borderColor": "--p-purple-400",
+      "borderColor": "--p-emerald-400",
       "tension": 0.4
     },
     {
@@ -120,7 +120,7 @@
         "2015": 215
       },
       "fill": false,
-      "borderColor": "--p-blue-400",
+      "borderColor": "--p-lime-400",
       "tension": 0.4
     },
     {
@@ -140,7 +140,7 @@
         "2015": 44
       },
       "fill": false,
-      "borderColor": "--p-amber-400",
+      "borderColor": "--p-red-400",
       "tension": 0.4
     },
     {
@@ -159,7 +159,7 @@
         "2015": 124
       },
       "fill": false,
-      "borderColor": "--p-red-400",
+      "borderColor": "--p-amber-400",
       "tension": 0.4
     },
     {
@@ -182,7 +182,7 @@
         "2001": 17
       },
       "fill": false,
-      "borderColor": "--p-purple-400",
+      "borderColor": "--p-emerald-400",
       "tension": 0.4
     },
     {
@@ -202,7 +202,7 @@
         "2015": 50
       },
       "fill": false,
-      "borderColor": "--p-blue-400",
+      "borderColor": "--p-lime-400",
       "tension": 0.4
     }
   ],

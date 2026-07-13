@@ -4,6 +4,7 @@ node_modules
 /cache
 /official_cache
 /cache_pdf
+radar/_shards/
 __pycache__/
 .venv/
 .claude/*

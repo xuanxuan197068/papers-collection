@@ -18,6 +18,7 @@ const model = computed(() => [
             { label: t('menu.search'), icon: 'pi pi-fw pi-search', to: '/paper/search', class: 'rotated-icon' },
             { label: t('menu.trends'), icon: 'pi pi-fw pi-chart-line', to: '/paper/trends' },
             { label: t('menu.abstract'), icon: 'pi pi-fw pi-book', to: '/paper/view-abstract' },
+            { label: t('menu.methodIndex'), icon: 'pi pi-fw pi-sitemap', to: '/paper/method-index' },
             { label: t('menu.submissionTimeline'), icon: 'pi pi-fw pi-file-arrow-up', to: '/paper/submission-timeline' },
         ]
     },

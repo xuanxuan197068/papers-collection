@@ -289,10 +289,11 @@ def export_data_json(project_base):
         publication_acceptance_trend[paper_info.category][publication].map_data.setdefault(year, 0)
         publication_acceptance_trend[paper_info.category][publication].map_data[year] += 1  
     for category, publication_names in publication_acceptance_trend.items():
-        sub_color_set = color_set.copy()
-        for publication_name, trend in publication_names.items():
+        # Cycle through the palette so a category with more venues than colors
+        # wraps around instead of exhausting the list (pop() would then crash).
+        for color_idx, (publication_name, trend) in enumerate(publication_names.items()):
             # trend.data = [i for i in dict(sorted(trend.map_data.items(), key=lambda x: x[0])).values()]
-            trend.borderColor = sub_color_set.pop()
+            trend.borderColor = color_set[color_idx % len(color_set)]
             statistics.overview.append(asdict(trend))
            
     statistics.byYear = dict(sorted(statistics.byYear.items(), key=lambda x: int(x[0])))

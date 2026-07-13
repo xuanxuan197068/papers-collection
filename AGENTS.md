@@ -1,6 +1,6 @@
-# CLAUDE.md
+# AGENTS.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to Codex (Codex.ai/code) when working with code in this repository.
 
 ## Project Overview
 
@@ -12,7 +12,7 @@ A Vue 3 + Vite web app displaying curated academic security papers from top-tier
 
 ### Two update chains
 
-- **Own chain (primary)**: `uv run tools/fetch_new.py` pulls venue TOCs from DBLP and fills abstracts via arXiv / Semantic Scholar / open-access PDFs (rate limits carry random jitter; `--loop <min>` runs unattended for 24h abstract backfill). Driven by the `dblp_toc_template` / `source: dblp` fields in `data.yml`. See `.claude/skills/fetch-papers/`.
+- **Own chain (primary)**: `uv run tools/fetch_new.py` pulls venue TOCs from DBLP and fills abstracts via arXiv / Semantic Scholar / open-access PDFs (rate limits carry random jitter; `--loop <min>` runs unattended for 24h abstract backfill). Driven by the `dblp_toc_template` / `source: dblp` fields in `data.yml`. See `.Codex/skills/fetch-papers/`.
 - **Upstream chain (backup)**: the author's manual bib/csv + XPath-crawl flow still works untouched. Pull author updates with `git fetch upstream && git merge upstream/main` (remote `upstream` = c01dkit/sec-papers-collection). Keep meta_json field sets unchanged so merges stay clean.
 - **Completeness audit**: `uv run tools/audit_completeness.py [--venue KEY] [--recent N]` compares local vs DBLP vs upstream paper counts per venue-year (fuzzy-matched gaps) and suggests fetch/merge actions.
 
@@ -32,7 +32,7 @@ No `.env` is needed for this fork's flows (`--llm-analyze` and `--zip`/`--unzip`
 
 ### Radar semantic layer
 
-`radar/` holds the semantic outputs produced in-session via `.claude/skills/radar-digest/`:
+`radar/` holds the semantic outputs produced in-session via `.Codex/skills/radar-digest/`:
 - `radar/index/<Pub> - <Year>.json` — per-paper method index (method/problem/scenario/evidence/lens), built by subagent map-reduce (`tools/radar_shard.py` → haiku subagents → `tools/radar_index_merge.py`, which prunes extraction-drift keys and reports coverage).
 - `radar/maps/` — direction maps (Stage 1, two-part: neutral + lens-combined). `radar/cards/` — method cards (Stage 2). `radar/state/` — read/pick status + missing-abstracts log.
 

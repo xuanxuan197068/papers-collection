@@ -86,12 +86,24 @@ const loading = ref(false);
 const items = ref([]);
 const selection = ref(null);
 
+// Category display order + label(i18n)/icon. Unknown categories fall back to
+// their raw key and a generic icon so the page never breaks on a new venue group.
+const CATEGORY_ORDER = ['top-tier', 'software-engineering', 'system', 'ai-ml'];
+const CATEGORY_META = {
+    'top-tier': { key: 'abstract.topTier', icon: 'pi pi-shield' },
+    'software-engineering': { key: 'abstract.softwareEngineering', icon: 'pi pi-code' },
+    'system': { key: 'abstract.system', icon: 'pi pi-cog' },
+    'ai-ml': { key: 'abstract.aiMl', icon: 'pi pi-sparkles' }
+};
+const categoryLabel = (category) => (CATEGORY_META[category] ? t(CATEGORY_META[category].key) : category);
+const categoryIcon = (category) => (CATEGORY_META[category] ? CATEGORY_META[category].icon : 'pi pi-folder');
+
 const loadPaperCollection = async (publication, year) => {
     loading.value = true;
     paperCollection.value = [];
     let fullDataPath;
     if (process.env.NODE_ENV === 'production') {
-        fullDataPath = 'https://raw.githubusercontent.com/c01dkit/sec-papers-collection/main/src/assets/data/meta_json/' + publication + ' - ' + year + '.json';
+        fullDataPath = 'https://raw.githubusercontent.com/xuanxuan197068/papers-collection/main/src/assets/data/meta_json/' + publication + ' - ' + year + '.json';
     } else {
         fullDataPath = '/src/assets/data/meta_json/' + publication + ' - ' + year + '.json';
     }
@@ -110,33 +122,29 @@ const loadPaperCollection = async (publication, year) => {
 };
 
 const constructPublicationItems = () => {
-    let newItems = [
-        {
-            label: t('abstract.topTier'),
-            icon: 'pi pi-shield',
-            items: []
-        },
-        {
-            label: t('abstract.softwareEngineering'),
-            icon: 'pi pi-code',
-            items: []
-        },
-        {
-            label: t('abstract.system'),
-            icon: 'pi pi-cog',
-            items: []
-        }
+    // publication -> category, derived from statistics.overview (data-driven so new
+    // venues/categories flow through without editing hardcoded name lists here).
+    const pubToCategory = {};
+    (paperStatisRef.value.overview || []).forEach((el) => {
+        pubToCategory[el.label] = el.category;
+    });
+
+    // Known categories keep their preferred order + label/icon; any extra category
+    // still gets a group (labelled by its raw key) instead of crashing the menu.
+    const present = new Set(Object.values(pubToCategory));
+    const categories = [
+        ...CATEGORY_ORDER.filter((c) => present.has(c)),
+        ...[...present].filter((c) => !CATEGORY_ORDER.includes(c))
     ];
+    const groupIndex = {};
+    let newItems = categories.map((category, i) => {
+        groupIndex[category] = i;
+        return { label: categoryLabel(category), icon: categoryIcon(category), items: [] };
+    });
 
     for (let publication in paperStatisRef.value.byPublicationAndYear) {
-        let targetIndex;
-        if (['IEEE S&P', 'ACM CCS', 'USENIX Sec', 'NDSS'].includes(publication)) {
-            targetIndex = 0;
-        } else if (['ISSTA', 'ICSE', 'FSE', 'ASE', 'TSE'].includes(publication)) {
-            targetIndex = 1;
-        } else if (['SOSP', 'ASPLOS'].includes(publication)) {
-            targetIndex = 2;
-        }
+        const targetIndex = groupIndex[pubToCategory[publication]];
+        if (targetIndex === undefined) continue; // unknown category: skip, don't crash
         const item = paperStatisRef.value.byPublicationAndYear[publication];
         let tempPublicationItem = {
             label: publication,

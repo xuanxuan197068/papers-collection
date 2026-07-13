@@ -12,6 +12,7 @@ record gets `abstract` plus an `abstract_source` provenance tag.
 """
 import difflib
 import json
+import random
 import re
 import time
 import urllib.parse
@@ -34,11 +35,16 @@ MATCH_RATIO = 0.75
 STOPWORDS = {"the", "and", "with", "from", "against", "using", "via", "for",
              "towards", "toward", "your", "into", "over", "under", "their"}
 
+JITTER_FRAC = 0.5  # add up to +50% random wait so intervals aren't fixed
+
 _last = {}
 
 
 def _throttle(source, seconds):
-    wait = seconds - (time.time() - _last.get(source, 0.0))
+    # base gap + random jitter -> non-constant cadence, avoids tripping
+    # rate limiters during long unattended (24h loop) runs.
+    target = seconds + random.uniform(0, JITTER_FRAC * seconds)
+    wait = target - (time.time() - _last.get(source, 0.0))
     if wait > 0:
         time.sleep(wait)
     _last[source] = time.time()

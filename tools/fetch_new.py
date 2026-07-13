@@ -21,8 +21,10 @@ import datetime
 import difflib
 import json
 import os
+import random
 import re
 import sys
+import time
 
 import yaml
 
@@ -182,17 +184,7 @@ def process_site(pub_key, pub, site, args, missing):
             'new': n_new, 'enrich': stats}
 
 
-def main():
-    parser = argparse.ArgumentParser(description='Fetch new papers via DBLP')
-    parser.add_argument('--venue', help='data.yml publication key, e.g. ndss')
-    parser.add_argument('--year', type=int, help='restrict to one year')
-    parser.add_argument('--dry-run', action='store_true', help='fetch and report, write nothing')
-    parser.add_argument('--policy', choices=['full', 'lazy'], help='override abstract policy')
-    parser.add_argument('--max-enrich', type=int, help='cap enrichment lookups this run')
-    parser.add_argument('--retry-missing', action='store_true',
-                        help='retry titles already recorded in missing_abstracts.json')
-    args = parser.parse_args()
-
+def run_once(args):
     with open('data.yml', 'r', encoding='utf-8') as f:
         config = yaml.load(f, Loader=yaml.FullLoader)
 
@@ -216,7 +208,7 @@ def main():
     if not results:
         print('No `source: dblp` sites matched. Mark sites in data.yml with '
               '`source: dblp` (+ `official_file: <name>.json`) to use this chain.')
-        return
+        return results
     print('\n=== fetch report ===')
     for r in results:
         line = f"{r['label']}: dblp={r['dblp']} new={r['new']}"
@@ -226,6 +218,43 @@ def main():
                      f" s2={e['semantic_scholar']} pdf={e['pdf']} failed={e['failed']}")
         print(line)
     print("Next: uv run main.py --analyze  (regenerates src/assets/data JSON)")
+    return results
+
+
+def main():
+    parser = argparse.ArgumentParser(description='Fetch new papers via DBLP')
+    parser.add_argument('--venue', help='data.yml publication key, e.g. ndss')
+    parser.add_argument('--year', type=int, help='restrict to one year')
+    parser.add_argument('--dry-run', action='store_true', help='fetch and report, write nothing')
+    parser.add_argument('--policy', choices=['full', 'lazy'], help='override abstract policy')
+    parser.add_argument('--max-enrich', type=int, help='cap enrichment lookups this run')
+    parser.add_argument('--retry-missing', action='store_true',
+                        help='retry titles already recorded in missing_abstracts.json')
+    parser.add_argument('--loop', type=float, metavar='MIN',
+                        help='keep running: after each pass sleep ~MIN minutes '
+                             '(+random jitter) then go again. Ctrl-C to stop. For '
+                             'unattended 24h backfill of missing abstracts.')
+    args = parser.parse_args()
+
+    if not args.loop:
+        run_once(args)
+        return
+
+    # Unattended loop: each pass is incremental + idempotent (existing abstracts
+    # are skipped), so repeated passes gradually fill missing_abstracts.json.
+    # --retry-missing is forced on so previously-failed titles are retried too.
+    args.retry_missing = True
+    pass_num = 0
+    try:
+        while True:
+            pass_num += 1
+            print(f'\n########## pass {pass_num} @ {datetime.datetime.now():%Y-%m-%d %H:%M:%S} ##########')
+            run_once(args)
+            sleep_s = args.loop * 60 * (1 + random.uniform(0, 0.2))
+            print(f'[loop] pass {pass_num} done; sleeping {sleep_s/60:.1f} min (Ctrl-C to stop)')
+            time.sleep(sleep_s)
+    except KeyboardInterrupt:
+        print(f'\n[loop] stopped after {pass_num} pass(es).')
 
 
 if __name__ == '__main__':

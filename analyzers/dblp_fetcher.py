@@ -8,12 +8,14 @@ Fallback source: search API      q=toc:db/<toc>.bht:
 conservative rate limit shared across both endpoints.
 """
 import json
+import random
 import time
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 
 RATE_LIMIT_S = 2.5
+JITTER_FRAC = 0.5  # add up to +50% random wait so intervals aren't fixed
 UA = "papers-collection-radar/0.1 (academic paper radar; personal use)"
 
 _last_call = 0.0
@@ -21,7 +23,10 @@ _last_call = 0.0
 
 def _throttle():
     global _last_call
-    wait = RATE_LIMIT_S - (time.time() - _last_call)
+    # base gap + random jitter -> non-constant cadence, gentler on DBLP for
+    # long unattended runs (24h loop mode).
+    target = RATE_LIMIT_S + random.uniform(0, JITTER_FRAC * RATE_LIMIT_S)
+    wait = target - (time.time() - _last_call)
     if wait > 0:
         time.sleep(wait)
     _last_call = time.time()
