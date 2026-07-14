@@ -15,7 +15,7 @@ import os
 
 META_DIR = os.path.join('src', 'assets', 'data', 'meta_json')
 INDEX_DIR = os.path.join('radar', 'index')
-REQUIRED = ('key', 'title', 'method', 'problem', 'scenario', 'evidence')
+REQUIRED = ('key', 'title', 'method', 'technique', 'problem', 'scenario', 'evidence')
 
 
 def compact(title):

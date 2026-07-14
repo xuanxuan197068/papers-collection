@@ -8998,5 +8998,905 @@
     "publication": "ASPLOS",
     "paper": "https://doi.org/10.1145/3676641.3715999",
     "status": "notchecked"
+  },
+  {
+    "id": 15259,
+    "year": 2026,
+    "title": "Low-Latency Video Anonymization for Crowd Anomaly Detection: Privacy Versus Performance",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3630347",
+    "status": "notchecked"
+  },
+  {
+    "id": 15260,
+    "year": 2026,
+    "title": "Practical Secure Inference Algorithm for a Fine-Tuned Large Language Model Based on Fully Homomorphic Encryption",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3639994",
+    "status": "notchecked"
+  },
+  {
+    "id": 15261,
+    "year": 2026,
+    "title": "chamaeleon: Backdoor Attacks Against Vertical Federated Learning for Tabular Data",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3641050",
+    "status": "notchecked"
+  },
+  {
+    "id": 15262,
+    "year": 2026,
+    "title": "Mitigating the Impact of Malware Evolution on API Sequence-Based Windows Malware Detectors",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3637727",
+    "status": "notchecked"
+  },
+  {
+    "id": 15263,
+    "year": 2026,
+    "title": "Practical Framework for Privacy-Preserving and Byzantine-Robust Federated Learning",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3642546",
+    "status": "notchecked"
+  },
+  {
+    "id": 15264,
+    "year": 2026,
+    "title": "IlluAttack: Generating Adversarial Examples via Illumination Transformation for Face Anti-Spoofing",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3643157",
+    "status": "notchecked"
+  },
+  {
+    "id": 15265,
+    "year": 2026,
+    "title": "ScamSweeper: Detecting Illegal Accounts in Web3 Scams via Transactions Analysis",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3646027",
+    "status": "notchecked"
+  },
+  {
+    "id": 15266,
+    "year": 2026,
+    "title": "VPrivKV: Verifiable Local Differential Privacy for Key-Value Data",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3639964",
+    "status": "notchecked"
+  },
+  {
+    "id": 15267,
+    "year": 2026,
+    "title": "GaitDG: A Single-Source Domain Generalization Framework for Cross-Domain Gait Recognition",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3646048",
+    "status": "notchecked"
+  },
+  {
+    "id": 15268,
+    "year": 2026,
+    "title": "An Unbiased and Robust Privacy-Preserving Fingerprinting Scheme for Relational Databases",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3642579",
+    "status": "notchecked"
+  },
+  {
+    "id": 15269,
+    "year": 2026,
+    "title": "Optimal Access Structure Partition Methods for Image Secret Sharing",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3645631",
+    "status": "notchecked"
+  },
+  {
+    "id": 15270,
+    "year": 2026,
+    "title": "Secrecy Energy Efficiency Maximization in RIS-Aided Networks: Active or Nearly-Passive RIS?",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3620227",
+    "status": "notchecked"
+  },
+  {
+    "id": 15271,
+    "year": 2026,
+    "title": "Bones of Contention: Exploring Query-Efficient Attacks Against Skeleton Recognition Systems",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3639978",
+    "status": "notchecked"
+  },
+  {
+    "id": 15272,
+    "year": 2026,
+    "title": "BPF-DAG: Byte-Packet-Flow Features Fusion via Dynamic Attributed Graph for Reliable Encrypted Traffic Classification",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3643127",
+    "status": "notchecked"
+  },
+  {
+    "id": 15273,
+    "year": 2026,
+    "title": "Heimdall: A Decentralized Access Control Scheme With Time-Based Secret Management and Private Access Policies",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3628480",
+    "status": "notchecked"
+  },
+  {
+    "id": 15274,
+    "year": 2026,
+    "title": "Pixel-Level Video Encryption for Privacy Protection: A Personalized and Practical Approach",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3643136",
+    "status": "notchecked"
+  },
+  {
+    "id": 15275,
+    "year": 2026,
+    "title": "Identify as a Human Does: A Pathfinder of Next-Generation Anti-Cheat Framework for First-Person Shooter Games",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3635024",
+    "status": "notchecked"
+  },
+  {
+    "id": 15276,
+    "year": 2026,
+    "title": "MantleMark: Migrating Watermarks From Multi-View Images to Radiance Fields via Frequency Modulation",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3636020",
+    "status": "notchecked"
+  },
+  {
+    "id": 15277,
+    "year": 2026,
+    "title": "Loop-Filter: A Feedback Control Approach for Eliminating Link Flooding Attack",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3640856",
+    "status": "notchecked"
+  },
+  {
+    "id": 15278,
+    "year": 2026,
+    "title": "DQSA: Dynamic Quantized Self-Attention for Multi-Task Encrypted Network Traffic Classification",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3647211",
+    "status": "notchecked"
+  },
+  {
+    "id": 15279,
+    "year": 2026,
+    "title": "When Multimedia Meets Security: Privacy-Preserving Cross-Modal Retrieval for Large-Scale Data",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3645606",
+    "status": "notchecked"
+  },
+  {
+    "id": 15280,
+    "year": 2026,
+    "title": "On the Generation of Face Morphs by Inversion of Optimal Morph Embeddings",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3643785",
+    "status": "notchecked"
+  },
+  {
+    "id": 15281,
+    "year": 2026,
+    "title": "Learning Subgraph-Based Normality for Interpretable Graph-Level Anomaly Detection",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3647221",
+    "status": "notchecked"
+  },
+  {
+    "id": 15282,
+    "year": 2026,
+    "title": "XAI for Fraud Detection: An Attention-Based Ensemble of CNNs, GNNs, and Confidence-Driven Gating for Reliable Decision-Making",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3646480",
+    "status": "notchecked"
+  },
+  {
+    "id": 15283,
+    "year": 2026,
+    "title": "Unfairness Attack and Unified Provable Defense on AI-Powered Internet of Energy",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3648192",
+    "status": "notchecked"
+  },
+  {
+    "id": 15284,
+    "year": 2026,
+    "title": "Exploiting Cyber Threat Intelligence for Indirect Attacks Against Serverless Infrastructures",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3644790",
+    "status": "notchecked"
+  },
+  {
+    "id": 15285,
+    "year": 2026,
+    "title": "SSAA: Secure Semi-Asynchronous Aggregation for Decentralized Federated Learning on Heterogeneous Devices",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3648540",
+    "status": "notchecked"
+  },
+  {
+    "id": 15286,
+    "year": 2026,
+    "title": "FLgym: Toward Robust and Byzantine-Resilient Federated Learning",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3643162",
+    "status": "notchecked"
+  },
+  {
+    "id": 15287,
+    "year": 2026,
+    "title": "SSD: A State-Based Stealthy Backdoor Attack for IMU/GNSS Navigation System in UAV Route Planning",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3646036",
+    "status": "notchecked"
+  },
+  {
+    "id": 15288,
+    "year": 2026,
+    "title": "Unleashing the Potential of Tracklets for Unsupervised Video Person Re-Identification",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3648202",
+    "status": "notchecked"
+  },
+  {
+    "id": 15289,
+    "year": 2026,
+    "title": "Revisiting Adversarial Robustness of GNNs Against Structural Attacks: A Simple and Fast Approach",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3641816",
+    "status": "notchecked"
+  },
+  {
+    "id": 15290,
+    "year": 2026,
+    "title": "MCLPF: Malware Collaborative Detection With LLM-Enhanced Pruning for Attributed Interpretable Flow Graphs",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3648113",
+    "status": "notchecked"
+  },
+  {
+    "id": 15291,
+    "year": 2026,
+    "title": "PA-Boot: A Formally Verified Authentication Protocol for Multiprocessor Secure Boot Under Hardware Supply-Chain Attacks",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3642638",
+    "status": "notchecked"
+  },
+  {
+    "id": 15292,
+    "year": 2026,
+    "title": "EO-EPTC: End-to-End Original Traffic-Based Encrypted Proxy Traffic Classification Framework",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3646874",
+    "status": "notchecked"
+  },
+  {
+    "id": 15293,
+    "year": 2026,
+    "title": "A New Formulation for Zeroth-Order Optimization of Adversarial EXEmples in Malware Detection",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3648867",
+    "status": "notchecked"
+  },
+  {
+    "id": 15294,
+    "year": 2026,
+    "title": "G2uardFL: Safeguarding Federated Learning Against Backdoor Attacks via Attributed Client Graph Clustering",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3639985",
+    "status": "notchecked"
+  },
+  {
+    "id": 15295,
+    "year": 2026,
+    "title": "Reinforcing Adversarial Transferability via Negative Class Guided Example Generation",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3648871",
+    "status": "notchecked"
+  },
+  {
+    "id": 15296,
+    "year": 2026,
+    "title": "Blind Quantum Computation With Certified Deletion for Quantum Inputs",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3645605",
+    "status": "notchecked"
+  },
+  {
+    "id": 15297,
+    "year": 2026,
+    "title": "Stinger: A Light-Weight Website Fingerprinting Defense Through Poisoning Packet Sequences",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3646493",
+    "status": "notchecked"
+  },
+  {
+    "id": 15298,
+    "year": 2026,
+    "title": "Network-Layer Differential Fuzzing for Ethereum",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3648565",
+    "status": "notchecked"
+  },
+  {
+    "id": 15299,
+    "year": 2026,
+    "title": "Exploiting Shared Adversarial Features for Dynamic Attacks in Large Vision-Language Models",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3648873",
+    "status": "notchecked"
+  },
+  {
+    "id": 15300,
+    "year": 2026,
+    "title": "PDFL: A Privacy-Enhancing and Robust Poisoning Defense Federated Learning Scheme",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3648147",
+    "status": "notchecked"
+  },
+  {
+    "id": 15301,
+    "year": 2026,
+    "title": "PowerEar: An Audio Eavesdropping Attack on Mobile Devices Through USB Power Side Channel",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3645562",
+    "status": "notchecked"
+  },
+  {
+    "id": 15302,
+    "year": 2026,
+    "title": "Alkaid: Accelerating Three-Party Boolean Circuits by Mixing Correlations and Redundancy",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3648188",
+    "status": "notchecked"
+  },
+  {
+    "id": 15303,
+    "year": 2026,
+    "title": "Malware Containment via Firewall Placement in Large Scale Wireless IoT Networks",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3627851",
+    "status": "notchecked"
+  },
+  {
+    "id": 15304,
+    "year": 2026,
+    "title": "HySpeFAS: A Hyperspectral Face Anti-Spoofing Dataset Based on Snapshot Compressive Imaging",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3648158",
+    "status": "notchecked"
+  },
+  {
+    "id": 15305,
+    "year": 2026,
+    "title": "Fast Adversarial Training With Weak-to-Strong Spatial-Temporal Consistency in the Frequency Domain on Videos",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3647231",
+    "status": "notchecked"
+  },
+  {
+    "id": 15306,
+    "year": 2026,
+    "title": "Mining Cross-Modality Implicit Semantic Association for Unsupervised Visible-Infrared Person Re-Identification",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3645635",
+    "status": "notchecked"
+  },
+  {
+    "id": 15307,
+    "year": 2026,
+    "title": "Catch Me If You Can: Retain High Stealthiness and Durability of Backdoor Attack in Federated Learning",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3639885",
+    "status": "notchecked"
+  },
+  {
+    "id": 15308,
+    "year": 2026,
+    "title": "Toward Dataset Copyright Evasion Attack Against Personalized Text-to-Image Diffusion Models",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3648660",
+    "status": "notchecked"
+  },
+  {
+    "id": 15309,
+    "year": 2026,
+    "title": "MsgFilter: Proactive Anti-Harassment Sender-Anonymous Messaging System",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3650417",
+    "status": "notchecked"
+  },
+  {
+    "id": 15310,
+    "year": 2026,
+    "title": "SolPhishHunter: Toward Detecting and Understanding Phishing on Solana",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3649957",
+    "status": "notchecked"
+  },
+  {
+    "id": 15311,
+    "year": 2026,
+    "title": "Semantic Entity Alignment and Non-Corresponding Reasoning for Text-to-Image Person Re-Identification",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3649361",
+    "status": "notchecked"
+  },
+  {
+    "id": 15312,
+    "year": 2026,
+    "title": "Search Me in the Dark: Access Pattern-Hidden Range Query Over Encrypted Spatial Data",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3648161",
+    "status": "notchecked"
+  },
+  {
+    "id": 15313,
+    "year": 2026,
+    "title": "FSAT: A Faster Secure Convolutional Neural Network Inference Framework With Adversarial Training in Resource-Constrained Scenarios",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3650384",
+    "status": "notchecked"
+  },
+  {
+    "id": 15314,
+    "year": 2026,
+    "title": "Glint: Localization of Gray Violations in Untrusted and Unreliable SRv6 Networks",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3649962",
+    "status": "notchecked"
+  },
+  {
+    "id": 15315,
+    "year": 2026,
+    "title": "STKPS-Net: Spatio-Temporal Key Patch Selection Network for Few Shot Anomalous Action Recognition",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3650396",
+    "status": "notchecked"
+  },
+  {
+    "id": 15316,
+    "year": 2026,
+    "title": "Secure Rational Delegation Federated Learning",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3650379",
+    "status": "notchecked"
+  },
+  {
+    "id": 15317,
+    "year": 2026,
+    "title": "Towards Patch-Based Noise Compression for Adversarial Attack Against Transformer-Based Visual Tracking",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3648551",
+    "status": "notchecked"
+  },
+  {
+    "id": 15318,
+    "year": 2026,
+    "title": "CoGA: A Collaborative Gray-Box Adversarial Attack for Multimodal Language Models",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3646854",
+    "status": "notchecked"
+  },
+  {
+    "id": 15319,
+    "year": 2026,
+    "title": "Enhancing Perceptron Constancy for Real-World Dynamic Hand Gesture Authentication",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3648567",
+    "status": "notchecked"
+  },
+  {
+    "id": 15320,
+    "year": 2026,
+    "title": "Outsourced Cloud Storage and Dynamic Sharing: Efficient Time-Bound Access Control",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3650373",
+    "status": "notchecked"
+  },
+  {
+    "id": 15321,
+    "year": 2026,
+    "title": "iAudit: Toward Efficient Pixel-Level Dynamic Image Auditing in Decentralized Storage",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3648191",
+    "status": "notchecked"
+  },
+  {
+    "id": 15322,
+    "year": 2026,
+    "title": "General Backdoor-Resilient Federated Learning via Multi-Armed Bandit-Based Knowledge Distillation",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3630065",
+    "status": "notchecked"
+  },
+  {
+    "id": 15323,
+    "year": 2026,
+    "title": "A Comprehensive Framework for Palm Vein Anti-Spoofing With Preprocessing Pipeline, Dataset, and Benchmark",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3650391",
+    "status": "notchecked"
+  },
+  {
+    "id": 15324,
+    "year": 2026,
+    "title": "BAPTISM: A Robust Framework for Encrypted Malicious Traffic Identification With Low-Quality Training Data",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3648170",
+    "status": "notchecked"
+  },
+  {
+    "id": 15325,
+    "year": 2026,
+    "title": "A Lightweight Blockchain-Assisted Certificateless Cloud Data Integrity Auditing Scheme Without Third-Party Auditor",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3652010",
+    "status": "notchecked"
+  },
+  {
+    "id": 15326,
+    "year": 2026,
+    "title": "A Fast Jamming Strategy Optimization Method With Imperfect Experience",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3650410",
+    "status": "notchecked"
+  },
+  {
+    "id": 15327,
+    "year": 2026,
+    "title": "Disguise While Defense: Avoid Refusal Responses in LLM's Defense via a Multi-Agent Attacker-Disguiser Game",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3626228",
+    "status": "notchecked"
+  },
+  {
+    "id": 15328,
+    "year": 2026,
+    "title": "Portability of Profiling Side-Channel Analysis: A Case Study Using Adjustable Implementations of Block Ciphers",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3651997",
+    "status": "notchecked"
+  },
+  {
+    "id": 15329,
+    "year": 2026,
+    "title": "Distributionally Robust Game for Proof-of-Work Blockchain Mining Under Resource Uncertainties",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3653580",
+    "status": "notchecked"
+  },
+  {
+    "id": 15330,
+    "year": 2026,
+    "title": "Casper: A Causality-Inspired Defense With Confounder Against Label Inference Attacks in Vertical Split Federated Learning",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3652013",
+    "status": "notchecked"
+  },
+  {
+    "id": 15331,
+    "year": 2026,
+    "title": "TraceCluster: A Lightweight and Adaptive Clustering-Based Subgraph Attention Network for APT Detection in Provenance Graphs",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3653175",
+    "status": "notchecked"
+  },
+  {
+    "id": 15332,
+    "year": 2026,
+    "title": "SymScrab: Physical Layer Encryption for LoRa by Permuting the Baseband Signal",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3649350",
+    "status": "notchecked"
+  },
+  {
+    "id": 15333,
+    "year": 2026,
+    "title": "Apple's Synthetic Defocus Noise Pattern: Characterization and Forensic Applications",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3653213",
+    "status": "notchecked"
+  },
+  {
+    "id": 15334,
+    "year": 2026,
+    "title": "RIS-Assisted Integrated Communication and Secret Key Generation in Quasi-Static Environments",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3654398",
+    "status": "notchecked"
+  },
+  {
+    "id": 15335,
+    "year": 2026,
+    "title": "Conan: Secure and Reliable Machine Learning Inference Against Malicious Service Providers",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3648121",
+    "status": "notchecked"
+  },
+  {
+    "id": 15336,
+    "year": 2026,
+    "title": "Backdoor Detection in Federated Learning With Feature Map: A Multi-Task Learning Perspective",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3655920",
+    "status": "notchecked"
+  },
+  {
+    "id": 15337,
+    "year": 2026,
+    "title": "Privacy-Preserving Joint Distribution Analysis for Set-Valued Data via Local Differential Privacy",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3654799",
+    "status": "notchecked"
+  },
+  {
+    "id": 15338,
+    "year": 2026,
+    "title": "LFS: A Locally Private Framework for Degree Statistic Estimation With Laplace Mechanism",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3655155",
+    "status": "notchecked"
+  },
+  {
+    "id": 15339,
+    "year": 2026,
+    "title": "MAP-Mamba: Multi-Artifacts Perception Mamba for Generalizable Face Forgery Detection",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3651948",
+    "status": "notchecked"
+  },
+  {
+    "id": 15340,
+    "year": 2026,
+    "title": "ProSan: Utility-Based Prompt Privacy Sanitizer",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3654397",
+    "status": "notchecked"
+  },
+  {
+    "id": 15341,
+    "year": 2026,
+    "title": "Modeling the Performance-Security Trade-Off of Gasper's Block Proposal Mechanism Under Latency-Driven Attacks",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3651978",
+    "status": "notchecked"
+  },
+  {
+    "id": 15342,
+    "year": 2026,
+    "title": "Cracking the Code of Backdoor Attacks With Confidence Consistency",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3653553",
+    "status": "notchecked"
+  },
+  {
+    "id": 15343,
+    "year": 2026,
+    "title": "Bridging Lab and Industry: Practical SPA-GPT on Cryptosystems Boosted by LSTM and Simulated Annealing",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3654798",
+    "status": "notchecked"
+  },
+  {
+    "id": 15344,
+    "year": 2026,
+    "title": "APEG: Adaptive Physical Layer Authentication With Channel Extrapolation and Generative AI",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3654380",
+    "status": "notchecked"
+  },
+  {
+    "id": 15345,
+    "year": 2026,
+    "title": "Contextual Masking Distillation for Network Traffic Anomaly Detection",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3655514",
+    "status": "notchecked"
+  },
+  {
+    "id": 15346,
+    "year": 2026,
+    "title": "Building Trust Beyond Update Divergence: Dual-Refined Aggregation for Byzantine-Robust Federated Learning",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3650413",
+    "status": "notchecked"
+  },
+  {
+    "id": 15347,
+    "year": 2026,
+    "title": "RIS-Enabled Integrated Anti-Jamming Covert Communication and Sensing Systems",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3645577",
+    "status": "notchecked"
+  },
+  {
+    "id": 15348,
+    "year": 2026,
+    "title": "DySec: A Machine Learning-Based Dynamic Analysis for Detecting Malicious Packages in PyPI Ecosystem",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3654388",
+    "status": "notchecked"
+  },
+  {
+    "id": 15349,
+    "year": 2026,
+    "title": "Axial-View-Oriented Contrastive Adversarial Training for Robust Point Cloud Recognition",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3657043",
+    "status": "notchecked"
+  },
+  {
+    "id": 15350,
+    "year": 2026,
+    "title": "End-to-End Open-Set Semi-Supervised Learning for Fine-Grained Encrypted Traffic Classification",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3653575",
+    "status": "notchecked"
+  },
+  {
+    "id": 15351,
+    "year": 2026,
+    "title": "Amplifying Training Data Exposure Through Fine-Tuning With Pseudo-Labeled Memberships",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3613882",
+    "status": "notchecked"
+  },
+  {
+    "id": 15352,
+    "year": 2026,
+    "title": "Coffer: An Efficient and Scalable TEE on RISC-V",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2025.3648190",
+    "status": "notchecked"
+  },
+  {
+    "id": 15353,
+    "year": 2026,
+    "title": "CAA: Toward Camouflaged and Transferable Adversarial Examples",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3657036",
+    "status": "notchecked"
+  },
+  {
+    "id": 15354,
+    "year": 2026,
+    "title": "Refining Positive and Toxic Samples for Dual Safety Self-Alignment of LLMs With Minimal Human Interventions",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3652843",
+    "status": "notchecked"
+  },
+  {
+    "id": 15355,
+    "year": 2026,
+    "title": "RL-Enabled Lightweight Language Models for GPS Spoofing Defense in Autonomous Vehicles",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3652406",
+    "status": "notchecked"
+  },
+  {
+    "id": 15356,
+    "year": 2026,
+    "title": "EndPCA: Ensemble Defense With Provably Convergent Aggregation Against Poisoning Attacks in Federated Learning",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3655513",
+    "status": "notchecked"
+  },
+  {
+    "id": 15357,
+    "year": 2026,
+    "title": "CPRPS: A Cross-Platform Reputation Privacy Sharing for Speed-Up Quality Data Collection in Mobile Crowdsensing",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3655900",
+    "status": "notchecked"
+  },
+  {
+    "id": 15358,
+    "year": 2026,
+    "title": "Time Updatable Policy-Based Chameleon Hash for Traceable and Accountable Redactable Blockchain",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3655919",
+    "status": "notchecked"
   }
 ]

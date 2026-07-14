@@ -43,11 +43,14 @@ Publication 名对照 data.yml 的 `name`（如 `USENIX Sec`、`IEEE S&P`、`ACM
 index 行格式：
 ```json
 {"key":"compact标题","id":4401,"title":"原标题","paper":"链接",
- "method":"用了什么新算法/机制/模块、新在哪(中文一句)",
+ "method":"用了什么新算法/机制/模块、新在哪(中文一句, 高层)",
+ "technique":"具体做法: 用了什么算法/模型/模块, 按什么流程/步骤实现(中文, 可两三句, 比 method 更具体, 讲清'怎么做的')",
  "problem":"解决了什么难题","scenario":"用在什么对象/环境",
  "evidence":"real-world|benchmark|user study|simulation|theory|unknown",
  "lens":["蜜罐/网络欺骗","..."],"date":"YYYY-MM-DD"}
 ```
+`method` 与 `technique` 并存互补：method = 一句话点出"新在哪"；technique = 讲清
+"具体用什么算法、什么流程做的"，让人直观看懂这篇用了什么新技术。
 
 ### 2. 构建 index（subagent map-reduce）
 1. 分片：`uv run tools/radar_shard.py --pub "<Publication>" --year <Y> [--size 40]`
@@ -57,7 +60,9 @@ index 行格式：
    - 只读给定 shard 文件、只用 title+abstract（不许联网、不许读别的文件）；
    - 对**每一篇**（不许跳过）产出上面的 index 行格式；
    - **key/id/title/paper 逐字复制**（不得重算 key，否则合并时对不上）；
-   - method/problem/scenario 用中文短句、贴摘要不空话；evidence 按验证方式选枚举
+   - method/problem/scenario 用中文短句、贴摘要不空话；**technique 讲具体做法**
+     （用了什么算法/模型/模块、按什么流程实现，两三句、比 method 更细，摘要够则从摘要提取
+     关键步骤，摘要太薄则据标题+方法合理概述）；evidence 按验证方式选枚举
      （真实部署=real-world，基准/数据集=benchmark，真人参与=user study，仿真=simulation，
      纯证明=theory，摘要为`#`或太薄=从标题尽力推断并置 unknown）；
    - lens 只在确实相关时标（大多数为 `[]`，从严）；
@@ -68,7 +73,7 @@ index 行格式：
    - 某片 out 行数 < shard 行数（subagent 漏篇）→ 用 `model: sonnet` 重跑该片。
    - 合并后覆盖率 < 100%（key 漂移导致缺口）→ 用不同 `--out` 目录重跑 radar_shard
      （只会挑出未索引的那几篇）→ 派一个 sonnet subagent 补 → `radar_index_merge --in <该目录>`。
-   - 随机抽 5 条对照摘要人工核（method/problem/scenario 是否失真）。
+   - 随机抽 5 条对照摘要人工核（technique/method/problem/scenario 是否失真）。
 5. 建完清理 `radar/_shards/`（临时，已 gitignore）。
 
 ### 3. 读 index 出方向总结（两段式）

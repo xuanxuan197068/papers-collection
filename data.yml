@@ -676,3 +676,13 @@ asplos:
       official_file: asplos16.bib
     - year: 2015
       official_file: asplos15.bib
+tifs:
+  name: TIFS
+  category: journal
+  # Journal: DBLP indexes by volume, not year. TIFS volume = year - 2005
+  # (2026 -> vol 21). Use a per-site `dblp_toc` override for each year.
+  sites:
+    - year: 2026
+      source: dblp
+      official_file: 'tifs26.json'
+      dblp_toc: journals/tifs/tifs21

@@ -48,7 +48,7 @@
                 size="small"
                 data-key="key"
                 paginator :rows="15"
-                :globalFilterFields="['title', 'method', 'problem', 'scenario']"
+                :globalFilterFields="['title', 'technique', 'method', 'problem', 'scenario']"
                 :rows-per-page-options="[15, 30, 50, 100]"
                 paginator-template="RowsPerPageDropdown FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport"
             >
@@ -81,7 +81,12 @@
                 </Column>
                 <Column :header="t('methodIndex.scenario')" field="scenario" style="min-width: 10rem" />
                 <Column :header="t('methodIndex.problem')" field="problem" style="min-width: 12rem" />
-                <Column :header="t('methodIndex.method')" field="method" style="min-width: 14rem" />
+                <Column :header="t('methodIndex.method')" field="method" style="min-width: 12rem" />
+                <Column :header="t('methodIndex.technique')" field="technique" style="min-width: 18rem">
+                    <template #body="{ data }">
+                        <span class="mi-technique">{{ data.technique || '—' }}</span>
+                    </template>
+                </Column>
                 <Column :header="t('methodIndex.evidence')" style="min-width: 8rem">
                     <template #body="{ data }">
                         <Tag :value="data.evidence" :severity="evidenceSeverity(data.evidence)" />
@@ -118,12 +123,13 @@ const selectedLenses = ref([]);
 const filters = ref({ global: { value: null, matchMode: FilterMatchMode.CONTAINS } });
 
 // --- venue -> category grouping (data-driven, same approach as ViewAbstract) ---
-const CATEGORY_ORDER = ['top-tier', 'software-engineering', 'system', 'ai-ml'];
+const CATEGORY_ORDER = ['top-tier', 'software-engineering', 'system', 'ai-ml', 'journal'];
 const CATEGORY_META = {
     'top-tier': { key: 'abstract.topTier', icon: 'pi pi-shield' },
     'software-engineering': { key: 'abstract.softwareEngineering', icon: 'pi pi-code' },
     'system': { key: 'abstract.system', icon: 'pi pi-cog' },
-    'ai-ml': { key: 'abstract.aiMl', icon: 'pi pi-sparkles' }
+    'ai-ml': { key: 'abstract.aiMl', icon: 'pi pi-sparkles' },
+    'journal': { key: 'abstract.journal', icon: 'pi pi-book' }
 };
 const categoryLabel = (c) => (CATEGORY_META[c] ? t(CATEGORY_META[c].key) : c);
 const categoryIcon = (c) => (CATEGORY_META[c] ? CATEGORY_META[c].icon : 'pi pi-folder');
@@ -313,6 +319,11 @@ onUnmounted(() => {
     font-size: 0.75rem;
     background: color-mix(in srgb, var(--primary-color) 14%, transparent);
     color: var(--primary-color);
+}
+.mi-technique {
+    display: block;
+    font-size: 0.86rem;
+    line-height: 1.5;
 }
 .borderless-table :deep(.p-datatable-table-container),
 .borderless-table :deep(.p-datatable-header),

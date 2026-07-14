@@ -26,7 +26,8 @@ const categoryNameMap = computed(()=>({
     'toptier': t('abstract.topTier'),
     'softwareengineering': t('abstract.softwareEngineering'),
     'system': t('abstract.system'),
-    'aiml': t('abstract.aiMl')
+    'aiml': t('abstract.aiMl'),
+    'journal': t('abstract.journal')
 }));
 // Fall back to the raw category key when a category has no localized name,
 // so a newly added category still renders a titled chart instead of a blank.

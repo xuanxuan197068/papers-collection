@@ -1,1 +1,54 @@
-{}
+{
+  "TIFS - 2026": {
+    "K-TCDP: A Temporal Correlated DP Mechanism for LoRA Supervised Fine-Tuning": {
+      "attempts": 2,
+      "last_attempt": "2026-07-13",
+      "paper": "https://doi.org/10.1109/TIFS.2026.3688926"
+    },
+    "PLS and Covert Analysis of AAV-Assisted FSO Communication Systems With Downlink RSMA": {
+      "attempts": 2,
+      "last_attempt": "2026-07-13",
+      "paper": "https://doi.org/10.1109/TIFS.2026.3688312"
+    },
+    "Generating Privacy-Preserving Faces for Multi-Party Secure Authentication": {
+      "attempts": 2,
+      "last_attempt": "2026-07-13",
+      "paper": "https://doi.org/10.1109/TIFS.2026.3689650"
+    },
+    "Security Enhancement for Person Re-Identification Through Diffusion Driven Semantic Attacks": {
+      "attempts": 2,
+      "last_attempt": "2026-07-13",
+      "paper": "https://doi.org/10.1109/TIFS.2026.3689286"
+    },
+    "Revealing Honeypots in High-Frequency Interactions on Decentralized Applications": {
+      "attempts": 2,
+      "last_attempt": "2026-07-13",
+      "paper": "https://doi.org/10.1109/TIFS.2026.3687759"
+    },
+    "Federated Unsupervised Skeletal Action Recognition From Condensation to Expansion": {
+      "attempts": 2,
+      "last_attempt": "2026-07-13",
+      "paper": "https://doi.org/10.1109/TIFS.2026.3688943"
+    },
+    "BlockAthena: A Scalable Approach for Long-Term Blockchain Crimes Analysis": {
+      "attempts": 2,
+      "last_attempt": "2026-07-13",
+      "paper": "https://doi.org/10.1109/TIFS.2026.3688911"
+    },
+    "A User Threat-Driven Multi-Objective Adaptive VM Allocation Framework for Cloud Security": {
+      "attempts": 2,
+      "last_attempt": "2026-07-13",
+      "paper": "https://doi.org/10.1109/TIFS.2026.3689704"
+    },
+    "Explainability-Guided Untargeted Attacks on Knowledge Graph Embedding": {
+      "attempts": 2,
+      "last_attempt": "2026-07-13",
+      "paper": "https://doi.org/10.1109/TIFS.2026.3689651"
+    },
+    "On Exploiting Single-Trace Side-Channel Leakage of SEAL-Embedded Library": {
+      "attempts": 2,
+      "last_attempt": "2026-07-13",
+      "paper": "https://doi.org/10.1109/TIFS.2026.3688912"
+    }
+  }
+}

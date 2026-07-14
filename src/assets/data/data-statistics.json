@@ -1,5 +1,5 @@
 {
-  "total": 15258,
+  "total": 15680,
   "overview": [
     {
       "category": "top-tier",
@@ -204,6 +204,16 @@
       "fill": false,
       "borderColor": "--p-lime-400",
       "tension": 0.4
+    },
+    {
+      "category": "journal",
+      "label": "TIFS",
+      "map_data": {
+        "2026": 422
+      },
+      "fill": false,
+      "borderColor": "--p-emerald-400",
+      "tension": 0.4
     }
   ],
   "byPublication": {
@@ -216,7 +226,8 @@
     "ISSTA": 827,
     "FSE": 1526,
     "SOSP": 523,
-    "ASPLOS": 1069
+    "ASPLOS": 1069,
+    "TIFS": 422
   },
   "byYear": {
     "2001": 17,
@@ -237,7 +248,7 @@
     "2023": 1902,
     "2024": 2271,
     "2025": 2342,
-    "2026": 629
+    "2026": 1051
   },
   "byPublicationAndYear": {
     "IEEE S&P": {
@@ -373,6 +384,9 @@
       "2017": 57,
       "2016": 56,
       "2015": 50
+    },
+    "TIFS": {
+      "2026": 422
     }
   },
   "byPublicationAndYearAndStatus": {
@@ -509,6 +523,9 @@
       "2017": "notchecked",
       "2016": "notchecked",
       "2015": "notchecked"
+    },
+    "TIFS": {
+      "2026": "notchecked"
     }
   },
   "years": [

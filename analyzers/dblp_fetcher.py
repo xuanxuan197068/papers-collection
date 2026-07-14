@@ -53,19 +53,20 @@ def clean_title(title):
 def parse_venue_xml(data):
     papers = []
     root = ET.fromstring(data)
-    for rec in root.iter("inproceedings"):
-        title_el = rec.find("title")
-        title = "".join(title_el.itertext()).strip() if title_el is not None else ""
-        authors = ["".join(a.itertext()).strip() for a in rec.findall("author")]
-        ee = [e.text for e in rec.findall("ee") if e.text]
-        if title:
-            papers.append({
-                "dblp_key": rec.get("key", ""),
-                "title": clean_title(title),
-                "authors": authors,
-                "links": ee,
-                "source": "dblp_venue_xml",
-            })
+    for record_type in ("inproceedings", "article"):
+        for rec in root.iter(record_type):
+            title_el = rec.find("title")
+            title = "".join(title_el.itertext()).strip() if title_el is not None else ""
+            authors = ["".join(a.itertext()).strip() for a in rec.findall("author")]
+            ee = [e.text for e in rec.findall("ee") if e.text]
+            if title:
+                papers.append({
+                    "dblp_key": rec.get("key", ""),
+                    "title": clean_title(title),
+                    "authors": authors,
+                    "links": ee,
+                    "source": "dblp_venue_xml",
+                })
     return papers
 
 
@@ -107,7 +108,7 @@ def fetch_toc(toc):
             if papers:
                 log["count"] = len(papers)
                 return papers, log
-            print("  [info] venue XML has 0 inproceedings; trying search API")
+            print("  [info] venue XML has 0 publications; trying search API")
         except ET.ParseError as e:
             print(f"  [warn] venue XML parse error: {e}; trying search API")
     q = urllib.parse.quote(f"toc:db/{toc}.bht:")

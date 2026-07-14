@@ -33,7 +33,7 @@ No `.env` is needed for this fork's flows (`--llm-analyze` and `--zip`/`--unzip`
 ### Radar semantic layer
 
 `radar/` holds the semantic outputs produced in-session via `.Codex/skills/radar-digest/`:
-- `radar/index/<Pub> - <Year>.json` — per-paper method index (method/problem/scenario/evidence/lens), built by subagent map-reduce (`tools/radar_shard.py` → haiku subagents → `tools/radar_index_merge.py`, which prunes extraction-drift keys and reports coverage).
+- `radar/index/<Pub> - <Year>.json` — per-paper method index (method/technique/problem/scenario/evidence/lens), built by subagent map-reduce (`tools/radar_shard.py` → haiku/sonnet subagents → `tools/radar_index_merge.py`, which prunes extraction-drift keys and reports coverage). `method` = one-line "what's new"; `technique` = concrete algorithm/pipeline ("how it's done"). Longer `technique` text is JSON-fragile, so use `model: sonnet` when re-filling gaps.
 - `radar/maps/` — direction maps (Stage 1, two-part: neutral + lens-combined). `radar/cards/` — method cards (Stage 2). `radar/state/` — read/pick status + missing-abstracts log.
 
 Extra information never goes into `src/assets/data/` files — those keep the upstream schema.
@@ -41,7 +41,8 @@ Extra information never goes into `src/assets/data/` files — those keep the up
 ### Frontend notes (fork)
 
 - **Method Index page** (`/paper/method-index`, `src/views/paper/MethodIndex.vue`) browses `radar/index/` files with search + lens filter; shows a "not generated yet" prompt when a venue-year has no index.
-- Venue→category grouping in `ViewAbstract.vue` / `MethodIndex.vue` and the `Trends.vue` category labels are **data-driven** (from `data-statistics.json` overview) with fallbacks, so adding a new venue/category (e.g. `ai-ml`) doesn't break the menu or charts; `main.py`'s trend palette cycles, so a category may hold >6 venues.
+- Venue→category grouping in `ViewAbstract.vue` / `MethodIndex.vue` and the `Trends.vue` category labels are **data-driven** (from `data-statistics.json` overview) with fallbacks, so adding a new venue/category (e.g. `ai-ml`, `journal`) doesn't break the menu or charts; `main.py`'s trend palette cycles, so a category may hold >6 venues.
+- **Journals** use `category: journal` (grouped under "安全期刊" / "Security Journals"). DBLP indexes journals by volume not year, so each journal site needs a per-year `dblp_toc` override (e.g. TIFS: `journals/tifs/tifs21` = vol 21 = 2026). The fetcher already parses both `<inproceedings>` (confs) and `<article>` (journals). UI wording on shared pages is venue-neutral ("会议/期刊").
 - Prod data URLs (`ViewAbstract.vue`, `Search.vue`) point at this fork's raw GitHub, not upstream.
 - Adding a venue: append to the **end** of `data.yml` (never reorder — paper `id` is a running index).
 

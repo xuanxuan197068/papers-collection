@@ -88,12 +88,13 @@ const selection = ref(null);
 
 // Category display order + label(i18n)/icon. Unknown categories fall back to
 // their raw key and a generic icon so the page never breaks on a new venue group.
-const CATEGORY_ORDER = ['top-tier', 'software-engineering', 'system', 'ai-ml'];
+const CATEGORY_ORDER = ['top-tier', 'software-engineering', 'system', 'ai-ml', 'journal'];
 const CATEGORY_META = {
     'top-tier': { key: 'abstract.topTier', icon: 'pi pi-shield' },
     'software-engineering': { key: 'abstract.softwareEngineering', icon: 'pi pi-code' },
     'system': { key: 'abstract.system', icon: 'pi pi-cog' },
-    'ai-ml': { key: 'abstract.aiMl', icon: 'pi pi-sparkles' }
+    'ai-ml': { key: 'abstract.aiMl', icon: 'pi pi-sparkles' },
+    'journal': { key: 'abstract.journal', icon: 'pi pi-book' }
 };
 const categoryLabel = (category) => (CATEGORY_META[category] ? t(CATEGORY_META[category].key) : category);
 const categoryIcon = (category) => (CATEGORY_META[category] ? CATEGORY_META[category].icon : 'pi pi-folder');
