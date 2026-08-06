@@ -1,0 +1,4219 @@
+[
+  {
+    "key": "acceleratingnumbertheoretictransformwithmultigpusystemsforefficientzeroknowledgeproof",
+    "id": 14190,
+    "title": "Accelerating Number Theoretic Transform with Multi-GPU Systems for Efficient Zero Knowledge Proof",
+    "paper": "https://doi.org/10.1145/3669940.3707241",
+    "method": "提出面向多 GPU 层次结构的 UniNTT，以递归分解和统一硬件抽象优化数论变换。",
+    "technique": [
+      {
+        "name": "UniNTT recursive multi-GPU decomposition",
+        "type": "algorithm",
+        "target": "零知识证明中的多 GPU 数论变换",
+        "action": "递归拆分 NTT，并在 warp、线程块、GPU 与多 GPU 层级复用统一优化",
+        "effect": "降低跨 GPU 置换通信开销并加速证明生成",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "NTT 的置换访问模式造成高昂跨 GPU 通信，限制零知识证明生成速度。",
+    "scenario": "八 GPU 系统上的零知识证明数论变换。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "acceleratingretrievalaugmentedgeneration",
+    "id": 14191,
+    "title": "Accelerating Retrieval-Augmented Generation",
+    "paper": "https://doi.org/10.1145/3669940.3707264",
+    "method": "分析 RAG 检索与生成的性能耦合，并设计基于 CXL 的近内存精确近邻检索设备 IKS。",
+    "technique": [
+      {
+        "name": "Intelligent Knowledge Store",
+        "type": "architecture",
+        "target": "大规模向量库上的 RAG 精确最近邻检索",
+        "action": "通过 CXL 类型 2 设备在近内存加速器上执行可扩展精确检索",
+        "effect": "缩短检索及端到端 RAG 推理时间",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "精确检索代价高，而近似检索会增加生成模型输入并拖慢端到端推理。",
+    "scenario": "512GB 向量库上的检索增强生成服务。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "anaanattentiveautonomousdrivingsystem",
+    "id": 14192,
+    "title": "AnA: An Attentive Autonomous Driving System",
+    "paper": "https://doi.org/10.1145/3669940.3707261",
+    "method": "构建由规划查询驱动感知任务选择与异常监控的注意式自动驾驶系统 AnA。",
+    "technique": [
+      {
+        "name": "planning-guided attentive perception",
+        "type": "system-mechanism",
+        "target": "自动驾驶感知的安全性与计算资源使用",
+        "action": "让规划模块表达感知兴趣，映射到最优感知任务并以驾驶知识监控异常",
+        "effect": "及时响应对抗事件并降低感知计算量",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "现有自动驾驶感知与驾驶决策脱节，难以按风险分配感知资源。",
+    "scenario": "具有对抗事件的自动驾驶基准。",
+    "evidence": "benchmark",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "anykeyakeyvaluessdforallworkloadtypes",
+    "id": 14193,
+    "title": "AnyKey: A Key-Value SSD for All Workload Types",
+    "paper": "https://doi.org/10.1145/3669940.3707279",
+    "method": "设计元数据规模不随键尺寸增长的通用键值 SSD AnyKey。",
+    "technique": [
+      {
+        "name": "AnyKey metadata-stable KV-SSD",
+        "type": "architecture",
+        "target": "键和值尺寸多样的键值存储工作负载",
+        "action": "重构 KV-SSD 元数据组织以避免大键导致元数据膨胀",
+        "effect": "在不同键值尺寸下保持高存储性能",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "既有 KV-SSD 针对大值小键优化，在大键工作负载下性能显著下降。",
+    "scenario": "多种真实键值存储工作负载。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "arcwarpleveladaptiveatomicreductioningpustoacceleratedifferentiablerendering",
+    "id": 14194,
+    "title": "ARC: Warp-level Adaptive Atomic Reduction in GPUs to Accelerate Differentiable Rendering",
+    "paper": "https://doi.org/10.1145/3669940.3707238",
+    "method": "提出在 GPU 核心进行 warp 级归约并在核心与 L2 原子单元间自适应分流的 ARC。",
+    "technique": [
+      {
+        "name": "ARC adaptive atomic reduction",
+        "type": "hardware-mechanism",
+        "target": "可微渲染训练中的梯度原子更新",
+        "action": "利用 warp 内局部性在寄存器归约，并将原子计算分配到核心和 L2 单元",
+        "effect": "缓解原子单元拥塞并加速可微渲染",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "大量梯度原子操作压垮 GPU L2 原子单元并造成长时间停顿。",
+    "scenario": "GPU 上的光栅化可微渲染工作负载。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "automatictracingintaskbasedruntimesystems",
+    "id": 14195,
+    "title": "Automatic Tracing in Task-Based Runtime Systems",
+    "paper": "https://doi.org/10.1145/3669940.3707237",
+    "method": "以动态字符串分析自动识别重复任务片段并缓存依赖分析，形成 Apophenia 自动追踪系统。",
+    "technique": [
+      {
+        "name": "Apophenia automatic tracing",
+        "type": "analysis-method",
+        "target": "细粒度任务运行时的重复依赖分析",
+        "action": "对任务流执行动态字符串分析，识别重复片段并记忆其依赖结果",
+        "effect": "免除人工标注并降低动态依赖分析开销",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "细粒度任务的动态依赖分析昂贵，人工 trace 标注脆弱且难以组合。",
+    "scenario": "Perlmutter 与 Eos 超级计算机上的任务式程序。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "batchzkafullypipelinedgpuacceleratedsystemforbatchgenerationofzeroknowledgeproofs",
+    "id": 14196,
+    "title": "BatchZK: A Fully Pipelined GPU-Accelerated System for Batch Generation of Zero-Knowledge Proofs",
+    "paper": "https://doi.org/10.1145/3669940.3707270",
+    "method": "构建全流水 GPU 批量零知识证明系统，结合定制协议模块、动态加载和多流重叠。",
+    "technique": [
+      {
+        "name": "BatchZK fully pipelined proof generation",
+        "type": "system-mechanism",
+        "target": "零知识证明的批量高吞吐生成",
+        "action": "持续流水化 GPU 线程任务，定制证明模块并重叠传输与计算",
+        "effect": "提升批量证明吞吐并降低设备内存需求",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "既有 GPU 系统只优化单个证明延迟，无法满足批量证明吞吐需求。",
+    "scenario": "多种 GPU 和可验证机器学习应用中的批量 ZKP。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "bytefssystemsupportforcxlbasedmemorysemanticsolidstatedrives",
+    "id": 14197,
+    "title": "ByteFS: System Support for (CXL-based) Memory-Semantic Solid-State Drives",
+    "paper": "https://doi.org/10.1145/3669940.3707250",
+    "method": "协同重设计文件系统与 SSD 固件，使 ByteFS 同时支持字节级和块级访问。",
+    "technique": [
+      {
+        "name": "ByteFS dual-granularity storage",
+        "type": "system-mechanism",
+        "target": "CXL/PCIe 内存语义 SSD 的软件支持",
+        "action": "扩展文件系统数据结构，并用日志式固件 DRAM、写合并和协同缓存管理双粒度访问",
+        "effect": "减少闪存写流量并提高文件系统性能",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "内存语义 SSD 的字节/块双接口具有不同特性，传统文件系统无法充分利用。",
+    "scenario": "真实可编程 SSD 与仿真内存语义 SSD。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "cinnamonaframeworkforscaleoutencryptedai",
+    "id": 14198,
+    "title": "Cinnamon: A Framework for Scale-Out Encrypted AI",
+    "paper": "https://doi.org/10.1145/3669940.3707260",
+    "method": "以算法、编译器和硬件协同的多层并行框架扩展全同态加密 AI。",
+    "technique": [
+      {
+        "name": "Cinnamon scale-out FHE framework",
+        "type": "architecture",
+        "target": "全同态加密下的大型机器学习推理",
+        "action": "在程序各层发掘并行性并以可扩展多芯片架构执行加密计算",
+        "effect": "显著降低加密模型推理时间和单芯片资源成本",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "FHE 性能开销大，既有单体架构资源庞大且仅支持小型机器学习负载。",
+    "scenario": "包括 BERT 在内的隐私保护机器学习推理。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "closurexcompilersupportforcorrectpersistentfuzzing",
+    "id": 14199,
+    "title": "ClosureX: Compiler Support for Correct Persistent Fuzzing",
+    "paper": "https://doi.org/10.1145/3669940.3707281",
+    "method": "用 LLVM passes 精细恢复每个测试用例专属状态，在持久化模糊测试中兼顾速度与语义正确性。",
+    "technique": [
+      {
+        "name": "ClosureX fine-grained state restoration",
+        "type": "testing-method",
+        "target": "持久化模糊测试中的跨用例状态污染",
+        "action": "仅重置测试执行专属状态并集成到 AFL++",
+        "effect": "保持语义一致性同时提高执行率和漏洞发现速度",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "持久化模糊测试残留进程状态，会造成漏报、误报和结果不正确。",
+    "scenario": "十个流行开源目标上的 AFL++ 模糊测试。",
+    "evidence": "benchmark",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "coachexploitingtemporalpatternsforallresourceoversubscriptionincloudplatforms",
+    "id": 14200,
+    "title": "Coach: Exploiting Temporal Patterns for All-Resource Oversubscription in Cloud Platforms",
+    "paper": "https://doi.org/10.1145/3669940.3707226",
+    "method": "利用虚拟机资源时序互补性，结合长期预测和 CoachVM 保障/超卖份额实现全资源超卖。",
+    "technique": [
+      {
+        "name": "Coach temporal oversubscription",
+        "type": "system-mechanism",
+        "target": "云平台多类资源的低利用率",
+        "action": "预测互补资源模式、调度虚拟机并监控争用以动态缓解性能下降",
+        "effect": "在较小性能损失下承载更多虚拟机",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "云资源利用不足且既有方案难以整体管理 CPU、内存等所有资源。",
+    "scenario": "基于 Azure 虚拟机特征的云平台资源管理。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "composingdistributedcomputationsthroughtaskandkernelfusion",
+    "id": 14201,
+    "title": "Composing Distributed Computations Through Task and Kernel Fusion",
+    "paper": "https://doi.org/10.1145/3669940.3707216",
+    "method": "以分布式计算中间表示分析任务融合，并通过 JIT 进一步融合任务内部核函数。",
+    "technique": [
+      {
+        "name": "Diffuse task-and-kernel fusion",
+        "type": "system-mechanism",
+        "target": "组合式分布任务程序的跨边界优化",
+        "action": "用可扩展中间表示发现分布式任务融合机会并 JIT 融合内核",
+        "effect": "在不修改应用的情况下提升多 GPU 性能",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "高层任务库组合会错过函数和库边界之外的融合优化机会。",
+    "scenario": "最多 128 个 GPU 上的 cuPyNumeric 与 Legate Sparse 应用。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "concertoautomaticcommunicationoptimizationandschedulingforlargescaledeeplearning",
+    "id": 14202,
+    "title": "Concerto: Automatic Communication Optimization and Scheduling for Large-Scale Deep Learning",
+    "paper": "https://doi.org/10.1145/3669940.3707223",
+    "method": "把通信调度建模为资源约束项目调度，并自动分解同步通信以创造计算通信重叠。",
+    "technique": [
+      {
+        "name": "Concerto automatic communication scheduling",
+        "type": "algorithm",
+        "target": "大规模深度学习训练的通信瓶颈",
+        "action": "求解资源约束调度问题并自动拆分关键通信以实现重叠",
+        "effect": "跨多种并行方案生成接近最优的通信计划",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "手工耦合的计算通信重叠方案缺乏通用性、可编程性和稳定性能。",
+    "scenario": "多种大型深度学习并行框架和训练配置。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "cooperativegracefuldegradationincontainerizedclouds",
+    "id": 14203,
+    "title": "Cooperative Graceful Degradation in Containerized Clouds",
+    "paper": "https://doi.org/10.1145/3669940.3707244",
+    "method": "借助容器关键性标签和对角缩放，构建 Phoenix 自动化云韧性控制器。",
+    "technique": [
+      {
+        "name": "Phoenix cooperative graceful degradation",
+        "type": "system-mechanism",
+        "target": "大规模故障下容器化应用的关键服务可用性",
+        "action": "在容量紧张时关闭非关键容器，并联合优化应用与运营方目标",
+        "effect": "提高关键服务可用性并快速响应集群故障",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "云运营方缺少在满足应用可用性要求下执行优雅降级的机制。",
+    "scenario": "Kubernetes 上十万节点规模的故障与韧性基准。",
+    "evidence": "benchmark",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "copperandwirebridgingexpressivenessandperformanceforservicemeshpolicies",
+    "id": 14204,
+    "title": "Copper and Wire: Bridging Expressiveness and Performance for Service Mesh Policies",
+    "paper": "https://doi.org/10.1145/3669940.3707257",
+    "method": "从通信抽象、策略语言和轻量控制面三层重构服务网格架构。",
+    "technique": [
+      {
+        "name": "Copper and Wire mesh architecture",
+        "type": "architecture",
+        "target": "微服务 L7 通信策略的表达与执行",
+        "action": "定义精确策略语义并由控制面以最少数据面资源正确优化执行",
+        "effect": "减少策略代码、尾延迟和 CPU 开销",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "现有服务网格难用、数据面兼容性不足且性能与资源开销高。",
+    "scenario": "真实微服务工作负载、策略与生产轨迹。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "crushacreditbasedapproachforfunctionalunitsharingindynamicallyscheduledhls",
+    "id": 14205,
+    "title": "CRUSH: A Credit-Based Approach for Functional Unit Sharing in Dynamically Scheduled HLS",
+    "paper": "https://doi.org/10.1145/3669940.3707273",
+    "method": "提出信用式 CRUSH 策略，在动态调度 HLS 数据流电路中安全共享功能单元。",
+    "technique": [
+      {
+        "name": "CRUSH credit-based functional-unit sharing",
+        "type": "algorithm",
+        "target": "动态调度 HLS 的昂贵功能单元共享",
+        "action": "解耦共享资源中操作交互，并以可扩展启发式选择共享机会",
+        "effect": "避免共享引入的死锁并降低电路资源和优化时间",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "数据流电路中不谨慎的资源共享会导致性能下降和电路死锁。",
+    "scenario": "Dynamatic HLS 编译器生成的动态数据流电路。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "darwingameplayingtournamentsfortuningapplicationsinnoisycloudenvironments",
+    "id": 14206,
+    "title": "DarwinGame: Playing Tournaments for Tuning Applications in Noisy Cloud Environments",
+    "paper": "https://doi.org/10.1145/3669940.3707259",
+    "method": "以锦标赛式重复比较参数配置，构建能抵抗共享云干扰的 DarwinGame 调优器。",
+    "technique": [
+      {
+        "name": "DarwinGame tournament tuning",
+        "type": "algorithm",
+        "target": "有噪共享云中的应用参数调优",
+        "action": "系统比较不同配置的多次执行以识别相对性能",
+        "effect": "降低干扰造成的选择偏差和执行时间波动",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "既有调优器不考虑共享环境干扰，因而会选择次优配置。",
+    "scenario": "共享且易受干扰的云计算环境。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "debuggertoolchainvalidationviacrossleveldebugging",
+    "id": 14207,
+    "title": "Debugger Toolchain Validation via Cross-Level Debugging",
+    "paper": "https://doi.org/10.1145/3669940.3707271",
+    "method": "比较同一可执行文件的源码级与指令级调试轨迹，依据三类跨层关系检测工具链错误。",
+    "technique": [
+      {
+        "name": "Cross-Level Debugging",
+        "type": "testing-method",
+        "target": "缺少可靠测试预言的调试器工具链",
+        "action": "检查同一程序跨调试层级的可达性、顺序和值一致性",
+        "effect": "在优化与未优化程序中发现调试器缺陷",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "不同可执行文件的调试轨迹不可直接比较，限制现有调试器验证方法。",
+    "scenario": "GDB 与 LLDB 生产级调试器工具链。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "designandoperationofsharedmachinelearningclustersoncampus",
+    "id": 14208,
+    "title": "Design and Operation of Shared Machine Learning Clusters on Campus",
+    "paper": "https://doi.org/10.1145/3669940.3707266",
+    "method": "提出四层可扩展全栈 SING 方案，并总结校园共享 GPU 集群的实际部署与运维经验。",
+    "technique": [
+      {
+        "name": "SING shared-cluster stack",
+        "type": "architecture",
+        "target": "人员有限条件下的校园共享 GPU 集群管理",
+        "action": "以四个可扩展架构层统一系统配置、资源共享和事件管理",
+        "effect": "降低维护成本并改善资源利用与可访问性",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "多用户 GPU 集群面临复杂配置、公平分配和高运维成本。",
+    "scenario": "大学校园中真实部署的共享机器学习集群。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "diluenablinggpuresourcingondemandforserverlessdlservingviaintrospectiveelasticity",
+    "id": 14209,
+    "title": "Dilu: Enabling GPU Resourcing-on-Demand for Serverless DL Serving via Introspective Elasticity",
+    "paper": "https://doi.org/10.1145/3669940.3707251",
+    "method": "用多因素画像、互补调度和二维协同伸缩实现 Dilu 的细粒度 GPU 按需供给。",
+    "technique": [
+      {
+        "name": "introspective elasticity",
+        "type": "system-mechanism",
+        "target": "无服务器深度学习中的 GPU 碎片与 QoS",
+        "action": "联合横向与纵向伸缩，并按任务画像和资源互补性实时调度",
+        "effect": "降低 GPU 碎片并提高吞吐、减少 QoS 违约",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "动态负载与粗粒度静态 GPU 分配在无服务器系统中产生大量碎片。",
+    "scenario": "GPU 无服务器深度学习训练与推理函数。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "dvsyncdecoupledrenderinganddisplayingforsmartphonegraphics",
+    "id": 14210,
+    "title": "D-VSync: Decoupled Rendering and Displaying for Smartphone Graphics",
+    "paper": "https://doi.org/10.1145/3669940.3707235",
+    "method": "将渲染执行与物理显示解耦，使长帧能够提前利用短帧节省的计算窗口。",
+    "technique": [
+      {
+        "name": "D-VSync decoupled rendering",
+        "type": "system-mechanism",
+        "target": "智能手机高帧率界面的掉帧与延迟",
+        "action": "允许帧在显示前多个 VSync 周期完成渲染",
+        "effect": "容忍负载波动并减少掉帧、卡顿和渲染延迟",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "传统 VSync 强耦合渲染与显示，难以应对偶发长帧和高帧率负载。",
+    "scenario": "OpenHarmony、Android 应用和移动游戏；机制已集成 HarmonyOS NEXT。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "earlyterminationforhyperdimensionalcomputingusinginferentialstatistics",
+    "id": 14211,
+    "title": "Early Termination for Hyperdimensional Computing Using Inferential Statistics",
+    "paper": "https://doi.org/10.1145/3669940.3707254",
+    "method": "将超维计算重述为统计采样与检验，用 Omen 在准确率保证下动态提前终止推理。",
+    "technique": [
+      {
+        "name": "Omen statistical early termination",
+        "type": "algorithm",
+        "target": "超维分类器的推理计算开销",
+        "action": "应用推断统计检验判断单个输入何时可提前结束计算",
+        "effect": "在受控精度损失下显著加速推理",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "启发式提前终止缺少统计保证，可能过早损害精度或过晚浪费计算。",
+    "scenario": "四类分类任务的十九个基准实例。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "earthonboardsatelliteimagerycompressionleveraginghistoricalearthobservations",
+    "id": 14212,
+    "title": "Earth+: On-Board Satellite Imagery Compression Leveraging Historical Earth Observations",
+    "paper": "https://doi.org/10.1145/3669940.3707222",
+    "method": "让地面站向卫星上传星座近期参考图像，Earth+ 仅下传相对参考图变化的区域。",
+    "technique": [
+      {
+        "name": "Earth+ constellation-reference compression",
+        "type": "system-mechanism",
+        "target": "地球观测卫星有限的下行链路容量",
+        "action": "跨卫星维护同地点最新参考图并只编码下载变化区域",
+        "effect": "在不降低图像质量下减少下行流量",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "下行容量不足使绝大多数卫星观测图像无法传回地面。",
+    "scenario": "地球观测卫星星座的机载图像压缩。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "edmanultralowlatencyethernetfabricformemorydisaggregation",
+    "id": 14213,
+    "title": "EDM: An Ultra-Low Latency Ethernet Fabric for Memory Disaggregation",
+    "paper": "https://doi.org/10.1145/3669940.3707221",
+    "method": "将远程内存协议栈下沉到以太网 PHY，并在交换机 PHY 中集中调度虚电路。",
+    "technique": [
+      {
+        "name": "EDM PHY-level memory fabric",
+        "type": "architecture",
+        "target": "以太网上内存解耦的远程访问延迟",
+        "action": "绕过 MAC 层处理，并以 PIM 风格调度器动态预留计算节点到内存节点带宽",
+        "effect": "消除排队与二层处理开销，获得超低访问延迟",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "传统 TCP/IP 与 RDMA 的 MAC 层开销使小型远程内存消息延迟过高。",
+    "scenario": "FPGA 测试床和大规模网络仿真的数据中心内存解耦。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "efficientlosslesscompressionofscientificfloatingpointdataoncpusandgpus",
+    "id": 14214,
+    "title": "Efficient Lossless Compression of Scientific Floating-Point Data on CPUs and GPUs",
+    "paper": "https://doi.org/10.1145/3669940.3707280",
+    "method": "设计四种 CPU/GPU 完全兼容的单双精度科学浮点无损压缩算法。",
+    "technique": [
+      {
+        "name": "cross-device floating-point compression",
+        "type": "algorithm",
+        "target": "科学浮点数据的存储与传输瓶颈",
+        "action": "以四种无损编码同时优化压缩率、压缩和解压吞吐",
+        "effect": "避免压缩成为新瓶颈并实现跨 CPU/GPU 高速处理",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "科学数据增长使存储和传输受限，而慢速压缩可能形成新的瓶颈。",
+    "scenario": "CPU、GPU 与 SDRBench 科学浮点数据。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "enhancingcgraefficiencythroughalignedcomputeandcommunicationprovisioning",
+    "id": 14215,
+    "title": "Enhancing CGRA Efficiency Through Aligned Compute and Communication Provisioning",
+    "paper": "https://doi.org/10.1145/3669940.3707230",
+    "method": "识别数据流图重复 motif，并由 Plaid 架构与编译器协同执行、路由和分层映射。",
+    "technique": [
+      {
+        "name": "Plaid motif-aligned CGRA",
+        "type": "architecture",
+        "target": "CGRA 计算与通信资源配置失衡",
+        "action": "以集体处理单元执行 motif，并由编译器联合路由与调度",
+        "effect": "在保持通用性和性能下减少功耗与面积",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "CGRA 常相对有限计算能力过度配置通信资源，降低面积和能效。",
+    "scenario": "资源受限边缘设备上的多类数据流图。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "exo2growingaschedulinglanguage",
+    "id": 14216,
+    "title": "Exo 2: Growing a Scheduling Language",
+    "paper": "https://doi.org/10.1145/3669940.3707218",
+    "method": "通过可信细粒度原语与 Cursors 机制，让用户在编译器外定义和组合调度操作。",
+    "technique": [
+      {
+        "name": "Exo 2 extensible scheduling language",
+        "type": "system-mechanism",
+        "target": "性能程序中不可预先固定的调度控制需求",
+        "action": "提供动作、检查和引用原语供用户安全构建自定义调度库",
+        "effect": "复用调度工作并保持跨平台高性能",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "既有用户可调度语言无法统一决定程序员应控制或自动化哪些优化。",
+    "scenario": "三个平台上的八十余个高性能内核。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "fastondevicellminferencewithnpus",
+    "id": 14217,
+    "title": "Fast On-device LLM Inference with NPUs",
+    "paper": "https://doi.org/10.1145/3669940.3707239",
+    "method": "从提示、张量和 Transformer 块三层重构并调度 CPU/GPU/NPU 协同推理。",
+    "technique": [
+      {
+        "name": "llm.npu three-level offloading",
+        "type": "system-mechanism",
+        "target": "移动设备大模型预填充延迟",
+        "action": "分块可变提示、分离异常值并按硬件亲和与精度敏感性乱序调度模型块",
+        "effect": "显著提高预填充速度并降低能耗",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "移动规模大模型仍有不可接受的推理延迟，尤其受预填充阶段限制。",
+    "scenario": "移动设备 NPU 上的端侧大模型和界面理解应用。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "fasterchaitinlikeregisterallocationviagrammaticaldecompositionsofcontrolflowgraphs",
+    "id": 14218,
+    "title": "Faster Chaitin-like Register Allocation via Grammatical Decompositions of Control-Flow Graphs",
+    "paper": "https://doi.org/10.1145/3669940.3707286",
+    "method": "提出精确刻画程序控制流图的语法分解，并据此设计更快的 Chaitin 式寄存器分配动态规划算法。",
+    "technique": [
+      {
+        "name": "grammatical CFG decomposition",
+        "type": "algorithm",
+        "target": "固定寄存器数下的精确寄存器分配",
+        "action": "以程序语法生成的图分解替代更宽泛的树宽/路径宽分解进行动态规划",
+        "effect": "改善渐近复杂度并扩展真实实例可处理的寄存器数量",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "现有图稀疏参数覆盖的图族过宽，使参数化寄存器分配算法承担不必要开销。",
+    "scenario": "结构化程序控制流图和真实无溢出寄存器分配实例。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "fleetiomanagingmultitenantcloudstoragewithmultiagentreinforcementlearning",
+    "id": 14219,
+    "title": "FleetIO: Managing Multi-Tenant Cloud Storage with Multi-Agent Reinforcement Learning",
+    "paper": "https://doi.org/10.1145/3669940.3707229",
+    "method": "以多智能体强化学习按运行时 I/O 轨迹分类负载并动态调度虚拟化 SSD 资源。",
+    "technique": [
+      {
+        "name": "FleetIO multi-agent RL storage scheduling",
+        "type": "model",
+        "target": "多租户云存储的隔离与利用率冲突",
+        "action": "将细粒度存储收割纳入强化学习决策，并为不同负载类型调整奖励",
+        "effect": "兼顾服务级目标、性能隔离和共享 SSD 利用率",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "软隔离造成长尾延迟，强硬件隔离又导致共享 SSD 利用率低。",
+    "scenario": "真实可编程 SSD 上的多租户云应用。",
+    "evidence": "real-world",
+    "lens": [
+      "强化学习",
+      "多智能体"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "forecastinggpuperformancefordeeplearningtrainingandinference",
+    "id": 14220,
+    "title": "Forecasting GPU Performance for Deep Learning Training and Inference",
+    "paper": "https://doi.org/10.1145/3669940.3707265",
+    "method": "将内核划分为 tile，以机器学习预测 tile 性能并用基本性能定律约束和聚合端到端延迟。",
+    "technique": [
+      {
+        "name": "NeuSight tile-level performance forecasting",
+        "type": "model",
+        "target": "未见模型与未见 GPU 组合的训练和推理性能",
+        "action": "分解内核预测，在 tile 粒度学习延迟后聚合并施加性能边界",
+        "effect": "在无需目标执行的情况下提高跨模型和 GPU 预测精度",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "直接机器学习预测复杂 GPU 内核延迟，在新模型和新硬件上误差很高。",
+    "scenario": "多种深度学习训练/推理工作负载与新旧 GPU。",
+    "evidence": "benchmark",
+    "lens": [
+      "开放集/泛化"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "frugalefficientandeconomicembeddingmodeltrainingwithcommoditygpus",
+    "id": 14221,
+    "title": "Frugal: Efficient and Economic Embedding Model Training with Commodity GPUs",
+    "paper": "https://doi.org/10.1145/3669940.3707245",
+    "method": "利用主动刷新和两级优先队列，把商品 GPU 间经主机内存的通信移出训练关键路径。",
+    "technique": [
+      {
+        "name": "Frugal proactive flushing",
+        "type": "system-mechanism",
+        "target": "低带宽且无 PCIe P2P 的商品 GPU 嵌入模型训练",
+        "action": "提前将其他 GPU 将访问的参数刷新到主机内存并按紧迫性排序",
+        "effect": "缓解通信争用并提高训练吞吐与成本效率",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "商品 GPU 的通信能力不足，使内存密集型嵌入模型训练性能低下。",
+    "scenario": "推荐与图嵌入模型的多 GPU 训练。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "fsmoeaflexibleandscalabletrainingsystemforsparsemixtureofexpertsmodels",
+    "id": 14222,
+    "title": "FSMoE: A Flexible and Scalable Training System for Sparse Mixture-of-Experts Models",
+    "paper": "https://doi.org/10.1145/3669940.3707272",
+    "method": "统一抽象并在线画像 MoE 模块，协同调度通信计算并自适应划分梯度。",
+    "technique": [
+      {
+        "name": "FSMoE adaptive task scheduling",
+        "type": "system-mechanism",
+        "target": "稀疏混合专家模型的训练效率与实现差异",
+        "action": "统一建模路由等模块，流水化节点内外通信、计算和梯度聚合",
+        "effect": "跨多种 MoE 实现获得灵活且可扩展的训练加速",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "MoE 的路由、通信、专家计算和并行模块相互影响，难以通用高效调度。",
+    "scenario": "最多 48 个 GPU 的集群与 GPT-2、Mixtral MoE 模型。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "fusionananalyticsobjectstoreoptimizedforquerypushdown",
+    "id": 14223,
+    "title": "Fusion: An Analytics Object Store Optimized for Query Pushdown",
+    "paper": "https://doi.org/10.1145/3669940.3707234",
+    "method": "协同设计纠删码条带构造和文件放置，使可计算单元在存储节点上保持完整。",
+    "technique": [
+      {
+        "name": "Fusion pushdown-aware object store",
+        "type": "architecture",
+        "target": "纠删码对象存储上的分析查询下推",
+        "action": "按 Parquet 等格式构造条带，避免查询单元碎片化并控制冗余",
+        "effect": "减少跨节点重组和网络延迟",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "纠删码把对象分散到多个节点，选择性查询下推仍需重组对象并产生高延迟。",
+    "scenario": "TPC-H 与真实 SQL 查询的云 OLAP 对象存储。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "graphpipeimprovingperformanceandscalabilityofdnntrainingwithgraphpipelineparallelism",
+    "id": 14224,
+    "title": "GraphPipe: Improving Performance and Scalability of DNN Training with Graph Pipeline Parallelism",
+    "paper": "https://doi.org/10.1145/3669940.3707220",
+    "method": "以 DAG 保留 DNN 拓扑，将模型分成图式流水阶段并联合优化微批调度。",
+    "technique": [
+      {
+        "name": "graph pipeline parallelism",
+        "type": "architecture",
+        "target": "大型 DNN 训练的流水线并行",
+        "action": "发现计算独立的图阶段并并发执行，而非限制为顺序流水",
+        "effect": "降低内存需求并提高训练性能和策略搜索速度",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "顺序流水线忽略 DNN 固有拓扑，错失模型并行机会。",
+    "scenario": "多种 DNN 的分布式多 GPU 训练。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "haloloopawarebootstrappingmanagementforfullyhomomorphicencryption",
+    "id": 14225,
+    "title": "HALO: Loop-aware Bootstrapping Management for Fully Homomorphic Encryption",
+    "paper": "https://doi.org/10.1145/3669940.3707275",
+    "method": "匹配循环密文层级并通过变量打包、展开和目标层调整优化 FHE bootstrapping 放置。",
+    "technique": [
+      {
+        "name": "HALO loop-aware bootstrapping",
+        "type": "algorithm",
+        "target": "含循环 FHE 程序的层级耗尽与 bootstrapping 开销",
+        "action": "协调 live-in/loop-carried 密文层级并减少、调整循环内重置操作",
+        "effect": "正确支持循环并降低执行、编译时间和代码规模",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "自动 bootstrapping 编译器缺少循环支持，限制 FHE 在大型程序中的应用。",
+    "scenario": "含平坦和嵌套循环的七个机器学习 FHE 程序。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "helixservinglargelanguagemodelsoverheterogeneousgpusandnetworkviamaxflow",
+    "id": 14226,
+    "title": "Helix: Serving Large Language Models over Heterogeneous GPUs and Network via Max-Flow",
+    "paper": "https://doi.org/10.1145/3669940.3707215",
+    "method": "把异构 GPU 与网络上的 LLM 推理建模为加权有向图最大流，并用 MILP 联合优化放置与调度。",
+    "technique": [
+      {
+        "name": "Helix max-flow serving optimization",
+        "type": "algorithm",
+        "target": "异构集群中的大模型服务吞吐和延迟",
+        "action": "以 GPU 为节点、计算和网络容量为边构图并求解模型放置与请求调度",
+        "effect": "利用异构资源提高吞吐并降低提示和解码延迟",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "模型放置与请求调度高度耦合，异构 GPU 和网络使联合优化困难。",
+    "scenario": "24 至 42 个 GPU 节点的异构大模型服务集群。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "hhoudiniscalableinvariantlearning",
+    "id": 14227,
+    "title": "H-Houdini: Scalable Invariant Learning",
+    "paper": "https://doi.org/10.1145/3669940.3707263",
+    "method": "把单体 SMT 检查分解为可并行、记忆化的小型层次检查，再正确组合成归纳不变量。",
+    "technique": [
+      {
+        "name": "H-HOUDINI hierarchical invariant learning",
+        "type": "formal-method",
+        "target": "大型硬件设计的安全性质验证",
+        "action": "结合机器学习启发综合与 SAT 增量学习，层次化拆解 SMT 检查",
+        "effect": "自动学习关系不变量并扩展到大型乱序处理器",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "归纳不变量学习在大型硬件设计上难以扩展，限制形式验证自动化。",
+    "scenario": "RISC-V Rocketchip 与 BOOM 微架构安全验证。",
+    "evidence": "benchmark",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "instructionawarecooperativetlbandcachereplacementpolicies",
+    "id": 14228,
+    "title": "Instruction-Aware Cooperative TLB and Cache Replacement Policies",
+    "paper": "https://doi.org/10.1145/3669940.3707247",
+    "method": "协同设计 iTP 的 STLB 指令优先替换与 xPTP 的 L2 页表优先替换，并按压力自适应切换。",
+    "technique": [
+      {
+        "name": "iTP+xPTP cooperative replacement",
+        "type": "hardware-mechanism",
+        "target": "大指令足迹服务器工作负载的 TLB 和缓存未命中",
+        "action": "优先保留指令翻译，并在 L2 缓存补偿新增数据页遍历",
+        "effect": "减少指令相关停顿并提高单核及 SMT 性能",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "频繁指令 TLB 未命中造成流水线停顿，单独优化会增加数据页遍历。",
+    "scenario": "现代服务器工作负载的单核与 SMT 共置执行。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "marionettearowhammerattackviarowcoupling",
+    "id": 14229,
+    "title": "Marionette: A RowHammer Attack via Row Coupling",
+    "paper": "https://doi.org/10.1145/3669940.3707242",
+    "method": "测量 DRAM 耦合行的锤击能力，并利用远端耦合行构造可绕过处理器侧防御的 Marionette 攻击。",
+    "technique": [
+      {
+        "name": "Marionette coupled-row hammering",
+        "type": "hardware-mechanism",
+        "target": "依赖跟踪或隔离的 RowHammer 防御",
+        "action": "锤击与攻击行共享字线但物理地址较远的耦合行",
+        "effect": "隐蔽触发位翻转并扩大 RowHammer 攻击面",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "传统防御只跟踪邻近攻击行，看不到由 DRAM 耦合行引发的位翻转。",
+    "scenario": "FPGA 基础设施、原生服务器和虚拟机隔离环境。",
+    "evidence": "real-world",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "medusaacceleratingserverlessllminferencewithmaterialization",
+    "id": 14230,
+    "title": "Medusa: Accelerating Serverless LLM Inference with Materialization",
+    "paper": "https://doi.org/10.1145/3669940.3707285",
+    "method": "把 CUDA 图和 KV 缓存初始化信息离线物化并在线恢复，以缩短无服务器大模型冷启动。",
+    "technique": [
+      {
+        "name": "Medusa state materialization",
+        "type": "system-mechanism",
+        "target": "无服务器 LLM 推理函数的冷启动",
+        "action": "离线构造 CUDA 图与缓存初始化状态，并以协同参数和内核地址恢复在线复用",
+        "effect": "减少模型加载和首 token 尾延迟",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "模型加载、KV 缓存画像和 CUDA 图动态构造共同造成很高冷启动延迟。",
+    "scenario": "十个模型及真实大模型推理工作负载。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "metasapiensrealtimeneuralrenderingwithefficiencyawarepruningandacceleratedfoveatedrendering",
+    "id": 14231,
+    "title": "MetaSapiens: Real-Time Neural Rendering with Efficiency-Aware Pruning and Accelerated Foveated Rendering",
+    "paper": "https://doi.org/10.1145/3669940.3707227",
+    "method": "结合效率感知剪枝、注视点渲染和负载均衡加速器，在移动端实现实时点式神经渲染。",
+    "technique": [
+      {
+        "name": "MetaSapiens foveated neural rendering",
+        "type": "architecture",
+        "target": "移动设备上的实时高质量点式神经渲染",
+        "action": "剪枝渲染模型、降低周边视觉区域质量并以专用加速器平衡负载",
+        "effect": "在保持主观视觉质量下获得数量级加速",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "移动设备资源有限，难以同时满足神经渲染的实时性与视觉质量。",
+    "scenario": "面向 AR/VR 和数字孪生的移动端渲染。",
+    "evidence": "user study",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "mintcostefficienttracingwithallrequestscollectionviacommonalityandvariabilityanalysis",
+    "id": 14232,
+    "title": "Mint: Cost-Efficient Tracing with All Requests Collection via Commonality and Variability Analysis",
+    "paper": "https://doi.org/10.1145/3669940.3707287",
+    "method": "将分布式轨迹解析为公共模式与可变参数，在代理侧聚合模式、过滤参数以捕获全部请求。",
+    "technique": [
+      {
+        "name": "Mint commonality-plus-variability tracing",
+        "type": "instrumentation",
+        "target": "海量分布式轨迹的信息保留与开销权衡",
+        "action": "分离并聚合公共轨迹模式，同时压缩可变参数",
+        "effect": "完整采集请求且显著降低存储和网络开销",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "传统全留或全弃采样无法兼顾关键轨迹信息和数据规模。",
+    "scenario": "真实生产分布式追踪数据与服务代理。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "moatsecurelymitigatingrowhammerwithperrowactivationcounters",
+    "id": 14233,
+    "title": "MOAT: Securely Mitigating Rowhammer with Per-Row Activation Counters",
+    "paper": "https://doi.org/10.1145/3669940.3707278",
+    "method": "设计采用 eligibility 与 alert 双阈值的逐行激活计数防御，并对安全阈值给出证明分析。",
+    "technique": [
+      {
+        "name": "MOAT dual-threshold PRAC mitigation",
+        "type": "hardware-mechanism",
+        "target": "DDR5 PRAC+ABO 下的 RowHammer 攻击",
+        "action": "以 ETH 选择缓解行、以 ATH 触发控制器退避并约束连续告警间可利用激活",
+        "effect": "在较低性能和存储开销下提供可证明的 RowHammer 安全性",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "PRAC+ABO 只是框架，既有实现仍可被特制激活模式绕过。",
+    "scenario": "SPEC、GAP 工作负载和 DDR5 RowHammer 防御。",
+    "evidence": "benchmark",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "moelightninghighthroughputmoeinferenceonmemoryconstrainedgpus",
+    "id": 14234,
+    "title": "MoE-Lightning: High-Throughput MoE Inference on Memory-constrained GPUs",
+    "paper": "https://doi.org/10.1145/3669940.3707267",
+    "method": "用分页权重的 CPU-GPU-I/O 流水线和分层 Roofline 性能模型选择高吞吐 MoE 推理策略。",
+    "technique": [
+      {
+        "name": "CGOPipe hierarchical scheduling",
+        "type": "system-mechanism",
+        "target": "显存受限 GPU 上的大型 MoE 批推理",
+        "action": "流水化 CPU、GPU 与 I/O，并以 HRM 模型搜索资源配置",
+        "effect": "提高低成本 GPU 上的吞吐和内存利用率",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "MoE 模型体积大，使缺少高端 GPU 的用户难以高效部署。",
+    "scenario": "单个或多个 T4 GPU 上的 Mixtral 与 DBRX 批推理。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "mvqtowardsefficientdnncompressionandaccelerationwithmaskedvectorquantization",
+    "id": 14235,
+    "title": "MVQ: Towards Efficient DNN Compression and Acceleration with Masked Vector Quantization",
+    "paper": "https://doi.org/10.1145/3669940.3707268",
+    "method": "联合 N:M 剪枝、masked k-means 向量量化和稀疏脉动阵列加速 DNN。",
+    "technique": [
+      {
+        "name": "masked vector quantization",
+        "type": "algorithm",
+        "target": "DNN 压缩中的重要权重保真与硬件效率",
+        "action": "先移除低重要性权重，再仅对未剪枝权重执行掩码聚类并映射到稀疏阵列",
+        "effect": "在相近压缩率下改善精度、FLOPs 和能效",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "传统向量量化不能良好保留重要权重，导致显著精度损失。",
+    "scenario": "分类、检测和分割模型及 ASIC 加速器评估。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "nazarmonitoringandadaptingmlmodelsonmobiledevices",
+    "id": 14236,
+    "title": "Nazar: Monitoring and Adapting ML Models on Mobile Devices",
+    "paper": "https://doi.org/10.1145/3669940.3707246",
+    "method": "在无需用户反馈下持续监控移动端模型，聚合设备退化现象、定位共同根因并针对性适配。",
+    "technique": [
+      {
+        "name": "Nazar root-cause adaptation",
+        "type": "system-mechanism",
+        "target": "移动设备上因本地数据漂移造成的模型精度退化",
+        "action": "跨设备检测群体退化、自动定位根因并更新受影响模型",
+        "effect": "恢复端侧推理准确率",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "运营方难以获知移动端模型精度，且退化会随本地数据变化不可预测地发生。",
+    "scenario": "两个计算机视觉数据集上的移动端模型。",
+    "evidence": "benchmark",
+    "lens": [
+      "开放集/泛化"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "optimizingdatalogforthegpu",
+    "id": 14237,
+    "title": "Optimizing Datalog for the GPU",
+    "paper": "https://doi.org/10.1145/3669940.3707274",
+    "method": "以 HISA 范围索引数据结构和迭代关系代数内核实现 GPUlog 的 GPU Datalog 后端。",
+    "technique": [
+      {
+        "name": "HISA GPU Datalog execution",
+        "type": "data-construction",
+        "target": "递归 Datalog 推导的吞吐和内存效率",
+        "action": "把增量范围索引关系组织为哈希索引排序数组并在 GPU 上执行稠密内核",
+        "effect": "加速上下文敏感分析并保持有利内存占用",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "CPU Datalog 引擎难以利用数据中心 GPU 的大规模并行吞吐。",
+    "scenario": "httpd 上下文敏感指针分析等 Datalog 工作负载。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "optimizingquantumcircuitsfastandslow",
+    "id": 14238,
+    "title": "Optimizing Quantum Circuits, Fast and Slow",
+    "paper": "https://doi.org/10.1145/3669940.3707240",
+    "method": "在统一抽象下协同快速重写与慢速酉综合，形成简单的 guoq 量子电路优化算法。",
+    "technique": [
+      {
+        "name": "guoq rewrite-resynthesis optimization",
+        "type": "algorithm",
+        "target": "量子电路操作数量最小化",
+        "action": "将重写规则与电路空间搜索视为统一变换并交替利用其协同作用",
+        "effect": "在广泛基准上生成更优量子电路",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "快速重写和高质量但缓慢的酉综合长期割裂，难以兼顾优化成本与结果。",
+    "scenario": "多类量子电路优化基准。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "partircomposingspmdpartitioningstrategiesformachinelearning",
+    "id": 14239,
+    "title": "PartIR: Composing SPMD Partitioning Strategies for Machine Learning",
+    "paper": "https://doi.org/10.1145/3669940.3707284",
+    "method": "以 schedule 风格 API 增量重写机器学习 IR，组合用户定义或自动生成的多种 SPMD 分片策略。",
+    "technique": [
+      {
+        "name": "PartIR composable partitioning",
+        "type": "system-mechanism",
+        "target": "大模型训练的多维并行分片复杂性",
+        "action": "将策略与模型实现解耦并按明确定义规则逐步改写中间表示",
+        "effect": "提供可表达、可预测且硬件/运行时无关的分区",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "数据、模型和优化器分片组合日益复杂且常与实现紧耦合。",
+    "scenario": "多种架构的大型神经网络训练。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "pccheckpersistentconcurrentcheckpointingforml",
+    "id": 14240,
+    "title": "PCcheck: Persistent Concurrent Checkpointing for ML",
+    "paper": "https://doi.org/10.1145/3669940.3707255",
+    "method": "让训练与持久化检查点并发执行，支持 SSD 与持久内存及单机/分布式配置。",
+    "technique": [
+      {
+        "name": "PCcheck concurrent persistence",
+        "type": "system-mechanism",
+        "target": "大规模机器学习训练的高频检查点开销",
+        "action": "在不暂停训练的情况下并发写入持久介质",
+        "effect": "以很低吞吐开销实现快速故障恢复和细粒度监控",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "传统检查点需周期性暂停训练，高频保存开销大而低频保存恢复时间长。",
+    "scenario": "长时间单机和分布式机器学习训练。",
+    "evidence": "benchmark",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "performancepredictionofonnicnetworkfunctionswithmultiresourcecontentionandtrafficawareness",
+    "id": 14241,
+    "title": "Performance Prediction of On-NIC Network Functions with Multi-Resource Contention and Traffic Awareness",
+    "paper": "https://doi.org/10.1145/3669940.3707232",
+    "method": "建立同时刻画 SmartNIC 多资源争用和外部流量属性的 Yala 网络功能性能预测系统。",
+    "technique": [
+      {
+        "name": "Yala contention-aware prediction",
+        "type": "model",
+        "target": "共置 SmartNIC 网络功能的性能与 SLA",
+        "action": "按板载加速器和内存资源行为建模争用，并随流量属性调整预测",
+        "effect": "提高性能预测精度并减少 SLA 违约",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "既有预测缺少 SmartNIC 专属知识和流量感知，共置时准确率低。",
+    "scenario": "BlueField SmartNIC 上的多网络功能共置。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "pipellmfastandconfidentiallargelanguagemodelserviceswithspeculativepipelinedencryption",
+    "id": 14242,
+    "title": "PipeLLM: Fast and Confidential Large Language Model Services with Speculative Pipelined Encryption",
+    "paper": "https://doi.org/10.1145/3669940.3707224",
+    "method": "预测 LLM 服务将访问的数据，把加密与 GPU 计算投机式流水重叠并在误判时低成本让出流水线。",
+    "technique": [
+      {
+        "name": "speculative pipelined encryption",
+        "type": "system-mechanism",
+        "target": "GPU 机密计算中 LLM 服务的加密开销",
+        "action": "根据服务模式预取并加密未来数据，同时与 GPU 计算重叠",
+        "effect": "保留机密隔离并隐藏大部分加密延迟",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "GPU 数据加密可使大型模型服务吞吐大幅下降，而加密模块事前不知道请求数据。",
+    "scenario": "13B 至 175B 模型的机密 GPU 推理服务。",
+    "evidence": "benchmark",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "pulseacceleratingdistributedpointertraversalsondisaggregatedmemory",
+    "id": 14243,
+    "title": "pulse: Accelerating Distributed Pointer-Traversals on Disaggregated Memory",
+    "paper": "https://doi.org/10.1145/3669940.3707253",
+    "method": "把链式数据结构指针遍历下沉到解耦内存附近，并以 pulse 框架支持分布式执行。",
+    "technique": [
+      {
+        "name": "pulse near-memory pointer traversal",
+        "type": "architecture",
+        "target": "机架级解耦内存上的链式结构访问",
+        "action": "在内存侧执行可表达的分布指针遍历而非依赖 CPU 节点缓存",
+        "effect": "提升多类遍历的延迟、吞吐和能效",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "CPU 缓存无法加速跨链式结构的连续指针遍历。",
+    "scenario": "机架规模解耦内存上的多种指针遍历工作负载。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "qeccsynthalayoutsynthesizerforquantumerrorcorrectioncodesonsparsearchitectures",
+    "id": 14244,
+    "title": "QECC-Synth: A Layout Synthesizer for Quantum Error Correction Codes on Sparse Architectures",
+    "paper": "https://doi.org/10.1145/3669940.3707236",
+    "method": "系统分类 ancilla bridge 的设计自由度，并用 MaxSAT 自动综合稀疏硬件上的量子纠错布局。",
+    "technique": [
+      {
+        "name": "QECC-Synth MaxSAT layout synthesis",
+        "type": "formal-method",
+        "target": "稠密连接需求与稀疏量子硬件之间的失配",
+        "action": "形式化辅助量子位桥接布局的可选设计并求解最优配置",
+        "effect": "跨多种纠错码和硬件生成更高质量布局",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "人工专用布局和未充分利用 QEC 特征的方法缺少能力与通用性。",
+    "scenario": "多种量子纠错码与稀疏量子架构。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "rangeblocksasynchronizationfacilityfordomainspecificarchitectures",
+    "id": 14245,
+    "title": "RANGE-BLOCKS: A Synchronization Facility for Domain-Specific Architectures",
+    "paper": "https://doi.org/10.1145/3669940.3707225",
+    "method": "以键范围作为同步边界，用小型片上表紧凑表达嵌套对象互斥。",
+    "technique": [
+      {
+        "name": "Range-blocks synchronization",
+        "type": "hardware-mechanism",
+        "target": "领域专用架构上的动态可变数据结构",
+        "action": "用符号范围锁捕捉相关区域并即时建立互斥",
+        "effect": "减少锁缓存、数据流量和更新开销并提高并行性能",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "DSA 缺少同步设施，只能使用昂贵地址原子或把批更新移回主机。",
+    "scenario": "128 tile 数据流 DSA 上的动态数据结构。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "rassmresiduebasedaccelerationofsinglesparsematrixcomputationviaadaptivetiling",
+    "id": 14246,
+    "title": "RASSM: Residue-based Acceleration of Single Sparse Matrix Computation via Adaptive Tiling",
+    "paper": "https://doi.org/10.1145/3669940.3707219",
+    "method": "以 residue matrix 紧凑表示非零分布，按输入自适应选择二维 tile 大小。",
+    "technique": [
+      {
+        "name": "RASSM residue-based adaptive tiling",
+        "type": "algorithm",
+        "target": "单稀疏矩阵内核的数据移动与缓存利用",
+        "action": "从 residue 模式推断 tile 尺寸并联合利用空间和时间局部性",
+        "effect": "提高缓存占用和稀疏矩阵计算性能",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "固定分块无法适应不同稀疏模式，造成数据移动和缓存效率损失。",
+    "scenario": "服务器 CPU 上的 SpMM 等稀疏矩阵内核。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "resbmregionbasedscaleandminimallevelbootstrappingmanagementforfheviamincut",
+    "id": 14247,
+    "title": "ReSBM: Region-based Scale and Minimal-Level Bootstrapping Management for FHE via Min-Cut",
+    "paper": "https://doi.org/10.1145/3669940.3707276",
+    "method": "将数据流图划分为乘法深度为一的区域，以最小割和分层策略联合放置 scale 管理与 bootstrapping。",
+    "technique": [
+      {
+        "name": "ReSBM region-based min-cut placement",
+        "type": "algorithm",
+        "target": "RNS-CKKS 加密推理的尺度溢出和 bootstrapping 开销",
+        "action": "区域内最小割优化操作，跨区域识别重缩放并仅提升到必要密文层级",
+        "effect": "加快编译并降低大型加密模型推理延迟",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "尺度与层级管理相互耦合，使最优 bootstrapping 放置成为困难的 NP-hard 问题。",
+    "scenario": "CPU 上多种复杂模型的全同态加密推理。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "rethinkingjavaperformanceanalysis",
+    "id": 14248,
+    "title": "Rethinking Java Performance Analysis",
+    "paper": "https://doi.org/10.1145/3669940.3707217",
+    "method": "全面更新 DaCapo，按 47 维刻画 22 个工作负载，并以主成分分析检验多样性和集成新方法。",
+    "technique": [
+      {
+        "name": "refreshed DaCapo methodology",
+        "type": "measurement-method",
+        "target": "Java 性能分析的代表性与方法学时效性",
+        "action": "系统更新工作负载、建立多维特征并在统一框架分析生产 JVM",
+        "effect": "为系统性能研究提供更严格且可维护的实证基础",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "基准和方法维护落后于快速创新，会削弱性能研究结论的有效性。",
+    "scenario": "生产 Java、垃圾收集器和 DaCapo 基准套件。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "robustnessverificationforcheckingcrashconsistencyofnonvolatilememory",
+    "id": 14249,
+    "title": "Robustness Verification for Checking Crash Consistency of Non-volatile Memory",
+    "paper": "https://doi.org/10.1145/3669940.3707269",
+    "method": "把崩溃后 NVM 状态可达性约化为带额外顺序约束的崩溃前执行有效性，并以 SMT 搜索所有部分执行。",
+    "technique": [
+      {
+        "name": "PMVerify robustness verification",
+        "type": "formal-method",
+        "target": "非易失内存程序的崩溃一致性",
+        "action": "符号编码程序，在 DPLL(T) 框架中检查崩溃前后状态可达性",
+        "effect": "无需用户指导即可检测鲁棒性违反",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "NVM 写入顺序弱且手工 flush 易错，现有动态测试又依赖用户指导。",
+    "scenario": "PMDK 示例基准上的非易失内存程序。",
+    "evidence": "benchmark",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "rtlverificationforsecurespeculationusingcontractshadowlogic",
+    "id": 14250,
+    "title": "RTL Verification for Secure Speculation Using Contract Shadow Logic",
+    "paper": "https://doi.org/10.1145/3669940.3707243",
+    "method": "利用架构设计知识构造 Contract Shadow Logic，验证以软硬件契约表达的安全推测性质。",
+    "technique": [
+      {
+        "name": "Contract Shadow Logic",
+        "type": "formal-method",
+        "target": "乱序处理器抵御未知推测执行攻击的 RTL 设计",
+        "action": "以低人工成本扩展契约式安全性质的形式验证",
+        "effect": "在不安全设计中发现攻击并为安全设计生成完整证明",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "推测执行漏洞持续出现，需要可扩展且严格的硬件防御验证。",
+    "scenario": "三个乱序处理器等多个 RTL 设计。",
+    "evidence": "benchmark",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "segueampcolorguardoptimizingsfiperformanceandscalabilityonmodernarchitectures",
+    "id": 14251,
+    "title": "Segue \\&amp; ColorGuard: Optimizing SFI Performance and Scalability on Modern Architectures",
+    "paper": "https://doi.org/10.1145/3669940.3707249",
+    "method": "分别利用 x86-64 分段降低 SFI 内存访问插桩成本，并用内存标签扩展同地址空间隔离实例数。",
+    "technique": [
+      {
+        "name": "Segue and ColorGuard SFI optimization",
+        "type": "hardware-mechanism",
+        "target": "WebAssembly 软件故障隔离的性能和可扩展性",
+        "action": "以分段减少边界检查，以 MPK 等标签隔离更多并发实例",
+        "effect": "降低沙箱开销并提高单地址空间多实例密度",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "编译器内存访问插桩开销高，且现有隔离限制可并发 Wasm 实例数量。",
+    "scenario": "Firefox 字体渲染、服务器 Wasm 和三个生产工具链。",
+    "evidence": "real-world",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "selectivelyuniformconcurrencytesting",
+    "id": 14252,
+    "title": "Selectively Uniform Concurrency Testing",
+    "paper": "https://doi.org/10.1145/3669940.3707214",
+    "method": "在选定程序事件子集上进行交错空间均匀采样，形成在线随机并发测试算法 SURW。",
+    "technique": [
+      {
+        "name": "Selectively Uniform Random Walk",
+        "type": "testing-method",
+        "target": "低频线程交错触发的并发缺陷",
+        "action": "以少量附加信息均匀探索全部或选定事件的线程交错",
+        "effect": "更快暴露更多并发错误并改善行为覆盖",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "既有随机并发测试采样高度不均，难以发现极少交错才出现的错误。",
+    "scenario": "领先并发基准和真实并发程序。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "smoothedifferentiableegraphextraction",
+    "id": 14253,
+    "title": "SmoothE: Differentiable E-Graph Extraction",
+    "paper": "https://doi.org/10.1145/3669940.3707262",
+    "method": "把离散 e-graph 提取松弛为概率化连续可微优化，并用梯度下降和 GPU 稀疏并行搜索表达式。",
+    "technique": [
+      {
+        "name": "SmoothE differentiable extraction",
+        "type": "algorithm",
+        "target": "复杂非线性代价下的 e-graph 最优表达式提取",
+        "action": "连续松弛离散选择并对任意可微代价函数执行梯度优化",
+        "effect": "改善解质量与可扩展性的权衡",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "现有提取器可扩展性与质量冲突，且多只支持简单线性代价。",
+    "scenario": "五类应用的真实 e-graph 与三种代价模型。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "supernovaalgorithmhardwarecodesignforresourceawareslam",
+    "id": 14254,
+    "title": "SuperNoVA: Algorithm-Hardware Co-Design for Resource-Aware SLAM",
+    "paper": "https://doi.org/10.1145/3669940.3707258",
+    "method": "跨算法和硬件动态构造满足时延目标的子图、虚拟化图处理资源并加速 SLAM 后端。",
+    "technique": [
+      {
+        "name": "SuperNoVA resource-aware SLAM",
+        "type": "architecture",
+        "target": "资源受限设备上的大规模实时 SLAM",
+        "action": "按精度和时延构造子图并由专用图处理架构加速",
+        "effect": "降低后端计算延迟和位姿误差且满足时限",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "紧凑 AR/VR 设备难以同时提供高精度、实时性和资源效率。",
+    "scenario": "大规模 AR 数据集上的嵌入式 SLAM。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "tallynonintrusiveperformanceisolationforconcurrentdeeplearningworkloads",
+    "id": 14255,
+    "title": "Tally: Non-Intrusive Performance Isolation for Concurrent Deep Learning Workloads",
+    "paper": "https://doi.org/10.1145/3669940.3707282",
+    "method": "在 GPU 线程块粒度调度并发内核，以非侵入方式隔离高优先推理和尽力训练。",
+    "technique": [
+      {
+        "name": "Tally thread-block scheduling",
+        "type": "system-mechanism",
+        "target": "生产深度学习集群的 GPU 共享干扰",
+        "action": "细粒度安排不同工作负载的线程块以控制共执行争用",
+        "effect": "保持较高系统吞吐同时显著降低尾延迟干扰",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "既有 GPU 共享方案集成成本高、隔离不足且应用兼容性有限。",
+    "scenario": "并发高优先级推理与尽力训练工作负载。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "targetawareimplementationofrealexpressions",
+    "id": 14256,
+    "title": "Target-Aware Implementation of Real Expressions",
+    "paper": "https://doi.org/10.1145/3669940.3707277",
+    "method": "用目标描述刻画运算符的实数近似、成本和精度，并迭代搜索等价的目标专用程序。",
+    "technique": [
+      {
+        "name": "Chassis target-aware numerical compilation",
+        "type": "algorithm",
+        "target": "低精度硬件上数值表达式的速度与精度权衡",
+        "action": "执行 modulo-equivalence 指令选择和成本机会启发式迭代改进",
+        "effect": "跨 ISA、库和语言生成更优数值实现",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "传统编译器不善平衡精度，数值编译器又忽略具体目标环境。",
+    "scenario": "九种硬件 ISA、数学库和编程语言目标。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "telaatemporalloadawarecloudvirtualdiskplacementscheme",
+    "id": 14257,
+    "title": "Tela: A Temporal Load-Aware Cloud Virtual Disk Placement Scheme",
+    "paper": "https://doi.org/10.1145/3669940.3707252",
+    "method": "以一组可解释模型预测虚拟磁盘时序负载和仓库峰值，再按模式执行削峰均衡放置。",
+    "technique": [
+      {
+        "name": "Tela temporal load-aware placement",
+        "type": "algorithm",
+        "target": "云虚拟磁盘仓库的负载均衡与过载",
+        "action": "预测时间变化和潜在峰值，并把互补磁盘负载组合到物理仓库",
+        "effect": "减少过载次数、持续时间和负载失衡",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "忽略云负载时间波动的磁盘放置会导致资源低效和频繁仓库过载。",
+    "scenario": "云块存储的数据中心虚拟磁盘放置。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "unizkacceleratingzeroknowledgeproofwithunifiedhardwareandflexiblekernelmapping",
+    "id": 14258,
+    "title": "UniZK: Accelerating Zero-Knowledge Proof with Unified Hardware and Flexible Kernel Mapping",
+    "paper": "https://doi.org/10.1145/3669940.3707228",
+    "method": "以增强局部互连和向量模式的统一脉动阵列，配合灵活映射支持多种 ZKP 计算核。",
+    "technique": [
+      {
+        "name": "UniZK unified accelerator",
+        "type": "architecture",
+        "target": "新旧零知识证明协议的多样计算核",
+        "action": "把 NTT、哈希和多项式计算映射到共享硬件原语",
+        "effect": "提高资源利用并跨协议显著加速证明",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "专用单元难以在一个芯片上高效覆盖新型哈希 ZKP 的多样内核。",
+    "scenario": "隐私区块链和零知识机器学习协议。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "usinganalyticalperformancepowermodelandfinegraineddvfstoenhanceaiacceleratorenergyefficiency",
+    "id": 14259,
+    "title": "Using Analytical Performance/Power Model and Fine-Grained DVFS to Enhance AI Accelerator Energy Efficiency",
+    "paper": "https://doi.org/10.1145/3669940.3707231",
+    "method": "为每个算子建立分段线性性能与温度相关功耗模型，并用遗传搜索选择细粒度 DVFS。",
+    "technique": [
+      {
+        "name": "operator-level model-guided DVFS",
+        "type": "algorithm",
+        "target": "AI 加速器能耗与性能约束",
+        "action": "分类和预处理算子，再搜索单算子或算子组频率",
+        "effect": "在小幅性能损失下减少 NPU 功耗",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "传统 DVFS 控制延迟高，只能粗粒度调频，错失算子级节能机会。",
+    "scenario": "Ascend NPU 上包括 GPT-3 训练的应用。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "vattentiondynamicmemorymanagementforservingllmswithoutpagedattention",
+    "id": 14260,
+    "title": "vAttention: Dynamic Memory Management for Serving LLMs without PagedAttention",
+    "paper": "https://doi.org/10.1145/3669940.3707256",
+    "method": "使用 CUDA 虚拟内存 API 解耦虚拟与物理分配，使 KV 缓存虚拟连续而物理按需映射。",
+    "technique": [
+      {
+        "name": "vAttention decoupled allocation",
+        "type": "system-mechanism",
+        "target": "LLM 服务 KV 缓存碎片与 PagedAttention 开销",
+        "action": "保持连续虚拟地址并动态分配物理显存，附加 LLM 专属优化",
+        "effect": "兼容现有 attention 内核并提高服务吞吐",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "PagedAttention 缓解物理碎片却破坏虚拟连续性，引入编程和性能开销。",
+    "scenario": "FlashAttention-2 与 FlashInfer 大模型服务。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "zraidleveragingzonerandomwriteareazrwaforalleviatingpartialparitytaxinznsraid",
+    "id": 14261,
+    "title": "ZRAID: Leveraging Zone Random Write Area (ZRWA) for Alleviating Partial Parity Tax in ZNS RAID",
+    "paper": "https://doi.org/10.1145/3669940.3707248",
+    "method": "利用数据区的 ZRWA 临时存放部分校验，将写入分散并由后续数据覆盖过期校验。",
+    "technique": [
+      {
+        "name": "ZRAID ZRWA parity buffering",
+        "type": "system-mechanism",
+        "target": "ZNS RAID 不完整条带的部分校验税",
+        "action": "在各数据区写指针附近原地更新临时校验而非集中永久日志",
+        "effect": "消除吞吐瓶颈并减少闪存写放大",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "集中记录部分校验会限制吞吐、加剧写放大并缩短 ZNS SSD 寿命。",
+    "scenario": "真实 ZNS SSD 上的 fio 和 RocksDB。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "acceleratingllmservingformultiturndialogueswithefficientresourcemanagement",
+    "id": 14262,
+    "title": "Accelerating LLM Serving for Multi-turn Dialogues with Efficient Resource Management",
+    "paper": "https://doi.org/10.1145/3676641.3716245",
+    "method": "构建 GPU-CPU-SSD 多级 KV 缓存复用历史轮次，并公平重排请求以缓解队头阻塞。",
+    "technique": [
+      {
+        "name": "FlashGen multi-level KV reuse",
+        "type": "system-mechanism",
+        "target": "多轮对话 LLM 服务的重复计算和 GPU 低利用",
+        "action": "跨三级存储保留并低成本恢复 KV，同时调整请求次序",
+        "effect": "提高多轮生成吞吐并保持相近延迟",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "多轮上下文需重算 KV，增长的提示又使 FCFS 调度产生队头阻塞。",
+    "scenario": "ShareGPT 多轮对话上的 OPT-30B 与 Llama-2-70B。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "affinitybasedoptimizationsfortfheonprocessingindram",
+    "id": 14263,
+    "title": "Affinity-based Optimizations for TFHE on Processing-in-DRAM",
+    "paper": "https://doi.org/10.1145/3676641.3716246",
+    "method": "分析 TFHE 子任务数据亲和模式，并用离线调度在维持并行性下最小化远程数据访问。",
+    "technique": [
+      {
+        "name": "affinity-aware TFHE PIM scheduling",
+        "type": "algorithm",
+        "target": "PIM 上 TFHE 的远程数据访问开销",
+        "action": "联合算法重构与数据亲和调度，将计算放到相近 DRAM 资源",
+        "effect": "利用内部带宽显著加速加密计算",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "只追求并行的 TFHE 加速器忽略数据亲和，在 PIM 中产生过多远程访问。",
+    "scenario": "FPGA PIM 系统和真实 TFHE 基准。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "amuletautomateddesigntimetestingofsecurespeculationcountermeasures",
+    "id": 14264,
+    "title": "AMuLeT: Automated Design-Time Testing of Secure Speculation Countermeasures",
+    "paper": "https://doi.org/10.1145/3676641.3716247",
+    "method": "把商业 CPU 的模型式关系测试迁移到微架构模拟器，并放大泄漏以自动搜索防御漏洞。",
+    "technique": [
+      {
+        "name": "AMuLeT relational defense testing",
+        "type": "testing-method",
+        "target": "安全推测硬件对策的设计期安全保证",
+        "action": "定义现实攻击者观察模型并在巨大微架构状态空间中高吞吐搜索泄漏",
+        "effect": "在有限预算内发现已知和未知防御漏洞",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "多种 Spectre 硬件对策后来被攻破，设计早期缺少易用自动测试工具。",
+    "scenario": "四种 2018–2024 安全推测对策的模拟器测试。",
+    "evidence": "simulation",
+    "lens": [
+      "渗透测试",
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "aquanetworkacceleratedmemoryoffloadingforllmsinscaleupgpudomains",
+    "id": 14265,
+    "title": "Aqua: Network-Accelerated Memory Offloading for LLMs in Scale-Up GPU Domains",
+    "paper": "https://doi.org/10.1145/3676641.3715983",
+    "method": "以网络加速的推理状态分页支持时间片抢占，使突发负载下 LLM 仍保持响应和吞吐。",
+    "technique": [
+      {
+        "name": "Aqua low-overhead state paging",
+        "type": "system-mechanism",
+        "target": "显存受限且请求突发的大模型推理",
+        "action": "抢占提示并高效在 scale-up GPU 域中换出和恢复推理状态",
+        "effect": "降低内存分页开销并避免准入控制造成无响应",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "显存耗尽时准入控制会拒绝突发请求，而普通抢占分页又严重降低吞吐。",
+    "scenario": "八张 H100 上多模态大型生成模型服务。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "becimorbememoryadualmodeawarednncompilerforcimaccelerators",
+    "id": 14266,
+    "title": "Be CIM or Be Memory: A Dual-mode-aware DNN Compiler for CIM Accelerators",
+    "paper": "https://doi.org/10.1145/3676641.3716248",
+    "method": "把计算/内存模式切换纳入 CIM 编译空间，用动态规划与混合整数规划分配网络段资源。",
+    "technique": [
+      {
+        "name": "CMSwitch dual-mode compilation",
+        "type": "algorithm",
+        "target": "CIM 加速器在多样 DNN 中的计算与内存需求",
+        "action": "通过新硬件抽象识别最佳网络段和对应模式资源配置",
+        "effect": "充分利用动态模式切换并提升推理性能",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "现有编译器忽略 CIM 可动态切换计算和内存模式的能力。",
+    "scenario": "包括大语言模型在内的真实 DNN 应用。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "bqsimgpuacceleratedbatchquantumcircuitsimulationusingdecisiondiagram",
+    "id": 14267,
+    "title": "BQSim: GPU-accelerated Batch Quantum Circuit Simulation using Decision Diagram",
+    "paper": "https://doi.org/10.1145/3676641.3715984",
+    "method": "用决策图压缩量子电路并转换为 GPU 高效结构，再以任务图重叠内核与数据移动。",
+    "technique": [
+      {
+        "name": "BQSim GPU batch simulation",
+        "type": "system-mechanism",
+        "target": "需要多输入的批量量子电路模拟",
+        "action": "以决策图减少计算，并合并重复内核调用、重叠执行与传输",
+        "effect": "显著提高测试和验证场景的批模拟速度",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "既有量子模拟器主要一次处理一个输入，无法高效覆盖多种场景。",
+    "scenario": "量子算法测试与验证的批量电路模拟。",
+    "evidence": "benchmark",
+    "lens": [
+      "靶场/环境生成"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "cascadeadependencyawareefficienttrainingframeworkfortemporalgraphneuralnetwork",
+    "id": 14268,
+    "title": "Cascade: A Dependency-aware Efficient Training Framework for Temporal Graph Neural Network",
+    "paper": "https://doi.org/10.1145/3676641.3716250",
+    "method": "按节点空间和时间依赖自适应组批，并依节点记忆相似性和运行反馈调整更新频率。",
+    "technique": [
+      {
+        "name": "Cascade dependency-aware batching",
+        "type": "system-mechanism",
+        "target": "时序图神经网络训练的并行性与记忆新鲜度冲突",
+        "action": "同批放入空间独立事件，打破稳定节点时间依赖并反馈调节更新",
+        "effect": "在不损害模型精度下提高训练速度",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "大批次提升并行却使节点记忆陈旧，小批次又导致高延迟和硬件低利用。",
+    "scenario": "多种真实动态图任务的 TGNN 训练。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "ciphermatchacceleratinghomomorphicencryptionbasedstringmatchingviamemoryefficientdatapackingandinflashprocessing",
+    "id": 14269,
+    "title": "CIPHERMATCH: Accelerating Homomorphic Encryption-Based String Matching via Memory-Efficient Data Packing and In-Flash Processing",
+    "paper": "https://doi.org/10.1145/3676641.3716251",
+    "method": "协同设计紧凑密文数据打包、仅加法匹配算法与 NAND 闪存内处理架构。",
+    "technique": [
+      {
+        "name": "CIPHERMATCH packing and in-flash processing",
+        "type": "architecture",
+        "target": "同态加密精确字符串匹配的计算与数据移动",
+        "action": "避免乘法和旋转，并利用闪存阵列/位级并行执行同态加法",
+        "effect": "降低密文内存占用、延迟和能耗",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "复杂同态操作和庞大密文数据造成安全字符串匹配的高延迟。",
+    "scenario": "DNA 精确匹配和加密数据库搜索。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "comettowardspracticalw4a4kv4llmsserving",
+    "id": 14270,
+    "title": "COMET: Towards Practical W4A4KV4 LLMs Serving",
+    "paper": "https://doi.org/10.1145/3676641.3716252",
+    "method": "以细粒度混合精度量化、W4Ax 内核和 SM 负载均衡实现权重、激活与 KV 缓存全 4 bit 服务。",
+    "technique": [
+      {
+        "name": "COMET W4A4KV4 serving",
+        "type": "system-mechanism",
+        "target": "LLM 服务的计算和 KV 缓存带宽开销",
+        "action": "量化多数激活并以混合精度布局、流水反量化和细粒度 SM 调度执行",
+        "effect": "在可忽略精度损失下提高 INT4 内核和端到端吞吐",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "GPU 对 4 bit 激活支持不足，使常用量化方法性能收益有限。",
+    "scenario": "A100 上的 LLaMA 系列大模型服务。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "concurrencyinformedorchestrationforserverlessfunctions",
+    "id": 14271,
+    "title": "Concurrency-Informed Orchestration for Serverless Functions",
+    "paper": "https://doi.org/10.1145/3676641.3716253",
+    "method": "利用容器级和函数并发信息，在延迟热启动与冷启动间投机决策并平衡驱逐。",
+    "technique": [
+      {
+        "name": "CIDRE concurrency-informed orchestration",
+        "type": "algorithm",
+        "target": "FaaS 并发调用下的冷启动与容器驱逐",
+        "action": "按并发扩缩容状态选择复用忙容器或新建容器，并均衡保活资源",
+        "effect": "降低冷启动比例和调用开销",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "保活策略忽略并发调用，导致复用延迟和即将重用容器被错误驱逐。",
+    "scenario": "两个生产 FaaS 工作负载。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "controlledpreemptionamplifyingsidechannelattacksfromuserspace",
+    "id": 14272,
+    "title": "Controlled Preemption: Amplifying Side-Channel Attacks from Userspace",
+    "paper": "https://doi.org/10.1145/3676641.3715985",
+    "method": "利用调度器公平启发式让单个非特权攻击线程反复抢占同核受害线程，放大侧信道时间分辨率。",
+    "technique": [
+      {
+        "name": "Controlled Preemption",
+        "type": "system-mechanism",
+        "target": "低时间分辨率限制的微架构侧信道攻击",
+        "action": "在公平阈值触发前执行数百次短抢占并促成攻击者与受害者同核",
+        "effect": "以较少权限和线程获得高分辨率泄漏测量",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "许多侧信道测量时间分辨率低，阻碍或显著复杂化攻击。",
+    "scenario": "Linux CFS/EEVDF、Intel SGX 内外的多种受害程序。",
+    "evidence": "real-world",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "coserveefficientcollaborationofexpertscoemodelinferencewithlimitedmemory",
+    "id": 14273,
+    "title": "CoServe: Efficient Collaboration-of-Experts (CoE) Model Inference with Limited Memory",
+    "paper": "https://doi.org/10.1145/3676641.3715986",
+    "method": "依据专家依赖联合调度请求和管理专家，并离线画像异构 CPU/GPU 的资源分配。",
+    "technique": [
+      {
+        "name": "CoServe dependency-aware serving",
+        "type": "system-mechanism",
+        "target": "有限内存中的多专家协作推理",
+        "action": "按专家依赖排序请求、减少跨存储层切换并配置处理器资源",
+        "effect": "降低专家换入开销并提高吞吐",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "CoE 所需专家多，频繁在异构内存和存储层间切换造成高开销。",
+    "scenario": "智能制造中的自动电路板质量检查。",
+    "evidence": "real-world",
+    "lens": [
+      "多智能体"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "ctxnlasoftwarehardwarecodesignedsolutionforefficientcxlbasedtransactionprocessing",
+    "id": 14274,
+    "title": "CTXNL: A Software-Hardware Co-designed Solution for Efficient CXL-Based Transaction Processing",
+    "paper": "https://doi.org/10.1145/3676641.3716244",
+    "method": "针对事务数据松散一致性，软硬件协同提供可选择的混合 CXL coherence primitive。",
+    "technique": [
+      {
+        "name": "CTXNL selective coherence",
+        "type": "architecture",
+        "target": "多节点 CXL 事务处理的一致性开销",
+        "action": "允许开发者仅对必要事务数据维护跨节点缓存一致",
+        "effect": "保留低延迟共享内存并提高 OLTP 吞吐",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "直接采用标准 CXL 原语会因全局缓存一致性成本而性能下降。",
+    "scenario": "通用事务策略下的多节点 OLTP。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "cxlforkfastremoteforkovercxlfabrics",
+    "id": 14275,
+    "title": "CXLfork: Fast Remote Fork over CXL Fabrics",
+    "paper": "https://doi.org/10.1145/3676641.3715988",
+    "method": "利用全局共享 CXL 内存去重进程状态，实现跨节点近零序列化、零拷贝的远程 fork。",
+    "technique": [
+      {
+        "name": "CXLfork remote process cloning",
+        "type": "system-mechanism",
+        "target": "集群进程克隆和无服务器冷启动",
+        "action": "共享进程状态并细粒度控制本地/CXL 内存分层",
+        "effect": "使远程恢复接近本地 fork 且减少本地内存占用",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "传统远程克隆需序列化和复制状态，延迟高且消耗本地内存。",
+    "scenario": "CXL fabric 上的无服务器横向自动扩缩。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "datacacheforintermittentcomputingsystemswithnonvolatilemainmemory",
+    "id": 14276,
+    "title": "Data Cache for Intermittent Computing Systems with Non-Volatile Main Memory",
+    "paper": "https://doi.org/10.1145/3676641.3715989",
+    "method": "把写后读依赖检测直接集成到数据缓存，形成无需额外跟踪器的 NACHO。",
+    "technique": [
+      {
+        "name": "NACHO WAR-aware cache",
+        "type": "hardware-mechanism",
+        "target": "非易失主存间歇计算的检查点和访问开销",
+        "action": "由缓存同时检测 WAR 依赖并管理慢速高能耗 NVM 访问",
+        "effect": "减少运行时开销和非易失写入",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "NVM 减少检查点数据却增加检查频率，既有缓存还需额外硬件或软件检测 WAR。",
+    "scenario": "能量采集供电的间歇式嵌入平台。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "dynamicpartialdeadlockdetectionandrecoveryviagarbagecollection",
+    "id": 14277,
+    "title": "Dynamic Partial Deadlock Detection and Recovery via Garbage Collection",
+    "paper": "https://doi.org/10.1145/3676641.3715990",
+    "method": "借用垃圾收集标记阶段保守近似消息传递对象活性，并自动检测和修复部分死锁。",
+    "technique": [
+      {
+        "name": "GOLF GC-assisted deadlock recovery",
+        "type": "analysis-method",
+        "target": "Go 消息传递程序中的部分死锁与内存泄漏",
+        "action": "在运行时 GC 标记中推断不再活跃的并发通信并回收相关资源",
+        "effect": "在线发现死锁并减轻其内存影响",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "部分死锁难以发现，会在长期运行的 Go 服务中造成严重内存泄漏。",
+    "scenario": "工业代码测试套件及 Uber 真实服务。",
+    "evidence": "real-world",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "dynaxsparseattentionaccelerationwithdynamicxmfinegrainedstructuredpruning",
+    "id": 14278,
+    "title": "DynaX: Sparse Attention Acceleration with Dynamic X:M Fine-Grained Structured Pruning",
+    "paper": "https://doi.org/10.1145/3676641.3715991",
+    "method": "动态选择每组重要 attention 分数数量，并把分数块重排为匹配处理阵列的硬件块。",
+    "technique": [
+      {
+        "name": "DynaX dynamic X:M pruning",
+        "type": "architecture",
+        "target": "长序列 attention 的二次复杂度",
+        "action": "两步选择可变 X 保持细粒度结构化稀疏，再按阵列尺寸调度块",
+        "effect": "以很小精度损失提高稀疏率、速度和能效",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "动态稀疏 attention 模式不规则且预测开销高，难以高效硬件执行。",
+    "scenario": "BERT 等长短序列 Transformer 任务。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "einsumtreesanabstractionforoptimizingtheexecutionoftensorexpressions",
+    "id": 14279,
+    "title": "Einsum Trees: An Abstraction for Optimizing the Execution of Tensor Expressions",
+    "paper": "https://doi.org/10.1145/3676641.3716254",
+    "method": "引入 Einsum Tree IR，在既定 contraction path 上全局联合优化所有二元收缩的数据布局。",
+    "technique": [
+      {
+        "name": "Einsum Tree IR",
+        "type": "architecture",
+        "target": "张量表达式整体执行时间",
+        "action": "把收缩路径和局部数据布局置于统一中间表示中进行全局优化",
+        "effect": "减少孤立优化造成的布局失配并提升跨平台执行性能",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "收缩路径与每个二元收缩的数据布局长期分别优化，无法得到全局最佳执行。",
+    "scenario": "Arm、x86 服务器与桌面处理器上的 einsum。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "elasticmiterformallyverifieddataflowcircuitrewrites",
+    "id": 14280,
+    "title": "ElasticMiter: Formally Verified Dataflow Circuit Rewrites",
+    "paper": "https://doi.org/10.1145/3676641.3715993",
+    "method": "为延迟不敏感电路建立通用等价验证框架，并验证简化数据流电路的图重写规则。",
+    "technique": [
+      {
+        "name": "ElasticMiter equivalence verification",
+        "type": "formal-method",
+        "target": "HLS 数据流电路变换的功能正确性",
+        "action": "定义适配延迟不敏感语义的等价检查并证明重写前后电路一致",
+        "effect": "为形式验证的数据流 HLS 优化奠定基础",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "标准时序等价不适配数据流电路，阻碍系统化、可证明正确的电路优化。",
+    "scenario": "同步与异步数据流电路的图重写。",
+    "evidence": "theory",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "embracingimbalancedynamicloadshiftingamongmicroservicecontainersinsharedclusters",
+    "id": 14281,
+    "title": "Embracing Imbalance: Dynamic Load Shifting among Microservice Containers in Shared Clusters",
+    "paper": "https://doi.org/10.1145/3676641.3716255",
+    "method": "利用在线时延梯度联合优化微服务容器间负载迁移、连接管理和资源伸缩。",
+    "technique": [
+      {
+        "name": "Imbres imbalance-aware load shifting",
+        "type": "system-mechanism",
+        "target": "共享集群中微服务容器的时空性能失衡",
+        "action": "实时调整部分连接下的请求流向和资源规模",
+        "effect": "减少过度配置和 SLA 违约",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "常规负载均衡为满足 SLA 频繁过度配置，浪费大量集群资源。",
+    "scenario": "真实微服务基准上的共享集群。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "enablingefficientmobiletracingwithbtrace",
+    "id": 14282,
+    "title": "Enabling Efficient Mobile Tracing with BTrace",
+    "paper": "https://doi.org/10.1145/3676641.3715994",
+    "method": "把全局追踪缓冲区分块并动态分给需求最大的 CPU 核，兼顾连续轨迹长度和性能。",
+    "technique": [
+      {
+        "name": "BTrace dynamic global buffering",
+        "type": "instrumentation",
+        "target": "智能手机追踪的线索丢失与性能开销",
+        "action": "复用 per-core 缓冲优势，并按负载重分配全局块、处理超订阅和扩容",
+        "effect": "记录更长连续轨迹并加快生产追踪",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "移动端分散缓冲设计容易丢失关键长程线索，显著限制问题诊断。",
+    "scenario": "已部署到生产的智能手机系统追踪。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "energyawareschedulingandinputbufferoverflowpreventionforenergyharvestingsystems",
+    "id": 14283,
+    "title": "Energy-aware Scheduling and Input Buffer Overflow Prevention for Energy-harvesting Systems",
+    "paper": "https://doi.org/10.1145/3676641.3715995",
+    "method": "用能量感知调度选择端到端时延最低作业，并以排队论预测溢出后主动降级任务。",
+    "technique": [
+      {
+        "name": "Quetzal overflow-aware scheduling",
+        "type": "system-mechanism",
+        "target": "能量采集设备的小输入缓冲区溢出",
+        "action": "测量实时功率、估计充电时间和队列风险，并在临近溢出时降低任务质量",
+        "effect": "减少因处理速率波动而错过的重要事件",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "固定采集率与动态处理率不匹配，静态策略无法避免缓冲区满后丢弃输入。",
+    "scenario": "能量采集的端侧感知与计算设备。",
+    "evidence": "benchmark",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "existenablingextremelyefficientintraservicetracingobservabilityindatacenters",
+    "id": 14284,
+    "title": "EXIST: Enabling Extremely Efficient Intra-Service Tracing Observability in Datacenters",
+    "paper": "https://doi.org/10.1145/3676641.3716283",
+    "method": "利用现成硬件追踪，消除昂贵控制、动态分配缓冲并在集群层协调覆盖。",
+    "technique": [
+      {
+        "name": "EXIST cooperative tracing",
+        "type": "instrumentation",
+        "target": "共享高负载数据中心的服务内执行可观测性",
+        "action": "三个模块联合优化应用开销、缓冲空间和集群追踪覆盖",
+        "effect": "以千分级开销获得高精度服务内因果轨迹",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "既有服务内追踪常有 5–18% 开销，难以在紧张数据中心实际部署。",
+    "scenario": "基准和真实在线数据中心应用。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "extendeduserinterruptsxuifastandflexiblenotificationwithoutpolling",
+    "id": 14285,
+    "title": "Extended User Interrupts (xUI): Fast and Flexible Notification without Polling",
+    "paper": "https://doi.org/10.1145/3676641.3716028",
+    "method": "在 Intel UIPI 上增加跟踪中断、硬件安全点、内核绕过定时器和中断转发。",
+    "technique": [
+      {
+        "name": "xUI extended user interrupts",
+        "type": "hardware-mechanism",
+        "target": "无需轮询的低延迟用户态通知",
+        "action": "扩展处理器中断路径以覆盖抢占、定时和 I/O 转发",
+        "effect": "兼得共享内存轮询性能与异步通知效率",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "现有用户中断在性能和灵活性上不足，轮询又浪费资源。",
+    "scenario": "gem5 中的用户态运行时、DPDK 路由器和流式加速器。",
+    "evidence": "simulation",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "fattreeqramahighbandwidthsharedquantumrandomaccessmemoryforparallelqueries",
+    "id": 14286,
+    "title": "Fat-Tree QRAM: A High-Bandwidth Shared Quantum Random Access Memory for Parallel Queries",
+    "paper": "https://doi.org/10.1145/3676641.3716256",
+    "method": "构建可流水并发量子查询的 fat-tree QRAM，并设计调度协议最大化硬件利用率。",
+    "technique": [
+      {
+        "name": "Fat-Tree QRAM",
+        "type": "architecture",
+        "target": "共享量子存储的并行查询带宽与保真度",
+        "action": "以 O(N) qubit 的树结构在 O(log N) 时间执行 O(log N) 独立查询",
+        "effect": "提高实用量子计算的数据访问并行度",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "传统 QRAM 无法高效流水化多个并发叠加态查询。",
+    "scenario": "超导电路模块化与片上量子存储实现。",
+    "evidence": "simulation",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "flexprofflexiblesidechannelfreememoryaccess",
+    "id": 14287,
+    "title": "FLEXPROF: Flexible, Side-Channel-Free Memory Access",
+    "paper": "https://doi.org/10.1145/3676641.3715997",
+    "method": "将安全内存控制器时隙分为读优化和写优化模式，并以粗粒度画像无泄漏地配置比例。",
+    "technique": [
+      {
+        "name": "FlexProf fixed-pattern turns",
+        "type": "hardware-mechanism",
+        "target": "共置虚拟机共享内存控制器侧信道",
+        "action": "按固定读写模式分配时隙并允许受约束的机会式交叉发射",
+        "effect": "维持无侧信道调度同时改善吞吐和利用率",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "按最坏读写情形设计的安全调度消除泄漏却造成约两倍性能下降。",
+    "scenario": "混合内存密集程序的安全处理器。",
+    "evidence": "benchmark",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "flexspacceleratinglargelanguagemodeltrainingviaflexiblesequenceparallelism",
+    "id": 14288,
+    "title": "FlexSP: Accelerating Large Language Model Training via Flexible Sequence Parallelism",
+    "paper": "https://doi.org/10.1145/3676641.3715998",
+    "method": "每个训练步捕获序列长度异质性，以线性规划选择最佳散射策略组合。",
+    "technique": [
+      {
+        "name": "heterogeneity-adaptive sequence parallelism",
+        "type": "algorithm",
+        "target": "长上下文 LLM 训练的序列长度长尾分布",
+        "action": "按当前批次负载为不同序列分配可变并行散射方案",
+        "effect": "减少设备低利用并加速分布式训练",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "单一静态序列并行策略假设等长输入，无法适应真实语料长度差异。",
+    "scenario": "分布式长上下文大语言模型训练。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "formalisingcxlcachecoherence",
+    "id": 14289,
+    "title": "Formalising CXL Cache Coherence",
+    "paper": "https://doi.org/10.1145/3676641.3715999",
+    "method": "依据英文标准在 Isabelle 中形式化 CXL.cache，并机械证明一致性性质和关键场景限制。",
+    "technique": [
+      {
+        "name": "Isabelle CXL.cache formalisation",
+        "type": "formal-method",
+        "target": "CXL 设备间缓存一致性协议规范",
+        "action": "建立协议模型、验证场景并自动化数万引理的证明",
+        "effect": "发现规范歧义和错误并提供完整一致性证明",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "自然语言 CXL.cache 规范含不清晰、歧义或不准确部分。",
+    "scenario": "CXL 标准协议及 Snoop-pushes-GO 等关键约束。",
+    "evidence": "theory",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "generalizingreusepatternsforefficientdnnonmicrocontrollers",
+    "id": 14290,
+    "title": "Generalizing Reuse Patterns for Efficient DNN on Microcontrollers",
+    "paper": "https://doi.org/10.1145/3676641.3716257",
+    "method": "把复用模式推广为输入/激活矩阵行列重排关系，并用精度和时延模型选择模式。",
+    "technique": [
+      {
+        "name": "generalized DNN reuse",
+        "type": "analysis-method",
+        "target": "微控制器 DNN 推理的冗余计算",
+        "action": "扩展可探索复用空间并分析每种模式对准确率和延迟的影响",
+        "effect": "跨模型和微控制器稳定获得加速或精度收益",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "既有复用优化对数据模式定义过窄，遗漏大量可利用冗余。",
+    "scenario": "资源受限微控制器上的多种 DNN。",
+    "evidence": "benchmark",
+    "lens": [
+      "开放集/泛化"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "gigaflowpipelineawaresubtraversalcachingformodernsmartnics",
+    "id": 14291,
+    "title": "Gigaflow: Pipeline-Aware Sub-Traversal Caching for Modern SmartNICs",
+    "paper": "https://doi.org/10.1145/3676641.3716000",
+    "method": "按 vSwitch 可编程流水线中的共享子遍历建立缓存规则，而非缓存完整流。",
+    "technique": [
+      {
+        "name": "Gigaflow sub-traversal caching",
+        "type": "system-mechanism",
+        "target": "SmartNIC 有限内存中的大规模流规则",
+        "action": "利用 L2、L3、ACL 等阶段顺序的局部性跨流复用规则片段",
+        "effect": "提高命中率和规则空间覆盖并保持线速",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "完整流缓存无法覆盖增长的规则空间，导致 NIC 高未命中和低扩展性。",
+    "scenario": "公有云和边缘云 SmartNIC vSwitch。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "hardwaresentinelprotectingsoftwareapplicationsfromhardwaresilentdatacorruptions",
+    "id": 14292,
+    "title": "Hardware Sentinel: Protecting Software Applications from Hardware Silent Data Corruptions",
+    "paper": "https://doi.org/10.1145/3676641.3716258",
+    "method": "从段错误、core dump、崩溃和日志等软件失败指标反推硬件静默数据损坏。",
+    "technique": [
+      {
+        "name": "Hardware Sentinel top-down SDC detection",
+        "type": "analysis-method",
+        "target": "大规模基础设施中的硅缺陷静默数据损坏",
+        "action": "跨应用、内核和硬件配置关联软件故障并定位缺陷 CPU",
+        "effect": "扩大生产硬件测试覆盖并阻止 SDC 传播",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "底层硬件测试不足以覆盖受负载、环境和老化影响的 SDC。",
+    "scenario": "六年数据、七代 CPU、十三类负载和二十七个数据中心区域。",
+    "evidence": "real-world",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "harmoniaaunifiedframeworkforheterogeneousfpgaaccelerationinthecloud",
+    "id": 14293,
+    "title": "Harmonia: A Unified Framework for Heterogeneous FPGA Acceleration in the Cloud",
+    "paper": "https://doi.org/10.1145/3676641.3716259",
+    "method": "以平台专属适配层屏蔽硬件差异，再以模块化统一 shell 和命令接口承载跨平台角色。",
+    "technique": [
+      {
+        "name": "Harmonia two-layer FPGA framework",
+        "type": "architecture",
+        "target": "异构云 FPGA 的角色可移植性和 shell 管理",
+        "action": "自动生成适配器、封装接口并按资源层次裁剪可复用构件",
+        "effect": "减少开发、配置和跨厂商迁移成本",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "同构 shell-role 架构难适配增长的 FPGA 异构性。",
+    "scenario": "抖音大型服务商多年生产部署。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "hetecarchitecturesforheterogeneousquantumerrorcorrectioncodes",
+    "id": 14294,
+    "title": "HetEC: Architectures for Heterogeneous Quantum Error Correction Codes",
+    "paper": "https://doi.org/10.1145/3676641.3716001",
+    "method": "用 ancilla bus 集成 surface code 与 gross code，联合优化跨码数据移动、路由和资源权衡。",
+    "technique": [
+      {
+        "name": "HetEC heterogeneous QEC architecture",
+        "type": "architecture",
+        "target": "容错量子计算的物理 qubit 开销与通用逻辑能力",
+        "action": "组合拓扑码和 qLDPC 类编码并管理受限指令与内存路由",
+        "effect": "减少物理 qubit 需求并保留通用计算路径",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "surface code 开销二次增长，而 qLDPC 单独缺少明确的通用逻辑计算路径。",
+    "scenario": "异构量子纠错码的全系统架构研究。",
+    "evidence": "simulation",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "hierarchicalprefetchingasoftwarehardwareinstructionprefetcherforserverapplications",
+    "id": 14295,
+    "title": "Hierarchical Prefetching: A Software-Hardware Instruction Prefetcher for Server Applications",
+    "paper": "https://doi.org/10.1145/3676641.3716260",
+    "method": "由软件识别数十至数百 KB 的功能 bundle，并由轻量硬件整体 record-and-replay 预取。",
+    "technique": [
+      {
+        "name": "Hierarchical bundle prefetching",
+        "type": "hardware-mechanism",
+        "target": "大指令工作集服务器前端瓶颈",
+        "action": "在主存保存大部分元数据并按粗粒度公共功能块预取代码",
+        "effect": "提高预取覆盖和及时性且仅需少量片上存储",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "细粒度控制流预测偏差会削弱传统指令预取的覆盖和及时性。",
+    "scenario": "十一种流行服务器工作负载。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "hyperhammerbreakingfreefromkvmenforcedisolation",
+    "id": 14296,
+    "title": "HyperHammer: Breaking Free from KVM-Enforced Isolation",
+    "paper": "https://doi.org/10.1145/3676641.3716002",
+    "method": "在特定现代虚拟化配置上工程化 RowHammer 位翻转，跨越 KVM 内存隔离并进一步控制 hypervisor。",
+    "technique": [
+      {
+        "name": "HyperHammer",
+        "type": "hardware-mechanism",
+        "target": "KVM 强制的虚拟机与 hypervisor 内存隔离",
+        "action": "构造满足严格物理条件的 RowHammer 位翻转链",
+        "effect": "证明来宾可突破隔离并危及 hypervisor",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "硬件辅助虚拟化仍共享易受 RowHammer 影响的物理资源。",
+    "scenario": "非常特定系统配置上的概念验证攻击。",
+    "evidence": "real-world",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "kernelgptenhancedkernelfuzzingvialargelanguagemodels",
+    "id": 14297,
+    "title": "KernelGPT: Enhanced Kernel Fuzzing via Large Language Models",
+    "paper": "https://doi.org/10.1145/3676641.3716022",
+    "method": "用大模型迭代综合系统调用规范，并根据验证反馈自动调试和修复后交给 Syzkaller。",
+    "technique": [
+      {
+        "name": "KernelGPT syscall specification synthesis",
+        "type": "testing-method",
+        "target": "内核模糊测试中缺失的系统调用语法与语义规范",
+        "action": "从模型预训练知识生成规范并以执行验证反馈循环修正",
+        "effect": "扩大 syscall 覆盖并发现新的 Linux 内核漏洞",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "系统调用规范生成仍高度依赖人工，许多重要调用未被内核 fuzzer 覆盖。",
+    "scenario": "Linux 内核与 Syzkaller 自动模糊测试。",
+    "evidence": "real-world",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "klotskiefficientmixtureofexpertinferenceviaexpertawaremultibatchpipeline",
+    "id": 14298,
+    "title": "Klotski: Efficient Mixture-of-Expert Inference via Expert-Aware Multi-Batch Pipeline",
+    "paper": "https://doi.org/10.1145/3676641.3716261",
+    "method": "根据专家激活、异构计算和 I/O 需求编排多批次顺序，并约束感知规划换入和预取。",
+    "technique": [
+      {
+        "name": "Klotski expert-aware multi-batch pipeline",
+        "type": "system-mechanism",
+        "target": "显存外卸载 MoE 推理的流水线空泡",
+        "action": "延长当前层计算覆盖下一层加载，同时平衡更多专家激活造成的 I/O",
+        "effect": "改善吞吐-延迟权衡并减少流水空闲",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "MoE 单专家计算短于加载时间，普通计算-I/O 重叠产生大量空泡。",
+    "scenario": "不同硬件和模型上的大规模 MoE 推理。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "loadandmlpawarethreadorchestrationforrecommendationsystemsinferenceoncpus",
+    "id": 14299,
+    "title": "Load and MLP-Aware Thread Orchestration for Recommendation Systems Inference on CPUs",
+    "paper": "https://doi.org/10.1145/3676641.3716003",
+    "method": "最小化 embedding table 核分配，按 MLP 特征调度，并结合 work stealing 与表重排平衡 chiplet。",
+    "technique": [
+      {
+        "name": "Balance thread scheduler",
+        "type": "algorithm",
+        "target": "CPU 上 DLRM 推理的负载与内存级并行",
+        "action": "联合核心分配、内存带宽感知调度和跨 chiplet 工作迁移",
+        "effect": "提高多核推荐推理性能",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "现有并行化存在 chiplet 失衡、核心配置次优和 MLP 资源利用低。",
+    "scenario": "96 核真实硬件与生产 DLRM 轨迹。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "m5masteringpagemigrationandmemorymanagementforcxlbasedtieredmemorysystems",
+    "id": 14300,
+    "title": "M5: Mastering Page Migration and Memory Management for CXL-based Tiered Memory Systems",
+    "paper": "https://doi.org/10.1145/3676641.3711999",
+    "method": "在 CXL 控制器内按 4KB 页和 64B word 精确计数访问，为页面迁移提供硬件热度画像。",
+    "technique": [
+      {
+        "name": "M5 CXL-driven profiling",
+        "type": "instrumentation",
+        "target": "DDR/CXL 分层内存的热页识别和迁移",
+        "action": "透明跟踪热页与稀疏热 word，并避免 CPU 画像本身的高开销",
+        "effect": "识别更热页面并改善应用性能",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "CPU 方案常把温页误判为热页，且检测开销可能抵消迁移收益。",
+    "scenario": "CXL DRAM 延迟较高的分层内存系统。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "mdpeekbreakingbalancedbranchesinsgxwithmemorydisambiguationunitsidechannels",
+    "id": 14301,
+    "title": "MDPeek: Breaking Balanced Branches in SGX with Memory Disambiguation Unit Side Channels",
+    "paper": "https://doi.org/10.1145/3676641.3716004",
+    "method": "逆向 MDU 启用与更新逻辑，利用其新泄漏源识别并攻击 SGX 中秘密相关分支。",
+    "technique": [
+      {
+        "name": "MDPeek MDU side channel",
+        "type": "hardware-mechanism",
+        "target": "受状态刷新和分支平衡保护的 SGX 控制流",
+        "action": "从内存消歧单元行为恢复秘密相关分支信息",
+        "effect": "绕过既有软件防御并实现端到端泄漏",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "已部署 SGX 防御无法覆盖尚未发现的微架构侧信道。",
+    "scenario": "最新版 Libjpeg、MbedTLS 与 WolfSSL SGX 应用。",
+    "evidence": "real-world",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "microblossomacceleratedminimumweightperfectmatchingdecodingforquantumerrorcorrection",
+    "id": 14302,
+    "title": "Micro Blossom: Accelerated Minimum-Weight Perfect Matching Decoding for Quantum Error Correction",
+    "paper": "https://doi.org/10.1145/3676641.3716005",
+    "method": "把 MWPM 解码器划分到软件与每个图顶点/边一组并行单元的可编程加速器。",
+    "technique": [
+      {
+        "name": "Micro Blossom heterogeneous MWPM",
+        "type": "architecture",
+        "target": "超导 qubit 量子纠错的微秒级解码",
+        "action": "以 O(d3) 并行单元降低最坏和平均解码复杂度",
+        "effect": "在 FPGA 原型上实现亚微秒精确 MWPM",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "高精度 MWPM 被认为难以满足超导量子系统的微秒延迟约束。",
+    "scenario": "surface code、线路级噪声模型和 FPGA 原型。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "mocsystemefficientfaulttoleranceforsparsemixtureofexpertsmodeltraining",
+    "id": 14303,
+    "title": "MoC-System: Efficient Fault Tolerance for Sparse Mixture-of-Experts Model Training",
+    "paper": "https://doi.org/10.1145/3676641.3716006",
+    "method": "选择性保存部分专家、完全分片检查点并异步管理内存快照与持久化。",
+    "technique": [
+      {
+        "name": "MoC partial-expert checkpointing",
+        "type": "system-mechanism",
+        "target": "万节点 MoE 分布式训练的故障恢复开销",
+        "action": "仅持久化选定专家并跨 rank 均摊、分层处理检查点",
+        "effect": "把稀疏模型检查点规模压近稠密模型并大幅降低开销",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "MoE 参数规模远大于计算量，使传统完整检查点的体积和写入成本激增。",
+    "scenario": "Megatron-DeepSpeed 上的 MoE 分布式训练。",
+    "evidence": "benchmark",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "mosaicexploitinginstructionlevelparallelismondeeplearningacceleratorswithitextessellation",
+    "id": 14304,
+    "title": "Mosaic: Exploiting Instruction-Level Parallelism on Deep Learning Accelerators with iTex Tessellation",
+    "paper": "https://doi.org/10.1145/3676641.3716262",
+    "method": "以 iTex 仿射抽象从底向上用不同指令拼嵌 tensor 任务，并调度异构运算单元并行执行。",
+    "technique": [
+      {
+        "name": "Mosaic iTex tessellation",
+        "type": "algorithm",
+        "target": "深度学习加速器的跨标量、向量和 tensor 单元 ILP",
+        "action": "启发式生成异构指令-任务映射并避免结构冲突",
+        "effect": "提高多平台算子吞吐和硬件峰值利用",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "同质 top-down tiling 映射无法同时利用不同计算单元。",
+    "scenario": "多个硬件平台及 LLM 真实算子。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "necroreaperpruningawaydeadmemorytrafficinwarehousescalecomputers",
+    "id": 14305,
+    "title": "Necro-reaper: Pruning away Dead Memory Traffic in Warehouse-Scale Computers",
+    "paper": "https://doi.org/10.1145/3676641.3716007",
+    "method": "用新 ISA 指令配合画像编译器和定制分配器，避免释放数据写回与未初始化数据取入。",
+    "technique": [
+      {
+        "name": "Necro-reaper dead-traffic elimination",
+        "type": "architecture",
+        "target": "仓库级计算中的无效内存流量",
+        "action": "软件标注短命大对象并让硬件跳过其无意义读写",
+        "effect": "无需硬件历史跟踪即可降低带宽并提高 IPC",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "短命 heap 分配导致大量不必要写回和取入，加剧 WSC 内存带宽瓶颈。",
+    "scenario": "十个仓库规模计算工作负载。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "octocachecachingvoxelsforaccelerating3doccupancymappinginautonomoussystems",
+    "id": 14306,
+    "title": "OctoCache: Caching Voxels for Accelerating 3D Occupancy Mapping in Autonomous Systems",
+    "paper": "https://doi.org/10.1145/3676641.3716263",
+    "method": "通过缓存访问优化、voxel 顺序重排和工作流并行化加速 OctoMap。",
+    "technique": [
+      {
+        "name": "OctoCache voxel caching",
+        "type": "system-mechanism",
+        "target": "自主系统三维占用地图的慢速内存更新",
+        "action": "提高八叉树数据局部性并并行执行地图构建阶段",
+        "effect": "加快环境构建和无人机任务完成",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "OctoMap 的昂贵内存访问限制三维环境更新性能。",
+    "scenario": "自主机器人导航、AR/VR 与无人机实际导航。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "optimizingdeeplearninginferenceefficiencythroughblockdependencyanalysis",
+    "id": 14307,
+    "title": "Optimizing Deep Learning Inference Efficiency through Block Dependency Analysis",
+    "paper": "https://doi.org/10.1145/3676641.3716264",
+    "method": "从编译低层阶段抽取 block 依赖，简化算子间关系并发现隐藏 GPU 并行机会。",
+    "technique": [
+      {
+        "name": "BlockDepend block-level analysis",
+        "type": "analysis-method",
+        "target": "DNN 跨算子优化的数据依赖精度",
+        "action": "在块粒度重构复杂依赖并据此优化内存访问和并行执行",
+        "effect": "提高 GPU 利用并加速多种推理工作负载",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "元素/算子级静态分析产生复杂关系并遗漏可并行计算。",
+    "scenario": "NVIDIA 与 AMD GPU 上的 DNN 推理。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "orionafullyhomomorphicencryptionframeworkfordeeplearning",
+    "id": 14308,
+    "title": "Orion: A Fully Homomorphic Encryption Framework for Deep Learning",
+    "paper": "https://doi.org/10.1145/3676641.3716008",
+    "method": "自动把 PyTorch 网络翻译为 FHE，使用单次多路打包以及自动 bootstrapping 与 scale 管理。",
+    "technique": [
+      {
+        "name": "Orion automated FHE compilation",
+        "type": "system-mechanism",
+        "target": "大型神经网络向有限 FHE primitive 的映射",
+        "action": "为任意卷积打包向量并自动放置噪声刷新、管理密文尺度",
+        "effect": "使更深更大的私有神经推理可实际构建",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "向量打包、噪声累积和受限指令集使大型 FHE 神经网络难以编程。",
+    "scenario": "ResNet、ImageNet 和高分辨率 YOLO 加密推理。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "os2gahighperformancedpuoffloadingarchitectureforgpubaseddeeplearningwithobjectstorage",
+    "id": 14309,
+    "title": "OS2G: A High-Performance DPU Offloading Architecture for GPU-based Deep Learning with Object Storage",
+    "paper": "https://doi.org/10.1145/3676641.3716265",
+    "method": "把高并发异步对象客户端下沉到 DPU，并通过 GPUDirect DPU 让数据直达 GPU。",
+    "technique": [
+      {
+        "name": "OS2G direct DPU-GPU storage path",
+        "type": "architecture",
+        "target": "深度学习对象存储的 CPU 和冗余数据移动",
+        "action": "预读对象并绕过主机在 DPU 与 GPU 之间直接传输",
+        "effect": "缩短模型执行并显著释放 CPU",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "朴素 DPU 卸载性能差，且 DPU-host-GPU 路径仍重复搬运数据。",
+    "scenario": "对象存储上的 GPU 深度学习与 ResNet18。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "papiexploitingdynamicparallelisminlargelanguagemodeldecodingwithaprocessinginmemoryenabledcomputingsystem",
+    "id": 14310,
+    "title": "PAPI: Exploiting Dynamic Parallelism in Large Language Model Decoding with a Processing-In-Memory-Enabled Computing System",
+    "paper": "https://doi.org/10.1145/3676641.3716009",
+    "method": "在线刻画解码内核的计算/内存瓶颈，并动态调度到 GPU 或不同能力的混合 PIM 单元。",
+    "technique": [
+      {
+        "name": "PAPI dynamic heterogeneous mapping",
+        "type": "architecture",
+        "target": "LLM 解码内核随参数变化的硬件适配",
+        "action": "运行时分类内核并在计算中心与近内存单元间动态映射",
+        "effect": "避免静态映射和单一 PIM 设计低效并加速解码",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "LLM 解码内核性质动态变化，使静态异构映射和一刀切 PIM 次优。",
+    "scenario": "LLaMA-65B 与 GPT-3 66B/175B 解码。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "parendithousandwayparallelrtlsimulation",
+    "id": 14311,
+    "title": "Parendi: Thousand-Way Parallel RTL Simulation",
+    "paper": "https://doi.org/10.1145/3676641.3716010",
+    "method": "以新分区和编译技术把细粒度 RTL 并行映射到最多 5888 个 Graphcore IPU 核。",
+    "technique": [
+      {
+        "name": "Parendi massively parallel RTL simulation",
+        "type": "system-mechanism",
+        "target": "复杂芯片的周期精确 RTL 仿真",
+        "action": "量化并优化分区后的同步、通信和计算成本",
+        "effect": "超过高端 x64 多核系统并扩展大型设计仿真",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "芯片复杂度增长而单核性能停滞，使传统单线程 RTL 仿真不可行。",
+    "scenario": "四个 Graphcore IPU 插槽上的大型 RTL 设计。",
+    "evidence": "benchmark",
+    "lens": [
+      "靶场/环境生成"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "pastfutureschedulerforllmservingunderslaguarantees",
+    "id": 14312,
+    "title": "Past-Future Scheduler for LLM Serving under SLA Guarantees",
+    "paper": "https://doi.org/10.1145/3676641.3716011",
+    "method": "结合历史输出长度分布与未来各时间点内存占用，精确估计运行批次峰值资源。",
+    "technique": [
+      {
+        "name": "Past-Future scheduler",
+        "type": "algorithm",
+        "target": "连续批处理 LLM 服务的显存与 SLA",
+        "action": "预测请求未来 KV 占用并平衡排队和有害驱逐",
+        "effect": "跨不同长度分布稳定提高 SLA goodput",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "激进或保守调度分别低估或高估显存，造成驱逐或长队列。",
+    "scenario": "LightLLM 重负载及多种输入输出长度分布。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "paveinformationflowcontrolforprivacypreservingonlinedataprocessingservices",
+    "id": 14313,
+    "title": "Pave: Information Flow Control for Privacy-preserving Online Data Processing Services",
+    "paper": "https://doi.org/10.1145/3676641.3716266",
+    "method": "在 Intel SGX 上运行 PaveBox 监控沙箱所有输入输出流，并依据形式化策略阻止隐私泄漏。",
+    "technique": [
+      {
+        "name": "PaveBox information-flow monitor",
+        "type": "system-mechanism",
+        "target": "远程在线数据处理中的用户隐私",
+        "action": "拦截沙箱边界数据流，仅允许不泄漏用户数据且保持功能的良性流",
+        "effect": "提供可远程证明的完整性、机密性和信息流保证",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "用户把个人数据交给不可控远程服务器后无法确信处理期间不会泄漏。",
+    "scenario": "运行任意数据处理程序的 SGX 沙箱服务。",
+    "evidence": "benchmark",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "phaseprintexposingcloudfpgafingerprintsbyinducingtimingfaultsatruntime",
+    "id": 14314,
+    "title": "PhasePrint: Exposing Cloud FPGA Fingerprints by Inducing Timing Faults at Runtime",
+    "paper": "https://doi.org/10.1145/3676641.3716012",
+    "method": "动态调整片内相关时钟相位诱发 timing fault，把错误位置编码为 FPGA 制造差异指纹。",
+    "technique": [
+      {
+        "name": "PhasePrint timing-fault fingerprinting",
+        "type": "measurement-method",
+        "target": "云 FPGA 在低层信息受限下的设备定位",
+        "action": "在功能有效电路中诱发可控时序故障并训练多分类器识别芯片",
+        "effect": "以片内提取高准确率定位具体 FPGA",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "云商屏蔽硬件底层信息，使攻防双方难以定位单个 FPGA。",
+    "scenario": "四个 AWS 区域的三百块云 FPGA。",
+    "evidence": "real-world",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "picachuplugincgrahandlingupcomingnonlinearoperationsinllms",
+    "id": 14315,
+    "title": "PICACHU: Plug-In CGRA Handling Upcoming Nonlinear Operations in LLMs",
+    "paper": "https://doi.org/10.1145/3676641.3716013",
+    "method": "为 LLM 全部非线性算子设计可插拔 CGRA、自定义算法和专用编译工具链。",
+    "technique": [
+      {
+        "name": "PICACHU plug-in CGRA",
+        "type": "architecture",
+        "target": "LLM 推理中的多样非线性操作",
+        "action": "以可重构阵列支持用户定义精度并由编译器映射全部非线性核",
+        "effect": "兼顾灵活性与效率并缩短推理",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "非线性操作显著增加 LLM 延迟且要求同时满足灵活、精度和效率。",
+    "scenario": "多种 LLM 推理非线性算子。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "pimisallyouneedacxlenabledgpufreesystemforlargelanguagemodelinference",
+    "id": 14316,
+    "title": "PIM Is All You Need: A CXL-Enabled GPU-Free System for Large Language Model Inference",
+    "paper": "https://doi.org/10.1145/3676641.3716267",
+    "method": "以 CXL 扩展内存容纳模型/KV，并用 bank 旁处理和 CXL 集体通信构建无 GPU 推理系统。",
+    "technique": [
+      {
+        "name": "CENT CXL-PIM inference",
+        "type": "architecture",
+        "target": "低算术强度、超大内存需求的 LLM 推理",
+        "action": "跨 CXL 设备并行分布模型并在近 bank 单元提供高内存带宽",
+        "effect": "降低 GPU 计算资源浪费、能耗和每 token 成本",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "GPU 面向计算吞吐，而长上下文 LLM 推理主要受内存带宽和容量约束。",
+    "scenario": "与同功耗 GPU 对比的大模型批推理。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "piratenocompromiselowbandwidthvrstreamingforedgedevices",
+    "id": 14317,
+    "title": "Pirate: No Compromise Low-Bandwidth VR Streaming for Edge Devices",
+    "paper": "https://doi.org/10.1145/3676641.3716268",
+    "method": "利用双目相似性，交替传输单眼视图并以视差和光流迭代合成另一眼。",
+    "technique": [
+      {
+        "name": "Pirate iterative stereo synthesis",
+        "type": "algorithm",
+        "target": "边缘设备 VR 流的带宽与实时质量",
+        "action": "在左右眼间交替发送并低成本重建目标视图",
+        "effect": "在 90 FPS 下减少带宽且保持高视觉质量",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "既有方法常只能在带宽节省和实时高帧率之间二选一。",
+    "scenario": "低至 0.1 bpp 的边缘 VR 双目视频流。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "podattentionunlockingfullprefilldecodeoverlapforfasterllminference",
+    "id": 14318,
+    "title": "POD-Attention: Unlocking Full Prefill-Decode Overlap for Faster LLM Inference",
+    "paper": "https://doi.org/10.1145/3676641.3715996",
+    "method": "在同一 GPU multiprocessor 上联合分配计算与带宽资源，并发执行 prefill 和 decode attention。",
+    "technique": [
+      {
+        "name": "POD-Attention hybrid kernel",
+        "type": "system-mechanism",
+        "target": "混合批次 attention 无法重叠 prefill 与 decode",
+        "action": "在单一内核中协调两阶段资源而非分别使用专用内核",
+        "effect": "提高 GPU 利用、attention 速度和 LLM 吞吐",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "混合 batching 只优化线性算子，现有 attention 内核仍把两阶段独立执行。",
+    "scenario": "GPU 上高吞吐低延迟 LLM 推理。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "practicalfederatedrecommendationmodellearningusingoramwithcontrolledprivacy",
+    "id": 14319,
+    "title": "Practical Federated Recommendation Model Learning Using ORAM with Controlled Privacy",
+    "paper": "https://doi.org/10.1145/3676641.3716014",
+    "method": "让用户仅更新大型 embedding 表的小子集，以 ORAM 隐藏访问，并用 ε-FDP 控制隐私性能权衡。",
+    "technique": [
+      {
+        "name": "FEDORA controlled-private ORAM",
+        "type": "protocol",
+        "target": "大型推荐模型的实用联邦学习",
+        "action": "将 SSD 优化 ORAM 与可调隐私定义结合，隐藏每个用户访问的特征子集",
+        "effect": "利用私有特征保持精度并降低延迟和 SSD 磨损",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "超大 embedding 表使客户端无法实际下载和更新完整联邦推荐模型。",
+    "scenario": "现代联邦学习模式下的推荐模型训练。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "protectingcryptographiccodeagainstspectrersbandinfactallknownspectrevariants",
+    "id": 14320,
+    "title": "Protecting Cryptographic Code Against Spectre-RSB: (and, in Fact, All Known Spectre Variants)",
+    "paper": "https://doi.org/10.1145/3676641.3716015",
+    "method": "建立值依赖信息流类型系统并配套编译变换，以 Coq 证明低层代码在推测执行下不泄密。",
+    "technique": [
+      {
+        "name": "speculation-safe information-flow typing",
+        "type": "formal-method",
+        "target": "常数时间密码代码的全部已知 Spectre 变体",
+        "action": "类型检查秘密依赖并变换生成代码，形式证明系统可靠性和编译正确性",
+        "effect": "以很低开销恢复推测执行下的机密性",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Spectre 破坏常数时间保证，已有低开销方法主要只覆盖 Spectre-v1。",
+    "scenario": "Jasmin 高保障密码原语与 Kyber。",
+    "evidence": "theory",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "pruneradraftthenverifyexplorationmechanismtoacceleratetensorprogramtuning",
+    "id": 14321,
+    "title": "Pruner: A Draft-then-Verify Exploration Mechanism to Accelerate Tensor Program Tuning",
+    "paper": "https://doi.org/10.1145/3676641.3716269",
+    "method": "先用符号分析器粗筛小规模候选，再用准确学习代价模型验证，并以 momentum 在线跨平台适配。",
+    "technique": [
+      {
+        "name": "Pruner draft-then-verify search",
+        "type": "algorithm",
+        "target": "tensor 程序调度搜索的高成本与跨平台失配",
+        "action": "分层评估候选并在线更新新平台代价知识",
+        "effect": "加快在线和离线调优而保持高性能结果",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "慢速学习模型评估全部候选耗时数小时，且在一个平台训练后难在线迁移。",
+    "scenario": "TVM 和三个 GPU 平台的 tensor program tuning。",
+    "evidence": "benchmark",
+    "lens": [
+      "开放集/泛化"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "rattefuzzingformiscompilationsinmultilevelcompilersusingcomposablesemantics",
+    "id": 14322,
+    "title": "Ratte: Fuzzing for Miscompilations in Multi-Level Compilers Using Composable Semantics",
+    "paper": "https://doi.org/10.1145/3676641.3716270",
+    "method": "为 MLIR dialect 定义可组合语义和模块化 fuzzer，使语义与无未定义行为测试生成相互验证。",
+    "technique": [
+      {
+        "name": "Ratte composable dialect fuzzing",
+        "type": "testing-method",
+        "target": "多层编译器 dialect 实现和组合的误编译",
+        "action": "从组合式参考语义派生跨 dialect 测试生成器并对照生产实现",
+        "effect": "发现未知误编译并澄清规范",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "现有语义与测试技术不能满足 MLIR dialect 的模块化和可组合性。",
+    "scenario": "生产 MLIR 实现及多个重要 dialect。",
+    "evidence": "real-world",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "recaintegratedaccelerationforrealtimeandefficientcooperativeembodiedautonomousagents",
+    "id": 14323,
+    "title": "ReCA: Integrated Acceleration for Real-Time and Efficient Cooperative Embodied Autonomous Agents",
+    "paper": "https://doi.org/10.1145/3676641.3716016",
+    "method": "跨算法、双层记忆、分层协作规划和异构硬件协同加速多具身智能体。",
+    "technique": [
+      {
+        "name": "ReCA hierarchical cooperative execution",
+        "type": "architecture",
+        "target": "协作具身智能体的规划通信延迟与扩展性",
+        "action": "结合中心化/去中心化规划、长短期记忆和规划引导多步执行",
+        "effect": "提高长程多目标任务成功率与系统速度",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "现有多智能体系统规划和通信慢、低层执行敏感且难扩展。",
+    "scenario": "跨场景、跨规模的长程多目标现实具身任务。",
+    "evidence": "benchmark",
+    "lens": [
+      "多智能体",
+      "开放集/泛化"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "relaxcomposableabstractionsforendtoenddynamicmachinelearning",
+    "id": 14324,
+    "title": "Relax: Composable Abstractions for End-to-End Dynamic Machine Learning",
+    "paper": "https://doi.org/10.1145/3676641.3716249",
+    "method": "以单一跨层表示封装计算图、tensor loop 和外部库，并用一等符号 shape 全局跟踪动态计算。",
+    "technique": [
+      {
+        "name": "Relax cross-level dynamic IR",
+        "type": "architecture",
+        "target": "端到端动态 shape 机器学习编译",
+        "action": "统一不同抽象层并执行动态 shape 感知的跨层优化",
+        "effect": "在多 GPU 保持性能并扩展到移动、嵌入式和浏览器",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "动态 shape 在 LLM 中关键，既有表示难跨层优化和普遍部署。",
+    "scenario": "多种 GPU 与移动、嵌入式、Web 后端上的 LLM。",
+    "evidence": "benchmark",
+    "lens": [
+      "开放集/泛化"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "reloadreloadexploitingcacheandmemorycontentionsidechannelonamdsev",
+    "id": 14325,
+    "title": "Reload+Reload: Exploiting Cache and Memory Contention Side Channel on AMD SEV",
+    "paper": "https://doi.org/10.1145/3676641.3716017",
+    "method": "利用新发现的 cache flush 与 memory contention 泄漏分别构造 RRFS 和 RRMB 攻击。",
+    "technique": [
+      {
+        "name": "Reload+Reload side channels",
+        "type": "hardware-mechanism",
+        "target": "AMD SEV、SEV-ES 与 SEV-SNP 加密虚拟机",
+        "action": "从缓存刷新或内存阻塞行为建立隐蔽通道并提取秘密",
+        "effect": "实现 Spectre 通道和 AES-128 密钥恢复",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "加密虚拟机仍暴露此前未知的共享缓存和内存争用侧信道。",
+    "scenario": "SEV-SNP 保护的多租户云虚拟机。",
+    "evidence": "real-world",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "rescqrealtimeschedulingforcontinuousanglequantumerrorcorrectionarchitectures",
+    "id": 14326,
+    "title": "RESCQ: Realtime Scheduling for Continuous Angle Quantum Error Correction Architectures",
+    "paper": "https://doi.org/10.1145/3676641.3716018",
+    "method": "按资源状态预期生产率动态重分配，并自适应选择重新计算调度的频率。",
+    "technique": [
+      {
+        "name": "RESCQ realtime resource scheduling",
+        "type": "algorithm",
+        "target": "连续角量子纠错状态的非确定性生产",
+        "action": "按需改变资源分配并控制经典调度开销",
+        "effect": "减少静态计划的冗余周期和总执行时间",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "资源状态可能需多次生产，静态时间表无法响应成功率变化且代价高。",
+    "scenario": "编译到 continuous-angle QEC 架构的量子程序。",
+    "evidence": "simulation",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "savingenergywithpervariablebitwidthspeculation",
+    "id": 14327,
+    "title": "Saving Energy with Per-Variable Bitwidth Speculation",
+    "paper": "https://doi.org/10.1145/3676641.3716271",
+    "method": "编译器按变量预期需求缩窄位宽，硬件监控误投机并在原始位宽重执行保证正确。",
+    "technique": [
+      {
+        "name": "BitSpec per-variable speculation",
+        "type": "architecture",
+        "target": "微型设备的程序能耗",
+        "action": "透明使用较窄变量表示并检测溢出式误预测",
+        "effect": "在保持语义正确下减少能耗",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "源代码指定位宽常远高于大部分运行期实际需要，编译器未利用这一机会。",
+    "scenario": "能量预算严格的微型设备应用。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "shadowloadinjectingstateintohardwareprefetchers",
+    "id": 14328,
+    "title": "ShadowLoad: Injecting State into Hardware Prefetchers",
+    "paper": "https://doi.org/10.1145/3676641.3716020",
+    "method": "用 StrideRE 自动逆向 stride prefetcher，并注入状态把不可访问受害数据带入缓存。",
+    "technique": [
+      {
+        "name": "ShadowLoad prefetcher state injection",
+        "type": "hardware-mechanism",
+        "target": "进程、内核与 TEE 边界的秘密数据",
+        "action": "操纵硬件预取器内部模式并以 FetchProbe 观测亚 cache-line 访问偏移",
+        "effect": "扩展 Meltdown/功耗攻击并部分绕过云 L1TF 缓解",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "预取器内部状态可跨安全边界泄漏，但既有攻击未利用其主动取入数据能力。",
+    "scenario": "AWS 云和 WolfSSL 侧信道强化 Base64 实现。",
+    "evidence": "real-world",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "simplifyingandacceleratingnorflashiostackforramrestrictedmicrocontrollers",
+    "id": 14329,
+    "title": "Simplifying and Accelerating NOR Flash I/O Stack for RAM-Restricted Microcontrollers",
+    "paper": "https://doi.org/10.1145/3676641.3716272",
+    "method": "利用小文件和确定 I/O 模式，把块级组织与磨损均衡放宽到协同的文件级管理。",
+    "technique": [
+      {
+        "name": "NF2FS coarse-grained flash management",
+        "type": "system-mechanism",
+        "target": "RAM 受限微控制器的 NOR flash I/O 放大",
+        "action": "采用平坦文件、粗粒度交换、全日志布局和 soft-update 式崩溃一致性",
+        "effect": "减少索引扫描、提高 I/O 并避免快速磨损",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "把块组织和磨损均衡迁到 flash 后，细粒度更新与扫描造成严重放大。",
+    "scenario": "FreeRTOS 上的 RAM 受限 NOR flash 文件系统。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "skiaexposingshadowbranches",
+    "id": 14330,
+    "title": "Skia: Exposing Shadow Branches",
+    "paper": "https://doi.org/10.1145/3676641.3716273",
+    "method": "解码 FDIP 已取入 cache line 的未使用字节，将其中 shadow branch 放入并行访问的 SBB。",
+    "technique": [
+      {
+        "name": "Skia shadow branch decoding",
+        "type": "hardware-mechanism",
+        "target": "服务器大代码足迹下的 BTB 未命中",
+        "action": "提前识别未从当前入口解码的分支并在 BTB miss 时提供目标",
+        "effect": "减少错误取指和 L1-I 污染并提升前端性能",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "FDIP 依赖 BTB，分支被驱逐后既不能正确预取还可能沿错误路径污染缓存。",
+    "scenario": "十六个前端受限数据中心应用。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "smackefficientinstructioncacheattacksviaselfmodifyingcodeconflicts",
+    "id": 14331,
+    "title": "SMaCk: Efficient Instruction Cache Attacks via Self-Modifying Code Conflicts",
+    "paper": "https://doi.org/10.1145/3676641.3716274",
+    "method": "利用 x86 自修改代码影响指令 cache line 的命中/未命中时序差异增强缓存攻击。",
+    "technique": [
+      {
+        "name": "SMaCk self-modifying-code conflict",
+        "type": "hardware-mechanism",
+        "target": "x86 密码密钥与跨域隐蔽通信",
+        "action": "构造特定指令 cache 冲突以精化 Prime+Probe 和 Flush+Reload",
+        "effect": "降低噪声并提高攻击精度",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "自修改代码产生独特微架构行为，可被恶意转换为更强时序信号。",
+    "scenario": "多种 x86 平台上的密钥攻击和 Spectre 类隐蔽通道。",
+    "evidence": "real-world",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "snowploweffectivekernelfuzzingwithalearnedwhiteboxtestmutator",
+    "id": 14332,
+    "title": "Snowplow: Effective Kernel Fuzzing with a Learned White-box Test Mutator",
+    "paper": "https://doi.org/10.1145/3676641.3716019",
+    "method": "训练白盒模型结合测试程序、内核覆盖和目标覆盖，预测最有希望的参数变异。",
+    "technique": [
+      {
+        "name": "Snowplow learned white-box mutator",
+        "type": "testing-method",
+        "target": "内核 fuzzer 的低效程序变异",
+        "action": "用内核代码与覆盖反馈选择能改变控制/数据流的系统调用参数",
+        "effect": "更快发现新覆盖、目标位置和未知崩溃",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "内核及用户接口复杂，人工启发式很难找到能达到期望覆盖的有效 mutation。",
+    "scenario": "近期 Linux 版本的 24 小时与 7 天模糊测试。",
+    "evidence": "real-world",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "spindleefficientdistributedtrainingofmultitasklargemodelsviawavefrontscheduling",
+    "id": 14333,
+    "title": "Spindle: Efficient Distributed Training of Multi-Task Large Models via Wavefront Scheduling",
+    "paper": "https://doi.org/10.1145/3676641.3715992",
+    "method": "把多任务多模态模型执行拆成 wave，顺序求解异质感知并行与依赖驱动调度。",
+    "technique": [
+      {
+        "name": "Spindle wavefront scheduling",
+        "type": "system-mechanism",
+        "target": "多任务多模态大模型的异构分布训练",
+        "action": "分解联合优化问题并按波前协调不同任务和组件",
+        "effect": "提高资源效率和训练速度",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "复杂模型结构与任务/模态异质负载给并行训练带来系统挑战。",
+    "scenario": "多种 multi-task、multi-modal 大模型训练。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "squeezingoperatorperformancepotentialfortheascendarchitecture",
+    "id": 14334,
+    "title": "Squeezing Operator Performance Potential for the Ascend Architecture",
+    "paper": "https://doi.org/10.1145/3676641.3716243",
+    "method": "构建组件式 roofline 模型定位 Ascend 算子瓶颈，并总结基于分析的优化流程。",
+    "technique": [
+      {
+        "name": "component-based Ascend roofline",
+        "type": "analysis-method",
+        "target": "Ascend DSA 上算子性能诊断",
+        "action": "把硬件组件抽象进可视模型并按瓶颈应用通用优化策略",
+        "effect": "改善评估准确性并提升端到端模型速度",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Ascend 需手工管理操作，而现有 roofline 可视复杂且判断不准。",
+    "scenario": "Ascend 上实际算子案例和端到端模型。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "stramashafusedkerneloperatingsystemforcachecoherentheterogeneousisaplatforms",
+    "id": 14335,
+    "title": "Stramash: A Fused-Kernel Operating System For Cache-Coherent, Heterogeneous-ISA Platforms",
+    "paper": "https://doi.org/10.1145/3676641.3716275",
+    "method": "把异构 ISA CPU 视为共享 cache-coherent 内存的统一内核，设计新的 fused-kernel OS 机制。",
+    "technique": [
+      {
+        "name": "Stramash fused-kernel OS",
+        "type": "architecture",
+        "target": "异构 ISA 平台的软件协调复杂性",
+        "action": "让一个单体内核跨不同 ISA 核共享内存与操作系统状态",
+        "effect": "减少多内核协调层和软件开销",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "多内核异构 ISA 系统依赖昂贵协调层，阻碍高级软硬件开发。",
+    "scenario": "真实硬件画像和 Stramash-QEMU 架构仿真。",
+    "evidence": "simulation",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "streamgridstreamingpointcloudanalyticsviacompulsorysplittinganddeterministictermination",
+    "id": 14336,
+    "title": "StreamGrid: Streaming Point Cloud Analytics via Compulsory Splitting and Deterministic Termination",
+    "paper": "https://doi.org/10.1145/3676641.3716021",
+    "method": "以 compulsory splitting 和 deterministic termination 改写点云计算，并自动优化片上缓冲。",
+    "technique": [
+      {
+        "name": "StreamGrid fully streaming processing",
+        "type": "architecture",
+        "target": "点云加速器频繁片外访问",
+        "action": "拆分计算并确定流式阶段终止以适配 line-buffer 式执行",
+        "effect": "减少片上内存、能耗和停顿并提高速度",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "传统 line buffer 不适配点云计算模式，导致片外流量和流水线停顿。",
+    "scenario": "智能应用中的流式点云分析。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "systematiccxlmemorycharacterizationandperformanceanalysisatscale",
+    "id": 14337,
+    "title": "Systematic CXL Memory Characterization and Performance Analysis at Scale",
+    "paper": "https://doi.org/10.1145/3676641.3715987",
+    "method": "用 Melody 跨工作负载、真实设备、延迟档位和 CPU 平台系统刻画 CXL 内存。",
+    "technique": [
+      {
+        "name": "Melody CXL characterization",
+        "type": "measurement-method",
+        "target": "CXL memory 的设备与工作负载性能差异",
+        "action": "规模化测量平均/尾延迟、CPU 容忍度和预取行为，并以 SPA 定位瓶颈",
+        "effect": "形成可比较的 CXL 性能洞察和诊断方法",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "CXL 在设备、延迟、处理器和工作负载间的性能影响尚未系统探索。",
+    "scenario": "265 个负载、4 个真实 CXL 设备和 5 个 CPU 平台。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "tacklingmlbaseddynamicmispredictionsusingstaticallycomputedinvariantsforattacksurfacereduction",
+    "id": 14338,
+    "title": "Tackling ML-based Dynamic Mispredictions using Statically Computed Invariants for Attack Surface Reduction",
+    "paper": "https://doi.org/10.1145/3676641.3716276",
+    "method": "用 ML 预测动态函数调用集合，再以 Datalog 静态计算 ensue() 关系区分模型误判与攻击。",
+    "technique": [
+      {
+        "name": "static-invariant guarded ML prediction",
+        "type": "system-mechanism",
+        "target": "程序 debloating 与控制流监控的无保证预测",
+        "action": "限制运行代码面，并在预测违反时核对合法后继函数集合",
+        "effect": "缩减代码复用 gadget 且安全处理模型误预测",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "安全场景中的 ML 预测缺少保证，系统难以辨别普通误判和真实攻击。",
+    "scenario": "SPEC CPU 2017 与真实复杂应用的运行时防护。",
+    "evidence": "benchmark",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "taintemudecouplingtrackingfromfunctionaldomainsforarchitectureagnosticandefficientwholesystemtainttracking",
+    "id": 14339,
+    "title": "TaintEMU: Decoupling Tracking from Functional Domains for Architecture-Agnostic and Efficient Whole-System Taint Tracking",
+    "paper": "https://doi.org/10.1145/3676641.3716023",
+    "method": "在 QEMU TCG 和宿主资源层彻底解耦功能与污点域，并直接由 TCG 操作生成跟踪指令。",
+    "technique": [
+      {
+        "name": "TaintEMU decoupled whole-system tracking",
+        "type": "instrumentation",
+        "target": "跨来宾架构的系统级污点分析",
+        "action": "把影子寄存器映射到宿主并专用向量资源执行跟踪",
+        "effect": "扩大架构兼容性、降低开销并检测真实漏洞",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "功能与跟踪紧耦合使现有污点方法兼容性有限且性能开销巨大。",
+    "scenario": "AMD64 宿主、六类来宾 ISA 和七个应用中的八个 CVE。",
+    "evidence": "benchmark",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "taopttoolagnosticoptimizationofparallelizedautomatedmobileuitesting",
+    "id": 14340,
+    "title": "TaOPT: Tool-Agnostic Optimization of Parallelized Automated Mobile UI Testing",
+    "paper": "https://doi.org/10.1145/3676641.3716282",
+    "method": "在线推断应用松耦合 UI 子空间，并把不同设备引导到互异子空间而不修改测试工具。",
+    "technique": [
+      {
+        "name": "TaOPT subspace-guided parallel testing",
+        "type": "testing-method",
+        "target": "测试云中的并行移动 UI 自动化",
+        "action": "跨真实设备和模拟器协调子空间访问以减少重复探索",
+        "effect": "用更少时间和机器资源获得相当覆盖并发现更多崩溃",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "单设备优化工具不能解决多设备并行测试的资源和时间利用问题。",
+    "scenario": "十八个热门 Android 应用和三种 UI 测试工具。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "tapasthermalandpowerawareschedulingforllminferenceincloudplatforms",
+    "id": 14341,
+    "title": "TAPAS: Thermal- and Power-Aware Scheduling for LLM Inference in Cloud Platforms",
+    "paper": "https://doi.org/10.1145/3676641.3716025",
+    "method": "利用历史温度/功耗和 SaaS 可适配性，联合放置 GPU VM、路由请求并应急重配置。",
+    "technique": [
+      {
+        "name": "TAPAS thermal-power orchestration",
+        "type": "system-mechanism",
+        "target": "云 LLM 推理的散热、供电和成本约束",
+        "action": "在毫秒阶段画像下执行多层调度并处理负载峰值与设施故障",
+        "effect": "减少限频事件并提高冷却和功率超卖能力",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "LLM 阶段细碎且配置权衡复杂，传统热功耗管理不足以应对共置云负载。",
+    "scenario": "大型 GPU 推理集群及冷却/供电故障。",
+    "evidence": "real-world",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "tnicatrustednicarchitectureahardwarenetworksubstrateforbuildinghighperformancetrustworthydistributedsystems",
+    "id": 14342,
+    "title": "TNIC: A Trusted NIC Architecture: A hardware-network substrate for building high-performance trustworthy distributed systems",
+    "paper": "https://doi.org/10.1145/3676641.3716277",
+    "method": "在 NIC 建立最小形式验证 silicon root-of-trust，提供可转移认证、不可抵赖分叉和可信网络栈。",
+    "technique": [
+      {
+        "name": "TNIC trusted network substrate",
+        "type": "architecture",
+        "target": "异构不可信拜占庭云中的分布式系统",
+        "action": "以网络级隔离和 SmartNIC 加速为应用提供统一安全 API",
+        "effect": "在小 TCB 上构建高性能可信分布式服务",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "CPU TEE 方案性能有限且难为异构云提供统一可验证的网络信任。",
+    "scenario": "四种拜占庭可信分布式系统。",
+    "evidence": "benchmark",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "towardsendtoendoptimizationofllmbasedapplicationswithayo",
+    "id": 14343,
+    "title": "Towards End-to-End Optimization of LLM-based Applications with Ayo",
+    "paper": "https://doi.org/10.1145/3676641.3716278",
+    "method": "把 LLM 应用工作流细化为 primitive 级 dataflow graph，跨模块并行、流水和调度。",
+    "technique": [
+      {
+        "name": "Ayo fine-grained orchestration",
+        "type": "system-mechanism",
+        "target": "LLM 与非 LLM 组件构成的端到端应用延迟",
+        "action": "以任务原语替代粗粒度模块作为调度基本单元",
+        "effect": "扩大优化空间并提高多类 LLM 应用性能",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "模块级编排把优化限制在模块内部，忽略完整工作流的跨组件机会。",
+    "scenario": "多种流行 LLM 应用。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "towardssoundreassemblyofmodernx8664binaries",
+    "id": 14344,
+    "title": "Towards Sound Reassembly of Modern x86-64 Binaries",
+    "paper": "https://doi.org/10.1145/3676641.3716026",
+    "method": "利用 CET 性质精确符号化动态指针，并过近似间接分支目标以覆盖所有可能内存引用。",
+    "technique": [
+      {
+        "name": "SURI sound binary reassembly",
+        "type": "analysis-method",
+        "target": "无源码 x86-64 二进制透明重写",
+        "action": "符号化全部内存引用且保持原始语义",
+        "effect": "在大规模现实二进制上实现更可靠重组",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "sound symbolization 需精确识别所有内存引用，仍是二进制重组开放问题。",
+    "scenario": "9600 个现代真实 x86-64 二进制。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "treeletacceleratedraytracingongpus",
+    "id": 14345,
+    "title": "Treelet Accelerated Ray Tracing on GPUs",
+    "paper": "https://doi.org/10.1145/3676641.3716279",
+    "method": "虚拟化 ray 扩大并发复用，动态切换 treelet queue 遍历模式并重打包 warp。",
+    "technique": [
+      {
+        "name": "Virtualized Treelet Queues",
+        "type": "architecture",
+        "target": "GPU 实时光线追踪的 BVH 内存流量",
+        "action": "提前终止已发射 ray 的 shader、回收核心并聚合访问同一 treelet 的射线",
+        "effect": "提高缓存复用和 RT 单元 SIMT 效率",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "专用加速器的 treelet 方法直接移植到 GPU 无效且会限制帧率。",
+    "scenario": "LumiBench 场景的 GPU path tracing 仿真。",
+    "evidence": "simulation",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "velaavirtualizedllmtrainingsystemwithgpudirectroce",
+    "id": 14346,
+    "title": "Vela: A Virtualized LLM Training System with GPU Direct RoCE",
+    "paper": "https://doi.org/10.1145/3676641.3716280",
+    "method": "以 KVM、虚拟 RoCE 和 GPU-NIC peer-to-peer DMA 构建云原生大模型训练系统。",
+    "technique": [
+      {
+        "name": "Vela virtualized GPU Direct RoCE",
+        "type": "architecture",
+        "target": "通用云硬件上的大规模 LLM 训练",
+        "action": "让虚拟机 GPU 直接与 SR-IOV NIC 通信并支持模型并行",
+        "effect": "在约 1500 GPU 规模获得接近理想吞吐",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "需要用可获得的软硬件在虚拟化云中高效扩展大模型训练。",
+    "scenario": "IBM Cloud 数据中心 2.5 年生产运维与 A100 部署。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "velosiraptorcodesynthesisformemorytranslation",
+    "id": 14347,
+    "title": "Velosiraptor: Code Synthesis for Memory Translation",
+    "paper": "https://doi.org/10.1145/3676641.3711998",
+    "method": "从内存硬件映射行为和 OS 环境高层规范自动综合并验证低层配置代码。",
+    "technique": [
+      {
+        "name": "Velosiraptor verified synthesis",
+        "type": "formal-method",
+        "target": "操作系统对新内存转换与保护硬件的配置",
+        "action": "利用领域专属性生成可直接链接的实现及可选硬件组件",
+        "effect": "消除重复手工移植并避免破坏隔离的安全缺陷",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "手工适配不断演化的内存硬件耗时且易引入安全关键错误。",
+    "scenario": "操作系统跨新硬件平台的内存映射与保护。",
+    "evidence": "theory",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "virgoclusterlevelmatrixunitintegrationingpusforscalabilityandenergyefficiency",
+    "id": 14348,
+    "title": "Virgo: Cluster-level Matrix Unit Integration in GPUs for Scalability and Energy Efficiency",
+    "paper": "https://doi.org/10.1145/3676641.3716281",
+    "method": "将矩阵单元从单个 SIMT core 解耦并集成到 core cluster，增大操作粒度并卸载寄存器访问。",
+    "technique": [
+      {
+        "name": "Virgo cluster-level matrix unit",
+        "type": "architecture",
+        "target": "GPU tensor core 的规模与能效限制",
+        "action": "统一共享矩阵单元并与 SIMT core 并发执行 fused DNN",
+        "effect": "提高数据复用并降低片上动态功耗",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "矩阵单元紧耦合 SIMT core，受寄存器容量和带宽限制而难扩展。",
+    "scenario": "可综合 RTL 上 Ampere/Hopper 风格 GPU 对比。",
+    "evidence": "simulation",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "virtuosoenablingfastandaccuratevirtualmemoryresearchviaanimitationbasedoperatingsystemsimulationmethodology",
+    "id": 14349,
+    "title": "Virtuoso: Enabling Fast and Accurate Virtual Memory Research via an Imitation-based Operating System Simulation Methodology",
+    "paper": "https://doi.org/10.1145/3676641.3716027",
+    "method": "以轻量用户态 MimicOS 仅模仿所需内核功能，并接入多种架构模拟器评估虚拟内存共设计。",
+    "technique": [
+      {
+        "name": "Virtuoso imitation-based simulation",
+        "type": "system-mechanism",
+        "target": "虚拟内存软硬件方案的快速准确评估",
+        "action": "用高层接口实现可替换 OS 例程并与五类模拟器集成",
+        "effect": "提高软件组件建模精度且仅增加有限仿真时间",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "现有模拟要么不准确刻画 VM 软件，要么过慢复杂难以原型化跨层方案。",
+    "scenario": "五种 VM 用例、真实高端 CPU 和 Linux 对照。",
+    "evidence": "simulation",
+    "lens": [
+      "靶场/环境生成"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "willweeverhavetrulysecureoperatingsystems",
+    "id": 14350,
+    "title": "Will We Ever have Truly Secure Operating Systems?",
+    "paper": "https://doi.org/10.1145/3676642.3729205",
+    "method": "回顾 seL4 验证边界，并以简单、模块化、严格职责分离和用例专属策略设计 LionsOS。",
+    "technique": [
+      {
+        "name": "LionsOS verifiability-oriented design",
+        "type": "architecture",
+        "target": "嵌入式与信息物理系统的可证明安全操作系统",
+        "action": "在 seL4 上以最小模块和严格策略边界组织面向应用的 OS 服务",
+        "effect": "尝试把微内核隔离证明扩展到易部署的系统级安全保证",
+        "grounding": "partial",
+        "limitation": "摘要仅描述进行中的设计原则，未提供完整系统证明或定量评估"
+      }
+    ],
+    "problem": "seL4 已证明内核正确与隔离，但其上层服务缺乏端到端安全保证且部署困难。",
+    "scenario": "国防、民用安全关键及嵌入式信息物理操作系统。",
+    "evidence": "unknown",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "hasmachinelearningforsystemsreachedaninflectionpoint",
+    "id": 14351,
+    "title": "Has Machine Learning for Systems Reached an Inflection Point?",
+    "paper": "https://doi.org/10.1145/3676642.3729206",
+    "method": "从跨领域拐点比较出发，对 ML for Systems 工作进行分类并提出研究机会。",
+    "technique": [],
+    "problem": "机器学习尚未像在视觉和语言中那样成为计算机系统研究的主导范式。",
+    "scenario": "系统领域采用机器学习的趋势、差异与潜在 AlexNet 时刻。",
+    "evidence": "unknown",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "theasplos2025eurosys2025contestonintraoperatorparallelismfordistributeddeeplearning",
+    "id": 14352,
+    "title": "The ASPLOS 2025 / EuroSys 2025 Contest on Intra-Operator Parallelism for Distributed Deep Learning",
+    "paper": "https://doi.org/10.1145/3676642.3736399",
+    "method": "组织多月模型分区竞赛，并总结问题形式、关键挑战、机会、新基准套件和提交质量。",
+    "technique": [
+      {
+        "name": "intra-operator parallelism benchmark suite",
+        "type": "data-construction",
+        "target": "分布式深度学习模型分区算法比较",
+        "action": "把逐指令并行策略选择形式化并构造统一竞赛基准",
+        "effect": "促进可复现实验和新组合优化方法",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "神经网络包含多种并行方式，逐指令选择合适策略是困难的组合优化问题。",
+    "scenario": "ASPLOS 2025 / EuroSys 2025 分布式深度学习竞赛。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "asdrexploitingadaptivesamplinganddatareuseforcimbasedinstantneuralrendering",
+    "id": 14353,
+    "title": "ASDR: Exploiting Adaptive Sampling and Data Reuse for CIM-based Instant Neural Rendering",
+    "paper": "https://doi.org/10.1145/3676642.3736117",
+    "method": "按像素渲染难度动态采样、近似解耦颜色与密度，并映射到 ReRAM CIM 复用架构。",
+    "technique": [
+      {
+        "name": "ASDR adaptive CIM rendering",
+        "type": "architecture",
+        "target": "NeRF 实时性和功耗",
+        "action": "减少困难度较低像素采样及 MLP 计算，并在存内单元复用数据",
+        "effect": "以极小 PSNR 损失显著加速神经渲染",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "NeRF 不规则访问和高计算开销导致实际场景延迟与功耗过高。",
+    "scenario": "图形渲染任务中的 CIM NeRF 加速。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "cogentadaptablecompilertoolchainfortaggingriscvbinaries",
+    "id": 14354,
+    "title": "COGENT: Adaptable Compiler Toolchain for Tagging RISC-V Binaries",
+    "paper": "https://doi.org/10.1145/3676642.3736125",
+    "method": "以 LLVM 编译器、tag-aware 反汇编器和完整性检查器生成多粒度、可变宽 RISC-V 指令标签。",
+    "technique": [
+      {
+        "name": "COGENT flexible binary tagging",
+        "type": "instrumentation",
+        "target": "硬件运行时安全与测试策略的编译器元数据",
+        "action": "为函数、基本块或指令编码标签及控制流 label，并校验跨 IR 保留",
+        "effect": "降低定制标签工具链成本并支持 CFI、追踪和 fuzzing",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "面向特定架构开发自定义标签编译器耗时且难适配不同策略。",
+    "scenario": "RISC-V 上的控制流完整性、自适应追踪和硬件函数追踪。",
+    "evidence": "benchmark",
+    "lens": [
+      "渗透测试",
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "deepcontextacontextawarecrossplatformandcrossframeworktoolforperformanceprofilingandanalysisofdeeplearningworkloads",
+    "id": 14355,
+    "title": "DeepContext: A Context-aware, Cross-platform, and Cross-framework Tool for Performance Profiling and Analysis of Deep Learning Workloads",
+    "paper": "https://doi.org/10.1145/3676642.3736127",
+    "method": "通过框架无关 shim 关联 Python、深度学习框架、C/C++ 库与 GPU 执行上下文并自动诊断。",
+    "technique": [
+      {
+        "name": "DeepContext cross-stack profiling",
+        "type": "instrumentation",
+        "target": "异构深度学习软件栈的性能语义鸿沟",
+        "action": "将高层操作映射到硬件指标并输出可执行优化建议",
+        "effect": "揭示隐藏瓶颈并指导真实应用加速",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "现有工具无法跨框架和平台连接高层模型语义与低层执行。",
+    "scenario": "主流深度学习框架和现代 CPU+GPU 应用。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "dejavuzzdisclosingtransientexecutionbugswithdynamicswappablememoryanddifferentialinformationflowtrackingassistedprocessorfuzzing",
+    "id": 14356,
+    "title": "DejaVuzz: Disclosing Transient Execution Bugs with Dynamic Swappable Memory and Differential Information Flow Tracking Assisted Processor Fuzzing",
+    "paper": "https://doi.org/10.1145/3676642.3736115",
+    "method": "用动态可交换内存定向构造 transient window，并以差分信息流、taint coverage 与 liveness 引导变异。",
+    "technique": [
+      {
+        "name": "DejaVuzz transient-execution fuzzing",
+        "type": "testing-method",
+        "target": "乱序处理器瞬态执行漏洞",
+        "action": "隔离指令流、消除无效训练并追踪敏感数据微架构传播",
+        "effect": "提高窗口覆盖并识别可利用泄漏和新 CVE",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "硬件 fuzzer 对微架构控制和观察不足，难有效触发与检测瞬态漏洞。",
+    "scenario": "预硅 BOOM 与香山处理器设计。",
+    "evidence": "benchmark",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "faultescapingimprovingrobustnessofdpuenhancedplatformwithmutualassistedvmrecovery",
+    "id": 14357,
+    "title": "Fault Escaping: Improving Robustness of DPU Enhanced Platform with Mutual Assisted VM Recovery",
+    "paper": "https://doi.org/10.1145/3676642.3736124",
+    "method": "把 DPU SoC 与宿主分裂 hypervisor 视为冗余对等体，以混合同步共享 VM 状态并从故障侧逃逸。",
+    "technique": [
+      {
+        "name": "fault-escaping VM recovery",
+        "type": "system-mechanism",
+        "target": "DPU 增强云服务器的宿主或 SoC 故障",
+        "action": "验证并迁移完整 VM 状态到新机器，而非先恢复失效 hypervisor",
+        "effect": "无运行开销地显著缩短恢复时间目标",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "虚拟化状态和功能被拆到 DPU 与宿主后，任一侧错误都可能崩溃整机。",
+    "scenario": "大型生产云环境的 DPU 虚拟机恢复。",
+    "evidence": "real-world",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "hoppsleveragingsparsitytoaccelerateautomataprocessing",
+    "id": 14358,
+    "title": "Hopps: Leveraging Sparsity to Accelerate Automata Processing",
+    "paper": "https://doi.org/10.1145/3676642.3736126",
+    "method": "混合稠密高吞吐与压缩稀疏单元，并用映射算法把状态和工作负载分配到合适单元。",
+    "technique": [
+      {
+        "name": "Hopps hybrid sparse automata accelerator",
+        "type": "architecture",
+        "target": "自动机图稀疏性造成的加速器面积浪费",
+        "action": "大部分工作映射到稠密单元，同时把大量状态保存在压缩单元",
+        "effect": "等面积下提高模式匹配吞吐",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "既有 crossbar 加速器以未压缩 bitset 存储高度稀疏自动机，效率低。",
+    "scenario": "AutomataZoo 与网络恶意字符串匹配。",
+    "evidence": "benchmark",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "hybridtieranadaptiveandlightweightcxlmemorytieringsystem",
+    "id": 14359,
+    "title": "HybridTier: an Adaptive and Lightweight CXL-Memory Tiering System",
+    "paper": "https://doi.org/10.1145/3676642.3736119",
+    "method": "同时跟踪长期访问频率和短期 momentum，并用概率统计和局部性数据结构压低元数据开销。",
+    "technique": [
+      {
+        "name": "HybridTier dual-timescale tracking",
+        "type": "system-mechanism",
+        "target": "DRAM/CXL 分层内存的动态数据热度",
+        "action": "以少量精度换取更低内存和缓存成本并自适应迁移热点",
+        "effect": "更准确跟随热度漂移并改善性能",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "高性能分层需要适应偏斜且变化的热度，同时避免追踪元数据占用内存和 cache。",
+    "scenario": "多种 CXL memory tiering 工作负载。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "λtrimoptimizingfunctioninitializationinserverlessapplicationswithcostdrivendebloating",
+    "id": 14360,
+    "title": "λ-trim: Optimizing Function Initialization in Serverless Applications With Cost-driven Debloating",
+    "paper": "https://doi.org/10.1145/3676642.3736129",
+    "method": "用静态分析、适配 serverless 定价的 profiler 和 debloater，按时延与内存成本优先删除冗余 Python 模块。",
+    "technique": [
+      {
+        "name": "λ-trim cost-driven debloating",
+        "type": "analysis-method",
+        "target": "无服务器函数初始化的可计费冷启动成本",
+        "action": "识别并裁剪对功能无贡献但占用内存或时间的代码",
+        "effect": "保持正确性并降低冷启动延迟和货币成本",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "函数初始化常占真实机器学习冷启动成本一半以上，却长期被忽略。",
+    "scenario": "可直接部署的 Python serverless 应用。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "neuralinkfastondevicellminferencewithneuroncoactivationlinking",
+    "id": 14361,
+    "title": "Neuralink: Fast on-Device LLM Inference with Neuron Co-Activation Linking",
+    "paper": "https://doi.org/10.1145/3676642.3736114",
+    "method": "离线按神经元共激活模式重排 flash 布局，在线以硬件适配访问与缓存连续读取相关神经元。",
+    "technique": [
+      {
+        "name": "Neuralink co-activation placement",
+        "type": "data-construction",
+        "target": "稀疏端侧 LLM 从 flash 读取神经元的 IOPS 瓶颈",
+        "action": "把常共同激活的神经元相邻放置并优化在线缓存",
+        "effect": "保留完整模型精度并缩短手机推理延迟",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "稀疏方法减少 DRAM 占用，却在 IOPS 受限手机上产生大量小型 flash 访问。",
+    "scenario": "多种智能手机与端侧 LLM。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "powermoveoptimizingcompilationforneutralatomquantumcomputerswithzonedarchitecture",
+    "id": 14362,
+    "title": "PowerMove: Optimizing Compilation for Neutral Atom Quantum Computers with Zoned Architecture",
+    "paper": "https://doi.org/10.1145/3676642.3736128",
+    "method": "联合协调 gate 调度、qubit 定位、原子移动与跨 zone 通信，优化中性原子量子编译。",
+    "technique": [
+      {
+        "name": "PowerMove zoned compilation",
+        "type": "algorithm",
+        "target": "Zoned Architecture 中性原子量子计算机",
+        "action": "系统搜索 qubit 移动策略并整合 NISQ 与 QEC 逻辑 qubit 约束",
+        "effect": "提高保真度并缩短执行和编译时间",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "移动能力与分区硬件带来跨多个相互依赖环节的复杂编译优化。",
+    "scenario": "多种 NISQ 应用与容错量子计算。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "pushtappimbasedinmemoryhtapwithunifieddatastorageformat",
+    "id": 14363,
+    "title": "PUSHtap: PIM-based In-Memory HTAP with Unified Data Storage Format",
+    "paper": "https://doi.org/10.1145/3676642.3736120",
+    "method": "利用 CPU 交错访问与 PIM 局部访问构造统一二维数据格式，并实现 MVCC 与并发访问扩展。",
+    "technique": [
+      {
+        "name": "PUSHtap unified CPU-PIM layout",
+        "type": "architecture",
+        "target": "HTAP 行式 OLTP 与列式 OLAP 格式冲突",
+        "action": "通过数据对齐和放置同时优化 CPU/PIM 带宽与并行性",
+        "effect": "在单实例中兼顾隔离、新鲜度和工作负载优化",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "行存和列存需求冲突，阻碍 HTAP 同时满足三个核心设计目标。",
+    "scenario": "PIM 内存上的并发 OLTP 与 OLAP。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "sylqsvscalingsymbolicexecutionofhardwaredesignswithquerycaching",
+    "id": 14364,
+    "title": "SYLQ-SV: Scaling Symbolic Execution of Hardware Designs with Query Caching",
+    "paper": "https://doi.org/10.1145/3676642.3736123",
+    "method": "为 SystemVerilog 构建完整符号执行引擎，并缓存 SMT 查询以缓解路径爆炸。",
+    "technique": [
+      {
+        "name": "SylQ-SV SMT query caching",
+        "type": "formal-method",
+        "target": "硬件设计的路径式覆盖与安全验证成本",
+        "action": "复用重复约束求解并支持 SystemVerilog Assertions 的端到端流程",
+        "effect": "缩短开源 SoC 符号执行时间",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "路径爆炸使硬件符号执行即使经过改进仍然昂贵。",
+    "scenario": "OR1200、OpenTitan 与 HACK@DAC SoC。",
+    "evidence": "benchmark",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "synostructuredsynthesisforneuraloperators",
+    "id": 14365,
+    "title": "Syno: Structured Synthesis for Neural Operators",
+    "paper": "https://doi.org/10.1145/3676642.3736118",
+    "method": "用 tensor 维度细粒度原语、表达式规范化和引导随机树搜索自动综合新神经算子。",
+    "technique": [
+      {
+        "name": "Syno structured operator synthesis",
+        "type": "algorithm",
+        "target": "超越人工现有算子的神经网络精度与速度优化",
+        "action": "约束输入输出尺寸、去除重复候选并搜索可训练的新算子结构",
+        "effect": "跨硬件和编译器发现更快且精度相近的算子",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "NAS 与 tensor 编译器只能组合或优化人工算子，不能产生全新设计。",
+    "scenario": "多种硬件、编译器和 NAS 优化模型。",
+    "evidence": "benchmark",
+    "lens": [
+      "开放集/泛化"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "tempgraphanefficientchaindriventemporalgraphcomputingframeworkonthegpu",
+    "id": 14366,
+    "title": "TempGraph: An Efficient Chain-driven Temporal Graph Computing Framework on the GPU",
+    "paper": "https://doi.org/10.1145/3676642.3736116",
+    "method": "将时序图变换为互不相交依赖链，并用 Generate-Activate-Compute 和 shortcut 解耦链间依赖。",
+    "technique": [
+      {
+        "name": "TempGraph chain-driven execution",
+        "type": "system-mechanism",
+        "target": "时间路径算法的串行依赖与慢收敛",
+        "action": "让多条依赖链由大量 GPU 线程并发探索",
+        "effect": "提高时间图路径计算的并行度和收敛速度",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "时间约束迫使顶点沿依赖链顺序处理，GPU 并行性无法发挥。",
+    "scenario": "A100 GPU 上的时序图路径问题。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "voyagerinputadaptivealgebraictransformationsforhighperformancegraphneuralnetworks",
+    "id": 14367,
+    "title": "Voyager: Input-Adaptive Algebraic Transformations for High-Performance Graph Neural Networks",
+    "paper": "https://doi.org/10.1145/3676642.3736121",
+    "method": "按图结构动态生成重排与融合候选，以符号属性剪枝并在运行时选择最佳 transformation。",
+    "technique": [
+      {
+        "name": "Voyager input-adaptive transformation",
+        "type": "algorithm",
+        "target": "GNN 结构差异下的代数优化",
+        "action": "估计 tensor shape、淘汰低性能候选并依据实时输入特征选方案",
+        "effect": "避免静态规则次优并加速 GPU GNN",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "输入图多样且依赖复杂，使 DNN 的固定重排融合规则在 GNN 上表现次优。",
+    "scenario": "代表性 GNN 与数据集的 GPU 执行。",
+    "evidence": "benchmark",
+    "lens": [
+      "开放集/泛化"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "waveoffloadingresourcemanagementtosmartniccores",
+    "id": 14368,
+    "title": "Wave: Offloading Resource Management to SmartNIC Cores",
+    "paper": "https://doi.org/10.1145/3676642.3736113",
+    "method": "用 Linux 用户态进程/agent 在 SmartNIC ARM 核执行 OS 决策，并提供微秒级主机通信 API。",
+    "technique": [
+      {
+        "name": "Wave userspace offloading",
+        "type": "architecture",
+        "target": "数据中心主机 CPU 上的系统软件资源占用",
+        "action": "把调度、内存管理和 RPC 等预存软件迁到 SmartNIC 中端核心",
+        "effect": "以较小性能代价回收大量付费主机资源",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "云系统软件消耗可售主机核心，而 SmartNIC 核的系统功能承载能力未被充分利用。",
+    "scenario": "SmartNIC 上的内核线程调度、内存管理、RPC 与 VM。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  }
+]

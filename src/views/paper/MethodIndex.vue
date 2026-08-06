@@ -4,16 +4,15 @@
             <MegaMenu :model="items" />
         </div>
 
-        <div class="card content-card">
-            <!-- Header -->
+        <div class="card content-card" :aria-busy="loadState === 'loading'">
             <header v-if="selection" class="mi-header">
-                <div class="mi-header-icon"><i class="pi pi-sitemap"></i></div>
-                <div>
+                <div class="mi-header-icon" aria-hidden="true"><i class="pi pi-sitemap"></i></div>
+                <div class="mi-header-copy">
                     <h2 class="mi-title">
                         {{ selection.publication }} <span class="mi-year">{{ selection.year }}</span>
                     </h2>
-                    <p class="mi-subtitle" v-if="!loading && !notGenerated">
-                        {{ rows.length }} {{ t('methodIndex.papers') }}
+                    <p v-if="loadState === 'ready'" class="mi-subtitle">
+                        {{ t('methodIndex.resultCount', { filtered: filteredRows.length, total: rows.length }) }}
                     </p>
                 </div>
             </header>
@@ -21,203 +20,484 @@
                 <h2 class="mi-title">{{ t('methodIndex.selectPublication') }}</h2>
             </header>
 
-            <!-- Empty state -->
-            <div v-if="!selection && !loading" class="mi-empty">
-                <i class="pi pi-hand-point-up mi-empty-icon"></i>
+            <div v-if="!selection && loadState === 'idle'" class="mi-state" role="status">
+                <i class="pi pi-hand-point-up mi-state-icon" aria-hidden="true"></i>
                 <p>{{ t('methodIndex.emptyHint') }}</p>
             </div>
 
-            <!-- Loading -->
-            <div v-else-if="loading" class="mi-empty">
-                <i class="pi pi-spinner pi-spin mi-empty-icon"></i>
+            <div v-else-if="loadState === 'loading'" class="mi-state" role="status" aria-live="polite">
+                <i class="pi pi-spinner pi-spin mi-state-icon" aria-hidden="true"></i>
                 <p>{{ t('methodIndex.loading') }}</p>
             </div>
 
-            <!-- Not generated -->
-            <div v-else-if="notGenerated" class="mi-empty">
-                <i class="pi pi-inbox mi-empty-icon"></i>
+            <div v-else-if="loadState === 'missing'" class="mi-state" role="status">
+                <i class="pi pi-inbox mi-state-icon" aria-hidden="true"></i>
                 <p>{{ t('methodIndex.notGenerated', { venue: selection.publication, year: selection.year }) }}</p>
             </div>
 
-            <!-- Index table -->
-            <DataTable
-                v-else
-                class="borderless-table"
-                :value="displayedRows"
-                v-model:filters="filters"
-                size="small"
-                data-key="key"
-                paginator :rows="15"
-                :globalFilterFields="['title', 'technique', 'method', 'problem', 'scenario']"
-                :rows-per-page-options="[15, 30, 50, 100]"
-                paginator-template="RowsPerPageDropdown FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport"
-            >
-                <template #header>
-                    <div class="flex flex-wrap justify-between gap-2">
-                        <MultiSelect
-                            v-model="selectedLenses"
-                            :options="lensOptions"
-                            display="chip"
-                            :placeholder="t('methodIndex.anyLens')"
-                            :max-selected-labels="4"
-                            class="min-w-64"
-                        />
-                        <IconField>
-                            <InputIcon><i class="pi pi-search" /></InputIcon>
-                            <InputText v-model="filters['global'].value" :placeholder="t('methodIndex.searchPlaceholder')" />
-                        </IconField>
-                    </div>
-                </template>
+            <div v-else-if="loadState === 'error'" class="mi-state" role="alert">
+                <i class="pi pi-exclamation-triangle mi-state-icon" aria-hidden="true"></i>
+                <p>{{ t('methodIndex.loadFailed') }}</p>
+                <Button :label="t('methodIndex.retry')" icon="pi pi-refresh" severity="secondary" @click="retryLoad" />
+            </div>
 
-                <template #empty>{{ t('methodIndex.notGenerated', { venue: selection.publication, year: selection.year }) }}</template>
+            <template v-else-if="loadState === 'ready'">
+                <section class="mi-toolbar" :aria-label="t('methodIndex.filtersLabel')">
+                    <IconField class="mi-search">
+                        <InputIcon><i class="pi pi-search" /></InputIcon>
+                        <InputText v-model="query" :placeholder="t('methodIndex.searchPlaceholder')" :aria-label="t('methodIndex.searchPlaceholder')" />
+                    </IconField>
+                    <MultiSelect v-model="selectedLenses" :options="lensOptions" display="chip" :placeholder="t('methodIndex.anyLens')" :aria-label="t('methodIndex.anyLens')" :max-selected-labels="3" class="mi-filter" />
+                    <MultiSelect
+                        v-model="selectedTypes"
+                        :options="typeOptions"
+                        option-label="label"
+                        option-value="value"
+                        display="chip"
+                        :placeholder="t('methodIndex.anyType')"
+                        :aria-label="t('methodIndex.anyType')"
+                        :max-selected-labels="3"
+                        :disabled="typeOptions.length === 0"
+                        class="mi-filter"
+                    />
+                    <Button v-if="hasFilters" :label="t('methodIndex.clearFilters')" icon="pi pi-filter-slash" severity="secondary" text @click="clearFilters" />
+                </section>
 
-                <Column :header="t('methodIndex.title')" style="min-width: 16rem">
-                    <template #body="{ data }">
-                        <a v-if="data.paper && data.paper !== '#'" :href="data.paper" target="_blank" rel="noopener" class="mi-paper-title">
-                            {{ data.title }}<i class="pi pi-external-link mi-link-icon"></i>
-                        </a>
-                        <span v-else>{{ data.title }}</span>
+                <div v-if="filteredRows.length === 0" class="mi-state" role="status">
+                    <i class="pi pi-search mi-state-icon" aria-hidden="true"></i>
+                    <p>{{ t('methodIndex.noResults') }}</p>
+                    <Button v-if="hasFilters" :label="t('methodIndex.clearFilters')" icon="pi pi-filter-slash" severity="secondary" @click="clearFilters" />
+                </div>
+
+                <DataView
+                    v-else
+                    v-model:first="first"
+                    :value="filteredRows"
+                    data-key="key"
+                    paginator
+                    :rows="pageSize"
+                    :rows-per-page-options="[12, 24, 48]"
+                    paginator-template="RowsPerPageDropdown FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport"
+                    :current-page-report-template="pageReportTemplate"
+                    class="mi-data-view"
+                    @page="handlePage"
+                >
+                    <template #list="slotProps">
+                        <ul class="mi-card-list">
+                            <li v-for="paper in slotProps.items" :key="paper.key" class="mi-card-item">
+                                <article :aria-labelledby="paperTitleId(paper)">
+                                    <Card class="mi-paper-card">
+                                        <template #content>
+                                            <div class="mi-paper-heading">
+                                                <h3 :id="paperTitleId(paper)" class="mi-paper-title">
+                                                    <a v-if="paper.paper && paper.paper !== '#'" :href="paper.paper" target="_blank" rel="noopener noreferrer" :aria-label="t('methodIndex.openPaperLabel', { title: paper.title })">
+                                                        {{ paper.title }}
+                                                        <i class="pi pi-external-link mi-link-icon" aria-hidden="true"></i>
+                                                    </a>
+                                                    <span v-else>{{ paper.title }}</span>
+                                                </h3>
+                                                <Tag v-if="paper.evidence" :value="paper.evidence" :severity="evidenceSeverity(paper.evidence)" />
+                                            </div>
+
+                                            <section v-if="paper.method" class="mi-method-block">
+                                                <h4>{{ t('methodIndex.method') }}</h4>
+                                                <p>{{ paper.method }}</p>
+                                            </section>
+
+                                            <dl class="mi-paper-facts">
+                                                <div v-if="paper.problem">
+                                                    <dt>{{ t('methodIndex.problem') }}</dt>
+                                                    <dd>{{ paper.problem }}</dd>
+                                                </div>
+                                                <div v-if="paper.scenario">
+                                                    <dt>{{ t('methodIndex.scenario') }}</dt>
+                                                    <dd>{{ paper.scenario }}</dd>
+                                                </div>
+                                            </dl>
+
+                                            <div v-if="paper.lens.length" class="mi-lenses" :aria-label="t('methodIndex.lens')">
+                                                <span v-for="lens in paper.lens" :key="lens" class="mi-lens-chip">{{ lens }}</span>
+                                            </div>
+
+                                            <section class="mi-techniques" :aria-labelledby="techniqueHeadingId(paper)">
+                                                <h4 :id="techniqueHeadingId(paper)">{{ t('methodIndex.techniquePoints') }}</h4>
+                                                <p v-if="paper.techniques.length === 0" class="mi-technique-empty">
+                                                    {{ t('methodIndex.emptyTechnique') }}
+                                                </p>
+                                                <template v-else>
+                                                    <div class="mi-technique-buttons">
+                                                        <Button
+                                                            v-for="technique in paper.techniques"
+                                                            :id="techniqueButtonId(paper, technique)"
+                                                            :key="technique.id"
+                                                            type="button"
+                                                            size="small"
+                                                            :label="techniqueLabel(technique)"
+                                                            :icon="isTechniqueExpanded(paper, technique) ? 'pi pi-chevron-up' : 'pi pi-chevron-down'"
+                                                            :outlined="!isTechniqueExpanded(paper, technique)"
+                                                            :severity="isTechniqueExpanded(paper, technique) ? 'primary' : 'secondary'"
+                                                            :class="{ 'mi-technique-button--match': isTechniqueMatch(paper, technique) }"
+                                                            :aria-expanded="isTechniqueExpanded(paper, technique) ? 'true' : 'false'"
+                                                            :aria-controls="techniqueRegionId(paper, technique)"
+                                                            @click="toggleTechnique(paper, technique)"
+                                                        />
+                                                    </div>
+
+                                                    <section
+                                                        v-for="technique in paper.techniques"
+                                                        v-show="isTechniqueExpanded(paper, technique)"
+                                                        :id="techniqueRegionId(paper, technique)"
+                                                        :key="`${technique.id}-detail`"
+                                                        class="mi-technique-detail"
+                                                        role="region"
+                                                        :aria-labelledby="techniqueButtonId(paper, technique)"
+                                                    >
+                                                        <p v-if="technique.isLegacy" class="mi-legacy-text">{{ technique.legacyText }}</p>
+                                                        <dl v-else class="mi-technique-schema">
+                                                            <div v-if="technique.type">
+                                                                <dt>{{ t('methodIndex.fields.type') }}</dt>
+                                                                <dd><Tag :value="typeLabel(technique.type)" severity="secondary" /></dd>
+                                                            </div>
+                                                            <div v-if="technique.target">
+                                                                <dt>{{ t('methodIndex.fields.target') }}</dt>
+                                                                <dd>{{ technique.target }}</dd>
+                                                            </div>
+                                                            <div v-if="technique.action">
+                                                                <dt>{{ t('methodIndex.fields.action') }}</dt>
+                                                                <dd>{{ technique.action }}</dd>
+                                                            </div>
+                                                            <div v-if="technique.effect">
+                                                                <dt>{{ t('methodIndex.fields.effect') }}</dt>
+                                                                <dd>{{ technique.effect }}</dd>
+                                                            </div>
+                                                            <div v-if="technique.grounding">
+                                                                <dt>{{ t('methodIndex.fields.grounding') }}</dt>
+                                                                <dd>{{ groundingLabel(technique.grounding) }}</dd>
+                                                            </div>
+                                                            <div v-if="technique.limitation" class="mi-schema-wide">
+                                                                <dt>{{ t('methodIndex.fields.limitation') }}</dt>
+                                                                <dd>{{ technique.limitation }}</dd>
+                                                            </div>
+                                                        </dl>
+                                                    </section>
+                                                </template>
+                                            </section>
+                                        </template>
+                                    </Card>
+                                </article>
+                            </li>
+                        </ul>
                     </template>
-                </Column>
-                <Column :header="t('methodIndex.scenario')" field="scenario" style="min-width: 10rem" />
-                <Column :header="t('methodIndex.problem')" field="problem" style="min-width: 12rem" />
-                <Column :header="t('methodIndex.method')" field="method" style="min-width: 12rem" />
-                <Column :header="t('methodIndex.technique')" field="technique" style="min-width: 18rem">
-                    <template #body="{ data }">
-                        <span class="mi-technique">{{ data.technique || '—' }}</span>
-                    </template>
-                </Column>
-                <Column :header="t('methodIndex.evidence')" style="min-width: 8rem">
-                    <template #body="{ data }">
-                        <Tag :value="data.evidence" :severity="evidenceSeverity(data.evidence)" />
-                    </template>
-                </Column>
-                <Column :header="t('methodIndex.lens')" style="min-width: 10rem">
-                    <template #body="{ data }">
-                        <span v-for="l in (data.lens || [])" :key="l" class="mi-lens-chip">{{ l }}</span>
-                    </template>
-                </Column>
-            </DataTable>
+                </DataView>
+            </template>
         </div>
     </div>
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onUnmounted } from 'vue';
+import { computed, onMounted, onUnmounted, ref, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
-import { FilterMatchMode } from '@primevue/core/api';
 import { usePageTitle } from '@/composables/useI18n';
 import { languageEmitter } from '@/locales';
 import paperStatis from '@/assets/data/data-statistics.json';
 
-const { t } = useI18n();
+const { t, te, tm } = useI18n();
 usePageTitle('menu.methodIndex');
+
+const TECHNIQUE_TYPE_ORDER = [
+    'algorithm',
+    'model',
+    'architecture',
+    'protocol',
+    'system-mechanism',
+    'hardware-mechanism',
+    'data-construction',
+    'instrumentation',
+    'analysis-method',
+    'testing-method',
+    'measurement-method',
+    'formal-method',
+    'user-study',
+    'other',
+    'legacy'
+];
 
 const paperStatisRef = ref(paperStatis);
 const items = ref([]);
 const selection = ref(null);
 const rows = ref([]);
-const loading = ref(false);
-const notGenerated = ref(false);
+const loadState = ref('idle');
+const query = ref('');
 const selectedLenses = ref([]);
-const filters = ref({ global: { value: null, matchMode: FilterMatchMode.CONTAINS } });
+const selectedTypes = ref([]);
+const first = ref(0);
+const pageSize = ref(12);
+const expandedTechniqueByPaper = ref({});
+let activeController = null;
+let requestSequence = 0;
 
-// --- venue -> category grouping (data-driven, same approach as ViewAbstract) ---
 const CATEGORY_ORDER = ['top-tier', 'software-engineering', 'system', 'ai-ml', 'journal'];
 const CATEGORY_META = {
     'top-tier': { key: 'abstract.topTier', icon: 'pi pi-shield' },
     'software-engineering': { key: 'abstract.softwareEngineering', icon: 'pi pi-code' },
-    'system': { key: 'abstract.system', icon: 'pi pi-cog' },
+    system: { key: 'abstract.system', icon: 'pi pi-cog' },
     'ai-ml': { key: 'abstract.aiMl', icon: 'pi pi-sparkles' },
-    'journal': { key: 'abstract.journal', icon: 'pi pi-book' }
+    journal: { key: 'abstract.journal', icon: 'pi pi-book' }
 };
-const categoryLabel = (c) => (CATEGORY_META[c] ? t(CATEGORY_META[c].key) : c);
-const categoryIcon = (c) => (CATEGORY_META[c] ? CATEGORY_META[c].icon : 'pi pi-folder');
+
+const categoryLabel = (category) => (CATEGORY_META[category] ? t(CATEGORY_META[category].key) : category);
+const categoryIcon = (category) => (CATEGORY_META[category] ? CATEGORY_META[category].icon : 'pi pi-folder');
+
+const normalizeText = (value) =>
+    String(value ?? '')
+        .trim()
+        .toLocaleLowerCase();
+const joinSearchText = (values) =>
+    normalizeText(
+        values
+            .flat(Infinity)
+            .filter((value) => value != null)
+            .join(' ')
+    );
+const domSafe = (value) => String(value || 'paper').replace(/[^a-zA-Z0-9_-]/g, '-');
+
+const normalizeTechnique = (value, paperKey, index) => {
+    const id = `${paperKey}-${index}`;
+    if (typeof value === 'string') {
+        if (!value.trim()) return null;
+        return {
+            id,
+            index,
+            name: '',
+            type: 'legacy',
+            target: '',
+            action: '',
+            effect: '',
+            grounding: '',
+            limitation: '',
+            legacyText: value,
+            isLegacy: true,
+            searchText: normalizeText(value)
+        };
+    }
+    if (!value || typeof value !== 'object' || Array.isArray(value)) return null;
+    const technique = {
+        id,
+        index,
+        name: typeof value.name === 'string' ? value.name : '',
+        type: typeof value.type === 'string' ? value.type : '',
+        target: typeof value.target === 'string' ? value.target : '',
+        action: typeof value.action === 'string' ? value.action : '',
+        effect: typeof value.effect === 'string' ? value.effect : '',
+        grounding: typeof value.grounding === 'string' ? value.grounding : '',
+        limitation: typeof value.limitation === 'string' ? value.limitation : '',
+        legacyText: '',
+        isLegacy: false
+    };
+    technique.searchText = joinSearchText([technique.name, technique.type, technique.target, technique.action, technique.effect, technique.grounding, technique.limitation]);
+    return technique;
+};
+
+const normalizeRow = (row, index) => {
+    const key = typeof row?.key === 'string' && row.key ? row.key : `row-${index}`;
+    const rawTechnique = row?.technique;
+    const values = Array.isArray(rawTechnique) ? rawTechnique : rawTechnique == null ? [] : [rawTechnique];
+    const techniques = values.map((value, techniqueIndex) => normalizeTechnique(value, key, techniqueIndex)).filter(Boolean);
+    const lens = Array.isArray(row?.lens) ? row.lens.filter((value) => typeof value === 'string' && value.trim()) : [];
+    const paperSearchText = joinSearchText([row?.title, row?.method, row?.problem, row?.scenario, row?.evidence, lens]);
+    return {
+        ...row,
+        key,
+        title: typeof row?.title === 'string' ? row.title : key,
+        lens,
+        techniques,
+        paperSearchText,
+        allSearchText: joinSearchText([paperSearchText, techniques.map((technique) => technique.searchText)])
+    };
+};
 
 const constructPublicationItems = () => {
     const pubToCategory = {};
-    (paperStatisRef.value.overview || []).forEach((el) => {
-        pubToCategory[el.label] = el.category;
+    (paperStatisRef.value.overview || []).forEach((entry) => {
+        pubToCategory[entry.label] = entry.category;
     });
     const present = new Set(Object.values(pubToCategory));
-    const categories = [
-        ...CATEGORY_ORDER.filter((c) => present.has(c)),
-        ...[...present].filter((c) => !CATEGORY_ORDER.includes(c))
-    ];
+    const categories = [...CATEGORY_ORDER.filter((category) => present.has(category)), ...[...present].filter((category) => !CATEGORY_ORDER.includes(category))];
     const groupIndex = {};
-    const newItems = categories.map((category, i) => {
-        groupIndex[category] = i;
+    const newItems = categories.map((category, index) => {
+        groupIndex[category] = index;
         return { label: categoryLabel(category), icon: categoryIcon(category), items: [] };
     });
-    for (let publication in paperStatisRef.value.byPublicationAndYear) {
+    for (const publication in paperStatisRef.value.byPublicationAndYear) {
         const targetIndex = groupIndex[pubToCategory[publication]];
         if (targetIndex === undefined) continue;
         const perYear = paperStatisRef.value.byPublicationAndYear[publication];
-        const tempPublicationItem = { label: publication, items: [] };
-        for (let year in perYear) {
-            tempPublicationItem.items.push({
+        const publicationItem = { label: publication, items: [] };
+        for (const year in perYear) {
+            publicationItem.items.push({
                 label: year,
-                command: () => {
-                    selection.value = { publication, year };
-                    loadIndex(publication, year);
-                }
+                command: () => selectSource(publication, year)
             });
         }
-        tempPublicationItem.items = tempPublicationItem.items.reverse();
-        newItems[targetIndex].items.push([tempPublicationItem]);
+        publicationItem.items.reverse();
+        newItems[targetIndex].items.push([publicationItem]);
     }
     items.value = newItems;
 };
 
-// --- load a per-venue-year index file from radar/index/ ---
-const loadIndex = async (publication, year) => {
-    loading.value = true;
-    notGenerated.value = false;
-    rows.value = [];
-    selectedLenses.value = [];
-    const file = `${publication} - ${year}.json`;
-    const url = import.meta.env.PROD
-        ? 'https://raw.githubusercontent.com/xuanxuan197068/papers-collection/main/radar/index/' + encodeURIComponent(file)
-        : '/radar/index/' + encodeURIComponent(file);
-    try {
-        const res = await fetch(url);
-        if (res.ok) {
-            rows.value = await res.json();
-        } else {
-            notGenerated.value = true;
-        }
-    } catch (e) {
-        console.log(e);
-        notGenerated.value = true;
-    } finally {
-        loading.value = false;
+const resetViewState = ({ clearQuery = false } = {}) => {
+    first.value = 0;
+    expandedTechniqueByPaper.value = {};
+    if (clearQuery) {
+        query.value = '';
+        selectedLenses.value = [];
+        selectedTypes.value = [];
     }
 };
 
+const selectSource = (publication, year) => {
+    selection.value = { publication, year };
+    resetViewState({ clearQuery: true });
+    loadIndex(publication, year);
+};
+
+const loadIndex = async (publication, year) => {
+    activeController?.abort();
+    const controller = new AbortController();
+    activeController = controller;
+    const requestId = ++requestSequence;
+    loadState.value = 'loading';
+    rows.value = [];
+    const file = `${publication} - ${year}.json`;
+    const url = import.meta.env.PROD ? `https://raw.githubusercontent.com/xuanxuan197068/papers-collection/main/radar/index/${encodeURIComponent(file)}` : `/radar/index/${encodeURIComponent(file)}`;
+    try {
+        const response = await fetch(url, { signal: controller.signal });
+        if (requestId !== requestSequence) return;
+        if (response.status === 404) {
+            loadState.value = 'missing';
+            return;
+        }
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        // Vite's development SPA fallback returns index.html with HTTP 200 for
+        // an absent JSON file; treat that response as a missing index as well.
+        if ((response.headers.get('content-type') || '').includes('text/html')) {
+            loadState.value = 'missing';
+            return;
+        }
+        const payload = await response.json();
+        if (!Array.isArray(payload)) throw new Error('Method index must be a JSON array');
+        rows.value = payload.map(normalizeRow);
+        loadState.value = 'ready';
+    } catch (error) {
+        if (error?.name === 'AbortError' || requestId !== requestSequence) return;
+        console.error('Failed to load method index:', error);
+        loadState.value = 'error';
+    } finally {
+        if (requestId === requestSequence && activeController === controller) activeController = null;
+    }
+};
+
+const retryLoad = () => {
+    if (selection.value) loadIndex(selection.value.publication, selection.value.year);
+};
+
 const lensOptions = computed(() => {
-    const s = new Set();
-    rows.value.forEach((r) => (r.lens || []).forEach((l) => s.add(l)));
-    return [...s].sort();
+    const values = new Set();
+    rows.value.forEach((row) => row.lens.forEach((lens) => values.add(lens)));
+    return [...values].sort((left, right) => left.localeCompare(right));
 });
 
-const displayedRows = computed(() => {
-    if (!selectedLenses.value.length) return rows.value;
-    return rows.value.filter((r) => (r.lens || []).some((l) => selectedLenses.value.includes(l)));
+const typeLabel = (type) => {
+    const key = `methodIndex.types.${type}`;
+    return te(key) ? t(key) : type;
+};
+
+const groundingLabel = (grounding) => {
+    const key = `methodIndex.grounding.${grounding}`;
+    return te(key) ? t(key) : grounding;
+};
+
+const pageReportTemplate = computed(() => String(tm('methodIndex.pageReport')));
+
+const typeOptions = computed(() => {
+    const available = new Set();
+    rows.value.forEach((row) => row.techniques.forEach((technique) => technique.type && available.add(technique.type)));
+    return [...available]
+        .sort((left, right) => {
+            const leftIndex = TECHNIQUE_TYPE_ORDER.indexOf(left);
+            const rightIndex = TECHNIQUE_TYPE_ORDER.indexOf(right);
+            return (leftIndex === -1 ? Number.MAX_SAFE_INTEGER : leftIndex) - (rightIndex === -1 ? Number.MAX_SAFE_INTEGER : rightIndex) || left.localeCompare(right);
+        })
+        .map((value) => ({ value, label: typeLabel(value) }));
 });
+
+const normalizedQuery = computed(() => normalizeText(query.value));
+const filteredRows = computed(() => {
+    const search = normalizedQuery.value;
+    return rows.value.filter((row) => {
+        const matchesQuery = !search || row.allSearchText.includes(search);
+        const matchesLens = selectedLenses.value.length === 0 || row.lens.some((lens) => selectedLenses.value.includes(lens));
+        const matchesType = selectedTypes.value.length === 0 || row.techniques.some((technique) => selectedTypes.value.includes(technique.type));
+        return matchesQuery && matchesLens && matchesType;
+    });
+});
+
+const hasFilters = computed(() => Boolean(query.value.trim()) || selectedLenses.value.length > 0 || selectedTypes.value.length > 0);
+
+watch([query, selectedLenses, selectedTypes], () => resetViewState(), { deep: true });
+
+const clearFilters = () => {
+    query.value = '';
+    selectedLenses.value = [];
+    selectedTypes.value = [];
+    resetViewState();
+};
+
+const handlePage = (event) => {
+    first.value = event.first;
+    pageSize.value = event.rows;
+};
+
+const techniqueLabel = (technique) => {
+    if (technique.isLegacy) return t('methodIndex.legacyTechnique');
+    return technique.name || t('methodIndex.unnamedTechnique', { index: technique.index + 1 });
+};
+
+const paperTitleId = (paper) => `mi-paper-title-${domSafe(paper.key)}`;
+const techniqueHeadingId = (paper) => `mi-techniques-${domSafe(paper.key)}`;
+const techniqueButtonId = (paper, technique) => `mi-technique-button-${domSafe(paper.key)}-${technique.index}`;
+const techniqueRegionId = (paper, technique) => `mi-technique-region-${domSafe(paper.key)}-${technique.index}`;
+
+const isTechniqueExpanded = (paper, technique) => expandedTechniqueByPaper.value[paper.key] === technique.id;
+const toggleTechnique = (paper, technique) => {
+    const current = expandedTechniqueByPaper.value[paper.key];
+    expandedTechniqueByPaper.value = {
+        ...expandedTechniqueByPaper.value,
+        [paper.key]: current === technique.id ? null : technique.id
+    };
+};
+
+const isTechniqueMatch = (_paper, technique) => Boolean(normalizedQuery.value) && technique.searchText.includes(normalizedQuery.value);
 
 const evidenceSeverity = (evidence) => {
-    switch ((evidence || '').toLowerCase()) {
+    switch (normalizeText(evidence)) {
         case 'real-world':
         case 'real system':
-        case '真实系统': return 'success';
+        case '真实系统':
+            return 'success';
         case 'benchmark':
-        case '基准测试': return 'info';
+        case '基准测试':
+            return 'info';
         case 'user study':
-        case '用户研究': return 'warn';
+        case '用户研究':
+            return 'warn';
         case 'simulation':
-        case '仿真': return 'secondary';
-        case 'unknown': return 'contrast';
-        default: return 'info';
+        case '仿真':
+            return 'secondary';
+        case 'unknown':
+            return 'contrast';
+        default:
+            return 'info';
     }
 };
 
@@ -227,7 +507,10 @@ onMounted(() => {
     constructPublicationItems();
     languageEmitter.on(handleLanguageChange);
 });
+
 onUnmounted(() => {
+    requestSequence += 1;
+    activeController?.abort();
     languageEmitter.off(handleLanguageChange);
 });
 </script>
@@ -238,25 +521,35 @@ onUnmounted(() => {
     flex-direction: column;
     gap: 1rem;
 }
+
 .menu-card {
     padding: 0.5rem 0.75rem;
 }
+
 .menu-card :deep(.p-megamenu) {
     border: none;
     background: transparent;
 }
+
 .content-card {
     padding: 1.5rem 1.75rem 1.75rem;
 }
+
 .mi-header {
     display: flex;
     align-items: center;
     gap: 1rem;
     margin-bottom: 1.25rem;
 }
+
 .mi-header--placeholder {
     color: var(--text-color-secondary);
 }
+
+.mi-header-copy {
+    min-width: 0;
+}
+
 .mi-header-icon {
     width: 44px;
     height: 44px;
@@ -269,6 +562,7 @@ onUnmounted(() => {
     font-size: 1.25rem;
     flex-shrink: 0;
 }
+
 .mi-title {
     margin: 0;
     font-size: 1.3rem;
@@ -276,17 +570,21 @@ onUnmounted(() => {
     display: flex;
     align-items: baseline;
     gap: 0.5rem;
+    overflow-wrap: anywhere;
 }
+
 .mi-year {
     color: var(--primary-color);
     font-weight: 700;
 }
+
 .mi-subtitle {
     margin: 0.15rem 0 0;
     color: var(--text-color-secondary);
     font-size: 0.9rem;
 }
-.mi-empty {
+
+.mi-state {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -295,49 +593,230 @@ onUnmounted(() => {
     color: var(--text-color-secondary);
     text-align: center;
 }
-.mi-empty-icon {
+
+.mi-state p {
+    margin: 0;
+}
+
+.mi-state-icon {
     font-size: 2rem;
 }
-.mi-paper-title {
-    text-decoration: none;
-    color: inherit;
-    font-weight: 500;
+
+.mi-toolbar {
+    display: grid;
+    grid-template-columns: minmax(15rem, 1fr) minmax(12rem, auto) minmax(12rem, auto) auto;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
 }
-.mi-paper-title:hover {
+
+.mi-search,
+.mi-search :deep(.p-inputtext),
+.mi-filter {
+    width: 100%;
+}
+
+.mi-data-view :deep(.p-dataview-content),
+.mi-data-view :deep(.p-paginator) {
+    border: none;
+    background: transparent;
+}
+
+.mi-card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mi-card-item {
+    min-width: 0;
+}
+
+.mi-paper-card {
+    border: 1px solid var(--surface-border);
+    box-shadow: none;
+}
+
+.mi-paper-card :deep(.p-card-body),
+.mi-paper-card :deep(.p-card-content) {
+    padding: 0;
+}
+
+.mi-paper-card :deep(.p-card-body) {
+    padding: 1.25rem;
+}
+
+.mi-paper-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.mi-paper-title {
+    min-width: 0;
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 650;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+}
+
+.mi-paper-title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.mi-paper-title a:hover {
     color: var(--primary-color);
 }
+
 .mi-link-icon {
-    font-size: 0.7rem;
     margin-left: 0.35rem;
-    opacity: 0.6;
+    font-size: 0.72rem;
+    opacity: 0.65;
 }
+
+.mi-method-block,
+.mi-techniques {
+    margin-top: 1rem;
+}
+
+.mi-method-block h4,
+.mi-techniques h4 {
+    margin: 0 0 0.4rem;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--text-color-secondary);
+}
+
+.mi-method-block p,
+.mi-technique-empty,
+.mi-legacy-text {
+    margin: 0;
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+}
+
+.mi-paper-facts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem 1.25rem;
+    margin: 1rem 0 0;
+}
+
+.mi-paper-facts div,
+.mi-technique-schema div {
+    min-width: 0;
+}
+
+.mi-paper-facts dt,
+.mi-technique-schema dt {
+    margin-bottom: 0.25rem;
+    color: var(--text-color-secondary);
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.mi-paper-facts dd,
+.mi-technique-schema dd {
+    margin: 0;
+    line-height: 1.55;
+    overflow-wrap: anywhere;
+}
+
+.mi-lenses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-top: 0.9rem;
+}
+
 .mi-lens-chip {
     display: inline-block;
-    padding: 0.05rem 0.5rem;
-    margin: 0.1rem 0.15rem 0.1rem 0;
+    padding: 0.12rem 0.55rem;
     border-radius: 999px;
     font-size: 0.75rem;
     background: color-mix(in srgb, var(--primary-color) 14%, transparent);
     color: var(--primary-color);
 }
-.mi-technique {
-    display: block;
-    font-size: 0.86rem;
-    line-height: 1.5;
+
+.mi-technique-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
-.borderless-table :deep(.p-datatable-table-container),
-.borderless-table :deep(.p-datatable-header),
-.borderless-table :deep(.p-datatable-paginator-bottom) {
-    border: none;
-    background: transparent;
+
+.mi-technique-buttons :deep(.p-button) {
+    min-height: 2.5rem;
+    max-width: 100%;
 }
-.borderless-table :deep(.p-datatable-thead > tr > th),
-.borderless-table :deep(.p-datatable-tbody > tr > td) {
-    border-left: none;
-    border-right: none;
-    vertical-align: top;
+
+.mi-technique-buttons :deep(.p-button-label) {
+    white-space: normal;
+    overflow-wrap: anywhere;
 }
-.borderless-table :deep(.p-datatable-thead > tr > th) {
-    background: transparent;
+
+.mi-technique-button--match {
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--primary-color) 38%, transparent);
+}
+
+.mi-technique-detail {
+    margin-top: 0.8rem;
+    padding: 1rem;
+    border: 1px solid color-mix(in srgb, var(--primary-color) 24%, var(--surface-border));
+    border-radius: 0.75rem;
+    background: color-mix(in srgb, var(--primary-color) 5%, var(--surface-card));
+}
+
+.mi-technique-schema {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem 1.25rem;
+    margin: 0;
+}
+
+.mi-schema-wide {
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 1024px) {
+    .mi-toolbar {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .content-card {
+        padding: 1rem;
+    }
+
+    .mi-toolbar,
+    .mi-paper-facts,
+    .mi-technique-schema {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .mi-schema-wide {
+        grid-column: auto;
+    }
+
+    .mi-toolbar :deep(.p-button) {
+        width: 100%;
+    }
+
+    .mi-paper-heading {
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+
+    .mi-technique-buttons :deep(.p-button) {
+        flex: 1 1 100%;
+        justify-content: center;
+    }
 }
 </style>

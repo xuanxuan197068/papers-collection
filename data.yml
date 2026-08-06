@@ -4,7 +4,8 @@ oakland:
   dblp_toc_template: conf/sp/sp{year}
   sites:
     - year: 2026
-      official_file: 'oakland26.bib'
+      source: dblp
+      official_file: 'oakland26.json'
       url: https://www.computer.org/csdl/proceedings/sp/2026/2bojuokAJK8
       title_xpath: ''
       link_xpath: ''
@@ -80,7 +81,8 @@ ccs:
   dblp_toc_template: conf/ccs/ccs{year}
   sites:
     - year: 2025
-      official_file: 'ccs25.bib' # https://dl.acm.org/doi/proceedings/10.1145/3719027 # fix "Don't Look Up..." in bib
+      source: dblp
+      official_file: 'ccs25.json' # https://dl.acm.org/doi/proceedings/10.1145/3719027 # fix "Don't Look Up..." in bib
       url: https://www.sigsac.org/ccs/CCS2025/accepted-papers/
       title_xpath: ''
       link_xpath: ''
@@ -168,6 +170,8 @@ usenix_security:
       link_prefix: https://www.usenix.org
       abstract_xpath: //article/h2/a/../../div/div/div[last()]
     - year: 2025
+      source: dblp
+      official_file: 'uss25.json'
       #      url: https://www.usenix.org/conference/usenixsecurity25/cycle1-accepted-papers
       #      title_xpath: //article/h2/a
       #      link_xpath: //article/h2/a/@href
@@ -402,7 +406,8 @@ ase:
       official_file: 'ase25.csv'
       # https://ieeexplore.ieee.org/xpl/conhome/11334056/proceeding
     - year: 2024
-      official_file: 'ase24.csv'
+      source: dblp
+      official_file: 'ase24.json'
       # https://ieeexplore.ieee.org/xpl/conhome/10764795/proceeding
     - year: 2023
       official_file: 'ase23.csv'
@@ -643,11 +648,19 @@ asplos:
   category: system
   dblp_toc_template: conf/asplos/asplos{year}
   sites: # https://dl.acm.org/conference/asplos/proceedings
+    - year: 2026
+      source: dblp
+      official_file: 'asplos26.json'
+      dblp_toc:
+        - conf/asplos/asplos2026-1
+        - conf/asplos/asplos2026-2
     - year: 2025
-      official_file: 
-        - 'asplos25-1.bib'
-        - 'asplos25-2.bib'
-        - 'asplos25-3.bib'
+      source: dblp
+      official_file: 'asplos25.json'
+      dblp_toc:
+        - conf/asplos/asplos2025-1
+        - conf/asplos/asplos2025-2
+        - conf/asplos/asplos2025-3
     - year: 2024
       official_file: 
         - 'asplos24-1.bib'

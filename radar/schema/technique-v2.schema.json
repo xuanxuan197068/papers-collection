@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://papers-collection.local/radar/schema/technique-v2.schema.json",
+  "title": "Technique v2",
+  "description": "Ordered, abstract-grounded atomic technique points for one paper.",
+  "type": "array",
+  "minItems": 0,
+  "maxItems": 4,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "name",
+      "type",
+      "target",
+      "action",
+      "effect",
+      "grounding",
+      "limitation"
+    ],
+    "properties": {
+      "name": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 80,
+        "pattern": "\\S"
+      },
+      "type": {
+        "type": "string",
+        "enum": [
+          "algorithm",
+          "model",
+          "architecture",
+          "protocol",
+          "system-mechanism",
+          "hardware-mechanism",
+          "data-construction",
+          "instrumentation",
+          "analysis-method",
+          "testing-method",
+          "measurement-method",
+          "formal-method",
+          "user-study",
+          "other"
+        ]
+      },
+      "target": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "action": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "effect": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "grounding": {
+        "type": "string",
+        "enum": [
+          "explicit",
+          "partial"
+        ]
+      },
+      "limitation": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "allOf": [
+      {
+        "if": {
+          "properties": {
+            "grounding": {
+              "const": "explicit"
+            }
+          },
+          "required": [
+            "grounding"
+          ]
+        },
+        "then": {
+          "properties": {
+            "limitation": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "if": {
+          "properties": {
+            "grounding": {
+              "const": "partial"
+            }
+          },
+          "required": [
+            "grounding"
+          ]
+        },
+        "then": {
+          "properties": {
+            "limitation": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

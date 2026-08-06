@@ -50,5 +50,63 @@
       "last_attempt": "2026-07-13",
       "paper": "https://doi.org/10.1109/TIFS.2026.3688912"
     }
+  },
+  "IEEE S&P - 2026": {
+    "Lost in Translation: Text Message Spoofing via Email": {
+      "attempts": 1,
+      "last_attempt": "2026-08-05",
+      "paper": "https://doi.org/10.1109/SP63933.2026.00168"
+    }
+  },
+  "USENIX Sec - 2025": {
+    "Subverting the Secure VM by Exploiting PCIe Devices": {
+      "attempts": 1,
+      "last_attempt": "2026-08-05",
+      "paper": "https://www.usenix.org/conference/usenixsecurity25/presentation/kim-sangyun"
+    }
+  },
+  "ASE - 2024": {
+    "How many pomodoros do professional engineers need to complete a microtask of programming?": {
+      "attempts": 1,
+      "last_attempt": "2026-08-05",
+      "paper": "https://doi.org/10.1145/3691620.3695263"
+    }
+  },
+  "ASPLOS - 2026": {
+    "Radshield: Software Radiation Protection for Commodity Hardware in Space": {
+      "attempts": 1,
+      "last_attempt": "2026-08-05",
+      "paper": "https://doi.org/10.1145/3760250.3762218"
+    },
+    "Sequential Specifications for Precise Hardware Exceptions": {
+      "attempts": 1,
+      "last_attempt": "2026-08-05",
+      "paper": "https://doi.org/10.1145/3760250.3762233"
+    },
+    "CPU-Oblivious Offloading of Failure-Atomic Transactions for Disaggregated Memory": {
+      "attempts": 1,
+      "last_attempt": "2026-08-05",
+      "paper": "https://doi.org/10.1145/3779212.3790146"
+    },
+    "Enabling Fast Networking in the Public Cloud": {
+      "attempts": 1,
+      "last_attempt": "2026-08-05",
+      "paper": "https://doi.org/10.1145/3779212.3790158"
+    },
+    "Fine-grained and Non-intrusive LLM Training Monitoring via Microsecond-level Traffic Measurement": {
+      "attempts": 1,
+      "last_attempt": "2026-08-05",
+      "paper": "https://doi.org/10.1145/3779212.3790163"
+    },
+    "It Takes Two to Entangle": {
+      "attempts": 1,
+      "last_attempt": "2026-08-05",
+      "paper": "https://doi.org/10.1145/3779212.3790178"
+    },
+    "JOSer: Just-In-Time Object Serialization for Heavy Java Serialization Workloads": {
+      "attempts": 1,
+      "last_attempt": "2026-08-05",
+      "paper": "https://doi.org/10.1145/3779212.3790179"
+    }
   }
 }

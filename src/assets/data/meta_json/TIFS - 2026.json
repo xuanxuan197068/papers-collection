@@ -1,6 +1,6 @@
 [
   {
-    "id": 15259,
+    "id": 15550,
     "year": 2026,
     "title": "Low-Latency Video Anonymization for Crowd Anomaly Detection: Privacy Versus Performance",
     "category": "journal",
@@ -10,7 +10,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15260,
+    "id": 15551,
     "year": 2026,
     "title": "Practical Secure Inference Algorithm for a Fine-Tuned Large Language Model Based on Fully Homomorphic Encryption",
     "category": "journal",
@@ -20,7 +20,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15261,
+    "id": 15552,
     "year": 2026,
     "title": "chamaeleon: Backdoor Attacks Against Vertical Federated Learning for Tabular Data",
     "category": "journal",
@@ -30,7 +30,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15262,
+    "id": 15553,
     "year": 2026,
     "title": "Mitigating the Impact of Malware Evolution on API Sequence-Based Windows Malware Detectors",
     "category": "journal",
@@ -40,7 +40,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15263,
+    "id": 15554,
     "year": 2026,
     "title": "Practical Framework for Privacy-Preserving and Byzantine-Robust Federated Learning",
     "category": "journal",
@@ -50,7 +50,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15264,
+    "id": 15555,
     "year": 2026,
     "title": "IlluAttack: Generating Adversarial Examples via Illumination Transformation for Face Anti-Spoofing",
     "category": "journal",
@@ -60,7 +60,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15265,
+    "id": 15556,
     "year": 2026,
     "title": "ScamSweeper: Detecting Illegal Accounts in Web3 Scams via Transactions Analysis",
     "category": "journal",
@@ -70,7 +70,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15266,
+    "id": 15557,
     "year": 2026,
     "title": "VPrivKV: Verifiable Local Differential Privacy for Key-Value Data",
     "category": "journal",
@@ -80,7 +80,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15267,
+    "id": 15558,
     "year": 2026,
     "title": "GaitDG: A Single-Source Domain Generalization Framework for Cross-Domain Gait Recognition",
     "category": "journal",
@@ -90,7 +90,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15268,
+    "id": 15559,
     "year": 2026,
     "title": "An Unbiased and Robust Privacy-Preserving Fingerprinting Scheme for Relational Databases",
     "category": "journal",
@@ -100,7 +100,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15269,
+    "id": 15560,
     "year": 2026,
     "title": "Optimal Access Structure Partition Methods for Image Secret Sharing",
     "category": "journal",
@@ -110,7 +110,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15270,
+    "id": 15561,
     "year": 2026,
     "title": "Secrecy Energy Efficiency Maximization in RIS-Aided Networks: Active or Nearly-Passive RIS?",
     "category": "journal",
@@ -120,7 +120,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15271,
+    "id": 15562,
     "year": 2026,
     "title": "Bones of Contention: Exploring Query-Efficient Attacks Against Skeleton Recognition Systems",
     "category": "journal",
@@ -130,7 +130,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15272,
+    "id": 15563,
     "year": 2026,
     "title": "BPF-DAG: Byte-Packet-Flow Features Fusion via Dynamic Attributed Graph for Reliable Encrypted Traffic Classification",
     "category": "journal",
@@ -140,7 +140,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15273,
+    "id": 15564,
     "year": 2026,
     "title": "Heimdall: A Decentralized Access Control Scheme With Time-Based Secret Management and Private Access Policies",
     "category": "journal",
@@ -150,7 +150,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15274,
+    "id": 15565,
     "year": 2026,
     "title": "Pixel-Level Video Encryption for Privacy Protection: A Personalized and Practical Approach",
     "category": "journal",
@@ -160,7 +160,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15275,
+    "id": 15566,
     "year": 2026,
     "title": "Identify as a Human Does: A Pathfinder of Next-Generation Anti-Cheat Framework for First-Person Shooter Games",
     "category": "journal",
@@ -170,7 +170,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15276,
+    "id": 15567,
     "year": 2026,
     "title": "MantleMark: Migrating Watermarks From Multi-View Images to Radiance Fields via Frequency Modulation",
     "category": "journal",
@@ -180,7 +180,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15277,
+    "id": 15568,
     "year": 2026,
     "title": "Loop-Filter: A Feedback Control Approach for Eliminating Link Flooding Attack",
     "category": "journal",
@@ -190,7 +190,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15278,
+    "id": 15569,
     "year": 2026,
     "title": "DQSA: Dynamic Quantized Self-Attention for Multi-Task Encrypted Network Traffic Classification",
     "category": "journal",
@@ -200,7 +200,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15279,
+    "id": 15570,
     "year": 2026,
     "title": "When Multimedia Meets Security: Privacy-Preserving Cross-Modal Retrieval for Large-Scale Data",
     "category": "journal",
@@ -210,7 +210,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15280,
+    "id": 15571,
     "year": 2026,
     "title": "On the Generation of Face Morphs by Inversion of Optimal Morph Embeddings",
     "category": "journal",
@@ -220,7 +220,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15281,
+    "id": 15572,
     "year": 2026,
     "title": "Learning Subgraph-Based Normality for Interpretable Graph-Level Anomaly Detection",
     "category": "journal",
@@ -230,7 +230,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15282,
+    "id": 15573,
     "year": 2026,
     "title": "XAI for Fraud Detection: An Attention-Based Ensemble of CNNs, GNNs, and Confidence-Driven Gating for Reliable Decision-Making",
     "category": "journal",
@@ -240,7 +240,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15283,
+    "id": 15574,
     "year": 2026,
     "title": "Unfairness Attack and Unified Provable Defense on AI-Powered Internet of Energy",
     "category": "journal",
@@ -250,7 +250,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15284,
+    "id": 15575,
     "year": 2026,
     "title": "Exploiting Cyber Threat Intelligence for Indirect Attacks Against Serverless Infrastructures",
     "category": "journal",
@@ -260,7 +260,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15285,
+    "id": 15576,
     "year": 2026,
     "title": "SSAA: Secure Semi-Asynchronous Aggregation for Decentralized Federated Learning on Heterogeneous Devices",
     "category": "journal",
@@ -270,7 +270,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15286,
+    "id": 15577,
     "year": 2026,
     "title": "FLgym: Toward Robust and Byzantine-Resilient Federated Learning",
     "category": "journal",
@@ -280,7 +280,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15287,
+    "id": 15578,
     "year": 2026,
     "title": "SSD: A State-Based Stealthy Backdoor Attack for IMU/GNSS Navigation System in UAV Route Planning",
     "category": "journal",
@@ -290,7 +290,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15288,
+    "id": 15579,
     "year": 2026,
     "title": "Unleashing the Potential of Tracklets for Unsupervised Video Person Re-Identification",
     "category": "journal",
@@ -300,7 +300,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15289,
+    "id": 15580,
     "year": 2026,
     "title": "Revisiting Adversarial Robustness of GNNs Against Structural Attacks: A Simple and Fast Approach",
     "category": "journal",
@@ -310,7 +310,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15290,
+    "id": 15581,
     "year": 2026,
     "title": "MCLPF: Malware Collaborative Detection With LLM-Enhanced Pruning for Attributed Interpretable Flow Graphs",
     "category": "journal",
@@ -320,7 +320,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15291,
+    "id": 15582,
     "year": 2026,
     "title": "PA-Boot: A Formally Verified Authentication Protocol for Multiprocessor Secure Boot Under Hardware Supply-Chain Attacks",
     "category": "journal",
@@ -330,7 +330,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15292,
+    "id": 15583,
     "year": 2026,
     "title": "EO-EPTC: End-to-End Original Traffic-Based Encrypted Proxy Traffic Classification Framework",
     "category": "journal",
@@ -340,7 +340,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15293,
+    "id": 15584,
     "year": 2026,
     "title": "A New Formulation for Zeroth-Order Optimization of Adversarial EXEmples in Malware Detection",
     "category": "journal",
@@ -350,7 +350,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15294,
+    "id": 15585,
     "year": 2026,
     "title": "G2uardFL: Safeguarding Federated Learning Against Backdoor Attacks via Attributed Client Graph Clustering",
     "category": "journal",
@@ -360,7 +360,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15295,
+    "id": 15586,
     "year": 2026,
     "title": "Reinforcing Adversarial Transferability via Negative Class Guided Example Generation",
     "category": "journal",
@@ -370,7 +370,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15296,
+    "id": 15587,
     "year": 2026,
     "title": "Blind Quantum Computation With Certified Deletion for Quantum Inputs",
     "category": "journal",
@@ -380,7 +380,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15297,
+    "id": 15588,
     "year": 2026,
     "title": "Stinger: A Light-Weight Website Fingerprinting Defense Through Poisoning Packet Sequences",
     "category": "journal",
@@ -390,7 +390,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15298,
+    "id": 15589,
     "year": 2026,
     "title": "Network-Layer Differential Fuzzing for Ethereum",
     "category": "journal",
@@ -400,7 +400,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15299,
+    "id": 15590,
     "year": 2026,
     "title": "Exploiting Shared Adversarial Features for Dynamic Attacks in Large Vision-Language Models",
     "category": "journal",
@@ -410,7 +410,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15300,
+    "id": 15591,
     "year": 2026,
     "title": "PDFL: A Privacy-Enhancing and Robust Poisoning Defense Federated Learning Scheme",
     "category": "journal",
@@ -420,7 +420,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15301,
+    "id": 15592,
     "year": 2026,
     "title": "PowerEar: An Audio Eavesdropping Attack on Mobile Devices Through USB Power Side Channel",
     "category": "journal",
@@ -430,7 +430,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15302,
+    "id": 15593,
     "year": 2026,
     "title": "Alkaid: Accelerating Three-Party Boolean Circuits by Mixing Correlations and Redundancy",
     "category": "journal",
@@ -440,7 +440,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15303,
+    "id": 15594,
     "year": 2026,
     "title": "Malware Containment via Firewall Placement in Large Scale Wireless IoT Networks",
     "category": "journal",
@@ -450,7 +450,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15304,
+    "id": 15595,
     "year": 2026,
     "title": "HySpeFAS: A Hyperspectral Face Anti-Spoofing Dataset Based on Snapshot Compressive Imaging",
     "category": "journal",
@@ -460,7 +460,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15305,
+    "id": 15596,
     "year": 2026,
     "title": "Fast Adversarial Training With Weak-to-Strong Spatial-Temporal Consistency in the Frequency Domain on Videos",
     "category": "journal",
@@ -470,7 +470,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15306,
+    "id": 15597,
     "year": 2026,
     "title": "Mining Cross-Modality Implicit Semantic Association for Unsupervised Visible-Infrared Person Re-Identification",
     "category": "journal",
@@ -480,7 +480,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15307,
+    "id": 15598,
     "year": 2026,
     "title": "Catch Me If You Can: Retain High Stealthiness and Durability of Backdoor Attack in Federated Learning",
     "category": "journal",
@@ -490,7 +490,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15308,
+    "id": 15599,
     "year": 2026,
     "title": "Toward Dataset Copyright Evasion Attack Against Personalized Text-to-Image Diffusion Models",
     "category": "journal",
@@ -500,7 +500,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15309,
+    "id": 15600,
     "year": 2026,
     "title": "MsgFilter: Proactive Anti-Harassment Sender-Anonymous Messaging System",
     "category": "journal",
@@ -510,7 +510,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15310,
+    "id": 15601,
     "year": 2026,
     "title": "SolPhishHunter: Toward Detecting and Understanding Phishing on Solana",
     "category": "journal",
@@ -520,7 +520,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15311,
+    "id": 15602,
     "year": 2026,
     "title": "Semantic Entity Alignment and Non-Corresponding Reasoning for Text-to-Image Person Re-Identification",
     "category": "journal",
@@ -530,7 +530,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15312,
+    "id": 15603,
     "year": 2026,
     "title": "Search Me in the Dark: Access Pattern-Hidden Range Query Over Encrypted Spatial Data",
     "category": "journal",
@@ -540,7 +540,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15313,
+    "id": 15604,
     "year": 2026,
     "title": "FSAT: A Faster Secure Convolutional Neural Network Inference Framework With Adversarial Training in Resource-Constrained Scenarios",
     "category": "journal",
@@ -550,7 +550,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15314,
+    "id": 15605,
     "year": 2026,
     "title": "Glint: Localization of Gray Violations in Untrusted and Unreliable SRv6 Networks",
     "category": "journal",
@@ -560,7 +560,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15315,
+    "id": 15606,
     "year": 2026,
     "title": "STKPS-Net: Spatio-Temporal Key Patch Selection Network for Few Shot Anomalous Action Recognition",
     "category": "journal",
@@ -570,7 +570,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15316,
+    "id": 15607,
     "year": 2026,
     "title": "Secure Rational Delegation Federated Learning",
     "category": "journal",
@@ -580,7 +580,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15317,
+    "id": 15608,
     "year": 2026,
     "title": "Towards Patch-Based Noise Compression for Adversarial Attack Against Transformer-Based Visual Tracking",
     "category": "journal",
@@ -590,7 +590,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15318,
+    "id": 15609,
     "year": 2026,
     "title": "CoGA: A Collaborative Gray-Box Adversarial Attack for Multimodal Language Models",
     "category": "journal",
@@ -600,7 +600,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15319,
+    "id": 15610,
     "year": 2026,
     "title": "Enhancing Perceptron Constancy for Real-World Dynamic Hand Gesture Authentication",
     "category": "journal",
@@ -610,7 +610,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15320,
+    "id": 15611,
     "year": 2026,
     "title": "Outsourced Cloud Storage and Dynamic Sharing: Efficient Time-Bound Access Control",
     "category": "journal",
@@ -620,7 +620,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15321,
+    "id": 15612,
     "year": 2026,
     "title": "iAudit: Toward Efficient Pixel-Level Dynamic Image Auditing in Decentralized Storage",
     "category": "journal",
@@ -630,7 +630,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15322,
+    "id": 15613,
     "year": 2026,
     "title": "General Backdoor-Resilient Federated Learning via Multi-Armed Bandit-Based Knowledge Distillation",
     "category": "journal",
@@ -640,7 +640,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15323,
+    "id": 15614,
     "year": 2026,
     "title": "A Comprehensive Framework for Palm Vein Anti-Spoofing With Preprocessing Pipeline, Dataset, and Benchmark",
     "category": "journal",
@@ -650,7 +650,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15324,
+    "id": 15615,
     "year": 2026,
     "title": "BAPTISM: A Robust Framework for Encrypted Malicious Traffic Identification With Low-Quality Training Data",
     "category": "journal",
@@ -660,7 +660,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15325,
+    "id": 15616,
     "year": 2026,
     "title": "A Lightweight Blockchain-Assisted Certificateless Cloud Data Integrity Auditing Scheme Without Third-Party Auditor",
     "category": "journal",
@@ -670,7 +670,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15326,
+    "id": 15617,
     "year": 2026,
     "title": "A Fast Jamming Strategy Optimization Method With Imperfect Experience",
     "category": "journal",
@@ -680,7 +680,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15327,
+    "id": 15618,
     "year": 2026,
     "title": "Disguise While Defense: Avoid Refusal Responses in LLM's Defense via a Multi-Agent Attacker-Disguiser Game",
     "category": "journal",
@@ -690,7 +690,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15328,
+    "id": 15619,
     "year": 2026,
     "title": "Portability of Profiling Side-Channel Analysis: A Case Study Using Adjustable Implementations of Block Ciphers",
     "category": "journal",
@@ -700,7 +700,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15329,
+    "id": 15620,
     "year": 2026,
     "title": "Distributionally Robust Game for Proof-of-Work Blockchain Mining Under Resource Uncertainties",
     "category": "journal",
@@ -710,7 +710,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15330,
+    "id": 15621,
     "year": 2026,
     "title": "Casper: A Causality-Inspired Defense With Confounder Against Label Inference Attacks in Vertical Split Federated Learning",
     "category": "journal",
@@ -720,7 +720,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15331,
+    "id": 15622,
     "year": 2026,
     "title": "TraceCluster: A Lightweight and Adaptive Clustering-Based Subgraph Attention Network for APT Detection in Provenance Graphs",
     "category": "journal",
@@ -730,7 +730,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15332,
+    "id": 15623,
     "year": 2026,
     "title": "SymScrab: Physical Layer Encryption for LoRa by Permuting the Baseband Signal",
     "category": "journal",
@@ -740,7 +740,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15333,
+    "id": 15624,
     "year": 2026,
     "title": "Apple's Synthetic Defocus Noise Pattern: Characterization and Forensic Applications",
     "category": "journal",
@@ -750,7 +750,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15334,
+    "id": 15625,
     "year": 2026,
     "title": "RIS-Assisted Integrated Communication and Secret Key Generation in Quasi-Static Environments",
     "category": "journal",
@@ -760,7 +760,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15335,
+    "id": 15626,
     "year": 2026,
     "title": "Conan: Secure and Reliable Machine Learning Inference Against Malicious Service Providers",
     "category": "journal",
@@ -770,7 +770,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15336,
+    "id": 15627,
     "year": 2026,
     "title": "Backdoor Detection in Federated Learning With Feature Map: A Multi-Task Learning Perspective",
     "category": "journal",
@@ -780,7 +780,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15337,
+    "id": 15628,
     "year": 2026,
     "title": "Privacy-Preserving Joint Distribution Analysis for Set-Valued Data via Local Differential Privacy",
     "category": "journal",
@@ -790,7 +790,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15338,
+    "id": 15629,
     "year": 2026,
     "title": "LFS: A Locally Private Framework for Degree Statistic Estimation With Laplace Mechanism",
     "category": "journal",
@@ -800,7 +800,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15339,
+    "id": 15630,
     "year": 2026,
     "title": "MAP-Mamba: Multi-Artifacts Perception Mamba for Generalizable Face Forgery Detection",
     "category": "journal",
@@ -810,7 +810,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15340,
+    "id": 15631,
     "year": 2026,
     "title": "ProSan: Utility-Based Prompt Privacy Sanitizer",
     "category": "journal",
@@ -820,7 +820,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15341,
+    "id": 15632,
     "year": 2026,
     "title": "Modeling the Performance-Security Trade-Off of Gasper's Block Proposal Mechanism Under Latency-Driven Attacks",
     "category": "journal",
@@ -830,7 +830,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15342,
+    "id": 15633,
     "year": 2026,
     "title": "Cracking the Code of Backdoor Attacks With Confidence Consistency",
     "category": "journal",
@@ -840,7 +840,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15343,
+    "id": 15634,
     "year": 2026,
     "title": "Bridging Lab and Industry: Practical SPA-GPT on Cryptosystems Boosted by LSTM and Simulated Annealing",
     "category": "journal",
@@ -850,7 +850,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15344,
+    "id": 15635,
     "year": 2026,
     "title": "APEG: Adaptive Physical Layer Authentication With Channel Extrapolation and Generative AI",
     "category": "journal",
@@ -860,7 +860,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15345,
+    "id": 15636,
     "year": 2026,
     "title": "Contextual Masking Distillation for Network Traffic Anomaly Detection",
     "category": "journal",
@@ -870,7 +870,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15346,
+    "id": 15637,
     "year": 2026,
     "title": "Building Trust Beyond Update Divergence: Dual-Refined Aggregation for Byzantine-Robust Federated Learning",
     "category": "journal",
@@ -880,7 +880,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15347,
+    "id": 15638,
     "year": 2026,
     "title": "RIS-Enabled Integrated Anti-Jamming Covert Communication and Sensing Systems",
     "category": "journal",
@@ -890,7 +890,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15348,
+    "id": 15639,
     "year": 2026,
     "title": "DySec: A Machine Learning-Based Dynamic Analysis for Detecting Malicious Packages in PyPI Ecosystem",
     "category": "journal",
@@ -900,7 +900,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15349,
+    "id": 15640,
     "year": 2026,
     "title": "Axial-View-Oriented Contrastive Adversarial Training for Robust Point Cloud Recognition",
     "category": "journal",
@@ -910,7 +910,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15350,
+    "id": 15641,
     "year": 2026,
     "title": "End-to-End Open-Set Semi-Supervised Learning for Fine-Grained Encrypted Traffic Classification",
     "category": "journal",
@@ -920,7 +920,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15351,
+    "id": 15642,
     "year": 2026,
     "title": "Amplifying Training Data Exposure Through Fine-Tuning With Pseudo-Labeled Memberships",
     "category": "journal",
@@ -930,7 +930,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15352,
+    "id": 15643,
     "year": 2026,
     "title": "Coffer: An Efficient and Scalable TEE on RISC-V",
     "category": "journal",
@@ -940,7 +940,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15353,
+    "id": 15644,
     "year": 2026,
     "title": "CAA: Toward Camouflaged and Transferable Adversarial Examples",
     "category": "journal",
@@ -950,7 +950,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15354,
+    "id": 15645,
     "year": 2026,
     "title": "Refining Positive and Toxic Samples for Dual Safety Self-Alignment of LLMs With Minimal Human Interventions",
     "category": "journal",
@@ -960,7 +960,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15355,
+    "id": 15646,
     "year": 2026,
     "title": "RL-Enabled Lightweight Language Models for GPS Spoofing Defense in Autonomous Vehicles",
     "category": "journal",
@@ -970,7 +970,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15356,
+    "id": 15647,
     "year": 2026,
     "title": "EndPCA: Ensemble Defense With Provably Convergent Aggregation Against Poisoning Attacks in Federated Learning",
     "category": "journal",
@@ -980,7 +980,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15357,
+    "id": 15648,
     "year": 2026,
     "title": "CPRPS: A Cross-Platform Reputation Privacy Sharing for Speed-Up Quality Data Collection in Mobile Crowdsensing",
     "category": "journal",
@@ -990,7 +990,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15358,
+    "id": 15649,
     "year": 2026,
     "title": "Time Updatable Policy-Based Chameleon Hash for Traceable and Accountable Redactable Blockchain",
     "category": "journal",
@@ -1000,7 +1000,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15359,
+    "id": 15650,
     "year": 2026,
     "title": "Adversarial Video Promotion Against Text-to-Video Retrieval",
     "category": "journal",
@@ -1010,7 +1010,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15360,
+    "id": 15651,
     "year": 2026,
     "title": "Model-Driven Learning-Based Physical Layer Authentication for Mobile Wi-Fi Devices",
     "category": "journal",
@@ -1020,7 +1020,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15361,
+    "id": 15652,
     "year": 2026,
     "title": "Physical Layer Challenge-Response Authentication Between Ambient Backscatter Devices",
     "category": "journal",
@@ -1030,7 +1030,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15362,
+    "id": 15653,
     "year": 2026,
     "title": "Federated Domain Generalization via Prompt Learning and Aggregation",
     "category": "journal",
@@ -1040,7 +1040,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15363,
+    "id": 15654,
     "year": 2026,
     "title": "PQ-ABS: Post-Quantum Aggregate Blind Signature-Based Anonymous Authentication for Blockchain-Enabled IoMT",
     "category": "journal",
@@ -1050,7 +1050,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15364,
+    "id": 15655,
     "year": 2026,
     "title": "Dual-Granularity Contrastive Learning for DeepFake Detection",
     "category": "journal",
@@ -1060,7 +1060,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15365,
+    "id": 15656,
     "year": 2026,
     "title": "Secret Sharing Schemes From Correlated Random Variables and Rate-Limited Public Communication",
     "category": "journal",
@@ -1070,7 +1070,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15366,
+    "id": 15657,
     "year": 2026,
     "title": "Dialogue Injection Attack: Jailbreaking LLMs Through Context Manipulation",
     "category": "journal",
@@ -1080,7 +1080,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15367,
+    "id": 15658,
     "year": 2026,
     "title": "Non-Transferable Anonymous Tokens With Decentralized Issuance by Blind Multisignatures",
     "category": "journal",
@@ -1090,7 +1090,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15368,
+    "id": 15659,
     "year": 2026,
     "title": "PHANTOM: Power Hammering Attack and Countermeasure on Multi-Tenant ReRAM Compute-in-Memory Accelerators",
     "category": "journal",
@@ -1100,7 +1100,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15369,
+    "id": 15660,
     "year": 2026,
     "title": "Multi-Leader Byzantine Fault Tolerance in Blockchain: Performance and Security",
     "category": "journal",
@@ -1110,7 +1110,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15370,
+    "id": 15661,
     "year": 2026,
     "title": "ISFL-AE: Insider-Specific Feature Learning Autoencoder for Lightweight Insider Threat Detection",
     "category": "journal",
@@ -1120,7 +1120,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15371,
+    "id": 15662,
     "year": 2026,
     "title": "CoSwinVIT: A Vision Transformer for Enhanced Uniform Spectrum Response in Specific Emitter Identification",
     "category": "journal",
@@ -1130,7 +1130,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15372,
+    "id": 15663,
     "year": 2026,
     "title": "Match on My Own: Fine-Grained Bilateral Access Control With Self-Constrained Matching for Online Social Networks",
     "category": "journal",
@@ -1140,7 +1140,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15373,
+    "id": 15664,
     "year": 2026,
     "title": "Secure Acceleration of Aggregation Queries Over Homomorphically Encrypted Databases",
     "category": "journal",
@@ -1150,7 +1150,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15374,
+    "id": 15665,
     "year": 2026,
     "title": "Learning Corruption-Invariant Components and Cross-Modal Correspondence for Unsupervised Visible-Infrared Person Re-Identification",
     "category": "journal",
@@ -1160,7 +1160,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15375,
+    "id": 15666,
     "year": 2026,
     "title": "Adversarial Diffusion Model: Generating High-Quality and Undetectable Images From Scratch",
     "category": "journal",
@@ -1170,7 +1170,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15376,
+    "id": 15667,
     "year": 2026,
     "title": "Event-Triggered Model-Free Adaptive Predictive Control for Networked Wind-Power Microgrids Subject to Aperiodic DoS Attacks",
     "category": "journal",
@@ -1180,7 +1180,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15377,
+    "id": 15668,
     "year": 2026,
     "title": "Fixed-Length Dense Fingerprint Representation With Alignment and Robust Enhancement",
     "category": "journal",
@@ -1190,7 +1190,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15378,
+    "id": 15669,
     "year": 2026,
     "title": "STELLAR: Similarity-Based Satellite Federated Learning for Malicious Traffic Recognition",
     "category": "journal",
@@ -1200,7 +1200,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15379,
+    "id": 15670,
     "year": 2026,
     "title": "Secure and Customized Data Sharing With Identical Sub-Policy and Bilateral Access Control",
     "category": "journal",
@@ -1210,7 +1210,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15380,
+    "id": 15671,
     "year": 2026,
     "title": "PyraMal: Byte-Level Malware Detection and Classification via Pyramid Feature Map",
     "category": "journal",
@@ -1220,7 +1220,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15381,
+    "id": 15672,
     "year": 2026,
     "title": "Experimental Validation of Information-Theoretic Physical Layer Security",
     "category": "journal",
@@ -1230,7 +1230,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15382,
+    "id": 15673,
     "year": 2026,
     "title": "Decision Boundary-Aware Counterfactual Learning Against Model Extraction Attacks on Graph Neural Networks",
     "category": "journal",
@@ -1240,7 +1240,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15383,
+    "id": 15674,
     "year": 2026,
     "title": "Consensus Labeling: Prompt-Guided Clustering Refinement for Weakly Supervised Text-Based Person Re-Identification",
     "category": "journal",
@@ -1250,7 +1250,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15384,
+    "id": 15675,
     "year": 2026,
     "title": "A Wolf in Sheep's Clothing: Unveiling a Stealthy Backdoor Attack in Subgraph Federated Learning",
     "category": "journal",
@@ -1260,7 +1260,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15385,
+    "id": 15676,
     "year": 2026,
     "title": "ZKVeil: A Privacy-Preserving Compliance Verification Scheme for Blockchain-Enabled Supply Chain Transactions",
     "category": "journal",
@@ -1270,7 +1270,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15386,
+    "id": 15677,
     "year": 2026,
     "title": "Safeguarding Federated Learning From Data Reconstruction Attacks via Gradient Dropout",
     "category": "journal",
@@ -1280,7 +1280,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15387,
+    "id": 15678,
     "year": 2026,
     "title": "Sparse VMamba: Robust Spatio-Temporal Information Modeling for Event Camera Person Re-Identification",
     "category": "journal",
@@ -1290,7 +1290,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15388,
+    "id": 15679,
     "year": 2026,
     "title": "Private Protocol Reverse Engineering via Self-Supervised Learning-Based Message Segmentation",
     "category": "journal",
@@ -1300,7 +1300,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15389,
+    "id": 15680,
     "year": 2026,
     "title": "Words Strip Wardrobe: Learning Invariant Textual Prompts for Cloth-Changing Person Re-Identification",
     "category": "journal",
@@ -1310,7 +1310,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15390,
+    "id": 15681,
     "year": 2026,
     "title": "DriftTrace: Combating Concept Drift in Security Applications Through Detection and Explanation",
     "category": "journal",
@@ -1320,7 +1320,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15391,
+    "id": 15682,
     "year": 2026,
     "title": "Fine-Grained Domain Alignment for Face Anti-Spoofing With Asymmetric Pseudo-Labels",
     "category": "journal",
@@ -1330,7 +1330,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15392,
+    "id": 15683,
     "year": 2026,
     "title": "SALUS: Large-Scale Homomorphic Circuit Synthesis via Logic-Aware LUT Optimization",
     "category": "journal",
@@ -1340,7 +1340,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15393,
+    "id": 15684,
     "year": 2026,
     "title": "DeSA: Decentralized Secure Aggregation for Federated Learning in Zero-Trust D2D Networks",
     "category": "journal",
@@ -1350,7 +1350,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15394,
+    "id": 15685,
     "year": 2026,
     "title": "Sensitivity-Aware Auditing Service for Differentially Private Databases",
     "category": "journal",
@@ -1360,7 +1360,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15395,
+    "id": 15686,
     "year": 2026,
     "title": "SecCSI: Securing Wireless Environment With RIS Against CSI-Forgery Attacks",
     "category": "journal",
@@ -1370,7 +1370,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15396,
+    "id": 15687,
     "year": 2026,
     "title": "Anchor-Based Multimodal Verification: A Dynamic Query Framework for Fake News Forensics in Short Videos",
     "category": "journal",
@@ -1380,7 +1380,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15397,
+    "id": 15688,
     "year": 2026,
     "title": "A Novel Quantum-Based Mutual Authentication and Key Agreement Scheme for Smart Grid",
     "category": "journal",
@@ -1390,7 +1390,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15398,
+    "id": 15689,
     "year": 2026,
     "title": "Cross-Region Feature Reformer With Semantic Preservation for Adversarial Malware Detection",
     "category": "journal",
@@ -1400,7 +1400,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15399,
+    "id": 15690,
     "year": 2026,
     "title": "AdvScan: Black-Box Adversarial Example Detection at Runtime Through Power Analysis",
     "category": "journal",
@@ -1410,7 +1410,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15400,
+    "id": 15691,
     "year": 2026,
     "title": "PROTheft: A Projector-Based Model Extraction Attack in the Physical World",
     "category": "journal",
@@ -1420,7 +1420,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15401,
+    "id": 15692,
     "year": 2026,
     "title": "Differential Space-Time Line Code Hopping Method for Improving Covert Secrecy Rate",
     "category": "journal",
@@ -1430,7 +1430,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15402,
+    "id": 15693,
     "year": 2026,
     "title": "Efficient Revocable Conditional Anonymous Authentication With Verifiable Self-Generated Pseudonyms for VANETs",
     "category": "journal",
@@ -1440,7 +1440,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15403,
+    "id": 15694,
     "year": 2026,
     "title": "From Gradient Analysis to Norm Control: Rethinking Triplet Loss for Gait Recognition",
     "category": "journal",
@@ -1450,7 +1450,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15404,
+    "id": 15695,
     "year": 2026,
     "title": "MPA: Lightweight and Updatable Integrity Auditing for Decentralized Storage Using Merkle Trees and Polynomial Commitments",
     "category": "journal",
@@ -1460,7 +1460,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15405,
+    "id": 15696,
     "year": 2026,
     "title": "The Chosen-Object Attack: Exploiting the Hungarian Matching Loss in Detection Transformers for Fun and Profit",
     "category": "journal",
@@ -1470,7 +1470,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15406,
+    "id": 15697,
     "year": 2026,
     "title": "Privacy-Preserving, Efficient, and Accurate Dimensionality Reduction",
     "category": "journal",
@@ -1480,7 +1480,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15407,
+    "id": 15698,
     "year": 2026,
     "title": "CCPA via Load Redistribution: Sequential Strategies and Vulnerability Analysis in Power Systems",
     "category": "journal",
@@ -1490,7 +1490,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15408,
+    "id": 15699,
     "year": 2026,
     "title": "MT-DEGCL: Multi-Task Encrypted Traffic Classification With Dual Embedding and Graph Contrastive Learning",
     "category": "journal",
@@ -1500,7 +1500,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15409,
+    "id": 15700,
     "year": 2026,
     "title": "Boosting Adversarial Transferability With Low-Cost Optimization via Maximin Expected Flatness",
     "category": "journal",
@@ -1510,7 +1510,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15410,
+    "id": 15701,
     "year": 2026,
     "title": "STMWF: Multi-Tab Website Fingerprinting via Spatial-Temporal Sequence Analysis",
     "category": "journal",
@@ -1520,7 +1520,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15411,
+    "id": 15702,
     "year": 2026,
     "title": "Practical and Flexible Backdoor Attack Against Deep Learning Models via Shell Code Injection",
     "category": "journal",
@@ -1530,7 +1530,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15412,
+    "id": 15703,
     "year": 2026,
     "title": "Adversarial Training for Graph Neural Networks via Graph Subspace Energy Optimization",
     "category": "journal",
@@ -1540,7 +1540,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15413,
+    "id": 15704,
     "year": 2026,
     "title": "HiveTEE: Scalable and Fine-Grained Isolated Domains With RME and MTE Co-Assisted",
     "category": "journal",
@@ -1550,7 +1550,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15414,
+    "id": 15705,
     "year": 2026,
     "title": "Dual Frequency Branch Framework With Reconstructed Sliding Windows Attention for AI-Generated Image Detection",
     "category": "journal",
@@ -1560,7 +1560,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15415,
+    "id": 15706,
     "year": 2026,
     "title": "Rethinking Cross-Table Quantization Step Estimation: From Global and Local Perspectives",
     "category": "journal",
@@ -1570,7 +1570,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15416,
+    "id": 15707,
     "year": 2026,
     "title": "Model Inversion Attack Against Federated Unlearning",
     "category": "journal",
@@ -1580,7 +1580,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15417,
+    "id": 15708,
     "year": 2026,
     "title": "Secure and Efficient Model Training Framework for Multiuser Semantic Communications via Over-the-Air Mixup",
     "category": "journal",
@@ -1590,7 +1590,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15418,
+    "id": 15709,
     "year": 2026,
     "title": "Model Hijacking Attack in Federated Learning",
     "category": "journal",
@@ -1600,7 +1600,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15419,
+    "id": 15710,
     "year": 2026,
     "title": "VoIP Call Identification via a Dual-Level 1D-CNN With Frame and Utterance Features",
     "category": "journal",
@@ -1610,7 +1610,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15420,
+    "id": 15711,
     "year": 2026,
     "title": "LLMBA: Efficient Behavior Analytics via Large Pretrained Models in Zero Trust Networks",
     "category": "journal",
@@ -1620,7 +1620,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15421,
+    "id": 15712,
     "year": 2026,
     "title": "Expressive and Fully Policy-Hidden Attribute-Based Searchable Encryption Scheme for Multi-Owner",
     "category": "journal",
@@ -1630,7 +1630,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15422,
+    "id": 15713,
     "year": 2026,
     "title": "OwnerHunter: Multilingual Website Owner Identification Powered by Large Language Model",
     "category": "journal",
@@ -1640,7 +1640,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15423,
+    "id": 15714,
     "year": 2026,
     "title": "Cert-SSBD: Certified Backdoor Defense With Sample-Specific Smoothing Noises",
     "category": "journal",
@@ -1650,7 +1650,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15424,
+    "id": 15715,
     "year": 2026,
     "title": "Decoupled and Privacy-Preserving Key Generation in ABE Under the Minimal Disclosure Principle",
     "category": "journal",
@@ -1660,7 +1660,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15425,
+    "id": 15716,
     "year": 2026,
     "title": "Learning Sequential Deception Defense Strategy Against APT Using Stackelberg Markov Game",
     "category": "journal",
@@ -1670,7 +1670,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15426,
+    "id": 15717,
     "year": 2026,
     "title": "Risk-Aware Privacy Preservation for LLM Inference",
     "category": "journal",
@@ -1680,7 +1680,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15427,
+    "id": 15718,
     "year": 2026,
     "title": "Data Flipping Attack and Defense in Web Edge Caching Systems",
     "category": "journal",
@@ -1690,7 +1690,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15428,
+    "id": 15719,
     "year": 2026,
     "title": "GUARD: A Unified Open-Set and Closed-Set Gait Recognition Framework via Feature Reconstruction on Wi-Fi CSI",
     "category": "journal",
@@ -1700,7 +1700,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15429,
+    "id": 15720,
     "year": 2026,
     "title": "Efficient Malicious Multiparty Private Set Intersection Supporting Cardinality, Sharing, and Batching",
     "category": "journal",
@@ -1710,7 +1710,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15430,
+    "id": 15721,
     "year": 2026,
     "title": "Realhybrid: A Hybrid Blockchain Consensus With Node-Level Switching",
     "category": "journal",
@@ -1720,7 +1720,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15431,
+    "id": 15722,
     "year": 2026,
     "title": "Are Large Vision-Language Models Robust to Adversarial Visual Transformations?",
     "category": "journal",
@@ -1730,7 +1730,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15432,
+    "id": 15723,
     "year": 2026,
     "title": "PPOM-Attack: A Substitute Model-Free Perturbation Prediction and Optimization Method for Black-Box Adversarial Attack Against Face Recognition",
     "category": "journal",
@@ -1740,7 +1740,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15433,
+    "id": 15724,
     "year": 2026,
     "title": "Efficient Byzantine-Robust Privacy-Preserving Federated Learning via Dimension Compression",
     "category": "journal",
@@ -1750,7 +1750,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15434,
+    "id": 15725,
     "year": 2026,
     "title": "TrapFlow: Controllable Website Fingerprinting Defense via Dynamic Backdoor Learning",
     "category": "journal",
@@ -1760,7 +1760,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15435,
+    "id": 15726,
     "year": 2026,
     "title": "Efficient Updatable PSI From Asymmetric PSI and PSU",
     "category": "journal",
@@ -1770,7 +1770,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15436,
+    "id": 15727,
     "year": 2026,
     "title": "Toward Robust Radio Frequency Fingerprint Identification: A Federated Learning Framework With Feature Alignment",
     "category": "journal",
@@ -1780,7 +1780,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15437,
+    "id": 15728,
     "year": 2026,
     "title": "Bi-Level Inter-Modality Modulation for Unsupervised Visible-Infrared Person Re-Identification",
     "category": "journal",
@@ -1790,7 +1790,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15438,
+    "id": 15729,
     "year": 2026,
     "title": "TFSCL: A Novel Time-Frequency Similarity Contrastive Learning Method With Hybrid Augmentation for Robust and Accurate Specific Emitter Identification",
     "category": "journal",
@@ -1800,7 +1800,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15439,
+    "id": 15730,
     "year": 2026,
     "title": "AdaParse: Personalized Fingerprinting for Visual Generative Model Reverse Engineering",
     "category": "journal",
@@ -1810,7 +1810,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15440,
+    "id": 15731,
     "year": 2026,
     "title": "MithrilRB: Resource-Efficient Redactable Blockchain With Single-Use Authorization",
     "category": "journal",
@@ -1820,7 +1820,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15441,
+    "id": 15732,
     "year": 2026,
     "title": "QuEST: Quantization-Conditioned Efficient Stealthy Trojan",
     "category": "journal",
@@ -1830,7 +1830,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15442,
+    "id": 15733,
     "year": 2026,
     "title": "MagLive: Robust Voice Liveness Detection on Smartphones Using Magnetic Pattern Changes",
     "category": "journal",
@@ -1840,7 +1840,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15443,
+    "id": 15734,
     "year": 2026,
     "title": "X2O: Cross Parallel Optimization of the CROSS Post-Quantum Scheme on GPU",
     "category": "journal",
@@ -1850,7 +1850,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15444,
+    "id": 15735,
     "year": 2026,
     "title": "A Fine-Tuning Data Recovery Attack on Generative Language Models via Backdooring",
     "category": "journal",
@@ -1860,7 +1860,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15445,
+    "id": 15736,
     "year": 2026,
     "title": "GCI-GANomaly: A Novel GPS Spoofing Detection Scheme Based on Grayscale Constellation Image",
     "category": "journal",
@@ -1870,7 +1870,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15446,
+    "id": 15737,
     "year": 2026,
     "title": "Language as a Bridge: Semantic-Guided Cross-Modal Gait Recognition via Text Prototype and Feature Decoupling",
     "category": "journal",
@@ -1880,7 +1880,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15447,
+    "id": 15738,
     "year": 2026,
     "title": "Lattice-Based Anonymous Batch Verifiable Authentication for Fog-Assisted VANETs",
     "category": "journal",
@@ -1890,7 +1890,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15448,
+    "id": 15739,
     "year": 2026,
     "title": "Identity and Style Feature Decoupling Network for Cross-Domain Palmprint Recognition",
     "category": "journal",
@@ -1900,7 +1900,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15449,
+    "id": 15740,
     "year": 2026,
     "title": "Boosting Active Defense Persistence: A Two-Stage Defense Framework Combining Interruption and Poisoning Against Deepfake",
     "category": "journal",
@@ -1910,7 +1910,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15450,
+    "id": 15741,
     "year": 2026,
     "title": "FedPalm: A General Federated Learning Framework for Closed- and Open-Set Palmprint Verification",
     "category": "journal",
@@ -1920,7 +1920,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15451,
+    "id": 15742,
     "year": 2026,
     "title": "Safeguarding ISAC Performance in Low-Altitude Wireless Networks Under Channel Access Attack",
     "category": "journal",
@@ -1930,7 +1930,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15452,
+    "id": 15743,
     "year": 2026,
     "title": "Revocable and Flexible Privacy-Preserving Data Computing With Bilateral Access Control for Cloud-Fog-Assisted EHR Systems",
     "category": "journal",
@@ -1940,7 +1940,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15453,
+    "id": 15744,
     "year": 2026,
     "title": "Exploratory Detection of Unknown Cyber-Attacks via Evolutionary Strategy and Machine Learning",
     "category": "journal",
@@ -1950,7 +1950,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15454,
+    "id": 15745,
     "year": 2026,
     "title": "Mitigating Insider-Facilitated Advanced Persistent Threat: A Three-Player Differential Game Approach",
     "category": "journal",
@@ -1960,7 +1960,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15455,
+    "id": 15746,
     "year": 2026,
     "title": "Domain Adaptation for Speaker Verification Using Optimal Transport With Pseudo Label",
     "category": "journal",
@@ -1970,7 +1970,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15456,
+    "id": 15747,
     "year": 2026,
     "title": "FORCE: Byzantine-Resilient Decentralized Federated Learning via Game-Theoretic Contribution Aggregation",
     "category": "journal",
@@ -1980,7 +1980,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15457,
+    "id": 15748,
     "year": 2026,
     "title": "Txtail: A Practical Transaction Relay Incentive Scheme for Bitcoin",
     "category": "journal",
@@ -1990,7 +1990,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15458,
+    "id": 15749,
     "year": 2026,
     "title": "Time-Hopping Covert Communication With Random Slots and Dispersed Energy",
     "category": "journal",
@@ -2000,7 +2000,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15459,
+    "id": 15750,
     "year": 2026,
     "title": "Leveraging Angle of Arrival Estimation Against Impersonation Attacks in Physical Layer Authentication",
     "category": "journal",
@@ -2010,7 +2010,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15460,
+    "id": 15751,
     "year": 2026,
     "title": "A Novel Perspective on Gradient Defense: Layer-Specific Protection Against Privacy Leakage",
     "category": "journal",
@@ -2020,7 +2020,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15461,
+    "id": 15752,
     "year": 2026,
     "title": "PromptFuzz: Harnessing Fuzzing Techniques for Robust Testing of Prompt Injection in LLMs",
     "category": "journal",
@@ -2030,7 +2030,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15462,
+    "id": 15753,
     "year": 2026,
     "title": "ShiftHub: Enabling Atomic, Unlinkable, and Practical m~1 Cross-Chain Transfer",
     "category": "journal",
@@ -2040,7 +2040,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15463,
+    "id": 15754,
     "year": 2026,
     "title": "BrainprintNet: A Multiscale Cross-Band Fusion Network for EEG-Based Brainprint Recognition",
     "category": "journal",
@@ -2050,7 +2050,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15464,
+    "id": 15755,
     "year": 2026,
     "title": "Enhancing Data Augmentation Diversity: A Diffusion Model-Based Approach for Few-Shot Specific Emitter Identification",
     "category": "journal",
@@ -2060,7 +2060,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15465,
+    "id": 15756,
     "year": 2026,
     "title": "Achieving Privacy-Preserving and High-Accuracy Collection of Key-Value Data With Local Differential Privacy",
     "category": "journal",
@@ -2070,7 +2070,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15466,
+    "id": 15757,
     "year": 2026,
     "title": "Hybrid Password Hardening Encryption",
     "category": "journal",
@@ -2080,7 +2080,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15467,
+    "id": 15758,
     "year": 2026,
     "title": "Low-Cost Physical-Layer Security Design for IRS-Assisted mMIMO Systems With 1-bit DACs",
     "category": "journal",
@@ -2090,7 +2090,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15468,
+    "id": 15759,
     "year": 2026,
     "title": "A Differentially Private Quadrature Amplitude Modulation Mechanism for Federated Analytics",
     "category": "journal",
@@ -2100,7 +2100,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15469,
+    "id": 15760,
     "year": 2026,
     "title": "Adversarial Semantic and Label Perturbation Attack for Pedestrian Attribute Recognition",
     "category": "journal",
@@ -2110,7 +2110,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15470,
+    "id": 15761,
     "year": 2026,
     "title": "Uncertainty-Aware Jamming Mitigation With Active RIS: A Robust Stackelberg Game Approach",
     "category": "journal",
@@ -2120,7 +2120,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15471,
+    "id": 15762,
     "year": 2026,
     "title": "Extracting Training Dialogue Data From Large Language Model-Based Task Bots",
     "category": "journal",
@@ -2130,7 +2130,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15472,
+    "id": 15763,
     "year": 2026,
     "title": "Multi-Scale Adaptive Clustering and Local Consistency Learning for Unsupervised Clothing-Changing Person Re-Identification",
     "category": "journal",
@@ -2140,7 +2140,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15473,
+    "id": 15764,
     "year": 2026,
     "title": "RFFRDet: A Refined Feature Fusion Rotation Detector for Prohibited Item Recognition in X-Ray Images",
     "category": "journal",
@@ -2150,7 +2150,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15474,
+    "id": 15765,
     "year": 2026,
     "title": "Bilevel Cyber-Induced Overloads Mechanism for False Data Injection Attacks Considering Post-Attack Economic Dispatch",
     "category": "journal",
@@ -2160,7 +2160,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15475,
+    "id": 15766,
     "year": 2026,
     "title": "Toward Generalizable Deepfake Detection via Forgery-Aware Audio-Visual Adaptation: A Variational Bayesian Approach",
     "category": "journal",
@@ -2170,7 +2170,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15476,
+    "id": 15767,
     "year": 2026,
     "title": "Dishonest Majority Passive-to-Active Compiler Over Rings for MPC With Constant Online Communication",
     "category": "journal",
@@ -2180,7 +2180,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15477,
+    "id": 15768,
     "year": 2026,
     "title": "Cryptanalysis of \"Multi-Party Private Set Intersection With One-Round Online Interaction\"",
     "category": "journal",
@@ -2190,7 +2190,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15478,
+    "id": 15769,
     "year": 2026,
     "title": "FlyCred: Contractual Anonymous Credentials Based on Oracles and Events",
     "category": "journal",
@@ -2200,7 +2200,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15479,
+    "id": 15770,
     "year": 2026,
     "title": "Privacy-Preserving Multi-Modal Object Fusion for Connected Autonomous Vehicles: Resilience Against Malicious Third-Party Attacks",
     "category": "journal",
@@ -2210,7 +2210,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15480,
+    "id": 15771,
     "year": 2026,
     "title": "DeFiMix: Indistinguishable Coin Mixing Schemes in Decentralized Finance",
     "category": "journal",
@@ -2220,7 +2220,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15481,
+    "id": 15772,
     "year": 2026,
     "title": "Trust Under Siege: Label Spoofing Attacks Against Machine Learning for Android Malware Detection",
     "category": "journal",
@@ -2230,7 +2230,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15482,
+    "id": 15773,
     "year": 2026,
     "title": "CLIP-ADA: CLIP-Guided Artifact-Invariant Generalizable Synthetic Image Detection",
     "category": "journal",
@@ -2240,7 +2240,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15483,
+    "id": 15774,
     "year": 2026,
     "title": "A Distributed Multi-Agent Deep Reinforcement Learning-Based Anti-Jamming Approach for Mega LEO Constellations",
     "category": "journal",
@@ -2250,7 +2250,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15484,
+    "id": 15775,
     "year": 2026,
     "title": "CShard: Blockchain Sharding via Repairable Fountain Codes and the Paradigm for Sharding Design",
     "category": "journal",
@@ -2260,7 +2260,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15485,
+    "id": 15776,
     "year": 2026,
     "title": "SeeGait: Synergistic Co-Evolving Representations for Multimodal Gait Recognition via Hierarchical Multi-Stage Fusion",
     "category": "journal",
@@ -2270,7 +2270,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15486,
+    "id": 15777,
     "year": 2026,
     "title": "SE-ASSO: A Security-Enhanced Anonymous Single-Sign-On Authentication Scheme",
     "category": "journal",
@@ -2280,7 +2280,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15487,
+    "id": 15778,
     "year": 2026,
     "title": "Filter, Obstruct, and Dilute: Defending Against Backdoor Attacks on Semi-Supervised Learning",
     "category": "journal",
@@ -2290,7 +2290,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15488,
+    "id": 15779,
     "year": 2026,
     "title": "SRAP: Robust and Transferable Self-Reversible Adversarial Patch for Image Privacy Protection",
     "category": "journal",
@@ -2300,7 +2300,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15489,
+    "id": 15780,
     "year": 2026,
     "title": "Design of Physical Layer Challenge Response Authentication With RIS and Multiple-Antenna Devices",
     "category": "journal",
@@ -2310,7 +2310,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15490,
+    "id": 15781,
     "year": 2026,
     "title": "DUAP: Disentanglement-Based Universal Adversarial Perturbations for Robust Multilingual Speech Privacy Protection",
     "category": "journal",
@@ -2320,7 +2320,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15491,
+    "id": 15782,
     "year": 2026,
     "title": "Frequency Hopping Waveform Design for Secure Integrated Sensing and Communications",
     "category": "journal",
@@ -2330,7 +2330,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15492,
+    "id": 15783,
     "year": 2026,
     "title": "Secure Reversible Image Obscuration for Content Protection",
     "category": "journal",
@@ -2340,7 +2340,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15493,
+    "id": 15784,
     "year": 2026,
     "title": "Public Key Encryption With Case-Insensitive Fuzzy Equality Test",
     "category": "journal",
@@ -2350,7 +2350,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15494,
+    "id": 15785,
     "year": 2026,
     "title": "Neural Architecture Search-Based Global-Local Vision Mamba for Palm-Vein Recognition",
     "category": "journal",
@@ -2360,7 +2360,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15495,
+    "id": 15786,
     "year": 2026,
     "title": "HINHJ: Hierarchical Attention-Based Heterogeneous Graph Neural Network for DNS Hijacking Detection",
     "category": "journal",
@@ -2370,7 +2370,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15496,
+    "id": 15787,
     "year": 2026,
     "title": "DECOR: Multi-Modal Decentralized Cluster-Based Energy Efficient Covert Routing in HetNets",
     "category": "journal",
@@ -2380,7 +2380,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15497,
+    "id": 15788,
     "year": 2026,
     "title": "Vulnerability Analysis of Event-Based Protocols Under Insider Attacks",
     "category": "journal",
@@ -2390,7 +2390,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15498,
+    "id": 15789,
     "year": 2026,
     "title": "LLAMA: Multi-Feedback Smart Contract Fuzzing Framework With LLM-Guided Seed Generation",
     "category": "journal",
@@ -2400,7 +2400,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15499,
+    "id": 15790,
     "year": 2026,
     "title": "A Dual-Purpose Framework for Backdoor Defense and Backdoor Amplification in Diffusion Models",
     "category": "journal",
@@ -2410,7 +2410,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15500,
+    "id": 15791,
     "year": 2026,
     "title": "Interpretability-Oriented UAV Recognition via Frequency-Aware Networks: A Coarse-to-Fine Framework for Enhanced Accuracy and Insight",
     "category": "journal",
@@ -2420,7 +2420,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15501,
+    "id": 15792,
     "year": 2026,
     "title": "Tracing Your Account: A Gradient-Aware Dynamic Window Graph Framework for Ethereum Under Privacy-Preserving Services",
     "category": "journal",
@@ -2430,7 +2430,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15502,
+    "id": 15793,
     "year": 2026,
     "title": "One Trigger, Multiple Victims: Clean-Label Neighborhood Backdoor Attacks on Graph Neural Networks",
     "category": "journal",
@@ -2440,7 +2440,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15503,
+    "id": 15794,
     "year": 2026,
     "title": "Urey-ML: A Machine Learning-Based Distance Deception Attack Against Apple UWB Interaction Frameworks",
     "category": "journal",
@@ -2450,7 +2450,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15504,
+    "id": 15795,
     "year": 2026,
     "title": "Analytical and Experimental Validation of Wireless Authentication Through Enhanced RF Fingerprints of Chaotic Antenna Arrays",
     "category": "journal",
@@ -2460,7 +2460,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15505,
+    "id": 15796,
     "year": 2026,
     "title": "Component-Specific Prompt Tuning for Deepfake Detection",
     "category": "journal",
@@ -2470,7 +2470,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15506,
+    "id": 15797,
     "year": 2026,
     "title": "Robustness Over Time: Understanding Adversarial Examples' Effectiveness on Longitudinal Versions of Large Language Models",
     "category": "journal",
@@ -2480,7 +2480,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15507,
+    "id": 15798,
     "year": 2026,
     "title": "FauForensics: Boosting Audio-Visual Deepfake Detection With Facial Action Units",
     "category": "journal",
@@ -2490,7 +2490,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15508,
+    "id": 15799,
     "year": 2026,
     "title": "Propose and Rectify: A Forensics-Driven MLLM Framework for Image Manipulation Localization",
     "category": "journal",
@@ -2500,7 +2500,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15509,
+    "id": 15800,
     "year": 2026,
     "title": "Mitigating Delivery Fraud and Path Manipulation in UAV-Based E-Commerce: A Fair Exchange Protocol",
     "category": "journal",
@@ -2510,7 +2510,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15510,
+    "id": 15801,
     "year": 2026,
     "title": "State Partition-Particle Filter Detection for Cyber-Physical Attacks",
     "category": "journal",
@@ -2520,7 +2520,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15511,
+    "id": 15802,
     "year": 2026,
     "title": "ModFuzz: Adaptive Module-Level Fuzzing of Processors",
     "category": "journal",
@@ -2530,7 +2530,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15512,
+    "id": 15803,
     "year": 2026,
     "title": "Comments on \"APFed: Anti-Poisoning Attacks in Privacy-Preserving Heterogeneous Federated Learning\"",
     "category": "journal",
@@ -2540,7 +2540,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15513,
+    "id": 15804,
     "year": 2026,
     "title": "HIBPEKS: Hierarchical Identity-Based Puncturable Encryption With Keyword Search Over Outsourced Encrypted Data",
     "category": "journal",
@@ -2550,7 +2550,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15514,
+    "id": 15805,
     "year": 2026,
     "title": "Your Non-Transferable Learning is Fragile: Practical Breach of Protected Models",
     "category": "journal",
@@ -2560,7 +2560,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15515,
+    "id": 15806,
     "year": 2026,
     "title": "Federated Single-Positive Multi-Label Learning",
     "category": "journal",
@@ -2570,7 +2570,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15516,
+    "id": 15807,
     "year": 2026,
     "title": "Assessing and Improving DNN Robustness Against Adversarial Examples From the Perspective of Fully Connected Layers",
     "category": "journal",
@@ -2580,7 +2580,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15517,
+    "id": 15808,
     "year": 2026,
     "title": "Verifiable Multi-User Dynamic Searchable Symmetric Encryption With Forward and Backward Privacy Feasible for Cloud Storage",
     "category": "journal",
@@ -2590,7 +2590,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15518,
+    "id": 15809,
     "year": 2026,
     "title": "GDetox: Purifying Backdoor Encoder in Graph Self-Supervised Learning via Knowledge Distillation",
     "category": "journal",
@@ -2600,7 +2600,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15519,
+    "id": 15810,
     "year": 2026,
     "title": "IFAD: Privacy-Preserving Isolation Forest-Based Anomaly Detection in Public Cloud Environments",
     "category": "journal",
@@ -2610,7 +2610,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15520,
+    "id": 15811,
     "year": 2026,
     "title": "FALCON-Net: Feature Aggregation of Local Patterns for AI-Generated Image Detection",
     "category": "journal",
@@ -2620,7 +2620,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15521,
+    "id": 15812,
     "year": 2026,
     "title": "PriLabel: Toward Comprehensively Uncovering Omitted Disclosures in Privacy Labels of Android Apps on a Large Scale",
     "category": "journal",
@@ -2630,7 +2630,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15522,
+    "id": 15813,
     "year": 2026,
     "title": "CIBPU: A Conflict-Invisible Secure Branch Prediction Unit",
     "category": "journal",
@@ -2640,7 +2640,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15523,
+    "id": 15814,
     "year": 2026,
     "title": "Dynamic Correlation-Guided Disentanglement and Contrastive Learning for RGB-D Cross-Modal Re-Identification",
     "category": "journal",
@@ -2650,7 +2650,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15524,
+    "id": 15815,
     "year": 2026,
     "title": "Precise Temporal Forgery Localization via Quantified Audio-Visual Asynchrony",
     "category": "journal",
@@ -2660,7 +2660,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15525,
+    "id": 15816,
     "year": 2026,
     "title": "FedNSA: Boosting Secure Aggregation by Assembling Differentially Private Noise Shares",
     "category": "journal",
@@ -2670,7 +2670,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15526,
+    "id": 15817,
     "year": 2026,
     "title": "ENClose: Encrypted Nonlinear Closed-Loop Control Over Fully Homomorphic Encryption",
     "category": "journal",
@@ -2680,7 +2680,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15527,
+    "id": 15818,
     "year": 2026,
     "title": "Byzantine-Robust Asynchronous Federated Learning via Feature Fingerprinting",
     "category": "journal",
@@ -2690,7 +2690,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15528,
+    "id": 15819,
     "year": 2026,
     "title": "LitCVit: A Lightweight Self-Supervised Contrastive Vision Transformer for Encrypted Malicious Traffic Detection",
     "category": "journal",
@@ -2700,7 +2700,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15529,
+    "id": 15820,
     "year": 2026,
     "title": "N Truths and a Lie: Consistency-Based Backdoor Defense for Vertical Federated Learning",
     "category": "journal",
@@ -2710,7 +2710,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15530,
+    "id": 15821,
     "year": 2026,
     "title": "Transferable Adversarial Attack on Referring Video Object Segmentation",
     "category": "journal",
@@ -2720,7 +2720,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15531,
+    "id": 15822,
     "year": 2026,
     "title": "HENet: A Heterogeneous Encoding Network for General and Robust Adversarial Example Generation",
     "category": "journal",
@@ -2730,7 +2730,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15532,
+    "id": 15823,
     "year": 2026,
     "title": "Downlink Control Information Sniffing-Based Smart Jamming and Its Suppression Strategy in 5G NR",
     "category": "journal",
@@ -2740,7 +2740,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15533,
+    "id": 15824,
     "year": 2026,
     "title": "Balancing Wireless Sensing Performance and Privacy Protection With Multi-Antenna Systems",
     "category": "journal",
@@ -2750,7 +2750,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15534,
+    "id": 15825,
     "year": 2026,
     "title": "PromptGuard: Soft Prompt-Guided Unsafe Content Moderation for Text-to-Image Models",
     "category": "journal",
@@ -2760,7 +2760,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15535,
+    "id": 15826,
     "year": 2026,
     "title": "Differentially Private Event-Triggered Average Consensus for Multi-Agent Systems Under f-Local Byzantine Attacks: An Improved Resilient Protocol",
     "category": "journal",
@@ -2770,7 +2770,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15536,
+    "id": 15827,
     "year": 2026,
     "title": "Exposing the Ghost in the Transformer: Abnormal Detection for Large Language Models via Hidden State Forensics",
     "category": "journal",
@@ -2780,7 +2780,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15537,
+    "id": 15828,
     "year": 2026,
     "title": "Practical Private Set Operation via Secret Sharing for Lightweight Clients",
     "category": "journal",
@@ -2790,7 +2790,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15538,
+    "id": 15829,
     "year": 2026,
     "title": "AtomXross: Toward General Cross-Chain Transaction",
     "category": "journal",
@@ -2800,7 +2800,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15539,
+    "id": 15830,
     "year": 2026,
     "title": "ESCM: A Toolkit for Efficient and Secure Outsourced Computation With Multiple Keys",
     "category": "journal",
@@ -2810,7 +2810,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15540,
+    "id": 15831,
     "year": 2026,
     "title": "Forgery-Resistant Range Queries via Multi-Client Order-Revealing Encryption",
     "category": "journal",
@@ -2820,7 +2820,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15541,
+    "id": 15832,
     "year": 2026,
     "title": "Differentially Private Zeroth-Order Methods for Scalable Large Language Model Fine-Tuning",
     "category": "journal",
@@ -2830,7 +2830,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15542,
+    "id": 15833,
     "year": 2026,
     "title": "ChargeX: Exploring State and Rate Attacks in Electric Vehicle Charging Systems",
     "category": "journal",
@@ -2840,7 +2840,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15543,
+    "id": 15834,
     "year": 2026,
     "title": "Rethinking Frequency Modeling: Tail-Aware Dynamic Adversarial Training for Long-Tailed Robustness",
     "category": "journal",
@@ -2850,7 +2850,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15544,
+    "id": 15835,
     "year": 2026,
     "title": "Flexible and Privacy-Preserving Access Control Framework for Decentralized Identity Systems",
     "category": "journal",
@@ -2860,7 +2860,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15545,
+    "id": 15836,
     "year": 2026,
     "title": "EPSD-HOT: Ethereum Phishing Scam Detection by Higher-Order Topology",
     "category": "journal",
@@ -2870,7 +2870,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15546,
+    "id": 15837,
     "year": 2026,
     "title": "On the Security of Sequential Multi-Signer Ring Signature for Secure Medical Data Sharing in IoMT",
     "category": "journal",
@@ -2880,7 +2880,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15547,
+    "id": 15838,
     "year": 2026,
     "title": "Defending Against Patch-Based and Texture-Based Adversarial Attacks With Spectral Decomposition",
     "category": "journal",
@@ -2890,7 +2890,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15548,
+    "id": 15839,
     "year": 2026,
     "title": "DiffMI: Breaking Face Recognition Privacy via Diffusion-Driven Training-Free Model Inversion",
     "category": "journal",
@@ -2900,7 +2900,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15549,
+    "id": 15840,
     "year": 2026,
     "title": "MaliVD: Source Code Vulnerability Localization via Attention-Based Multi-Modal Learning",
     "category": "journal",
@@ -2910,7 +2910,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15550,
+    "id": 15841,
     "year": 2026,
     "title": "Robust Identity-Based Signcryption Scheme for Vehicular Ad Hoc Networks",
     "category": "journal",
@@ -2920,7 +2920,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15551,
+    "id": 15842,
     "year": 2026,
     "title": "DFREC: DeepFake Identity Recovery Based on Identity-Aware Masked Autoencoder",
     "category": "journal",
@@ -2930,7 +2930,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15552,
+    "id": 15843,
     "year": 2026,
     "title": "Analysis of Collaborative Data Privacy Leakage: A Macro-Level Perspective",
     "category": "journal",
@@ -2940,7 +2940,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15553,
+    "id": 15844,
     "year": 2026,
     "title": "Multi-Screaming-Channel Attacks: Frequency Diversity for Enhanced Attacks",
     "category": "journal",
@@ -2950,7 +2950,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15554,
+    "id": 15845,
     "year": 2026,
     "title": "MCCENet: Multimodal Contrastive Learning Channel-Exchanging Networks for Palm Multimodal Authentication",
     "category": "journal",
@@ -2960,7 +2960,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15555,
+    "id": 15846,
     "year": 2026,
     "title": "ThreatMAMBA: Achieving High-Robustness Cyber Threat Attribution During the Evolution of Attacks",
     "category": "journal",
@@ -2970,7 +2970,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15556,
+    "id": 15847,
     "year": 2026,
     "title": "Heterogeneous Privacy-Preserving Federated Learning for Edge Intelligence",
     "category": "journal",
@@ -2980,7 +2980,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15557,
+    "id": 15848,
     "year": 2026,
     "title": "Authentication With Passports for Deep RF Sensing Model Protection",
     "category": "journal",
@@ -2990,7 +2990,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15558,
+    "id": 15849,
     "year": 2026,
     "title": "Toward Robust Receiver-Invariant Specific Emitter Identification via Multi-Task Adversarial Learning",
     "category": "journal",
@@ -3000,7 +3000,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15559,
+    "id": 15850,
     "year": 2026,
     "title": "TFMD: General and Fast Secure Neural Network Inference Framework With Threshold FHE",
     "category": "journal",
@@ -3010,7 +3010,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15560,
+    "id": 15851,
     "year": 2026,
     "title": "R-FLoRA: Residual-Statistic-Gated Low-Rank Adaptation for Single-Image Face Morphing Attack Detection",
     "category": "journal",
@@ -3020,7 +3020,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15561,
+    "id": 15852,
     "year": 2026,
     "title": "FDXT: Forward and Backward Private Conjunctive Searchable Encryption to Suppress Volume Leakages Caused by Cross-Tags",
     "category": "journal",
@@ -3030,7 +3030,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15562,
+    "id": 15853,
     "year": 2026,
     "title": "HKT-SmartAudit: Distilling Lightweight Models for Smart Contract Auditing",
     "category": "journal",
@@ -3040,7 +3040,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15563,
+    "id": 15854,
     "year": 2026,
     "title": "Early-Stage Detection of Encrypted Malware Traffic via Multi-Flow Temporal Graph Learning",
     "category": "journal",
@@ -3050,7 +3050,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15564,
+    "id": 15855,
     "year": 2026,
     "title": "Secure Off-Chain Payment Protocol From Ciphertext Unlinkable Autonomous Path Proxy Re-Encryption in Blockchain",
     "category": "journal",
@@ -3060,7 +3060,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15565,
+    "id": 15856,
     "year": 2026,
     "title": "RIRplay: Generation of a Replay Stereo Corpus for Voice Biometrics Anti-Spoofing",
     "category": "journal",
@@ -3070,7 +3070,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15566,
+    "id": 15857,
     "year": 2026,
     "title": "T3AT: Threshold-Authorized, Threshold-Redeemable, and Non-Transferable Anonymous Tokens",
     "category": "journal",
@@ -3080,7 +3080,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15567,
+    "id": 15858,
     "year": 2026,
     "title": "Toward Polymorphic Backdoor Against Semantic Communication via Intensity-Based Poisoning",
     "category": "journal",
@@ -3090,7 +3090,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15568,
+    "id": 15859,
     "year": 2026,
     "title": "Efficient Privacy-Preserving Jaccard Similarity Evaluation Over Multisets for Secure Collaborative Data Analysis",
     "category": "journal",
@@ -3100,7 +3100,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15569,
+    "id": 15860,
     "year": 2026,
     "title": "Machine Learning Validation of a Physical Prime Random Number Generator",
     "category": "journal",
@@ -3110,7 +3110,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15570,
+    "id": 15861,
     "year": 2026,
     "title": "AmbShield: Enhancing Physical Layer Security With Ambient Backscatter Devices Against Eavesdroppers",
     "category": "journal",
@@ -3120,7 +3120,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15571,
+    "id": 15862,
     "year": 2026,
     "title": "K-TCDP: A Temporal Correlated DP Mechanism for LoRA Supervised Fine-Tuning",
     "category": "journal",
@@ -3130,7 +3130,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15572,
+    "id": 15863,
     "year": 2026,
     "title": "Query-Efficient Hard-Label Attacks Against Black-Box Image Forgery Localization Model via Reinforcement Learning",
     "category": "journal",
@@ -3140,7 +3140,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15573,
+    "id": 15864,
     "year": 2026,
     "title": "On the Insecurity of Internally Sampled Honeyword Schemes",
     "category": "journal",
@@ -3150,7 +3150,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15574,
+    "id": 15865,
     "year": 2026,
     "title": "PLS and Covert Analysis of AAV-Assisted FSO Communication Systems With Downlink RSMA",
     "category": "journal",
@@ -3160,7 +3160,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15575,
+    "id": 15866,
     "year": 2026,
     "title": "ShadowCoT: Cognitive Hijacking for Stealthy Reasoning Backdoors in LLMs",
     "category": "journal",
@@ -3170,7 +3170,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15576,
+    "id": 15867,
     "year": 2026,
     "title": "Frequency-Domain Signatures for Proactive Defense Against Model Poisoning Attacks in Federated Learning",
     "category": "journal",
@@ -3180,7 +3180,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15577,
+    "id": 15868,
     "year": 2026,
     "title": "Screening Robust Cover for JPEG Steganography",
     "category": "journal",
@@ -3190,7 +3190,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15578,
+    "id": 15869,
     "year": 2026,
     "title": "Cross-Modal Person Retrieval With One-to-Many Relation Modeling",
     "category": "journal",
@@ -3200,7 +3200,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15579,
+    "id": 15870,
     "year": 2026,
     "title": "Polar Coding for the Multiple Access Wiretap Channel With Partial Rate-Limited Feedback via Rate-Splitting",
     "category": "journal",
@@ -3210,7 +3210,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15580,
+    "id": 15871,
     "year": 2026,
     "title": "Generating Privacy-Preserving Faces for Multi-Party Secure Authentication",
     "category": "journal",
@@ -3220,7 +3220,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15581,
+    "id": 15872,
     "year": 2026,
     "title": "Breaking Beyond One: Mirage Attacks for Highly Accurate Multi-Keyword Query Recovery With Partial Similar Data Against SE",
     "category": "journal",
@@ -3230,7 +3230,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15582,
+    "id": 15873,
     "year": 2026,
     "title": "ALIGNER: Learning Fine-Grained Cross-Modal Alignment for Text-Based Person Retrieval",
     "category": "journal",
@@ -3240,7 +3240,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15583,
+    "id": 15874,
     "year": 2026,
     "title": "Sanitizer: Blazing-Fast, Private, and Robust Federated Learning",
     "category": "journal",
@@ -3250,7 +3250,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15584,
+    "id": 15875,
     "year": 2026,
     "title": "Learning to Defend: Auto-Augmentation Search Against Model Inversion Attacks",
     "category": "journal",
@@ -3260,7 +3260,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15585,
+    "id": 15876,
     "year": 2026,
     "title": "VLM-Guard: Defending Jailbreaks by Monitoring Only Hundreds of Safety-Critical Neurons",
     "category": "journal",
@@ -3270,7 +3270,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15586,
+    "id": 15877,
     "year": 2026,
     "title": "Security Enhancement for Person Re-Identification Through Diffusion Driven Semantic Attacks",
     "category": "journal",
@@ -3280,7 +3280,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15587,
+    "id": 15878,
     "year": 2026,
     "title": "Revealing Honeypots in High-Frequency Interactions on Decentralized Applications",
     "category": "journal",
@@ -3290,7 +3290,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15588,
+    "id": 15879,
     "year": 2026,
     "title": "HEFLGuard: Backdoor Detection in Homomorphic Encryption-Based Federated Learning",
     "category": "journal",
@@ -3300,7 +3300,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15589,
+    "id": 15880,
     "year": 2026,
     "title": "Leveraging Confidence Consistency for Poisoned Sample Detection in Vertical Federated Learning",
     "category": "journal",
@@ -3310,7 +3310,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15590,
+    "id": 15881,
     "year": 2026,
     "title": "TMVS: Threshold-Based Majority Voting Scheme for Robust SRAM PUFs",
     "category": "journal",
@@ -3320,7 +3320,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15591,
+    "id": 15882,
     "year": 2026,
     "title": "Federated Unsupervised Skeletal Action Recognition From Condensation to Expansion",
     "category": "journal",
@@ -3330,7 +3330,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15592,
+    "id": 15883,
     "year": 2026,
     "title": "BlockAthena: A Scalable Approach for Long-Term Blockchain Crimes Analysis",
     "category": "journal",
@@ -3340,7 +3340,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15593,
+    "id": 15884,
     "year": 2026,
     "title": "A Secure and Efficient Image Sharing Method Based on Bilateral Compressive Sensing With Multilevel Privacy Preserving Function",
     "category": "journal",
@@ -3350,7 +3350,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15594,
+    "id": 15885,
     "year": 2026,
     "title": "LVMark: Robust Watermark for Latent Video Diffusion Models",
     "category": "journal",
@@ -3360,7 +3360,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15595,
+    "id": 15886,
     "year": 2026,
     "title": "A User Threat-Driven Multi-Objective Adaptive VM Allocation Framework for Cloud Security",
     "category": "journal",
@@ -3370,7 +3370,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15596,
+    "id": 15887,
     "year": 2026,
     "title": "Perfect Privacy for Discriminator-Based Byzantine-Resilient Federated Learning",
     "category": "journal",
@@ -3380,7 +3380,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15597,
+    "id": 15888,
     "year": 2026,
     "title": "Garland: Graph Neural Network-Based Federated Recommendation With Malicious Security via Secret-Shared Shuffle",
     "category": "journal",
@@ -3390,7 +3390,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15598,
+    "id": 15889,
     "year": 2026,
     "title": "Toward More Practical Label Inference Attacks Against Graph-Based Vertical Federated Learning",
     "category": "journal",
@@ -3400,7 +3400,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15599,
+    "id": 15890,
     "year": 2026,
     "title": "Robust Malicious Network Traffic Detection Framework With Automated Drift Detection, Identification, and Adaptation",
     "category": "journal",
@@ -3410,7 +3410,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15600,
+    "id": 15891,
     "year": 2026,
     "title": "Data-Efficient Cross-Domain Few-Shot Website Fingerprinting With Unsupervised Domain Adaptation",
     "category": "journal",
@@ -3420,7 +3420,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15601,
+    "id": 15892,
     "year": 2026,
     "title": "ParaVul: A Parallel Large Language Model and Retrieval-Augmented Framework for Smart Contract Vulnerability Detection",
     "category": "journal",
@@ -3430,7 +3430,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15602,
+    "id": 15893,
     "year": 2026,
     "title": "Decoupled Neural Audio Steganography for Adaptive Sender-Side Model Updates",
     "category": "journal",
@@ -3440,7 +3440,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15603,
+    "id": 15894,
     "year": 2026,
     "title": "TS-VulA: A Triple-Stage Vulnerability Analysis Framework for Industrial Internet of Things",
     "category": "journal",
@@ -3450,7 +3450,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15604,
+    "id": 15895,
     "year": 2026,
     "title": "Receding-Horizon Radar Time Resource Scheduling for Jamming-Resilient Target Search and Tracking",
     "category": "journal",
@@ -3460,7 +3460,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15605,
+    "id": 15896,
     "year": 2026,
     "title": "Comments on \"On Covert Communication Performance With Outdated CSI in Wireless Greedy Relay Systems\"",
     "category": "journal",
@@ -3470,7 +3470,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15606,
+    "id": 15897,
     "year": 2026,
     "title": "Federated Contrastive Diffusion Prototypes for Robust Private Learning",
     "category": "journal",
@@ -3480,7 +3480,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15607,
+    "id": 15898,
     "year": 2026,
     "title": "Cryptanalysis of the DIZY Stream Cipher With Provable Security",
     "category": "journal",
@@ -3490,7 +3490,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15608,
+    "id": 15899,
     "year": 2026,
     "title": "Explainability-Guided Untargeted Attacks on Knowledge Graph Embedding",
     "category": "journal",
@@ -3500,7 +3500,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15609,
+    "id": 15900,
     "year": 2026,
     "title": "SPA: Stable and Precise Alignment for Efficient Cross-Domain Palmprint Recognition",
     "category": "journal",
@@ -3510,7 +3510,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15610,
+    "id": 15901,
     "year": 2026,
     "title": "Comments on \"Lightweight Multi-User Public-Key Authenticated Encryption With Keyword Search\"",
     "category": "journal",
@@ -3520,7 +3520,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15611,
+    "id": 15902,
     "year": 2026,
     "title": "Deformable 3-D Point Cloud Perturbations Using Cage-Based Deformation for Semantic Consistency",
     "category": "journal",
@@ -3530,7 +3530,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15612,
+    "id": 15903,
     "year": 2026,
     "title": "PVDI: Preserving Vital and Disrupting Irrelevant Latent Attentions for Robust Backdoor Defense",
     "category": "journal",
@@ -3540,7 +3540,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15613,
+    "id": 15904,
     "year": 2026,
     "title": "Automatic Red Teaming LLM-Based Agents With Model Context Protocol Tools",
     "category": "journal",
@@ -3550,7 +3550,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15614,
+    "id": 15905,
     "year": 2026,
     "title": "Deep Privacy Funnel Model: From a Discriminative to a Generative Approach With an Application to Face Recognition",
     "category": "journal",
@@ -3560,7 +3560,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15615,
+    "id": 15906,
     "year": 2026,
     "title": "Reliable Multi-Modal Object Re-Identification via Modality-Aware Graph Reasoning",
     "category": "journal",
@@ -3570,7 +3570,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15616,
+    "id": 15907,
     "year": 2026,
     "title": "Trigger Without Trace: Toward Stealthy Backdoor Attack on Text-to-Image Diffusion Models",
     "category": "journal",
@@ -3580,7 +3580,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15617,
+    "id": 15908,
     "year": 2026,
     "title": "Human Behavior Anonymization for Secure Teleoperation",
     "category": "journal",
@@ -3590,7 +3590,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15618,
+    "id": 15909,
     "year": 2026,
     "title": "Fundamental Limit of Discrete Distribution Estimation Under Utility-Optimized Local Differential Privacy",
     "category": "journal",
@@ -3600,7 +3600,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15619,
+    "id": 15910,
     "year": 2026,
     "title": "DiffHash: Text-Guided Targeted Attack via Diffusion Models Against Deep Hashing Image Retrieval",
     "category": "journal",
@@ -3610,7 +3610,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15620,
+    "id": 15911,
     "year": 2026,
     "title": "TrustSearch: Toward Secure and Efficient Reverse Image Search via SGX",
     "category": "journal",
@@ -3620,7 +3620,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15621,
+    "id": 15912,
     "year": 2026,
     "title": "Strategic Decision-Making in Uncertain Turn-Based Security Games",
     "category": "journal",
@@ -3630,7 +3630,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15622,
+    "id": 15913,
     "year": 2026,
     "title": "Vul-CTG: A Multimodal Framework for Software Vulnerability Detection via Code Text and Graph Integration",
     "category": "journal",
@@ -3640,7 +3640,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15623,
+    "id": 15914,
     "year": 2026,
     "title": "Privacy-Preserving Healthcare Cloud Access Control: Registered Attribute-Based Encryption With Auditable Policy Updating",
     "category": "journal",
@@ -3650,7 +3650,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15624,
+    "id": 15915,
     "year": 2026,
     "title": "Detecting Partially Spoofed Utterances Without Segment Annotation Through Fake Segment Mining-Based Graph Neural Networks",
     "category": "journal",
@@ -3660,7 +3660,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15625,
+    "id": 15916,
     "year": 2026,
     "title": "Optimizing Leaky Private Information Retrieval Codes to Achieve O(log K) Leakage Ratio Exponent",
     "category": "journal",
@@ -3670,7 +3670,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15626,
+    "id": 15917,
     "year": 2026,
     "title": "MDV: Resolving the Auxiliary Data Dilemma in Model Extraction Defenses",
     "category": "journal",
@@ -3680,7 +3680,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15627,
+    "id": 15918,
     "year": 2026,
     "title": "Parameter-Agnostic Privacy-Preserving Machine Unlearning for Large Language Models",
     "category": "journal",
@@ -3690,7 +3690,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15628,
+    "id": 15919,
     "year": 2026,
     "title": "Secure Optimization With Asynchronous Structured Skyline Predicates Under Vertical Data Federation",
     "category": "journal",
@@ -3700,7 +3700,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15629,
+    "id": 15920,
     "year": 2026,
     "title": "Quality-Guided Forgery Adapter for Generalizable AIGC Image Detection",
     "category": "journal",
@@ -3710,7 +3710,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15630,
+    "id": 15921,
     "year": 2026,
     "title": "On Exploiting Single-Trace Side-Channel Leakage of SEAL-Embedded Library",
     "category": "journal",
@@ -3720,7 +3720,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15631,
+    "id": 15922,
     "year": 2026,
     "title": "EA-APO: A Universal Proactive Defense Against Facial Manipulation",
     "category": "journal",
@@ -3730,7 +3730,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15632,
+    "id": 15923,
     "year": 2026,
     "title": "Closing the Proof-of-Stake Security Gap: A Signature-Based Defense Against Malicious Validators in Long-Range Attacks",
     "category": "journal",
@@ -3740,7 +3740,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15633,
+    "id": 15924,
     "year": 2026,
     "title": "FairRoP: Robust Client Selection Scheme for Fairness-Aware Federated Learning",
     "category": "journal",
@@ -3750,7 +3750,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15634,
+    "id": 15925,
     "year": 2026,
     "title": "ABDP: Adversarial Backdoor Detection and Purification",
     "category": "journal",
@@ -3760,7 +3760,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15635,
+    "id": 15926,
     "year": 2026,
     "title": "NCorr-FP: A Neighbourhood-Based Correlation-Preserving Fingerprinting Scheme for Intellectual Property Protection of Structured Data",
     "category": "journal",
@@ -3770,7 +3770,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15636,
+    "id": 15927,
     "year": 2026,
     "title": "Improving Electroencephalogram-Based Deception Detection in Concealed Information Test Under Low Stimulus Heterogeneity",
     "category": "journal",
@@ -3780,7 +3780,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15637,
+    "id": 15928,
     "year": 2026,
     "title": "Matching Comes First: Efficient Certificateless Lattice-Based Bilateral Access Control With On-Demand Matching",
     "category": "journal",
@@ -3790,7 +3790,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15638,
+    "id": 15929,
     "year": 2026,
     "title": "FaceReclaim: Deep Traceability of Face-Swapped Images Through Feature Decoupling",
     "category": "journal",
@@ -3800,7 +3800,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15639,
+    "id": 15930,
     "year": 2026,
     "title": "Mad or Impossible to Be Mad? Rethinking Load Manipulation Threats in Renewable-Integrated Power Grids and Defenses",
     "category": "journal",
@@ -3810,7 +3810,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15640,
+    "id": 15931,
     "year": 2026,
     "title": "QS-BTrust: A Quantum-Secure Privacy-Preserving Protocol With Revocation for Trusted Broadcasting in Integrated Vehicular Networks",
     "category": "journal",
@@ -3820,7 +3820,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15641,
+    "id": 15932,
     "year": 2026,
     "title": "Efficient Privacy-Preserving Ridesharing: An Online Matching-Based Approach",
     "category": "journal",
@@ -3830,7 +3830,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15642,
+    "id": 15933,
     "year": 2026,
     "title": "MU-MIA: Machine Unlearning for Membership Inference Attacks",
     "category": "journal",
@@ -3840,7 +3840,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15643,
+    "id": 15934,
     "year": 2026,
     "title": "BadBone: Backdoor Attacks Against Backbone Models in Visual Prompt Learning",
     "category": "journal",
@@ -3850,7 +3850,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15644,
+    "id": 15935,
     "year": 2026,
     "title": "Regulator-Friendly Traceable Anonymous Credentials With Secure Outsourceable Record Retrieval",
     "category": "journal",
@@ -3860,7 +3860,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15645,
+    "id": 15936,
     "year": 2026,
     "title": "Bandwidth-Efficient Robust Threshold ECDSA in Three Rounds",
     "category": "journal",
@@ -3870,7 +3870,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15646,
+    "id": 15937,
     "year": 2026,
     "title": "BAVote: Blockchain-Based Electronic Voting System With Privacy and Accountability",
     "category": "journal",
@@ -3880,7 +3880,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15647,
+    "id": 15938,
     "year": 2026,
     "title": "mmGuard: A Countermeasure Against Physical Adversarial Attacks on mmWave Radar Sensing",
     "category": "journal",
@@ -3890,7 +3890,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15648,
+    "id": 15939,
     "year": 2026,
     "title": "Trigger as Entity: Backdoor Attacks to Graph-Based Retrieval-Augmented Generation of Large Language Models",
     "category": "journal",
@@ -3900,7 +3900,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15649,
+    "id": 15940,
     "year": 2026,
     "title": "Lightweight Authentication for Drone Service Collaboration Using Blockchain-Based Decentralized Identity and Physically Unclonable Functions",
     "category": "journal",
@@ -3910,7 +3910,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15650,
+    "id": 15941,
     "year": 2026,
     "title": "FIT-Print: Toward False-Claim-Resistant Model Ownership Verification via Targeted Fingerprint",
     "category": "journal",
@@ -3920,7 +3920,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15651,
+    "id": 15942,
     "year": 2026,
     "title": "Deepfake Detection via Exploring Degradation Inconsistency",
     "category": "journal",
@@ -3930,7 +3930,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15652,
+    "id": 15943,
     "year": 2026,
     "title": "SOOM: A Schedule-Search-Based Operator Obfuscation Method Against Model Extraction Attacks",
     "category": "journal",
@@ -3940,7 +3940,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15653,
+    "id": 15944,
     "year": 2026,
     "title": "UC-Secure Multi-Factor Authentication With Dynamic Password Recovery and Fine-Grained Access Control",
     "category": "journal",
@@ -3950,7 +3950,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15654,
+    "id": 15945,
     "year": 2026,
     "title": "An Integrated Framework for Cooperative Transmission and Physical Layer Authentication in Relay-Assisted Wireless Networks",
     "category": "journal",
@@ -3960,7 +3960,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15655,
+    "id": 15946,
     "year": 2026,
     "title": "AHFNet: An Adaptive Hybrid Fusion Network for Robust Multimodal Hand Biometrics Under Unreliable Modalities",
     "category": "journal",
@@ -3970,7 +3970,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15656,
+    "id": 15947,
     "year": 2026,
     "title": "Threshold Issuance Selective Disclosure Credentials With Equivalence Class Signature",
     "category": "journal",
@@ -3980,7 +3980,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15657,
+    "id": 15948,
     "year": 2026,
     "title": "Dual-Server Public-Key Authenticated Searchable Encryption With Constant Trapdoor Against Inside Keyword Guessing Attacks",
     "category": "journal",
@@ -3990,7 +3990,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15658,
+    "id": 15949,
     "year": 2026,
     "title": "Game-Theoretic Analysis of Multi-Source Information Freshness Under False Data Injection",
     "category": "journal",
@@ -4000,7 +4000,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15659,
+    "id": 15950,
     "year": 2026,
     "title": "TAPGuard: A Semantic-Aware Graph Framework for TAP Rule Cascading Threat Detection",
     "category": "journal",
@@ -4010,7 +4010,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15660,
+    "id": 15951,
     "year": 2026,
     "title": "Chain Reaction: A Triple-Chain Architecture for Sensitive Thumbnail-Preserving Image Encryption",
     "category": "journal",
@@ -4020,7 +4020,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15661,
+    "id": 15952,
     "year": 2026,
     "title": "External Data Extraction Attacks Against Retrieval-Augmented Large Language Models",
     "category": "journal",
@@ -4030,7 +4030,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15662,
+    "id": 15953,
     "year": 2026,
     "title": "Stealth in Motion: A Doppler Shift-Induced Secret Key for Securing Air-Ground Communications",
     "category": "journal",
@@ -4040,7 +4040,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15663,
+    "id": 15954,
     "year": 2026,
     "title": "Robust Specific Emitter Identification Across Modulation Domains via Domain-Invariant Variational Autoencoding",
     "category": "journal",
@@ -4050,7 +4050,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15664,
+    "id": 15955,
     "year": 2026,
     "title": "TabHGIF: A Unified Hypergraph Influence Framework for Efficient Unlearning in Tabular Data",
     "category": "journal",
@@ -4060,7 +4060,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15665,
+    "id": 15956,
     "year": 2026,
     "title": "SharBipole: Secure and Scalable Sharding Blockchain-Based Federated Learning Against Poisoning Attacks",
     "category": "journal",
@@ -4070,7 +4070,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15666,
+    "id": 15957,
     "year": 2026,
     "title": "Extensible Post Quantum Cryptography-Based Authentication",
     "category": "journal",
@@ -4080,7 +4080,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15667,
+    "id": 15958,
     "year": 2026,
     "title": "Efficient Privacy-Preserving User Tracking From Threshold Multi-Party Private Set Intersection",
     "category": "journal",
@@ -4090,7 +4090,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15668,
+    "id": 15959,
     "year": 2026,
     "title": "Enhancing Targeted Adversarial Attacks on Large Vision-Language Models via Intermediate Projector",
     "category": "journal",
@@ -4100,7 +4100,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15669,
+    "id": 15960,
     "year": 2026,
     "title": "SHL-Net: Semantics-Enhanced Network for Localizing Harmonized Image Splicing",
     "category": "journal",
@@ -4110,7 +4110,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15670,
+    "id": 15961,
     "year": 2026,
     "title": "HookSteg: A Truly Lossless Steganography Based on Process Hooking for Lossy Network Channels",
     "category": "journal",
@@ -4120,7 +4120,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15671,
+    "id": 15962,
     "year": 2026,
     "title": "Stego-Vector Driven Simultaneous Covert Channels in Streaming Applications",
     "category": "journal",
@@ -4130,7 +4130,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15672,
+    "id": 15963,
     "year": 2026,
     "title": "Weakly Supervised Learning Meets VIS-NIR Re-Identification: Progressive Cross-Modality Alignment for Representation Learning",
     "category": "journal",
@@ -4140,7 +4140,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15673,
+    "id": 15964,
     "year": 2026,
     "title": "A Unified Framework of Private Set Operations With Stronger Security",
     "category": "journal",
@@ -4150,7 +4150,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15674,
+    "id": 15965,
     "year": 2026,
     "title": "Classification Task-Oriented Method of Differentially Private Data Publishing With Fine-Grained Correlations Preservation and Class Labels Preservation",
     "category": "journal",
@@ -4160,7 +4160,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15675,
+    "id": 15966,
     "year": 2026,
     "title": "Adaptive Affinity Memorization With Layer Mutation for Multimodal Deepfake Continual Detection",
     "category": "journal",
@@ -4170,7 +4170,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15676,
+    "id": 15967,
     "year": 2026,
     "title": "PRBPR: Privacy-Preserving Redactable Blockchain Supporting Policy Hiding and Revocation",
     "category": "journal",
@@ -4180,7 +4180,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15677,
+    "id": 15968,
     "year": 2026,
     "title": "MicroPatch: Directed Backdoor Erasing via Victim Parameter Decoupling",
     "category": "journal",
@@ -4190,7 +4190,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15678,
+    "id": 15969,
     "year": 2026,
     "title": "NOAE: Noise-Optimized Adversarial Examples for Multivariate Time Series Anomaly Detection of the Industrial Internet of Things",
     "category": "journal",
@@ -4200,7 +4200,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15679,
+    "id": 15970,
     "year": 2026,
     "title": "Protecting Against Unauthorized Dataset Use in Fine-Tuning Text-to-Image Diffusion Models",
     "category": "journal",
@@ -4210,13 +4210,213 @@
     "status": "notchecked"
   },
   {
-    "id": 15680,
+    "id": 15971,
     "year": 2026,
     "title": "Double-Blind Cleanser: Blindly Unlearning Backdoors Without Clean Data",
     "category": "journal",
     "publication": "TIFS",
     "paper": "https://doi.org/10.1109/TIFS.2026.3705336",
     "abstract": "Backdoor attacks pose a serious and emerging threat to deep neural networks. By injecting trigger-labeled samples into the training data, these attacks cause compromised models to misclassify any input containing the trigger. Existing defenses typically rely on either recovering the trigger to remove the corresponding backdoor or performing additional fine-tuning to erase the backdoor functionality while retaining the legitimate functionality. Both strategies require access to a trusted clean dataset, an assumption that is often unrealistic in practice. We introduce Double-Blind Cleanser (DBC), a backdoor unlearning framework that eliminates the need for trigger recovery or poisoned sample identification. DBC operates in two phases. It first leverages catastrophic forgetting to eliminate the backdoor behavior. It then applies Sharpness-Aware Minimization (SAM) to flatten the loss landscape, improving generalization and restoring legitimate functionality without requiring prior knowledge of triggers or poisoned samples. To further enhance the flatness of the loss landscape, DBC employs an importance sampling strategy that prioritizes samples most sensitive to weight perturbations, effectively reducing the impact of poisoned instances. Extensive evaluations demonstrate that DBC neutralizes diverse backdoor attacks while maintaining model utility. Its superior performance achieved first place in the mitigation round of the TrojAI competition, a multi-year, multi-round benchmark for backdoor defense.",
+    "status": "notchecked"
+  },
+  {
+    "id": 15972,
+    "year": 2026,
+    "title": "FCovFuzz: Enhancing Processor Fuzzing via Functional-Behavioral Coverage Guidance",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3709126",
+    "abstract": "As processor designs continue to grow in complexity, robust verification strategies are becoming increasingly essential. Inspired by advances in software fuzzing, recent studies apply coverage-guided fuzzing to processor verification with promising results. However, existing approaches suffer from inaccurate coverage metrics that fail to identify test cases triggering new processor states and from limited bug detection capability, which together limit their effectiveness in practical verification. To address these limitations, this paper presents FCovFuzz, a coverage-guided processor fuzzer that introduces Functional-Behavioral Coverage (FBC) as a fine-grained coverage metric capable of effectively detecting processor bugs. FBC categorizes instructions into functional categories based on their operational characteristics and assigns tailored semantic feedback fields to each category. These feedback fields precisely monitor processor states triggered by instruction sequences. Furthermore, FCovFuzz proposes a Coverage-Aware Seed Optimizer, which leverages pre-simulation feedback from Instruction Set Architecture (ISA) simulators to optimize test cases and enhance exploration of processor state spaces. The evaluation results indicate that, compared to DifuzzrTL and ProcessorFuzz, which adopt state-of-the-art coverage metrics, FBC achieves an average of <inline-formula> <tex-math notation=\"LaTeX\">$1.51\\times $ </tex-math></inline-formula> faster bug detection while exploring more processor states. Five state coverage metrics have also been evaluated, and we found that in the most representative control register coverage metric, FCovFuzz achieves <inline-formula> <tex-math notation=\"LaTeX\">$161.4\\times $ </tex-math></inline-formula> faster coverage than DifuzzrTL, <inline-formula> <tex-math notation=\"LaTeX\">$114.5\\times $ </tex-math></inline-formula> faster than ProcessorFuzz, and <inline-formula> <tex-math notation=\"LaTeX\">$1.5\\times $ </tex-math></inline-formula> faster than Cascade. FCovFuzz has uncovered 23 bugs in six designs, including 20 new bugs with 19 CVEs assigned, all of which have been confirmed by the corresponding development communities and vendors.",
+    "status": "notchecked"
+  },
+  {
+    "id": 15973,
+    "year": 2026,
+    "title": "A Differentially Private Weighted Empirical Risk Minimization Procedure and Its Application to Outcome Weighted Learning",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3707445",
+    "abstract": "Data used to train predictive models via empirical risk minimization (ERM) often contain sensitive personal information. While differential privacy (DP) provides mathematically provable bounds to protect such data, previous work has focused almost exclusively on unweighted ERM. We consider weighted ERM (wERM) -- an important generalization where individual contributions to the objective function vary. We propose the first DP algorithm for general wERM with formal privacy guarantees and derive both its empirical and population excess risk bounds. Crucially, this general wERM framework provides a pathway for deriving privacy-preserving learning methods for individualized treatment rules, including the popular outcome-weighted learning (OWL) approach. We evaluate DP-wERM applied to OWL in simulated and real data experiments. Our empirical results demonstrate that training OWL models via wERM provides strong DP guarantees while maintaining robust performance, proving the method is practical for sensitive, real-world data.",
+    "status": "notchecked"
+  },
+  {
+    "id": 15974,
+    "year": 2026,
+    "title": "DMPF-PSI: Enabling High-Frequency Updatable Private Set Intersection on Dynamic Data",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3705330",
+    "abstract": "Private set intersection (PSI) faces significant challenges in handling dynamic data in the digital era. The data generated by high-frequency updates in real-world scenarios, such as real-time fraud detection and dynamic targeted advertising, has extremely high timeliness value, yet traditional PSI protocols designed for static data struggle to support real-time collaboration needs. While updatable PSI (UPSI) aims to address this issue, the state-of-the-art solutions predominantly rely on homomorphic encryption, whose public-key cryptography operations lead to inefficient online performance, unable to meet practical requirements for high-frequency incremental updates. To address these challenges, we propose a novel PSI protocol based on distributed multi-point functions. Our protocol breaks through the limitations of the traditional 2-server-1-client model in function secret sharing-based PSI schemes, thereby better aligning with practical two-party PSI application requirements. We achieve efficient online computation under the semi-honest model and further construct an UPSI scheme that avoids the performance overhead of public-key operations. Experiments demonstrate that our protocol surpasses the state-of-the-art homomorphic encryption-based scheme in online efficiency, achieving a speedup of $2.5-165.4\\times $ . In a 30-day dynamic data simulation, our solution maintained only $7\\% - 20\\%$ of the baseline’s cumulative time cost, validating its feasibility for high-frequency update scenarios and providing a viable technical pathway for scenarios relying on updatable data collaboration.",
+    "status": "notchecked"
+  },
+  {
+    "id": 15975,
+    "year": 2026,
+    "title": "PAAS: A Policy-Adaptive Anonymity Scheme for Cross-Domain Virtual Asset Service Providers",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3702557",
+    "abstract": "The Financial Action Task Force (FATF) Travel Rule compels each virtual asset service provider (VASP) to exchange originator and beneficiary identities, creating a policy-driven tension between regulatory compliance and user privacy. This yields a concrete requirement: comply with the regulation while ensuring strong privacy and security across domains. However, existing approaches often address only a subset of these requirements in multi-VASP settings (e.g., configurable t-of-n tracing without explicit protection against log-driven cross-domain linking or <inline-formula> <tex-math notation=\"LaTeX\">$\\Delta $ </tex-math></inline-formula>-revocation safety). We present PAAS, a policy-adaptive traceable anonymity scheme for cross-domain networks. PAAS enforces bridging-log privacy and policy-driven split tracing for incident-tier governance by mapping trace tiers to a hierarchical, role-weighted <inline-formula> <tex-math notation=\"LaTeX\">$t$ </tex-math></inline-formula>-of-<inline-formula> <tex-math notation=\"LaTeX\">$n$ </tex-math></inline-formula> threshold structure, thereby separating pseudonym linkage from real-world identity disclosure (link <inline-formula> <tex-math notation=\"LaTeX\">$\\ne $ </tex-math></inline-formula> identity), and bounds revocation-bypass risk within a latency window <inline-formula> <tex-math notation=\"LaTeX\">$\\Delta $ </tex-math></inline-formula> under a <inline-formula> <tex-math notation=\"LaTeX\">$\\Delta $ </tex-math></inline-formula>-revocation model with an ephemeral challenge–response bridging protocol. Together, these mechanisms deliver unlinkable anonymity, accountable tracing, and safe anonymous roaming across domains. We analyze the security of PAAS under standard cryptographic assumptions, establishing robust policy-adaptive anonymity and policy-governed accountability; our performance evaluation reports service-phase computation latency of 0.22 ms (existing pseudonym) or 6.12 ms (with bridging issuance) and throughput of <inline-formula> <tex-math notation=\"LaTeX\">$\\approx 49.5$ </tex-math></inline-formula> TPS (i.e., requests/s) under 100 concurrent users, outperforming the evaluated baselines in terms of service-phase latency and throughput, while maintaining low-latency computation for bridging and roaming (0.7–6.6 ms).",
+    "status": "notchecked"
+  },
+  {
+    "id": 15976,
+    "year": 2026,
+    "title": "Understanding Mobile App Review Ranking Manipulation for Illicit Online Promotion",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3698591",
+    "abstract": "A novel threat, referred to as “Blackhat App Review Optimization (ARO)”, has emerged in the realm of app markets. In blackhat ARO, miscreants advertise and promote illicit services by manipulating the ranking of illicit app reviews. By exploiting the review ranking rules, these blackhat AROers inject reviews into high-ranking positions to facilitate the promotion of illicit content. However, little effort has been made to understand the scale, impact, techniques, and ecosystem associated with this emerging threat. In this paper, we report the first measurement study of the mobile app review ranking manipulation for illicit online promotion. Our findings reveal 41,296 poisoned app reviews on App Store and Google play, which are associated with 165 apps. Moreover, we unveil previously unreported techniques utilized by these blackhat AROers to exploit ranking rules. Additionally, our study explores the underlying malicious services (including illicit promotional review generation services and ranking manipulation services) and their revenues within this ecosystem, providing valuable insights for security practitioners and researchers.",
+    "status": "notchecked"
+  },
+  {
+    "id": 15977,
+    "year": 2026,
+    "title": "ICSploit: A Fuzzing Framework for Proprietary Industrial Control System Protocols Driven by Function Codes",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3709093",
+    "abstract": "Fuzzing has been effectively validated and widely applied for disovering vulnerability in public industrial control system (ICS) protocols. However, when fuzzing diverse proprietary protocols in an ICS, existing fuzzing methods suffer from a lack of protocol specifications, leading to numerous invalid test cases and shallow state depth coverage. In this paper, ICSploit, a fuzzing framework designed for proprietary ICS protocols, is proposed. ICSploit reconstructs protocol specifications by parsing protocol traffic to guide mutations, ensuring test case validity. Additionally, ICSploit tracks protocol states via bidirectional traffic function codes and sends prefix sequences to reach target states, enabling deep state testing. Experimental results on ten representative network and industrial control protocols demonstrate that ICSploit achieves a test case acceptance rate of more than 80%. Moreover, compared with state-of-the-art fuzzing tools such as Boofuzz, Bleem, and NCMFuzzer, ICSploit significantly improves the ability to trigger anomalies. In terms of state coverage, ICSploit consistently generates more new message types than other methods when tested on the 10 protocols. Additionally, four 0-day vulnerabilities in S7comm that were not identified by prior methods were discovered.",
+    "status": "notchecked"
+  },
+  {
+    "id": 15978,
+    "year": 2026,
+    "title": "Security Problem in Cluster Distributed Storage Systems: Regenerating Code Against Two General Types of Active Adversaries",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3709090",
+    "abstract": "Recent studies have increasingly focused on heterogeneous distributed storage systems (DSSs), which are characterized by varying bandwidths between nodes in practical implementations. While a wealth of research addresses security issues in traditional DSSs, the exploration of security in heterogeneous DSSs remains limited. Unlike the attack models in traditional DSSs, the structures of heterogeneous DSSs in this paper lead to distinct attacker behaviors, especially active adversaries, complicating the development of robust security frameworks. We introduce and analyze the resiliency capacities of clustered DSSs (CDSSs) against two representative and comprehensive active attackers, i.e., a class of heterogeneous DSSs where nodes are organized into multiple clusters against the following two kinds of adversaries: omniscient adversary and limited-knowledge adversary, which have cluster-access ability or node-access ability according to respective structures of the compromised nodes. All these adversaries can send corrupted data during file reconstruction and repair processes. The capacities are investigated by tight upper bounds, which can be achieved by various combinatorial coding constrictions with wide-range parameters in the repair-by-transfer coding process. This supports the feasibility of the paper. Notably, these bounds generalize the existing results for traditional DSSs.",
+    "status": "notchecked"
+  },
+  {
+    "id": 15979,
+    "year": 2026,
+    "title": "Causal Bootstrapped Alignment for Unsupervised Video-Based Visible-Infrared Person Re-Identification",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3707442",
+    "abstract": "VVI-ReID is a critical technique for all-day surveillance, where temporal information provides additional cues beyond static images. However, existing approaches rely heavily on fully supervised learning with expensive cross-modality annotations, limiting scalability. To address this issue, we investigate Unsupervised Learning for VVI-ReID (USL-VVI-ReID), which learns identity-discriminative representations directly from unlabeled video tracklets. Directly extending image-based USL-VI-ReID methods to this setting with generic pretrained encoders leads to suboptimal performance. Such encoders suffer from weak identity discrimination and strong modality bias, resulting in severe intra-modality identity confusion and pronounced clustering granularity imbalance between visible and infrared modalities. These issues jointly degrade pseudo-label reliability and hinder effective cross-modality alignment. To address these challenges, we propose a Causal Bootstrapped Alignment (CBA) framework that explicitly exploits inherent video priors. First, we introduce Causal Intervention Warm-up (CIW), which performs sequence-level causal interventions by leveraging temporal identity consistency and cross-modality identity consistency to suppress modality- and motion-induced spurious correlations while preserving identity-relevant semantics, yielding cleaner representations for unsupervised clustering. Second, we propose Prototype-Guided Uncertainty Refinement (PGUR), which employs a coarse-to-fine alignment strategy to resolve cross-modality granularity mismatch, reorganizing under-clustered infrared representations under the guidance of reliable visible prototypes with uncertainty-aware supervision. Extensive experiments on the HITSZ-VCM and BUPTCampus benchmarks demonstrate that CBA significantly outperforms existing USL-VI-ReID methods when extended to the USL-VVI-ReID setting.",
+    "status": "notchecked"
+  },
+  {
+    "id": 15980,
+    "year": 2026,
+    "title": "Tracing the Use of Open-Source Training Datasets for Neural Radiance Field Models",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3709129",
+    "abstract": "Neural Radiance Fields (NeRF) have emerged as a pivotal method for 3D content representation. As NeRF technology advances, the ability to trace its training datasets becomes increasingly critical, highlighting the need for reliable dataset traceability mechanisms. While various approaches have been proposed to embed digital watermarks into NeRF models, these methods often necessitate modifications during the model’s training process to incorporate the watermark. Such alterations are impractical when the primary objective is to trace the training dataset itself, rather than the model. In this work, we introduce TraceNeRF, the first method designed to establish robust traceability of NeRF training datasets. This is achieved by embedding owner-specific binary messages into the datasets. In detail, we propose a novel hybrid frequency-spatial embedding framework, which combines a learnable spatially aware mask and discrete cosine transform. Furthermore, we incorporate a density-aware module together with a trainable band selector to enhance the robustness and persistence of watermark embedding. The experimental results demonstrate that our method outperforms other baseline methods in terms of availability, effectiveness, and robustness.",
+    "status": "notchecked"
+  },
+  {
+    "id": 15981,
+    "year": 2026,
+    "title": "Taming Generative Synthetic Data for X-Ray Prohibited Item Detection",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3703230",
+    "abstract": "Training prohibited item detection models requires a large amount of X-ray security images, but collecting and annotating these images is time-consuming and laborious. To address data insufficiency, X-ray security image synthesis methods composite images to scale up datasets. However, previous methods primarily follow a two-stage pipeline, where they implement labor-intensive foreground extraction in the first stage and then composite images in the second stage. Such a pipeline introduces inevitable extra labor cost and is not efficient. In this paper, we propose a one-stage X-ray security image synthesis pipeline (Xsyn) based on text-to-image generation, which incorporates two effective strategies to improve the usability of synthetic images. The Cross-Attention Refinement (CAR) strategy leverages the cross-attention map from the diffusion model to refine the bounding box annotation. The Background Occlusion Modeling (BOM) strategy explicitly models background occlusion in the latent space to enhance imaging complexity. To the best of our knowledge, compared with previous methods, Xsyn is the first to achieve high-quality X-ray security image synthesis without extra labor cost. Experiments demonstrate that our method outperforms all previous methods with 1.2% mAP improvement, and the synthetic images generated by our method are beneficial to improve prohibited item detection performance across various X-ray security datasets and detectors. Code is available at https://github.com/pILLOW-1/Xsyn/.",
+    "status": "notchecked"
+  },
+  {
+    "id": 15982,
+    "year": 2026,
+    "title": "Cost-Effective Vital Nodes Identification for Network Dismantling Based on Coarse-Grained Belief Propagation",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3709127",
+    "abstract": "This paper studies the network dismantling (ND) problem and aims to develop more effective models and approaches to cope with it, such that a given network can be dismantled by a set of vital nodes of minimum size. To achieve that, we propose a three-phase framework—the Percolation coarsening, Belief propagation dismantling, and Fragmentation optimization fine-tuning (PBF) framework—consisting of PBF-I, PBF-II, and PBF-III, where we contribute three new and one improved algorithms. In particular, PBF-I studies strategies to effectively coarsen the studied network via the merger of less influential nodes, such that the computational efficiency of the follow-up PBF-II phase can be maximized. PBF-II considers the superiority of the belief propagation (BP) algorithm in the ND problem and proposes an improved BP to identify vital nodes from the coarse-grained network, which particularly focuses on the largest connected component and obtains the vital nodes from a filtered candidate set. In addition, PBF-III presents fine-tuning strategies to further improve the quality of solutions obtained in PBF-II. The effectiveness of the proposed framework is validated on more than 10 empirical networks under varied circumstances. Our results show that the developed framework can obtain dismantling node sets of much smaller sizes compared to the state-of-the-art in almost all cases. Meanwhile, our framework is also more effective, efficient, and stable compared to existing methods, and is capable of tackling the ND problem in extremely large networks. We believe that the model and methodology introduced in this paper could be applied to many applications, such as the robustness and resilience analysis of network-structural infrastructures, the suppression of epidemics, and the containment of misinformation on social networks. The source code of the proposed PBF framework is publicly available at https://github.com/yL-wwa875/PBF-project-main.",
+    "status": "notchecked"
+  },
+  {
+    "id": 15983,
+    "year": 2026,
+    "title": "Scriptless Atomic Swap With Batch Processing",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3707794",
+    "abstract": "Cross-chain interoperability breaks down information silos between blockchains and enables the interconnection of blockchain systems. Atomic swap is a key technology of cross-chain interoperability that allows direct asset exchange between blockchains without intermediaries. Existing atomic swap schemes are typically based on hash time-locked contracts, which cannot be deployed on blockchains lacking scripting languages like Bitcoin. To eliminate reliance on scripting languages, Thyagarajan et al. proposed a scriptless atomic swap scheme, universal atomic swap [S&P’ 22], utilizing adaptor signature and verifiable timed discrete logarithm. However, its computational costs increase quadratically with the security parameter, and multiple rounds of communication are needed, resulting in low efficiency. Besides, when handling multi-asset swaps, delays in unlocking multiple assets can potentially result in asset losses and compromise fairness. In this paper, we propose SLAS, a scriptless atomic swap scheme with high computation and communication efficiency. Our fundamental design principle is to implement time lock and transaction lock off-chain using cryptographic tools while ensuring the capability to batch process multi-asset time locks. To achieve this goal, we first design verifiable timed key release (VTKR), a new cryptographic time-lock protocol, which can generate and verify time-lock for multiple assets simultaneously off-chain, such that both the locking and unlocking processes can be handled in a batch processing manner. Then, we introduce adaptor signature to generate transaction locks, ensuring the atomicity of transactions and reducing the communication overhead. We also perform both theoretical and experimental analysis, with results showing that SLAS is at least $792\\times $ faster for asset locking and $40\\times $ faster for transaction locking compared to existing schemes.",
+    "status": "notchecked"
+  },
+  {
+    "id": 15984,
+    "year": 2026,
+    "title": "DISARM: Target Electronic Device Informed Mitigation of Software Runtime Side-Channel Vulnerabilities",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3707433",
+    "abstract": "Program runtime or timing attacks exploit variations in a program's execution times to extract sensitive information from the program (e.g. encryption keys, sensitive variable data, intellectual property). State-of-the-art solutions to runtime side-channel attacks attempt to balance the execution time of the sensitive code for different control flow paths to eliminate the timing leakage. However, during the mitigation process, most techniques do not consider the underlying hardware or device on which the target program is supposed to run on. This can lead to over-fixing (unnecessary extra operations), under-fixing (not solving the imbalance properly), and even failures. We propose DISARM, a joint hardware-software methodology (unlike any existing solution) for mitigating runtime side-channel vulnerabilities that utilizes timing values from real embedded devices to generate targeted software fixes. We implement DISARM to support C, C++, and Java source codes and validate it across 22 standard benchmarks. DISARM outperforms state-of-the-art solutions such as PENDULUM and DifFuzzAR in terms of execution time overhead, code size overhead, and correctness on five different embedded or edge devices.",
+    "status": "notchecked"
+  },
+  {
+    "id": 15985,
+    "year": 2026,
+    "title": "Post-Quantum Secure Semantic Communication With Discrete Latent Representations",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3705320",
+    "abstract": "Semantic communication (SemCom) has recently gained attention for its ability to achieve high transmission efficiency with minimal data distortion under limited communication resources. However, the strong correlation between source data and channel input leaves SemCom schemes vulnerable to eavesdropping. Additionally, advances in quantum computing threaten traditional cryptographic methods such as RSA due to Shor’s algorithm. To address these risks, a secure SemCom framework with post-quantum protection is essential. This paper presents a post-quantum secure semantic communication (PQSC) framework by integrating learning with errors (LWE) encryption (widely regarded as quantum-resistant) into a VQ-VAE-based SemCom system. The proposed PQSC framework not only resists quantum attacks but also defends against chosen-plaintext attacks. Experiments show that PQSC consistently outperforms baseline methods across various datasets, channel conditions, and SNR levels. To simulate practical wireless environments, we implement channel coding and modulation using Nvidia Sionna, a GPU-accelerated library for physical layer research. We further examine the trade-off between compression efficiency and computational cost. A downlink use case is modeled to analyze recovery quality, energy consumption, and latency. Our mathematical analysis offers insights into system design and parameter selection for real-world deployment.",
+    "status": "notchecked"
+  },
+  {
+    "id": 15986,
+    "year": 2026,
+    "title": "Graph-Based Contrastive Learning and Clustering for Open-World Encrypted Traffic Classification",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3705313",
+    "abstract": "Encrypted traffic classification is essential for modern network management and security, yet remains highly challenging due to payload encryption, data imbalance, and the emergence of unknown traffic classes. Existing methods often assume closed-world settings, rely on handcrafted features, or lack robustness in dynamic environments. To address these limitations, we propose a unified Graph-based Contrastive Learning and Clustering (GCLC) framework for encrypted traffic classification in open-world scenarios. Encrypted flows are modeled as traffic interaction graphs using lightweight packet-level features. We train a Graph Neural Network (GNN) encoder with a hybrid loss function, integrating supervised contrastive learning and center-aware loss to promote the aggregation of samples into class clusters with clear boundaries between clusters. To enhance robustness under limited and imbalanced data, we design a traffic-aware graph augmentation strategy that simulates the variability of real-world network conditions. To discover new classes, we introduce a Mahalanobis distance-based new class detector and an adaptive model update mechanism that can detect and integrate unseen traffic classes. GCLC is evaluated on 3 public datasets and 1 self-collected dataset. Experimental results show that it outperforms existing methods on 4 evaluation metrics, with an open-set new class recognition accuracy of 95.02%. Even under scenarios of severe class imbalance and unknown classes, it still maintains high performance, exhibits strong robustness and adaptability, confirming the effectiveness of the framework in real-world encrypted dynamic traffic environments.",
+    "status": "notchecked"
+  },
+  {
+    "id": 15987,
+    "year": 2026,
+    "title": "Dual Attention Guided Defense Against Malicious Edits",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3702555",
+    "abstract": "Recent progress in text-to-image diffusion models has transformed image editing via text prompts, yet this also introduces significant ethical challenges from potential misuse in creating deceptive or harmful content. While current defenses seek to mitigate this risk by embedding imperceptible perturbations, their effectiveness is limited against malicious tampering. To address this issue, we propose a Dual Attention-Guided Noise Perturbation (DANP) immunization method that adds imperceptible perturbations to disrupt the model's semantic understanding and generation process. DANP functions over multiple timesteps to manipulate both cross-attention maps and the noise prediction process, using a dynamic threshold to generate masks that identify text-relevant and irrelevant regions. It then reduces attention in relevant areas while increasing it in irrelevant ones, thereby misguides the edit towards incorrect regions and preserves the intended targets. Additionally, our method maximizes the discrepancy between the injected noise and the model's predicted noise to further interfere with the generation. By targeting both attention and noise prediction mechanisms, DANP exhibits impressive immunity against malicious edits, and extensive experiments confirm that our method achieves state-of-the-art performance.",
+    "status": "notchecked"
+  },
+  {
+    "id": 15988,
+    "year": 2026,
+    "title": "IP-Augmented Multimodal Malicious URL Detection via Token-Contrastive Representation Enhancement and Multigranularity Fusion",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3709128",
+    "abstract": "Malicious URL detection remains a critical cybersecurity challenge because adversaries increasingly employ sophisticated evasion techniques, including obfuscation, character-level perturbations, and adversarial attacks. Although pretrained language models (PLMs) such as BERT have shown potential for URL analysis tasks, three limitations remain in current implementations: 1) inability to effectively model the nonnatural hierarchical structure of URLs; 2) insufficient sensitivity to character-level obfuscation; and 3) a lack of mechanisms for incorporating auxiliary network-level signals such as IP addresses–all of which are essential for robust detection. To address these challenges, we propose CURL-IP, an advanced multimodal detection framework that incorporates three key innovations: 1) a token-contrastive representation enhancer, which refines subword token representations through token-aware contrastive learning to produce more discriminative and isotropic embeddings; 2) a cross-layer multiscale aggregator, which employs hierarchical aggregation of transformer outputs via convolutional operations and gated MLPs to capture both local and global semantic patterns across layers; and 3) a blockwise multimodal coupler that decomposes URL-IP features into localized block units and computes cross-modal attention weights at the block level, enabling fine-grained intermodal interaction. This architecture enables the simultaneous preservation of fine-grained lexical cues and contextual semantics and the integration of network-level signals. Our evaluation of large-scale real-world datasets reveals that the framework significantly outperforms state-of-the-art baselines across binary and multiclass classification tasks. The model also demonstrates particular strengths: 1) robustness against compound adversarial attacks; 2) maintaining performance under class imbalance; and 3) practical effectiveness in real-world threat detection, as validated through case studies. The code and datasets are publicly available at https://github.com/sevenolu7/MACFormer",
+    "status": "notchecked"
+  },
+  {
+    "id": 15989,
+    "year": 2026,
+    "title": "Frequency-Guided Multi-Perspective Prompt Learning for Visible-Infrared Person Re-Identification",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3703118",
+    "abstract": "Pre-trained vision-language models enhance single-modal person re-identification by leveraging high-level semantic knowledge through prompt learning. However, in visible-infrared person re-identification, existing prompt learning frameworks primarily emphasize the spatial encoding of modality-shared pedestrian features, inevitably entangling identity-specific characteristics with modality-specific details. Consequently, they struggle to fully disentangle and exploit critical modality-specific cues from the entangled information and fail to construct robust modality-invariant discriminative representations by effectively integrating identity-specific information with features from both modalities, thereby hindering effective cross-modality alignment. To address these limitations, we propose a novel Frequency-Guided Multi-Perspective Prompt Learning (FGMP) framework for visible-infrared person re-identification, which decouples identity-specific and modality-specific information via frequency-guided feature disentanglement, establishes discriminative pedestrian semantics and global modality prototypes through multi-perspective prompts, and performs cross-modality feature fusion, collectively reducing modality discrepancies and facilitating robust pedestrian representation. Specifically, FGMP introduces the Frequency Domain Gated Decoupler (FDGD), which leverages the inherent discreteness of frequency representations to decompose pedestrian features into modality-shared and modality-specific components, overcoming the limitations of prior spatial-centric approaches that entangle identity-specific cues with modality-specific information. Building on this, a heterogeneous prompt learning strategy is employed to generate ID-specific and modality-specific prompts, enriching instance-discriminative information and global modality prototypes by activating CLIP’s inherent multi-modal knowledge and forming complementary high-level semantic interactions. Finally, a multi-modal feature fusion module is designed to seamlessly integrate representations from different modalities and identity-specific characteristics, yielding unified and discriminative pedestrian representations. Extensive experiments conducted on three widely used datasets demonstrate the effectiveness of the proposed FGMP.",
+    "status": "notchecked"
+  },
+  {
+    "id": 15990,
+    "year": 2026,
+    "title": "Efficient Heterogeneous Signcryption With Forward Privacy for Vehicular Platoon Communication",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3711833",
+    "abstract": "In the evolution of Intelligent Transportation Systems (ITS), autonomous vehicle platoon has emerged as a pivotal technology, where platoon followers periodically transmit critical information (such as speed and acceleration) to the platoon leader to maintain coordination and synchronization within the formation. Heterogeneous signcryption has garnered significant attention as a mean to ensure secure data transmission in environments characterized by diverse natures of vehicles. However, existing heterogeneous signcryption schemes fail to provide forward privacy and incur significant computational overhead during unsigncryption. To address these challenges, we propose an efficient heterogeneous signcryption scheme with forward privacy (HSCFP) for vehicular platoon communication. First, based on Elliptic Curve Cryptosystem (ECC), we introduce a heterogeneous signcryption framework that transitions data from Identity-based Cryptosystem (IBC) to Public Key Infrastructure (PKI), enabling seamless communication across cryptosystems. Next, we design an incremental update mechanism based on Updatable Public Key Encryption (UPKE) and Hashed EIGamal, ensuring the long-term security of historical communications. Additionally, we design a batch verification algorithm that significantly accelerates the unsigncryption process when dealing with multiple ciphertexts. Finally, we provide a rigorous security analysis of HSCFP under the random oracle model, and extensive experimental results demonstrate our scheme enhances unsigncryption efficiency by over 60% compared to existing solutions.",
+    "status": "notchecked"
+  },
+  {
+    "id": 15991,
+    "year": 2026,
+    "title": "Joint Time and Beamforming Optimization for RIS-Assisted Secure ISAC Two-Stage Transmission System",
+    "category": "journal",
+    "publication": "TIFS",
+    "paper": "https://doi.org/10.1109/TIFS.2026.3711843",
+    "abstract": "Physical layer security (PLS) in integrated sensing and communication (ISAC) systems is facing severe challenges. Crucially, since the eavesdropper (Eve) channel state information (CSI) is unknown in practice due to the non-cooperative Eve, single-stage structure secure ISAC systems cannot directly perform the beamforming design. The prerequisite of such design is acquiring the Eve (i.e., target) CSI through sensing, but this aspect is often neglected in the existing works. Furthermore, current studies typically model the estimation error upper bound of Eve target CSI as a fixed and known, while it should be related to the sensing accuracy, thereby failing to fully exploit the sensing information of Eve to assist secure communication. To address these issues, we consider a reconfigurable intelligent surface (RIS) assisted secure ISAC system, and a two-stage transmission structure is proposed, where each coherent time slot is divided into sensing stage and secure communication stage. Next, we derive the coupling relationship between the Cramér-Rao bound (CRB) of Eve target estimation angle and the estimation error of Eve CSI. The explicit function expression between the two is given, providing theoretical support for sensing-assisted enhanced security communication performance. Then, under the constraints of BS transmit power and RIS elemets unit modulo, we formulate an optimization problem by jointly optimizing the two-stage time, active beamforming at the BS and passive beamforming at the RIS to maximize the worst-case secrecy rate. To solve the non-convex optimization problem, we propose a three-layer structure-based scheme, which involves one-dimensional search, alternating optimization (AO), successive convex approximation (SCA), S-Procedure technique, semidefinite relaxation (SDR) and penlty-based scheme. Finally, simulation results demonstrate the validity, robustness and performance advantages of the proposed scheme. In particular, the proposed scheme improves the secrecy rate by more than 10% compared to single-stage scheme.",
     "status": "notchecked"
   }
 ]

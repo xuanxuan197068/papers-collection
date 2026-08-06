@@ -12,7 +12,7 @@ A Vue 3 + Vite web app displaying curated academic security papers from top-tier
 
 ### Two update chains
 
-- **Own chain (primary)**: `uv run tools/fetch_new.py` pulls venue TOCs from DBLP and fills abstracts via arXiv / Semantic Scholar / open-access PDFs (rate limits carry random jitter; `--loop <min>` runs unattended for 24h abstract backfill). Driven by the `dblp_toc_template` / `source: dblp` fields in `data.yml`. See `.Codex/skills/fetch-papers/`.
+- **Own chain (primary)**: `uv run tools/fetch_new.py` pulls venue TOCs from DBLP and fills abstracts via arXiv / Semantic Scholar / open-access PDFs (rate limits carry random jitter; `--loop <min>` runs unattended for 24h abstract backfill). Driven by the `dblp_toc_template` / `source: dblp` fields in `data.yml`. See `.agents/skills/fetch-papers/`.
 - **Upstream chain (backup)**: the author's manual bib/csv + XPath-crawl flow still works untouched. Pull author updates with `git fetch upstream && git merge upstream/main` (remote `upstream` = c01dkit/sec-papers-collection). Keep meta_json field sets unchanged so merges stay clean.
 - **Completeness audit**: `uv run tools/audit_completeness.py [--venue KEY] [--recent N]` compares local vs DBLP vs upstream paper counts per venue-year (fuzzy-matched gaps) and suggests fetch/merge actions.
 
@@ -32,8 +32,10 @@ No `.env` is needed for this fork's flows (`--llm-analyze` and `--zip`/`--unzip`
 
 ### Radar semantic layer
 
-`radar/` holds the semantic outputs produced in-session via `.Codex/skills/radar-digest/`:
-- `radar/index/<Pub> - <Year>.json` — per-paper method index (method/technique/problem/scenario/evidence/lens), built by subagent map-reduce (`tools/radar_shard.py` → haiku/sonnet subagents → `tools/radar_index_merge.py`, which prunes extraction-drift keys and reports coverage). `method` = one-line "what's new"; `technique` = concrete algorithm/pipeline ("how it's done"). Longer `technique` text is JSON-fragile, so use `model: sonnet` when re-filling gaps.
+`radar/` holds the semantic outputs produced in-session via `.agents/skills/radar-digest/`:
+- `radar/index/<Pub> - <Year>.json` — per-paper method index (method/technique/problem/scenario/evidence/lens). In technique-v2, `technique` is an ordered array of 0–4 atomic objects with exactly `name/type/target/action/effect/grounding/limitation`; the authoritative contract is `radar/schema/technique-v2.schema.json`. The frontend temporarily accepts legacy technique strings while stored indexes migrate to v2.
+- Build missing full rows with `uv run tools/radar_shard.py --pub "<Pub>" --year <Y> --mode full`, then validate/merge with `uv run tools/radar_index_merge.py --pub "<Pub>" --year <Y> --mode full [--check-only]`. Migrate only legacy techniques with the same commands using `--mode technique`; shard `--force` also re-extracts already-valid v2 rows. NDSS 2025 is the first migration pilot.
+- Stage 1 groups atoms by type/name/target/action and counts distinct papers as the primary unit; Stage 2 reconstructs the ordered atom chain for the method card. The quality gate requires 100% row coverage, identity agreement, and schema validity, with separate v2 coverage and empty/partial/other audits.
 - `radar/maps/` — direction maps (Stage 1, two-part: neutral + lens-combined). `radar/cards/` — method cards (Stage 2). `radar/state/` — read/pick status + missing-abstracts log.
 
 Extra information never goes into `src/assets/data/` files — those keep the upstream schema.

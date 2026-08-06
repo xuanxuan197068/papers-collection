@@ -1988,5 +1988,555 @@
     "paper": "https://doi.ieeecomputersociety.org/10.1109/SP63933.2026.00243",
     "abstract": " Dynamic-committee Proactive Secret Sharing (DPSS) has gained increased attention for its ability to dynamically update the shareholder committees and refresh secret shares, even against adversaries that gradually corrupt all nodes. However, existing state-of-the-art asynchronous DPSS protocols suffer from significant $\\mathcal{O}(n^3)$ message complexity and $\\mathcal{O}(\\lambda n^3)$ communication complexity, where $\\lambda$ denotes the security parameter and $n$ is the committee size. In this paper, we distinguish optimistic-case and worst-case scenarios based on node behaviors and network conditions, thus reducing the redundant communication overhead of asynchronous DPSS. Under the trusted setup assumption, we achieved an $\\mathcal{O}(n^2)$ message complexity in all scenarios. Additionally, our protocol has an $\\mathcal{O}(\\lambda n^2)$ communication complexity in the optimistic case, where all nodes are honest and the network is synchronous, and $\\mathcal{O}(\\lambda n^3)$ communication complexity in the worst case. We also propose two strategies to eliminate the strong trusted setup assumptions, and the asymptotic performance still surpasses the state-of-the-art protocols. For committee sizes of 4 to 400, the estimated concrete communication cost of our DPSS is 19--100x (resp., 8--14x) smaller in the optimistic case (resp., worst case) compared to the state-of-the-art. Experiments in AWS show that our DPSS achieves a latency of 1.9--8 seconds for committee sizes from 4 to 64. Single-machine benchmarks reveal a (computational) runtime reduction of up to 44\\%. ",
     "status": "notchecked"
+  },
+  {
+    "id": 200,
+    "year": 2026,
+    "title": "The Person Behind the Sound: Demystifying Audio Private Attribute Profiling Via Multimodal Large Language Models",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00150",
+    "abstract": "Our research uncovers a severe privacy risk associated with multimodal large language models (MLLMs): the ability to infer sensitive personal attributes from audio data, which we call audio private attribute profiling. This capability poses a significant threat, as audio can be covertly captured using simple tools. Moreover, compared to images and texts, audio carries unique characteristics, such as tone and pitch, which can be exploited for more detailed attribute profiling. The first major barrier to understanding this threat is the lack of benchmark datasets with profile-level sensitive attribute annotations. Collecting audio data with attribute labels from real-world volunteers is impractical due to legal, ethical, and compliance concerns. To address this challenge, we introduce $\\text{AP}^{2}$, a well-crafted audio benchmark dataset constructed using public sources and recent TV dramas. On $A P^{2}$, we examine two baseline avenues of profiling sensitive attributes: (1) converting audio to text and applying LLMs, and (2) directly using audiolanguage models (ALMs). We found that the former suffers from information loss during transcription, while the latter lacks sufficient reasoning capability. To overcome these limitations, we propose Gifts, a hybrid framework in which an LLM guides, forensically reviews, and consolidates inferences made by an ALM. Gifts mitigates information loss by letting the ALM lead the inference, while the LLM enhances inference accuracy and validity through three phases: guidance, review, and consolidation. Extensive experiments and human evaluations of $\\mathbf{5 0}$ participants (18-30 years) show that Gifts outperforms the MLLM-based baselines, real humans, and traditional inference methods in profiling sensitive attributes, while also being robust under various types of noise. We further study defense strategies at both the model and data levels. Our work demonstrates the feasibility of audio privacy leakage caused by MLLMs, highlights the urgent need for effective defenses, and provides resources to support future research.",
+    "status": "notchecked"
+  },
+  {
+    "id": 201,
+    "year": 2026,
+    "title": "StepStone: LLM-Based GPU Kernel Driver Fuzzing via User-Space Libraries",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00124",
+    "abstract": "GPU device driver fuzzing is an underexplored area. GPUs are directly accessible by untrusted users and represent a huge attack surface (e.g., NVIDIA driver has over a million lines of code). While continuous fuzzing has mitigated many kernel bugs within core subsystems, GPU device drivers have not received sufficient attention. SyzDescribe, a state-of-theart tool for generating fuzzing interfaces for device drivers, significantly improves device driver fuzzing, but falls short given the complexity of GPU device drivers. In this paper, we observed that syscalls are not the only interface one can use to fuzz a device driver. In fact, user-space libraries provide an alternative interface, which can also be utilized for device driver fuzzing. Fuzzing user-space libraries has a number of advantages, such as more functionality-specific and user-friendly APIs, and comprehensive documentation providing valuable information about the API interfaces. To capitalize on this fact, we leverage Large Language Models (LLMs), which are highly effective in understanding and extracting information from both code and natural language (both exist in API documents). Therefore, we introduce StepStone, a novel approach that leverages LLMs to generate syzkaller descriptions for GPU libraries (e.g., CUDA, Vulkan), and fuzz these libraries to indirectly fuzz GPU kernel drivers. Our experiments show that StepStone achieves two to four times the level of coverage when compared with SyzDescribe, KernelGPT, and Moneta, when fuzzing NVIDIA, AMD, and Mali GPUs, respectively. Additionally, StepStone uncovered 11 new bugs in NVIDIA kernel drivers, demonstrating its effectiveness and efficiency in GPU driver fuzzing.",
+    "status": "notchecked"
+  },
+  {
+    "id": 202,
+    "year": 2026,
+    "title": "SoK: All You Ever Wanted to Know About Bootloader Security but Were Afraid to Ask",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00163",
+    "abstract": "Bootloaders are present in every device, from IoT and edge devices to datacenter servers, making them critical to system security. Modern platforms establish hardware root of trust via vendor-specific mechanisms such as CPU microcode and authenticated code modules before bootloader execution. This SoK focuses on the software boot chain that follows that hardware-rooted integrity handoff. Prior work has focused on subsets of bootloaders, often using inconsistent terminology, leaving gaps in understanding their structure and interactions. We analyze 43 bootloaders and categorize them into three types based on their architecture and role in the boot process. We define attack surfaces for each type using our open-source dataset, BOOTBENCH, which includes 3,658 vulnerabilities and associated commits. Leveraging BOOTBENCH, we evaluate existing vulnerability detection techniques and highlight open problems, and examine limitations in defensive techniques for hardening bootloaders.",
+    "status": "notchecked"
+  },
+  {
+    "id": 203,
+    "year": 2026,
+    "title": "Fuzzing the Physical Space: Physics-Aware Testing of Black-Box Industrial Control Systems",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00178",
+    "abstract": "Industrial Control Systems (ICS) operate essential physical processes in critical infrastructure sectors such as energy, water, and transportation. Existing ICS fuzzing techniques often assume white-box access or modify controller firmware, and black-box methods uncover only corrupted inputs, leaving a critical gap in detecting physical security violations that emerge gradually from valid commands on locked-down controllers. We present ICSFlux, the first physics-aware black-box fuzzing framework that systematically discovers physical security violations. ICSFlux leverages physical models and physical security constraints (defined during the ICS design phase) to infer the temporal evolution of physical states. By estimating potential trajectories that converge toward unsafe physical states, ICSFlux partitions the physical space by proximity to violation and directs test generation toward high-risk partitions. This physics-guided approach generalizes across heterogeneous ICS deployments and eliminates reliance on application-specific heuristics. We evaluate ICSFlux on 11 industrial testbeds (e.g., chemical manufacturing plant and water treatment utility) and discover 20 physical security violations.",
+    "status": "notchecked"
+  },
+  {
+    "id": 204,
+    "year": 2026,
+    "title": "SoK: Critical Evaluation of Quantum Machine Learning for Adversarial Robustness",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00137",
+    "abstract": "Quantum Machine Learning (QML) integrates quantum computational principles into learning algorithms, offering improved representational capacity and computational efficiency. However, the security and robustness of QML systems remain underexplored, particularly under adversarial conditions. We present the first comprehensive systematization of adversarial robustness in QML, combining conceptual organization with empirical evaluation across black-box, gray-box, and white-box threat models. We implement five representative attacks: a label-flipping poisoning attack under black-box; an encoder-level indiscriminate poisoning attack and a proxy-model clean-label backdoor attack under gray-box; and a circuit-level backdoor attack (QTrojan) and gradient-based evasion attacks (FGSM and PGD) under white-box. We evaluate these attacks using a Quantum Multilayer Perceptron (QMLP) trained on MNIST and AZ-Class across circuit depths of 2, 5, 10, and 50 layers with angle and amplitude encoding schemes. Our evaluations reveal a fundamental accuracy-robustness trade-off. Amplitude encoding achieves the highest clean accuracy (92.6% on MNIST and 67% on AZ-Class) but collapses under adversarial perturbations and depolarizing noise, whereas shallow angle-encoded models remain more stable. QUID is effective under noiseless conditions but weakened by noise, while the proxy-model backdoor persists unless the circuit itself is overwhelmed. Furthermore, the circuit-level backdoor fails in the multi-class setting, indicating a scalability limitation. Finally, QMLP models are more robust than Classical Multi-Layer Perceptron (CMLP) models under label-flipping attacks but substantially more vulnerable to gradient-based evasion. We conclude by proposing a threat-aware and noise-resilient framework for secure QML deployment.",
+    "status": "notchecked"
+  },
+  {
+    "id": 205,
+    "year": 2026,
+    "title": "Parasites in the Toolchain: A Large-Scale Analysis of Attacks on the MCP Ecosystem",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00154",
+    "abstract": "Large language models(LLMs) are increasingly integrated with external systems through the Model Context Protocol(MCP),which standardizes tool invocation and has rapidly become a backbone for LLM-powered applications. While this paradigm enhances functionality,it also introduces a fundamental security shift:LLMs transition from passive information processors to autonomous orchestrators of task-oriented toolchains,expanding the attack surface,elevating adversarial goals from manipulating single outputs to hijacking entire execution flows. In this paper,we identify and characterize a systematic privacy-leakage attack pattern,termed Parasitic Toolchain Attacks,instantiated as MCP Unintended Privacy Disclosure(MCP-UPD). These attacks require no direct victim interaction;instead,adversaries embed malicious instructions into external data sources that LLMs access during legitimate tasks. Unlike traditional prompt injection and tool poisoning attacks,our attack targets the interconnected toolchain itself,assembling multiple legitimate tools into a coordinated workflow whose combined behavior accomplishes malicious objectives. In MCP-UPD,the malicious logic infiltrates the toolchain and unfolds in three phases:Parasitic Ingestion,Privacy Collection,and Privacy Disclosure,culminating in stealthy exfiltration of private data. Our root cause analysis reveals that MCP lacks both context-tool isolation and least-privilege enforcement,enabling adversarial instructions to propagate unchecked into sensitive tool invocations. To assess the severity,we design MCP-SEC and conduct the first large-scale security census of the MCP ecosystem,analyzing 12230 tools across 1360 servers. Our findings show that the MCP ecosystem is rife with real-world exploitable gadgets and diverse attack methods,underscoring systemic risks in MCP platforms and the urgent need for defense mechanisms in LLM-integrated environments.",
+    "status": "notchecked"
+  },
+  {
+    "id": 206,
+    "year": 2026,
+    "title": "Evaluating Concept Filtering Defenses against Child Sexual Abuse Material Generation by Text-to-Image Models",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00251",
+    "abstract": "We evaluate the effectiveness of filtering child images from training datasets of text-to-image models to prevent model misuse to create child sexual abuse material (CSAM). First, we capture the complexity of preventing CSAM generation using a game-based security definition. Second, we show that current detection methods cannot remove all children from a dataset. Third, using an ethical proxy for CSAM (a child wearing glasses), we show that even when only a small percentage of child images are left in the training dataset after filtering, there exist prompting strategies that generate a child wearing glasses using only a few more queries than when the model is trained on the unfiltered data. Fine-tuning the filtered model on child images further reduces the additional query overhead. We also show that re-introducing a concept is possible via fine-tuning even if filtering is perfect. Our results show that current child filtering methods offer limited protection to closed-weight models and no protection to open-weight models, while reducing the generality of the model by hindering the generation of child-related concepts or changing their representation. We conclude by outlining challenges in conducting evaluations that establish robust evidence on the impact of concept filtering defenses for CSAM.",
+    "status": "notchecked"
+  },
+  {
+    "id": 207,
+    "year": 2026,
+    "title": "Hijacking Large Audio-Language Models via Context-Agnostic and Imperceptible Auditory Prompt Injection",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00214",
+    "abstract": "Modern Large audio-language models (LALMs) power intelligent voice interactions by tightly integrating audio and text. This integration, however, expands the attack surface beyond text and introduces vulnerabilities in the continuous, high-dimensional audio channel. While prior work studied audio jailbreaks, the security risks of malicious audio injection and downstream behavior manipulation remain underexamined. In this work, we reveal a previously overlooked threat, auditory prompt injection, under realistic constraints of audio data-only access and strong perceptual stealth. To systematically analyze this threat, we propose \\textit{AudioHijack}, a general framework that generates context-agnostic and imperceptible adversarial audio to hijack LALMs. \\textit{AudioHijack} employs sampling-based gradient estimation for end-to-end optimization across diverse models, bypassing non-differentiable audio tokenization. Through attention supervision and multi-context training, it steers model attention toward adversarial audio and generalizes to unseen user contexts. We also design a convolutional blending method that modulates perturbations into natural reverberation, making them highly imperceptible to users. Extensive experiments on 13 state-of-the-art LALMs show consistent hijacking across 6 misbehavior categories, achieving average success rates of 79\\%-96\\% on unseen user contexts with high acoustic fidelity. Real-world studies demonstrate that commercial voice agents from Mistral AI and Microsoft Azure can be induced to execute unauthorized actions on behalf of users. These findings expose critical vulnerabilities in LALMs and highlight the urgent need for dedicated defense.",
+    "status": "notchecked"
+  },
+  {
+    "id": 208,
+    "year": 2026,
+    "title": "Adversarial Hubness in Multi-Modal Retrieval",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00158",
+    "abstract": "Hubness is a phenomenon in high-dimensional vector spaces where a point from the natural distribution is unusually close to many other points. This is a well-known problem in information retrieval that causes some items to accidentally (and incorrectly) appear relevant to many queries. In this paper, we investigate how attackers can exploit hubness to turn any image or audio input in a multi-modal retrieval system into an adversarial hub. Adversarial hubs can be used to inject universal adversarial content (e.g., spam) that will be retrieved in response to thousands of different queries, and also for targeted attacks on queries related to specific, attacker-chosen concepts. We present a method for creating adversarial hubs and evaluate the resulting hubs on benchmark multi-modal retrieval datasets and an image-to-image retrieval system implemented by Pinecone, a popular vector database. For example, in text-caption-to-image retrieval, a single adversarial hub, generated using 100 random queries, is retrieved as the top-1 most relevant image for more than 21,000 out of 25,000 test queries (by contrast, the most common natural hub is the top-1 response to only 102 queries), demonstrating the strong generalization capabilities of adversarial hubs. We also investigate whether techniques for mitigating natural hubness can also mitigate adversarial hubs, and show that they are not effective against hubs that target queries related to specific concepts.",
+    "status": "notchecked"
+  },
+  {
+    "id": 209,
+    "year": 2026,
+    "title": "Recovering and Rehosting Mobile Local LLM Conversations and Contexts via Memory Forensics",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00252",
+    "abstract": "Advances in edge computing devices have enabled local large language model (LLM) apps to execute entirely on-device, powering tasks such as document summarization and virtual assistance while preserving user privacy. However, this also removes centralized logging and enforcement, allowing adversaries to fine-tune or deploy modified models that generate malicious content. When such apps are used in planning crimes, it is hard for forensic investigators to gather evidences because disk logs from app storage are cleared once conversation histories are deleted from the UI by suspects. Existing memory forensics techniques also cannot reconstruct the context embeddings retained within the LLM runtime states. We present ORISA, a memory forensics framework for recovering and rehosting deleted conversation contexts from local LLM apps. ORISA leverages the batch tokens and key-value (KV) caches preserved in process memory to reconstruct token sequences and restore session-level attention states. ORISA recovers previous conversations and outputs a rehosted app-agnostic session that remembers forgotten context from the original session, allowing investigators to reveal suspect's prior interactions and ask additional information using the live session. We evaluated ORISA across 60 session configurations involving 10 Android local LLM apps and 3 model architectures. ORISA recovered 100% of tokens and KV cache tensors within the active context window, and an average of 32.60% and 38.59% more forgotten context. ORISA's rehosted sessions revealed an average of 169.6% knowledge compared to the original session.",
+    "status": "notchecked"
+  },
+  {
+    "id": 210,
+    "year": 2026,
+    "title": "Nonlocalizable Jamming with Curving Beams",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00253",
+    "abstract": "Radio jamming is a significant security threat to critical wireless systems, potentially disrupting communications, navigation, and public-safety operations. Modern defenses rely on direction-of-arrival (DoA) localization and array nulling to locate and suppress interferers. These methods assume that incident wavefronts are approximately planar so that relative phase measurements across an array accurately indicate bearing. In this paper, we show that an adversary can fool DoA-based localization and nulling by transmitting curving beams. Such beams can create interference at a victim and induce a falsified DoA. This both conceals the adversary's true location and enables her to jam into the victim's main lobe. We investigate how various curving beam parameters affect DoA estimation and use these insights to describe how an adversary can search for optimal curving beams for her attack. We experimentally evaluate the attack with a millimeter wave testbed, showing that a curving beam jammer can increase bit error rate by three orders of magnitude. We find that the curving beams can successfully spoof both direct phase measurements and receive beamforming.",
+    "status": "notchecked"
+  },
+  {
+    "id": 211,
+    "year": 2026,
+    "title": "GPUBreach: Privilege Escalation Attacks on GPUs Using Rowhammer",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00177",
+    "abstract": "NVIDIA GPUs with GDDR memories have been shown susceptible to Rowhammer-based bit-flips, similar to CPUs. However, Rowhammer exploits on GPUs have been limited to injecting untargeted bit-flips in victim data like weights of machine learning models, to degrade model accuracy, unlike CPU exploits shown capable of privilege escalation. In this paper, we demonstrate that GPU Rowhammer exploits can be as potent as CPU Rowhammer attacks. By exploiting the GPU page table management to identify when and where new page tables are allocated, we enable an unprivileged user CUDA kernel of one process to use RowHammer bit-flips to gain access to the GPU memory of other processes or co-tenants via targeted tampering of such page-tables resident on the GPU memory. Using this newly found primitive, we demonstrate the first GPU-side privilege escalation attacks, leaking secret data such as cryptographic keys from cuPQC libraries, and even tampering with the model's GPU assembly code to degrade models more stealthily than previous attacks. We further demonstrate that GPU-side privilege escalation can lead to CPU-side privilege escalation, defeating the protections provided by the IOMMU, enabling a malicious user-level program with GPU access to gain root shell and system-wide control, even in a non-multi-tenant setting.",
+    "status": "notchecked"
+  },
+  {
+    "id": 212,
+    "year": 2026,
+    "title": "Human-Centered Threat Modeling in Practice: Lessons, Challenges, and Paths Forward",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00144",
+    "abstract": "Human-centered threat modeling (HCTM) is an emerging area within security and privacy research that focuses on how people define and navigate threats in various social, cultural, and technological contexts. While researchers increasingly approach threat modeling from a human-centered perspective, little is known about how they prepare for and engage with HCTM in practice. In this work, we conduct 23 semi-structured interviews with researchers to examine the state of HCTM, including how researchers design studies, elicit threats, and navigate values, constraints, and long-term goals. We find that HCTM is not a prescriptive process but a set of evolving practices shaped by relationships with participants, disciplinary backgrounds, and institutional structures. Researchers approach threat modeling through sustained groundwork and participant-centered inquiry, guided by values such as care, justice, and autonomy. They also face challenges including emotional strain, ethical dilemmas, and structural barriers that complicate efforts to translate findings into real-world impact. We conclude by identifying opportunities to advance HCTM through shared infrastructure, broader recognition of diverse contributions, and stronger mechanisms for translating findings into policy, design, and societal change.",
+    "status": "notchecked"
+  },
+  {
+    "id": 213,
+    "year": 2026,
+    "title": "Mad-Dag: Protecting Blockchain Consensus From MEV",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00176",
+    "abstract": "Blockchain security is threatened by selfish mining, where a miner (operator) deviates from the protocol to increase their revenue. Selfish mining is exacerbated by adverse conditions: rushing (network propagation advantage for the selfish miner), varying block rewards due to block contents, called miner extractable value (MEV), and petty-compliant miners who accept bribes from the selfish miner. The state-of-the-art selfish-mining-resistant blockchain protocol, Colordag, does not treat these adverse conditions and was proven secure only when its latency is impractically high. We present MAD-DAG, Mutually-Assured-Destruction Directed-Acyclic-Graph, the first practical protocol to counter selfish mining under adverse conditions. MAD-DAG achieves this thanks to its novel ledger function, which discards the contents of equal-length chains competing to be the longest. We analyze selfish mining in both Colordag and MAD-DAG by modeling a rational miner using a Markov Decision Process (MDP). We obtain a tractable model for both by developing conservative reward rules that favor the selfish miner to yield an upper bound on selfish mining revenue. To the best of our knowledge, this is the first tractable model of selfish mining in a practical DAG-based blockchain. This enables us to obtain a lower bound on the security threshold, the minimum fraction of computational power a miner needs in order to profit from selfish mining. MAD-DAG withstands adverse conditions under which Colordag and Bitcoin fail, while otherwise maintaining comparable security. For example, with petty-compliant miners and high levels of block reward variability, MAD-DAG's security threshold ranges from 11% to 31%, whereas both Colordag and Bitcoin achieve 0% for all levels.",
+    "status": "notchecked"
+  },
+  {
+    "id": 214,
+    "year": 2026,
+    "title": "Banshee: Target Switch Attacks on Gimbal-Stabilized Visual Tracking Systems via Acoustic Injection",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00129",
+    "abstract": "Gimbal-stabilized visual tracking is critical for modern autonomous systems such as Unmanned Aerial Vehicles (UAVs). While prior work shows acoustic signals can disturb gimbal internals, the impact of such attacks on real-world applications like UAV tracking and following remains underexplored. Existing demonstrations largely overlook practical challenges for real-world attacks, such as object-motion uncertainty and runtime latency. To bridge this gap, we present Banshee, the first physically realizable attack that induces target switching in UAV visual tracking systems by exploiting acoustic vulnerabilities in gimbal-camera systems. Banshee generates carefully crafted acoustic waveforms that induce optimized adversarial gimbal oscillations, causing directionally biased camera-view drifts that break inter-frame target associations. Consequently, the onboard tracker is driven to switch from the original target to an attacker-selected object with high probability, with occasional target loss. Banshee achieves a 93.6% success rate in simulation across two commercial gimbal systems and five trackers. Real-world benchtop and in-flight black-box attacks against a commercial drone across varied scenarios show an overall 95.5% attack success rate. Our results reveal a practical cross-domain vulnerability between acoustics and vision, highlighting the need for robust designs of gimbal systems and applications. Our code is available at: https://github.com/U1ltra/Banshee.",
+    "status": "notchecked"
+  },
+  {
+    "id": 215,
+    "year": 2026,
+    "title": "Beyond Indistinguishability: Measuring Extraction Risk in LLM APIs",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00165",
+    "abstract": "Indistinguishability properties such as differential privacy bounds or low empirically measured membership inference are widely treated as proxies to show a model is sufficiently protected against broader memorization risks. However, we show that indistinguishability properties are neither sufficient nor necessary for preventing data extraction in LLM APIs. We formalize a privacy-game separation between extraction and indistinguishability-based privacy, showing that indistinguishability and inextractability are incomparable: upper-bounding distinguishability does not upper-bound extractability. To address this gap, we introduce $(l, b)$-inextractability as a definition that requires at least $2^b$ expected queries for any black-box adversary to induce the LLM API to emit a protected $l$-gram substring. We instantiate this via a worst-case extraction game and derive a rank-based extraction risk upper bound for targeted exact extraction, as well as extensions to cover untargeted and approximate extraction. The resulting estimator captures the extraction risk over multiple attack trials and prefix adaptations. We show that it can provide a tight and efficient estimation for standard greedy extraction and an upper bound on the probabilistic extraction risk given any decoding configuration. We empirically evaluate extractability across different models, clarifying its connection to distinguishability, demonstrating its advantage over existing extraction risk estimators, and providing actionable mitigation guidelines across model training, API access, and decoding configurations in LLM API deployment. Our code is publicly available at: https://github.com/Emory-AIMS/Inextractability.",
+    "status": "notchecked"
+  },
+  {
+    "id": 216,
+    "year": 2026,
+    "title": "Practical Covert Channel Across Isolated Browser Instances via GPU Command Queue Contention",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00254",
+    "abstract": "Web storages, e.g., cookies, are isolated across different browser modes (e.g., normal vs. incognito) and browsers (e.g., Chrome vs. Safari) to ensure user privacy. Despite such browser-level isolation, researchers have found covert communication channels between different modes and browsers, which can break such a security mechanism. However, existing covert communications are impractical and unreliable in the real world scenarios, where noise is prevalent. Furthermore, multiple prior covert channels only support cross-mode-not cross-browser-communications, because the relevant resources are shared within a single browser. In this paper, we discover a novel covert channel due to GPU command queue contention and then design a framework, called $\\mathbf{C}^{3} \\mathbf{F}$, for both cross-mode and cross-browser covert communication. $\\mathbf{C}^{3} \\mathbf{F}$ negotiates an adaptive communication speed between the sender and the receiver and then facilitates the covert communication. We evaluated $\\mathbf{C}^{3} \\mathbf{F}$ in real-world settings by deploying it to crowd-sourced workers on Amazon Mechanical Turk, simply asking them to visit two websites without imposing additional constraints. Our evaluation shows that covert communication achieves a 100 % accuracy once the data transmission is completed, with an overall completion rate of 92.81 % across 1,434 AMT experiments. So far, Firefox, Safari and Tor developers have confirmed our attack and are working with us on practical defenses.",
+    "status": "notchecked"
+  },
+  {
+    "id": 217,
+    "year": 2026,
+    "title": "Site Isolation is Dead: How Site Isolation is Broken in Agentic Browsers and Extensions",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00241",
+    "abstract": "Site isolation is a cornerstone of modern web browser security. By strictly separating renderer processes that render untrusted webpages across different origins, it prevents malicious websites from accessing sensitive data belonging to other websites, thus underpinning the integrity of web services. However, as browsers increasingly integrate large language models (LLMs) and web agents to automate complex user tasks, these agents should often perform LLM-driven operations across isolation boundaries, thereby introducing new security risks. Despite this shift, no previous studies have investigated how agentic browsers implement security mechanisms to protect LLM-driven agent operations from untrusted web content. In this work, we analyze the security designs of two open-source agentic browsers and seven agentic extensions, identifying a common architectural pattern: privileged processes manage user prompts and agent operations, while untrusted renderer processes are isolated, with inter-process communication (IPC) channels serving as their bridge. Building on this observation, we present two novel end-to-end attacks that exploit these IPC channels to perform (1) malicious prompt injections and (2) LLM-related data exfiltration. These attacks allow adversaries to interact with other websites or access sensitive user data through web agents, which have been considered challenging under strict site isolation. Our evaluation shows that all tested agentic browsers and extensions are vulnerable to these attacks, revealing that existing implementations often fail to properly account for IPC channels. We conclude with actionable defense guidelines for strengthening site isolation in agentic browsers and extensions. To the best of our knowledge, our work presents the first systematic study of the (in)security of site isolation in agentic browsers and extensions.",
+    "status": "notchecked"
+  },
+  {
+    "id": 218,
+    "year": 2026,
+    "title": "Vega: Low-Latency Zero-Knowledge Proofs over Existing Credentials",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00182",
+    "abstract": "As digital identity verification becomes increasingly pervasive, existing privacy-preserving approaches are still limited by complex circuit designs, large proof sizes, trusted setups, or high latency. We present Vega, a practical zeroknowledge proof system that proves statements about existing credentials without revealing anything else. Vega is simple, does not require a trusted setup, and is more efficient than the prior state-of-the-art: for a 1920-byte credential, Vega achieves 92 ms proving time, 23 ms verification time, 108 kB proofs, and a 464 kB proving key. For smaller credentials (896 bytes), these drop to 62 ms proving, 17 ms verification, and 83 kB proofs. At the heart of Vega are two principles that together enable a lightweight proof system that pays only for what it needs. First, fold-and-reuse proving exploits repetition and folding opportunities (i) across presentations, by pushing repeated work to a rerandomizable precomputation; (ii) across uniform hashing steps, by folding many steps into a single step; and (iii) for zero-knowledge, by folding the public-coin transcript with a random one. Second, lookupcentric arithmetization extracts relevant values from credential bytes, both for extracting relevant fields without full in-circuit parsing, and to enable length-hiding hashing.",
+    "status": "notchecked"
+  },
+  {
+    "id": 219,
+    "year": 2026,
+    "title": "The Pipes Model for Latency and Throughput Analysis",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00255",
+    "abstract": "Traditionally, latency in distributed computing protocols is expressed as the number of communication rounds or network delays; it does not take into account the amount of data sent or the dependencies among parties sending the data. Moreover, throughput for a protocol is typically only empirically computed. Due to this, the only means of obtaining or comparing the practical latency and throughput of protocols is through expensive implementation and experimentation. In this paper, we present Pipes, a model for analyzing latency and throughput in state machine replication (SMR) protocols. The Pipes model captures the effect of processor bandwidth $S$, transaction arrival rate $D$, and the network delay $\\Delta$, enabling us to explicitly specify the throughput bottleneck and the latency of a protocol. Using Pipes, we perform an analysis of broadcast primitives such as Besteffort Broadcast and Reliable Broadcast, as well as state-of-the-art SMR protocols such as DispersedSimplex, Tendermint, HotStuff, and Sailfish. We experimentally validate these results by implementing the Best-effort Broadcast primitives and SMR protocols (DispersedSimplex and Sailfish). Our comparisons show clear trade-offs: single-sender protocols that exploit pipelining and erasure coding (e.g., DispersedSimplex) can achieve substantially lower latency across many regimes but have a lower latency bottleneck by a constant factor; many DAG-based protocols push the bottleneck higher at the cost of higher per-block latency scaling. HotStuff's leader-relay design, while communication-efficient, yields higher latency than Tendermint in our model due to leader bandwidth bottlenecks.",
+    "status": "notchecked"
+  },
+  {
+    "id": 220,
+    "year": 2026,
+    "title": "Private Data Imputation",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00127",
+    "abstract": "Data imputation is an important data preparation task where the data analyst replaces missing or erroneous values to increase the expected accuracy of downstream analyses. The accuracy improvement of data imputation extends to private data analyses across distributed databases. However, existing data imputation methods violate the privacy of the data rendering the privacy protection in the downstream analyses obsolete. We conclude that private data analysis requires private data imputation. In this paper, we present the first optimized protocols for private data imputation. We consider the case of horizontally and vertically split data sets. Our optimization aims to reduce most of the computation to private set intersection (or at least oblivious programmable pseudo-random function) protocols which can be very efficiently computed. We show that private data imputation has -- on average across all evaluated datasets -- an accuracy advantage of 20\\% in case of vertically split data and 5\\% in case of horizontally split data over imputing data locally. In case of the worst data split we observed that imputing using our method resulted in an increase of up to 32.7 times in the quality of imputation over the vertically split data and 3.4 times in case of horizontally split data. Our protocols are very efficient and run in 2.4 seconds in case of vertically split data and 8.4 seconds in case of horizontally split data for 100,000 records evaluated in the 10 Gbps network setting, performing one data imputation.",
+    "status": "notchecked"
+  },
+  {
+    "id": 221,
+    "year": 2026,
+    "title": "Hadal: Centralized Label DP without a Trusted Party",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00122",
+    "abstract": "We explore distributed training in a setting where features are held by one party and labels are held by another. In this context, we focus on label Differential Privacy (DP), where the labels require privacy protection from the other party who learns the trained model. Previous approaches struggle to train accurate models in high-privacy settings (i.e. when $\\epsilon \\leq 1$), or typically require a trusted third party. To eliminate this trusted party while preserving model utility, we present PostScale, a novel Homomorphic Encryption (HE)based protocol suited for high-privacy regimes with ciphertext multiplicative depth of two. Our protocol is suitable for a wide variety of models in the semi-honest setting and avoids leaking the model architecture as well as costly ciphertext operations like bootstrapping and rotations. We also present a multiparty sampling protocol for generating DP noise, and Hadal, a general-purpose dataflow-based framework for encrypted computation implementing our protocols. Hadal repurposes existing tools for use with HE, including comprehensive performance profiling capabilities, dual execution modes (eager and deferred), graph compiler-based optimization, and hyperparameter tuning. Our techniques achieve model utility similar to centralized DP while reducing communication by over 90 % (from 1 TB to 8 GB per batch) and training time by 99 % (from 54 minutes to 33 seconds) compared to related work that protects both features and labels. These improvements unlock larger models; we train Bert-tiny of Devlin et al. (2019), with $(\\mathbf{6.5 ~ M B})$ of parameters, in 20 ms per example in a LAN setting.",
+    "status": "notchecked"
+  },
+  {
+    "id": 222,
+    "year": 2026,
+    "title": "Making Privacy Public: Toward a Differential Privacy Deployment Registry",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00157",
+    "abstract": "To promote shared learning and accountability around differential privacy (DP) deployments, Dwork, Kohli, and Mulligan [1] proposed a public-facing repository (“registry”) of real-world DP deployments. The DP community has recently started working toward realizing this vision. We contribute to this effort by (1) developing a holistic, hierarchical schema to describe any given DP deployment and (2) designing and implementing an interactive interface to act as a registry where practitioners can access information about past DP deployments. We (3) populate our interface with 21 real-world DP deployments and (4) conduct an exploratory user study with DP practitioners ($\\mathbf{n} \\boldsymbol{=} \\mathbf{1 6}$) to understand how they would use the registry, as well as what challenges and opportunities they foresee around its adoption. We find that participants were enthusiastic about the registry as a valuable resource for evaluating prior deployments and making future deployments. They also identified several opportunities for the registry, including that it can become a “hub” for the community and support broader communication around DP (e.g., to legal teams). At the same time, they identified challenges around the registry gaining adoption, including the effort and risk involved with making implementation choices public and moderating the quality of entries. Based on our findings, we offer recommendations for encouraging adoption and increasing the registry's value not only to DP practitioners, but also to policymakers, data users, and data subjects.",
+    "status": "notchecked"
+  },
+  {
+    "id": 223,
+    "year": 2026,
+    "title": "Toward Efficient Membership Inference Attacks Against Federated Large Language Models: A Projection Residual Approach",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00205",
+    "abstract": "Federated Large Language Models (FedLLMs) enable multiple parties to collaboratively fine-tune LLMs without sharing raw data, addressing challenges of limited resources and privacy concerns. Despite data localization, shared gradients can still expose sensitive information through membership inference attacks (MIAs). However, FedLLMs' unique properties, i.e. massive parameter scales, rapid convergence, and sparse, non-orthogonal gradients, render existing MIAs ineffective. To address this gap, we propose ProjRes, the first projection residuals-based passive MIA tailored for FedLLMs. ProjRes leverages hidden embedding vectors as sample representations and analyzes their projection residuals on the gradient subspace to uncover the intrinsic link between gradients and inputs. It requires no shadow models, auxiliary classifiers, or historical updates, ensuring efficiency and robustness. Experiments on four benchmarks and four LLMs show that ProjRes achieves near 100% accuracy, outperforming prior methods by up to 75.75%, and remains effective even under strong differential privacy defenses. Our findings reveal a previously overlooked privacy vulnerability in FedLLMs and call for a re-examination of their security assumptions. Our code and data are available at $\\href{https://anonymous.4open.science/r/Passive-MIA-5268}{link}$.",
+    "status": "notchecked"
+  },
+  {
+    "id": 224,
+    "year": 2026,
+    "title": "Weighted Batched Threshold Encryption With Applications to Mempool Privacy",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00175",
+    "abstract": "A Batched Threshold Encryption (BTE) scheme enables a committee of servers to perform lightweight (in terms of communication and computation) threshold decryption of an arbitrary batch of ciphertexts from a larger pool, while ensuring the privacy of ciphertexts that are outside the batch. Such a primitive has a direct application in designing encrypted mempools for MEV protection in modern blockchains. Bormet et al. (USENIX 2025) recently proposed a BTE scheme called “BEAT-MEV” which is concretely efficient for small to moderate batch sizes. In this work, we improve and extend the BEAT-MEV scheme in multiple ways. First, we improve the computational cost from quadratic to quasilinear in the batch size thus making it practical for large batch sizes. This improvement is achieved by substituting the key-homomorphic punctured PRF used in BEAT-MEV with an FFT-friendly alternative. Second, we extend the ideas in their scheme to the weighted setting, where each server in the committee has an associated 'weight' value (e.g. stake weight of validators in PoS blockchains), while crucially ensuring that the communication cost remains independent of the weights. In contrast, BEAT-MEV with naive virtualization would incur communication cost linear in the total weight. Third, to handle the small failure rate inherent in BEAT-MEV scheme due to index collisions across different clients at the time of encryption, we propose a generalization of their suggested approach which offers an option to tradeoff between ciphertext size and server communication cost. We implement and evaluate our scheme and compare it with BEAT-MEV to demonstrate our concrete improvement. In the unweighted setting, we improve the computational cost (without increasing the communication cost) by $\\approx 6 \\times$ for a batch size of 512 ciphertexts. In the weighted setting, we improve the communication cost (without compromising computation time), over BEAT-MEV with naive virtualization, by $\\approx 50 \\times$ for 100 validators with total stake weight 5000 distributed as per the latest Solana stake distribution.",
+    "status": "notchecked"
+  },
+  {
+    "id": 225,
+    "year": 2026,
+    "title": "UltraProofs: Scalable Reed-Solomon Code Commitment",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00190",
+    "abstract": "Reed-Solomon (RS) codes underpin a wide range of cryptographic protocols, from verifiable secret sharing (VSS) to blockchain data availability (DA). An RS code commitment enables a prover to distribute codeword fragments among many parties while allowing each recipient to verify that its fragment is consistent with a RS code. Existing constructions either rely on homomorphic polynomial commitments, which incur redundant commitments and expensive group operations, or use FRI-based interactive proofs, which achieve fast proving but suffer from prohibitively large communication. We present UltraProofs, a new RS code commitment framework that achieves linear-time proof generation while remaining compatible with any multilinear polynomial commitment. Our key technical contribution is an evaluationconsolidation protocol that reduces $n$ evaluation proofs at distinct RS points to a single randomized evaluation, eliminating redundant commitments and removing the need for homomorphic structure. We further design a tailored multilinear PCS, LightLigero, which achieves $O(\\lambda \\log n)$ proof size and maintains $O(n \\log n)$ prover time. UltraProofs attains asymptotically optimal prover complexity with concrete speedups in practice: in VSS, it reduces prover time by $2.4 \\times$ and proof size by $4 \\times$ compared to HydraProofs (S&P'25); in DA, it cuts per-node communication by up to $2 \\sim 5 \\times$ relative to FRIDA (Crypto'24) while retaining similar prover cost. By decoupling verifiable RS encoding from any specific PCS instantiation, UltraProofs provides a flexible, efficient, and modular foundation for large-scale verifiable storage and distributed cryptographic systems.",
+    "status": "notchecked"
+  },
+  {
+    "id": 226,
+    "year": 2026,
+    "title": "Lost in Translation: Text Message Spoofing via Email",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00168",
+    "abstract": "#",
+    "status": "notchecked"
+  },
+  {
+    "id": 227,
+    "year": 2026,
+    "title": "MadeYouReset: Exploiting HTTP/2 Server-Side Resets for Large-Scale DoS",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00218",
+    "abstract": "We present MadeYouReset, a novel DoS vulnerability that exploits a fundamental design flaw in HTTP/2 servers. In this attack, malicious clients send specially crafted, invalid yet protocol-compliant control frames, which cause the server to issue RST_STREAM frames, thereby terminating (resetting) the stream from the protocol's perspective. In practice, these resets do not cancel the associated backend processing on the server. As a result, the attacker is able to circumvent the protocol-enforced concurrent stream limit, allowing unbounded in-flight requests and creating a potent vector for denial-of-service. We demonstrate that numerous HTTP/2 server implementations are vulnerable to MadeYouReset. We further show that it effectively bypasses current defenses designed for the Rapid Reset vulnerability, which involved client-initiated resets by explicitly sending RST_STREAM frames. Notably, Rapid Reset was published in 2023, while already under active exploitation, leading to large-scale service crashes. In this paper, we analyze the vulnerability's behavior and measure its impact and sensitivity to major parameters. We demonstrate that the potential damage from MadeYouReset is comparable to that of Rapid Reset. We explore mitigation strategies and detection techniques. As part of our responsible disclosure, MadeYouReset was assigned a general CVE (CVE-2025-8671). To date, six additional product-specific CVEs have been issued. Corresponding patches have been applied across major HTTP/2 servers and libraries, including: Netty, Jetty, Apache Tomcat, H2O, h2 (Rust), SwiftNIO (Apple's framework), Pingora (Cloudflare's framework), and others.",
+    "status": "notchecked"
+  },
+  {
+    "id": 228,
+    "year": 2026,
+    "title": "Batch Me If You Can: Coverage-Guided RPKI Fuzzing at Scale",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00188",
+    "abstract": "The Resource Public Key Infrastructure (RPKI) has become essential to secure inter-domain routing. Despite its critical role, RPKI software remains largely untested beyond shallow parsing. Existing fuzzers, like AFL++ or libFuzzer, do not work well for RPKI as they assume a single, self-contained input per execution, while RPKI repositories contain hundreds of interdependent cryptographically linked objects. Existing fuzzers fail to handle this complexity and lack the ability for precise coverage attribution in multi-object repositories, breaking feedback-based exploration and thereby missing most severe vulnerabilities in RPKI validation. In this paper, we overcome these limitations through novel fuzzing techniques, including continuous sampling and using functions as side-channels for per-object coverage attribution in large input repositories. We further show how parsing inputs to a labeled tree allows structural and semantic mutations while preserving cryptographic validity in mutated repositories. We implement our new techniques into a powerful fuzzing tool called CAT, combining non-sequential fuzzing with our template-agnostic ASN.1 mutation engine to achieve 66x throughput improvement over sequential fuzzing and exploring 24 - 47% more unique code paths compared to libFuzzer and previous work. Evaluating CAT on RPKI validators uncovered 21 previously unknown vulnerabilities with 8 CVEs already assigned (CVSS 7.5 - 9.8). These include a buffer overflow, Denial-of-Service (DoS), and exploitable repository-poisoning logic flaws. We open-source CAT to enable reproducibility, further research, and adaptation of our methods to other complex cryptography-based protocols such as DNSSEC and TLS.",
+    "status": "notchecked"
+  },
+  {
+    "id": 229,
+    "year": 2026,
+    "title": "The Fault in Our Drafts: Vulnerabilities in RPKI Specification and Software",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00224",
+    "abstract": "The Resource Public Key Infrastructure (RPKI) secures the Internet's routing system by defining a complex trust and validation framework for certificates, Route Origin Authorizations (ROAs), manifests, and Certificate Revocation Lists (CRLs). These mechanisms are specified across dozens of RFCs. This paper presents the first comprehensive analysis of the causal link between flaws in RPKI Requests for Comments (RFCs) and vulnerabilities in implementations and real-world deployments. We reveal how vague, conflicting, or underspecified requirements in 50 RPKI RFCs propagate into inconsistent implementation behavior and operational failures. We conduct the first large-scale, impact-driven evaluation of RPKI specifications. Our methodology combines differential fuzzing of major RPKI implementations with Internet-wide crawling and validation log analysis, enabling us to trace practical vulnerabilities back to flawed RFC requirements. We uncover 61 previously undocumented inconsistencies in validation behavior, trace 23 directly to RFC flaws, and identify two novel vulnerabilities that were assigned CVEs. Our findings reveal that these are not isolated coding errors but rather systemic issues inherent in how RPKI standards are written, interpreted, and implemented. To mitigate these threats, we propose concrete recommendations and introduce a novel alerting service that monitors and reports live inconsistencies in RPKI deployments. Our open-source datasets, code, and tools support reproducibility and further research.",
+    "status": "notchecked"
+  },
+  {
+    "id": 230,
+    "year": 2026,
+    "title": "The Battle of Metasurfaces: Understanding Security in Smart Radio Environments",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00153",
+    "abstract": "Metasurfaces, or Reconfigurable Intelligent Surfaces (RISs), have emerged as a transformative technology for next-generation wireless systems, enabling digitally controlled manipulation of electromagnetic wave propagation. By turning the traditionally passive radio environment into a smart, programmable medium, metasurfaces promise advances in communication and sensing. However, metasurfaces also present a new security frontier: both attackers and defenders can exploit them to alter wireless propagation for their own advantage. While prior security research has primarily explored unilateral metasurface applications - empowering either attackers or defenders - this work investigates symmetric scenarios, where both sides possess comparable metasurface capabilities. Using both theoretical modeling and real-world experiments, we analyze how competing metasurfaces interact for diverse objectives, including signal power and sensing perception. Thereby, we present the first systematic study of context-agnostic metasurface-to-metasurface interactions and their implications for wireless security. Our results reveal that the outcome of metasurface \"battles\" depends on an interplay of timing, placement, algorithmic strategy, and hardware scale. Across multiple case studies in Wi-Fi environments, including wireless jamming, channel obfuscation for sensing and communication, and sensing spoofing, we demonstrate that opposing metasurfaces can substantially or fully negate each other's effects. By undermining previously proposed security and privacy schemes, our findings open new opportunities for designing resilient and high-assurance physical-layer systems in smart radio environments.",
+    "status": "notchecked"
+  },
+  {
+    "id": 231,
+    "year": 2026,
+    "title": "Can Foundation LLMs Accurately Estimate Password Strength and Provide Appropriate Password Feedback?",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00179",
+    "abstract": "Password-strength models help users choose strong passwords. These models typically identify predictable passwords by training on millions of stolen passwords. We instead investigate if pretrained large language models (LLMs) can assess a password's strength based on semantic properties. We adapt LLMs in two distinct ways. First, mirroring LLMs' typical usage, we directly prompt four LLMs to estimate password strength. Second, mirroring prior probabilistic password models, we explicitly calculate the probability of passwords using lLMs fine-tuned on password data. We uncover technical challenges with doing so, developing strategies to reduce computational costs by a median of $25-97 \\%$ depending on a password's length. We also perform an ablation study to gauge how key design dimensions (e.g., pretraining, data quantity) impact fine-tuned LLMs' accuracy. We find many fine-tuned models outperform prompted models despite being far smaller. Across both prompting and fine-tuning, LLMs modeled wordlike passwords well-including for out-of-distribution passwords (e.g., with recent cultural references)-yet struggled on more complex passwords. We also prompted LLMs to suggest how to improve specific passwords. The LLMs often gave poor or predictable feedback (e.g., making common substitutions, appending an exclamation point, or inserting “blue”).",
+    "status": "notchecked"
+  },
+  {
+    "id": 232,
+    "year": 2026,
+    "title": "MoPE: A Mixture of Password Experts for Improving Password Guessing",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00191",
+    "abstract": "Textual passwords remain a predominant authentication mechanism in web security. To evaluate their strength, existing research has proposed several data-driven models across various scenarios. However, these models generally treat passwords uniformly, neglecting the structural differences among passwords. This typically results in biased training that favors frequent password structural patterns. To mitigate the biased training, we argue that passwords, as a type of complex short textual data, should be processed in a structure-aware manner by identifying their structural patterns and routing them to specialized models accordingly. In this paper, we propose MoPE, a Mixture of Password Experts framework, specifically designed to leverage the structural patterns in passwords to improveguessing performance. Motivated by the observation that passwords with similar structural patterns (e.g., fixed-length numeric strings) tend to cluster in high-density regions within the latent space, our MoPE introduces: (1) a novel structure-based method for generating specialized expert models; (2) a lightweight gate method to select appropriate expert models to output reliable guesses, better aligned with the high computational frequency of password guessing tasks. Our evaluation shows that MoPE significantly outperforms existing state-of-the-art baselines in both offline and online guessing scenarios, achieving up to 38.80% and 9.27% improvement in cracking rate, respectively, showcasing that MoPE can effectively exploit the capabilities of data-driven models for password guessing. Additionally, we implement a real-time Password Strength Meter (PSM) based on offline MoPE, assisting users in choosing stronger passwords more precisely with millisecond-level response latency.",
+    "status": "notchecked"
+  },
+  {
+    "id": 233,
+    "year": 2026,
+    "title": "APEX: Accurate Parallel Expressive Homomorphic Execution for Encrypted Databases",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00173",
+    "abstract": "Fully homomorphic encryption (FHE) promises end-to-end secure cloud databases by enabling arbitrary queries directly over encrypted data, without ever exposing plaintext. However, existing FHE-based databases must trade off SIMD parallelism against exact query semantics, as they rely on approximate methods to exploit large-scale SIMD, limiting their practicality. This paper presents APEX, the first FHE database that jointly achieves efficient SIMD execution and precise SQL semantics within a single-scheme BGV/BFV framework. Our key insight is that the dominant bottleneck lies not in the schemes themselves but in data encoding: prior layouts misalign ciphertext slots with column and predicate semantics, squandering SIMD capacity. Therefore, Apex introduces a semantics-aware unified encoding UniCo that decomposes numeric and string values into bounded, position-weighted segments and aligns them with ciphertext slots across rows by data type and position. This alignment enables predicate comparisons to exploit bounded value ranges via Range-Aware Homomorphic Comparison (RAHC) and operate over an application-chosen small domain rather than the full plaintext modulus, making SIMD far more effective. Furthermore, to preserve efficiency and correctness for arbitrary-precision values, Apex employs Parallel Lazy Carry Propagation (PLCP), which defers crosssegment carry handling until needed and thus simplifies homomorphic query execution. Compared to state-of-the-art FHE databases, APEX achieves up to $8 \\times$ speedup on TPC$\\mathbf{H}$ benchmarks, and up to $\\mathbf{2 0 9, 2 1 3} \\times$ acceleration for string pattern matching with single- and multi-character wildcards.",
+    "status": "notchecked"
+  },
+  {
+    "id": 234,
+    "year": 2026,
+    "title": "Code-Based Scalable Collaborative SNARKs",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00240",
+    "abstract": "We propose the first collaborative SNARK based on error-correcting codes that is scalable, i.e., the proof computation overhead is distributed among the $N$ provers. As a starting point, we introduce the notion of $(t, l)$-zero-knowledge collaborative codes that ensure that, when collaboratively computing a codeword over a distributed message, no coalition of up to $t$ corrupted parties learns any additional information about the message, even having queried up to $l$ codeword positions. We show that tensor codes consisting of the composition of two Reed-Solomon codes satisfy our definition, while also being foldable. We then propose a collaborative interactive oracle proof of proximity (coIOPP) for testing codeword closeness in our code, show how it can be made a zero-knowledge IOPP using randomness logarithmic in the size of the message (as opposed to linear with prior approaches), and we use it to construct a coIOPP for multi-linear polynomial evaluation. To compile our coIOPPs into non-interactive arguments, we prove that a natural extension of the compiler of Ben-Sasson-ChiesaSpooner (TCC 2016) in the collaborative setting preserves round-by-round (knowledge) soundness against quantum adversaries, which may be of independent interest for future work in collaborative SNARKs. Finally, we use an optimized collaborative version of the Spartan PIOP to build the first transparent and post-quantum secure scalable collaborative SNARK. Our experimental evaluation demonstrates that our scheme consistently outperforms the best existing (non-postquantum secure) scalable collaborative SNARKs, both in end-to-end prover time and in total communication among provers, for all tested configurations.",
+    "status": "notchecked"
+  },
+  {
+    "id": 235,
+    "year": 2026,
+    "title": "Decor: Delegated Computation on Randomness for Secure Evaluation of Nonlinear Functions",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00256",
+    "abstract": "Secure multiparty computation (MPC) enables privacy-preserving data analysis across distributed computing parties, but its practicality remains limited by the cost and inaccuracy of evaluating complex nonlinear functions. Although secure multiplications are efficiently supported by Beaver multiplication triples-a cornerstone technique in MPC-existing protocols rely on polynomial approximations to evaluate more sophisticated functions, often incurring significant computational overhead and numerical imprecision. We present Decor, a framework that generalizes the core principle behind the Beaver triples to a broad class of nonlinear functions, enabling the construction of efficient MPC primitives. Decor delegates costly nonlinear operations to computations involving only random values, which can be executed in an offline preprocessing phase by a trusted dealer without access to private data. This design enables efficient and accurate evaluation of diverse functions, including trigonometric, hyperbolic, exponential, and sigmoid functions, and introduces a new general-purpose function approximation method for MPC based on Fourier series. Our experiments show that Decor achieves orders-ofmagnitude improvements in accuracy while maintaining comparable or faster runtimes than existing approaches, leading to substantial utility gains for downstream applications such as implicit neural representation of images and logistic model estimation in genome-wide association studies. By demonstrating how randomized preprocessing can yield enhanced MPC primitives, Decor establishes a new framework for practical, privacy-preserving computation.",
+    "status": "notchecked"
+  },
+  {
+    "id": 236,
+    "year": 2026,
+    "title": "SpecAuditor: Generating Audit Specifications for LLM-Driven Bug Detection",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00206",
+    "abstract": "Static analysis has been widely used for bug detection in real-world systems. However, traditional static analysis depends on manually written rules that match specific code forms. They often fail to handle semantically equivalent code variants and diverse bug patterns. Recent advances in large language models (LLMs) provide new opportunities for bug detection due to their capability to understand code semantics. However, directly applying LLMs to bug auditing is ineffective and expensive. Without clear guidance, LLMs fall back on memorized common patterns. They struggle with system-specific semantics and rare bug patterns that require domain knowledge. Therefore, it is necessary to provide high-quality audit specifications that clearly describe where to audit and under what conditions a bug occurs, for guiding LLMs to perform effective bug detection. In this paper, we propose SpecAuditor, an end-to-end framework that automatically generates and applies audit specifications for LLM-driven bug detection. SpecAuditor leverages historical bug patches to obtain specifications and then uses them to detect new bugs. Instead of directly extracting syntactic patterns from patches, SpecAuditor generalizes specifications at the semantic level to obtain new, broader specifications, thereby significantly extending the coverage of bug detection. In particular, SpecAuditor proceeds in three stages: (1) It extracts seed specifications from bug patches and validates them via differential checking. (2) It generalizes each seed specification to capture its underlying behavior and uses documentation-based semantic retrieval to identify other code entities performing similar behaviors, generating new specifications for them. (3) It performs LLM-driven bug detection by combining AST-based code search with LLM-based semantic auditing, followed by context-aware report pruning to reduce false positives. Our evaluation on the Linux kernel shows that SpecAuditor generates diverse specifications that go beyond syntactic patterns seen in patches. Using these specifications, SpecAuditor detects 71 long-latent new bugs, with an average lifetime of more than 7 years, including memory leaks, use-after-free, and out-of-bounds bugs. To date, 52 bugs have been confirmed by maintainers and 37 have been fixed. Moreover, 21 of the bug patches have been backported to the Linux stable trees for long-term release stability.",
+    "status": "notchecked"
+  },
+  {
+    "id": 237,
+    "year": 2026,
+    "title": "Oxidizer: Toward Concise and High-fidelity Rust Decompilation",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00257",
+    "abstract": "Rust is an increasingly popular language that has gained traction among developers. As a memory-safe language, Rust reduces the burden for developers to create reliable and fast software. However, the same features can also hinder reverse engineering tasks. For instance, malware developers have also picked up on the trend of Rust, using it to make their malware more reliable and difficult to analyze. Reverse engineering tasks often rely on decompilers to recover the source code from these binaries. However, analysts find it difficult to analyze Rust binaries using modern C decompilers. Modern $\\mathbf{C}$ decompilers fail on Rust binaries because they fail to recover high-level Rust abstractions from low-level implementations. As a result, the decompiled output is often verbose and inaccurate. Therefore, we believe that to achieve high-quality Rust decompilation, a decompiler must bridge the gap between high-level Rust abstractions and lowlevel implementations. In this paper, we study how $\\mathbf{C}$ decompilers fail at decompiling Rust binaries. We identify a comprehensive list of decompilation failures, find the root causes of these failures, and develop a novel decompiler, Oxidizer, for decompiling Rust binaries to Rust pseudocode. We evaluate Oxidizer on 28 popular Rust projects across multiple optimization levels and compiler versions, comparing it against angr, Hex-Rays, Ghidra, and Binary Ninja. Oxidizer outperforms all baselines on most conciseness and fidelity metrics, and is the only tool capable of recovering Rust enums and macros. A human study further shows that participants using Oxidizer achieved 28 % higher accuracy and completed tasks 20 % faster than those using Hex-Rays.",
+    "status": "notchecked"
+  },
+  {
+    "id": 238,
+    "year": 2026,
+    "title": "Catch Me If You Can: Detector-Resistant Evasion via Semantics-Preserving Command Re-Realization",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00159",
+    "abstract": "Red teams require evasion techniques to test Security Information and Event Management (SIEM) detection rules, yet existing approaches are (1) manual, (2) rely on stringlevel obfuscations (such as encoding schemes and quoting tricks) that are easily reversed by de-obfuscators, and (3) provide limited rule coverage. This leaves unexplored semanticpreserving evasions that achieve identical effects through different utilities, preventing assessment of whether rules detect attack intent or merely surface patterns. We present Spectra, an automated evasion generator that preserves attack effects while transforming command-line realization through functionally equivalent utilities and argument structures. By reasoning over semantic representations rather than syntactic patterns, Spectra automatically generates more durable and effective evasions. On Windows Sigma process_creation rules, Spectra achieves 72.9 % rule coverage compared to 37.6 % for AMIDES (the state-of-the-art method), with only 4.5% of evasions reversed by de-obfuscators versus 78.1% for AMIDES (17.4 times more resistant). When evaluated against the state-of-the-art evasion detector at its zero-falsepositive operating point, Spectra achieves a detection rate of only 22.7 % compared to 69.9 % for AMIDES. SPECTRA also outperforms five general-purpose LLMs across metrics.",
+    "status": "notchecked"
+  },
+  {
+    "id": 239,
+    "year": 2026,
+    "title": "Interplay of Efficient Model Checking and Secure Processor Design: A Case Study on Secure Speculation",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00203",
+    "abstract": "There is increasing use of model checking to verify the security of processors, including those with speculative execution. However, model checkers face scalability challenges and are limited in the scale of processors and specific security properties they can currently handle. This research shows how exploiting domain-specific information about the design of secure processors can be used to scale model checking and make it more efficient. Our key observation is that proofs of non-interference properties require both information-flow invariants and functionality-based invariants, while model checkers often spend substantial effort deriving functionality invariants that do not directly contribute to the final security proof. To address this problem, we introduce Uninterpreted Functions with History (HUF), a modular abstraction for sequential modules that preserves relevant information-flow properties while abstracting away security-irrelevant functionality. We further show that the same verification insight can guide hardware design: security mechanisms become significantly easier to verify when their security depends less on hard-toprove global functional correctness. We build a verification framework to automate the use of HUF abstractions in security verification. Practical demonstration of the verification methodology is conducted through case studies on BOOM processors for secure-speculation mitigations designed with the HUF-guided design guideline.",
+    "status": "notchecked"
+  },
+  {
+    "id": 240,
+    "year": 2026,
+    "title": "Specializing Language Models for Textual Fuzzing via Reinforcement Learning",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00184",
+    "abstract": "Fuzzing is effective for vulnerability discovery but struggles with complex targets such as compilers, interpreters, and database engines, which accept textual input that must satisfy intricate syntactic and semantic constraints. Although language models (LMs) have attracted interest for this task due to their vast latent knowledge and reasoning potential, their practical adoption has been limited. The major challenges stem from insufficient exploration of deep program logic among real-world codebases, and the high cost of leveraging larger models. To overcome these challenges, we propose R1-Fuzz, the first framework that leverages reinforcement learning (RL) to specialize cost-efficient LMs and integrate them for complex textual fuzzing input generation. R1-Fuzz introduces two key designs: coverage-slicing-based question construction and a distance-based reward calculation. Through RL-based post-training of a model with our constructed dataset, R1-Fuzz designs a fuzzing workflow that tightly integrates LMs to reason deep program semantics during fuzzing. Evaluations on diverse real-world targets show that our design enables a small model, named R1-Fuzz-7B, to rival or even outperform much larger models in real-world fuzzing. Notably, R1-Fuzz achieves up to 75\\% higher coverage than state-of-the-art fuzzers and discovers 29 previously unknown vulnerabilities, demonstrating its practicality.",
+    "status": "notchecked"
+  },
+  {
+    "id": 241,
+    "year": 2026,
+    "title": "NetPanic: the Attack Surface You Can't Syscall",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00236",
+    "abstract": "The Linux kernel network stack exposes a critical remote attack surface, yet kernel security research has historically focused on the local attack surface, especially the post-breach local privilege escalation attacks. This has left a direct, pre-authentication attack vector dangerously overlooked. To address this gap, we present the first systematic, fuzzing-based audit of this attack surface. Our work first identifies the unique challenges that render existing fuzzers ineffective for this task: Extreme Input Complexity and the challenge of Dual-channel Input Coordination. To overcome them, we present NetPanic, a novel fuzzer built on a Fuzzer-in-the-Middle architecture. This design inherently solves the coordination challenge by orchestrating real communication between two network stack instances. Simultaneously, it provides a stream of valid packets that serves as a highquality baseline for our execution-guided structure-mutation strategy, which addresses the input complexity challenge. Our evaluation of NetPanic on the latest Linux kernel yielded significant results. It discovered 15 new, remotely triggerable vulnerabilities, none of which could be found or reproduced by the state-of-the-art kernel fuzzer Syzkaller. In direct comparison, NetPanic demonstrated vastly superior performance, achieving over 100 times the execution throughput and an average code coverage improvement of over 400 %. This performance gap, combined with a targeted ablation study, provides a dual validation: it confirms the correctness of our insight in identifying the unique challenges and proves the effectiveness of our solutions in addressing them. Our work provides concrete evidence that the kernel's remote attack surface is a potent and immediate threat, and we provide the community with the first effective methodology and a practical tool to begin securing it.",
+    "status": "notchecked"
+  },
+  {
+    "id": 242,
+    "year": 2026,
+    "title": "Death Is Not the End: a Longitudinal Study on the Impact of Automatic Updates on Container Vulnerability Lifespans",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00227",
+    "abstract": "The emergence of immutable infrastructures such as container ecosystems has transformed how software is built, deployed, and maintained. In particular, patches that were traditionally delivered through in-place updates are now applied through image rebuilds and propagated through hierarchies of dependent images. Despite these substantial structural changes in patch delivery, the security impacts, such as the lifecycle of vulnerabilities and patching responsibilities in the software supply chain, remain understudied. Examining maintainer and user interactions across official Docker repositories, we find that maintainers often rely on automated patching of inherited vulnerabilities rather than intervening manually, while unclear maintenance timelines and responsibility boundaries impede remediation when automation halts. Building on these insights, we present the first longitudinal study of vulnerability lifespans in the Docker ecosystem, spanning six years. We analyze over 9,000 CVEs across 137 applications (from 756,313 images), and find that 78 % of inherited vulnerabilities remain unresolved 30 days after disclosure. The predominant cause of prolonged exposure is the breakdown of automated patch propagation due to upstream end-of-life (EOL) events, leaving 11 %-and up to $\\mathbf{2 3 \\%}$ in deeper dependency layers-of inherited vulnerabilities unpatched even when fixes exist. Based on these findings, we provide actionable recommendations to reduce the window of exposure to vulnerability exploits and release a tool to improve transparency. More broadly, our work provides empirical insights into the fragility of automated patch propagation in software supply chains, emphasizing the need for clear maintenance practices and accountability across dependency hierarchies.",
+    "status": "notchecked"
+  },
+  {
+    "id": 243,
+    "year": 2026,
+    "title": "Papers, Please: A First Look at Age Verification on the Web",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00161",
+    "abstract": "Since 2022, twenty-five US states covering more than 40% of the US population have adopted laws compelling websites with content “harmful to minors” to verify their users' ages. Many websites that comply with these laws are widely reported to rely on third-party services, effectively outsourcing the age verification process. However, little is known about how these services are shaping the web and affecting user privacy. In this work, we conduct the first large-scale exploration of age verification providers on the web. We begin by exploring the CrUX top one million websites from three different states—two with legal age verification mandates and one without—to identify the prevalence and composition of age verification services. We then reverse engineer Yoti, the dominant age verification provider, and provide an in-depth privacy analysis. Our findings show that age verification services can be ineffective in restricting minors, create significant new privacy risks for end users, and are causing the first instance of cross-state balkanization of the web in the US. We find that Yoti often requires end users to share sensitive data—photos of their face, government IDs, credit card details, browser fingerprinting data, the website being accessed, and more. Such data may be entrusted not only to the contracted provider, but also to several “fourth parties” that are significantly less visible to users. We identify security and privacy issues, and connect these findings to key assumptions underlying recent Supreme Court precedent.",
+    "status": "notchecked"
+  },
+  {
+    "id": 244,
+    "year": 2026,
+    "title": "Incalmo: an Autonomous Llm-Assisted System for Red Teaming Multi-Host Networks",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00132",
+    "abstract": "Security operators use red teams to simulate real attackers and proactively find defense gaps. In realistic enterprise settings, this involves executing multi-host network attacks spanning many \"stepping stone\" hosts. Unfortunately, red teams are expensive and entail significant expertise and effort. Given the promise of LLMs in CTF challenges, we first analyze if LLMs can autonomously execute multi-host red team exercises. We find that state-of-the-art LLM-assisted offense systems (e.g., PentestGPT, CyberSecEval3) with leading LLMs (e.g., Sonnet 4, Gemini 2.5 Pro) are unable to do so. Building on our observations in understanding the failure modes of state-of-the-art systems, we argue the need to improve the abstractions and interfaces for LLM-assisted red teaming. Based on this insight, we present the design and implementation of Incalmo, an LLM-assisted system for autonomously red teaming multi-host networks. Incalmo uses LLMs to plan red team exercises in terms of high-level declarative tasks that are executed by domain-specific task agents. Incalmo also uses auxiliary services to manage context and acquired assets. For our evaluation, we develop MHBench, a novel multi-host attack benchmark with 40 realistic emulated networks (from 22 to 50 hosts). We find that Incalmo successfully acquires critical assets (i.e., key hosts or data) in 37 out of 40 MHBench environments. In contrast, state-of-the-art LLM-assisted systems succeed in only 3 out of 40 environments. We show that Incalmo is efficient-successful attacks took 12-54 minutes and cost <$15 in LLM credits.",
+    "status": "notchecked"
+  },
+  {
+    "id": 245,
+    "year": 2026,
+    "title": "PromptCOS: Towards Content-Only System Prompt Copyright Auditing for LLMs",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00142",
+    "abstract": "System prompts are critical for shaping the behavior and output quality of large language model (LLM)-based applications, driving substantial investment in optimizing high-quality prompts beyond traditional handcrafted designs. However, as system prompts become valuable intellectual property, they are increasingly vulnerable to prompt theft and unauthorized use, highlighting the urgent need for effective copyright auditing, especially watermarking. Existing methods rely on verifying subtle logit distribution shifts triggered by a query. We observe that this logit-dependent verification framework is impractical in real-world content-only settings, primarily because (1) random sampling makes content-level generation unstable for verification, and (2) stronger instructions needed for content-level signals compromise prompt fidelity. To overcome these challenges, we propose PromptCOS, the first content-only system prompt copyright auditing method based on content-level output similarity. PromptCOS achieves watermark stability by designing a cyclic output signal as the conditional instruction's target. It preserves prompt fidelity by injecting a small set of auxiliary tokens to encode the watermark, leaving the main prompt untouched. Furthermore, to ensure robustness against malicious removal, we optimize cover tokens, i.e., critical tokens in the original prompt, to ensure that removing auxiliary tokens causes severe performance degradation. Experimental results show that promptCOS achieves high effectiveness (99.3% average watermark similarity), strong distinctiveness (60.8% higher than the best baseline), high fidelity (accuracy degradation no greater than 0.6%), robustness (resilience against four potential attack categories), and high computational efficiency (up to 98.1% cost saving).",
+    "status": "notchecked"
+  },
+  {
+    "id": 246,
+    "year": 2026,
+    "title": "AttnTrace: Contextual Attribution of Prompt Injection and Knowledge Corruption",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00198",
+    "abstract": "Long-context large language models (LLMs), such as Gemini-2.5-Pro and Claude-Sonnet-4, are increasingly used to empower advanced AI systems, including retrieval-augmented generation (RAG) pipelines and autonomous agents. In these systems, an LLM receives an instruction along with a context--often consisting of texts retrieved from a knowledge database or memory--and generates a response that is contextually grounded by following the instruction. Recent studies have designed solutions to trace back to a subset of texts in the context that contributes most to the response generated by the LLM. These solutions have numerous real-world applications, including performing post-attack forensic analysis and improving the interpretability and trustworthiness of LLM outputs. While significant efforts have been made, state-of-the-art solutions such as TracLLM often lead to a high computation cost, e.g., it takes TracLLM hundreds of seconds to perform traceback for a single response-context pair. In this work, we propose AttnTrace, a new context traceback method based on the attention weights produced by an LLM for a prompt. To effectively utilize attention weights, we introduce two techniques designed to enhance the effectiveness of AttnTrace, and we provide theoretical insights for our design choice. We also perform a systematic evaluation for AttnTrace. The results demonstrate that AttnTrace is more accurate and efficient than existing state-of-the-art context traceback methods. We also show that AttnTrace can improve state-of-the-art methods in detecting prompt injection under long contexts through the attribution-before-detection paradigm. As a real-world application, we demonstrate that AttnTrace can effectively pinpoint injected instructions in a paper designed to manipulate LLM-generated reviews. The code is at https://github.com/Wang-Yanting/AttnTrace.",
+    "status": "notchecked"
+  },
+  {
+    "id": 247,
+    "year": 2026,
+    "title": "Hollow-LLM Attack: Computationally Trivial Weights in Zero-Knowledge Verification of LLM Inference",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00258",
+    "abstract": "As large language models (LLMs) grow in scale and are predominantly served from remote platforms, verifying faithful inference execution becomes critical (i.e., ensuring that a provider actually executes the advertised model and computational workload rather than a tampered or downsized variant). Zero-knowledge (ZK) LLM inference offers an appealing approach. It promises public verifiability and delivers per-instance guarantees of equational correctness by proving that an output is consistent with executing a public architecture under committed, private weights. Though, we show that it does not bind the effort expended to produce the output. In this paper, we formalize this overlooked effort gap and introduce the Hollow-LLM Attack, in which a dishonest provider retains the declared architecture and parameter count but embeds ghost weights whose algebraic structure collapses effective computation. These witnesses satisfy the verification circuit and yield valid proofs, even though the dishonest model owner, who serves as the prover, performs computation commensurate with a much smaller model than the declared public architecture. This creates a profitable equilibrium in which providers deliver provably correct outputs at small-model cost while overclaiming model size. Accordingly, we characterize concrete families of ghost weights that compose with standard transformer blocks and show that such hollow deployments substantially reduce serving cost with zero quality loss under the same verification circuit. These findings underscore that proof of correct inference is not proof of large-model execution and necessitate additional protections to bind correctness to verifiable computational work.",
+    "status": "notchecked"
+  },
+  {
+    "id": 248,
+    "year": 2026,
+    "title": "Goldilocks and the Three P-States: Mitigating Hertzbleed with Formal Leakage Guarantees",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00167",
+    "abstract": "Hertzbleed is an emerging class of remote timing attacks that can leak secrets previously considered beyond the reach of timing analysis. The attack exploits how, when a processor exceeds power or thermal limits and starts throttling, CPU frequency—and thus, program runtime—becomes dependent on power consumption. In response to Hertzbleed, several software-level mitigations have been proposed, including masking, key refresh, noise injection, and disabling frequency boost. However, none of these mitigations achieves general software applicability, low overhead, and provable security. In this work, we introduce Goldilocks, a practical mitigation against Hertzbleed. Goldilocks treats Hertzbleed as an information-theoretic channel and limits how much information the channel can carry by constraining when and how throttling can occur. It can be deployed on existing processors with no changes to application software, maintains a CPU frequency level that is “just right” for each machine and workload, and provides formal leakage bounds that reduce worst-case leakage growth from linear in execution time to as little as logarithmic. Our evaluation across a variety of processors and workloads shows that Goldilocks effectively mitigates Hertzbleed attacks and incurs low overhead.",
+    "status": "notchecked"
+  },
+  {
+    "id": 249,
+    "year": 2026,
+    "title": "TDXRay: Microarchitectural Side-Channel Analysis of Intel TDX for Real-World Workloads",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00170",
+    "abstract": "Confidential computing with VM-based trusted execution environments (TEEs) promises to protect code and data from a privileged cloud operator, enabling privacy-preserving workloads ranging from medical analytics to AI inference. However, most deployments exclude microarchitectural side channels from their threat model, shifting the burden to application developers who lack practical, general-purpose tools to assess (let alone mitigate) leakage. In particular, it remains unclear which host-observable signals persist under TDX's strict isolation and whether these signals can reveal sensitive information about confidential workloads. In this paper, we systematically investigate the side-channel attack surface in Intel TDX. We identify four new side-channel primitives: SEPTrace, Load+Probe, TSX-Probe, and MWAITProbe. Together, they expose page-level and cache-level activity with varying temporal precision. By combining these primitives, we construct TDXRay, a host-side measurement framework that produces highly accurate, cache-line-granular memory access traces of unmodified confidential VMs. Using TDXRay, we build two case studies: (1) a classic AES T-table attack in which a malicious hypervisor recovers the secret key from access-pattern leakage, and (2) an attack against large language models in which the host infers user prompts by monitoring memory accesses during tokenization. Our evaluation demonstrates that TDXRay can reliably recover user prompts from a single memory access trace, thus posing a severe threat to private LLM inference. Finally, we investigate and discuss mitigation strategies at system and application level. While effective countermeasures based on ORAM can be a short-term solution, our results highlight the need for long-term investment in improving Intel TDX and similar architectures against this class of attacks.",
+    "status": "notchecked"
+  },
+  {
+    "id": 250,
+    "year": 2026,
+    "title": "BreakFAST: Confused Deputy Attack on Infinity Fabric to Break AMD SEV-SNP",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00259",
+    "abstract": "SEV-SNP is AMD's offering of confidential computing in the cloud. It enables the creation of so-called confidential virtual machines. To achieve its security, SEV-SNP relies on a trusted co-processor called the Platform Security Processor (PSP). In this paper, we present the following novel observations: The hypervisor can change the MMIO address mapping of internal devices (e.g., SMU that manages power). Worse, these changes affect how PSP accesses to system DRAM are routed. With this ability, we showcase that we can mount a confused deputy attack on the PSP. Specifically, we can trick the PSP into writing attacker-controlled values to the MMIO range of internal devices. As there is little documentation on internal devices, it is challenging to identify: which device to write to, at what location, and with what value. To this end, we reverse engineer an undocumented device called FASTREG. Its role is to map the internal control network 4 GB address space as an addressable range (e.g., to the internal device, hypervisor, PSP) to facilitate read/write. Putting these two observations together, we use the PSP to update the internal control network to disable the IOMMU's SEV-SNP protections, to subsequently fake attestation and enable debug on production CVMs.",
+    "status": "notchecked"
+  },
+  {
+    "id": 251,
+    "year": 2026,
+    "title": "One Char to Rule Them All: Systematically Exploring and Exploiting DNS Silent Vulnerabilities in Domain Name Resolution",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00260",
+    "abstract": "Domain names function as human-readable identifiers on the Internet, with characters serving as their essential building blocks. However, since the initial specification of domain names in 1983, the security implications of handling special characters within the domain name resolution process have remained largely overlooked. In this work, we conducted the first systematic study of special character handling logic in DNS, reviewing DNS RFCs and analyzing 31 widely-used DNS software implementations through source code review and gray-box testing. Our systematic analysis reveals two new DNS logic vulnerabilities arising from inconsistencies and silent handling behaviors, leading to two classes of attacks (four variants) that affect all DNS roles, including stub resolvers, forwarders, recursive resolvers, and authoritative nameservers. We name them the SHAR attack. Attackers can exploit these vulnerabilities to launch DNS cache poisoning and load balancing disruption attacks. Through comprehensive experiments, we validate the impact on the real world. All 31 tested mainstream DNS software implementations are vulnerable to SHAR. Notably, attackers can seize control of domain names, even the entire TLD (e.g.,. ir) or deceive victim resolvers to return invalid responses for legitimate queries, resulting in a persistent DoS effect. The SHAR attack can also enhance 10/13 well-known off-path DNS cache poisoning attacks (2002-2025). To further determine the impact in the wild, we test all DNS-related roles, including 21 mainstream Wi-Fi routers, 6 router OSes, 43 public DNS services, 883.5 K stable open DNS resolvers, Root servers, TLD servers, SLD servers, and 223.6 M domain names. The results show that the SHAR attack affects all tested Wi-Fi routers, router OSes, and public DNS services. In addition, we identify that $5 3 1. 1 \\mathrm{K}(6 0. 1 \\%)$ resolvers, $5 2 2(3 6. 1 \\%)$ TLDs, and $1 2. 5 \\mathrm{M}$ (5.6%) domain names are also vulnerable to the SHAR attack. Following the best practice of responsible disclosure, we have reported these vulnerabilities to all affected vendors.",
+    "status": "notchecked"
+  },
+  {
+    "id": 252,
+    "year": 2026,
+    "title": "Resolve the Unresolved: Systematic Work Profiling for DNS Resolvers",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00261",
+    "abstract": "The DNS standards mandate that recursive resolvers should bound the amount of work they perform per query. Yet, for nearly four decades, the specifications have offered little concrete guidance on how to enforce such limits, largely because of the system's daunting and growing complexity. This ambiguity has led to divergent implementations, recurring performance bugs, and above all, constant discoveries of denial-of-service (DoS) vectors. Prior research has inspected only fragments of a resolver's behavior, mostly using informal methods, while existing mitigations hinge on heuristic thresholds that lack broadly accepted guidance. As a result, both the issues uncovered and the fixes deployed remain narrow in scope. We address this gap by modeling recursive resolution as an Extended Transition System (ETS) with cost annotations and formulating the computation of maximum per-query work as a constrained longest path search problem with provable guarantees. Building on this formalism, we introduce rProfiler, a systematic profiling framework for measuring and modeling the work performed by DNS resolvers. Applying rProfiler against widely used resolvers exposes severe DoS vectors: issuing only 30 work-intensive queries per second cuts these resolvers' performance by at least 67%-and in some cases, renders them completely unresponsive. Diagnosing resolvers with rProfiler also yields actionable insights to improve their robustness against DoS attacks and subtle performance bugs.",
+    "status": "notchecked"
+  },
+  {
+    "id": 253,
+    "year": 2026,
+    "title": "Knocking on the Front Door: An LLM-Guided Systematic Analysis of DNS Query Processing Vulnerabilities",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00208",
+    "abstract": "The Domain Name System (DNS) is defined by simple rules, yet its implementations are notoriously complex. While significant research, such as the TuDoor Attack, has systematically explored logic vulnerabilities in DNS response pre-processing (the back door), a fundamental and equally critical question remains unanswered: what occurs when a malformed query is Knocking on the Front Door? This represents a substantial, unassessed attack surface. To address this research gap, we present QuerySynth, an LLM-guided protocol behavior exploration framework. QuerySynth's core innovation is to automatically deconstruct the vast corpus of DNS RFC documents into a machinereadable Structured Protocol Model (SPM), which in turn guides the systematic generation of a malformed query corpus. We then conducted a large-scale differential analysis of 22 mainstream DNS resolver software, including BIND, Unbound, and PowerDNS. Our analysis reveals a class of severe, exploitable flaws stemming from implementation inconsistencies, which we collectively term the JIGGLE Attack. The JIGGLE Attack includes 3 primitives that an attacker can exploit to: (1) instigate a Pulsing DoS attack via anomalous echo response, (2) establish a Covert Channel for data exfiltration using the same anomalous echo logic, and (3) enhance existing off-path cache poisoning attacks by using Upstream Silence to open a multi-second vulnerability window. We further conducted an in-the-wild active measurement of 44 major public DNS services such as Cloudflare and Google DNS, and of $\\mathbf{1. 3}$ million open DNS resolvers. We found that the silence behavior was observed across all $44(100 \\%)$ tested services and no less than $852,770(64.84 \\%)$ open resolvers, while the anomalous echo primitives affect 18 services $(40.90 \\%)$ and a minimum of $\\mathbf{7 5, 7 1 1} \\boldsymbol{(} \\mathbf{5. 7 6 \\%} \\boldsymbol{)}$ open resolvers. Following the best practice of responsible disclosure, we have responsibly disclosed our findings to related vendors. Our research highlights the urgent need for the standardization of DNS query processing logic.",
+    "status": "notchecked"
+  },
+  {
+    "id": 254,
+    "year": 2026,
+    "title": "APT to Disagree: A Comparative Analysis of Attribution in Commercial TI",
+    "category": "top-tier",
+    "publication": "IEEE S&P",
+    "paper": "https://doi.org/10.1109/SP63933.2026.00215",
+    "abstract": "Attributed cyber threat intelligence (TI) plays an important role in the effective mitigation of cyber attacks. Yet, despite the central role of attribution in policy, practice, and vendor reporting, little is known about the coverage and reliability of attribution by threat intelligence vendors. No study has systematically investigated attribution across a large set of leading TI vendors. We close this gap and provide a longitudinal comparative analysis across $\\mathbf{1 3. 5}$ million IOCs collected over the last 14 years from seven vendors. To compare IOC attribution across vendors, we normalize heterogeneous feeds and reconcile actor names using an evaluated and augmented version of MISP Threat Actor Galaxy (MISP TAG). Next, we address two questions: (i) what is the scope of actor-tracking by vendors, and (ii) how consistent is attribution among vendors? We find that the majority of actors tracked by one vendor are not tracked by the other. Furthermore, IOCs observed by multiple TI vendors are rare (1 %), illustrating that commercial TI feeds, like open-source feeds, primarily provide singleton IOCs. We also find limited overlap in IOCs for jointly tracked actors by two vendors. We measure attribution agreement among vendors with Krippendorff's $\\alpha$. We find mostly moderate agreement among vendors for actor attribution. By contrast, country attribution has high agreement. Our results have implications for actor-centric defenses, compliance, and geopolitical uses of attribution.",
+    "status": "notchecked"
   }
 ]

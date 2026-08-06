@@ -1,0 +1,3537 @@
+[
+  {
+    "key": "gleipnerabenchmarkforgadgetchaindetectioninjavadeserializationvulnerabilities",
+    "id": 12141,
+    "title": "Gleipner: A Benchmark for Gadget Chain Detection in Java Deserialization Vulnerabilities",
+    "paper": "https://doi.org/10.1145/3715711",
+    "method": "构建大规模系统化合成基准 Gleipner，并用其评测七种 Java 反序列化 gadget chain 检测方法。",
+    "technique": [
+      {
+        "name": "Gleipner 系统化合成基准",
+        "type": "data-construction",
+        "target": "Java 反序列化 gadget chain 检测器",
+        "action": "综合程序分析约束并构造覆盖主要检测挑战的合成用例",
+        "effect": "提供透明、定性且可靠的检测成熟度评测",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "既有 gadget chain 检测研究缺少统一可靠的基准，难以比较改进与权衡。",
+    "scenario": "Java 反序列化漏洞中的 gadget chain 检测工具评测。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "detectingsmartcontractstateinconsistencybugsviaflowdivergenceandmultiplexsymbolicexecution",
+    "id": 12142,
+    "title": "Detecting Smart Contract State-Inconsistency Bugs via Flow Divergence and Multiplex Symbolic Execution",
+    "paper": "https://doi.org/10.1145/3715712",
+    "method": "DivertScan 结合流分歧分析、多路符号执行、过近似预检查和选择性探索，识别可利用的状态不一致漏洞。",
+    "technique": [
+      {
+        "name": "流分歧分析",
+        "type": "analysis-method",
+        "target": "智能合约数据竞争影响",
+        "action": "跟踪竞争变量的后续数据流并判断其是否影响关键计算或决策",
+        "effect": "过滤不可利用的良性数据竞争",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "多路符号执行",
+        "type": "testing-method",
+        "target": "不同交易执行顺序",
+        "action": "在一次求解中检查多种执行顺序是否共享可行起始状态",
+        "effect": "降低不可行路径导致的误报",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "数据竞争式检测会因良性竞争和不可行执行顺序产生大量状态不一致漏洞误报。",
+    "scenario": "以太坊智能合约的重入和交易顺序依赖漏洞检测。",
+    "evidence": "real-world",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "mendelfuzzthereturnofthedeterministicstage",
+    "id": 12143,
+    "title": "MendelFuzz: The Return of the Deterministic Stage",
+    "paper": "https://doi.org/10.1145/3715713",
+    "method": "识别对覆盖增长贡献最大的关键种子和关键字节，仅枚举极小的确定性变异空间。",
+    "technique": [
+      {
+        "name": "关键种子与字节剪枝的确定性模糊测试",
+        "type": "testing-method",
+        "target": "灰盒模糊测试的确定性阶段",
+        "action": "定位少量高贡献种子和字节并剪除无效确定性输入",
+        "effect": "保留简单变异优势同时显著降低枚举开销",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "经典确定性模糊阶段生成输入过多，计算开销常超过其覆盖收益。",
+    "scenario": "AFL++ 对安全关键应用的覆盖与漏洞发现。",
+    "evidence": "benchmark",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "smartshothunthiddenvulnerabilitiesinsmartcontractsusingmutablesnapshots",
+    "id": 12144,
+    "title": "SmartShot: Hunt Hidden Vulnerabilities in Smart Contracts using Mutable Snapshots",
+    "paper": "https://doi.org/10.1145/3715714",
+    "method": "SmartShot 将合约状态和区块链环境作为可变异元素，以可变快照、符号污点引导和双重验证开展链上模糊测试。",
+    "technique": [
+      {
+        "name": "可变快照模糊测试",
+        "type": "testing-method",
+        "target": "深层合约状态与特定链上环境",
+        "action": "快速恢复并变异合约状态和历史链上环境，在检查点处接入模糊循环",
+        "effect": "提高隐藏漏洞覆盖并支持真实环境链上测试",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "符号污点引导的状态变异",
+        "type": "analysis-method",
+        "target": "智能合约状态变量",
+        "action": "以符号污点分析和双重验证指导状态变异",
+        "effect": "更可靠地探索与漏洞相关的深层状态",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "现有合约模糊器依赖交易序列且局限于本地部署，难以触达深层状态和真实链上环境。",
+    "scenario": "真实部署的 DeFi 智能合约隐藏漏洞与零日漏洞发现。",
+    "evidence": "real-world",
+    "lens": [
+      "渗透测试",
+      "靶场/环境生成"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "ondemandscenariogenerationfortestingautomateddrivingsystems",
+    "id": 12145,
+    "title": "On-Demand Scenario Generation for Testing Automated Driving Systems",
+    "paper": "https://doi.org/10.1145/3715722",
+    "method": "OSG 从真实交通数据学习，以风险强度调节器控制风险等级，并用改进启发式搜索维持场景多样性。",
+    "technique": [
+      {
+        "name": "风险强度调节的按需场景生成",
+        "type": "data-construction",
+        "target": "自动驾驶测试场景",
+        "action": "量化控制场景风险等级并以启发式搜索保持各风险层级的多样性",
+        "effect": "生成从自然到安全关键的多风险测试场景",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "传统自动驾驶测试往往只采样自然场景或生成过于简单、不真实的危险场景。",
+    "scenario": "CARLA 模拟器中不同自动驾驶系统的分风险等级测试。",
+    "evidence": "simulation",
+    "lens": [
+      "靶场/环境生成"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "elementbasedautomateddnnrepairwithfinetunedmaskedlanguagemodel",
+    "id": 12146,
+    "title": "Element-Based Automated DNN Repair with Fine-Tuned Masked Language Model",
+    "paper": "https://doi.org/10.1145/3715716",
+    "method": "MLM4DNN 微调掩码语言模型恢复九类 DNN 关键元素，并以静态过滤和三指标验证筛选补丁。",
+    "technique": [
+      {
+        "name": "关键元素掩码恢复",
+        "type": "model",
+        "target": "DNN 源码中的九类关键元素",
+        "action": "在正确源码上掩码关键元素并微调 MLM 预测修复",
+        "effect": "生成保持 DNN 正常功能的候选补丁",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "DNN 补丁过滤与验证",
+        "type": "testing-method",
+        "target": "生成的 DNN 修复补丁",
+        "action": "用轻量静态分析过滤低质量补丁并以三项指标验证有效性",
+        "effect": "提升自动修复效率和可信度",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "DNN 模型难以调试修复，既有方法依赖训练后调整或预定义缺陷模式。",
+    "scenario": "Python DNN 模型源码的自动程序修复。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "mystiqueautomatedvulnerabilitypatchportingwithsemanticandsyntacticenhancedllm",
+    "id": 12147,
+    "title": "Mystique: Automated Vulnerability Patch Porting with Semantic and Syntactic-Enhanced LLM",
+    "paper": "https://doi.org/10.1145/3715718",
+    "method": "Mystique 切取漏洞相关且语法完整的语句，微调 LLM 生成目标分支修复函数，再迭代检查和细化。",
+    "technique": [
+      {
+        "name": "语义语法增强的漏洞补丁移植",
+        "type": "system-mechanism",
+        "target": "存在分支差异的未修复漏洞函数",
+        "action": "提取源补丁与目标函数签名，以微调 LLM 生成并迭代校验修复函数",
+        "effect": "自动完成跨分支漏洞补丁适配",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "代码分支差异使安全补丁无法直接应用，人工移植缓慢且现有自动方法易忽略语义和语法上下文。",
+    "scenario": "多项目、多语言开源仓库的真实 CVE 分支补丁移植。",
+    "evidence": "real-world",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "smartcontractfuzzingtowardsprofitablevulnerabilities",
+    "id": 12148,
+    "title": "Smart Contract Fuzzing Towards Profitable Vulnerabilities",
+    "paper": "https://doi.org/10.1145/3715720",
+    "method": "VERITE 以 DeFi 动作变异、异常资金流候选筛选和梯度下降利润最大化，自动发现并利用可获利漏洞。",
+    "technique": [
+      {
+        "name": "利润导向智能合约模糊测试",
+        "type": "testing-method",
+        "target": "DeFi 合约中的可获利漏洞",
+        "action": "变异 DeFi 资金流动作并依据异常资金流筛选候选",
+        "effect": "加速可获利漏洞发现",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "梯度下降利润最大化",
+        "type": "algorithm",
+        "target": "已发现的可获利攻击输入",
+        "action": "优化候选输入参数以增加攻击收益",
+        "effect": "自动最大化漏洞利用利润",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "现有合约模糊测试缺少利润中心的探索和自动收益最大化能力。",
+    "scenario": "真实遭利用的 DeFi 项目审计和零日漏洞发现。",
+    "evidence": "real-world",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "cktyperenhancingtypeinferenceforjavacodesnippetsbyleveragingcrowdsourcingknowledgeinstackoverflow",
+    "id": 12149,
+    "title": "CKTyper: Enhancing Type Inference for Java Code Snippets by Leveraging Crowdsourcing Knowledge in Stack Overflow",
+    "paper": "https://doi.org/10.1145/3715724",
+    "method": "CKTyper 检索相似 Stack Overflow 代码片段，汇总帖子上下文供 LLM 推断类型，并用 API 类型字典消除幻觉。",
+    "technique": [
+      {
+        "name": "众包知识增强类型推断",
+        "type": "system-mechanism",
+        "target": "缺少 API 具体类型的 Java 代码片段",
+        "action": "检索相似片段并抽取帖子中的 API 语境，构造上下文提示供 LLM 推断",
+        "effect": "提高 API 类型推断精确率和召回率",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "API 类型字典约束",
+        "type": "analysis-method",
+        "target": "LLM 生成的类型结果",
+        "action": "用库 API 类型字典校验和约束预测",
+        "effect": "消除类型幻觉",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "孤立代码片段缺少 API 类型信息，既有推断方法未利用帖子中的外部语境。",
+    "scenario": "Stack Overflow Java 代码片段的 API 类型补全。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "ransomwaredetectionthroughtemporalcorrelationbetweenencryptionandiobehavior",
+    "id": 12150,
+    "title": "Ransomware Detection through Temporal Correlation between Encryption and I/O Behavior",
+    "paper": "https://doi.org/10.1145/3715725",
+    "method": "RansomRadar 检测加密计算负载与被加密文件 I/O 大小之间的时间相关性。",
+    "technique": [
+      {
+        "name": "加密与 I/O 时间相关检测",
+        "type": "measurement-method",
+        "target": "勒索软件文件破坏行为",
+        "action": "关联读取、加密和写回过程中加密计算负载与文件大小的时间序列",
+        "effect": "在隐蔽加密和仿良性 I/O 下识别勒索攻击",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "演化中的勒索软件使用隐蔽加密和仿良性 I/O，破坏了既有检测假设。",
+    "scenario": "来自 89 个家族的最新勒索软件样本检测。",
+    "evidence": "benchmark",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "declaruibridgingdesignanddevelopmentwithautomateddeclarativeuicodegeneration",
+    "id": 12151,
+    "title": "DeclarUI: Bridging Design and Development with Automated Declarative UI Code Generation",
+    "paper": "https://doi.org/10.1145/3715726",
+    "method": "DeclarUI 融合计算机视觉、多模态大模型、页面转换图和编译器反馈迭代生成声明式 UI 代码。",
+    "technique": [
+      {
+        "name": "多模态声明式 UI 生成",
+        "type": "system-mechanism",
+        "target": "移动应用 UI 设计稿",
+        "action": "分割组件、用页面转换图建模跨页交互并由 MLLM 生成代码",
+        "effect": "提高视觉还原度和功能完整性",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "编译器驱动迭代优化",
+        "type": "testing-method",
+        "target": "生成的声明式 UI 代码",
+        "action": "依据编译反馈反复修正代码",
+        "effect": "提高代码质量与编译成功率",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "从 UI 设计到可运行代码的转换耗时，直接使用多模态模型又难以识别组件和完整交互逻辑。",
+    "scenario": "React Native、Flutter 和 ArkUI 移动界面代码生成。",
+    "evidence": "user study",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "coffeacodeefficiencybenchmarkforcodegeneration",
+    "id": 12152,
+    "title": "COFFE: A Code Efficiency Benchmark for Code Generation",
+    "paper": "https://doi.org/10.1145/3715727",
+    "method": "COFFE 构造具区分度的压力测试用例，并以 CPU 指令数定义 efficient@k 评估生成代码的时间效率。",
+    "technique": [
+      {
+        "name": "COFFE 代码效率基准",
+        "type": "data-construction",
+        "target": "大模型生成的函数级和文件级代码",
+        "action": "基于契约生成压力测试并采用两种新测试格式增强效率区分度",
+        "effect": "稳定比较不同代码解法的时间效率",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "efficient@k 指标",
+        "type": "measurement-method",
+        "target": "生成代码执行效率",
+        "action": "以 CPU 指令数度量 k 个候选解的效率",
+        "effect": "减少执行时间测量的不稳定性",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "现有代码生成基准侧重正确性，测试用例和执行时间测量不足以可靠区分代码效率。",
+    "scenario": "14 个流行大模型的函数级和文件级代码生成评测。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "pinningisfutileyouneedmorethanlocaldependencyversioningtodefendagainstsupplychainattacks",
+    "id": 12153,
+    "title": "Pinning Is Futile: You Need More Than Local Dependency Versioning to Defend against Supply Chain Attacks",
+    "paper": "https://doi.org/10.1145/3715728",
+    "method": "通过反事实分析和历史依赖解析模拟，量化 npm 版本约束对攻击暴露与维护成本的影响。",
+    "technique": [
+      {
+        "name": "历史依赖解析反事实模拟",
+        "type": "analysis-method",
+        "target": "npm 依赖版本固定策略",
+        "action": "在历史时间点模拟依赖解析并比较不同版本约束的安全与维护结果",
+        "effect": "揭示本地固定依赖对恶意更新暴露和过期风险的影响",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "依赖版本固定是否能抵御供应链攻击，以及其安全收益能否抵消维护成本，尚有争议。",
+    "scenario": "npm 生态的软件供应链依赖管理。",
+    "evidence": "simulation",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "anempiricalstudyofsuppressedstaticanalysiswarnings",
+    "id": 12154,
+    "title": "An Empirical Study of Suppressed Static Analysis Warnings",
+    "paper": "https://doi.org/10.1145/3715729",
+    "method": "跨三种语言和四种静态分析器，实证分析告警抑制的普及、演化、与告警关系及使用原因。",
+    "technique": [
+      {
+        "name": "静态告警抑制实证分析",
+        "type": "analysis-method",
+        "target": "开源项目中的静态分析告警抑制",
+        "action": "统计抑制随时间的变化、实际影响和引入原因",
+        "effect": "刻画无效抑制及其隐藏未来告警的风险",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "静态分析告警抑制连接工具与开发者，但其实际使用和风险缺少系统认识。",
+    "scenario": "Python 等三种语言开源项目的静态分析实践。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "towardsdiverseprogramtransformationsforprogramsimplification",
+    "id": 12155,
+    "title": "Towards Diverse Program Transformations for Program Simplification",
+    "paper": "https://doi.org/10.1145/3715730",
+    "method": "先从真实简化提交归纳变换与动机，再训练 SimpT5 定位修改行并用质量检查器生成语义等价的精简程序。",
+    "technique": [
+      {
+        "name": "SimpT5 程序简化",
+        "type": "model",
+        "target": "需要减少代码行数的程序",
+        "action": "编码简化修改行并以质量检查器约束生成结果",
+        "effect": "生成语义等价且更短的程序",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "自动程序简化方法的有效性缺乏共识，且既有重构类型不能覆盖开发者的多样变换。",
+    "scenario": "开源项目中的开发者诱导程序简化。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "todayscatistomorrowsdogaccountingfortimebasedchangesinthelabelsofmlvulnerabilitydetectionapproaches",
+    "id": 12156,
+    "title": "Today’s Cat Is Tomorrow’s Dog: Accounting for Time-Based Changes in the Labels of ML Vulnerability Detection Approaches",
+    "paper": "https://doi.org/10.1145/3715731",
+    "method": "把漏洞数据重构为随时间更新训练与测试标签的数据集序列，并用 Mann-Kendall 检验性能趋势。",
+    "technique": [
+      {
+        "name": "时间可用标签重构",
+        "type": "data-construction",
+        "target": "机器学习漏洞检测数据集",
+        "action": "按各历史时点可获得的知识同步重建训练和测试标签",
+        "effect": "避免回顾性信息造成的不现实评估",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "学习趋势检验",
+        "type": "measurement-method",
+        "target": "漏洞检测模型跨年性能",
+        "action": "用 Mann-Kendall 检验数据增加后性能是否持续改善",
+        "effect": "判断模型是否真正随时间学习",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "漏洞标签会随发现时间变化，使用完整历史标签会使现场性能评估失真。",
+    "scenario": "四个时间型漏洞数据集上五种机器学习检测模型的纵向评估。",
+    "evidence": "benchmark",
+    "lens": [
+      "开放集/泛化"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "anewapproachtoevaluatingnullabilityinferencetools",
+    "id": 12157,
+    "title": "A New Approach to Evaluating Nullability Inference Tools",
+    "paper": "https://doi.org/10.1145/3715732",
+    "method": "分析类型重建评测偏差，定义无该偏差的最优可空性注解，并对三种推断工具作同场比较。",
+    "technique": [
+      {
+        "name": "无偏可空性推断评测",
+        "type": "measurement-method",
+        "target": "Java 可空性注解推断工具",
+        "action": "系统探索设计空间并定义从未注解代码的最佳推断注解",
+        "effect": "避免擦除开发者注解的类型重建实验高估工具效果",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "不同工具对优质注解的定义不一，且类型重建实验受开发者同步语义修改影响而存在系统偏差。",
+    "scenario": "三种 Java 可空性注解推断工具的比较评估。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "acomprehensivestudyofbugfixpatternsinautonomousdrivingsystems",
+    "id": 12158,
+    "title": "A Comprehensive Study of Bug-Fix Patterns in Autonomous Driving Systems",
+    "paper": "https://doi.org/10.1145/3715733",
+    "method": "分析 Apollo 与 Autoware 的 1,331 个修复，构建自动驾驶缺陷层级及语法、语义修复模式分类。",
+    "technique": [
+      {
+        "name": "自动驾驶缺陷与修复模式分类",
+        "type": "analysis-method",
+        "target": "自动驾驶系统缺陷提交和报告",
+        "action": "归纳症状、根因以及 15 类语法和 27 类语义修复模式",
+        "effect": "形成缺陷识别与修复指南及基准",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "自动驾驶系统的实时和安全关键特性使维护困难，而人工调试修复策略缺少系统理解。",
+    "scenario": "Apollo 和 Autoware 的真实缺陷修复历史。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "anempiricalstudyonreleasewiserefactoringpatterns",
+    "id": 12159,
+    "title": "An Empirical Study on Release-Wise Refactoring Patterns",
+    "paper": "https://doi.org/10.1145/3715734",
+    "method": "在 207 个 Java 项目中识别发布周期内重构活动模式，并分析模式及转换对代码质量的影响。",
+    "technique": [
+      {
+        "name": "发布级重构模式分析",
+        "type": "analysis-method",
+        "target": "CI/CD 发布周期中的重构活动",
+        "action": "按时间分布归纳早活跃、晚活跃、持续活跃和持续不活跃模式并关联质量指标",
+        "effect": "揭示不同重构调度方式的质量影响",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "开发者如何在发布周期内安排重构及其代码质量后果尚不清楚。",
+    "scenario": "207 个开源 Java 项目的发布与重构历史。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "hallucinationdetectioninlargelanguagemodelswithmetamorphicrelations",
+    "id": 12160,
+    "title": "Hallucination Detection in Large Language Models with Metamorphic Relations",
+    "paper": "https://doi.org/10.1145/3715735",
+    "method": "MetaQA 通过提示变异构造蜕变关系，以响应是否违反关系来检测幻觉，无需外部资源或输出概率。",
+    "technique": [
+      {
+        "name": "蜕变关系幻觉检测",
+        "type": "testing-method",
+        "target": "开放源和闭源大语言模型回答",
+        "action": "变异提示并检查多次回答是否违反设计的蜕变关系",
+        "effect": "以自包含方式识别事实幻觉",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "依赖外部知识或输出概率的幻觉检测受可用性、隐私、延迟和闭源接口限制。",
+    "scenario": "多个问答数据集和四种开放、闭源大模型的幻觉评测。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "oneforalldoesnotworkenhancingvulnerabilitydetectionbymixtureofexpertsmoe",
+    "id": 12161,
+    "title": "One-for-All Does Not Work! Enhancing Vulnerability Detection by Mixture-of-Experts (MoE)",
+    "paper": "https://doi.org/10.1145/3715736",
+    "method": "MoEVD 将检测分为 CWE 分类与 CWE 专属漏洞判断，由不同专家分别学习不同漏洞类型。",
+    "technique": [
+      {
+        "name": "CWE 专家混合漏洞检测",
+        "type": "architecture",
+        "target": "类型差异和长尾分布下的代码漏洞",
+        "action": "先分类 CWE，再把样本路由给对应漏洞检测专家",
+        "effect": "改善常见及长尾 CWE 的检测性能",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "单一模型处理全部漏洞类型难以学习差异化模式，对低频漏洞尤其不利。",
+    "scenario": "深度学习代码漏洞检测及长尾 CWE 评测。",
+    "evidence": "benchmark",
+    "lens": [
+      "开放集/泛化"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "llamaresttesteffectiverestapitestingwithsmalllanguagemodels",
+    "id": 12162,
+    "title": "LlamaRestTest: Effective REST API Testing with Small Language Models",
+    "paper": "https://doi.org/10.1145/3715737",
+    "method": "LlamaRestTest 微调并量化两个 Llama3-8B 模型，生成真实 API 输入并从响应中推断参数依赖。",
+    "technique": [
+      {
+        "name": "小模型增强 REST API 测试",
+        "type": "testing-method",
+        "target": "OpenAPI 描述的黑盒 Web 服务",
+        "action": "用示例值和参数依赖数据微调量化模型，生成输入并依据服务器响应发现依赖",
+        "effect": "提高代码覆盖和内部服务器错误发现",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "大模型在 REST API 测试中的应用不足，且规格难以提供真实取值和跨参数约束。",
+    "scenario": "12 个真实 REST 服务的黑盒自动测试。",
+    "evidence": "real-world",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "codechangeintentiondevelopmentartifactandhistoryvulnerabilityputtingthemtogetherforvulnerabilityfixdetectionbyllm",
+    "id": 12163,
+    "title": "Code Change Intention, Development Artifact, and History Vulnerability: Putting Them Together for Vulnerability Fix Detection by LLM",
+    "paper": "https://doi.org/10.1145/3715738",
+    "method": "LLM4VFD 融合代码变更意图、关联 issue/PR 和相似历史修复，以思维链和上下文学习检测并解释漏洞修复提交。",
+    "technique": [
+      {
+        "name": "多源上下文漏洞修复检测",
+        "type": "system-mechanism",
+        "target": "开源软件提交",
+        "action": "联合分析变更意图、开发工件和检索到的历史漏洞修复",
+        "effect": "识别纠缠提交中的安全修复并生成解释",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "既有方法只看代码或有限 issue 上下文，忽视工件语义关联、纠缠提交和可解释性。",
+    "scenario": "BigVulFixes 数据集上的漏洞修复提交筛选。",
+    "evidence": "user study",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "qsfmultiobjectiveoptimizationbasedefficientsolvingforfloatingpointconstraints",
+    "id": 12164,
+    "title": "QSF: Multi-objective Optimization Based Efficient Solving for Floating-Point Constraints",
+    "paper": "https://doi.org/10.1145/3715739",
+    "method": "QSF 将浮点约束求解建模为双目标优化，并以专门的浮点变异算子执行进化搜索。",
+    "technique": [
+      {
+        "name": "浮点约束多目标进化求解",
+        "type": "algorithm",
+        "target": "非线性浮点约束",
+        "action": "同时最小化未满足约束数量与违反程度之和，并执行浮点专用变异",
+        "effect": "加速搜索式约束求解和浮点符号执行",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "浮点表示和非线性计算使约束求解低效。",
+    "scenario": "SMT-COMP 与真实浮点程序基准。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "adaptiverandomtestingwithqgramstheillusioncomestrue",
+    "id": 12165,
+    "title": "Adaptive Random Testing with Q-grams: The Illusion Comes True",
+    "paper": "https://doi.org/10.1145/3715740",
+    "method": "以历史执行的 q-gram 聚合和熵度量替代成对距离计算，将自适应随机测试复杂度从二次降为线性。",
+    "technique": [
+      {
+        "name": "q-gram 聚合自适应随机测试",
+        "type": "testing-method",
+        "target": "大规模测试用例选择",
+        "action": "统计历史执行中的 q-gram，并以聚合数据的多样性选择新用例",
+        "effect": "降低计算成本同时提升独特目标覆盖",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "传统自适应随机测试需要二次量级距离计算，难以扩展到大量执行。",
+    "scenario": "六个 Web 应用的自动测试。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "understandingandcharacterizingmockassertionsinunittests",
+    "id": 12166,
+    "title": "Understanding and Characterizing Mock Assertions in Unit Tests",
+    "paper": "https://doi.org/10.1145/3715741",
+    "method": "实证分析 11 个 Java 项目的 4,652 个测试，刻画 mock 断言的采用、验证对象和故障检测作用。",
+    "technique": [
+      {
+        "name": "Mock 断言使用实证分析",
+        "type": "analysis-method",
+        "target": "Java 单元测试中的不可观察行为验证",
+        "action": "统计 mock 断言验证的方法调用类型并分析其故障检测贡献",
+        "effect": "为支持 mock 断言的自动测试生成提供依据",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "自动测试生成很少考虑 mock 断言，且其实际用法缺乏系统认识。",
+    "scenario": "11 个流行 Java 项目的单元测试。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "crosssystemcategorizationofabnormaltracesinmicroservicebasedsystemsviametalearning",
+    "id": 12167,
+    "title": "Cross-System Categorization of Abnormal Traces in Microservice-Based Systems via Meta-Learning",
+    "paper": "https://doi.org/10.1145/3715742",
+    "method": "TraFaultDia 把异常轨迹分类建模为多类任务，通过少样本元学习快速适应同系统或跨系统的新故障类别任务。",
+    "technique": [
+      {
+        "name": "跨系统少样本异常轨迹元学习",
+        "type": "model",
+        "target": "微服务系统异常轨迹",
+        "action": "在多个分类任务上训练并用每类少量标注适配未见任务和系统",
+        "effect": "自动识别故障组件与根因类别",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "现有 AIOps 能定位异常服务，但具体故障类型和原因仍需人工分析。",
+    "scenario": "TrainTicket 与 OnlineBoutique 微服务系统的跨系统故障诊断。",
+    "evidence": "benchmark",
+    "lens": [
+      "开放集/泛化"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "detectingandhandlingwotviolationsbylearningphysicalinteractionsfromdevicelogs",
+    "id": 12168,
+    "title": "Detecting and Handling WoT Violations by Learning Physical Interactions from Device Logs",
+    "paper": "https://doi.org/10.1145/3715743",
+    "method": "SysGuard 从设备模型和历史日志学习物理交互图，以 LLM 因果分析过滤伪依赖，并在线预测违规状态和生成处置策略。",
+    "technique": [
+      {
+        "name": "动态概率物理交互图",
+        "type": "model",
+        "target": "WoT 设备、应用与环境交互",
+        "action": "从历史设备日志学习动态概率图并在运行时推断违规状态",
+        "effect": "覆盖多源违规和动态环境影响",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "LLM 因果依赖过滤",
+        "type": "analysis-method",
+        "target": "设备日志中的候选依赖",
+        "action": "分析交互场景并去除与物理作用无关的设备依赖",
+        "effect": "提高违规检测和处置准确率",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "仅分析应用行为无法充分建模物理交互、多源违规和环境动态。",
+    "scenario": "两个真实 Web of Things 系统的运行时安全监控。",
+    "evidence": "real-world",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "thelandscapeoftoxicityanempiricalinvestigationoftoxicityongithub",
+    "id": 12169,
+    "title": "The Landscape of Toxicity: An Empirical Investigation of Toxicity on GitHub",
+    "paper": "https://doi.org/10.1145/3715744",
+    "method": "对 2,828 个分层抽样 GitHub 项目进行混合方法研究，以 ToxiCR 自动分类并人工分析 600 条评论。",
+    "technique": [
+      {
+        "name": "GitHub 毒性混合方法分析",
+        "type": "analysis-method",
+        "target": "开源项目评论与参与者行为",
+        "action": "用领域检测器大规模分类，并人工验证样本和分析毒性类型",
+        "effect": "识别毒性流行形式及其与项目、参与者特征的关联",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "缓解开源社区毒性需要理解其形态以及项目和参与者特征的关联。",
+    "scenario": "GitHub 开源软件项目的社区互动。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "duoreducebugisolationformultilayerextensiblecompilation",
+    "id": 12170,
+    "title": "DuoReduce: Bug Isolation for Multi-layer Extensible Compilation",
+    "paper": "https://doi.org/10.1145/3715747",
+    "method": "DuoReduce 联合缩减 MLIR 代码和编译 pass，利用 pass 顺序依赖、语义感知变换和跨维依赖加速缺陷隔离。",
+    "technique": [
+      {
+        "name": "双维 MLIR 缩减",
+        "type": "testing-method",
+        "target": "多层可扩展编译器缺陷",
+        "action": "同时缩减 IR 代码和编译 pass，并利用两维之间的关联去除无关元素",
+        "effect": "缩小复现输入和需检查的编译器代码范围",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "Pass 顺序依赖分析",
+        "type": "analysis-method",
+        "target": "MLIR 编译 pass 序列",
+        "action": "识别 pass 间顺序约束并剔除与故障无关的 pass",
+        "effect": "显著减少缩减时间",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "MLIR 的多层 pass 转换使缺陷定位复杂，朴素 delta debugging 需枚举大量 pass。",
+    "scenario": "三个大型 MLIR 编译器项目的真实缺陷隔离。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "roscallbaxstaticallydetectinginconsistenciesincallbackfunctionsetupofroboticsystems",
+    "id": 12171,
+    "title": "ROSCallBaX: Statically Detecting Inconsistencies in Callback Function Setup of Robotic Systems",
+    "paper": "https://doi.org/10.1145/3715748",
+    "method": "ROSCallBaX 静态提取回调及执行设置的组合视图，并依据跨 ROS 版本和语言元素语义约定检查不一致。",
+    "technique": [
+      {
+        "name": "ROS 回调组合静态检查",
+        "type": "analysis-method",
+        "target": "机器人系统回调函数执行设置",
+        "action": "抽取回调与设置元素的静态组合并对照语义约定",
+        "effect": "发现运行时不报错的设置不一致",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "开发者对不同 ROS 版本和语言元素语义掌握不全，易造成难以观察的回调设置不一致。",
+    "scenario": "公开 ROS 项目与开发者论坛案例。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "beyondfunctionalcorrectnessinvestigatingcodingstyleinconsistenciesinlargelanguagemodels",
+    "id": 12172,
+    "title": "Beyond Functional Correctness: Investigating Coding Style Inconsistencies in Large Language Models",
+    "paper": "https://doi.org/10.1145/3715749",
+    "method": "人工归纳 LLM 与人类代码风格不一致分类，并从可读性、简洁性和健壮性进行实证比较。",
+    "technique": [
+      {
+        "name": "生成代码风格差异分析",
+        "type": "analysis-method",
+        "target": "主流大模型生成代码与人类代码",
+        "action": "人工构建不一致分类并比较三类质量维度",
+        "effect": "刻画风格差异、可能原因和缓解方向",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "代码生成研究重功能正确性，模型与开发者之间的编码风格差异研究不足。",
+    "scenario": "大语言模型代码生成质量评估。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "automatedunittestrefactoring",
+    "id": 12173,
+    "title": "Automated Unit Test Refactoring",
+    "paper": "https://doi.org/10.1145/3715750",
+    "method": "UTRefactor 提取测试上下文和外部测试异味知识，以分步 LLM 推理及检查点机制自动重构多个异味。",
+    "technique": [
+      {
+        "name": "知识增强单元测试重构",
+        "type": "system-mechanism",
+        "target": "Java 测试代码中的测试异味",
+        "action": "结合代码上下文、异味定义和 DSL 规则，引导 LLM 分步消除异味",
+        "effect": "在保持一致性的同时减少测试异味",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "多异味重构检查点",
+        "type": "system-mechanism",
+        "target": "同时含多个异味的测试",
+        "action": "在分步重构过程中设置检查点并继续处理剩余异味",
+        "effect": "提高重构完整性",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "人工测试异味重构耗时易错，规则方法又难覆盖多样场景。",
+    "scenario": "六个开源 Java 项目的 879 个单元测试。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "hornbrohomotopylikemethodforautomatedquantumprogramrepair",
+    "id": 12174,
+    "title": "HornBro: Homotopy-Like Method for Automated Quantum Program Repair",
+    "paper": "https://doi.org/10.1145/3715751",
+    "method": "HornBro 以类同伦方式交替经典与量子部分，结合蕴含断言、Clifford 近似、SMT 搜索和量子参数优化修复程序。",
+    "technique": [
+      {
+        "name": "经典-量子交替的类同伦修复",
+        "type": "algorithm",
+        "target": "量子程序逻辑缺陷",
+        "action": "迭代切换经典与量子计算，将不同修复子任务卸载到适合的平台",
+        "effect": "逐步收敛到正确程序并提高修复效率",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "Clifford 近似与 SMT 定位",
+        "type": "formal-method",
+        "target": "量子补丁定位程序",
+        "action": "把程序近似并转换为符号推理搜索问题",
+        "effect": "缩小补丁搜索空间",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "量子数据不可复制、输入空间巨大和新范式使现有语义或学习修复低效。",
+    "scenario": "多类型量子程序缺陷的自动修复。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "automatedsoapoperatestingdirectedbyllmsandscenarioknowledgefeasibilitychallengesandroadahead",
+    "id": 12175,
+    "title": "Automated Soap Opera Testing Directed by LLMs and Scenario Knowledge: Feasibility, Challenges, and Road Ahead",
+    "paper": "https://doi.org/10.1145/3715752",
+    "method": "构建由 Planner、Player、Detector 三个多模态代理协作、并由场景知识图谱引导的自动 soap opera 探索测试系统。",
+    "technique": [
+      {
+        "name": "场景知识图谱引导的多代理探索测试",
+        "type": "architecture",
+        "target": "交互式系统的端到端场景测试",
+        "action": "由规划、执行和缺陷检测代理协作生成并运行 soap opera 场景",
+        "effect": "自动化面向终端用户的探索测试",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "探索测试依赖测试人员知识和手工执行，限制大规模采用。",
+    "scenario": "交互式系统的场景化 soap opera 测试。",
+    "evidence": "benchmark",
+    "lens": [
+      "多智能体",
+      "靶场/环境生成"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "llmbasedmethodnamesuggestionwithautomaticallygeneratedcontextrichprompts",
+    "id": 12176,
+    "title": "LLM-Based Method Name Suggestion with Automatically Generated Context-Rich Prompts",
+    "paper": "https://doi.org/10.1145/3715753",
+    "method": "ContextCraft 检索相似函数描述，提取候选词、位置和语义枢纽，自动形成上下文丰富提示供 LLM 命名。",
+    "technique": [
+      {
+        "name": "ContextCraft 上下文提示生成",
+        "type": "algorithm",
+        "target": "基于功能描述的方法名建议",
+        "action": "检索相似样例并汇总词元概率、位置、枢纽词及模型评价到提示模板",
+        "effect": "约束生成空间并提高命名准确性",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "人工方法命名困难，直接使用 LLM 的随机性会降低名称准确性和相关性。",
+    "scenario": "43,000 个真实 Java 和 Python 方法命名。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "demystifyingllmbasedsoftwareengineeringagents",
+    "id": 12177,
+    "title": "Demystifying LLM-Based Software Engineering Agents",
+    "paper": "https://doi.org/10.1145/3715754",
+    "method": "Agentless 以固定的定位、修复和补丁验证三阶段流程替代自主工具调用与行动规划。",
+    "technique": [
+      {
+        "name": "Agentless 三阶段软件修复",
+        "type": "architecture",
+        "target": "软件开发 issue 自动解决",
+        "action": "依次执行故障定位、补丁生成和补丁验证，不让 LLM 自主决定后续动作",
+        "effect": "以较低复杂度和成本达到高修复率",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "自主软件代理架构复杂，而现有 LLM 能力有限，其复杂工具和规划是否必要尚不清楚。",
+    "scenario": "SWE-bench Lite 与 Verified 的真实仓库 issue 修复。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "standingontheshouldersofgiantsbugawareautomatedguitestingviaretrievalaugmentation",
+    "id": 12178,
+    "title": "Standing on the Shoulders of Giants: Bug-Aware Automated GUI Testing via Retrieval Augmentation",
+    "paper": "https://doi.org/10.1145/3715755",
+    "method": "BugHunter 从相似应用历史缺陷库两阶段检索报告，由 LLM 生成缺陷导向路径并结合局部和全局规划执行 GUI 测试。",
+    "technique": [
+      {
+        "name": "缺陷报告检索增强 GUI 测试",
+        "type": "testing-method",
+        "target": "移动应用中可能触发缺陷的 GUI 路径",
+        "action": "检索相似应用报告并生成目标测试路径，动态适配功能和界面差异",
+        "effect": "在保持覆盖的同时提高缺陷发现效率",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "现有 GUI 测试主要追求页面覆盖，缺乏针对可能触发缺陷路径的外部知识。",
+    "scenario": "71 个应用的已知缺陷和 Google Play 真实应用崩溃发现。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "pdcatpreferencedrivencompilerautotuning",
+    "id": 12179,
+    "title": "PDCAT: Preference-Driven Compiler Auto-tuning",
+    "paper": "https://doi.org/10.1145/3715756",
+    "method": "PDCAT 依据文档组合约束剔除无效序列，固定常用优化，并按差异化启用概率执行偏置搜索。",
+    "technique": [
+      {
+        "name": "偏好驱动编译器自动调优",
+        "type": "algorithm",
+        "target": "给定程序的编译优化标志序列",
+        "action": "约束并分区优化空间，再以不同启用概率搜索剩余标志",
+        "effect": "减少巨大搜索空间并加快获得高性能配置",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "编译优化标志组合空间巨大，使自动调优效率受限。",
+    "scenario": "GCC 在 cBench 与 PolyBench 上的优化序列选择。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "towardsunderstandingdockerbuildfaultsinpracticesymptomsrootcausesandfixpatterns",
+    "id": 12180,
+    "title": "Towards Understanding Docker Build Faults in Practice: Symptoms, Root Causes, and Fix Patterns",
+    "paper": "https://doi.org/10.1145/3715757",
+    "method": "收集 GitHub、Stack Overflow 和 Docker Forum 中的构建故障，归纳症状、根因和修复模式并开发知识应用。",
+    "technique": [
+      {
+        "name": "Docker 构建故障分类",
+        "type": "analysis-method",
+        "target": "Dockerfile 与 Docker Compose 构建故障",
+        "action": "从真实 issue 和帖子归纳 15 类症状、23 类根因及 35 类修复模式",
+        "effect": "支持构建管理研究和开发者故障解决",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Docker 构建故障频发且解决耗时，但其特征仍缺少系统研究。",
+    "scenario": "Dockerfile 和 Docker Compose 项目的真实构建故障。",
+    "evidence": "real-world",
+    "lens": [
+      "靶场/环境生成"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "largelanguagemodelsforinfilevulnerabilitylocalizationcanbelostintheend",
+    "id": 12181,
+    "title": "Large Language Models for In-File Vulnerability Localization Can Be “Lost in the End”",
+    "paper": "https://doi.org/10.1145/3715758",
+    "method": "控制漏洞类型、文件大小和漏洞位置，评估聊天式大模型的文件内漏洞定位并提出最优输入大小选择策略。",
+    "technique": [
+      {
+        "name": "文件内漏洞位置敏感性评测",
+        "type": "measurement-method",
+        "target": "聊天式大模型的漏洞检测",
+        "action": "在不同输入长度与漏洞位置下测量 XSS、SQL 注入和路径遍历召回",
+        "effect": "揭示大文件末尾的 lost-in-the-end 效应并指导分块大小",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "函数级检测会漏掉跨函数漏洞，而大模型处理整文件时的有效性和位置偏差尚不清楚。",
+    "scenario": "使用 GPT 等聊天模型检测整文件中的三类常见 Web 漏洞。",
+    "evidence": "benchmark",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "empiricallyevaluatingtheimpactofobjectcentricbreakpointsonthedebuggingofobjectorientedprograms",
+    "id": 12182,
+    "title": "Empirically Evaluating the Impact of Object-Centric Breakpoints on the Debugging of Object-Oriented Programs",
+    "paper": "https://doi.org/10.1145/3715759",
+    "method": "通过 81 名开发者的对照实验，比较使用和不使用对象中心断点时的调试动作、理解、修复和耗时。",
+    "technique": [
+      {
+        "name": "对象中心断点对照实验",
+        "type": "user-study",
+        "target": "面向对象程序调试过程",
+        "action": "让参与者完成两项调试任务并比较两种断点条件",
+        "effect": "识别对象中心断点在不同缺陷情境下的实际影响",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "类级断点会中断所有实例，但对象中心断点是否真正改善调试缺少实证验证。",
+    "scenario": "开发者调试面向对象程序中特定实例相关缺陷。",
+    "evidence": "user study",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "changeguardvalidatingcodechangesviapairwiselearningguidedexecution",
+    "id": 12183,
+    "title": "ChangeGuard: Validating Code Changes via Pairwise Learning-Guided Execution",
+    "paper": "https://doi.org/10.1145/3715760",
+    "method": "ChangeGuard 通过成对学习引导执行，比较修改前后函数的运行时行为，并以增强鲁棒性和覆盖的技术发现语义变化。",
+    "technique": [
+      {
+        "name": "成对学习引导执行",
+        "type": "testing-method",
+        "target": "声称保持行为的代码变更",
+        "action": "共同引导原函数与修改函数执行并比较运行时行为",
+        "effect": "发现回归测试遗漏的非预期语义变化",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "复杂项目内部的重构和性能优化是否保持功能行为难以验证。",
+    "scenario": "流行 Python 开源项目及自动代码变换产生的变更验证。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "integratinglargelanguagemodelsandreinforcementlearningfornonlinearreasoning",
+    "id": 12184,
+    "title": "Integrating Large Language Models and Reinforcement Learning for Non-linear Reasoning",
+    "paper": "https://doi.org/10.1145/3715761",
+    "method": "由掌握领域指标的强化学习代理引导大模型探索候选路径，使模型只生成即时步骤并支持分支和回溯。",
+    "technique": [
+      {
+        "name": "强化学习引导的非线性推理",
+        "type": "architecture",
+        "target": "大语言模型的长期规划与解空间探索",
+        "action": "用 RL 代理评价候选解、选择路径并在需要时回溯",
+        "effect": "把长期探索决策与局部步骤生成分离",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "大语言模型因解空间探索有限而不擅长长期规划。",
+    "scenario": "程序等价性判断及中间推理步骤评测。",
+    "evidence": "benchmark",
+    "lens": [
+      "强化学习"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "howdoprogrammingstudentsusegenerativeai",
+    "id": 12185,
+    "title": "How Do Programming Students Use Generative AI?",
+    "paper": "https://doi.org/10.1145/3715762",
+    "method": "监控 37 名编程学生在需要代码理解和推理的练习中如何选择并使用 ChatGPT。",
+    "technique": [
+      {
+        "name": "生成式 AI 编程学习观察实验",
+        "type": "user-study",
+        "target": "编程学生的工具使用与学习行为",
+        "action": "提供受监控的 ChatGPT 访问并分析提示和解题策略",
+        "effect": "识别知识查询、直接生成及错误循环等使用模式",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "教育者担忧学生过度依赖生成结果，但实际使用方式及学习影响缺少证据。",
+    "scenario": "编程课程中的代码编写练习。",
+    "evidence": "user study",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "llmdroidenhancingautomatedmobileappguitestingcoveragewithlargelanguagemodelguidance",
+    "id": 12186,
+    "title": "LLMDroid: Enhancing Automated Mobile App GUI Testing Coverage with Large Language Model Guidance",
+    "paper": "https://doi.org/10.1145/3715763",
+    "method": "LLMDroid 先用既有工具自主探索并让 LLM 汇总页面，在覆盖增长放缓时才切换到 LLM 指导未探索功能。",
+    "technique": [
+      {
+        "name": "按需 LLM 引导 GUI 测试",
+        "type": "testing-method",
+        "target": "移动应用未探索界面功能",
+        "action": "在自主探索停滞时调用 LLM 规划后续操作并复用页面摘要",
+        "effect": "减少模型调用成本并提升代码和 Activity 覆盖",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "逐步查询大模型的移动 GUI 测试耗时且昂贵。",
+    "scenario": "三种 Android 测试工具对 Google Play 应用的自动测试。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "thestrugglesofllmsincrosslingualcodeclonedetection",
+    "id": 12187,
+    "title": "The Struggles of LLMs in Cross-Lingual Code Clone Detection",
+    "paper": "https://doi.org/10.1145/3715764",
+    "method": "在两个跨语言数据集上比较五个大模型、八种提示、两种基线和预训练嵌入分类器。",
+    "technique": [
+      {
+        "name": "跨语言克隆多模型评测",
+        "type": "measurement-method",
+        "target": "不同编程语言间的代码克隆",
+        "action": "按简单与复杂程序比较提示式 LLM 和共享嵌入空间分类器",
+        "effect": "刻画大模型对跨语言克隆语义的泛化边界",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "大模型在跨语言代码克隆检测中的真实语义理解和复杂样例表现尚不明确。",
+    "scenario": "XLCoST 与 CodeNet 上的跨语言代码克隆识别。",
+    "evidence": "benchmark",
+    "lens": [
+      "开放集/泛化"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "hasmycodebeenstolenformodeltraininganaturalnessbasedapproachtocodecontaminationdetection",
+    "id": 12188,
+    "title": "Has My Code Been Stolen for Model Training? A Naturalness Based Approach to Code Contamination Detection",
+    "paper": "https://doi.org/10.1145/3715765",
+    "method": "Natural-DaCoDe 联合代码自然度和补全模型表现训练分类器，区分训练污染代码与干净代码。",
+    "technique": [
+      {
+        "name": "自然度校准的代码污染检测",
+        "type": "analysis-method",
+        "target": "代码补全模型的潜在训练样本",
+        "action": "量化代码预测难度并与模型在该代码上的表现共同分类",
+        "effect": "减少困难污染样本和简单干净样本之间的混淆",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "只依赖模型置信度的污染检测忽略样本本身难度，易产生误分类。",
+    "scenario": "代码补全、方法命名和自然语言文本的训练数据污染检查。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "automatedandaccuratetokentransferidentificationanditsapplicationsincryptocurrencysecurity",
+    "id": 12189,
+    "title": "Automated and Accurate Token Transfer Identification and Its Applications in Cryptocurrency Security",
+    "paper": "https://doi.org/10.1145/3715766",
+    "method": "CRYPTO-SCOUT 从智能合约字节码中识别保存持有人信息的复杂容器变量，并据此恢复代币转移和检测恶意、脆弱合约。",
+    "technique": [
+      {
+        "name": "语言与标准无关的代币转移识别",
+        "type": "analysis-method",
+        "target": "Solidity 与 Vyper 合约字节码",
+        "action": "自动定位持有人容器变量并依据代币合约基本原理识别转移",
+        "effect": "跨三种代币标准检测多类恶意或脆弱合约",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "既有代币转移识别依赖无效假设或有限模式，误报和漏报较高。",
+    "scenario": "以太坊代币合约及触发恶意、漏洞行为的真实交易。",
+    "evidence": "real-world",
+    "lens": [
+      "渗透测试",
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "revolutionizingnewcomersonboardingprocessinosscommunitiesthefutureaimentor",
+    "id": 12190,
+    "title": "Revolutionizing Newcomers’ Onboarding Process in OSS Communities: The Future AI Mentor",
+    "paper": "https://doi.org/10.1145/3715767",
+    "method": "以设计虚构的参与式方法访谈 19 名开源新人，提炼 32 条 AI 导师设计策略并评估 OSSerCopilot 原型。",
+    "technique": [
+      {
+        "name": "AI 导师参与式设计",
+        "type": "user-study",
+        "target": "开源社区新人入门过程",
+        "action": "让新人设想端到端导师功能并评价实现这些策略的原型",
+        "effect": "形成项目推荐、issue 难度评估等设计要求",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "开源专家难以及时指导新人，而覆盖完整入门流程的 AI 导师尚未被系统设计。",
+    "scenario": "GitHub 等开源协作平台的新人 onboarding。",
+    "evidence": "user study",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "impactofrequestformatsoneffortestimationarellmsdifferentthanhumans",
+    "id": 12191,
+    "title": "Impact of Request Formats on Effort Estimation: Are LLMs Different Than Humans?",
+    "paper": "https://doi.org/10.1145/3715771",
+    "method": "复现人类软件工作量估算实验，比较三种大模型在传统与替代请求格式下的估算差异和锚定偏差。",
+    "technique": [
+      {
+        "name": "请求格式对照估算实验",
+        "type": "measurement-method",
+        "target": "大模型的软件开发工作量估算",
+        "action": "用相同项目规格变换问题表述并比较模型输出",
+        "effect": "量化提示格式和锚点对估算的影响",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "大模型和人类的工作量估算都可能受请求格式影响，但两者局限是否重合不清楚。",
+    "scenario": "三个开源项目的用户故事工作量估算。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "mitigatingemergentmalwarelabelnoiseindnnbasedandroidmalwaredetection",
+    "id": 12192,
+    "title": "Mitigating Emergent Malware Label Noise in DNN-Based Android Malware Detection",
+    "paper": "https://doi.org/10.1145/3715769",
+    "method": "MalCleanse 将新兴恶意软件错标视为异常检测，联合模型不确定性估计和无监督异常检测清洗标签。",
+    "technique": [
+      {
+        "name": "不确定性感知恶意软件标签清洗",
+        "type": "analysis-method",
+        "target": "VirusTotal 自动标注的 Android 应用",
+        "action": "把高不确定样本作为异常错标候选并执行无监督筛除",
+        "effect": "降低新变种造成的新兴恶意软件标签噪声",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "自动反病毒标注会遗漏新兴 Android 恶意变种，随机噪声清洗方法难以处理这种真实错标。",
+    "scenario": "深度神经网络 Android 恶意软件检测训练数据。",
+    "evidence": "benchmark",
+    "lens": [
+      "开放集/泛化",
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "detectingmetadatarelatedbugsinenterpriseapplications",
+    "id": 12193,
+    "title": "Detecting Metadata-Related Bugs in Enterprise Applications",
+    "paper": "https://doi.org/10.1145/3715772",
+    "method": "专家用 RSL 描述 XML、注解和 Java 代码的一致性规则，MeCheck 将其解释为跨文件静态分析器。",
+    "technique": [
+      {
+        "name": "RSL 元数据检查规则",
+        "type": "formal-method",
+        "target": "企业 Java 应用元数据约束",
+        "action": "声明 XML、注解与代码之间的内容一致性",
+        "effect": "把框架知识转化为可执行检查规范",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "MeCheck 跨文件静态分析",
+        "type": "analysis-method",
+        "target": "Java 和 XML 元数据使用",
+        "action": "解释 RSL 规则、收集跨文件信息并查找一致性违规",
+        "effect": "发现运行错误和潜在安全配置缺陷",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "企业 Java 框架元数据规则复杂，误用会引发运行错误或安全漏洞。",
+    "scenario": "Spring 和 JUnit 开源企业应用的元数据检查。",
+    "evidence": "real-world",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "anadaptivelanguageagnosticpruningmethodforgreenerlanguagemodelsforcode",
+    "id": 12194,
+    "title": "An Adaptive Language-Agnostic Pruning Method for Greener Language Models for Code",
+    "paper": "https://doi.org/10.1145/3715773",
+    "method": "ALPINE 作为可插拔 Transformer 层，在推理管线中自适应压缩代码输入序列。",
+    "technique": [
+      {
+        "name": "ALPINE 自适应序列剪枝",
+        "type": "architecture",
+        "target": "基于 Transformer 的代码语言模型",
+        "action": "跨层逐步移除冗余或噪声代码 token",
+        "effect": "降低 FLOPs、内存和碳排放并尽量保持预测性能",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "代码语言模型计算和环境成本高，而固定语言或模型的压缩方法适用性受限。",
+    "scenario": "缺陷预测和代码克隆检测中的三种代码模型。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "10yearslaterrevisitinghowdeveloperssearchforcode",
+    "id": 12195,
+    "title": "10 Years Later: Revisiting How Developers Search for Code",
+    "paper": "https://doi.org/10.1145/3715774",
+    "method": "通过三轮共 1,945 份问卷和十万余用户的使用统计，复查十年来开发者代码搜索目标和成功标准。",
+    "technique": [
+      {
+        "name": "代码搜索纵向调查",
+        "type": "user-study",
+        "target": "开发者代码搜索行为",
+        "action": "结合问卷与大规模工具使用统计比较当前行为和 2015 年观察",
+        "effect": "揭示 AI 辅助普及后搜索频率、示例查找和代码探索的变化",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "AI 生成、IDE 补全和仓库规模变化后，十年前的代码搜索结论是否仍成立未知。",
+    "scenario": "大型组织内部 Code Search 工具的开发者使用。",
+    "evidence": "user study",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "irepairanintentawareapproachtorepairdatadrivenerrorsinlargelanguagemodels",
+    "id": 12196,
+    "title": "IRepair: An Intent-Aware Approach to Repair Data-Driven Errors in Large Language Models",
+    "paper": "https://doi.org/10.1145/3715775",
+    "method": "IRepair 借鉴程序切片，动态选择错误最密集、最敏感的模型层，只在这些区域执行意图感知修复。",
+    "technique": [
+      {
+        "name": "动态切片式模型修复",
+        "type": "algorithm",
+        "target": "大模型中的毒性等数据驱动错误",
+        "action": "按当前错误定位敏感层并仅更新所选模型部分",
+        "effect": "提高修复效果并减少对通用能力的扰动",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "领域适配通常无差别更新全部参数，修复质量差且损害模型通用性。",
+    "scenario": "GPT-2 与 GPT-Neo 系列模型的毒性缓解。",
+    "evidence": "benchmark",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "clonedetectionforsmartcontractshowfararewe",
+    "id": 12197,
+    "title": "Clone Detection for Smart Contracts: How Far Are We?",
+    "paper": "https://doi.org/10.1145/3715776",
+    "method": "统一评测五种 Solidity 克隆检测技术，人工标注 72,010 对合约，并用 SourceREClone 精细集成不同技术。",
+    "technique": [
+      {
+        "name": "SourceREClone 精细集成",
+        "type": "architecture",
+        "target": "智能合约代码克隆",
+        "action": "依据统一基准组合互补的克隆检测技术",
+        "effect": "兼顾可扩展性并提高检测 F1",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "Solidity 合约克隆基准",
+        "type": "data-construction",
+        "target": "智能合约克隆检测器",
+        "action": "对大规模验证合约对进行人工克隆标注",
+        "effect": "支持一致、可比的有效性和扩展性评估",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "既有智能合约克隆研究使用不同语言、工具版本和数据，结果无法直接比较。",
+    "scenario": "33,073 个已验证 Solidity 智能合约的克隆检测。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "dissectingrealworldcrosslanguagebugs",
+    "id": 12198,
+    "title": "Dissecting Real-World Cross-Language Bugs",
+    "paper": "https://doi.org/10.1145/3715777",
+    "method": "从 54,356 个相关提交中识别 400 个真实跨语言缺陷，按症状、位置、表现、根因和修复五方面分析。",
+    "technique": [
+      {
+        "name": "跨语言缺陷五维分类",
+        "type": "analysis-method",
+        "target": "多语言软件中的互操作缺陷",
+        "action": "人工识别并关联症状、位置、表现、根因和修复特征",
+        "effect": "形成预防、检测和补丁建议及研究数据集",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "异构语言交互产生隐蔽缺陷，但跨语言缺陷缺少系统性认识。",
+    "scenario": "GitHub 上 Python-C 与 Java-C 多语言项目。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "lessismoreontheimportanceofdataqualityforunittestgeneration",
+    "id": 12199,
+    "title": "Less Is More: On the Importance of Data Quality for Unit Test Generation",
+    "paper": "https://doi.org/10.1145/3715778",
+    "method": "归纳测试生成数据的八类噪声，并用语法、相关性和覆盖三个过滤器构成 CleanTest 自动清洗框架。",
+    "technique": [
+      {
+        "name": "CleanTest 三阶段数据清洗",
+        "type": "data-construction",
+        "target": "学习式单元测试生成数据集",
+        "action": "依次使用规则语法过滤、规则相关性过滤和模型覆盖过滤",
+        "effect": "提升微调模型的分支覆盖和缺陷发现能力",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "测试生成模型依赖大规模数据，但常用数据集中的噪声类型和影响研究不足。",
+    "scenario": "Methods2Test、Atlas 与 Defects4J 上的单元测试生成。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "protectingprivacyinsoftwarelogswhatshouldbeanonymized",
+    "id": 12200,
+    "title": "Protecting Privacy in Software Logs: What Should Be Anonymized?",
+    "paper": "https://doi.org/10.1145/3715779",
+    "method": "联合分析 25 个日志数据集、隐私法规、研究文献和 45 名业界人员问卷，归纳日志敏感属性与匿名化实践。",
+    "technique": [
+      {
+        "name": "多视角日志隐私分析",
+        "type": "analysis-method",
+        "target": "软件日志中的 PII 与准标识符",
+        "action": "交叉比对数据集、法规、文献和行业实践中的敏感属性定义",
+        "effect": "形成识别和保护日志敏感信息的框架",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "软件日志敏感性定义不一致，缺乏标准匿名化指南且存在重识别风险。",
+    "scenario": "软件运行日志的隐私治理和匿名化。",
+    "evidence": "user study",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "misummultimodalityheterogeneouscodegraphlearningformultiintentbinarycodesummarization",
+    "id": 12201,
+    "title": "MiSum: Multi-modality Heterogeneous Code Graph Learning for Multi-intent Binary Code Summarization",
+    "paper": "https://doi.org/10.1145/3715780",
+    "method": "MiSum 对齐汇编与伪代码异构图，以互注意和消息传递学习跨形式依赖，再按意图生成定制摘要。",
+    "technique": [
+      {
+        "name": "多模态异构代码图学习",
+        "type": "model",
+        "target": "汇编代码和反编译伪代码",
+        "action": "对齐两类代码图并以异构互注意和消息传递突出关键块",
+        "effect": "融合低层执行细节与高层结构信息",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "意图感知摘要生成",
+        "type": "model",
+        "target": "逆向工程人员的多类理解需求",
+        "action": "用意图注意机制从图表示生成定制摘要",
+        "effect": "覆盖用法、实现和设计理由等不同摘要意图",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "单一二进制摘要无法满足逆向工程人员的多样理解需求。",
+    "scenario": "跨架构和优化级别的二进制代码分析。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "sembicsemanticawareidentificationofbuginducingcommits",
+    "id": 12202,
+    "title": "SemBIC: Semantic-Aware Identification of Bug-Inducing Commits",
+    "paper": "https://doi.org/10.1145/3715781",
+    "method": "SEMBIC 静态跟踪失败测试所规定执行路径在连续历史版本中的三类细粒度语义变化，并据变化幅度排序引错提交。",
+    "technique": [
+      {
+        "name": "失败路径语义演化跟踪",
+        "type": "analysis-method",
+        "target": "历史提交中的缺陷引入版本",
+        "action": "比较连续版本中与失败执行路径相关的细粒度语义属性",
+        "effect": "在测试无法跨版本运行且无补丁报告时定位引错提交",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "动态回放常因旧版本不可执行而失败，静态方法又依赖补丁、报告或时间启发式。",
+    "scenario": "12 个开源项目的 199 个真实缺陷。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "eliminatingbackdoorsinneuralcodemodelsforsecurecodeunderstanding",
+    "id": 12203,
+    "title": "Eliminating Backdoors in Neural Code Models for Secure Code Understanding",
+    "paper": "https://doi.org/10.1145/3715782",
+    "method": "EliBadCode 缩减触发词搜索空间、定位样本特定位置、反演并净化触发器，最后以模型遗忘消除后门。",
+    "technique": [
+      {
+        "name": "代码模型触发器反演",
+        "type": "algorithm",
+        "target": "神经代码模型中的隐藏后门",
+        "action": "按语言命名规则筛词、定位触发位置并用贪心坐标梯度优化反演触发器",
+        "effect": "高效恢复并锚定真实后门扰动",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "后门触发遗忘",
+        "type": "model",
+        "target": "已确认触发器的代码模型",
+        "action": "通过模型 unlearning 去除触发行为",
+        "effect": "降低攻击成功率并保持干净任务性能",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "神经代码模型可能在触发代码上执行攻击者指定行为，威胁安全关键代码理解。",
+    "scenario": "三类安全关键代码理解任务上的多种后门模型。",
+    "evidence": "benchmark",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "understandingdebuggingasepisodesacasestudyonperformancebugsinconfigurablesoftwaresystems",
+    "id": 12204,
+    "title": "Understanding Debugging as Episodes: A Case Study on Performance Bugs in Configurable Software Systems",
+    "paper": "https://doi.org/10.1145/3717523",
+    "method": "用 SoftVR 观察 12 名专业开发者调试真实可配置系统性能缺陷，再编码和访谈确认五类目标导向调试阶段。",
+    "technique": [
+      {
+        "name": "目标导向调试 episode 框架",
+        "type": "user-study",
+        "target": "配置依赖的性能缺陷调试策略",
+        "action": "以沉浸式观察和质性编码把开发者活动归纳为五类阶段",
+        "effect": "提供统一而细粒度的调试策略描述",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "既有调试策略描述粗粒度且混杂，难以指导配置依赖性能缺陷。",
+    "scenario": "专业开发者调试真实可配置软件系统。",
+    "evidence": "user study",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "detectingandreducingthefactualhallucinationsoflargelanguagemodelswithmetamorphictesting",
+    "id": 12205,
+    "title": "Detecting and Reducing the Factual Hallucinations of Large Language Models with Metamorphic Testing",
+    "paper": "https://doi.org/10.1145/3715784",
+    "method": "DrHall 用蜕变测试让黑盒大模型沿不同执行路径重复同一任务，以答案不稳定性检测并纠正事实幻觉。",
+    "technique": [
+      {
+        "name": "DrHall 蜕变测试",
+        "type": "testing-method",
+        "target": "黑盒大模型问答",
+        "action": "构造等价任务执行路径并比较答案稳定性",
+        "effect": "同时发现和降低事实幻觉",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "大模型问答会扭曲事实，影响现实部署可靠性。",
+    "scenario": "自然语言与编程问答数据集上的黑盒模型测试。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "ontheunnecessarycomplexityofnamesinx509andtheirimpactonimplementations",
+    "id": 12206,
+    "title": "On the Unnecessary Complexity of Names in X.509 and Their Impact on Implementations",
+    "paper": "https://doi.org/10.1145/3715785",
+    "method": "用一组简单测试分析开源 X.509 库对证书名称格式、编码和预处理约束的执行情况。",
+    "technique": [
+      {
+        "name": "X.509 名称约束组合测试",
+        "type": "testing-method",
+        "target": "证书链身份名称实现",
+        "action": "针对格式、编码和处理要求生成并运行简化测试",
+        "effect": "暴露互操作、性能和冒充风险相关的标准违规",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "X.509 名称结构灵活但过度复杂，库实现容易漏掉标准步骤并产生安全问题。",
+    "scenario": "广泛使用的开源 X.509 证书链验证库。",
+    "evidence": "real-world",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "repurrautomatedrepairofblockbasedlearnersprograms",
+    "id": 12207,
+    "title": "RePurr: Automated Repair of Block-Based Learners’ Programs",
+    "paper": "https://doi.org/10.1145/3715786",
+    "method": "RePurr 以进化搜索修复 Scratch 程序，改进系统测试下的故障定位，从模型解和同伴解补充修复材料，并并行加速评价。",
+    "technique": [
+      {
+        "name": "块式程序进化修复",
+        "type": "algorithm",
+        "target": "不完整或含概念误解的 Scratch 学生程序",
+        "action": "以系统测试为适应度搜索补丁，并从模型和学生解中复用代码",
+        "effect": "自动改进程序并支持提示生成",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "并行加速适应度评估",
+        "type": "system-mechanism",
+        "target": "含动画交互的慢速 Scratch 测试",
+        "action": "并行运行并加速测试执行",
+        "effect": "降低元启发式修复搜索成本",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "块式学习程序测试少而慢、代码冗余低且错误不局部，破坏传统自动修复假设。",
+    "scenario": "真实学习者的 Scratch 程序修复与反馈。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "whytheprooffailsindifferentversionsoftheoremproversanempiricalstudyofcompatibilityissuesinisabelle",
+    "id": 12208,
+    "title": "Why the Proof Fails in Different Versions of Theorem Provers: An Empirical Study of Compatibility Issues in Isabelle",
+    "paper": "https://doi.org/10.1145/3715787",
+    "method": "构建回归测试框架，从 Archive of Formal Proofs 自动收集 12,079 个 Isabelle 兼容性问题并分析类型、症状、根因和修复。",
+    "technique": [
+      {
+        "name": "证明版本兼容性回归采集",
+        "type": "testing-method",
+        "target": "Isabelle 版本升级后的形式化证明",
+        "action": "跨版本自动执行证明库并收集失败及对应更新证明",
+        "effect": "系统刻画破损证明和解决策略",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "证明助手版本变化频繁破坏证明，但兼容性问题整体特征研究不足。",
+    "scenario": "Isabelle Archive of Formal Proofs 的跨版本维护。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "improvinggraphlearningbasedfaultlocalizationwithtailoredsemisupervisedlearning",
+    "id": 12209,
+    "title": "Improving Graph Learning-Based Fault Localization with Tailored Semi-supervised Learning",
+    "paper": "https://doi.org/10.1145/3715788",
+    "method": "LEGATO 识别并增强无标签图中的疑似无关子图，按可疑度分布生成伪标签，以半监督训练提升故障定位。",
+    "technique": [
+      {
+        "name": "故障定位定制半监督图学习",
+        "type": "model",
+        "target": "只有少量失败测试标注的程序图",
+        "action": "注意力选择无关子图做增强，并从可疑度分布估计伪标签",
+        "effect": "利用无标签数据改善图学习故障定位",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "完整标注失败测试近似人工定位，成本使监督图故障定位难获足够训练数据。",
+    "scenario": "图神经网络软件故障定位。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "amixedmethodsstudyofmodelbasedguitestinginrealworldindustrialsettings",
+    "id": 12210,
+    "title": "A Mixed-Methods Study of Model-Based GUI Testing in Real-World Industrial Settings",
+    "paper": "https://doi.org/10.1145/3715789",
+    "method": "在工业伙伴环境部署模型驱动 GUI 测试两个月，并结合对照实验、问卷和访谈分析即时与长期效果。",
+    "technique": [
+      {
+        "name": "工业模型驱动测试纵向混合研究",
+        "type": "user-study",
+        "target": "生产环境 GUI 测试流程",
+        "action": "比较模型驱动与脚本编写测试并持续收集定量和定性反馈",
+        "effect": "评估有效性、效率、可维护性和工程师认知变化",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "模型驱动测试在真实工业环境特别是长期应用中的影响证据有限且结论不清。",
+    "scenario": "企业生产环境中的 GUI 模型驱动测试采用。",
+    "evidence": "user study",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "beyondpeftlayerwiseoptimizationformoreeffectiveandefficientlargecodemodeltuning",
+    "id": 12211,
+    "title": "Beyond PEFT: Layer-Wise Optimization for More Effective and Efficient Large Code Model Tuning",
+    "paper": "https://doi.org/10.1145/3729341",
+    "method": "LWO 按层递增更新整个大代码模型的参数，不添加额外组件或推理开销。",
+    "technique": [
+      {
+        "name": "逐层优化微调",
+        "type": "algorithm",
+        "target": "面向特定代码智能任务的大代码模型",
+        "action": "依次更新模型各层而非同时全参数训练或插入适配器",
+        "effect": "提高私有数据任务效果并减少训练时间",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "参数高效微调在更广任务尤其私有数据上与全参数微调存在明显性能差距。",
+    "scenario": "五种大代码模型和五类公开、私有代码智能任务。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "promptsareprogramstoounderstandinghowdevelopersbuildsoftwarecontainingprompts",
+    "id": 12212,
+    "title": "Prompts Are Programs Too! Understanding How Developers Build Software Containing Prompts",
+    "paper": "https://doi.org/10.1145/3729342",
+    "method": "通过对 20 名提示开发者的 Strauss 扎根理论访谈，形成 15 条提示编程实践观察。",
+    "technique": [
+      {
+        "name": "提示编程扎根理论研究",
+        "type": "user-study",
+        "target": "由自然语言提示控制的软件功能开发",
+        "action": "跨模型、领域和提示结构访谈开发者并迭代编码",
+        "effect": "刻画提示程序开发、调试和心智模型形成方式",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "提示驱动软件影响广泛，但其开发过程及与传统编程的关系鲜有研究。",
+    "scenario": "多种基础模型和应用领域中的提示开发。",
+    "evidence": "user study",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "vlatesttestingandevaluatingvisionlanguageactionmodelsforroboticmanipulation",
+    "id": 12213,
+    "title": "VLATest: Testing and Evaluating Vision-Language-Action Models for Robotic Manipulation",
+    "paper": "https://doi.org/10.1145/3729343",
+    "method": "VLATest 通过模糊变异生成机器人操作场景，系统改变干扰物、光照、相机、未见物体和任务指令。",
+    "technique": [
+      {
+        "name": "机器人操作场景模糊生成",
+        "type": "testing-method",
+        "target": "视觉-语言-动作模型",
+        "action": "变异场景对象、环境条件、视角和指令以构造多样测试",
+        "effect": "揭示手工少量场景评测遗漏的鲁棒性问题",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "VLA 模型通常只在有限手工场景中评估，泛化性能和多样情境鲁棒性未知。",
+    "scenario": "七种 VLA 模型的机器人操作测试。",
+    "evidence": "simulation",
+    "lens": [
+      "靶场/环境生成",
+      "开放集/泛化"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "unlockingoptimalormdatabasedesignsacceleratedtradeoffanalysiswithtransformers",
+    "id": 12214,
+    "title": "Unlocking Optimal ORM Database Designs: Accelerated Tradeoff Analysis with Transformers",
+    "paper": "https://doi.org/10.1145/3729344",
+    "method": "DesignTradeoffSculptor 用经形式分析设计训练的 Transformer 预筛次优 ORM 方案，只对少量候选执行昂贵权衡分析。",
+    "technique": [
+      {
+        "name": "学习加速的 ORM 设计筛选",
+        "type": "model",
+        "target": "对象关系映射数据库设计候选",
+        "action": "把设计探索表述为 NLP 任务并预测、移除次优设计",
+        "effect": "保留最优候选同时大幅缩短正式权衡分析",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "ORM 工具常固定单一设计，而系统化 Pareto 权衡计算昂贵、难扩展。",
+    "scenario": "对象关系数据库映射的性能和可扩展性设计。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "smartnoteanllmpoweredpersonalisedreleasenotegeneratorthatjustworks",
+    "id": 12215,
+    "title": "SmartNote: An LLM-Powered, Personalised Release Note Generator That Just Works",
+    "paper": "https://doi.org/10.1145/3729345",
+    "method": "SmartNote 聚合代码、提交和 PR 信息，按项目领域与受众分类和评分变更，再由 LLM 生成个性化发布说明。",
+    "technique": [
+      {
+        "name": "上下文个性化发布说明生成",
+        "type": "system-mechanism",
+        "target": "软件版本变更信息",
+        "action": "聚合多种开发工件、评估提交重要性并按受众组织摘要",
+        "effect": "提升发布说明完整性、清晰度、简洁性和组织性",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "既有自动发布说明忽略项目领域和受众，相关性、简洁性及工作流适用性有限。",
+    "scenario": "多样软件项目的自动发布说明编写。",
+    "evidence": "user study",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "cashiftbenchmarkinglogbasedcloudattackdetectionundernormalityshift",
+    "id": 12216,
+    "title": "CAShift: Benchmarking Log-Based Cloud Attack Detection under Normality Shift",
+    "paper": "https://doi.org/10.1145/3729346",
+    "method": "CAShift 构造覆盖云软件角色、三种真实正常性漂移和 20 个攻击场景的数据集，并评测异常检测与持续学习适应。",
+    "technique": [
+      {
+        "name": "CAShift 云攻击检测基准",
+        "type": "data-construction",
+        "target": "云系统日志异常检测方法",
+        "action": "跨应用、版本和云架构变化采集正常行为与组件攻击日志",
+        "effect": "评测分布漂移下的攻击检测鲁棒性",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "持续学习漂移适应评测",
+        "type": "measurement-method",
+        "target": "正常性变化后的日志检测器",
+        "action": "比较三种持续学习方法及重训练数据比例",
+        "effect": "量化不同适应策略的 F1 恢复能力",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "现有云日志数据覆盖有限，且忽视应用、版本和架构等云特有正常性漂移。",
+    "scenario": "多组件云环境中的 20 类攻击检测。",
+    "evidence": "benchmark",
+    "lens": [
+      "靶场/环境生成",
+      "开放集/泛化",
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "incorporatingverificationstandardsforsecurityrequirementsgenerationfromfunctionalspecifications",
+    "id": 12217,
+    "title": "Incorporating Verification Standards for Security Requirements Generation from Functional Specifications",
+    "paper": "https://doi.org/10.1145/3729347",
+    "method": "F2SRD 先从自建 FR-VR 数据训练检索器选择 OWASP ASVS 验证要求，再用结构化提示让 GPT-4 生成安全需求。",
+    "technique": [
+      {
+        "name": "验证标准检索增强安全需求生成",
+        "type": "system-mechanism",
+        "target": "软件功能规格",
+        "action": "检索适用 ASVS 条目并把验证要求编入结构化生成提示",
+        "effect": "生成更具体、多样且可操作的安全需求",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "从功能需求人工推导安全需求耗时易漏，且软件工程师与安全专家存在知识差距。",
+    "scenario": "面向应用开发的安全需求工程。",
+    "evidence": "benchmark",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "multimodaltrafficscenariogenerationforautonomousdrivingsystemtesting",
+    "id": 12218,
+    "title": "Multi-modal Traffic Scenario Generation for Autonomous Driving System Testing",
+    "paper": "https://doi.org/10.1145/3729348",
+    "method": "TrafficComposer 融合自然语言的高层动态信息与图像中的车辆、行人和道路细节，在 CARLA 或 LGSVL 生成测试场景。",
+    "technique": [
+      {
+        "name": "多模态交通场景合成",
+        "type": "data-construction",
+        "target": "自动驾驶系统测试环境",
+        "action": "对齐文本意图和场景图像细节并实例化到驾驶模拟器",
+        "effect": "自动构造高质量场景并作为直接或模糊测试种子",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "人工构造自动驾驶交通场景繁琐耗时。",
+    "scenario": "六种自动驾驶系统的模拟器直接测试和模糊测试。",
+    "evidence": "simulation",
+    "lens": [
+      "靶场/环境生成"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "dynamictainttrackingformodernjavavirtualmachines",
+    "id": 12219,
+    "title": "Dynamic Taint Tracking for Modern Java Virtual Machines",
+    "paper": "https://doi.org/10.1145/3729349",
+    "method": "Galette 融合 shadowing 与 mirroring 的特性，在现代 JVM 中精确且稳健地传播污点标签。",
+    "technique": [
+      {
+        "name": "混合式 JVM 动态污点跟踪",
+        "type": "instrumentation",
+        "target": "现代 Java 程序信息流",
+        "action": "组合影子标签精度与镜像机制语义保持能力",
+        "effect": "跨四个长期支持 Java 版本准确传播标签并保持程序语义",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "纯 shadowing 易破坏语义，mirroring 又不精确，且新版 Java 特性放大两者局限。",
+    "scenario": "合成及真实 Java 程序的动态信息流分析。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "softwarefairnessdilemmaisbiasmitigationazerosumgame",
+    "id": 12220,
+    "title": "Software Fairness Dilemma: Is Bias Mitigation a Zero-Sum Game?",
+    "paper": "https://doi.org/10.1145/3729350",
+    "method": "在 44 个表格数据任务上比较八种偏差缓解方法，并测试只对弱势群体应用缓解的替代策略。",
+    "technique": [
+      {
+        "name": "群体定向偏差缓解评测",
+        "type": "measurement-method",
+        "target": "表格数据机器学习公平性",
+        "action": "比较全局缓解与仅弱势群体缓解对各群体及总体性能的影响",
+        "effect": "识别避免零和权衡的潜在路径",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "偏差缓解是否必然牺牲某些群体，以及表格任务能否避免零和效应尚不明确。",
+    "scenario": "五个真实数据集和四类机器学习模型的公平性任务。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "tracepickeroptimizationbasedtracesamplingformicroservicebasedsystems",
+    "id": 12221,
+    "title": "TracePicker: Optimization-Based Trace Sampling for Microservice-Based Systems",
+    "paper": "https://doi.org/10.1145/3729351",
+    "method": "TracePicker 保留流式检测到的异常轨迹，并将正常轨迹的配额分配和组内采样建模为整数规划。",
+    "technique": [
+      {
+        "name": "优化式在线轨迹采样",
+        "type": "algorithm",
+        "target": "高容量微服务分布式轨迹",
+        "action": "用动态规划和进化算法求解配额分配与组采样，最小化总体信息损失",
+        "effect": "兼顾样本全面性、平衡性、一致性和存储成本",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "异常轨迹强制保留",
+        "type": "system-mechanism",
+        "target": "对故障诊断重要的稀有轨迹",
+        "action": "以流式异常检测器识别并直接保留异常样本",
+        "effect": "降低随机采样遗漏关键诊断证据的风险",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "固定概率或逐轨迹尾采样忽视样本集合整体质量，可能丢失重要轨迹。",
+    "scenario": "微服务在线系统的分布式追踪存储与故障诊断。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "towardsunderstandingfinegrainedprogrammingmistakesandfixingpatternsindatascience",
+    "id": 12222,
+    "title": "Towards Understanding Fine-Grained Programming Mistakes and Fixing Patterns in Data Science",
+    "paper": "https://doi.org/10.1145/3729352",
+    "method": "分析六周竞赛中 390 个 Jupyter Notebook 的细粒度日志，并访谈 10 名数据科学程序员解释错误原因。",
+    "technique": [
+      {
+        "name": "Notebook 细粒度错误分析",
+        "type": "analysis-method",
+        "target": "提交前被修正的数据科学编程错误",
+        "action": "从交互日志归纳错误与修复模式并以半结构访谈解释成因",
+        "effect": "发现版本历史研究遗漏的错误类型和工具机会",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "只研究公开提交历史会遗漏数据科学家在提交前修正的大量编程错误。",
+    "scenario": "Jupyter Notebook 数据科学竞赛与跨领域程序员实践。",
+    "evidence": "user study",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "lookaheadpreventingdefiattacksviaunveilingadversarialcontracts",
+    "id": 12223,
+    "title": "LookAhead: Preventing DeFi Attacks via Unveiling Adversarial Contracts",
+    "paper": "https://doi.org/10.1145/3729353",
+    "method": "LookAhead 从常见攻击模式、代码语义和攻击合约内在特征训练分类器，在攻击交易出现前识别支持利用的中间合约。",
+    "technique": [
+      {
+        "name": "攻击合约前置识别",
+        "type": "model",
+        "target": "DeFi 中支持漏洞利用的中间智能合约",
+        "action": "联合攻击模式、代码语义和合约特征分类良性与对抗合约",
+        "effect": "在私有交易池削弱交易监控时提前预测潜在攻击",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "私有交易可绕过公开 mempool 监控，基于攻击交易的 DeFi 防御难以及时识别活动。",
+    "scenario": "去中心化金融智能合约攻击预警。",
+    "evidence": "benchmark",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "doc2oracllinvestigatingtheimpactofdocumentationonllmbasedtestoraclegeneration",
+    "id": 12224,
+    "title": "Doc2OracLL: Investigating the Impact of Documentation on LLM-Based Test Oracle Generation",
+    "paper": "https://doi.org/10.1145/3729354",
+    "method": "以三组提示微调十个大模型，系统消融 Javadoc 组成并在 Defects4J 上评估仅凭文档生成测试判定的能力。",
+    "technique": [
+      {
+        "name": "Javadoc 驱动测试 oracle 生成",
+        "type": "testing-method",
+        "target": "Java 方法的预期测试结果",
+        "action": "把功能描述、返回值和其他文档组成作为模型输入生成断言",
+        "effect": "在不读取实现时提高 oracle 准确率和真实缺陷检测",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Javadoc 作为独立测试 oracle 来源的价值、关键组成及编写指南尚未得到系统研究。",
+    "scenario": "Defects4J 真实 Java 缺陷的自动测试判定生成。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "chatdbgaugmentingdebuggingwithlargelanguagemodels",
+    "id": 12225,
+    "title": "ChatDBG: Augmenting Debugging with Large Language Models",
+    "paper": "https://doi.org/10.1145/3729355",
+    "method": "ChatDBG 让大模型代理自主查询和控制 LLDB、GDB 或 Pdb，浏览栈与程序状态后向开发者解释根因和补丁。",
+    "technique": [
+      {
+        "name": "对话式自主调试代理",
+        "type": "system-mechanism",
+        "target": "崩溃、断言失败和开放式程序状态问题",
+        "action": "解析开发者问题、控制调试器检查状态并生成诊断和修复",
+        "effect": "把传统断点调试扩展为领域推理辅助",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "传统调试器对复杂根因问题不够友好，程序员需要大量手工状态探索。",
+    "scenario": "C/C++ 原生程序、Python 脚本和 Jupyter Notebook 调试。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "aknowledgeenhancedlargelanguagemodelforbuglocalization",
+    "id": 12226,
+    "title": "A Knowledge Enhanced Large Language Model for Bug Localization",
+    "paper": "https://doi.org/10.1145/3729356",
+    "method": "KEPT 从项目文档和历史代码构建知识图谱，通过软位置嵌入与可见矩阵注入预训练模型完成缺陷定位。",
+    "technique": [
+      {
+        "name": "项目知识图谱增强缺陷定位",
+        "type": "model",
+        "target": "缺陷报告与源代码关联",
+        "action": "把文档和历史代码图谱以软位置及可见性约束融入 LLM 表示",
+        "effect": "补充项目上下文和版本等领域专属知识",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "既有大模型缺陷定位难以捕获报告与代码上下文，也不理解项目特定的无语义标识信息。",
+    "scenario": "七个开源项目六千余缺陷报告的代码定位。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "zeroshotcrossdomaincodesearchwithoutfinetuning",
+    "id": 12227,
+    "title": "Zero-Shot Cross-Domain Code Search without Fine-Tuning",
+    "paper": "https://doi.org/10.1145/3729357",
+    "method": "CodeBridge 用 LLM 为代码生成注释、为查询生成代码，再融合查询-代码、查询-注释和代码-代码三路相似度。",
+    "technique": [
+      {
+        "name": "三模式跨域代码匹配",
+        "type": "architecture",
+        "target": "新领域自然语言代码查询",
+        "action": "零样本生成桥接表示并以采样式融合组合三类匹配分数",
+        "effect": "无需领域微调即可缓解查询与代码语义域差异",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "预训练代码搜索迁移新领域时性能下降，而合成数据微调计算昂贵且每域需维护专门模型。",
+    "scenario": "三个数据集的零样本跨领域代码搜索。",
+    "evidence": "benchmark",
+    "lens": [
+      "开放集/泛化"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "regtrievereducingsystemlevelregressionerrorsformachinelearningsystemsviaretrievalenhancedensemble",
+    "id": 12228,
+    "title": "RegTrieve: Reducing System-Level Regression Errors for Machine Learning Systems via Retrieval-Enhanced Ensemble",
+    "paper": "https://doi.org/10.1145/3729358",
+    "method": "RegTrieve 以检索增强集成在旧模型与更新模型之间协调预测，降低模型级和系统级回归错误。",
+    "technique": [
+      {
+        "name": "检索增强回归集成",
+        "type": "architecture",
+        "target": "包含多个模型的机器学习系统更新",
+        "action": "检索相关历史信息并集成新旧模型输出",
+        "effect": "在几乎不影响总体准确率的情况下降低系统回归",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "单模型更新会让部分输入退化，并可能把回归错误传播到多模型系统。",
+    "scenario": "多种机器学习模型更新和系统组合场景。",
+    "evidence": "benchmark",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "terzonhumanintheloopsoftwaretestingwithacompositeoracle",
+    "id": 12229,
+    "title": "TerzoN: Human-in-the-Loop Software Testing with a Composite Oracle",
+    "paper": "https://doi.org/10.1145/3729359",
+    "method": "TerzoN 把三类测试 oracle 组织为层级复合判定并在统一视图呈现，支持人工检查生成测试结果。",
+    "technique": [
+      {
+        "name": "复合测试 oracle",
+        "type": "testing-method",
+        "target": "自动生成测试的正确性判定",
+        "action": "层次化组合隐式、示例和属性等 oracle 并汇总每次执行结果",
+        "effect": "发现断言不一致并减少误导性测试结论",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "人机协同测试对照实验",
+        "type": "user-study",
+        "target": "专业工程师的缺陷发现过程",
+        "action": "比较 TerzoN 与 fast-check 条件下的缺陷引出、描述和耗时",
+        "effect": "评估复合 oracle 的实际效用",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "各类自动测试工具的 oracle 能力存在互补缺口，开发者仍需大量手工示例判定。",
+    "scenario": "专业软件工程师进行属性与示例驱动测试。",
+    "evidence": "user study",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "teachingaithewhyandhowofsoftwarevulnerabilityfixes",
+    "id": 12230,
+    "title": "Teaching AI the ‘Why’ and ‘How’ of Software Vulnerability Fixes",
+    "paper": "https://doi.org/10.1145/3729360",
+    "method": "VulnExtract 用 37 个话语模式抽取触发、崩溃和修复语句，VulnTrace 再把相关语句对映射到具有关系的代码语句对。",
+    "technique": [
+      {
+        "name": "漏洞语义话语抽取",
+        "type": "analysis-method",
+        "target": "CVE 摘要、缺陷报告和提交消息",
+        "action": "按话语模式抽取触发条件、崩溃现象和修复动作",
+        "effect": "结构化漏洞为何发生及如何修复的自然语言证据",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "成对语句代码追踪",
+        "type": "model",
+        "target": "漏洞自然语言语义与代码",
+        "action": "用预训练代码搜索模型把相关自然语言句对定位到代码语句对",
+        "effect": "恢复各代码语句在漏洞中的具体作用",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "传统追踪只连接单句与代码，无法表达漏洞触发、崩溃和修复语句间的语义关系。",
+    "scenario": "341 个 CVE 及关联代码片段的漏洞理解。",
+    "evidence": "benchmark",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "bridgingoperatorsemanticinconsistenciesasourcelevelcrossframeworkmodelconversionapproach",
+    "id": 12231,
+    "title": "Bridging Operator Semantic Inconsistencies: A Source-Level Cross-Framework Model Conversion Approach",
+    "paper": "https://doi.org/10.1145/3729361",
+    "method": "ModelX 在 API 映射之外检查并对齐框架算子源代码层的语义差异，逐层转换深度学习模型。",
+    "technique": [
+      {
+        "name": "源代码级算子语义对齐",
+        "type": "analysis-method",
+        "target": "不同深度学习框架的算子实现",
+        "action": "检查 API 映射和层级源码，弥合参数、缺失算子及实现语义不一致",
+        "effect": "减少跨框架转换失败和性能偏差",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "只转译算子名称和参数无法处理不同框架实现的语义不一致。",
+    "scenario": "PyTorch 到 Paddle 的算子和视觉、文本、音频模型转换。",
+    "evidence": "benchmark",
+    "lens": [
+      "开放集/泛化"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "unitconsynthesizingtargetedunittestsforjavaruntimeexceptions",
+    "id": 12232,
+    "title": "UnitCon: Synthesizing Targeted Unit Tests for Java Runtime Exceptions",
+    "paper": "https://doi.org/10.1145/3729362",
+    "method": "UnitCon 用静态分析估计候选测试语义，对搜索空间剪枝和排序，合成能在指定位置触发运行时异常的单元测试。",
+    "technique": [
+      {
+        "name": "静态分析引导的定向单元测试合成",
+        "type": "testing-method",
+        "target": "Java 程序指定位置的运行时异常",
+        "action": "估计候选测试语义并优先搜索可能触发目标异常的用例",
+        "effect": "支持补丁测试、崩溃复现和静态告警核查",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "以覆盖最大化为目标的通用测试生成器不擅长触发特定位置异常。",
+    "scenario": "开源 Java 项目空指针告警检查和未知缺陷发现。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "anempiricalstudyofbugsindatavisualizationlibraries",
+    "id": 12233,
+    "title": "An Empirical Study of Bugs in Data Visualization Libraries",
+    "paper": "https://doi.org/10.1145/3729363",
+    "method": "分析五个可视化库的 564 个缺陷，构建症状与根因分类，并归纳八步触发流程和两类领域 oracle。",
+    "technique": [
+      {
+        "name": "可视化缺陷分类与触发分析",
+        "type": "analysis-method",
+        "target": "数据可视化库中的误导性图形缺陷",
+        "action": "归纳症状、根因、触发步骤和专属测试判定",
+        "effect": "为自动测试和可靠可视化提供实证基础",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "视觉语言模型缺陷可行性评测",
+        "type": "measurement-method",
+        "target": "不正确或不准确的图表",
+        "action": "用不同提示测试 VLM 对错误图形的识别",
+        "effect": "量化生成式视觉模型在该任务的能力边界",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "可视化缺陷不一定崩溃却会误导决策，其独特特征和检测方式研究不足。",
+    "scenario": "五个广泛使用的数据可视化库。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "divideandconquergeneratinguicodefromscreenshots",
+    "id": 12234,
+    "title": "Divide-and-Conquer: Generating UI Code from Screenshots",
+    "paper": "https://doi.org/10.1145/3729364",
+    "method": "DCGen 将网页截图切成可管理片段，分别由多模态大模型生成代码，再重组为完整界面。",
+    "technique": [
+      {
+        "name": "分治式截图到代码生成",
+        "type": "architecture",
+        "target": "大尺寸网页设计截图",
+        "action": "分割视觉区域、独立生成各段 UI 代码并重组",
+        "effect": "减少元素遗漏、失真和错位并提升实现速度",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "多模态模型直接处理大截图容易遗漏、扭曲或错排界面元素。",
+    "scenario": "真实网站设计到前端 UI 代码转换。",
+    "evidence": "user study",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "liberatinglibrariesthroughautomatedfuzzdrivergenerationstrikingabalancewithoutconsumercode",
+    "id": 12235,
+    "title": "Liberating Libraries through Automated Fuzz Driver Generation: Striking a Balance without Consumer Code",
+    "paper": "https://doi.org/10.1145/3729365",
+    "method": "libErator 以静态分析引导驱动生成，快速剔除不可运行驱动，并选择非冗余驱动后分配资源深入模糊测试。",
+    "technique": [
+      {
+        "name": "资源平衡的模糊驱动生成与测试",
+        "type": "testing-method",
+        "target": "缺少消费端代码的软件库",
+        "action": "分离驱动构造与输入探索，按有效性和多样性调度有限计算资源",
+        "effect": "生成有效库用法并提高覆盖和缺陷发现",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "库语义静态引导",
+        "type": "analysis-method",
+        "target": "候选 fuzz driver",
+        "action": "分析库代码以提高生成有意义 API 调用组合的概率",
+        "effect": "减少无功能驱动上的资源浪费",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "人工 fuzz driver 难写且易覆盖停滞，同步变异驱动和输入又难组合复杂用法与复杂数据。",
+    "scenario": "15 个开源库的自动模糊测试与 CVE 发现。",
+    "evidence": "real-world",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "automaticallyfixingdependencybreakingchanges",
+    "id": 12236,
+    "title": "Automatically Fixing Dependency Breaking Changes",
+    "paper": "https://doi.org/10.1145/3729366",
+    "method": "比较能自动使用工具的 LLM 代理与递归零样本提示细化，两者迭代修复 Java 依赖升级破坏。",
+    "technique": [
+      {
+        "name": "代理式依赖破坏修复",
+        "type": "system-mechanism",
+        "target": "依赖更新后无法通过测试的 Java 项目",
+        "action": "让 LLM 调用构建和测试工具、观察反馈并修改项目",
+        "effect": "自动恢复部分依赖兼容性",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "递归零样本提示修复",
+        "type": "algorithm",
+        "target": "依赖破坏错误",
+        "action": "依据上一轮结果迭代细化提示和补丁",
+        "effect": "无需专门训练执行自动修复",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "依赖破坏常需人工处理，既有研究多只检测或评估影响而未完整自动修复。",
+    "scenario": "BUMP 数据集中的 Java 依赖 breaking changes。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "alertsummarizationforonlineservicesystemsbyvalidatingpropagationpathsoffaults",
+    "id": 12237,
+    "title": "Alert Summarization for Online Service Systems by Validating Propagation Paths of Faults",
+    "paper": "https://doi.org/10.1145/3729367",
+    "method": "ProAlert 从历史告警和系统拓扑无监督学习故障传播模式，在线验证传播路径后把告警汇总为事件。",
+    "technique": [
+      {
+        "name": "语义传播路径告警汇总",
+        "type": "analysis-method",
+        "target": "在线服务系统的大量关联告警",
+        "action": "学习历史故障传播模式并验证实时告警在拓扑中的传播路径",
+        "effect": "提高事件聚合准确性并提供可解释根因线索",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "仅利用拓扑连通性的告警汇总忽略传播语义，导致事件归并不准。",
+    "scenario": "真实在线服务系统的故障根因分析。",
+    "evidence": "real-world",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "itsactingoddexploringequivocalbehaviorsofgoodware",
+    "id": 12238,
+    "title": "It’s Acting Odd! Exploring Equivocal Behaviors of Goodware",
+    "paper": "https://doi.org/10.1145/3729368",
+    "method": "识别十二类可信软件暧昧行为，经 32 名软件与安全专家评估，再与恶意软件样本比较普及度。",
+    "technique": [
+      {
+        "name": "良性软件暧昧行为分类",
+        "type": "user-study",
+        "target": "不必然恶意但侵入性的桌面软件行为",
+        "action": "专家评价行为的暧昧性并分析可信软件和恶意样本报告",
+        "effect": "提高用户对潜在风险与分析盲点的透明度",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "介于良性和恶意之间的侵入行为缺少分类与风险可见性。",
+    "scenario": "可信桌面应用、工具和软件库的行为分析。",
+    "evidence": "user study",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "scientificopensourcesoftwareislesslikelytobecomeabandonedthanonemightthinklessonsfromcuratingacatalogofmaintainedscientificsoftware",
+    "id": 12239,
+    "title": "Scientific Open-Source Software Is Less Likely to Become Abandoned Than One Might Think! Lessons from Curating a Catalog of Maintained Scientific Software",
+    "paper": "https://doi.org/10.1145/3729369",
+    "method": "用大模型把 World of Code 仓库分类到科学领域和软件栈层，整理 18,000 余项目并以生存模型分析寿命。",
+    "technique": [
+      {
+        "name": "科学软件语义目录构建",
+        "type": "data-construction",
+        "target": "公开软件仓库",
+        "action": "用大模型标注科学领域和基础设施层并汇集项目属性",
+        "effect": "形成大规模、多样且属性丰富的科学软件集合",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "软件寿命生存分析",
+        "type": "analysis-method",
+        "target": "科学与非科学开源项目",
+        "action": "估计领域、栈层、依赖和参与者属性与项目寿命的关系",
+        "effect": "识别科学软件维护持续性的因素",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "科学软件寿命认识不足，既有目录按学科碎片化且规模小、属性缺失。",
+    "scenario": "World of Code 中科学开源软件的维护与弃用。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "automatedrecognitionofbuggybehaviorsfrommobilebugreports",
+    "id": 12240,
+    "title": "Automated Recognition of Buggy Behaviors from Mobile Bug Reports",
+    "paper": "https://doi.org/10.1145/3729370",
+    "method": "从报告中把缺陷行为转换为标准表示，并在自动复现期间与实时设备和 UI 信息匹配。",
+    "technique": [
+      {
+        "name": "移动缺陷行为标准化识别",
+        "type": "testing-method",
+        "target": "非崩溃型移动应用缺陷报告",
+        "action": "抽取行为为标准表示并在线匹配设备状态与界面现象",
+        "effect": "自动判断复现成功并扩展可复现缺陷类型",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "现有自动复现缺少多类缺陷行为识别，只能处理崩溃或需人工检查轨迹。",
+    "scenario": "移动应用缺陷报告自动复现。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "enhancingwebaccessibilityautomateddetectionofissueswithgenerativeai",
+    "id": 12241,
+    "title": "Enhancing Web Accessibility: Automated Detection of Issues with Generative AI",
+    "paper": "https://doi.org/10.1145/3729371",
+    "method": "GenA11y 按 WCAG 成功准则抽取相关页面元素，并提示大模型检测需要语义理解的无障碍问题。",
+    "technique": [
+      {
+        "name": "准则定向生成式无障碍检查",
+        "type": "testing-method",
+        "target": "网页 WCAG 违规",
+        "action": "为每条可测试准则筛选页面元素并交给 LLM 语义判断",
+        "effect": "覆盖规则检查器遗漏的更多违规类型",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "规则式无障碍检查器只覆盖少量指南，难以发现依赖页面语义的违规。",
+    "scenario": "真实网站的自动 Web 无障碍合规检查。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "directedtestinginmlirunleashingitspotentialbyovercomingthelimitationsofrandomfuzzing",
+    "id": 12242,
+    "title": "Directed Testing in MLIR: Unleashing Its Potential by Overcoming the Limitations of Random Fuzzing",
+    "paper": "https://doi.org/10.1145/3729372",
+    "method": "MLIRTracer 从最高层 TOSA IR 向下系统遍历层级代码空间，并优先定向探索易错区域。",
+    "technique": [
+      {
+        "name": "自顶向下 MLIR 定向模糊测试",
+        "type": "testing-method",
+        "target": "由下游方言触发的编译器缺陷",
+        "action": "沿 MLIR 层级逐级生成测试并优先覆盖缺陷高风险代码",
+        "effect": "减少随机 pass 选择浪费并提高缺陷发现",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "随机 MLIR 模糊测试忽视层级结构，浪费资源且漏掉下游方言缺陷。",
+    "scenario": "MLIR 编译基础设施缺陷检测。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "discotowardsdecompilingevmbytecodetosourcecodeusinglargelanguagemodels",
+    "id": 12243,
+    "title": "DiSCo: Towards Decompiling EVM Bytecode to Source Code using Large Language Models",
+    "paper": "https://doi.org/10.1145/3729373",
+    "method": "DiSCo 先转换为逻辑不变中间表示，以类型感知图推断被剥离变量，再用代码规格构造提示生成 Solidity 源码。",
+    "technique": [
+      {
+        "name": "逻辑不变 EVM 中间表示",
+        "type": "architecture",
+        "target": "低层 EVM 字节码",
+        "action": "把字节码重投影为保持逻辑的高层抽象单元",
+        "effect": "为大模型源码提升提供稳定语义输入",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "类型感知图语义增强",
+        "type": "model",
+        "target": "编译时被剥离的合约变量",
+        "action": "建模类型关系并推断变量语义",
+        "effect": "提升反编译代码的可理解性和攻击复现能力",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "传统 EVM 反编译只产出难懂伪代码，用户可能误解行为并遭受诈骗或利用。",
+    "scenario": "智能合约字节码理解、源码恢复和攻击复现。",
+    "evidence": "benchmark",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "towardsunderstandingperformancebugsinpopulardatasciencelibraries",
+    "id": 12244,
+    "title": "Towards Understanding Performance Bugs in Popular Data Science Libraries",
+    "paper": "https://doi.org/10.1145/3729374",
+    "method": "分析七个数据科学库的 202 个性能缺陷，归纳影响、根因、定位修复成本，并从根因派生测试规则。",
+    "technique": [
+      {
+        "name": "数据科学库性能缺陷分类",
+        "type": "analysis-method",
+        "target": "长执行和内存耗尽类缺陷",
+        "action": "关联影响、数据处理根因、定位难度和修复策略",
+        "effect": "形成检测与自动修复机会并导出测试规则",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "核心数据科学库性能缺陷严重影响应用，但其根因和修复实践缺少研究。",
+    "scenario": "七个流行数据科学库的真实性能缺陷。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "deduplicatingsilentcompilerbugsviadeepsemanticrepresentation",
+    "id": 12245,
+    "title": "De-duplicating Silent Compiler Bugs via Deep Semantic Representation",
+    "paper": "https://doi.org/10.1145/3729375",
+    "method": "BLADE 以失败与无失败程序分类为辅助目标学习中间表示，再用模型解释提取与失败相关的语义并聚类去重。",
+    "technique": [
+      {
+        "name": "黑盒失败语义表示学习",
+        "type": "model",
+        "target": "无错误消息的编译器测试失败",
+        "action": "从测试程序及通过/失败标签学习表示并解释出失败相关特征",
+        "effect": "过滤无关语法差异并识别独特静默编译器缺陷",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "大量测试失败常由同一静默编译器缺陷造成，黑盒去重又易受无关语法信息干扰。",
+    "scenario": "GCC 与 LLVM 四个测试失败数据集。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "automatedtrustworthinessoraclegenerationformachinelearningtextclassifiers",
+    "id": 12246,
+    "title": "Automated Trustworthiness Oracle Generation for Machine Learning Text Classifiers",
+    "paper": "https://doi.org/10.1145/3729376",
+    "method": "TOKI 从解释方法提取决定预测的词，并以词嵌入衡量其与类别的语义相关性，自动生成可信性 oracle。",
+    "technique": [
+      {
+        "name": "语义相关性可信 oracle",
+        "type": "testing-method",
+        "target": "文本分类器单次预测",
+        "action": "检查贡献最大的词是否与预测类别语义相关",
+        "effect": "发现依赖虚假相关性的不可可信预测",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "可信性漏洞定向对抗攻击",
+        "type": "testing-method",
+        "target": "TOKI 识别的脆弱预测",
+        "action": "按可信性 oracle 指引构造较少扰动的攻击样本",
+        "effect": "验证并放大模型的虚假特征依赖",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "置信度和准确率不足以判断预测是否基于有效模式，人工检查解释不可扩展。",
+    "scenario": "约八千个人工标注预测上的文本分类可信性测试。",
+    "evidence": "benchmark",
+    "lens": [
+      "渗透测试",
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "nomorelabelledexamplesanunsupervisedlogparserwithllms",
+    "id": 12247,
+    "title": "No More Labelled Examples? An Unsupervised Log Parser with LLMs",
+    "paper": "https://doi.org/10.1145/3729377",
+    "method": "LUNAR 用混合排序搜索只在参数部分不同的日志对比单元，再提示 LLM 从跨日志差异中提取模板。",
+    "technique": [
+      {
+        "name": "日志对比单元无监督解析",
+        "type": "analysis-method",
+        "target": "大规模持续演化的软件日志",
+        "action": "联合公共性和变异性检索 LCU，并让 LLM 识别参数与固定结构",
+        "effect": "无需标注示例获得高效日志模板",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "微调和上下文日志解析依赖高质量标注，日志体量与演化使持续维护困难。",
+    "scenario": "大型公开和工业日志数据集。",
+    "evidence": "real-world",
+    "lens": [
+      "开放集/泛化"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "vulpadetectingsemanticallyrecurringvulnerabilitieswithmultiobjecttypestateanalysis",
+    "id": 12248,
+    "title": "VulPA: Detecting Semantically Recurring Vulnerabilities with Multi-object Typestate Analysis",
+    "paper": "https://doi.org/10.1145/3729378",
+    "method": "VulPA 用 VPDL 描述变量关系和触发操作，再以跨过程多对象 typestate 分析跟踪数据流与对象交互。",
+    "technique": [
+      {
+        "name": "VPDL 漏洞根因模式",
+        "type": "formal-method",
+        "target": "语义复现的漏洞家族",
+        "action": "声明多变量关系和触发缺陷的操作序列",
+        "effect": "把 CVE 根因转化为可执行检测规则",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "跨过程多对象 typestate 分析",
+        "type": "analysis-method",
+        "target": "Java 应用复杂对象交互",
+        "action": "在 IFDS 框架上跟踪对象间数据流、控制流和变量关系",
+        "effect": "发现语法不同但根因相同的漏洞",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "相同根因漏洞涉及多变量复杂交互，现有克隆或单对象分析难以准确发现。",
+    "scenario": "26 个 Java 应用上基于 34 个 CVE 规则的漏洞挖掘。",
+    "evidence": "real-world",
+    "lens": [
+      "渗透测试",
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "alphatransaneurosymboliccompositionalapproachforrepositorylevelcodetranslationandvalidation",
+    "id": 12249,
+    "title": "AlphaTrans: A Neuro-Symbolic Compositional Approach for Repository-Level Code Translation and Validation",
+    "paper": "https://doi.org/10.1145/3729379",
+    "method": "AlphaTrans 用程序分析把仓库分解为片段，按逆调用顺序让 LLM 翻译源与测试代码，并执行多层语法、运行和功能验证。",
+    "technique": [
+      {
+        "name": "神经符号仓库级代码翻译",
+        "type": "architecture",
+        "target": "具有类间依赖和语言特性的真实项目",
+        "action": "程序分析分解依赖、逆调用翻译并组合片段",
+        "effect": "把大规模翻译问题转化为可控局部任务",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "多层翻译验证",
+        "type": "testing-method",
+        "target": "跨语言生成的应用与测试代码",
+        "action": "检查语法、运行行为和功能正确性并汇报栈与测试错误",
+        "effect": "定位不正确翻译并支持人工收尾",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "规则转译难随语言演化，大模型在小基准有效却难泛化到真实仓库依赖和规模。",
+    "scenario": "十个真实开源仓库的完整代码迁移。",
+    "evidence": "real-world",
+    "lens": [
+      "开放集/泛化"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "coderedontheharmfulnessofapplyingofftheshelflargelanguagemodelstoprogrammingtasks",
+    "id": 12250,
+    "title": "Code Red! On the Harmfulness of Applying Off-the-Shelf Large Language Models to Programming Tasks",
+    "paper": "https://doi.org/10.1145/3729380",
+    "method": "构建软件工程有害场景分类和提示数据集，设计经验证的自动评价器比较不同模型、规模、架构和对齐策略。",
+    "technique": [
+      {
+        "name": "软件工程有害性评测框架",
+        "type": "measurement-method",
+        "target": "通用与代码大模型的编程回答",
+        "action": "按有害场景分类生成提示并自动判定输出风险",
+        "effect": "系统比较模型对恶意软件工程请求的对齐差异",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "现成大模型用于编程可能被恶意滥用，但缺少面向软件工程的人类价值对齐评测。",
+    "scenario": "开放、闭源以及通用、代码专用大模型的安全评估。",
+    "evidence": "benchmark",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "onthecharacteristicsandimpactsofprotestwarelibraries",
+    "id": 12251,
+    "title": "On the Characteristics and Impacts of Protestware Libraries",
+    "paper": "https://doi.org/10.1145/3729381",
+    "method": "收集 163 个抗议软件或使能库样本，分析诱导方式、歧视性、透明度以及对社区和下游使用的后果。",
+    "technique": [
+      {
+        "name": "抗议软件供应链实证分析",
+        "type": "analysis-method",
+        "target": "开源库及其下游社区",
+        "action": "分类抗议实现特征并追踪情绪、使用和下游破坏影响",
+        "effect": "刻画新型软件行动主义的供应链风险",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "媒体多报道个案，但抗议软件对开源供应链的整体特征和影响缺少深入认识。",
+    "scenario": "JavaScript 等开源库的抗议式功能变更。",
+    "evidence": "real-world",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "sceneflowspecificationsencodingandmonitoringrichtemporalsafetypropertiesofautonomoussystems",
+    "id": 12252,
+    "title": "Scene Flow Specifications: Encoding and Monitoring Rich Temporal Safety Properties of Autonomous Systems",
+    "paper": "https://doi.org/10.1145/3729382",
+    "method": "扩展场景图为跨时间符号实体的领域语言，编码 scene flow 安全属性并合成为运行时监控器。",
+    "technique": [
+      {
+        "name": "Scene Flow 时序安全规格",
+        "type": "formal-method",
+        "target": "自动系统跨时间驾驶行为",
+        "action": "用跨时符号实体描述车辆、人员和道路之间的时序约束",
+        "effect": "表达普通场景图无法覆盖的丰富驾驶属性",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "场景流运行时监控",
+        "type": "system-mechanism",
+        "target": "自动驾驶车辆在线行为",
+        "action": "执行合成规格并检查测试运行中的合规性",
+        "effect": "发现让行等时间相关安全违规",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "传感器空间与语义安全属性有鸿沟，静态场景图又无法表达关键时序关系。",
+    "scenario": "三种先进自动驾驶车辆的运行时安全监测。",
+    "evidence": "real-world",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "automatedextractionandanalysisofdevelopersrationaleinopensourcesoftware",
+    "id": 12253,
+    "title": "Automated Extraction and Analysis of Developer's Rationale in Open Source Software",
+    "paper": "https://doi.org/10.1145/3729383",
+    "method": "实例化 Kantara 架构，以预训练模型和大模型抽取决策理由，并用结构机制检测历史推理冲突和设计侵蚀。",
+    "technique": [
+      {
+        "name": "开发决策理由自动抽取与冲突分析",
+        "type": "analysis-method",
+        "target": "开源项目历史变更讨论",
+        "action": "识别决策与理由语句、建立关系并检查新旧推理冲突",
+        "effect": "帮助贡献者避免违反既有设计决策",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "理解全部项目历史耗费巨大，现有研究缺少自动暴露设计理由冲突的机制。",
+    "scenario": "Linux OOM-Killer 及另外五个活跃开源项目。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "errordelayedisnoterrorhandledunderstandingandfixingpropagatederrorhandlingbugs",
+    "id": 12254,
+    "title": "Error Delayed Is Not Error Handled: Understanding and Fixing Propagated Error-Handling Bugs",
+    "paper": "https://doi.org/10.1145/3729384",
+    "method": "EH-Fixer 构造错误跨函数传播路径，并以检索增强生成在路径相关位置自动修复延迟处理缺陷。",
+    "technique": [
+      {
+        "name": "传播路径检索增强修复",
+        "type": "system-mechanism",
+        "target": "跨函数延迟处理的错误",
+        "action": "恢复错误传播链、检索相关修复知识并生成路径级补丁",
+        "effect": "覆盖单函数方法遗漏的传播式错误处理缺陷",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "错误处理可延迟到其他函数而易被漏掉，单函数分析难以完整修复。",
+    "scenario": "Linux 内核及九个广泛使用应用的真实 PEH 缺陷。",
+    "evidence": "real-world",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "medusaaframeworkforcollaborativedevelopmentoffoundationmodelswithautomatedparameterownershipassignment",
+    "id": 12255,
+    "title": "Medusa: A Framework for Collaborative Development of Foundation Models with Automated Parameter Ownership Assignment",
+    "paper": "https://doi.org/10.1145/3729385",
+    "method": "Medusa 以类似 Git 的模型分支管理协作微调，并生成合并感知掩码自动分配参数所有权。",
+    "technique": [
+      {
+        "name": "参数所有权协作微调",
+        "type": "architecture",
+        "target": "多团队并行开发同一基础模型",
+        "action": "为分支分配可修改参数并用掩码约束各自训练",
+        "effect": "主动避免重叠更新冲突并提高合并后性能",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "不同团队同时微调重叠参数会产生更新冲突并损害模型性能。",
+    "scenario": "三种模型、五个数据集和多种微调方法的协作开发。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "cxxcrafteranllmbasedagentforautomatedccopensourcesoftwarebuilding",
+    "id": 12256,
+    "title": "CXXCrafter: An LLM-Based Agent for Automated C/C++ Open Source Software Building",
+    "paper": "https://doi.org/10.1145/3729386",
+    "method": "CXXCrafter 让大模型代理与构建环境动态交互，处理依赖解析、构建系统、工具链和多轮错误。",
+    "technique": [
+      {
+        "name": "LLM 代理自动软件构建",
+        "type": "system-mechanism",
+        "target": "异构 C/C++ 开源项目",
+        "action": "执行构建、读取错误、调整依赖和配置并反复验证",
+        "effect": "减少人工构建成本并支持下游分析与漏洞复现",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "C/C++ 项目依赖、工具链和错误机制多样，使自动构建长期困难。",
+    "scenario": "Top100 等开源项目构建及漏洞复现准备。",
+    "evidence": "real-world",
+    "lens": [
+      "靶场/环境生成"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "acausallearningframeworkforenhancingrobustnessofsourcecodemodels",
+    "id": 12257,
+    "title": "A Causal Learning Framework for Enhancing Robustness of Source Code Models",
+    "paper": "https://doi.org/10.1145/3729387",
+    "method": "CausalCode 通过因果数据增强生成干预样本，并以正则化学习偏向因果特征的不变表示。",
+    "technique": [
+      {
+        "name": "因果干预式代码表示学习",
+        "type": "model",
+        "target": "受虚假相关影响的源代码模型",
+        "action": "用干预样本打断虚假特征关联并正则化不变表示",
+        "effect": "跨模型和任务提高对抗鲁棒性",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "代码模型会学习虚假特征关联，因此容易遭受对抗攻击。",
+    "scenario": "缺陷检测、功能分类、代码翻译和代码修复。",
+    "evidence": "benchmark",
+    "lens": [
+      "开放集/泛化",
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "recastingtypehintsfromwebassemblycontracts",
+    "id": 12258,
+    "title": "Recasting Type Hints from WebAssembly Contracts",
+    "paper": "https://doi.org/10.1145/3729388",
+    "method": "WasmHint 构造 wCFG、模拟执行捕获类型操作信息，并以深度模型和语义校正器恢复参数及返回类型。",
+    "technique": [
+      {
+        "name": "wCFG 语义类型恢复",
+        "type": "model",
+        "target": "类型信息有限的 WebAssembly 智能合约",
+        "action": "表示控制依赖、模拟执行并协调类型相关语义",
+        "effect": "推断高层参数和返回值类型",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "EVM 类型推断不适用于运行语义不同的 WebAssembly 合约。",
+    "scenario": "77,208 个 WebAssembly 合约函数的高层类型恢复。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "revisitingoptimizationresilienceclaimsinbinarydiffingtoolsinsightsfromllvmpeepholeoptimizationanalysis",
+    "id": 12259,
+    "title": "Revisiting Optimization-Resilience Claims in Binary Diffing Tools: Insights from LLVM Peephole Optimization Analysis",
+    "paper": "https://doi.org/10.1145/3729389",
+    "method": "定制 LLVM 翻译验证工具分析窥孔优化影响，并构建隔离这些过程内变化的 peephole-oriented 测试套件。",
+    "technique": [
+      {
+        "name": "窥孔优化定向二进制差分基准",
+        "type": "data-construction",
+        "target": "声称抗编译优化的二进制 diff 工具",
+        "action": "隔离并测量 LLVM 局部重写在整个优化过程造成的代码变化",
+        "effect": "检验基本块中心方法的优化韧性",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "二进制差分工具常声称抗优化，但基本块假设无法处理持续发生的过程内窥孔改写。",
+    "scenario": "漏洞搜索、克隆检测和恶意软件分析中的二进制比较。",
+    "evidence": "benchmark",
+    "lens": [
+      "开放集/泛化"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "demystifyingmemorizationinllmbasedprogramrepairviaageneralhypothesistestingframework",
+    "id": 12260,
+    "title": "Demystifying Memorization in LLM-Based Program Repair via a General Hypothesis Testing Framework",
+    "paper": "https://doi.org/10.1145/3729390",
+    "method": "把记忆检测形式化为零假设下低概率事件检验，并用真值补丁匹配和大幅代码变异后的重测识别潜在记忆。",
+    "technique": [
+      {
+        "name": "程序修复记忆假设检验",
+        "type": "formal-method",
+        "target": "大模型生成的正确补丁",
+        "action": "定义非记忆零假设及低概率事件，据事件发生拒绝零假设",
+        "effect": "统一并审查不同记忆检测方法的统计依据",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "代码变异后补丁重现测试",
+        "type": "testing-method",
+        "target": "疑似训练集记忆的缺陷修复",
+        "action": "显著修改缺陷代码并检查模型是否仍生成原始真值补丁",
+        "effect": "提供补丁来自记忆而非求解的证据",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "缺少记忆真值导致现有检测方法零散，难区分真实推理与训练数据复现。",
+    "scenario": "Defects4J 与新建 GitBug-Java 上的大模型程序修复。",
+    "evidence": "benchmark",
+    "lens": [
+      "开放集/泛化"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "expressingandcheckingstatisticalassumptions",
+    "id": 12261,
+    "title": "Expressing and Checking Statistical Assumptions",
+    "paper": "https://doi.org/10.1145/3729391",
+    "method": "允许库开发者把统计假设注解为数据假说，自动插入假设检验，并实现 Python 与 R 检查工具。",
+    "technique": [
+      {
+        "name": "统计假设注解与自动检验",
+        "type": "instrumentation",
+        "target": "Notebook 中调用的统计函数",
+        "action": "把函数前提表达为数据假说并在调用处插入相应统计检验",
+        "effect": "在结果看似合理时仍向分析者暴露假设违背",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "统计方法在前提不满足时仍可能给出合理外观结果，普通数据分析者难以及时发现误用。",
+    "scenario": "128 个 Kaggle Python 与 R Notebook 的假设检验和统计建模。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "coredeveloperturnoverintherustpackageecosystemprevalenceimpactandawareness",
+    "id": 12262,
+    "title": "Core Developer Turnover in the Rust Package Ecosystem: Prevalence, Impact, and Awareness",
+    "paper": "https://doi.org/10.1145/3729392",
+    "method": "大规模分析 36,991 个 Rust 包的核心开发者流失及下游影响，并调查开发者对上游健康状态的认知需求。",
+    "technique": [
+      {
+        "name": "生态级核心开发者流失分析",
+        "type": "analysis-method",
+        "target": "Rust 包及其依赖网络",
+        "action": "识别核心贡献者退出并关联开发质量、效率、弃用和下游风险",
+        "effect": "刻画单项目研究忽略的生态传播影响",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "上游流失认知调查",
+        "type": "user-study",
+        "target": "依赖 Rust 包的开发者",
+        "action": "收集对项目稳定性、透明度和通知机制的看法",
+        "effect": "形成可靠依赖网络的治理需求",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "既有开发者流失研究停留在单项目层级，忽视对下游依赖者和生态持续性的影响。",
+    "scenario": "Rust 开源包生态的维护与依赖风险。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "whowillstopcontributingtoossprojectspredictingcompanyturnoverbasedoninitialbehavior",
+    "id": 12263,
+    "title": "Who Will Stop Contributing to OSS Projects? Predicting Company Turnover Based on Initial Behavior",
+    "paper": "https://doi.org/10.1145/3729393",
+    "method": "从企业早期贡献强度、范围、变更类型、协作和规模构建时间卷积网络，预测其是否停止参与开源项目。",
+    "technique": [
+      {
+        "name": "企业贡献流失时间卷积预测",
+        "type": "model",
+        "target": "开源项目中的公司级贡献者",
+        "action": "编码企业早期时序行为指标并分类未来退出",
+        "effect": "提前识别可能失去的长期和核心企业贡献",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "公司已深度参与开源生态，但其退出特征和可预测性相较志愿者研究不足。",
+    "scenario": "Linux 内核训练并迁移到 Rust 与 OpenStack 的企业贡献分析。",
+    "evidence": "real-world",
+    "lens": [
+      "开放集/泛化"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "automaticallydetectingnumericalinstabilityinmachinelearningapplicationsviasoftassertions",
+    "id": 12264,
+    "title": "Automatically Detecting Numerical Instability in Machine Learning Applications via Soft Assertions",
+    "paper": "https://doi.org/10.1145/3729394",
+    "method": "从不稳定函数单元测试数据训练 soft assertion 模型，让其给出触发数值失稳的值变化方向并引导输入变异。",
+    "technique": [
+      {
+        "name": "软断言引导数值模糊测试",
+        "type": "testing-method",
+        "target": "机器学习应用中的浮点数值失稳",
+        "action": "学习失稳条件并把触发方向作为变异信号",
+        "effect": "发现 NaN、INF 之外导致错误输出的数值缺陷",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "机器学习中的极大极小浮点计算易失稳，既有模糊器主要发现显式 NaN 或 INF。",
+    "scenario": "GRIST 程序和 GitHub 真实机器学习应用。",
+    "evidence": "real-world",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "dylinadynamiclinterforpython",
+    "id": 12265,
+    "title": "DyLin: A Dynamic Linter for Python",
+    "paper": "https://doi.org/10.1145/3729395",
+    "method": "DyLin 在 Python 执行过程中运行可扩展检查器，检测十五类难以静态发现的语言特定反模式。",
+    "technique": [
+      {
+        "name": "Python 动态 lint",
+        "type": "instrumentation",
+        "target": "运行时才能观察的 Python 反模式",
+        "action": "随程序执行监测值、事件、计算和数据流并触发检查规则",
+        "effect": "补充静态 linter 与类型检查器遗漏的问题",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Python 动态语义使静态 linter 无法发现部分错误、性能浪费和训练数据泄漏。",
+    "scenario": "37 个流行开源项目和 Kaggle 机器学习代码。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "nlplibrariesenergyconsumptionandruntimeanempiricalstudy",
+    "id": 12266,
+    "title": "NLP Libraries, Energy Consumption and Runtime: An Empirical Study",
+    "paper": "https://doi.org/10.1145/3729396",
+    "method": "用 Intel-RAPL 和 NVIDIA-SMI 测量 NLTK、spaCy、Gensim 在三数据集六类预处理任务上的能耗和运行时间。",
+    "technique": [
+      {
+        "name": "NLP 预处理能耗测量",
+        "type": "measurement-method",
+        "target": "分词、词干化、词性标注和实体识别等任务",
+        "action": "跨库和任务记录 CPU/GPU 能耗及运行时间并做统计比较",
+        "effect": "识别各预处理操作的高效库选择",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "现代 NLP 预处理被广泛使用，但其能源成本长期被忽视。",
+    "scenario": "三种流行 NLP 库的绿色计算评估。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "anempiricalstudyofcodeclonesfromcommercialaicodegenerators",
+    "id": 12267,
+    "title": "An Empirical Study of Code Clones from Commercial AI Code Generators",
+    "paper": "https://doi.org/10.1145/3729397",
+    "method": "对三种商业 AI 代码生成器开展覆盖全部克隆类型的实证研究，并分析版权、缺陷和漏洞传播风险。",
+    "technique": [
+      {
+        "name": "生成代码克隆全类型测量",
+        "type": "measurement-method",
+        "target": "商业 AI 生成的程序",
+        "action": "检测并统计 Type-1、Type-2 等代码克隆及其重复稳定性",
+        "effect": "量化复制式生成与潜在版权、安全后果",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "商业代码生成器是否依赖复制粘贴并传播有缺陷或脆弱代码仍不清楚。",
+    "scenario": "三种先进商业 AI 代码生成服务。",
+    "evidence": "benchmark",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "coverupeffectivehighcoveragetestgenerationforpython",
+    "id": 12268,
+    "title": "CoverUp: Effective High Coverage Test Generation for Python",
+    "paper": "https://doi.org/10.1145/3729398",
+    "method": "CoverUp 将覆盖分析、代码上下文和测试反馈放入提示，迭代引导大模型生成提高行与分支覆盖的 Python 测试。",
+    "technique": [
+      {
+        "name": "覆盖反馈迭代测试生成",
+        "type": "testing-method",
+        "target": "Python 回归测试套件",
+        "action": "定位未覆盖代码、构造上下文提示并根据执行反馈继续生成测试",
+        "effect": "显著提升模块行覆盖和分支覆盖",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "自动生成高覆盖测试仍困难，单纯模型或搜索难以持续触达未覆盖分支。",
+    "scenario": "来自开源 Python 项目的挑战性测试基准。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "reprocopilotllmdrivenfailurereproductionwithdynamicrefinement",
+    "id": 12269,
+    "title": "ReproCopilot: LLM-Driven Failure Reproduction with Dynamic Refinement",
+    "paper": "https://doi.org/10.1145/3729399",
+    "method": "ReproCopilot 以状态导向代码生成构造复现工作负载，并用程序分析反馈动态细化代码和输入直至触发目标失败。",
+    "technique": [
+      {
+        "name": "状态导向失败复现生成",
+        "type": "system-mechanism",
+        "target": "由复杂输入、状态或环境导致的软件失败",
+        "action": "让 LLM 生成能建立关键状态的代码与输入",
+        "effect": "自动构造面向目标失败的工作负载",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "程序分析反馈动态细化",
+        "type": "testing-method",
+        "target": "尚未成功的复现工作负载",
+        "action": "依据运行和分析反馈迭代修改生成物",
+        "effect": "逐步逼近并触发目标失败",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "复杂输入、状态和环境使软件失败复现耗时且困难。",
+    "scenario": "17 个开源项目的 50 个真实失败。",
+    "evidence": "real-world",
+    "lens": [
+      "靶场/环境生成"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "calibrationoflargelanguagemodelsoncodesummarization",
+    "id": 12270,
+    "title": "Calibration of Large Language Models on Code Summarization",
+    "paper": "https://doi.org/10.1145/3729400",
+    "method": "把代码摘要质量视为校准问题，仅依据输入代码和生成摘要估计其接近人类摘要的概率。",
+    "technique": [
+      {
+        "name": "代码摘要人类相似度校准",
+        "type": "measurement-method",
+        "target": "缺少金标准时的大模型代码摘要",
+        "action": "学习可解释为可靠概率的置信度并跨模型、语言和设置验证",
+        "effect": "帮助用户判断生成摘要是否足够可信",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "无人工黄金摘要时，简洁、流畅和相关性指标难判断生成摘要是否像开发者所写。",
+    "scenario": "多种大模型和编程语言的代码摘要评估。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "crispesemanticguidedexecutionplanninganddynamicreasoningforenhancingcodecoverageprediction",
+    "id": 12271,
+    "title": "CRISPE: Semantic-Guided Execution Planning and Dynamic Reasoning for Enhancing Code Coverage Prediction",
+    "paper": "https://doi.org/10.1145/3729401",
+    "method": "CRISPE 按语句类型语义规划模拟执行，并检索可行覆盖选项动态校验大模型当前推理方向。",
+    "technique": [
+      {
+        "name": "语义引导覆盖执行规划",
+        "type": "analysis-method",
+        "target": "无需实际运行的代码覆盖预测",
+        "action": "逐步应用语句语义并维护当前已覆盖集合",
+        "effect": "生成更正确的模拟执行步骤",
+        "grounding": "explicit",
+        "limitation": null
+      },
+      {
+        "name": "可行覆盖选项检索校验",
+        "type": "system-mechanism",
+        "target": "大模型动态行为推理",
+        "action": "检索候选覆盖结果并判断规划是否偏离可行路径",
+        "effect": "提高精确匹配和语句匹配覆盖准确率",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "大模型理解静态代码但不擅长通常需要执行的覆盖与运行错误预测。",
+    "scenario": "代码覆盖预测及不完整代码运行时错误静态检测。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "blendedanalysisforpredictiveexecution",
+    "id": 12272,
+    "title": "Blended Analysis for Predictive Execution",
+    "paper": "https://doi.org/10.1145/3729402",
+    "method": "PredEx 将预测执行拆成子任务，对确定顺序使用程序分析，对不确定变量使用逐变量预测性后向切片交给 LLM。",
+    "technique": [
+      {
+        "name": "程序分析与 LLM 混合预测执行",
+        "type": "architecture",
+        "target": "Python 动态执行轨迹",
+        "action": "确定性决定可知步骤，并将未知值依赖切成较小预测问题",
+        "effect": "提高完整轨迹、前缀和下一语句预测准确率",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "大模型难以推理通常依赖真实运行的执行轨迹、覆盖和运行时错误。",
+    "scenario": "Python 代码的静态覆盖与运行时错误预测。",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "statementleveladversarialattackonvulnerabilitydetectionmodelsviaoutofdistributionfeatures",
+    "id": 12273,
+    "title": "Statement-Level Adversarial Attack on Vulnerability Detection Models via Out-of-Distribution Features",
+    "paper": "https://doi.org/10.1145/3729403",
+    "method": "SLODA 用代码反优化生成通用 OOD 特征，并从误判与对抗样例提取标签特定特征，在语句级插入上下文适配扰动。",
+    "technique": [
+      {
+        "name": "语句级 OOD 特征对抗攻击",
+        "type": "testing-method",
+        "target": "代码预训练与大模型漏洞检测器",
+        "action": "以通用和标签特定分布外代码特征扩展扰动范围并缩小搜索空间",
+        "effect": "提高攻击有效性、效率和检测规避性",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "标识符替换等攻击扰动范围窄且缺乏针对错误预测的特异性。",
+    "scenario": "15 种代码漏洞检测模型的鲁棒性测试与对抗训练。",
+    "evidence": "benchmark",
+    "lens": [
+      "渗透测试",
+      "开放集/泛化",
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "understandingindustryperspectivesofstaticapplicationsecuritytestingsastevaluation",
+    "id": 12274,
+    "title": "Understanding Industry Perspectives of Static Application Security Testing (SAST) Evaluation",
+    "paper": "https://doi.org/10.1145/3729404",
+    "method": "半结构访谈 20 名安全与产品开发从业者，分析使用 SAST 基准的目的、障碍和改进需求。",
+    "technique": [
+      {
+        "name": "SAST 基准行业需求研究",
+        "type": "user-study",
+        "target": "静态应用安全测试评估",
+        "action": "跨经验与背景访谈工业专业人员并质性归纳评价实践",
+        "effect": "识别学术基准与产业采用需求之间的差距",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "现有 SAST 基准常不符合行业需求，阻碍自动安全分析工具采用。",
+    "scenario": "工业静态应用安全测试选型与评估。",
+    "evidence": "user study",
+    "lens": [
+      "自主防御"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "smallerbutbetterselfpacedknowledgedistillationforlightweightyeteffectivelcms",
+    "id": 12275,
+    "title": "Smaller but Better: Self-Paced Knowledge Distillation for Lightweight yet Effective LCMs",
+    "paper": "https://doi.org/10.1145/3729405",
+    "method": "SODA 循环执行正确与错误知识传递、多视角质量反馈和按难度生成新问题的自适应知识更新。",
+    "technique": [
+      {
+        "name": "自步式代码模型知识蒸馏",
+        "type": "model",
+        "target": "轻量学生大代码模型",
+        "action": "联合正确性感知监督、错误感知对比学习和模型、静态工具反馈动态调整训练题难度",
+        "effect": "持续传递教师编程与识错能力并提升 Pass@1",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "代码模型蒸馏忽视错误领域知识且使用静态种子，导致学生编程能力退化。",
+    "scenario": "多语言代码生成基准和约七十亿参数轻量模型。",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  }
+]

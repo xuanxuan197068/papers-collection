@@ -1,0 +1,1536 @@
+[
+  {
+    "key": "lithosanoperatingsystemforefficientmachinelearningongpus",
+    "id": 13667,
+    "title": "LithOS: An Operating System for Efficient Machine Learning on GPUs",
+    "paper": "https://doi.org/10.1145/3731569.3764818",
+    "method": "This paper introduces LithOS, a first step towards a GPU OS.LithOS includes the following new abstractions and mechanisms for efficient GPU management: (i) a novel TPC Scheduler that supports spatial scheduling at the granularity of individual TPCs, unlocking efficient TPC stealing between workloads; (ii) a transparent kernel atomizer to…",
+    "technique": [
+      {
+        "name": "LithOS",
+        "type": "hardware-mechanism",
+        "target": "An Operating System for Efficient Machine Learning on GPUs",
+        "action": "This paper introduces LithOS, a first step towards a GPU OS.LithOS includes the following new abstractions and mechanisms for efficient GPU management: (i) a novel TPC Scheduler that supports spatial scheduling at the granularity of individual TPCs, unlocking…",
+        "effect": "This paper introduces LithOS, a first step towards a GPU OS.LithOS includes the following new abstractions and mechanisms for efficient GPU management: (i) a novel TPC Scheduler that supports spatial scheduling at the granularity of individual TPCs, unlocking…",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "However, balancing diverse model demands with high utilization remains a fundamental challenge.",
+    "scenario": "This paper introduces LithOS, a first step towards a GPU OS.LithOS includes the following new abstractions and mechanisms for efficient GPU management: (i) a novel TPC Scheduler that supports spatial scheduling at the granularity of individual TPCs, unlocking efficient TPC stealing between workloads; (ii) a transparent…",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "μforksupportingposixforkwithinasingleaddressspaceos",
+    "id": 13668,
+    "title": "μFork: Supporting POSIX fork Within a Single-Address-Space OS",
+    "paper": "https://doi.org/10.1145/3731569.3764809",
+    "method": "We propose μFork, a single-address-space operating system design supporting POSIX fork on modern hardware without compromising on any of these key objectives. μFork emulates POSIX processes (μprocesses) and achieves fork by creating for the child a copy of the parent μprocess' memory at a different location within a single address space.",
+    "technique": [
+      {
+        "name": "μFork",
+        "type": "hardware-mechanism",
+        "target": "Supporting POSIX fork Within a Single-Address-Space OS",
+        "action": "We implement μFork and evaluate it upon three real-world use-cases: Redis snapshots, Nginx multi-worker deployments, and Zygote FaaS worker warm-up. μFork outperforms previous work and traditional monolithic OSes on key lightweightness metrics by an order of m…",
+        "effect": "We propose μFork, a single-address-space operating system design supporting POSIX fork on modern hardware without compromising on any of these key objectives. μFork emulates POSIX processes (μprocesses) and achieves fork by creating for the child a copy of the…",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Single-address-space operating systems have well-known lightweightness benefits that result from their central design idea: the kernel and applications share a unique address space.",
+    "scenario": "We implement μFork and evaluate it upon three real-world use-cases: Redis snapshots, Nginx multi-worker deployments, and Zygote FaaS worker warm-up. μFork outperforms previous work and traditional monolithic OSes on key lightweightness metrics by an order of magnitude, e.g. it can offer a fork-bound FaaS function throu…",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "tockfromresearchtosecuring10millioncomputers",
+    "id": 13669,
+    "title": "Tock: From Research To Securing 10 Million Computers",
+    "paper": "https://doi.org/10.1145/3731569.3764828",
+    "method": "This paper focuses on the impact of Tock's technical design on its adoption, the challenges and unexpected benefits of using a type-safe language (Rust)—particularly in security-sensitive settings—and the experience of supporting a production open-source operating system from academia.",
+    "technique": [
+      {
+        "name": "Tock",
+        "type": "hardware-mechanism",
+        "target": "From Research To Securing 10 Million Computers",
+        "action": "This paper focuses on the impact of Tock's technical design on its adoption, the challenges and unexpected benefits of using a type-safe language (Rust)—particularly in security-sensitive settings—and the experience of supporting a production open-source opera…",
+        "effect": "This paper focuses on the impact of Tock's technical design on its adoption, the challenges and unexpected benefits of using a type-safe language (Rust)—particularly in security-sensitive settings—and the experience of supporting a production open-source opera…",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Tock began 10 years ago as a research operating system developed by academics to help other academics build urban sensing applications.",
+    "scenario": "It is deployed on root-of-trust hardware in data-center servers and on millions of laptops; it is used to develop automotive and space products, wearable electronics, and hardware security tokens—all while remaining a platform for operating systems research.",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "protoaguidedjourneythroughmodernosconstruction",
+    "id": 13670,
+    "title": "Proto: A Guided Journey through Modern OS Construction",
+    "paper": "https://doi.org/10.1145/3731569.3764811",
+    "method": "Each prototype introduces a minimal set of OS mechanisms, driven by the needs of specific apps.",
+    "technique": [
+      {
+        "name": "Proto",
+        "type": "hardware-mechanism",
+        "target": "A Guided Journey",
+        "action": "Apply Modern OS Construction",
+        "effect": "Each prototype introduces a minimal set of OS mechanisms, driven by the needs of specific apps.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Proto is a new instructional OS that runs on commodity, portable hardware.",
+    "scenario": "The construction process then progressively enables these apps by bringing up one mechanism at a time.Proto enables a wider audience to experience building a self-contained software system used in daily life.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "cheriotrtosanosforfinegrainedmemorysafecompartmentsonlowcostembeddeddevices",
+    "id": 13671,
+    "title": "CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost Embedded Devices",
+    "paper": "https://doi.org/10.1145/3731569.3764844",
+    "method": "This fundamental tension leads to the current status-quo where exploitable devices put individuals and critical infrastructure at risk.We present the design of a dependable embedded OS where compartmentalization and memory safety are first-class citizens.",
+    "technique": [
+      {
+        "name": "CHERIoT RTOS",
+        "type": "hardware-mechanism",
+        "target": "An OS for Fine-Grained Memory-Safe Compartments on Low-Cost Embedded Devices",
+        "action": "This fundamental tension leads to the current status-quo where exploitable devices put individuals and critical infrastructure at risk.We present the design of a dependable embedded OS where compartmentalization and memory safety are first-class citizens.",
+        "effect": "This fundamental tension leads to the current status-quo where exploitable devices put individuals and critical infrastructure at risk.We present the design of a dependable embedded OS where compartmentalization and memory safety are first-class citizens.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Embedded systems do not benefit from strong memory protection, because they are designed to minimize cost.",
+    "scenario": "We demonstrate key design benefits: fine-grained fault-tolerant compartments, OS-level support for compartment-interface hardening, and auditing facilities to thwart supply-chain attacks, among others, and show that they come at a memory usage and performance cost that allows their widespread deployment in cheap, resou…",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "thedesignandimplementationofavirtualfirmwaremonitor",
+    "id": 13672,
+    "title": "The Design and Implementation of a Virtual Firmware Monitor",
+    "paper": "https://doi.org/10.1145/3731569.3764826",
+    "method": "In this paper we demonstrate that vendor firmware can be safely and efficiently deprivileged, decoupling its functionality from isolation enforcement.We introduce a new class of systems, called virtual firmware monitors, that run unmodified vendor firmware in userspace through software-based virtualization of the highest privilege mode of…",
+    "technique": [
+      {
+        "name": "The Design and Implementation of a Virtual Firmware Monitor",
+        "type": "hardware-mechanism",
+        "target": "The Design and Implementation of a Virtual Firmware Monitor",
+        "action": "In this paper we demonstrate that vendor firmware can be safely and efficiently deprivileged, decoupling its functionality from isolation enforcement.We introduce a new class of systems, called virtual firmware monitors, that run unmodified vendor firmware in…",
+        "effect": "In this paper we demonstrate that vendor firmware can be safely and efficiently deprivileged, decoupling its functionality from isolation enforcement.We introduce a new class of systems, called virtual firmware monitors, that run unmodified vendor firmware in…",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Low level software is often granted high privilege, yet this need not be the case.",
+    "scenario": "Finally, we demonstrate that Miralis can effectively virtualize unmodified vendor firmware for two hardware platforms with no performance degradation compared to native execution.",
+    "evidence": "simulation",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "oasispoolingpciedevicesovercxltoboostutilization",
+    "id": 13673,
+    "title": "Oasis: Pooling PCIe Devices Over CXL to Boost Utilization",
+    "paper": "https://doi.org/10.1145/3731569.3764812",
+    "method": "We design Oasis,1 a system that pools PCIe devices in software over CXL memory pools.",
+    "technique": [
+      {
+        "name": "Oasis",
+        "type": "system-mechanism",
+        "target": "Pooling PCIe Devices Over CXL to Boost Utilization",
+        "action": "We design Oasis,1 a system that pools PCIe devices in software over CXL memory pools.",
+        "effect": "Our evaluation shows that Oasis improves the NIC utilization by 2\\texttimes{} and handles NIC failover with only a 38 ms interruption.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "The main way to achieve PCIe device pools today is via PCIe switches, but they are expensive and inflexible.",
+    "scenario": "Our evaluation shows that Oasis improves the NIC utilization by 2\\texttimes{} and handles NIC failover with only a 38 ms interruption.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "spiritfairallocationofinterdependentresourcesinremotememorysystems",
+    "id": 13674,
+    "title": "Spirit: Fair Allocation of Interdependent Resources in Remote Memory Systems",
+    "paper": "https://doi.org/10.1145/3731569.3764805",
+    "method": "Such interdependence is unique to each application and hard to capture offline.We propose Spirit, a multi-user framework for fair resource allocation in remote memory systems.",
+    "technique": [
+      {
+        "name": "Spirit",
+        "type": "algorithm",
+        "target": "Fair Allocation of Interdependent Resources in Remote Memory Systems",
+        "action": "Spirit employs a novel Symbiosis algorithm rooted in microeconomic theory that takes application-specific dependency between cache and network bandwidth into account and 'trades' cache and bandwidth resources across users at runtime.",
+        "effect": "As a result, applications can achieve the same data access throughput for a wide range of cache and bandwidth allocations.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "We address the problem of fair resource allocation in multiuser remote memory systems.",
+    "scenario": "Additionally, compared to traditional resource allocation schemes, Spirit improves performance by up to 21.6\\% across tens of real-world applications with diverse resource needs.",
+    "evidence": "unknown",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "scalablefarmemorybalancingfaultsandevictions",
+    "id": 13675,
+    "title": "Scalable Far Memory: Balancing Faults and Evictions",
+    "paper": "https://doi.org/10.1145/3731569.3764842",
+    "method": "As thread count increases, current systems encounter scalability bottlenecks in TLB shootdowns, page accounting, and memory allocation.This paper presents three design principles that address these scalability challenges and enable efficient memory offloading.",
+    "technique": [
+      {
+        "name": "Scalable Far Memory",
+        "type": "system-mechanism",
+        "target": "Balancing Faults and Evictions",
+        "action": "As thread count increases, current systems encounter scalability bottlenecks in TLB shootdowns, page accounting, and memory allocation.This paper presents three design principles that address these scalability challenges and enable efficient memory offloading.",
+        "effect": "Our evaluation shows that this approach increases throughput for batch-processing applications by up to 4.2\\texttimes{} and reduces 99th percentile latency for a latency-critical memcached application by 94.5\\%.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "However, existing systems are tailored to scenarios with low application thread counts, and fail to scale on today's multi-core machines.",
+    "scenario": "Our evaluation shows that this approach increases throughput for batch-processing applications by up to 4.2\\texttimes{} and reduces 99th percentile latency for a latency-critical memcached application by 94.5\\%.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "deviceassistedlivemigrationofrdmadevices",
+    "id": 13676,
+    "title": "Device-Assisted Live Migration of RDMA Devices",
+    "paper": "https://doi.org/10.1145/3731569.3764795",
+    "method": "Recently, we have seen growing pressure to move highperformance workloads, such as HPC and AI, to cloud environments that offer more affordable and manageable infrastructure.",
+    "technique": [
+      {
+        "name": "Device-Assisted Live Migration of RDMA Devices",
+        "type": "hardware-mechanism",
+        "target": "Device-Assisted Live Migration of RDMA Devices",
+        "action": "Recently, we have seen growing pressure to move highperformance workloads, such as HPC and AI, to cloud environments that offer more affordable and manageable infrastructure.",
+        "effect": "Our approach incurs no runtime overhead or performance degradation after migration and achieves sub-second downtimes even for VMs with high RDMA resource utilization.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Device passthrough, however, violates the decoupling between the guest OS and the underlying hardware, making Live Migration (LM) extremely challenging [29, 38, 40, 42, 48].This paper presents a method for migrating a collection of directly interacting hardware devices in a manner that is transparen…",
+    "scenario": "Our approach incurs no runtime overhead or performance degradation after migration and achieves sub-second downtimes even for VMs with high RDMA resource utilization.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "demeterascalableandelastictieredmemorysolutionforvirtualizedcloudviaguestdelegation",
+    "id": 13677,
+    "title": "Demeter: A Scalable and Elastic Tiered Memory Solution for Virtualized Cloud via Guest Delegation",
+    "paper": "https://doi.org/10.1145/3731569.3764801",
+    "method": "We present Demeter, introducing a paradigm shift through guest-delegated tiered memory management based on two key insights: (1) delegation to guests eliminates both expensive access tracking at the hypervisor level and frequent TLB flushes that severely degrade memory virtualization performance under two-dimensional address translation,…",
+    "technique": [
+      {
+        "name": "Demeter",
+        "type": "hardware-mechanism",
+        "target": "A Scalable and Elastic Tiered Memory Solution for Virtualized Cloud",
+        "action": "Apply Guest Delegation",
+        "effect": "Our evaluation with seven real-world workloads across DRAM+PMEM and DRAM+CXL.mem configurations demonstrates that Demeter improves performance by up to 2\\texttimes{} compared to existing hypervisor-based approaches and by 28\\% on average compared to the next b…",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "We present Demeter, introducing a paradigm shift through guest-delegated tiered memory management based on two key insights: (1) delegation to guests eliminates both expensive access tracking at the hypervisor level and frequent TLB flushes that severely degrade memory virtualization performance und…",
+    "scenario": "Our evaluation with seven real-world workloads across DRAM+PMEM and DRAM+CXL.mem configurations demonstrates that Demeter improves performance by up to 2\\texttimes{} compared to existing hypervisor-based approaches and by 28\\% on average compared to the next best guest-based alternative.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "robustllmtraininginfrastructureatbytedance",
+    "id": 13678,
+    "title": "Robust LLM Training Infrastructure at ByteDance",
+    "paper": "https://doi.org/10.1145/3731569.3764838",
+    "method": "This paper presents ByteRobust, a large-scale GPU infrastructure management system tailored for robust and stable training of LLMs.",
+    "technique": [
+      {
+        "name": "Robust LLM Training Infrastructure at ByteDance",
+        "type": "hardware-mechanism",
+        "target": "Robust LLM Training Infrastructure at ByteDance",
+        "action": "This paper presents ByteRobust, a large-scale GPU infrastructure management system tailored for robust and stable training of LLMs.",
+        "effect": "This paper presents ByteRobust, a large-scale GPU infrastructure management system tailored for robust and stable training of LLMs.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "The training scale of large language models (LLMs) has reached tens of thousands of GPUs and is still continuously expanding, enabling faster learning of larger models.",
+    "scenario": "ByteRobust is deployed on a production GPU platform and advances the state of the art in training robustness by achieving 97\\% ETTR for a three-month training job on 9,600 GPUs.",
+    "evidence": "real-world",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "sailorautomatingdistributedtrainingoverdynamicheterogeneousandgeodistributedclusters",
+    "id": 13679,
+    "title": "Sailor: Automating Distributed Training over Dynamic, Heterogeneous, and Geo-distributed Clusters",
+    "paper": "https://doi.org/10.1145/3731569.3764839",
+    "method": "We present Sailor, a system that automates distributed training over heterogeneous, geo-distributed, and dynamically available resources.",
+    "technique": [
+      {
+        "name": "Sailor",
+        "type": "hardware-mechanism",
+        "target": "Automating Distributed Training over Dynamic, Heterogeneous, and Geo-distributed Clusters",
+        "action": "Sailor combines an efficient search space exploration algorithm, accurate runtime and memory footprint simulation, and a distributed training framework that supports different types of heterogeneity to optimize training throughput and cost.",
+        "effect": "We present Sailor, a system that automates distributed training over heterogeneous, geo-distributed, and dynamically available resources.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "However, training ML models on heterogeneous resources introduces significant challenges, such as stragglers and a large search space of possible job configurations.",
+    "scenario": "Sailor combines an efficient search space exploration algorithm, accurate runtime and memory footprint simulation, and a distributed training framework that supports different types of heterogeneity to optimize training throughput and cost.",
+    "evidence": "simulation",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "dcpaddressinginputdynamisminlongcontexttrainingviadynamiccontextparallelism",
+    "id": 13680,
+    "title": "DCP: Addressing Input Dynamism In Long-Context Training via Dynamic Context Parallelism",
+    "paper": "https://doi.org/10.1145/3731569.3764849",
+    "method": "In this paper, we present DCP, a dynamic context parallel training framework that introduces fine-grained blockwise partitioning of both data and computation.",
+    "technique": [
+      {
+        "name": "DCP",
+        "type": "system-mechanism",
+        "target": "Addressing Input Dynamism In Long-Context Training",
+        "action": "Apply Dynamic Context Parallelism",
+        "effect": "In this paper, we present DCP, a dynamic context parallel training framework that introduces fine-grained blockwise partitioning of both data and computation.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "However, existing context parallel methods rely on static parallelization configurations that overlook the dynamic nature of training data, specifically, the variability in sequence lengths and token relationships (i.e., attention patterns) across samples.",
+    "scenario": "Additionally, we observe up to 0.94x~1.16x end-to-end training speed-up for causal masks, and 1.00x~1.46x for sparse masks.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "trainverifyequivalencebasedverificationfordistributedllmtraining",
+    "id": 13681,
+    "title": "TrainVerify: Equivalence-Based Verification for Distributed LLM Training",
+    "paper": "https://doi.org/10.1145/3731569.3764850",
+    "method": "These bugs are challenging to expose through testing.We introduce TrainVerify, a system for verifiable distributed training of LLMs to eliminate parallelization bugs.",
+    "technique": [
+      {
+        "name": "TrainVerify",
+        "type": "formal-method",
+        "target": "Equivalence-Based Verification for Distributed LLM Training",
+        "action": "Direct verification is notoriously difficult due to the sheer scale of LLMs which often involves billions of variables and highly intricate computation graphs.",
+        "effect": "These bugs are challenging to expose through testing.We introduce TrainVerify, a system for verifiable distributed training of LLMs to eliminate parallelization bugs.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Yet, these costly distributed trainings are prone to correctness bugs, causing silent errors and potentially wasting millions of GPU hours.",
+    "scenario": "TrainVerify scales to frontier LLMs, including the successful verification of the Llama3 405B and DeepSeek-V3 671B training plans.",
+    "evidence": "unknown",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "mycrofttracingdependenciesincollectivecommunicationtowardsreliablellmtraining",
+    "id": 13682,
+    "title": "Mycroft: Tracing Dependencies in Collective Communication Towards Reliable LLM Training",
+    "paper": "https://doi.org/10.1145/3731569.3764848",
+    "method": "Unfortunately, today's collective communication libraries operate as black boxes, hiding critical information needed for effective root cause analysis.We propose Mycroft, a lightweight distributed tracing and root cause analysis system designed to address previously hidden reliability issues in collective communication.",
+    "technique": [
+      {
+        "name": "Mycroft",
+        "type": "instrumentation",
+        "target": "Tracing Dependencies in Collective Communication Towards Reliable LLM Training",
+        "action": "Mycroft's key idea is to trace collective communication states and leverage internal control and data dependencies to resolve reliability problems in LLM training.",
+        "effect": "We also conducted extensive fault injection experiments to demonstrate Mycroft's capability and efficiency.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "However, many real-world reliability issues remain difficult to resolve, resulting in wasted resources and degraded model performance.",
+    "scenario": "However, many real-world reliability issues remain difficult to resolve, resulting in wasted resources and degraded model performance.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "mitigatingapplicationresourceoverloadwithtargetedtaskcancellation",
+    "id": 13683,
+    "title": "Mitigating Application Resource Overload with Targeted Task Cancellation",
+    "paper": "https://doi.org/10.1145/3731569.3764835",
+    "method": "Traditional overload control mechanisms, which rely on global signals, such as queuing delays, fail to handle application resource overload effectively because they cannot accurately predict which requests will monopolize critical resources.In this paper, we propose Atropos, an overload control framework that proactively cancels the culpr…",
+    "technique": [
+      {
+        "name": "Mitigating Application Resource Overload with Targeted Task Cancellation",
+        "type": "system-mechanism",
+        "target": "Mitigating Application Resource Overload",
+        "action": "Apply Targeted Task Cancellation",
+        "effect": "Our results show that Atropos maintains the performance goals while achieving minimal request drop, significantly outperforming state-of-the-art solutions.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "However, achieving this balance is challenging due to subtle and unpredictable internal resource contention among concurrently executing requests.",
+    "scenario": "We integrate Atropos into six large-scale applications and evaluate it against 16 real-world overload scenarios.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "orthrusefficientandtimelydetectionofsilentuserdatacorruptioninthecloudwithresourceadaptivecomputationvalidation",
+    "id": 13684,
+    "title": "Orthrus: Efficient and Timely Detection of Silent User Data Corruption in the Cloud with Resource-Adaptive Computation Validation",
+    "paper": "https://doi.org/10.1145/3731569.3764832",
+    "method": "This paper introduces Orthrus, a solution for the timely detection of silent user data corruption caused by post-installation CPU errors.",
+    "technique": [
+      {
+        "name": "Orthrus",
+        "type": "hardware-mechanism",
+        "target": "Efficient and Timely Detection of Silent User Data Corruption in the Cloud",
+        "action": "Apply Resource-Adaptive Computation Validation",
+        "effect": "Our evaluation, using carefully injected errors, demonstrates that Orthrus can detect 87\\% of data corruptions with just a single core dedicated to validation, increasing to 91\\% and 96\\% when two and four cores are used, respectively.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Even with substantial endeavors to test and validate processors, computational errors may still arise post-installation.",
+    "scenario": "Orthrus safeguards user data in cloud applications by providing simple annotations and compiler support for users to identify data operators and validating these operators asynchronously across cores while maintaining a low overhead (2\\%–6\\%), making it practical for production deployment.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "optimisticrecoveryforhighavailabilitysoftwareviapartialprocessstatepreservation",
+    "id": 13685,
+    "title": "Optimistic Recovery for High-Availability Software via Partial Process State Preservation",
+    "paper": "https://doi.org/10.1145/3731569.3764858",
+    "method": "Existing techniques either guarantee correctness by discarding all state but suffer from long downtime, or preserve all state to recover quickly but reintroduce the fault.We present Phoenix, a framework that enables a new design point of optimistic custom recovery for high-availability software through partial process state preservation.",
+    "technique": [
+      {
+        "name": "Optimistic Recovery for High-Availability Software",
+        "type": "testing-method",
+        "target": "Optimistic Recovery for High-Availability Software",
+        "action": "Apply Partial Process State Preservation",
+        "effect": "Our extensive evaluation of real bugs and fault injection testing shows that Phoenix recovery significantly improves availability while not sacrificing correctness.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "This is notoriously difficult.",
+    "scenario": "Our extensive evaluation of real bugs and fault injection testing shows that Phoenix recovery significantly improves availability while not sacrificing correctness.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "copterefficientlargescaleresourceallocationviacontinualoptimization",
+    "id": 13686,
+    "title": "COpter: Efficient Large-Scale Resource-Allocation via Continual Optimization",
+    "paper": "https://doi.org/10.1145/3731569.3764846",
+    "method": "This paper introduces continual optimization, which reframes round-based resource allocation as a sequence of interconnected problems, leveraging the observation that these resource allocation problems often only change by small amounts across successive rounds to reduce solving times.",
+    "technique": [
+      {
+        "name": "COpter",
+        "type": "hardware-mechanism",
+        "target": "Efficient Large-Scale Resource-Allocation",
+        "action": "Apply Continual Optimization",
+        "effect": "This paper introduces continual optimization, which reframes round-based resource allocation as a sequence of interconnected problems, leveraging the observation that these resource allocation problems often only change by small amounts across successive round…",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Generally, allocations are reconsidered every few minutes (a round) by formulating and solving a new optimization problem.",
+    "scenario": "We evaluate COpter on problems in three domains: GPU cluster scheduling, shard load balancing, and WAN traffic engineering.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "fastendtoendperformancesimulationofacceleratedhardwaresoftwarestacks",
+    "id": 13687,
+    "title": "Fast End-to-End Performance Simulation of Accelerated Hardware-Software Stacks",
+    "paper": "https://doi.org/10.1145/3731569.3764825",
+    "method": "As a result, development of accelerated stacks is non-interactive, and this hurts productivity.We propose a way to simulate end-to-end performance that is orders-of-magnitude faster yet still accurate.",
+    "technique": [
+      {
+        "name": "Fast End-to-End Performance Simulation of Accelerated Hardware-Software Stacks",
+        "type": "hardware-mechanism",
+        "target": "Fast End-to-End Performance Simulation of Accelerated Hardware-Software Stacks",
+        "action": "The increased use of hardware acceleration has created a need for efficient simulators of the end-to-end performance of accelerated hardware-software stacks: both software and hardware developers need to evaluate the impact of their design choices on overall s…",
+        "effect": "As a result, development of accelerated stacks is non-interactive, and this hurts productivity.We propose a way to simulate end-to-end performance that is orders-of-magnitude faster yet still accurate.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "However, accurate full-stack simulations are extremely slow, taking hours to simulate just 1 second of real execution.",
+    "scenario": "The increased use of hardware acceleration has created a need for efficient simulators of the end-to-end performance of accelerated hardware-software stacks: both software and hardware developers need to evaluate the impact of their design choices on overall system performance.",
+    "evidence": "simulation",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "characterizingmobilesocforacceleratingheterogeneousllminference",
+    "id": 13688,
+    "title": "Characterizing Mobile SoC for Accelerating Heterogeneous LLM Inference",
+    "paper": "https://doi.org/10.1145/3731569.3764808",
+    "method": "Drawing on these observations, we propose different heterogeneous parallel mechanisms to fully exploit both GPU and NPU computational power and memory bandwidth.",
+    "technique": [
+      {
+        "name": "Characterizing Mobile SoC for Accelerating Heterogeneous LLM Inference",
+        "type": "hardware-mechanism",
+        "target": "Characterizing Mobile SoC for Accelerating Heterogeneous LLM Inference",
+        "action": "However, there has not been a comprehensive characterization of these heterogeneous processors, and existing designs typically only leverage a single AI accelerator for LLM inference, leading to suboptimal use of computational resources and memory bandwidth.In…",
+        "effect": "Evaluation shows that HeteroInfer delivers a 1.34\\texttimes{} to 6.02\\texttimes{} end-to-end speedup over state-of-the-art GPU-only and NPU-only LLM engines, while maintaining negligible interference with other applications.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "However, there has not been a comprehensive characterization of these heterogeneous processors, and existing designs typically only leverage a single AI accelerator for LLM inference, leading to suboptimal use of computational resources and memory bandwidth.In this paper, we first summarize key perf…",
+    "scenario": "Evaluation shows that HeteroInfer delivers a 1.34\\texttimes{} to 6.02\\texttimes{} end-to-end speedup over state-of-the-art GPU-only and NPU-only LLM engines, while maintaining negligible interference with other applications.",
+    "evidence": "benchmark",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "iccacheefficientlargelanguagemodelservingviaincontextcaching",
+    "id": 13689,
+    "title": "IC-Cache: Efficient Large Language Model Serving via In-context Caching",
+    "paper": "https://doi.org/10.1145/3731569.3764829",
+    "method": "However, naively caching and reusing past responses leads to a big quality drop.In this paper, we introduce IC-Cache, a caching system that enables live LLM capability augmentation to improve serving efficiency: by leveraging historical request-response pairs from larger models as in-context examples, IC-Cache empowers small LLMs to imita…",
+    "technique": [
+      {
+        "name": "IC-Cache",
+        "type": "model",
+        "target": "Efficient Large Language Model Serving",
+        "action": "Apply In-context Caching",
+        "effect": "Evaluations on millions of realistic requests demonstrate that IC-Cache improves LLM serving throughput by 1.4–5.9x and reduces latency by 28–71\\% without hurting response quality.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "However, naively caching and reusing past responses leads to a big quality drop.In this paper, we introduce IC-Cache, a caching system that enables live LLM capability augmentation to improve serving efficiency: by leveraging historical request-response pairs from larger models as in-context example…",
+    "scenario": "Our real-world studies reveal that over 70\\% of user requests to LLMs have semantically similar counterparts, suggesting the potential for knowledge transfer among requests.",
+    "evidence": "unknown",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "prefillonlyaninferenceengineforprefillonlyworkloadsinlargelanguagemodelapplications",
+    "id": 13690,
+    "title": "PrefillOnly: An Inference Engine for Prefill-only Workloads in Large Language Model Applications",
+    "paper": "https://doi.org/10.1145/3731569.3764834",
+    "method": "In this paper, we present PrefillOnly, the first LLM inference engine that improves the inference throughput and latency by fully embracing the properties of prefill-only workloads.",
+    "technique": [
+      {
+        "name": "PrefillOnly",
+        "type": "formal-method",
+        "target": "An Inference Engine for Prefill-only Workloads in Large Language Model Applications",
+        "action": "The key characteristic of these emerging use cases is that the LLM generates only a single output token, rather than an arbitrarily long sequence of tokens.",
+        "effect": "In this paper, we present PrefillOnly, the first LLM inference engine that improves the inference throughput and latency by fully embracing the properties of prefill-only workloads.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "However, since existing LLM engines assume arbitrary output lengths, they fail to leverage the unique properties of prefill-only workloads.",
+    "scenario": "PrefillOnly can process up to 4\\texttimes{} larger queries per second without inflating the average and P99 latency.",
+    "evidence": "unknown",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "pieaprogrammableservingsystemforemergingllmapplications",
+    "id": 13691,
+    "title": "Pie: A Programmable Serving System for Emerging LLM Applications",
+    "paper": "https://doi.org/10.1145/3731569.3764814",
+    "method": "This paper introduces Pie, a programmable LLM serving system designed for flexibility and efficiency.",
+    "technique": [
+      {
+        "name": "Pie",
+        "type": "model",
+        "target": "A Programmable Serving System for Emerging LLM Applications",
+        "action": "Emerging large language model (LLM) applications involve diverse reasoning strategies and agentic workflows, straining the capabilities of existing serving systems built on a monolithic token generation loop.",
+        "effect": "Our evaluation shows Pie matches state-of-the-art performance on standard tasks (3-12\\% latency overhead) while significantly improving latency and throughput (1.3\\texttimes{}-3.4\\texttimes{} higher) on agentic workflows by enabling application-specific optimi…",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Emerging large language model (LLM) applications involve diverse reasoning strategies and agentic workflows, straining the capabilities of existing serving systems built on a monolithic token generation loop.",
+    "scenario": "Our evaluation shows Pie matches state-of-the-art performance on standard tasks (3-12\\% latency overhead) while significantly improving latency and throughput (1.3\\texttimes{}-3.4\\texttimes{} higher) on agentic workflows by enabling application-specific optimizations.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "diffkvdifferentiatedmemorymanagementforlargelanguagemodelswithparallelkvcompaction",
+    "id": 13692,
+    "title": "DiffKV: Differentiated Memory Management for Large Language Models with Parallel KV Compaction",
+    "paper": "https://doi.org/10.1145/3731569.3764810",
+    "method": "To address such limitations, we introduce DiffKV, a novel framework for efficient KV cache compression that exploits three levels of differentiation in the KV cache: (1) the differing impact of keys and values on attention computation, (2) the varying importance of tokens, and (3) the diverse dynamic sparsity patterns across attention hea…",
+    "technique": [
+      {
+        "name": "DiffKV",
+        "type": "hardware-mechanism",
+        "target": "Differentiated Memory Management for Large Language Models",
+        "action": "Apply Parallel KV Compaction",
+        "effect": "To address such limitations, we introduce DiffKV, a novel framework for efficient KV cache compression that exploits three levels of differentiation in the KV cache: (1) the differing impact of keys and values on attention computation, (2) the varying importan…",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Large language models (LLMs) demonstrate remarkable capabilities but face substantial serving costs due to their high memory demands, with the key-value (KV) cache being a primary bottleneck.",
+    "scenario": "We evaluate DiffKV on several mainstream LLMs, including the emerging thinking models that generate extended chains of thought.",
+    "evidence": "benchmark",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "jengaeffectivememorymanagementforservingllmwithheterogeneity",
+    "id": 13693,
+    "title": "Jenga: Effective Memory Management for Serving LLM with Heterogeneity",
+    "paper": "https://doi.org/10.1145/3731569.3764823",
+    "method": "Existing approaches, such as PagedAttention, struggle with modern LLMs because of the growing heterogeneity in the sizes of models' internal embeddings and attention mechanisms.In this paper, we present Jenga, a memory allocation framework for these heterogeneous LLMs.",
+    "technique": [
+      {
+        "name": "Jenga",
+        "type": "hardware-mechanism",
+        "target": "Effective Memory Management for Serving LLM",
+        "action": "Apply Heterogeneity",
+        "effect": "Evaluations show that Jenga improves GPU memory utilization by up to 83\\% and serving throughput by up to 2.16\\texttimes{} (1.46\\texttimes{} on average).",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Large language models are widely used but expensive to run.",
+    "scenario": "We implement Jenga in vLLM, and evaluate it with diverse LLMs, datasets, and GPUs.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "cacheextcustomizingthepagecachewithebpf",
+    "id": 13694,
+    "title": "cache_ext: Customizing the Page Cache with eBPF",
+    "paper": "https://doi.org/10.1145/3731569.3764820",
+    "method": "To address these shortcomings, we design a flexible eBPF-based framework for the Linux page cache, called cache_ext, that allows developers to customize the page cache without modifying the kernel. cache_ext enables applications to customize the page cache policy for their specific needs, while also ensuring that different applications' p…",
+    "technique": [
+      {
+        "name": "cache_ext",
+        "type": "system-mechanism",
+        "target": "Customizing the Page Cache",
+        "action": "Apply eBPF",
+        "effect": "Our evaluation shows that it is indeed beneficial for applications to customize the page cache to match their workloads' unique properties, and that they can achieve up to 70\\% higher throughput and 58\\% lower tail latency.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "However, its one-size-fits-all eviction policy performs poorly in many workloads.",
+    "scenario": "While the systems community has experimented with a plethora of new and adaptive eviction policies in non-OS settings (e.g., key-value stores, CDNs), it is very difficult to implement such policies in the page cache, due to the complexity of modifying kernel code.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "aeoliaafastandsecureuserspaceinterruptbasedstoragestack",
+    "id": 13695,
+    "title": "Aeolia: A Fast and Secure Userspace Interrupt-Based Storage Stack",
+    "paper": "https://doi.org/10.1145/3731569.3764816",
+    "method": "In contrast, interrupt-based kernel stacks inherently suffer from subpar I/O performance but achieve advantages in resource sharing.We present Aeolia, a novel storage stack that achieves great I/O performance while offering efficient and secure resource sharing.",
+    "technique": [
+      {
+        "name": "Aeolia",
+        "type": "hardware-mechanism",
+        "target": "A Fast and Secure Userspace Interrupt-Based Storage Stack",
+        "action": "Aeolia leverages the hardware intra-process isolation features and sched_ext, an eBPF-based userspace scheduling framework, to efficiently and securely share CPUs and disks among multiple tasks, challenging the common belief that these are inherent disadvantag…",
+        "effect": "Polling-based userspace storage stacks achieve great I/O performance.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "However, they cannot efficiently and securely share disks and CPUs among multiple tasks.",
+    "scenario": "Our evaluation shows that Aeolia outperforms Linux by 2\\texttimes{} and AeoFS outperforms ext4 by up to 19.1\\texttimes{}, respectively.",
+    "evidence": "benchmark",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "sleepingwithoneeyeopenfastsustainablestoragewithsandman",
+    "id": 13696,
+    "title": "Sleeping with One Eye Open: Fast, Sustainable Storage with Sandman",
+    "paper": "https://doi.org/10.1145/3731569.3764804",
+    "method": "Guided by the lessons learned, we propose Sandman, a scheduling framework that combines the fast resource scaling mechanism, resource monitoring, and I/O burst detection policies.",
+    "technique": [
+      {
+        "name": "Sleeping with One Eye Open",
+        "type": "algorithm",
+        "target": "Fast, Sustainable Storage",
+        "action": "Apply Sandman",
+        "effect": "Experiments show that Sandman reduces average power consumption by up to 39.38\\% and energy consumption by up to 33.36\\% while delivering performance comparable (within 5\\% in corner cases) to the best performance case (the busy-polling stack) in both benchmar…",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Through a motivational study, we discover that the culprit is the inefficiency in the software stack, and existing power-saving methods fail to deliver comparable performance, especially under workload bursts.",
+    "scenario": "Through a motivational study, we discover that the culprit is the inefficiency in the software stack, and existing power-saving methods fail to deliver comparable performance, especially under workload bursts.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "loomefficientcaptureandqueryingofhighfrequencytelemetry",
+    "id": 13697,
+    "title": "Loom: Efficient Capture and Querying of High-Frequency Telemetry",
+    "paper": "https://doi.org/10.1145/3731569.3764853",
+    "method": "Key to Loom's design is that it combines the high ingest capability of log-based storage with lightweight, sparse, and domain-specific indexes that accelerate queries.",
+    "technique": [
+      {
+        "name": "Loom",
+        "type": "system-mechanism",
+        "target": "Efficient Capture and Querying of High-Frequency Telemetry",
+        "action": "Key to Loom's design is that it combines the high ingest capability of log-based storage with lightweight, sparse, and domain-specific indexes that accelerate queries.",
+        "effect": "This design strikes a balance: it prioritizes capturing complete data at high rate while indexing just enough to support interactive queries on HFT.Experiments show that Loom supports both higher ingest throughput and lower query latency than best-in-class sys…",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "To debug performance issues, engineers often rely on high-frequency telemetry (HFT) from sources like perf, DTrace, or eBPF, which can generate millions of records per second.",
+    "scenario": "This design strikes a balance: it prioritizes capturing complete data at high rate while indexing just enough to support interactive queries on HFT.Experiments show that Loom supports both higher ingest throughput and lower query latency than best-in-class systems for ingest-optimized storage (FishStore) and time serie…",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "pestocookinguphighperformancebftqueries",
+    "id": 13698,
+    "title": "Pesto: Cooking up High Performance BFT Queries",
+    "paper": "https://doi.org/10.1145/3731569.3764799",
+    "method": "This paper presents Pesto, a high-performance Byzantine Fault Tolerant (BFT) database that offers full SQL compatibility.",
+    "technique": [
+      {
+        "name": "Pesto",
+        "type": "system-mechanism",
+        "target": "Cooking up High Performance BFT Queries",
+        "action": "Pesto intentionally forgoes the use of State Machine Replication (SMR); SMR-based designs offer poor performance due to the several round trips required to order transactions.",
+        "effect": "This paper presents Pesto, a high-performance Byzantine Fault Tolerant (BFT) database that offers full SQL compatibility.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "This paper presents Pesto, a high-performance Byzantine Fault Tolerant (BFT) database that offers full SQL compatibility.",
+    "scenario": "Pesto's leaderless design minimizes the impact of replica failures and ensures robust performance.",
+    "evidence": "unknown",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "tigaacceleratinggeodistributedtransactionswithsynchronizedclocks",
+    "id": 13699,
+    "title": "Tiga: Accelerating Geo-Distributed Transactions with Synchronized Clocks",
+    "paper": "https://doi.org/10.1145/3731569.3764854",
+    "method": "This paper presents Tiga, a new design for geo-replicated and scalable transactional databases such as Google Spanner.",
+    "technique": [
+      {
+        "name": "Tiga",
+        "type": "system-mechanism",
+        "target": "Accelerating Geo-Distributed Transactions",
+        "action": "Apply Synchronized Clocks",
+        "effect": "Evaluation results show that Tiga outperforms all baselines, achieving 1.3–7.2\\texttimes{} higher throughput and 1.4–4.6\\texttimes{} lower latency.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "This paper presents Tiga, a new design for geo-replicated and scalable transactional databases such as Google Spanner.",
+    "scenario": "Tiga is open-sourced at https://github.com/New-Consensus-Concurrency-Control/Tiga.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "tempocompileddynamicdeeplearningwithsymbolicdependencegraphs",
+    "id": 13700,
+    "title": "Tempo: Compiled Dynamic Deep Learning with Symbolic Dependence Graphs",
+    "paper": "https://doi.org/10.1145/3731569.3764840",
+    "method": "Based on this, Tempo constructs a symbolic dependence graph, which concisely encodes dynamic dependencies between operators, and applies whole-program optimizations, such as algebraic simplifications, vectorization, tiling, and fusion.",
+    "technique": [
+      {
+        "name": "Tempo",
+        "type": "model",
+        "target": "Compiled Dynamic Deep Learning",
+        "action": "Apply Symbolic Dependence Graphs",
+        "effect": "We show that Tempo achieves a 7\\texttimes{} speedup over JAX for Llama-3.2-3B decoding; for reinforcement learning algorithms, Tempo achieves a 54\\texttimes{} speedup, with 16\\texttimes{} lower peak memory usage.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Such dynamic dependencies (and corresponding dynamic tensor shapes) are difficult to express and optimize: while eager DL systems support such dynamism, they cannot apply compiler-based optimizations; graph-based systems require static tensor shapes, which forces users to pad tensors or break-up pro…",
+    "scenario": "We show that Tempo achieves a 7\\texttimes{} speedup over JAX for Llama-3.2-3B decoding; for reinforcement learning algorithms, Tempo achieves a 54\\texttimes{} speedup, with 16\\texttimes{} lower peak memory usage.",
+    "evidence": "unknown",
+    "lens": [
+      "强化学习"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "sandanewprogrammingabstractionforvideobaseddeeplearning",
+    "id": 13701,
+    "title": "SAND: A New Programming Abstraction for Video-based Deep Learning",
+    "paper": "https://doi.org/10.1145/3731569.3764847",
+    "method": "Existing solutions partially mitigate these issues but remain inefficient and resource-constrained.We present SAND, a framework for VDL that integrates system-level optimizations to simplify the preprocessing pipeline and maximize resource efficiency.",
+    "technique": [
+      {
+        "name": "SAND",
+        "type": "hardware-mechanism",
+        "target": "A New Programming Abstraction for Video-based Deep Learning",
+        "action": "Existing solutions partially mitigate these issues but remain inefficient and resource-constrained.We present SAND, a framework for VDL that integrates system-level optimizations to simplify the preprocessing pipeline and maximize resource efficiency.",
+        "effect": "Evaluation across multiple VDL applications and diverse environments, including Ray-based hyperparameter search and distributed data parallel training, shows GPU utilization improvements of up to 12.3\\texttimes{} and 2.9\\texttimes{} over CPU and GPU baselines,…",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Video-based deep learning (VDL) is increasingly used across diverse applications and has become highly popular, but it faces significant challenges in preprocessing highly compressed video data.",
+    "scenario": "Evaluation across multiple VDL applications and diverse environments, including Ray-based hyperparameter search and distributed data parallel training, shows GPU utilization improvements of up to 12.3\\texttimes{} and 2.9\\texttimes{} over CPU and GPU baselines, respectively, while reducing preprocessing code complexity…",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "metisfastqualityawareragsystemswithconfigurationadaptation",
+    "id": 13702,
+    "title": "METIS: Fast Quality-Aware RAG Systems with Configuration Adaptation",
+    "paper": "https://doi.org/10.1145/3731569.3764855",
+    "method": "To balance both quality and response delay, this paper presents METIS, the first RAG system that jointly schedules queries and adapts the key RAG configurations of each query, such as the number of retrieved text chunks and synthesis methods.",
+    "technique": [
+      {
+        "name": "METIS",
+        "type": "algorithm",
+        "target": "Fast Quality-Aware RAG Systems",
+        "action": "Apply Configuration Adaptation",
+        "effect": "Using four popular RAG-QA datasets, we show that compared to the state-of-the-art RAG optimization schemes, METIS reduces the generation latency by 1.64 – 2.54\\texttimes{} without sacrificing generation quality.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "RAG (Retrieval Augmented Generation) allows LLMs (large language models) to generate better responses with external knowledge, but using more external knowledge causes higher response delay.",
+    "scenario": "Using four popular RAG-QA datasets, we show that compared to the state-of-the-art RAG optimization schemes, METIS reduces the generation latency by 1.64 – 2.54\\texttimes{} without sacrificing generation quality.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "hedraragcooptimizinggenerationandretrievalforheterogeneousragworkflows",
+    "id": 13703,
+    "title": "HedraRAG: Co-Optimizing Generation and Retrieval for Heterogeneous RAG Workflows",
+    "paper": "https://doi.org/10.1145/3731569.3764806",
+    "method": "We present HedraRAG, a new system built on RAGraph, a graph-based abstraction that exposes optimization opportunities across stage-level parallelism, intra-request similarity, and inter-request skewness.",
+    "technique": [
+      {
+        "name": "HedraRAG",
+        "type": "hardware-mechanism",
+        "target": "Co-Optimizing Generation and Retrieval for Heterogeneous RAG Workflows",
+        "action": "We present HedraRAG, a new system built on RAGraph, a graph-based abstraction that exposes optimization opportunities across stage-level parallelism, intra-request similarity, and inter-request skewness.",
+        "effect": "Experiments across a wide range of workflows demonstrate that HedraRAG achieves more that 1.5\\texttimes{} and up to 5\\texttimes{} speedup over existing frameworks, offering a comprehensive solution for heterogeneous RAG workload serving.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "In this paper, we identify and tackle emerging system-level challenges in serving heterogeneous RAG workflows, characterized by complex stages and diverse request patterns.",
+    "scenario": "Experiments across a wide range of workflows demonstrate that HedraRAG achieves more that 1.5\\texttimes{} and up to 5\\texttimes{} speedup over existing frameworks, offering a comprehensive solution for heterogeneous RAG workload serving.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "coyotev2raisingthelevelofabstractionfordatacenterfpgas",
+    "id": 13704,
+    "title": "Coyote v2: Raising the Level of Abstraction for Data Center FPGAs",
+    "paper": "https://doi.org/10.1145/3731569.3764845",
+    "method": "In this paper, we present Coyote v2, an open-source FPGA shell built with a novel, three-layer hierarchical design supporting dynamic partial reconfiguration of services and user logic, with a unified logic interface, and high-level software abstractions which facilitate application deployment, multi-tenancy and transparent workload pipel…",
+    "technique": [
+      {
+        "name": "Coyote v2",
+        "type": "hardware-mechanism",
+        "target": "Raising the Level of Abstraction for Data Center FPGAs",
+        "action": "In this paper, we present Coyote v2, an open-source FPGA shell built with a novel, three-layer hierarchical design supporting dynamic partial reconfiguration of services and user logic, with a unified logic interface, and high-level software abstractions which…",
+        "effect": "Experimental results indicate Coyote v2 reduces synthesis times between 15\\% and 20\\% and run-time reconfiguration times by an order of magnitude, when compared to existing systems.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "In the trend towards hardware specialization, FPGAs play a dual role as accelerators for offloading, e.g., network virtualization, and as a vehicle for prototyping and exploring hardware designs.",
+    "scenario": "We demonstrate these features by, e.g., seamlessly deploying an FPGA-accelerated neural network from Python.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "knightertransformingstaticanalysiswithllmsynthesizedcheckers",
+    "id": 13705,
+    "title": "KNighter: Transforming Static Analysis with LLM-Synthesized Checkers",
+    "paper": "https://doi.org/10.1145/3731569.3764827",
+    "method": "While large language models (LLMs) have shown promise for static analysis, directly applying them to scan large systems remains impractical due to computational constraints and contextual limitations.We present KNighter, the first approach that unlocks scalable LLM-based static analysis by automatically synthesizing static analyzers from…",
+    "technique": [
+      {
+        "name": "KNighter",
+        "type": "testing-method",
+        "target": "Transforming Static Analysis",
+        "action": "Apply LLM-Synthesized Checkers",
+        "effect": "Our evaluation on the Linux kernel demonstrates that KNighter generates high-precision checkers capable of detecting diverse bug patterns overlooked by existing human-written analyzers.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "However, designing and implementing static analyzers is challenging, time-consuming, and typically limited to predefined bug patterns.",
+    "scenario": "This work establishes an entirely new paradigm for scalable, reliable, and traceable LLM-based static analysis for real-world systems via checker synthesis.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "fawkesfindingdatadurabilitybugsindbmssviarecovereddatastateverification",
+    "id": 13706,
+    "title": "Fawkes: Finding Data Durability Bugs in DBMSs via Recovered Data State Verification",
+    "paper": "https://doi.org/10.1145/3731569.3764841",
+    "method": "Furthermore, existing testing methods(e.g., Mallory) are often inadequate for detecting DDBs, particularly those that cause data loss or data inconsistency following DBMS failures.This paper presents a comprehensive study of 43 DDBs across four widely used DBMSs.",
+    "technique": [
+      {
+        "name": "Fawkes",
+        "type": "formal-method",
+        "target": "Finding Data Durability Bugs in DBMSs",
+        "action": "Apply Recovered Data State Verification",
+        "effect": "Furthermore, existing testing methods(e.g., Mallory) are often inadequate for detecting DDBs, particularly those that cause data loss or data inconsistency following DBMS failures.This paper presents a comprehensive study of 43 DDBs across four widely used DBM…",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "However, there is a limited understanding of the characteristics and root causes of DDBs.",
+    "scenario": "Furthermore, existing testing methods(e.g., Mallory) are often inadequate for detecting DDBs, particularly those that cause data loss or data inconsistency following DBMS failures.This paper presents a comprehensive study of 43 DDBs across four widely used DBMSs.",
+    "evidence": "unknown",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "ghostintheandroidshellpragmatictestoraclespecificationofaproductionhypervisor",
+    "id": 13707,
+    "title": "Ghost in the Android Shell: Pragmatic Test-oracle Specification of a Production Hypervisor",
+    "paper": "https://doi.org/10.1145/3731569.3764817",
+    "method": "Developing systems code that robustly provides its intended security guarantees remains very challenging: conventional practice does not suffice, and full functional verification, while now feasible in some contexts, has substantial barriers to entry and use.In this paper, we explore an alternative, more lightweight approach to building c…",
+    "technique": [
+      {
+        "name": "Ghost in the Android Shell",
+        "type": "formal-method",
+        "target": "Pragmatic Test-oracle Specification of a Production Hypervisor",
+        "action": "Developing systems code that robustly provides its intended security guarantees remains very challenging: conventional practice does not suffice, and full functional verification, while now feasible in some contexts, has substantial barriers to entry and use.I…",
+        "effect": "Developing systems code that robustly provides its intended security guarantees remains very challenging: conventional practice does not suffice, and full functional verification, while now feasible in some contexts, has substantial barriers to entry and use.I…",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Developing systems code that robustly provides its intended security guarantees remains very challenging: conventional practice does not suffice, and full functional verification, while now feasible in some contexts, has substantial barriers to entry and use.In this paper, we explore an alternative,…",
+    "scenario": "Developing systems code that robustly provides its intended security guarantees remains very challenging: conventional practice does not suffice, and full functional verification, while now feasible in some contexts, has substantial barriers to entry and use.In this paper, we explore an alternative, more lightweight ap…",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "ebpfmisbehaviordetectionfuzzingwithaspecificationbasedoracle",
+    "id": 13708,
+    "title": "eBPF Misbehavior Detection: Fuzzing with a Specification-Based Oracle",
+    "paper": "https://doi.org/10.1145/3731569.3764797",
+    "method": "While prior works on fuzzing the eBPF verifier have been effective, their bug oracles only hint at the existence of bugs indirectly (e.g., when a memory error occurs in downstream execution) instead of showing the root cause, confining them to uncover a narrow range of security bugs only with no detection of usability issues.In this paper…",
+    "technique": [
+      {
+        "name": "eBPF Misbehavior Detection",
+        "type": "system-mechanism",
+        "target": "Fuzzing",
+        "action": "Apply a Specification-Based Oracle",
+        "effect": "While prior works on fuzzing the eBPF verifier have been effective, their bug oracles only hint at the existence of bugs indirectly (e.g., when a memory error occurs in downstream execution) instead of showing the root cause, confining them to uncover a narrow…",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Bugs in the Linux eBPF verifier may cause it to mistakenly accept unsafe eBPF programs or reject safe ones, causing either security or usability issues.",
+    "scenario": "Using SpecCheck, Veritas uncovered 13 bugs in the Linux eBPF verifier, including severe bugs that can cause privilege escalation or information leakage, as well as bugs that cause frustration in even experienced kernel developers.",
+    "evidence": "unknown",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "wasitdeepandcontinuousdifferentialtestingofwebassemblysysteminterfaceimplementations",
+    "id": 13709,
+    "title": "WASIT: Deep and Continuous Differential Testing of WebAssembly System Interface Implementations",
+    "paper": "https://doi.org/10.1145/3731569.3764819",
+    "method": "This paper presents WASIT, a powerful specification-driven differential testing framework for WebAssembly (Wasm) system interface (WASI) implementations.",
+    "technique": [
+      {
+        "name": "WASIT",
+        "type": "testing-method",
+        "target": "Deep and Continuous Differential Testing of WebAssembly System Interface Implementations",
+        "action": "This paper presents WASIT, a powerful specification-driven differential testing framework for WebAssembly (Wasm) system interface (WASI) implementations.",
+        "effect": "Our evaluation shows that WASIT successfully found 48 new WASI-specific bugs in six popular Wasm runtimes, with 41 confirmed, 37 fixed, and three CVEs assigned.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "This paper presents WASIT, a powerful specification-driven differential testing framework for WebAssembly (Wasm) system interface (WASI) implementations.",
+    "scenario": "Our evaluation shows that WASIT successfully found 48 new WASI-specific bugs in six popular Wasm runtimes, with 41 confirmed, 37 fixed, and three CVEs assigned.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "proveittothekernelpreciseextensionanalysisviaproofguidedabstractionrefinement",
+    "id": 13710,
+    "title": "Prove It to the Kernel: Precise Extension Analysis via Proof-Guided Abstraction Refinement",
+    "paper": "https://doi.org/10.1145/3731569.3764796",
+    "method": "To ensure safety, an in-kernel verifier statically analyzes these extensions; however, its imprecise analysis frequently results in the erroneous rejection of safe extensions, exposing a critical tension between the precision and computational complexity of the verifier that limits kernel extensibility.We propose a proof-guided abstractio…",
+    "technique": [
+      {
+        "name": "Prove It to the Kernel",
+        "type": "formal-method",
+        "target": "Precise Extension Analysis",
+        "action": "Apply Proof-Guided Abstraction Refinement",
+        "effect": "Evaluation results show that our technique enables the verifier to accept 403 out of 512 real-world eBPF programs that were previously rejected erroneously, paving the way for more reliable and flexible kernel extensions.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "To ensure safety, an in-kernel verifier statically analyzes these extensions; however, its imprecise analysis frequently results in the erroneous rejection of safe extensions, exposing a critical tension between the precision and computational complexity of the verifier that limits kernel extensibil…",
+    "scenario": "Evaluation results show that our technique enables the verifier to accept 403 out of 512 real-world eBPF programs that were previously rejected erroneously, paving the way for more reliable and flexible kernel extensions.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "atmospherepracticalverifiedkernelswithrustandverus",
+    "id": 13711,
+    "title": "Atmosphere: Practical Verified Kernels with Rust and Verus",
+    "paper": "https://doi.org/10.1145/3731569.3764821",
+    "method": "We develop all code in Rust and prove its functional correctness, i.e., refinement of a high-level specification, with Verus.",
+    "technique": [
+      {
+        "name": "Atmosphere",
+        "type": "formal-method",
+        "target": "Practical Verified Kernels",
+        "action": "Apply Rust and Verus",
+        "effect": "We develop all code in Rust and prove its functional correctness, i.e., refinement of a high-level specification, with Verus.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Recent advances in programming languages and automated formal reasoning have changed the balance between the complexity and practicality of developing formally verified systems.",
+    "scenario": "On average, our code has a proof-to-code ratio of 3.32:1 and completes verification in less than 20 seconds on a modern laptop, which we argue is practical for the development of verified systems.",
+    "evidence": "theory",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "automanfacilitatingverifieddistributedsystemsdevelopmentthroughautomaticcodegenerationandmanualoptimizations",
+    "id": 13712,
+    "title": "AutoMan: Facilitating Verified Distributed Systems Development Through Automatic Code Generation and Manual Optimizations",
+    "paper": "https://doi.org/10.1145/3731569.3764822",
+    "method": "In this paper, we design, develop, and evaluate the AutoMan workflow, which makes developing distributed systems with refinement-based formal verification techniques more accessible and practical for both experts and developers.",
+    "technique": [
+      {
+        "name": "AutoMan",
+        "type": "formal-method",
+        "target": "Facilitating Verified Distributed Systems Development",
+        "action": "Apply Automatic Code Generation and Manual Optimizations",
+        "effect": "In this paper, we design, develop, and evaluate the AutoMan workflow, which makes developing distributed systems with refinement-based formal verification techniques more accessible and practical for both experts and developers.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Developing correct and performant distributed systems is notoriously challenging due to their complexity and scale.",
+    "scenario": "In this paper, we design, develop, and evaluate the AutoMan workflow, which makes developing distributed systems with refinement-based formal verification techniques more accessible and practical for both experts and developers.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "ticktockverifiedisolationinaproductionembeddedos",
+    "id": 13713,
+    "title": "TickTock: Verified Isolation in a Production Embedded OS",
+    "paper": "https://doi.org/10.1145/3731569.3764856",
+    "method": "We present a case study formally verifying process isolation in the Tock production microcontroller OS kernel.",
+    "technique": [
+      {
+        "name": "TickTock",
+        "type": "formal-method",
+        "target": "Verified Isolation in a Production Embedded OS",
+        "action": "Tock combines hardware memory protection units and language-level techniques—by writing the kernel in Rust—to enforce isolation between user and kernel code.",
+        "effect": "We present a case study formally verifying process isolation in the Tock production microcontroller OS kernel.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "We present a case study formally verifying process isolation in the Tock production microcontroller OS kernel.",
+    "scenario": "We present a case study formally verifying process isolation in the Tock production microcontroller OS kernel.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "orqcomplexanalyticsonprivatedatawithstrongsecurityguarantees",
+    "id": 13714,
+    "title": "ORQ: Complex Analytics on Private Data with Strong Security Guarantees",
+    "paper": "https://doi.org/10.1145/3731569.3764833",
+    "method": "We present Orq, a system that enables collaborative analysis of large private datasets using cryptographically secure multi-party computation (MPC).",
+    "technique": [
+      {
+        "name": "ORQ",
+        "type": "system-mechanism",
+        "target": "Complex Analytics on Private Data",
+        "action": "Apply Strong Security Guarantees",
+        "effect": "When compared to state-of-the-art solutions, Orq significantly reduces MPC execution times and can process one order of magnitude larger datasets.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Orq protects data against semi-honest or malicious parties and can efficiently evaluate relational queries with multi-way joins and aggregations that have been considered notoriously expensive under MPC.",
+    "scenario": "Orq protects data against semi-honest or malicious parties and can efficiently evaluate relational queries with multi-way joins and aggregations that have been considered notoriously expensive under MPC.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "tripcoercionresistantregistrationforevotingwithverifiabilityandusabilityinvotegral",
+    "id": 13715,
+    "title": "TRIP: Coercion-resistant Registration for E-Voting with Verifiability and Usability in Votegral",
+    "paper": "https://doi.org/10.1145/3731569.3764837",
+    "method": "Online voting is convenient and flexible, but amplifies the risks of voter coercion and vote buying.",
+    "technique": [
+      {
+        "name": "TRIP",
+        "type": "formal-method",
+        "target": "Coercion-resistant Registration for E-Voting",
+        "action": "Apply Verifiability and Usability in Votegral",
+        "effect": "Online voting is convenient and flexible, but amplifies the risks of voter coercion and vote buying.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Current systems along these lines make problematic assumptions about credential issuance, however, such as strong trust in a registrar and/or in voter-controlled hardware, or expecting voters to interact with multiple registrars.",
+    "scenario": "Experimental results with our prototype suggest that Votegral is practical and sufficiently scalable for real-world elections.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "moiraioptimizingplacementofdataandcomputeinhybridclouds",
+    "id": 13716,
+    "title": "Moirai: Optimizing Placement of Data and Compute in Hybrid Clouds",
+    "paper": "https://doi.org/10.1145/3731569.3764802",
+    "method": "We present Moirai, a cost-optimization framework that analyzes job accesses and data dependencies and optimizes the placement of both in hybrid clouds.",
+    "technique": [
+      {
+        "name": "Moirai",
+        "type": "algorithm",
+        "target": "Optimizing Placement of Data and Compute in Hybrid Clouds",
+        "action": "We present Moirai, a cost-optimization framework that analyzes job accesses and data dependencies and optimizes the placement of both in hybrid clouds.",
+        "effect": "Moirai reduces hybrid cloud deployment costs by over 97\\% relative to the state-of-the-art partitioning approach from Alibaba and other public approaches.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "The deployment of large-scale data analytics between on-premise and cloud sites, i.e., hybrid clouds, requires careful partitioning of both data and computation to avoid massive networking costs.",
+    "scenario": "The deployment of large-scale data analytics between on-premise and cloud sites, i.e., hybrid clouds, requires careful partitioning of both data and computation to avoid massive networking costs.",
+    "evidence": "unknown",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "taichiageneralhighefficiencyschedulingframeworkforsmartnicsinhyperscaleclouds",
+    "id": 13717,
+    "title": "Tai Chi: A General High-Efficiency Scheduling Framework for SmartNICs in Hyperscale Clouds",
+    "paper": "https://doi.org/10.1145/3731569.3764851",
+    "method": "Unfortunately, achieving control-plane SLO improvements through co-scheduling with idle data-plane services remains highly challenging, due to the combined effects of intrinsic scheduling latency and the substantial architectural complexity inherent to control-plane ecosystems.We present Tai Chi, a hardware and software co-designed schedu…",
+    "technique": [
+      {
+        "name": "Tai Chi",
+        "type": "hardware-mechanism",
+        "target": "A General High-Efficiency Scheduling Framework for SmartNICs in Hyperscale Clouds",
+        "action": "Unfortunately, achieving control-plane SLO improvements through co-scheduling with idle data-plane services remains highly challenging, due to the combined effects of intrinsic scheduling latency and the substantial architectural complexity inherent to control…",
+        "effect": "By achieving microsecond-scale scheduling precision, it reduces control-plane operation latency by 3.1\\texttimes{} (e.g., VM startup) while maintaining data-plane SLO compliance, imposes negligible scheduling overhead, and requires zero code modifications to l…",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "On the other hand, control-plane tasks fail to meet critical Service Level Objectives (SLOs), such as virtual machine startup time.",
+    "scenario": "Our analysis of production environments reveals that data-plane services statically provision CPUs for peak load, resulting in 67.5\\% idle CPU cycles during 99\\% of their runtime in IaaS clouds, leading to wasted CPU resources.",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "quiltresourceawaremergingofserverlessworkflows",
+    "id": 13718,
+    "title": "Quilt: Resource-aware Merging of Serverless Workflows",
+    "paper": "https://doi.org/10.1145/3731569.3764830",
+    "method": "Quilt is compatible with existing platforms without modification (Fission, OpenWhisk, and OpenFaaS), can merge functions in different languages (C, C++, Swift, Go, Rust) by acting at the level of LLVM IR, and requires no input or help from developers.",
+    "technique": [
+      {
+        "name": "Quilt",
+        "type": "system-mechanism",
+        "target": "Resource-aware Merging of Serverless Workflows",
+        "action": "This paper describes Quilt, a serverless optimizer that automatically merges workflows that consist of many functions (possibly in different languages) into one process thereby avoiding high invocation latency, communication overhead, and long chains of cold s…",
+        "effect": "Our evaluation shows that Quilt improves median workflow completion time by 45.63\\%–70.95\\% and throughput by 2.05\\texttimes{}–12.87\\texttimes{}.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "This paper describes Quilt, a serverless optimizer that automatically merges workflows that consist of many functions (possibly in different languages) into one process thereby avoiding high invocation latency, communication overhead, and long chains of cold starts.",
+    "scenario": "Our evaluation shows that Quilt improves median workflow completion time by 45.63\\%–70.95\\% and throughput by 2.05\\texttimes{}–12.87\\texttimes{}.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "mantleefficienthierarchicalmetadatamanagementforcloudobjectstorageservices",
+    "id": 13719,
+    "title": "Mantle: Efficient Hierarchical Metadata Management for Cloud Object Storage Services",
+    "paper": "https://doi.org/10.1145/3731569.3764824",
+    "method": "Prior optimizations, largely designed for distributed file systems (with least adoption in clouds), do not apply due to COSS-specific constraints like stateless proxies and limited APIs.Mantle is a new COSS metadata service for modern cloud workloads.",
+    "technique": [
+      {
+        "name": "Mantle",
+        "type": "architecture",
+        "target": "Efficient Hierarchical Metadata Management for Cloud Object Storage Services",
+        "action": "Prior optimizations, largely designed for distributed file systems (with least adoption in clouds), do not apply due to COSS-specific constraints like stateless proxies and limited APIs.Mantle is a new COSS metadata service for modern cloud workloads.",
+        "effect": "Compared to the metadata services of Tectonic, InfiniFS and LocoFS, Mantle reduces metadata latency by 6.6-99.1\\% and improves throughput by 0.07-115.00\\texttimes{}.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "However, current COSS architectures incur costly multi-round lookups and high directory contention, delaying job execution.",
+    "scenario": "Mantle has been deployed on Baidu Object Storage (BOS) for over 2 years, a service offered by Baidu Canghai Storage.",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "unlockingtrueelasticityforthecloudnativeerawithdandelion",
+    "id": 13720,
+    "title": "Unlocking True Elasticity for the Cloud-Native Era with Dandelion",
+    "paper": "https://doi.org/10.1145/3731569.3764803",
+    "method": "We propose Dandelion, an elastic cloud platform with a declarative cloud-native programming model that replaces POSIX-based network interfaces with higher-level (e.g., HTTP-based) interfaces for applications to interact with remote services like cloud storage, databases, and AI inference services.",
+    "technique": [
+      {
+        "name": "Unlocking True Elasticity for the Cloud-Native Era with Dandelion",
+        "type": "instrumentation",
+        "target": "Unlocking True Elasticity for the Cloud-Native Era",
+        "action": "Apply Dandelion",
+        "effect": "We propose Dandelion, an elastic cloud platform with a declarative cloud-native programming model that replaces POSIX-based network interfaces with higher-level (e.g., HTTP-based) interfaces for applications to interact with remote services like cloud storage,…",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "However, even serverless platforms — which boot sandboxes in 10s to 100s of milliseconds — are not sufficiently elastic to avoid pre-provisioning expensive resources.",
+    "scenario": "Dandelion makes it practical to boot sandboxes on-demand per request, decreasing performance variability by two to three orders of magnitude compared to Firecracker and reducing committed memory by 96\\% on average when running the Azure Functions trace.",
+    "evidence": "unknown",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "runningconsistentapplicationsclosertouserswithradicalforlowerlatency",
+    "id": 13721,
+    "title": "Running Consistent Applications Closer to Users with Radical for Lower Latency",
+    "paper": "https://doi.org/10.1145/3731569.3764831",
+    "method": "Running applications close to users—in nearby datacenters, at edge points of presence, or in on-premises clusters—is attractive, as it reduces end-to-end latency.",
+    "technique": [
+      {
+        "name": "Running Consistent Applications Closer to Users with Radical for Lower Latency",
+        "type": "protocol",
+        "target": "Running Consistent Applications Closer to Users",
+        "action": "Apply Radical for Lower Latency",
+        "effect": "Our evaluation shows that Radical achieves 84–89\\% of the latency improvement obtainable by moving out of the datacenter, while providing Linearizability.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Moving strong consistent applications closer to users is difficult, as they incur high latencies either when accessing, or coordinating, their storage system.",
+    "scenario": "Our evaluation shows that Radical achieves 84–89\\% of the latency improvement obtainable by moving out of the datacenter, while providing Linearizability.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "managingscalabledirectstorageaccessesforgpuswithgofs",
+    "id": 13722,
+    "title": "Managing Scalable Direct Storage Accesses for GPUs with GoFS",
+    "paper": "https://doi.org/10.1145/3731569.3764857",
+    "method": "However, current GPUDirect Storage solutions still rely on the host file system to manage the storage device, direct storage accesses are still bottlenecked by the host.In this paper, we develop a GPU-orchestrated file system (GoFS) for scaling the direct storage accesses for GPU programs, by fully offloading the storage management to the…",
+    "technique": [
+      {
+        "name": "Managing Scalable Direct Storage Accesses for GPUs with GoFS",
+        "type": "hardware-mechanism",
+        "target": "Managing Scalable Direct Storage Accesses for GPUs",
+        "action": "Apply GoFS",
+        "effect": "Our experiments with various GPU-based applications show that GoFS outperforms state-of-the-art storage access solutions for GPUs by 1.61\\texttimes{} on average.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "However, current GPUDirect Storage solutions still rely on the host file system to manage the storage device, direct storage accesses are still bottlenecked by the host.In this paper, we develop a GPU-orchestrated file system (GoFS) for scaling the direct storage accesses for GPU programs, by fully…",
+    "scenario": "Our experiments with various GPU-based applications show that GoFS outperforms state-of-the-art storage access solutions for GPUs by 1.61\\texttimes{} on average.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "phoenixosconcurrentoslevelgpucheckpointandrestorewithvalidatedspeculation",
+    "id": 13723,
+    "title": "PhoenixOS: Concurrent OS-level GPU Checkpoint and Restore with Validated Speculation",
+    "paper": "https://doi.org/10.1145/3731569.3764813",
+    "method": "PhOS further proposes several GPU-aware techniques for efficient GPU C/R, including coordinated checkpoint data transfer and execution context pool.",
+    "technique": [
+      {
+        "name": "PhoenixOS",
+        "type": "hardware-mechanism",
+        "target": "Concurrent OS-level GPU Checkpoint and Restore",
+        "action": "Apply Validated Speculation",
+        "effect": "For downstream tasks that use C/R for tolerating failures, migrating processes between machines, and accelerating cold starts in serverless computing, PhOS achieves orders of magnitude higher performance than state-of-the-art OS-level GPU C/R systems like NVID…",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "While concurrent C/R is well-established on CPUs, it poses unique challenges on GPUs due to their lack of essential features for efficiently tracing concurrent memory reads and writes, such as specific hardware capabilities (e.g., dirty bits) and OS-mediated data paths (e.g., copy-on-write).To ensur…",
+    "scenario": "While concurrent C/R is well-established on CPUs, it poses unique challenges on GPUs due to their lack of essential features for efficiently tracing concurrent memory reads and writes, such as specific hardware capabilities (e.g., dirty bits) and OS-mediated data paths (e.g., copy-on-write).To ensure correct concurrent…",
+    "evidence": "unknown",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "ktransformersunleashingthefullpotentialofcpugpuhybridinferenceformoemodels",
+    "id": 13724,
+    "title": "KTransformers: Unleashing the Full Potential of CPU/GPU Hybrid Inference for MoE Models",
+    "paper": "https://doi.org/10.1145/3731569.3764843",
+    "method": "However, existing hybrid solutions remain bottlenecked by CPU computation limits and CPU-GPU synchronization overheads, severely restricting their ability to efficiently run state-of-the-art large MoE models, such as the 671B DeepSeek-V3/R1.This paper presents KTransformers, a high-performance inference system designed specifically for ef…",
+    "technique": [
+      {
+        "name": "KTransformers",
+        "type": "hardware-mechanism",
+        "target": "Unleashing the Full Potential of CPU/GPU Hybrid Inference for MoE Models",
+        "action": "This hybrid approach leverages both the large, cost-effective memory capacity of CPU/DRAM and the high bandwidth of GPU/VRAM.",
+        "effect": "However, existing hybrid solutions remain bottlenecked by CPU computation limits and CPU-GPU synchronization overheads, severely restricting their ability to efficiently run state-of-the-art large MoE models, such as the 671B DeepSeek-V3/R1.This paper presents…",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "However, existing hybrid solutions remain bottlenecked by CPU computation limits and CPU-GPU synchronization overheads, severely restricting their ability to efficiently run state-of-the-art large MoE models, such as the 671B DeepSeek-V3/R1.This paper presents KTransformers, a high-performance infer…",
+    "scenario": "As a result, it has already been widely adopted within both the open-source community and industry.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "aegaeoneffectivegpupoolingforconcurrentllmservingonthemarket",
+    "id": 13725,
+    "title": "Aegaeon: Effective GPU Pooling for Concurrent LLM Serving on the Market",
+    "paper": "https://doi.org/10.1145/3731569.3764815",
+    "method": "While existing multi-model serving solutions use GPU pooling and server-less computing to improve resource efficiency, their effective-ness is limited to supporting at most two or three models per GPU, which is inadequate for fully utilizing GPU resources.We propose Aegaeon, a multi-model serving system that performs model auto-scaling at…",
+    "technique": [
+      {
+        "name": "Aegaeon",
+        "type": "hardware-mechanism",
+        "target": "Effective GPU Pooling for Concurrent LLM Serving on the Market",
+        "action": "While existing multi-model serving solutions use GPU pooling and server-less computing to improve resource efficiency, their effective-ness is limited to supporting at most two or three models per GPU, which is inadequate for fully utilizing GPU resources.We p…",
+        "effect": "It reduces auto-scaling overhead by 97\\% through component reuse, explicit memory management, and fine-grained KV cache synchronization.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Model markets (e.g., Hugging Face) feature a wide variety of models with unique characteristics and varying levels of popularity.",
+    "scenario": "Aegaeon has been beta deployed in our model marketplace and currently serves tens of models.",
+    "evidence": "real-world",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "mercuryunlockingmultigpuoperatoroptimizationforllmsviaremotememoryscheduling",
+    "id": 13726,
+    "title": "Mercury: Unlocking Multi-GPU Operator Optimization for LLMs via Remote Memory Scheduling",
+    "paper": "https://doi.org/10.1145/3731569.3764798",
+    "method": "In this paper, we propose Mercury, a multi-GPU operator compiler based on a loop-based intermediate representation, CommIR.",
+    "technique": [
+      {
+        "name": "Mercury",
+        "type": "hardware-mechanism",
+        "target": "Unlocking Multi-GPU Operator Optimization for LLMs",
+        "action": "Apply Remote Memory Scheduling",
+        "effect": "In this paper, we propose Mercury, a multi-GPU operator compiler based on a loop-based intermediate representation, CommIR.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "In this paper, we propose Mercury, a multi-GPU operator compiler based on a loop-based intermediate representation, CommIR.",
+    "scenario": "Our implementation is open-sourced at https://github.com/ChandlerGuan/mercury_artifact.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "howtocopymemorycoordinatedasynchronouscopyasafirstclassosservice",
+    "id": 13727,
+    "title": "How to Copy Memory? Coordinated Asynchronous Copy as a First-Class OS Service",
+    "paper": "https://doi.org/10.1145/3731569.3764800",
+    "method": "This paper argues for copy as a first-class OS service, offering three key benefits: (1) with the asynchronous copy abstraction provided by the service, applications can overlap their execution with copy; (2) the service can effectively utilize hardware capabilities to enhance copy performance; (3) the service's global view of copies furt…",
+    "technique": [
+      {
+        "name": "How to Copy Memory? Coordinated Asynchronous Copy as a First-Class OS Service",
+        "type": "hardware-mechanism",
+        "target": "How to Copy Memory? Coordinated Asynchronous Copy as a First-Class OS Service",
+        "action": "However, they typically target specific use cases, such as Linux zero-copy send() for messages of ≥10KB.",
+        "effect": "We build Copier-Linux to demonstrate Copier's ability to improve performance for diverse use cases, including Redis, Protobuf, network stack, proxy, etc.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "However, they typically target specific use cases, such as Linux zero-copy send() for messages of ≥10KB.",
+    "scenario": "Evaluations show that Copier achieves up to a 1.8 \\texttimes{} speedup for real-world applications like Redis and a 1.6 \\texttimes{} improvement over zIO, the state-of-the-art in optimizing copy efficiency.",
+    "evidence": "unknown",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "cortenmmefficientmemorymanagementwithstrongcorrectnessguarantees",
+    "id": 13728,
+    "title": "CortenMM: Efficient Memory Management with Strong Correctness Guarantees",
+    "paper": "https://doi.org/10.1145/3731569.3764836",
+    "method": "We observe that both issues stem from the conventional design of memory management systems with two levels of abstraction: a software-level abstraction (e.g., VMA trees in Linux) and a hardware-level abstraction (typically, page tables).",
+    "technique": [
+      {
+        "name": "CortenMM",
+        "type": "hardware-mechanism",
+        "target": "Efficient Memory Management",
+        "action": "Apply Strong Correctness Guarantees",
+        "effect": "This design increases portability but requires correctly and efficiently synchronizing two drastically different and complex data structures, which is generally challenging.We present CortenMM, a memory management system with a clean-slate design to achieve bo…",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Modern memory management systems suffer from poor performance and subtle concurrency bugs, slowing down applications while introducing security vulnerabilities.",
+    "scenario": "Our evaluation shows that the formally verified CortenMM outperforms Linux by 1.2\\texttimes{} to 26\\texttimes{} on real-world applications.",
+    "evidence": "benchmark",
+    "lens": [
+      "渗透测试"
+    ],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "rearchitectingthethreadmodelofinmemorykeyvaluestoreswithμtps",
+    "id": 13729,
+    "title": "Rearchitecting the Thread Model of In-Memory Key-Value Stores with μTPS",
+    "paper": "https://doi.org/10.1145/3731569.3764794",
+    "method": "This paper presents μTPS, a new thread architecture tailored for in-memory key-value stores (KVSs) that operate at tens of millions of operations per second.",
+    "technique": [
+      {
+        "name": "Rearchitecting the Thread Model of In-Memory Key-Value Stores with μTPS",
+        "type": "hardware-mechanism",
+        "target": "Rearchitecting the Thread Model of In-Memory Key-Value Stores",
+        "action": "Apply μTPS",
+        "effect": "Evaluation results show that μTPS achieves higher performance than the run-to-completion counterparts.",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "This paper presents μTPS, a new thread architecture tailored for in-memory key-value stores (KVSs) that operate at tens of millions of operations per second.",
+    "scenario": "Evaluation results show that μTPS achieves higher performance than the run-to-completion counterparts.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "flexguardfastmutualexclusionindependentofsubscription",
+    "id": 13730,
+    "title": "FlexGuard: Fast Mutual Exclusion Independent of Subscription",
+    "paper": "https://doi.org/10.1145/3731569.3764852",
+    "method": "We present FlexGuard, the first approach that systematically switches from busy-waiting to blocking precisely when a lock-holding thread is preempted.",
+    "technique": [
+      {
+        "name": "FlexGuard",
+        "type": "hardware-mechanism",
+        "target": "Fast Mutual Exclusion Independent of Subscription",
+        "action": "We present FlexGuard, the first approach that systematically switches from busy-waiting to blocking precisely when a lock-holding thread is preempted.",
+        "effect": "FlexGuard matches or improves performance in LevelDB, a memory-optimized database index, PARSEC's Dedup, and SPLASH2X's Raytrace and Streamcluster, boosting throughput by 1–6\\texttimes{} in non-oversubscribed and up to 5\\texttimes{} in oversubscribed scenarios…",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "Performance-oriented applications require efficient locks to harness the computing power of multicore architectures.",
+    "scenario": "FlexGuard matches or improves performance in LevelDB, a memory-optimized database index, PARSEC's Dedup, and SPLASH2X's Raytrace and Streamcluster, boosting throughput by 1–6\\texttimes{} in non-oversubscribed and up to 5\\texttimes{} in oversubscribed scenarios.",
+    "evidence": "unknown",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "scalableaddressspacesusingconcurrentintervalskiplist",
+    "id": 13731,
+    "title": "Scalable Address Spaces using Concurrent Interval Skiplist",
+    "paper": "https://doi.org/10.1145/3731569.3764807",
+    "method": "While prior works have attempted to address this issue, they either fail to sufficiently parallelize operations or are impractical for real-world kernels.We present the first scalable and practical address space design that parallelizes critical operations.",
+    "technique": [
+      {
+        "name": "Scalable Address Spaces using Concurrent Interval Skiplist",
+        "type": "system-mechanism",
+        "target": "Scalable Address Spaces",
+        "action": "Apply Concurrent Interval Skiplist",
+        "effect": "Our results show a significant throughput improvement of 13.1\\texttimes{} for an mmap() microbenchmark, 4.49\\texttimes{} for LevelDB, 3.19\\texttimes{} for the Apache web server, 1.47\\texttimes{} for Metis MapReduce, and 1.27\\texttimes{} for Psearchy text index…",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "While prior works have attempted to address this issue, they either fail to sufficiently parallelize operations or are impractical for real-world kernels.We present the first scalable and practical address space design that parallelizes critical operations.",
+    "scenario": "While prior works have attempted to address this issue, they either fail to sufficiently parallelize operations or are impractical for real-world kernels.We present the first scalable and practical address space design that parallelizes critical operations.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  },
+  {
+    "key": "analyzingandenhancingarckfsananecdotalexampleofbenefitsofartifactevaluation",
+    "id": 13732,
+    "title": "Analyzing and Enhancing ArckFS: An Anecdotal Example of Benefits of Artifact Evaluation",
+    "paper": "https://doi.org/10.1145/3731569.3768291",
+    "method": "Their analysis identifies (1) insufficient clarity in the paper on the handling of multi-inode operations, and (2) several implementation bugs in ArckFS that cause occasional operation failures or potential crash inconsistencies during inode creation.Through close collaboration between the KAIST and Trio authors, we have enhanced the Trio…",
+    "technique": [
+      {
+        "name": "Analyzing and Enhancing ArckFS",
+        "type": "architecture",
+        "target": "An Anecdotal Example of Benefits of Artifact Evaluation",
+        "action": "Their analysis identifies (1) insufficient clarity in the paper on the handling of multi-inode operations, and (2) several implementation bugs in ArckFS that cause occasional operation failures or potential crash inconsistencies during inode creation.Through c…",
+        "effect": "Their analysis identifies (1) insufficient clarity in the paper on the handling of multi-inode operations, and (2) several implementation bugs in ArckFS that cause occasional operation failures or potential crash inconsistencies during inode creation.Through c…",
+        "grounding": "explicit",
+        "limitation": null
+      }
+    ],
+    "problem": "We analyze and enhance Trio and ArckFS by Zhou et al. (SOSP 2023), high-performance NVM file system architecture and file system.",
+    "scenario": "Our study highlights the crucial role of artifact evaluation in systems research and its potential benefits.",
+    "evidence": "benchmark",
+    "lens": [],
+    "date": "2026-07-30"
+  }
+]

@@ -82,13 +82,30 @@ def upstream_titles(pub, year):
         return None
 
 
+def toc_keys(pub, site):
+    configured = site.get('dblp_toc')
+    if configured is None:
+        template = pub.get('dblp_toc_template', '')
+        configured = template.format(year=site['year']) if template else ''
+    if isinstance(configured, list):
+        return [toc for toc in configured if isinstance(toc, str) and toc]
+    return [configured] if isinstance(configured, str) and configured else []
+
+
 def dblp_titles(pub, site):
-    toc = site.get('dblp_toc') or pub.get('dblp_toc_template', '')
-    if not toc:
+    tocs = toc_keys(pub, site)
+    if not tocs:
         return None
-    toc = toc.format(year=site['year'])
-    papers, _ = dblp_fetcher.fetch_toc(toc)
-    return [p['title'] for p in papers] if papers else []
+    titles = []
+    seen = set()
+    for toc in tocs:
+        papers, _ = dblp_fetcher.fetch_toc(toc)
+        for paper in papers:
+            identity = paper.get('dblp_key') or compact(paper.get('title', ''))
+            if identity and identity not in seen:
+                seen.add(identity)
+                titles.append(paper['title'])
+    return titles
 
 
 def main():

@@ -28,6 +28,12 @@ import time
 
 import yaml
 
+if hasattr(sys.stdout, 'reconfigure'):
+    # Windows may default redirected stdout to GBK. DBLP titles can contain
+    # characters outside that codec (for example superscript numerals), and a
+    # progress print must never abort an otherwise valid dataset update.
+    sys.stdout.reconfigure(encoding='utf-8', errors='backslashreplace')
+
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from analyzers import dblp_fetcher
 from analyzers import abstract_enricher
@@ -72,6 +78,23 @@ def pick_link(links):
     return links[0] if links else '#'
 
 
+def toc_keys(pub, site):
+    """Return one or more DBLP TOC keys for a configured venue-year.
+
+    Most venues publish one proceedings volume, while venues such as ASPLOS
+    publish several volumes with keys like ``asplos2026-1`` and
+    ``asplos2026-2``.  A site-level ``dblp_toc`` may therefore be either a
+    string or a list of strings.
+    """
+    configured = site.get('dblp_toc')
+    if configured is None:
+        template = pub.get('dblp_toc_template', '')
+        configured = template.format(year=site['year']) if template else ''
+    if isinstance(configured, list):
+        return [toc for toc in configured if isinstance(toc, str) and toc]
+    return [configured] if isinstance(configured, str) and configured else []
+
+
 def load_existing(official_json, pub_name, year):
     """Known papers for this venue-year, in stable order."""
     path = os.path.join(CACHE_DIR, official_json)
@@ -112,16 +135,30 @@ def process_site(pub_key, pub, site, args, missing):
         print(f'[skip] {label}: `source: dblp` sites need `official_file: <name>.json` in data.yml')
         return None
 
-    toc = site.get('dblp_toc') or pub.get('dblp_toc_template', '').format(year=year)
-    if not toc:
+    tocs = toc_keys(pub, site)
+    if not tocs:
         print(f'[skip] {label}: no dblp_toc_template/dblp_toc configured')
         return None
 
-    print(f'[{label}] TOC {toc}')
-    papers, log = dblp_fetcher.fetch_toc(toc)
+    print(f'[{label}] TOC {", ".join(tocs)}')
+    papers = []
+    logs = []
+    seen_dblp = set()
+    for toc in tocs:
+        part, log = dblp_fetcher.fetch_toc(toc)
+        logs.append(log)
+        for paper in part:
+            identity = paper.get('dblp_key') or compact(paper.get('title', ''))
+            if identity and identity not in seen_dblp:
+                seen_dblp.add(identity)
+                papers.append(paper)
     if not papers:
-        print(f'[{label}] DBLP has no data yet (xml={log["venue_xml_status"]}, '
-              f'api={log["search_api_status"]}) -- leaving existing data untouched')
+        statuses = ', '.join(
+            f'{log["toc"]}:xml={log["venue_xml_status"]}/api={log["search_api_status"]}'
+            for log in logs
+        )
+        print(f'[{label}] DBLP has no data yet ({statuses}) '
+              '-- leaving existing data untouched')
         return {'label': label, 'dblp': 0, 'existing': None, 'new': 0, 'enrich': None}
 
     records = load_existing(official_file, pub_name, year)

@@ -1,256 +1,298 @@
 {
-  "configurator": {
-    "primary": "主色调",
-    "surface": "背景色",
-    "presets": "预设方案",
-    "menuMode": "菜单模式",
-    "static": "固定",
-    "overlay": "悬浮"
-  },
-  "nav": {
-    "dashboard": "总览",
-    "papers": "论文",
-    "reputation": "名望",
-    "misc": "其他"
-  },
-  "menu": {
-    "main": "主要",
-    "home": "首页",
-    "paper": "论文",
-    "search": "标题检索",
-    "trends": "近年录用趋势",
-    "abstract": "论文摘要",
-    "methodIndex": "方法索引",
-    "submissionTimeline": "会议全流程时间线",
-    "reputation": "名望",
-    "awards": "获奖论文",
-    "misc": "其他",
-    "about": "关于",
-    "moreSites": "更多网站",
-    "settings": "设置"
-  },
-  "trends": {
-    "acceptedPapers": "录用论文趋势",
-    "title": "录用论文趋势"
-  },
-  "common": {
-    "title": "安全四大汇总",
-    "language": "语言",
-    "theme": "切换主题",
-    "customStyle": "自定义样式",
-    "sourceCode": "源代码",
-    "feedback": "意见反馈",
-    "search": "搜索",
-    "filter": "筛选",
-    "reset": "重置",
-    "confirm": "确认",
-    "cancel": "取消",
-    "save": "保存",
-    "edit": "编辑",
-    "delete": "删除",
-    "add": "添加",
-    "loading": "加载中...",
-    "notice": "提示",
-    "noData": "暂无数据"
-  },
-  "dashboard": {
-    "title": "首页",
-    "stats": "统计",
-    "notices": "通知",
-    "feedback": "反馈",
-    "totalPapers": "论文总数",
-    "totalPublications": "会议/期刊总数",
-    "projectStars": "项目星标 / 分支",
-    "recentUpdate": "最近更新日期",
-    "paperStats": {
-      "title": "论文统计",
-      "subtitle": "会议年度统计",
-      "year": "{year} 年",
-      "papers": "篇",
-      "totalPapers": "合计：{count} 篇",
-      "status": {
-        "pending": "待校对",
-        "processed": "已校对",
-        "processing": "待补充",
-        "advanced": "已分析"
-      }
-    }
-  },
-  "papers": {
-    "title": "安全论文集",
-    "search": "搜索论文...",
-    "venue": "会议/期刊",
-    "year": "年份",
-    "author": "作者",
-    "paperTitle": "标题",
-    "abstract": "摘要",
-    "keywords": "关键词"
-  },
-  "test": {
-    "title": "国际化测试",
-    "description": "此页面演示了应用程序的多语言功能。",
-    "currentLanguage": "当前语言设置",
-    "locale": "语言代码",
-    "direction": "文本方向",
-    "currentTime": "当前时间",
-    "samples": "翻译示例",
-    "dashboard": "仪表板",
-    "papers": "论文",
-    "search": "搜索",
-    "loading": "加载中",
-    "instructions": "如何测试",
-    "instructionsText": "点击顶部导航栏中的语言切换器（国旗图标）来更改语言。所有国际化内容将立即更新。"
-  },
-  "about": {
-    "timeline": "更新日志",
-    "sponsors": "赞助者"
-  },
-  "moreSites": {
-    "title": "更多网站",
-    "subtitle": "精选学术安全研究与会议追踪相关的实用资源。点击卡片可在新标签页中打开。",
-    "list": {
-      "bestPaperAwards": {
-        "title": "计算机科学领域最佳论文奖汇总",
-        "desc": "由 Jeff Huang 长期维护，汇总自 1996 年以来 32 个计算机科学顶会的最佳论文奖。"
-      },
-      "ccfddl": {
-        "title": "CCF推荐会议截稿日期",
-        "desc": "按方向和级别追踪 CCF 推荐目录中各会议的临近投稿截止日期。"
-      },
-      "ccfRecommend": {
-        "title": "中国计算机学会推荐国际学术会议和期刊目录",
-        "desc": "中国计算机学会推荐的国际会议与期刊目录（A/B/C 类）的便捷镜像。"
-      },
-      "connectedPapers": {
-        "title": "Connected Papers",
-        "desc": "以交互式图谱可视化论文之间的关联：输入种子论文，即可探索其先行工作、衍生工作及同领域相似论文。"
-      },
-      "wisPaper": {
-        "title": "WisPaper",
-        "desc": "基于 AI 的文献检索工具，支持自然语言提问，并通过 Intent Verification 技术过滤出最契合研究意图的论文。"
-      },
-      "csPapers": {
-        "title": "CS Papers",
-        "desc": "面向计算机科学顶会论文（csrankings.org 收录会议，含安全四大）的搜索引擎，支持按会议与年份快速筛选，并提供开放 API。"
-      }
-    }
-  },
-  "settings": {
-    "title": "设置",
-    "subtitle": "偏好将保存在本机浏览器的 IndexedDB 中",
-    "unsupported": {
-      "title": "当前浏览器不支持 IndexedDB",
-      "desc": "将使用默认配置，无法在本地持久化保存偏好。"
+    "configurator": {
+        "primary": "主色调",
+        "surface": "背景色",
+        "presets": "预设方案",
+        "menuMode": "菜单模式",
+        "static": "固定",
+        "overlay": "悬浮"
     },
-    "privacyNotice": "你的偏好仅保存在本机浏览器的 IndexedDB 中。我们不会使用这些数据追踪、识别或分析网站访问者，也不会将任何数据上传到服务器。",
-    "form": {
-      "rememberLanguage": {
-        "label": "记住语言选择",
-        "desc": "保存当前语言偏好，下次访问时自动恢复。"
-      },
-      "rememberDarkMode": {
-        "label": "记住明暗模式",
-        "desc": "保存亮色/暗色模式设置，下次访问时自动恢复。"
-      },
-      "rememberTheme": {
-        "label": "记住主题色",
-        "desc": "保存你在调色板面板中选择的主色调。"
-      },
-      "showStatusDots": {
-        "label": "显示状态圆点",
-        "desc": "控制首页论文统计中的彩色指示灯。默认关闭以避免密集恐惧不适。"
-      },
-      "llmUrl": {
-        "label": "大模型接口地址",
-        "desc": "大模型服务的接口 URL（例如 https://api.example.com/v1/chat/completions）。",
-        "placeholder": "请输入接口地址"
-      },
-      "llmKey": {
-        "label": "大模型 API Key",
-        "desc": "密钥仅保存在本机浏览器，不会上传服务器。",
-        "placeholder": "请输入 API Key"
-      },
-      "keywords": {
-        "label": "偏好关键词",
-        "desc": "在标题/摘要中高亮这些词语。可添加多个，会使用主题色高亮。",
-        "placeholder": "输入关键词回车添加",
-        "add": "添加"
-      }
+    "nav": {
+        "dashboard": "总览",
+        "papers": "论文",
+        "reputation": "名望",
+        "misc": "其他"
     },
-    "actions": {
-      "save": "保存",
-      "reset": "恢复默认"
+    "menu": {
+        "main": "主要",
+        "home": "首页",
+        "paper": "论文",
+        "search": "标题检索",
+        "trends": "近年录用趋势",
+        "abstract": "论文摘要",
+        "methodIndex": "方法索引",
+        "submissionTimeline": "会议全流程时间线",
+        "reputation": "名望",
+        "awards": "获奖论文",
+        "misc": "其他",
+        "about": "关于",
+        "moreSites": "更多网站",
+        "settings": "设置"
     },
-    "toast": {
-      "saved": "设置已保存",
-      "saveFailed": "保存失败",
-      "loadFailed": "加载失败"
+    "trends": {
+        "acceptedPapers": "录用论文趋势",
+        "title": "录用论文趋势"
+    },
+    "common": {
+        "title": "安全四大汇总",
+        "language": "语言",
+        "theme": "切换主题",
+        "customStyle": "自定义样式",
+        "sourceCode": "源代码",
+        "feedback": "意见反馈",
+        "search": "搜索",
+        "filter": "筛选",
+        "reset": "重置",
+        "confirm": "确认",
+        "cancel": "取消",
+        "save": "保存",
+        "edit": "编辑",
+        "delete": "删除",
+        "add": "添加",
+        "loading": "加载中...",
+        "notice": "提示",
+        "noData": "暂无数据"
+    },
+    "dashboard": {
+        "title": "首页",
+        "stats": "统计",
+        "notices": "通知",
+        "feedback": "反馈",
+        "totalPapers": "论文总数",
+        "totalPublications": "会议/期刊总数",
+        "projectStars": "项目星标 / 分支",
+        "recentUpdate": "最近更新日期",
+        "paperStats": {
+            "title": "论文统计",
+            "subtitle": "会议年度统计",
+            "year": "{year} 年",
+            "papers": "篇",
+            "totalPapers": "合计：{count} 篇",
+            "status": {
+                "pending": "待校对",
+                "processed": "已校对",
+                "processing": "待补充",
+                "advanced": "已分析"
+            }
+        }
+    },
+    "papers": {
+        "title": "安全论文集",
+        "search": "搜索论文...",
+        "venue": "会议/期刊",
+        "year": "年份",
+        "author": "作者",
+        "paperTitle": "标题",
+        "abstract": "摘要",
+        "keywords": "关键词"
+    },
+    "test": {
+        "title": "国际化测试",
+        "description": "此页面演示了应用程序的多语言功能。",
+        "currentLanguage": "当前语言设置",
+        "locale": "语言代码",
+        "direction": "文本方向",
+        "currentTime": "当前时间",
+        "samples": "翻译示例",
+        "dashboard": "仪表板",
+        "papers": "论文",
+        "search": "搜索",
+        "loading": "加载中",
+        "instructions": "如何测试",
+        "instructionsText": "点击顶部导航栏中的语言切换器（国旗图标）来更改语言。所有国际化内容将立即更新。"
+    },
+    "about": {
+        "timeline": "更新日志",
+        "sponsors": "赞助者"
+    },
+    "moreSites": {
+        "title": "更多网站",
+        "subtitle": "精选学术安全研究与会议追踪相关的实用资源。点击卡片可在新标签页中打开。",
+        "list": {
+            "bestPaperAwards": {
+                "title": "计算机科学领域最佳论文奖汇总",
+                "desc": "由 Jeff Huang 长期维护，汇总自 1996 年以来 32 个计算机科学顶会的最佳论文奖。"
+            },
+            "ccfddl": {
+                "title": "CCF推荐会议截稿日期",
+                "desc": "按方向和级别追踪 CCF 推荐目录中各会议的临近投稿截止日期。"
+            },
+            "ccfRecommend": {
+                "title": "中国计算机学会推荐国际学术会议和期刊目录",
+                "desc": "中国计算机学会推荐的国际会议与期刊目录（A/B/C 类）的便捷镜像。"
+            },
+            "connectedPapers": {
+                "title": "Connected Papers",
+                "desc": "以交互式图谱可视化论文之间的关联：输入种子论文，即可探索其先行工作、衍生工作及同领域相似论文。"
+            },
+            "wisPaper": {
+                "title": "WisPaper",
+                "desc": "基于 AI 的文献检索工具，支持自然语言提问，并通过 Intent Verification 技术过滤出最契合研究意图的论文。"
+            },
+            "csPapers": {
+                "title": "CS Papers",
+                "desc": "面向计算机科学顶会论文（csrankings.org 收录会议，含安全四大）的搜索引擎，支持按会议与年份快速筛选，并提供开放 API。"
+            }
+        }
+    },
+    "settings": {
+        "title": "设置",
+        "subtitle": "偏好将保存在本机浏览器的 IndexedDB 中",
+        "unsupported": {
+            "title": "当前浏览器不支持 IndexedDB",
+            "desc": "将使用默认配置，无法在本地持久化保存偏好。"
+        },
+        "privacyNotice": "你的偏好仅保存在本机浏览器的 IndexedDB 中。我们不会使用这些数据追踪、识别或分析网站访问者，也不会将任何数据上传到服务器。",
+        "form": {
+            "rememberLanguage": {
+                "label": "记住语言选择",
+                "desc": "保存当前语言偏好，下次访问时自动恢复。"
+            },
+            "rememberDarkMode": {
+                "label": "记住明暗模式",
+                "desc": "保存亮色/暗色模式设置，下次访问时自动恢复。"
+            },
+            "rememberTheme": {
+                "label": "记住主题色",
+                "desc": "保存你在调色板面板中选择的主色调。"
+            },
+            "showStatusDots": {
+                "label": "显示状态圆点",
+                "desc": "控制首页论文统计中的彩色指示灯。默认关闭以避免密集恐惧不适。"
+            },
+            "llmUrl": {
+                "label": "大模型接口地址",
+                "desc": "大模型服务的接口 URL（例如 https://api.example.com/v1/chat/completions）。",
+                "placeholder": "请输入接口地址"
+            },
+            "llmKey": {
+                "label": "大模型 API Key",
+                "desc": "密钥仅保存在本机浏览器，不会上传服务器。",
+                "placeholder": "请输入 API Key"
+            },
+            "keywords": {
+                "label": "偏好关键词",
+                "desc": "在标题/摘要中高亮这些词语。可添加多个，会使用主题色高亮。",
+                "placeholder": "输入关键词回车添加",
+                "add": "添加"
+            }
+        },
+        "actions": {
+            "save": "保存",
+            "reset": "恢复默认"
+        },
+        "toast": {
+            "saved": "设置已保存",
+            "saveFailed": "保存失败",
+            "loadFailed": "加载失败"
+        }
+    },
+    "search": {
+        "clearFilters": "清除筛选",
+        "searchPlaceholder": "搜索",
+        "noResults": "未找到论文。",
+        "showingResults": "显示第 {first} 到 {last} 条，共 {totalRecords} 篇论文。跳转到页面",
+        "pageReport": "显示第 {first} 到 {last} 条，共 {totalRecords} 篇论文。跳转到页面",
+        "publication": "会议/期刊",
+        "year": "年份",
+        "authors": "作者",
+        "title": "标题",
+        "paper": "论文",
+        "url": "链接",
+        "copy": "复制",
+        "copied": "已复制论文标题！",
+        "totalPapers": "共 {count} 篇论文。",
+        "previewMessage": "共 {count} 篇论文。这是快速加载的预览版本。完整数据集正在加载中...",
+        "loadingMessage": "正在加载 {count} 篇论文...",
+        "publicationSelected": "已选择 {count} 个会议/期刊。",
+        "anyPublication": "任意会议/期刊",
+        "anyYear": "任意年份",
+        "favorites": "收藏",
+        "favoritesOnly": "仅看收藏"
+    },
+    "abstract": {
+        "selectPublication": "请先选择一个会议或期刊。",
+        "topTier": "安全四大",
+        "softwareEngineering": "软工会议",
+        "system": "系统会议",
+        "aiMl": "AI / ML",
+        "journal": "安全期刊",
+        "papers": "篇论文",
+        "emptyHint": "请在上方菜单中选择会议/期刊和年份，加载其录用论文及摘要。",
+        "openPaper": "打开论文",
+        "noAbstract": "该论文暂无摘要。",
+        "loadingPapers": "正在加载论文..."
+    },
+    "methodIndex": {
+        "selectPublication": "请先选择一个会议或期刊。",
+        "emptyHint": "请在上方菜单中选择会议/期刊和年份，加载其逐篇方法索引。",
+        "notGenerated": "{venue} {year} 尚未生成方法索引。",
+        "loadFailed": "方法索引加载失败，请检查连接后重试。",
+        "retry": "重试",
+        "noResults": "没有论文同时匹配当前全部筛选条件。",
+        "papers": "篇已索引",
+        "resultCount": "筛选后 {filtered} 篇 / 共 {total} 篇",
+        "title": "标题",
+        "method": "方法",
+        "technique": "技术路线",
+        "techniquePoints": "技术点",
+        "problem": "问题",
+        "scenario": "场景",
+        "evidence": "证据",
+        "lens": "方向",
+        "searchPlaceholder": "搜索论文及技术点全部字段...",
+        "anyLens": "任意方向",
+        "anyType": "任意技术类型",
+        "filtersLabel": "方法索引筛选",
+        "clearFilters": "清除筛选",
+        "loading": "正在加载索引...",
+        "pageReport": "第 {first}–{last} 条，共 {totalRecords} 条",
+        "openPaperLabel": "在新标签页打开《{title}》",
+        "legacyTechnique": "技术概述",
+        "unnamedTechnique": "技术点 {index}",
+        "emptyTechnique": "摘要未提供足够可靠的技术细节。",
+        "fields": {
+            "type": "技术类型",
+            "target": "针对的问题点",
+            "action": "原子技术动作",
+            "effect": "直接作用",
+            "grounding": "摘要依据",
+            "limitation": "缺失细节 / 局限"
+        },
+        "grounding": {
+            "explicit": "摘要明确说明",
+            "partial": "摘要仅部分说明"
+        },
+        "types": {
+            "algorithm": "算法",
+            "model": "模型",
+            "architecture": "架构",
+            "protocol": "协议",
+            "system-mechanism": "系统机制",
+            "hardware-mechanism": "硬件机制",
+            "data-construction": "数据构造",
+            "instrumentation": "插桩",
+            "analysis-method": "分析方法",
+            "testing-method": "测试方法",
+            "measurement-method": "测量方法",
+            "formal-method": "形式化方法",
+            "user-study": "用户研究",
+            "other": "其他",
+            "legacy": "旧版概述"
+        }
+    },
+    "awards": {
+        "papers": "论文数",
+        "awards": "奖项种类",
+        "selectHint": "请选择会议类别",
+        "selectHintDetail": "请从上方选择会议，以查看历年来得奖详情",
+        "groupBy": "分组依据：",
+        "byYear": "按年份",
+        "byType": "按奖项种类"
+    },
+    "notFound": {
+        "title": "页面未找到",
+        "message": "您访问的页面不存在。",
+        "backHome": "返回首页"
     }
-  },
-  "search": {
-    "clearFilters": "清除筛选",
-    "searchPlaceholder": "搜索",
-    "noResults": "未找到论文。",
-    "showingResults": "显示第 {first} 到 {last} 条，共 {totalRecords} 篇论文。跳转到页面",
-    "pageReport": "显示第 {first} 到 {last} 条，共 {totalRecords} 篇论文。跳转到页面",
-    "publication": "会议/期刊",
-    "year": "年份",
-    "authors": "作者",
-    "title": "标题",
-    "paper": "论文",
-    "url": "链接",
-    "copy": "复制",
-    "copied": "已复制论文标题！",
-    "totalPapers": "共 {count} 篇论文。",
-    "previewMessage": "共 {count} 篇论文。这是快速加载的预览版本。完整数据集正在加载中...",
-    "loadingMessage": "正在加载 {count} 篇论文...",
-    "publicationSelected": "已选择 {count} 个会议/期刊。",
-    "anyPublication": "任意会议/期刊",
-    "anyYear": "任意年份",
-    "favorites": "收藏",
-    "favoritesOnly": "仅看收藏"
-  },
-  "abstract": {
-    "selectPublication": "请先选择一个会议或期刊。",
-    "topTier": "安全四大",
-    "softwareEngineering": "软工会议",
-    "system": "系统会议",
-    "aiMl": "AI / ML",
-    "journal": "安全期刊",
-    "papers": "篇论文",
-    "emptyHint": "请在上方菜单中选择会议/期刊和年份，加载其录用论文及摘要。",
-    "openPaper": "打开论文",
-    "noAbstract": "该论文暂无摘要。",
-    "loadingPapers": "正在加载论文..."
-  },
-  "methodIndex": {
-    "selectPublication": "请先选择一个会议或期刊。",
-    "emptyHint": "请在上方菜单中选择会议/期刊和年份，加载其逐篇方法索引。",
-    "notGenerated": "该来源-年份尚未生成方法索引。可在 Claude Code 中说“给 {venue} {year} 建索引”。",
-    "papers": "篇已索引",
-    "title": "标题",
-    "method": "方法",
-    "technique": "技术路线",
-    "problem": "问题",
-    "scenario": "场景",
-    "evidence": "证据",
-    "lens": "方向",
-    "searchPlaceholder": "搜索 技术 / 方法 / 问题 / 场景...",
-    "anyLens": "任意方向",
-    "loading": "正在加载索引..."
-  },
-  "awards": {
-    "papers": "论文数",
-    "awards": "奖项种类",
-    "selectHint": "请选择会议类别",
-    "selectHintDetail": "请从上方选择会议，以查看历年来得奖详情",
-    "groupBy": "分组依据：",
-    "byYear": "按年份",
-    "byType": "按奖项种类"
-  },
-  "notFound": {
-    "title": "页面未找到",
-    "message": "您访问的页面不存在。",
-    "backHome": "返回首页"
-  }
 }

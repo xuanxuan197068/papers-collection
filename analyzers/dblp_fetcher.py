@@ -1,6 +1,7 @@
 """Fetch a venue's paper list from DBLP.
 
 Primary source:  venue TOC XML   https://dblp.org/db/<toc>.xml
+Mirror fallback: venue TOC XML   https://dblp.uni-trier.de/db/<toc>.xml
 Fallback source: search API      q=toc:db/<toc>.bht:
 
 <toc> is e.g. 'conf/uss/uss2025', built by tools/fetch_new.py from the
@@ -17,6 +18,8 @@ import xml.etree.ElementTree as ET
 RATE_LIMIT_S = 2.5
 JITTER_FRAC = 0.5  # add up to +50% random wait so intervals aren't fixed
 UA = "papers-collection-radar/0.1 (academic paper radar; personal use)"
+VENUE_XML_BASES = ("https://dblp.org", "https://dblp.uni-trier.de")
+MIRROR_RETRY_STATUS = {-1, 429, 500, 502, 503, 504}
 
 _last_call = 0.0
 
@@ -98,9 +101,15 @@ def fetch_toc(toc):
     not published); callers must treat that as "nothing to do", not an error.
     """
     log = {"toc": toc, "venue_xml_status": None, "search_api_status": None, "count": 0}
-    url_xml = f"https://dblp.org/db/{toc}.xml"
-    print(f"  GET {url_xml}")
-    status, data = http_get(url_xml)
+    status, data = None, b""
+    for base in VENUE_XML_BASES:
+        url_xml = f"{base}/db/{toc}.xml"
+        print(f"  GET {url_xml}")
+        status, data = http_get(url_xml)
+        if status == 200 and data:
+            break
+        if status not in MIRROR_RETRY_STATUS:
+            break
     log["venue_xml_status"] = status
     if status == 200 and data:
         try:

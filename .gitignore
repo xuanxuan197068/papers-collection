@@ -33,3 +33,16 @@ src_backup/
 
 config.yml
 primevue-document.md
+
+# Personal radar configuration and research outputs
+radar/config.yml
+radar/private/
+radar/analysis/
+radar/maps/
+
+# Personal method cards; keep the reusable template public
+radar/cards/*
+!radar/cards/_TEMPLATE.md
+
+# Personal reading, selection, and card-generation state
+radar/state/read_status.json
