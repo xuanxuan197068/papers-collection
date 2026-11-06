@@ -1,0 +1,742 @@
+[
+  {
+    "id": 14736,
+    "year": 2016,
+    "title": "Titanium: efficient analysis of evolving alloy specifications",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950337",
+    "abstract": "The Alloy specification language, and the corresponding Alloy Analyzer, have received much attention in the last two decades with applications in many areas of software engineering. Increasingly, formal analyses enabled by Alloy are desired for use in an on-line mode, where the specifications are automatically kept in sync with the running, possibly changing, software system. However, given Alloy Analyzer's reliance on computationally expensive SAT solvers, an important challenge is the time it takes for such analyses to execute at runtime. The fact that in an on-line mode, the analyses are often repeated on slightly revised versions of a given specification, presents us with an opportunity to tackle this challenge. We present Titanium, an extension of Alloy for formal analysis of evolving specifications. By leveraging the results from previous analyses, Titanium narrows the state space of the revised specification, thereby greatly reducing the required computational effort. We describe the semantic basis of Titanium in terms of models specified in relational logic. We show how the approach can be realized atop an existing relational logic model finder. Our experimental results show Titanium achieves a significant speed-up over Alloy Analyzer when applied to the analysis of evolving specifications.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14737,
+    "year": 2016,
+    "title": "Mining performance specifications",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950314",
+    "abstract": "Functional testing is widespread and supported by a multitude of tools, including tools to mine functional specifications. In contrast, non-functional attributes like performance are often less well understood and tested. While many profiling tools are available to gather raw performance data, interpreting this raw data requires expert knowledge and a thorough understanding of the underlying software and hardware infrastructure. In this work we present an approach that mines performance specifications from running systems autonomously. The tool creates performance models during runtime. The mined models are analyzed further to create compact and comprehensive performance assertions. The resulting assertions can be used as an evidence-based performance specification for performance regression testing, performance monitoring, or as a foundation for more formal performance specifications.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14738,
+    "year": 2016,
+    "title": "Designing minimal effective normative systems with the help of lightweight formal methods",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950307",
+    "abstract": "Normative systems (i.e., a set of rules) are an important approach to achieving effective coordination among (often an arbitrary number of) agents in multiagent systems. A normative system should be effective in ensuring the satisfaction of a desirable system property, and minimal (i.e., not containing norms that unnecessarily over-constrain the behaviors of agents). Designing or even automatically synthesizing minimal effective normative systems is highly non-trivial. Previous attempts on synthesizing such systems through simulations often fail to generate normative systems which are both minimal and effective. In this work, we propose a framework that facilitates designing of minimal effective normative systems using lightweight formal methods. Given a minimal effective normative system which coordinates many agents must be minimal and effective for a small number of agents, we start with automatically synthesizing one such system with a few agents. We then increase the number of agents so as to check whether the same design remains minimal and effective. If it is, we manually establish an induction proof so as to lift the design to an arbitrary number of agents.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14739,
+    "year": 2016,
+    "title": "Proteus: computing disjunctive loop summary via path dependency analysis",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950340",
+    "abstract": "Loops are challenging structures for program analysis, especially when loops contain multiple paths with complex interleaving executions among these paths. In this paper, we first propose a classification of multi-path loops to understand the complexity of the loop execution, which is based on the variable updates on the loop conditions and the execution order of the loop paths. Secondly, we propose a loop analysis framework, named Proteus, which takes a loop program and a set of variables of interest as inputs and summarizes path-sensitive loop effects on the variables. The key contribution is to use a path dependency automaton (PDA) to capture the execution dependency between the paths. A DFS-based algorithm is proposed to traverse the PDA to summarize the effect for all feasible executions in the loop. The experimental results show that Proteus is effective in three applications: Proteus can 1) compute a more precise bound than the existing loop bound analysis techniques; 2) significantly outperform state-of-the-art tools for loop verification; and 3) generate test cases for deep loops within one second, while KLEE and Pex either need much more time or fail.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14740,
+    "year": 2016,
+    "title": "A cross-tool communication study on program analysis tool notifications",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950304",
+    "abstract": "Program analysis tools use notifications to communicate with developers, but previous research suggests that developers encounter challenges that impede this communication. This paper describes a qualitative study that identifies 10 kinds of challenges that cause notifications to miscommunicate with developers. Our resulting notification communication theory reveals that many challenges span multiple tools and multiple levels of developer experience. Our results suggest that, for example, future tools that model developer experience could improve communication and help developers build more accurate mental models.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14741,
+    "year": 2016,
+    "title": "Factors influencing code review processes in industry",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950323",
+    "abstract": "Code review is known to be an efficient quality assurance technique. Many software companies today use it, usually with a process similar to the patch review process in open source software development. However, there is still a large fraction of companies performing almost no code reviews at all. And the companies that do code reviews have a lot of variation in the details of their processes. For researchers trying to improve the use of code reviews in industry, it is important to know the reasons for these process variations. We have performed a grounded theory study to clarify process variations and their rationales. The study is based on interviews with software development professionals from 19 companies. These interviews provided insights into the reasons and influencing factors behind the adoption or non-adoption of code reviews as a whole as well as for different process variations. We have condensed these findings into seven hypotheses and a classification of the influencing factors. Our results show the importance of cultural and social issues for review adoption. They trace many process variations to differences in development context and in desired review effects.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14742,
+    "year": 2016,
+    "title": "Foraging and navigations, fundamentally: developers' predictions of value and cost",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950302",
+    "abstract": "Empirical studies have revealed that software developers spend 35\\%–50\\% of their time navigating through source code during development activities, yet fundamental questions remain: Are these percentages too high, or simply inherent in the nature of software development? Are there factors that somehow determine a lower bound on how effectively developers can navigate a given information space? Answering questions like these requires a theory that captures the core of developers' navigation decisions. Therefore, we use the central proposition of Information Foraging Theory to investigate developers' ability to predict the value and cost of their navigation decisions. Our results showed that over 50\\% of developers' navigation choices produced less value than they had predicted and nearly 40\\% cost more than they had predicted. We used those results to guide a literature analysis, to investigate the extent to which these challenges are met by current research efforts, revealing a new area of inquiry with a rich and crosscutting set of research challenges and open problems.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14743,
+    "year": 2016,
+    "title": "How to break an API: cost negotiation and community values in three software ecosystems",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950325",
+    "abstract": "Change introduces conflict into software ecosystems: breaking changes may ripple through the ecosystem and trigger rework for users of a package, but often developers can invest additional effort or accept opportunity costs to alleviate or delay downstream costs. We performed a multiple case study of three software ecosystems with different tooling and philosophies toward change, Eclipse, R/CRAN, and Node.js/npm, to understand how developers make decisions about change and change-related costs and what practices, tooling, and policies are used. We found that all three ecosystems differ substantially in their practices and expectations toward change and that those differences can be explained largely by different community values in each ecosystem. Our results illustrate that there is a large design space in how to build an ecosystem, its policies and its supporting infrastructure; and there is value in making community values and accepted tradeoffs explicit and transparent in order to resolve conflicts and negotiate change-related costs.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14744,
+    "year": 2016,
+    "title": "Python predictive analysis for bug detection",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950357",
+    "abstract": "Python is a popular dynamic language that allows quick software development. However, Python program analysis engines are largely lacking. In this paper, we present a Python predictive analysis. It first collects the trace of an execution, and then encodes the trace and unexecuted branches to symbolic constraints. Symbolic variables are introduced to denote input values, their dynamic types, and attribute sets, to reason about their variations. Solving the constraints identifies bugs and their triggering inputs. Our evaluation shows that the technique is highly effective in analyzing real-world complex programs with a lot of dynamic features and external library calls, due to its sophisticated encoding design based on traces. It identifies 46 bugs from 11 real-world projects, with 16 new bugs. All reported bugs are true positives.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14745,
+    "year": 2016,
+    "title": "Crash consistency validation made easy",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950327",
+    "abstract": "Software should behave correctly even in adverse conditions. Particularly, we study the problem of automated validation of crash consistency, i.e., file system data safety when systems crash. Existing work requires non-trivial manual efforts of specifying checking scripts and workloads, which is an obstacle for software developers. Therefore, we propose C3, a novel approach that makes crash consistency validation as easy as pressing a single button. With a program and an input, C3 automatically reports inconsistent crash sites. C3 not only exempts developers from the need of writing crash site checking scripts (by an algorithm that computes editing distance between file system snapshots) but also reduces the reliance on dedicated workloads (by test amplification). We implemented C3 as an open-source tool. With C3, we found 14 bugs in open-source software that have severe consequences at crash and 11 of them were previously unknown to the developers, including in highly mature software (e.g., GNU zip and GNU coreutils sort) and popular ones being actively developed (e.g., Adobe Brackets and TeXstudio).",
+    "status": "notchecked"
+  },
+  {
+    "id": 14746,
+    "year": 2016,
+    "title": "Discovering bug patterns in JavaScript",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950308",
+    "abstract": "JavaScript has become the most popular language used by developers for client and server side programming. The language, however, still lacks proper support in the form of warnings about potential bugs in the code. Most bug finding tools in use today cover bug patterns that are discovered by reading best practices or through developer intuition and anecdotal observation. As such, it is still unclear which bugs happen frequently in practice and which are important for developers to be fixed. We propose a novel semi-automatic technique, called BugAID, for discovering the most prevalent and detectable bug patterns. BugAID is based on unsupervised machine learning using language-construct-based changes distilled from AST differencing of bug fixes in the code. We present a large-scale study of common bug patterns by mining 105K commits from 134 server-side JavaScript projects. We discover 219 bug fixing change types and discuss 13 pervasive bug patterns that occur across multiple projects and can likely be prevented with better tool support. Our findings are useful for improving tools and techniques to prevent common bugs in JavaScript, guiding tool integration for IDEs, and making developers aware of common mistakes involved with programming in JavaScript.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14747,
+    "year": 2016,
+    "title": "Effort-aware just-in-time defect prediction: simple unsupervised models could be better than supervised models",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950353",
+    "abstract": "Unsupervised models do not require the defect data to build the prediction models and hence incur a low building cost and gain a wide application range. Consequently, it would be more desirable for practitioners to apply unsupervised models in effort-aware just-in-time (JIT) defect prediction if they can predict defect-inducing changes well. However, little is currently known on their prediction effectiveness in this context. We aim to investigate the predictive power of simple unsupervised models in effort-aware JIT defect prediction, especially compared with the state-of-the-art supervised models in the recent literature. We first use the most commonly used change metrics to build simple unsupervised models. Then, we compare these unsupervised models with the state-of-the-art supervised models under cross-validation, time-wise-cross-validation, and across-project prediction settings to determine whether they are of practical value. The experimental results, from open-source software systems, show that many simple unsupervised models perform better than the state-of-the-art supervised models in effort-aware JIT defect prediction.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14748,
+    "year": 2016,
+    "title": "Detecting sensitive data disclosure via bi-directional text correlation analysis",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950348",
+    "abstract": "Traditional sensitive data disclosure analysis faces two challenges: to identify sensitive data that is not generated by specific API calls, and to report the potential disclosures when the disclosed data is recognized as sensitive only after the sink operations. We address these issues by developing BidText, a novel static technique to detect sensitive data disclosures. BidText formulates the problem as a type system, in which variables are typed with the text labels that they encounter (e.g., during key-value pair operations). The type system features a novel bi-directional propagation technique that propagates the variable label sets through forward and backward data-flow. A data disclosure is reported if a parameter at a sink point is typed with a sensitive text label. BidText is evaluated on 10,000 Android apps. It reports 4,406 apps that have sensitive data disclosures, with 4,263 apps having log based disclosures and 1,688 having disclosures due to other sinks such as HTTP requests. Existing techniques can only report 64.0\\% of what BidText reports. And manual inspection shows that the false positive rate for BidText is 10\\%.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14749,
+    "year": 2016,
+    "title": "Multi-representational security analysis",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950356",
+    "abstract": "Security attacks often exploit flaws that are not anticipated in an abstract design, but are introduced inadvertently when high-level interactions in the design are mapped to low-level behaviors in the supporting platform. This paper proposes a multi-representational approach to security analysis, where models capturing distinct (but possibly overlapping) views of a system are automatically composed in order to enable an end-to-end analysis. This approach allows the designer to incrementally explore the impact of design decisions on security, and discover attacks that span multiple layers of the system. This paper describes Poirot, a prototype implementation of the approach, and reports on our experience on applying Poirot to detect previously unknown security flaws in publicly deployed systems.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14750,
+    "year": 2016,
+    "title": "String analysis for side channels with segmented oracles",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950362",
+    "abstract": "We present an automated approach for detecting and quantifying side channels in Java programs, which uses symbolic execution, string analysis and model counting to compute information leakage for a single run of a program. We further extend this approach to compute information leakage for multiple runs for a type of side channels called segmented oracles, where the attacker is able to explore each segment of a secret (for example each character of a password) independently. We present an efficient technique for segmented oracles that computes information leakage for multiple runs using only the path constraints generated from a single run symbolic execution. Our implementation uses the symbolic execution tool Symbolic PathFinder (SPF), SMT solver Z3, and two model counting constraint solvers LattE and ABC. Although LattE has been used before for analyzing numeric constraints, in this paper, we present an approach for using LattE for analyzing string constraints. We also extend the string constraint solver ABC for analysis of both numeric and string constraints, and we integrate ABC in SPF, enabling quantitative symbolic string analysis.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14751,
+    "year": 2016,
+    "title": "WebRanz: web page randomization for better advertisement delivery and web-bot prevention",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950352",
+    "abstract": "Nowadays, a rapidly increasing number of web users are using Ad-blockers to block online advertisements. Ad-blockers are browser-based software that can block most Ads on the websites, speeding up web browsers and saving bandwidth. Despite these benefits to end users, Ad-blockers could be catastrophic for the economic structure underlying the web, especially considering the rise of Ad-blocking as well as the number of technologies and services that rely exclusively on Ads to compensate their cost. In this paper, we introduce WebRanz that utilizes a randomization mechanism to circumvent Ad-blocking. Using WebRanz, content publishers can constantly mutate the internal HTML elements and element attributes of their web pages, without affecting their visual appearances and functionalities. Randomization invalidates the pre-defined patterns that Ad-blockers use to filter out Ads. Though the design of WebRanz is motivated by evading Ad-blockers, WebRanz also benefits the defense against bot scripts. We evaluate the effectiveness of WebRanz and its overhead using 221 randomly sampled top Alexa web pages and 8 representative bot scripts.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14752,
+    "year": 2016,
+    "title": "A discrete-time feedback controller for containerized cloud applications",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950328",
+    "abstract": "Modern Web applications exploit Cloud infrastructures to scale their resources and cope with sudden changes in the workload. While the state of practice is to focus on dynamically adding and removing virtual machines, we advocate that there are strong benefits in containerizing the applications and in scaling the containers. In this paper we present an autoscaling technique that allows containerized applications to scale their resources both at the VM level and at the container level. Furthermore, applications can combine this infrastructural adaptation with platform-level adaptation. The autoscaling is made possible by our planner, which consists of a grey-box discrete-time feedback controller. The work has been validated using two application benchmarks deployed to Amazon EC2. Our experiments show that our planner outperforms Amazon's AutoScaling by 78\\% on average without containers; and that the introduction of containers allows us to improve by yet another 46\\% on average.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14753,
+    "year": 2016,
+    "title": "Keep it SIMPLEX: satisfying multiple goals with guarantees in control-based self-adaptive systems",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950301",
+    "abstract": "An increasingly important concern of software engineers is handling uncertainties at design time, such as environment dynamics that may be difficult to predict or requirements that may change during operation. The idea of self-adaptation is to handle such uncertainties at runtime, when the knowledge becomes available. As more systems with strict requirements require self-adaptation, providing guarantees for adaptation has become a high-priority. Providing such guarantees with traditional architecture-based approaches has shown to be challenging. In response, researchers have studied the application of control theory to realize self-adaptation. However, existing control-theoretic approaches applied to adapt software systems have primarily focused on satisfying only a single adaptation goal at a time, which is often too restrictive for real applications. In this paper, we present Simplex Control Adaptation, SimCA, a new approach to self-adaptation that satisfies multiple goals, while being optimal with respect to an additional goal. SimCA offers robustness to measurement inaccuracy and environmental disturbances, and provides guarantees. We evaluate SimCA for two systems with strict requirements that have to deal with uncertainties: an underwater vehicle system used for oceanic surveillance, and a tele-assistance system for health care support.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14754,
+    "year": 2016,
+    "title": "Automated change impact analysis between SysML models of requirements and design",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950293",
+    "abstract": "An important activity in systems engineering is analyzing how a change in requirements will impact the design of a system. Performing this analysis manually is expensive, particularly for complex systems. In this paper, we propose an approach to automatically identify the impact of requirements changes on system design, when the requirements and design elements are expressed using models. We ground our approach on the Systems Modeling Language (SysML) due to SysML's increasing use in industrial applications. Our approach has two steps: For a given change, we first apply a static slicing algorithm to extract an estimated set of impacted model elements. Next, we rank the elements of the resulting set according to a quantitative measure designed to predict how likely it is for each element to be impacted. The measure is computed using Natural Language Processing (NLP) applied to the textual content of the elements. Engineers can then inspect the ranked list of elements and identify those that are actually impacted. We evaluate our approach on an industrial case study with 16 real-world requirements changes. Our results suggest that, using our approach, engineers need to inspect on average only 4.8\\% of the entire design in order to identify the actually-impacted elements. We further show that our results consistently improve when our analysis takes into account both structural and behavioral diagrams rather than only structural ones, and the natural-language content of the diagrams in addition to only their structural and behavioral content.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14755,
+    "year": 2016,
+    "title": "Parameter-free probabilistic API mining across GitHub",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950319",
+    "abstract": "Existing API mining algorithms can be difficult to use as they require expensive parameter tuning and the returned set of API calls can be large, highly redundant and difficult to understand. To address this, we present PAM (Probabilistic API Miner), a near parameter-free probabilistic algorithm for mining the most interesting API call patterns. We show that PAM significantly outperforms both MAPO and UPMiner, achieving 69\\% test-set precision, at retrieving relevant API call sequences from GitHub. Moreover, we focus on libraries for which the developers have explicitly provided code examples, yielding over 300,000 LOC of hand-written API example code from the 967 client projects in the data set. This evaluation suggests that the hand-written examples actually have limited coverage of real API usages.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14756,
+    "year": 2016,
+    "title": "API deprecation: a retrospective analysis and detection method for code examples on the web",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950298",
+    "abstract": "Deprecation allows the developers of application programming interfaces (APIs) to signal to other developers that a given API item ought to be avoided. But little is known about deprecation practices beyond anecdotes. We examine how API deprecation has been used in 26 open source Java frameworks and libraries, finding that the classic deprecate–replace–remove cycle is often not followed, as many APIs were removed without prior deprecation, many deprecated APIs were subsequently un-deprecated, and removed APIs are even resurrected with surprising frequency. Furthermore, we identify several problems in the information commonly (not) provided to help API consumers transition their dependent code. As a consequence of deprecation, coding examples on the web --- an increasingly important source of information for developers --- can easily become outdated. Code examples that demonstrate how to use deprecated APIs can be difficult to disregard and a waste of time for developers. We propose a lightweight, version-sensitive framework to detect deprecated API usages in source code examples on the web so developers can be informed of such usages before they invest time and energy into studying them. We reify the framework as a prototype tool (Deprecation Watcher). Our evaluation on detecting deprecated Android API usages in code examples on Stack Overflow shows our tool obtains a precision of 100\\% and a recall of 86\\% in a random sample of 200 questions.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14757,
+    "year": 2016,
+    "title": "When should internal interfaces be promoted to public?",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950306",
+    "abstract": "Commonly, software systems have public (and stable) interfaces, and internal (and possibly unstable) interfaces. Despite being discouraged, client developers often use internal interfaces, which may cause their systems to fail when they evolve. To overcome this problem, API producers may promote internal interfaces to public. In practice, however, API producers have no assistance to identify public interface candidates. In this paper, we study the transition from internal to public interfaces. We aim to help API producers to deliver a better product and API clients to benefit sooner from public interfaces. Our empirical investigation on five widely adopted Java systems present the following observations. First, we identified 195 promotions from 2,722 internal interfaces. Second, we found that promoted internal interfaces have more clients. Third, we predicted internal interface promotion with precision between 50\\%-80\\%, recall 26\\%-82\\%, and AUC 74\\%-85\\%. Finally, by applying our predictor on the last version of the analyzed systems, we automatically detected 382 public interface candidates.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14758,
+    "year": 2016,
+    "title": "POLLUX: safely upgrading dependent application libraries",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950345",
+    "abstract": "Software evolution in third-party libraries across version upgrades can result in addition of new functionalities or change in existing APIs. As a result, there is a real danger of impairment of backward compatibility. Application developers, therefore, must keep constant vigil over library enhancements to ensure application consistency, i.e., application retains its semantic behavior across library upgrades. In this paper, we present the design and implementation of POLLUX, a framework to detect application-affecting changes across two versions of the same dependent non-adversarial library binary, and provide feedback on whether the application developer should link to the newer version or not. POLLUX leverages relevant application test cases to drive execution through both versions of the concerned library binary, records all concrete effects on the environment, and compares them to determine semantic similarity across the same API invocation for the two library versions. Our evaluation with 16 popular, open-source library binaries shows that POLLUX is accurate with no false positives and works across compiler optimizations.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14759,
+    "year": 2016,
+    "title": "Extracting instruction semantics via symbolic execution of code generators",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950335",
+    "abstract": "Binary analysis and instrumentation form the basis of many tools and frameworks for software debugging, security hardening, and monitoring. Accurate modeling of instruction semantics is paramount in this regard, as errors can lead to program crashes, or worse, bypassing of security checks. Semantic modeling is a daunting task for modern processors such as x86 and ARM that support over a thousand instructions, many of them with complex semantics. This paper describes a new approach to automate this semantic modeling task. Our approach leverages instruction semantics knowledge that is already encoded into today's production compilers such as GCC and LLVM. Such an approach can greatly reduce manual effort, and more importantly, avoid errors introduced by manual modeling. Furthermore, it is applicable to any of the numerous architectures already supported by the compiler. In this paper, we develop a new symbolic execution technique to extract instruction semantics from a compiler's source code. Unlike previous applications of symbolic execution that were focused on identifying a single program path that violates a property, our approach addresses the all paths problem, extracting the entire input/output behavior of the code generator. We have applied it successfully to the 120K lines of C-code used in GCC's code generator to extract x86 instruction semantics. To demonstrate architecture-neutrality, we have also applied it to AVR, a processor used in the popular Arduino platform.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14760,
+    "year": 2016,
+    "title": "Efficient generation of inductive validity cores for safety properties",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950346",
+    "abstract": "Symbolic model checkers can construct proofs of properties over very complex models. However, the results reported by the tool when a proof succeeds do not generally provide much insight to the user. It is often useful for users to have traceability information related to the proof: which portions of the model were necessary to construct it. This traceability information can be used to diagnose a variety of modeling problems such as overconstrained axioms and underconstrained properties, and can also be used to measure completeness of a set of requirements over a model. In this paper, we present a new algorithm to efficiently compute the em inductive validity core (IVC) within a model necessary for inductive proofs of safety properties for sequential systems. The algorithm is based on the UNSAT core support built into current SMT solvers and a novel encoding of the inductive problem to try to generate a minimal inductive validity core. We prove our algorithm is correct, and describe its implementation in the JKind model checker for Lustre models. We then present an experiment in which we benchmark the algorithm in terms of speed, diversity of produced cores, and minimality, with promising results.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14761,
+    "year": 2016,
+    "title": "Correctness witnesses: exchanging verification results between verifiers",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950351",
+    "abstract": "Standard verification tools provide a counterexample to witness a specification violation, and, since a few years, such a witness can be validated by an independent validator using an exchangeable witness format. This way, information about the violation can be shared across verification tools and the user can use standard tools to visualize and explore witnesses. This technique is not yet established for the correctness case, where a program fulfills a specification. Even for simple programs, it is often difficult for users to comprehend why a given program is correct, and there is no way to independently check the verification result. We close this gap by complementing our earlier work on violation witnesses with correctness witnesses. While we use an extension of the established common exchange format for violation witnesses to represent correctness witnesses, the techniques for producing and validating correctness witnesses are different. The overall goal to make proofs available to engineers is probably as old as programming itself, and proof-carrying code was proposed two decades ago --- our goal is to make it practical: We consider witnesses as first-class exchangeable objects, stored independently from the source code and checked independently from the verifier that produced them, respecting the important principle of separation of concerns. At any time, the invariants from the correctness witness can be used to reconstruct a correctness proof to establish trust. We extended two state-of-the-art verifiers, CPAchecker and Ultimate Automizer, to produce and validate witnesses, and report that the approach is promising on a large set of verification tasks.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14762,
+    "year": 2016,
+    "title": "SMT-based verification of parameterized systems",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950330",
+    "abstract": "It is well known that verification of safety properties of sequential programs is reducible to satisfiability modulo theory of a first-order logic formula, called a verification condition (VC). The reduction is used both in deductive and automated verification, the difference is only in whether the user or the solver provides candidates for inductive invariants. In this paper, we extend the reduction to parameterized systems consisting of arbitrary many copies of a user-specified process, and whose transition relation is definable in first-order logic modulo theory of linear arithmetic and arrays. We show that deciding whether a parameterized system has a universally quantified inductive invariant is reducible to satisfiability of (non-linear) Constraint Horn Clauses (CHC). As a consequence of our reduction, we obtain a new automated procedure for verifying parameterized systems using existing PDR and CHC engines. While the new procedure is applicable to a wide variety of systems, we show that it is a decision procedure for several decidable fragments.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14763,
+    "year": 2016,
+    "title": "On-the-fly decomposition of specifications in software model checking",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950349",
+    "abstract": "Major breakthroughs have increased the efficiency and effectiveness of software model checking considerably, such that this technology is now applicable to industrial-scale software. However, verifying the full formal specification of a software system is still considered too complex, and in practice, sets of properties are verified one by one in isolation. We propose an approach that takes the full formal specification as input and first tries to verify all properties simultaneously in one verification run. Our verification algorithm monitors itself and detects situations for which the full set of properties is too complex. In such cases, we perform an automatic decomposition of the full set of properties into smaller sets, and continue the verification seamlessly. To avoid state-space explosion for large sets of properties, we introduce on-the-fly property weaving: properties get weaved into the program's transition system on the fly, during the analysis; which properties to weave and verify is determined dynamically during the verification process. We perform an extensive evaluation based on verification tasks that were derived from 4336 Linux kernel modules, and a set of properties that define the correct usage of the Linux API. Checking several properties simultaneously can lead to a significant performance gain, due to the fact that abstract models share many parts among different properties.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14764,
+    "year": 2016,
+    "title": "On well-separation of GR(1) specifications",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950300",
+    "abstract": "Specifications for reactive synthesis, an automated procedure to obtain a correct-by-construction reactive system, consist of assumptions and guarantees. One way a controller may satisfy the specification is by preventing the environment from satisfying the assumptions, without satisfying the guarantees. Although valid this solution is usually undesired and specifications that allow it are called non-well-separated. In this work we investigate non-well-separation in the context of GR(1), an expressive fragment of LTL that enables efficient synthesis. We distinguish different cases of non-well-separation, and compute strategies showing how the environment can be forced to violate its assumptions. Moreover, we show how to find a core, a minimal set of assumptions that lead to non-well-separation, and further extend our work to support past-time LTL and patterns. We implemented our work and evaluated it on 79 specifications. The evaluation shows that non-well-separation is a common problem in specifications and that our tools can be efficiently applied to identify it and its causes.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14765,
+    "year": 2016,
+    "title": "Lightweight specification and analysis of dynamic systems with rich configurations",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950318",
+    "abstract": "Model-checking is increasingly popular in the early phases of the software development process. To establish the correctness of a software design one must usually verify both structural and behavioral (or temporal) properties. Unfortunately, most specification languages, and accompanying model-checkers, excel only in analyzing either one or the other kind. This limits their ability to verify dynamic systems with rich configurations: systems whose state space is characterized by rich structural properties, but whose evolution is also expected to satisfy certain temporal properties. To address this problem, we first propose Electrum, an extension of the Alloy specification language with temporal logic operators, where both rich configurations and expressive temporal properties can easily be defined. Two alternative model-checking techniques are then proposed, one bounded and the other unbounded, to verify systems expressed in this language, namely to verify that every desirable temporal property holds for every possible configuration.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14766,
+    "year": 2016,
+    "title": "Gray links in the use of requirements traceability",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950354",
+    "abstract": "The value of traceability is in its use. How do different software engineering tasks affect the tracing of the same requirement? In this paper, we answer the question via an empirical study where we explicitly assign the participants into 3 trace-usage groups of one requirement: finding its implementation for verification and validation purpose, changing it within the original software system, and reusing it toward another application. The results uncover what we call \"gray links\"--around 20\\% of the total traces are voted to be true links with respect to only one task but not the others. We provide a mechanism to identify such gray links and discuss how they can be leveraged to advance the research and practice of value-based requirements traceability.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14767,
+    "year": 2016,
+    "title": "Understanding and detecting wake lock misuses for Android applications",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950297",
+    "abstract": "Wake locks are widely used in Android apps to protect critical computations from being disrupted by device sleeping. Inappropriate use of wake locks often seriously impacts user experience. However, little is known on how wake locks are used in real-world Android apps and the impact of their misuses. To bridge the gap, we conducted a large-scale empirical study on 44,736 commercial and 31 open-source Android apps. By automated program analysis and manual investigation, we observed (1) common program points where wake locks are acquired and released, (2) 13 types of critical computational tasks that are often protected by wake locks, and (3) eight patterns of wake lock misuses that commonly cause functional and non-functional issues, only three of which had been studied by existing work. Based on our findings, we designed a static analysis technique, Elite, to detect two most common patterns of wake lock misuses. Our experiments on real-world subjects showed that Elite is effective and can outperform two state-of-the-art techniques.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14768,
+    "year": 2016,
+    "title": "DiagDroid: Android performance diagnosis via anatomizing asynchronous executions",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950316",
+    "abstract": "Rapid UI responsiveness is a key consideration to Android app developers. However, the complicated concurrency model of Android makes it hard for developers to understand and further diagnose the UI performance. This paper presents DiagDroid, a tool specifically designed for Android UI performance diagnosis. The key notion of DiagDroid is that UI-triggered asynchronous executions contribute to the UI performance, and hence their performance and their runtime dependency should be properly captured to facilitate performance diagnosis. However, there are tremendous ways to start asynchronous executions, posing a great challenge to profiling such executions and their runtime dependency. To this end, we properly abstract five categories of asynchronous executions as the building basis. As a result, they can be tracked and profiled based on the specifics of each category with a dynamic instrumentation approach carefully tailored for Android. DiagDroid can then accordingly profile the asynchronous executions in a task granularity, equipping it with low-overhead and high compatibility merits. The tool is successfully applied in diagnosing 33 real-world open-source apps, and we find 14 of them contain 27 performance issues. It shows the effectiveness of our tool in Android UI performance diagnosis. The tool is open-source released online.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14769,
+    "year": 2016,
+    "title": "Minimizing GUI event traces",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950342",
+    "abstract": "GUI input generation tools for Android apps, such as Android's Monkey, are useful for automatically producing test inputs, but these tests are generally orders of magnitude larger than necessary, making them difficult for humans to understand. We present a technique for minimizing the output of such tools. Our technique accounts for the non-deterministic behavior of mobile apps, producing small event traces that reach a desired activity with high probability. We propose a variant of delta debugging, augmented to handle non-determinism, to solve the problem of trace minimization. We evaluate our algorithm on two sets of commercial and open-source Android applications, showing that we can minimize large event traces reaching a particular application activity, producing traces that are, on average, less than 2\\% the size of the original traces.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14770,
+    "year": 2016,
+    "title": "Causal impact analysis for app releases in google play",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950320",
+    "abstract": "App developers would like to understand the impact of their own and their competitors’ software releases. To address this we introduce Causal Impact Release Analysis for app stores, and our tool, CIRA, that implements this analysis. We mined 38,858 popular Google Play apps, over a period of 12 months. For these apps, we identified 26,339 releases for which there was adequate prior and posterior time series data to facilitate causal impact analysis. We found that 33\\% of these releases caused a statistically significant change in user ratings. We use our approach to reveal important characteristics that distinguish causal significance in Google Play. To explore the actionability of causal impact analysis, we elicited the opinions of app developers: 56 companies responded, 78\\% concurred with the causal assessment, of which 33\\% claimed that their company would consider changing its app release strategy as a result of our findings.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14771,
+    "year": 2016,
+    "title": "Static DOM event dependency analysis for testing web applications",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950292",
+    "abstract": "The number and complexity of JavaScript-based web applications are rapidly increasing, but methods and tools for automatically testing them are lagging behind, primarily due to the difficulty in analyzing the subtle interactions between the applications and the event-driven execution environment. Although static analysis techniques have been routinely used on software written in traditional programming languages, such as Java and C++, adapting them to handle JavaScript code and the HTML DOM is difficult. In this work, we propose the first constraint-based declarative program analysis procedure for computing dependencies over program variables as well as event-handler functions of the various DOM elements, which is crucial for analyzing the behavior of a client-side web application. We implemented the method in a software tool named JSDEP and evaluated it in ARTEMIS, a platform for automated web application testing. Our experiments on a large set of web applications show the new method can significantly reduce the number of redundant test sequences and significantly increase test coverage with minimal overhead.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14772,
+    "year": 2016,
+    "title": "On-demand strong update analysis via value-flow refinement",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950296",
+    "abstract": "We present a new Strong UPdate Analysis for C programs, called Supa, that enables computing points-to information on-demand via value-flow refinement, in environments with small time and memory budgets such as IDEs. We formulate Supa by solving a graph-reachability problem on a value- flow graph representation of the program, so that strong updates are performed where needed, as long as the total analysis budget is not exhausted. Supa facilitates efficiency and precision tradeoffs by allowing different pointer analyses to be applied in a hybrid multi-stage analysis framework. We have implemented Supa in LLVM with its artifact available at [1]. We evaluate Supa by choosing uninitialized pointer detection as a major client on 12 open-source C programs. As the analysis budget increases, Supa achieves improved precision, with its single-stage flow-sensitive analysis reaching 97\\% of that achieved by whole-program flow- sensitive analysis by consuming about 0.19 seconds and 36KB of memory per query, on average (with a budget of at most 10000 value-flow edges per query).",
+    "status": "notchecked"
+  },
+  {
+    "id": 14773,
+    "year": 2016,
+    "title": "Call graph construction for Java libraries",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950312",
+    "abstract": "Today, every application uses software libraries. Yet, while a lot of research exists w.r.t. analyzing applications, research that targets the analysis of libraries independent of any application is scarce. This is unfortunate, because, for developers of libraries, such as the Java Development Kit (JDK), it is crucial to ensure that the library behaves as intended regardless of how it is used. To fill this gap, we discuss the construction of call graphs for libraries that abstract over all potential library usages. Call graphs are particularly relevant as they are a precursor of many advanced analyses, such as inter-procedural data-flow analyses. We show that the current practice of using call graph algorithms designed for applications to analyze libraries leads to call graphs that, at the same time, lack relevant call edges and contain unnecessary edges. This motivates the need for call graph construction algorithms dedicated to libraries. Unlike algorithms for applications, call graph construction algorithms for libraries must take into consideration the goals of subsequent analyses. Specifically, we show that it is essential to distinguish between the scenario of an analysis for potential exploitable vulnerabilities from the scenario of an analysis for general software quality attributes, e.g., dead methods or unused fields. This distinction affects the decision about what constitutes the library-private implementation, which therefore, needs special treatment. Thus, building one call graph that satisfies all needs is not sensical. Overall, we observed that the proposed call graph algorithms reduce the number of call edges up to 30\\% when compared to existing approaches.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14774,
+    "year": 2016,
+    "title": "Revamping JavaScript static analysis via localization and remediation of root causes of imprecision",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950338",
+    "abstract": "Static analysis is challenged by the dynamic language constructs of JavaScript which often lead to unacceptable performance and/or precision results. We describe an approach that focuses on improving the practicality and accuracy of points-to analysis and call graph construction for JavaScript programs. The approach first identifies program constructs which are sources of imprecision (i.e., root causes) through monitoring the static analysis process. We then examine and suggest specific context-sensitive analyses to apply. Our technique is able to to find that the root causes comprise less than 2\\% of the functions in JavaScript library applications. Moreover, the specialized analysis derived by our approach finishes within a few seconds, even on programs which can not complete within 10 minutes with the original analysis.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14775,
+    "year": 2016,
+    "title": "What would users change in my app? summarizing app reviews for recommending software changes",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950299",
+    "abstract": "Mobile app developers constantly monitor feedback in user reviews with the goal of improving their mobile apps and better meeting user expectations. Thus, automated approaches have been proposed in literature with the aim of reducing the effort required for analyzing feedback contained in user reviews via automatic classification/prioritization according to specific topics. In this paper, we introduce SURF (Summarizer of User Reviews Feedback), a novel approach to condense the enormous amount of information that developers of popular apps have to manage due to user feedback received on a daily basis. SURF relies on a conceptual model for capturing user needs useful for developers performing maintenance and evolution tasks. Then it uses sophisticated summarisation techniques for summarizing thousands of reviews and generating an interactive, structured and condensed agenda of recommended software changes. We performed an end-to-end evaluation of SURF on user reviews of 17 mobile apps (5 of them developed by Sony Mobile), involving 23 developers and researchers in total. Results demonstrate high accuracy of SURF in summarizing reviews and the usefulness of the recommended changes. In evaluating our approach we found that SURF helps developers in better understanding user needs, substantially reducing the time required by developers compared to manually analyzing user (change) requests and planning future software changes.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14776,
+    "year": 2016,
+    "title": "API code recommendation using statistical learning from fine-grained changes",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950333",
+    "abstract": "Learning and remembering how to use APIs is difficult. While code-completion tools can recommend API methods, browsing a long list of API method names and their documentation is tedious. Moreover, users can easily be overwhelmed with too much information. We present a novel API recommendation approach that taps into the predictive power of repetitive code changes to provide relevant API recommendations for developers. Our approach and tool, APIREC, is based on statistical learning from fine-grained code changes and from the context in which those changes were made. Our empirical evaluation shows that APIREC correctly recommends an API call in the first position 59\\% of the time, and it recommends the correct API call in the top five positions 77\\% of the time. This is a significant improvement over the state-of-the-art approaches by 30-160\\% for top-1 accuracy, and 10-30\\% for top-5 accuracy, respectively. Our result shows that APIREC performs well even with a one-time, minimal training dataset of 50 publicly available projects.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14777,
+    "year": 2016,
+    "title": "TIPMerge: recommending experts for integrating changes across branches",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950339",
+    "abstract": "Parallel development in branches is a common software practice. However, past work has found that integration of changes across branches is not easy, and often leads to failures. Thus far, there has been little work to recommend developers who have the right expertise to perform a branch integration. We propose TIPMerge, a novel tool that recommends developers who are best suited to perform merges, by taking into consideration developers’ past experience in the project, their changes in the branches, and de-pendencies among modified files in the branches. We evaluated TIPMerge on 28 projects, which included up to 15,584 merges with at least two developers, and potentially conflicting changes. On average, 85\\% of the top-3 recommendations by TIPMerge correctly included the developer who performed the merge. Best (accuracy) results of recommendations were at 98\\%. Our inter-views with developers of two projects reveal that in cases where the TIPMerge recommendation did not match the actual merge developer, the recommended developer had the expertise to per-form the merge, or was involved in a collaborative merge session.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14778,
+    "year": 2016,
+    "title": "Interactive and guided architectural refactoring with search-based recommendation",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950317",
+    "abstract": "Architectural refactorings can contain hundreds of steps and experienced developers could carry them out over several weeks. Moreover, developers need to explore a correct sequence of refactorings steps among many more incorrect alternatives. Thus, carrying out architectural refactorings is costly, risky, and challenging. In this paper, we present Refactoring Navigator: a tool-supported and interactive recommendation approach for aiding architectural refactoring. Our approach takes a given implementation as the starting point, a desired high-level design as the target, and iteratively recommends a series of refactoring steps. Moreover, our approach allows the user to accept, reject, or ignore a recommended refactoring step, and uses the user's feedback in further refactoring recommendations. We evaluated the effectiveness of our approach and tool using a controlled experiment and an industrial case study. The controlled experiment shows that the participants who used Refactoring Navigator accomplished their tasks in 77.4\\% less time and manually edited 98.3\\% fewer lines than the control group. The industrial case study suggests that Refactoring Navigator has the potential to help with architectural refactorings in practice.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14779,
+    "year": 2016,
+    "title": "Can testedness be effectively measured?",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950324",
+    "abstract": "Among the major questions that a practicing tester faces are deciding where to focus additional testing effort, and deciding when to stop testing. Test the least-tested code, and stop when all code is well-tested, is a reasonable answer. Many measures of \"testedness\" have been proposed; unfortunately, we do not know whether these are truly effective. In this paper we propose a novel evaluation of two of the most important and widely-used measures of test suite quality. The first measure is statement coverage, the simplest and best-known code coverage measure. The second measure is mutation score, a supposedly more powerful, though expensive, measure. We evaluate these measures using the actual criteria of interest: if a program element is (by these measures) well tested at a given point in time, it should require fewer future bug-fixes than a \"poorly tested\" element. If not, then it seems likely that we are not effectively measuring testedness. Using a large number of open source Java programs from Github and Apache, we show that both statement coverage and mutation score have only a weak negative correlation with bug-fixes. Despite the lack of strong correlation, there are statistically and practically significant differences between program elements for various binary criteria. Program elements (other than classes) covered by any test case see about half as many bug-fixes as those not covered, and a similar line can be drawn for mutation score thresholds. Our results have important implications for both software engineering practice and research evaluation.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14780,
+    "year": 2016,
+    "title": "A large-scale empirical comparison of static and dynamic test case prioritization techniques",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950344",
+    "abstract": "The large body of existing research in Test Case Prioritization (TCP) techniques, can be broadly classified into two categories: dynamic techniques (that rely on run-time execution information) and static techniques (that operate directly on source and test code). Absent from this current body of work is a comprehensive study aimed at understanding and evaluating the static approaches and comparing them to dynamic approaches on a large set of projects. In this work, we perform the first extensive study aimed at empirically evaluating four static TCP techniques comparing them with state-of-research dynamic TCP techniques at different test-case granularities (e.g., method and class-level) in terms of effectiveness, efficiency and similarity of faults detected. This study was performed on 30 real-word Java programs encompassing 431 KLoC. In terms of effectiveness, we find that the static call-graph-based technique outperforms the other static techniques at test-class level, but the topic-model-based technique performs better at test-method level. In terms of efficiency, the static call-graph-based technique is also the most efficient when compared to other static techniques. When examining the similarity of faults detected for the four static techniques compared to the four dynamic ones, we find that on average, the faults uncovered by these two groups of techniques are quite dissimilar, with the top 10\\% of test cases agreeing on only 25\\% - 30\\% of detected faults. This prompts further research into the severity/importance of faults uncovered by these techniques, and into the potential for combining static and dynamic information for more effective approaches.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14781,
+    "year": 2016,
+    "title": "Analyzing the validity of selective mutation with dominator mutants",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950322",
+    "abstract": "Various forms of selective mutation testing have long been accepted as valid approximations to full mutation testing. This paper presents counterevidence to traditional selective mutation. The recent development of dominator mutants and minimal mutation analysis lets us analyze selective mutation without the noise introduced by the redundancy inherent in traditional mutation. We then exhaustively evaluate all small sets of mutation operators for the Proteum mutation system and determine dominator mutation scores and required work for each of these sets on an empirical test bed. The results show that all possible selective mutation approaches have poor dominator mutation scores on at least some of these programs. This suggests that to achieve high performance with respect to full mutation analysis, selective approaches will have to become more sophisticated, possibly by choosing mutants based on the specifics of the artifact under test, that is, specialized selective mutation.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14782,
+    "year": 2016,
+    "title": "An extensive study of static regression test selection in modern software evolution",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950361",
+    "abstract": "Regression test selection (RTS) aims to reduce regression testing time by only re-running the tests affected by code changes. Prior research on RTS can be broadly split into dy namic and static techniques. A recently developed dynamic RTS technique called Ekstazi is gaining some adoption in practice, and its evaluation shows that selecting tests at a coarser, class-level granularity provides better results than selecting tests at a finer, method-level granularity. As dynamic RTS is gaining adoption, it is timely to also evaluate static RTS techniques, some of which were proposed over three decades ago but not extensively evaluated on modern software projects. This paper presents the first extensive study that evaluates the performance benefits of static RTS techniques and their safety; a technique is safe if it selects to run all tests that may be affected by code changes. We implemented two static RTS techniques, one class-level and one method-level, and compare several variants of these techniques. We also compare these static RTS techniques against Ekstazi, a state-of-the-art, class-level, dynamic RTS technique. The experimental results on 985 revisions of 22 open-source projects show that the class-level static RTS technique is comparable to Ekstazi, with similar performance benefits, but at the risk of being unsafe sometimes. In contrast, the method-level static RTS technique performs rather poorly.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14783,
+    "year": 2016,
+    "title": "PerfGuard: binary-centric application performance monitoring in production environments",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950347",
+    "abstract": "Diagnosis of performance problems is an essential part of software development and maintenance. This is in particular a challenging problem to be solved in the production environment where only program binaries are available with limited or zero knowledge of the source code. This problem is compounded by the integration with a significant number of third-party software in most large-scale applications. Existing approaches either require source code to embed manually constructed logic to identify performance problems or support a limited scope of applications with prior manual analysis. This paper proposes an automated approach to analyze application binaries and instrument the binary code transparently to inject and apply performance assertions on application transactions. Our evaluation with a set of large-scale application binaries without access to source code discovered 10 publicly known real world performance bugs automatically and shows that PerfGuard introduces very low overhead (less than 3\\% on Apache and MySQL server) to production systems.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14784,
+    "year": 2016,
+    "title": "Python probabilistic type inference with natural language support",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950343",
+    "abstract": "We propose a novel type inference technique for Python programs. Type inference is difficult for Python programs due to their heavy dependence on external APIs and the dynamic language features. We observe that Python source code often contains a lot of type hints such as attribute accesses and variable names. However, such type hints are not reliable. We hence propose to use probabilistic inference to allow the beliefs of individual type hints to be propagated, aggregated, and eventually converge on probabilities of variable types. Our results show that our technique substantially outperforms a state-of-the-art Python type inference engine based on abstract interpretation.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14785,
+    "year": 2016,
+    "title": "Detecting and fixing precision-specific operations for measuring floating-point errors",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950355",
+    "abstract": "The accuracy of the floating-point calculation is critical to many applications and different methods have been proposed around floating-point accuracies, such as detecting the errors in the program, verifying the accuracy of the program, and optimizing the program to produce more accurate results. These approaches need a specification of the program to understand the ideal calculation performed by the program, which is usually approached by interpreting the program in a precision-unspecific way. However, many operations programmed in existing code are inherently precision-specific, which cannot be easily interpreted in a precision-unspecific way. In fact, the semantics used in existing approaches usually fail to interpret precision-specific operations correctly. In this paper, we present a systematic study on precision-specific operations. First, we propose a detection approach to detect precision-specific operations. Second, we propose a fixing approach to enable the tuning of precisions under the presence of precision-specific operations. Third, we studied the precision-specific operations in the GNU C standard math library based on our detection and fixing approaches. Our results show that (1) a significant number of code fragments in the standard C math library are precision-specific operations, and some large inaccuracies reported in existing studies are false positives or potential false positives due to precision-specific operations; (2) our detection approach has high precision and recall; (3) our fixing approach can lead to overall more accurate result.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14786,
+    "year": 2016,
+    "title": "Deep API learning",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950334",
+    "abstract": "Developers often wonder how to implement a certain functionality (e.g., how to parse XML files) using APIs. Obtaining an API usage sequence based on an API-related natural language query is very helpful in this regard. Given a query, existing approaches utilize information retrieval models to search for matching API sequences. These approaches treat queries and APIs as bags-of-words and lack a deep understanding of the semantics of the query. We propose DeepAPI, a deep learning based approach to generate API usage sequences for a given natural language query. Instead of a bag-of-words assumption, it learns the sequence of words in a query and the sequence of associated APIs. DeepAPI adapts a neural language model named RNN Encoder-Decoder. It encodes a word sequence (user query) into a fixed-length context vector, and generates an API sequence based on the context vector. We also augment the RNN Encoder-Decoder by considering the importance of individual APIs. We empirically evaluate our approach with more than 7 million annotated code snippets collected from GitHub. The results show that our approach generates largely accurate API sequences and outperforms the related approaches.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14787,
+    "year": 2016,
+    "title": "Build system with lazy retrieval for Java projects",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950358",
+    "abstract": "In the modern-day development, projects use Continuous Integration Services (CISs) to execute the build for every change in the source code. To ensure that the project remains correct and deployable, a CIS performs a clean build each time. In a clean environment, a build system needs to retrieve the project's dependencies (e.g., guava.jar). The retrieval, however, can be costly due to dependency bloat: despite a project using only a few files from each library, the existing build systems still eagerly retrieve all the libraries at the beginning of the build. This paper presents a novel build system, Molly, which lazily retrieves parts of libraries (i.e., files) that are needed during the execution of a build target. For example, the compilation target needs only public interfaces of classes within the libraries and the test target needs only implementation of the classes that are being invoked by the tests. Additionally, Molly generates a transfer script that retrieves parts of libraries based on prior builds. Molly's design requires that we ignore the boundaries set by the library developers and look at the files within the libraries. We implemented Molly for Java and evaluated it on 17 popular open-source projects. We show that test targets (on average) depend on only 9.97\\% of files in libraries. A variant of Molly speeds up retrieval by 44.28\\%. Furthermore, the scripts generated by Molly retrieve dependencies, on average, 93.81\\% faster than the Maven build system.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14788,
+    "year": 2016,
+    "title": "iGen: dynamic interaction inference for configurable software",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950311",
+    "abstract": "To develop, analyze, and evolve today's highly configurable software systems, developers need deep knowledge of a system's configuration options, e.g., how options need to be set to reach certain locations, what configurations to use for testing, etc. Today, acquiring this detailed information requires manual effort that is difficult, expensive, and error prone. In this paper, we propose iGen, a novel, lightweight dynamic analysis technique that automatically discovers a program's interactions---expressive logical formulae that give developers rich and detailed information about how a system's configuration option settings map to particular code coverage. iGen employs an iterative algorithm that runs a system under a small set of configurations, capturing coverage data; processes the coverage data to infer potential interactions; and then generates new configurations to further refine interactions in the next iteration. We evaluated iGen on 29 programs spanning five languages; the breadth of this study would be unachievable using prior interaction inference tools. Our results show that iGen finds precise interactions based on a very small fraction of the number of possible configurations. Moreover, iGen's results confirm several earlier hypotheses about typical interaction distributions and structures.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14789,
+    "year": 2016,
+    "title": "CacheOptimizer: helping developers configure caching frameworks for hibernate-based database-centric web applications",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950303",
+    "abstract": "To help improve the performance of database-centric cloud-based web applications, developers usually use caching frameworks to speed up database accesses. Such caching frameworks require extensive knowledge of the application to operate effectively. However, all too often developers have limited knowledge about the intricate details of their own application. Hence, most developers find configuring caching frameworks a challenging and time-consuming task that requires extensive and scattered code changes. Furthermore, developers may also need to frequently change such configurations to accommodate the ever changing workload. In this paper, we propose CacheOptimizer, a lightweight approach that helps developers optimize the configuration of caching frameworks for web applications that are implemented using Hibernate. CacheOptimizer leverages readily-available web logs to create mappings between a workload and database accesses. Given the mappings, CacheOptimizer discovers the optimal cache configuration using coloured Petri nets, and automatically adds the appropriate cache configurations to the application. We evaluate CacheOptimizer on three open-source web applications. We find that i) CacheOptimizer improves the throughput by 27--138\\%; and ii) after considering both the memory cost and throughput improvement, CacheOptimizer still brings statistically significant gains (with mostly large effect sizes) in comparison to the application's default cache configuration and to blindly enabling all possible caches.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14790,
+    "year": 2016,
+    "title": "BinGo: cross-architecture cross-OS binary search",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950350",
+    "abstract": "Binary code search has received much attention recently due to its impactful applications, e.g., plagiarism detection, malware detection and software vulnerability auditing. However, developing an effective binary code search tool is challenging due to the gigantic syntax and structural differences in binaries resulted from different compilers, architectures and OSs. In this paper, we propose BINGO — a scalable and robust binary search engine supporting various architectures and OSs. The key contribution is a selective inlining technique to capture the complete function semantics by inlining relevant library and user-defined functions. In addition, architecture and OS neutral function filtering is proposed to dramatically reduce the irrelevant target functions. Besides, we introduce length variant partial traces to model binary functions in a program structure agnostic fashion. The experimental results show that BINGO can find semantic similar functions across architecture and OS boundaries, even with the presence of program structure distortion, in a scalable manner. Using BINGO, we also discovered a zero-day vulnerability in Adobe PDF Reader, a COTS binary.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14791,
+    "year": 2016,
+    "title": "Relationship-aware code search for JavaScript frameworks",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950341",
+    "abstract": "JavaScript frameworks, such as jQuery, are widely used for developing web applications. To facilitate using these JavaScript frameworks to implement a feature (e.g., functionality), a large number of programmers often search for code snippets that implement the same or similar feature. However, existing code search approaches tend to be ineffective, without taking into account the fact that JavaScript code snippets often implement a feature based on various relationships (e.g., sequencing, condition, and callback relationships) among the invoked framework API methods. To address this issue, we present a novel Relationship-Aware Code Search (RACS) approach for finding code snippets that use JavaScript frameworks to implement a specific feature. In advance, RACS collects a large number of code snippets that use some JavaScript frameworks, mines API usage patterns from the collected code snippets, and represents the mined patterns with method call relationship (MCR) graphs, which capture framework API methods’ signatures and their relationships. Given a natural language (NL) search query issued by a programmer, RACS conducts NL processing to automatically extract an action relationship (AR) graph, which consists of actions and their relationships inferred from the query. In this way, RACS reduces code search to the problem of graph search: finding similar MCR graphs for a given AR graph. We conduct evaluations against representative real-world jQuery questions posted on Stack Overflow, based on 308,294 code snippets collected from over 81,540 files on the Internet. The evaluation results show the effectiveness of RACS: the top 1 snippet produced by RACS matches the target code snippet for 46\\% questions, compared to only 4\\% achieved by a relationship-oblivious approach.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14792,
+    "year": 2016,
+    "title": "Code relatives: detecting similarly behaving software",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950321",
+    "abstract": "Detecting “similar code” is useful for many software engineering tasks. Current tools can help detect code with statically similar syntactic and–or semantic features (code clones) and with dynamically similar functional input/output (simions). Unfortunately, some code fragments that behave similarly at the finer granularity of their execution traces may be ignored. In this paper, we propose the term “code relatives” to refer to code with similar execution behavior. We define code relatives and then present DyCLINK, our approach to detecting code relatives within and across codebases. DyCLINK records instruction-level traces from sample executions, organizes the traces into instruction-level dynamic dependence graphs, and employs our specialized subgraph matching algorithm to efficiently compare the executions of candidate code relatives. In our experiments, DyCLINK analyzed 422+ million prospective subgraph matches in only 43 minutes. We compared DyCLINK to one static code clone detector from the community and to our implementation of a dynamic simion detector. The results show that DyCLINK effectively detects code relatives with a reasonable analysis time.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14793,
+    "year": 2016,
+    "title": "Understanding and generating high quality patches for concurrency bugs",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950309",
+    "abstract": "Concurrency bugs are time-consuming to fix correctly by developers and a severe threat to software reliability. Although many auto-fixing techniques have been proposed recently for concurrency bugs, there is still a big gap between the quality of automatically generated patches and manually designed ones. This paper first conducts an in-depth study of manual patches for 77 real-world concurrency bugs, which provides both assessments for existing techniques and actionable suggestions for future research. Guided by this study, a new tool HFix is designed. It can automatically generate patches, which have matching quality as manual patches, for many concurrency bugs.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14794,
+    "year": 2016,
+    "title": "Anti-patterns in search-based program repair",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950295",
+    "abstract": "Search-based program repair automatically searches for a program fix within a given repair space. This may be accomplished by retrofitting a generic search algorithm for program repair as evidenced by the GenProg tool, or by building a customized search algorithm for program repair as in SPR. Unfortunately, automated program repair approaches may produce patches that may be rejected by programmers, because of which past works have suggested using human-written patches to produce templates to guide program repair. In this work, we take the position that we will not provide templates to guide the repair search because that may unduly restrict the repair space and attempt to overfit the repairs into one of the provided templates. Instead, we suggest the use of a set of anti-patterns --- a set of generic forbidden transformations that can be enforced on top of any search-based repair tool. We show that by enforcing our anti-patterns, we obtain repairs that localize the correct lines or functions, involve less deletion of program functionality, and are mostly obtained more efficiently. Since our set of anti-patterns are generic, we have integrated them into existing search based repair tools, including GenProg and SPR, thereby allowing us to obtain higher quality program patches with minimal effort.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14795,
+    "year": 2016,
+    "title": "Semi-supervised verified feedback generation",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950363",
+    "abstract": "Students have enthusiastically taken to online programming lessons and contests. Unfortunately, they tend to struggle due to lack of personalized feedback. There is an urgent need of program analysis and repair techniques capable of handling both the scale and variations in student submissions, while ensuring quality of feedback. Towards this goal, we present a novel methodology called semi-supervised verified feedback generation. We cluster submissions by solution strategy and ask the instructor to identify or add a correct submission in each cluster. We then verify every submission in a cluster against the instructor-validated submission in the same cluster. If faults are detected in the submission then feedback suggesting fixes to them is generated. Clustering reduces the burden on the instructor and also the variations that have to be handled during feedback generation. The verified feedback generation ensures that only correct feedback is generated. We implemented a tool, named CoderAssist, based on this approach and evaluated it on dynamic programming assignments. We have designed a novel counter-example guided feedback generation algorithm capable of suggesting fixes to all faults in a submission. In an evaluation on 2226 submissions to 4 problems, CoderAssist could generate verified feedback for 1911 (85\\%) submissions in 1.6s each on an average. It does a good job of reducing the burden on the instructor. Only one submission had to be manually validated or added for every 16 submissions.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14796,
+    "year": 2016,
+    "title": "WATERFALL: an incremental approach for repairing record-replay tests of web applications",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950294",
+    "abstract": "Software engineers use record/replay tools to capture use case scenarios that can serve as regression tests for web applications. Such tests, however, can be brittle in the face of code changes. Thus, researchers have sought automated approaches for repairing broken record/replay tests. To date, such approaches have operated by directly analyzing differences between the releases of web applications. Often, however, intermediate versions or commits exist between releases, and these represent finer-grained sequences of changes by which new releases evolve. In this paper, we present WATERFALL, an incremental test repair approach that applies test repair techniques iteratively across a sequence of fine-grained versions of a web application. The results of an empirical study on seven web applications show that our approach is substantially more effective than a coarse-grained approach (209\\% overall), while maintaining an acceptable level of overhead.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14797,
+    "year": 2016,
+    "title": "Efficiency of projectional editing: a controlled experiment",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950315",
+    "abstract": "Projectional editors are editors where a user's editing actions directly change the abstract syntax tree without using a parser. They promise essentially unrestricted language com position as well as flexible notations, which supports aligning languages with their respective domain and constitutes an essential ingredient of model-driven development. Such editors have existed since the 1980s and gained widespread attention with the Intentional Programming paradigm, which used projectional editing at its core. However, despite the benefits, programming still mainly relies on editing textual code, where projectional editors imply a very different -- typically perceived as worse -- editing experience, often seen as the main challenge prohibiting their widespread adoption. We present an experiment of code-editing activities in a projectional editor, conducted with 19 graduate computer-science students and industrial developers. We investigate the effects of projectional editing on editing efficiency, editing strategies, and error rates -- each of which we also compare to conventional, parser-based editing. We observe that editing is efficient for basic-editing tasks, but that editing strategies and typical errors differ. More complex tasks require substantial experience and a better understanding of the abstract-syntax-tree structure -- then, projectional editing is also efficient. We also witness a tradeoff between fewer typing mistakes and an increased complexity of code editing.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14798,
+    "year": 2016,
+    "title": "ECHO: instantaneous in situ race detection in the IDE",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950332",
+    "abstract": "We present ECHO, a new technique that detects data races instantaneously in the IDE while developers code. ECHO is the first technique of its kind for incremental race detection supporting both code addition and deletion in the IDE. Unlike conventional static race detectors, ECHO warns developers of potential data races immediately as they are introduced into the program. The core underpinning ECHO is a set of new change-aware static analyses based on a novel static happens-before graph that, given a program change, efficiently compute the change-relevant information without re-analyzing the whole program. Our evaluation within a Java environment on both popular benchmarks and real- world applications shows promising results: for each code addition, or deletion, ECHO can instantly pinpoint all the races in a few milliseconds on average, three to four orders of magnitude faster than a conventional whole-program race detector with the same precision.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14799,
+    "year": 2016,
+    "title": "Detecting table clones and smells in spreadsheets",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950359",
+    "abstract": "Spreadsheets are widely used by end users for various business tasks, such as data analysis and financial reporting. End users may perform similar tasks by cloning a block of cells (table) in their spreadsheets. The corresponding cells in these cloned tables are supposed to keep the same or similar computational semantics. However, when spreadsheets evolve, thus cloned tables can become inconsistent due to ad-hoc modifications, and as a result suffer from smells. In this paper, we propose TableCheck to detect table clones and related smells due to inconsistency among them. We observe that two tables with the same header information at their corresponding cells are likely to be table clones. Inspired by existing fingerprint-based code clone detection techniques, we developed a detection algorithm to detect this kind of table clones. We further detected outliers among corresponding cells as smells in the detected table clones. We implemented our idea into TableCheck, and applied it to real-world spreadsheets from the EUSES corpus. Experimental results show that table clones commonly exist (21.8\\%), and 25.6\\% of the spreadsheets with table clones suffer from smells due to inconsistency among these clones. TableCheck detected table clones and their smells with a precision of 92.2\\% and 85.5\\%, respectively, while existing techniques detected no more than 35.6\\% true smells that TableCheck could detect.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14800,
+    "year": 2016,
+    "title": "Flow-sensitive composition of thread-modular abstract interpretation",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950291",
+    "abstract": "We propose a constraint-based flow-sensitive static analysis for concurrent programs by iteratively composing thread-modular abstract interpreters via the use of a system of lightweight constraints. Our method is compositional in that it first applies sequential abstract interpreters to individual threads and then composes their results. It is flow-sensitive in that the causality ordering of interferences (flow of data from global writes to reads) is modeled by a system of constraints. These interference constraints are lightweight since they only refer to the execution order of program statements as opposed to their numerical properties: they can be decided efficiently using an off-the-shelf Datalog engine. Our new method has the advantage of being more accurate than existing, flow-insensitive, static analyzers while remaining scalable and providing the expected soundness and termination guarantees even for programs with unbounded data. We implemented our method and evaluated it on a large number of benchmarks, demonstrating its effectiveness at increasing the accuracy of thread-modular abstract interpretation.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14801,
+    "year": 2016,
+    "title": "A deployable sampling strategy for data race detection",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950310",
+    "abstract": "Dynamic data race detection incurs heavy runtime overheads. Recently, many sampling techniques have been proposed to detect data races. However, some sampling techniques (e.g., Pacer) are based on traditional happens-before relation and incur a large basic overhead. Others utilize hardware to reduce their sampling overhead (e.g., DataCollider) and they, however, detect a race only when the race really occurs by delaying program executions. In this paper, we study the limitations of existing techniques and propose a new data race definition, named as Clock Races, for low overhead sampling purpose. The innovation of clock races is that the detection of them does not rely on concrete locks and also avoids heavy basic overhead from tracking happens-before relation. We further propose CRSampler (Clock Race Sampler) to detect clock races via hardware based sampling without directly delaying program executions, to further reduce runtime overhead. We evaluated CRSampler on Dacapo benchmarks. The results show that CRSampler incurred less than 5\\% overhead on average at 1\\% sampling rate. Whereas, Pacer and DataCollider incurred larger than 25\\% and 96\\% overhead, respectively. Besides, at the same sampling rate, CRSampler detected significantly more data races than that by Pacer and DataCollider.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14802,
+    "year": 2016,
+    "title": "Online shared memory dependence reduction via bisectional coordination",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950326",
+    "abstract": "Order of shared memory accesses, known as the shared memory dependence, is the cornerstone of dynamic analyses of concurrent programs. In this paper, we study the problem of reducing shared memory dependences. We present the first online software-only algorithm to reduce shared memory dependences without vector clock maintenance, opening a new direction to a broad range of applications (e.g., deterministic replay and data race detection). Our algorithm exploits a simple yet effective observation, that adaptive variable grouping can recognize and match spatial locality in shared memory accesses, to reduce shared memory dependences. We designed and implemented the bisectional coordination protocol, which dynamically maintains a partition of the program's address space without its prior knowledge, such that shared variables in each partitioned interval have consistent thread and spatial locality properties. Evaluation on a set of real-world programs showed that by paying a 0--54.7\\% (median 21\\%) slowdown, bisectional coordination reduced 0.95--97\\% (median 55\\%) and 16--99.99\\% (median 99\\%) shared memory dependences compared with RWTrace and LEAP, respectively.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14803,
+    "year": 2016,
+    "title": "Parallel data race detection for task parallel programs with locks",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950329",
+    "abstract": "Programming with tasks is a promising approach to write performance portable parallel code. In this model, the programmer explicitly specifies tasks and the task parallel runtime employs work stealing to distribute tasks among threads. Similar to multithreaded programs, task parallel programs can also exhibit data races. Unfortunately, prior data race detectors for task parallel programs either run the program serially or do not handle locks, and/or detect races only in the schedule observed by the analysis. This paper proposes PTRacer, a parallel on-the-fly data race detector for task parallel programs that use locks. PTRacer detects data races not only in the observed schedule but also those that can happen in other schedules (which are permutations of the memory operations in the observed schedule) for a given input. It accomplishes the above goal by leveraging the dynamic execution graph of a task parallel execution to determine whether two accesses can happen in parallel and by maintaining constant amount of access history metadata with each distinct set of locks held for each shared memory location. To detect data races (beyond the observed schedule) in programs with branches sensitive to scheduling decisions, we propose static compiler instrumentation that records memory accesses that will be executed in the other path with simple branches. PTRacer has performance overheads similar to the state-of-the-art race detector for task parallel programs, SPD3, while detecting more races in programs with locks.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14804,
+    "year": 2016,
+    "title": "Paradise unplugged: identifying barriers for female participation on stack overflow",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950331",
+    "abstract": "It is no secret that females engage less in programming fields than males. However, in online communities, such as Stack Overflow, this gender gap is even more extreme: only 5.8\\% of contributors are female. In this paper, we use a mixed-methods approach to identify contribution barriers females face in online communities. Through 22 semi-structured interviews with a spectrum of female users ranging from non-contributors to a top 100 ranked user of all time, we identified 14 barriers preventing them from contributing to Stack Overflow. We then conducted a survey with 1470 female and male developers to confirm which barriers are gender related or general problems for everyone. Females ranked five barriers significantly higher than males. A few of these include doubts in the level of expertise needed to contribute, feeling overwhelmed when competing with a large number of users, and limited awareness of site features. Still, there were other barriers that equally impacted all Stack Overflow users or affected particular groups, such as industry programmers. Finally, we describe several implications that may encourage increased participation in the Stack Overflow community across genders and other demographics.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14805,
+    "year": 2016,
+    "title": "Why we refactor? confessions of GitHub contributors",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950305",
+    "abstract": "Refactoring is a widespread practice that helps developers to improve the maintainability and readability of their code. However, there is a limited number of studies empirically investigating the actual motivations behind specific refactoring operations applied by developers. To fill this gap, we monitored Java projects hosted on GitHub to detect recently applied refactorings, and asked the developers to explain the reasons behind their decision to refactor the code. By applying thematic analysis on the collected responses, we compiled a catalogue of 44 distinct motivations for 12 well-known refactoring types. We found that refactoring activity is mainly driven by changes in the requirements and much less by code smells. Extract Method is the most versatile refactoring operation serving 11 different purposes. Finally, we found evidence that the IDE used by the developers affects the adoption of automated refactoring tools.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14806,
+    "year": 2016,
+    "title": "Effectiveness of code contribution: from patch-based to pull-request-based tools",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950364",
+    "abstract": "Code contributions in Free/Libre and Open Source Software projects are controlled to maintain high-quality of software. Alternatives to patch-based code contribution tools such as mailing lists and issue trackers have been developed with the pull request systems being the most visible and widely available on GitHub. Is the code contribution process more effective with pull request systems? To answer that, we quantify the effectiveness via the rates contributions are accepted and ignored, via the time until the first response and final resolution and via the numbers of contributions. To control for the latent variables, our study includes a project that migrated from an issue tracker to the GitHub pull request system and a comparison between projects using mailing lists and pull request systems. Our results show pull request systems to be associated with reduced review times and larger numbers of contributions. However, not all the comparisons indicate substantially better accept or ignore rates in pull request systems. These variations may be most simply explained by the differences in contribution practices the projects employ and may be less affected by the type of tool. Our results clarify the importance of understanding the role of tools in effective management of the broad network of potential contributors and may lead to strategies and practices making the code contribution more satisfying and efficient from both contributors' and maintainers' perspectives.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14807,
+    "year": 2016,
+    "title": "Isomorphic regression testing: executing uncovered branches without test augmentation",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950313",
+    "abstract": "In software testing, it is very hard to achieve high coverage with the program under test, leaving many behaviors unexplored. To alleviate this problem, various automated test generation and augmentation approaches have been proposed, among which symbolic execution and search-based techniques are the most competitive, while each has key challenges to be solved. Different from prior work, we present a new methodology for regression testing --Isomorphic Regression Testing,which explores the behaviors of the program under test by creating its variants (i.e., modified programs) instead of generating tests. In this paper, we make the first implementation of isomorphic regression testing through an approach named ISON, which creates program variants by negating branch conditions. The results show that ISON is able to additionally execute 5.3\\% to 80.0\\% branches that are originally uncovered. Furthermore, ISON also detects a number of faults not detected by a popular automated test generation tool (i.e., EvoSuite) under the scenario of regression testing.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14808,
+    "year": 2016,
+    "title": "Directed test generation to detect loop inefficiencies",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950360",
+    "abstract": "Redundant traversal of loops in the context of other loops has been recently identified as a source of performance bugs in many Java libraries. This has resulted in the design of static and dynamic analysis techniques to detect these performance bugs automatically. However, while the effectiveness of dynamic analyses is dependent on the analyzed input tests, static analyses are less effective in automatically validating the presence of these problems, validating the fixes and avoiding regressions in future versions. This necessitates the design of an approach to automatically generate tests for exposing redundant traversal of loops. In this paper, we design a novel, scalable and automatic approach that addresses this goal. Our approach takes a library and an initial set of coverage-driven randomly generated tests as input and generates tests which enable detection of redundant traversal of loops. Our approach is broadly composed of three phases – analysis of the execution of random tests to generate method summaries, identification of methods with potential nested loops along with the appropriate context to expose the problem, and test generation to invoke the identified methods with the appropriate parameters. The generated tests can be analyzed by existing dynamic tools to detect possible performance issues. We have implemented our approach on top of the SOOT bytecode analysis framework and validated it on many open-source Java libraries. Our experiments reveal the effectiveness of our approach in generating 224 tests that reveal 46 bugs across seven libraries, including 34 previously unknown bugs. The tests generated using our approach significantly outperform the randomly generated tests in their ability to expose the inefficiencies, demonstrating the usefulness of our design. The implementation of our tool, named Glider, is available at http://drona.csa.iisc.ac.in/~sss/tools/glider.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14809,
+    "year": 2016,
+    "title": "Field-exhaustive testing",
+    "category": "software-engineering",
+    "publication": "FSE",
+    "paper": "https://doi.org/10.1145/2950290.2950336",
+    "abstract": "We present a testing approach for object oriented programs, which encompasses a testing criterion and an automated test generation technique. The criterion, that we call field-exhaustive testing, requires a user-provided limit n on the size of data domains, and is based on the idea of considering enough inputs so as to exhaustively cover the extension of class fields, within the limit n. Intuitively, the extension of a field f is the binary relation established between objects and their corresponding values for field f, in valid instances. Thus, a suite S is field-exhaustive if whenever a field f relates an object o with a value v (i.e., o.f = v) within a valid instance I of size bounded by n, then S contains at least one input I' covering such relationship, i.e., o must also be part of I', and o.f = v must hold in I'. Our test generation technique uses incremental SAT solving to produce small field-exhaustive suites: field-exhaustiveness can be achieved with a suite containing at most # F x n2 inputs, where # F is the number of fields in the class under test. We perform an experimental evaluation on two different testing domains drawn from the literature: implementations of data structures, and of a refactoring engine. The experiments show that field-exhaustive suites can be computed efficiently, and retain similar levels of code coverage and mutation killing as significantly larger bounded exhaustive and random suites, thus consuming a fraction of the cost of test execution compared to these automated testing approaches.",
+    "status": "notchecked"
+  }
+]

@@ -1,7 +1,7 @@
 [
   {
     "key": "akeydrivenframeworkforidentitypreservingfaceanonymization",
-    "id": 6674,
+    "id": 7006,
     "title": "A Key-Driven Framework for Identity-Preserving Face Anonymization",
     "paper": "https://www.ndss-symposium.org/ndss-paper/a-key-driven-framework-for-identity-preserving-face-anonymization/",
     "method": "提出基于用户密钥的人脸匿名化与认证框架，在匿名化虚拟人脸的同时保留身份可恢复性",
@@ -51,7 +51,7 @@
   },
   {
     "key": "amethodtofacilitatemembershipinferenceattacksindeeplearningmodels",
-    "id": 6675,
+    "id": 7007,
     "title": "A Method to Facilitate Membership Inference Attacks in Deep Learning Models",
     "paper": "https://www.ndss-symposium.org/ndss-paper/a-method-to-facilitate-membership-inference-attacks-in-deep-learning-models/",
     "method": "提出恶意训练代码提供者可主动放大成员推断泄露、且能规避现有隐私审计的新型攻击",
@@ -74,7 +74,7 @@
   },
   {
     "key": "asystematicevaluationofnovelandexistingcachesidechannels",
-    "id": 6676,
+    "id": 7008,
     "title": "A Systematic Evaluation of Novel and Existing Cache Side Channels",
     "paper": "https://www.ndss-symposium.org/ndss-paper/a-systematic-evaluation-of-novel-and-existing-cache-side-channels/",
     "method": "系统评估4种已知与3种新提出的缓存侧信道攻击，并提出多维度统一评估框架",
@@ -124,7 +124,7 @@
   },
   {
     "key": "alphadognoboxcamouflageattacksviaalphachanneloversight",
-    "id": 6677,
+    "id": 7009,
     "title": "AlphaDog: No-Box Camouflage Attacks via Alpha Channel Oversight",
     "paper": "https://www.ndss-symposium.org/ndss-paper/alphadog-no-box-camouflage-attacks-via-alpha-channel-oversight/",
     "method": "提出利用RGBA图像被忽视的Alpha通道实现零查询、通用的no-box对抗攻击",
@@ -156,7 +156,7 @@
   },
   {
     "key": "anempiricalstudyonfingerprintapimisusewithlifecycleanalysisinrealworldandroidapps",
-    "id": 6678,
+    "id": 7010,
     "title": "An Empirical Study on Fingerprint API Misuse with Lifecycle Analysis in Real-world Android Apps",
     "paper": "https://www.ndss-symposium.org/ndss-paper/an-empirical-study-on-fingerprint-api-misuse-with-lifecycle-analysis-in-real-world-android-apps/",
     "method": "提出首个针对Android指纹认证API全生命周期误用的系统性实证研究与自动化检测工具",
@@ -197,7 +197,7 @@
   },
   {
     "key": "automatedexpansionofprivacydatataxonomyforcompliantdatabreachnotification",
-    "id": 6679,
+    "id": 7011,
     "title": "Automated Expansion of Privacy Data Taxonomy for Compliant Data Breach Notification",
     "paper": "https://www.ndss-symposium.org/ndss-paper/automated-expansion-of-privacy-data-taxonomy-for-compliant-data-breach-notification/",
     "method": "提出可自动构建和扩展隐私数据分类体系的方法，并据此构建合规数据泄露通知助手",
@@ -247,7 +247,7 @@
   },
   {
     "key": "becarefulofwhatyouembeddemystifyingolevulnerabilities",
-    "id": 6680,
+    "id": 7012,
     "title": "Be Careful of What You Embed: Demystifying OLE Vulnerabilities",
     "paper": "https://www.ndss-symposium.org/ndss-paper/be-careful-of-what-you-embed-demystifying-ole-vulnerabilities/",
     "method": "提出首个针对Office OLE对象设计缺陷的安全评估工具，系统挖掘因信任边界模糊导致的漏洞",
@@ -279,7 +279,7 @@
   },
   {
     "key": "blackboxmembershipinferenceattacksagainstfinetuneddiffusionmodels",
-    "id": 6681,
+    "id": 7013,
     "title": "Black-box Membership Inference Attacks against Fine-tuned Diffusion Models",
     "paper": "https://www.ndss-symposium.org/ndss-paper/black-box-membership-inference-attacks-against-fine-tuned-diffusion-models/",
     "method": "提出首个针对微调扩散模型、基于分数(score)的黑盒成员推断攻击框架",
@@ -302,7 +302,7 @@
   },
   {
     "key": "bulkheadsecurescalableandefficientkernelcompartmentalizationwithpks",
-    "id": 6682,
+    "id": 7014,
     "title": "BULKHEAD: Secure, Scalable, and Efficient Kernel Compartmentalization with PKS",
     "paper": "https://www.ndss-symposium.org/ndss-paper/bulkhead-secure-scalable-and-efficient-kernel-compartmentalization-with-pks/",
     "method": "提出基于Intel PKS硬件特性的安全可扩展内核隔间化机制，支持互不信任的无限数量隔间",
@@ -343,7 +343,7 @@
   },
   {
     "key": "bumblebeesecuretwopartyinferenceframeworkforlargetransformers",
-    "id": 6683,
+    "id": 7015,
     "title": "BumbleBee: Secure Two-party Inference Framework for Large Transformers",
     "paper": "https://www.ndss-symposium.org/ndss-paper/bumblebee-secure-two-party-inference-framework-for-large-transformers/",
     "method": "提出面向大型Transformer模型的高效两方安全推理框架，大幅降低通信开销",
@@ -375,7 +375,7 @@
   },
   {
     "key": "carefulaboutwhatapppromotionadsrecommenddetectingandexplainingmalwarepromotionviaapppromotiongraph",
-    "id": 6684,
+    "id": 7016,
     "title": "Careful About What App Promotion Ads Recommend! Detecting and Explaining Malware Promotion via App Promotion Graph",
     "paper": "https://www.ndss-symposium.org/ndss-paper/careful-about-what-app-promotion-ads-recommend-detecting-and-explaining-malware-promotion-via-app-promotion-graph/",
     "method": "提出结合UI自动化探索与图学习的应用推广广告恶意软件检测与传播机制解释方法",
@@ -425,7 +425,7 @@
   },
   {
     "key": "cascadingspysheetsexploitingthecomplexityofmoderncssforemailandbrowserfingerprinting",
-    "id": 6685,
+    "id": 7017,
     "title": "Cascading Spy Sheets: Exploiting the Complexity of Modern CSS for Email and Browser Fingerprinting",
     "paper": "https://www.ndss-symposium.org/ndss-paper/cascading-spy-sheets-exploiting-the-complexity-of-modern-css-for-email-and-browser-fingerprinting/",
     "method": "提出利用现代CSS动态特性实现无脚本指纹追踪的新技术，并设计相应防御机制",
@@ -475,7 +475,7 @@
   },
   {
     "key": "censordefenseagainstgradientinversionviaorthogonalsubspacebayesiansampling",
-    "id": 6686,
+    "id": 7018,
     "title": "CENSOR: Defense Against Gradient Inversion via Orthogonal Subspace Bayesian Sampling",
     "paper": "https://www.ndss-symposium.org/ndss-paper/censor-defense-against-gradient-inversion-via-orthogonal-subspace-bayesian-sampling/",
     "method": "提出面向大型神经网络的联邦学习梯度反演防御方法，利用正交子空间扰动兼顾隐私与效用",
@@ -507,7 +507,7 @@
   },
   {
     "key": "chaosexploitingstationtimesynchronizationin80211networks",
-    "id": 6687,
+    "id": 7019,
     "title": "CHAOS: Exploiting Station Time Synchronization in 802.11 Networks",
     "paper": "https://www.ndss-symposium.org/ndss-paper/chaos-exploiting-station-time-synchronization-in-802-11-networks/",
     "method": "提出利用WiFi时间同步功能(TSF)固有误差构建隐蔽信道的新方法",
@@ -539,7 +539,7 @@
   },
   {
     "key": "clibedetectingdynamicbackdoorsintransformerbasednlpmodels",
-    "id": 6688,
+    "id": 7020,
     "title": "CLIBE: Detecting Dynamic Backdoors in Transformer-based NLP Models",
     "paper": "https://www.ndss-symposium.org/ndss-paper/clibe-detecting-dynamic-backdoors-in-transformer-based-nlp-models/",
     "method": "提出首个检测Transformer NLP模型中动态（风格类）后门的框架",
@@ -571,7 +571,7 @@
   },
   {
     "key": "compiledmodelsbuiltinexploitsuncoveringpervasivebitflipattacksurfacesindnnexecutables",
-    "id": 6689,
+    "id": 7021,
     "title": "Compiled Models, Built-In Exploits: Uncovering Pervasive Bit-Flip Attack Surfaces in DNN Executables",
     "paper": "https://www.ndss-symposium.org/ndss-paper/compiled-models-built-in-exploits-uncovering-pervasive-bit-flip-attack-surfaces-in-dnn-executables/",
     "method": "提出首个针对DNN编译可执行文件的比特翻转攻击(BFA)系统研究，揭示模型结构而非权重的新攻击面",
@@ -603,7 +603,7 @@
   },
   {
     "key": "crossoriginwebattacksviahttp2serverpushandsignedhttpexchange",
-    "id": 6690,
+    "id": 7022,
     "title": "Cross-Origin Web Attacks via HTTP/2 Server Push and Signed HTTP Exchange",
     "paper": "https://www.ndss-symposium.org/ndss-paper/cross-origin-web-attacks-via-http-2-server-push-and-signed-http-exchange/",
     "method": "揭示HTTP/2服务器推送与签名HTTP交换(SXG)对同源策略的破坏，提出两种新型跨域攻击向量",
@@ -644,7 +644,7 @@
   },
   {
     "key": "delayalloweddifferentiallyprivatedatastreamrelease",
-    "id": 6691,
+    "id": 7023,
     "title": "Delay-allowed Differentially Private Data Stream Release",
     "paper": "https://www.ndss-symposium.org/ndss-paper/delay-allowed-differentially-private-data-stream-release/",
     "method": "提出允许延迟发布的差分隐私数据流发布框架，突破实时发布的精度限制",
@@ -694,7 +694,7 @@
   },
   {
     "key": "diffencefencingmembershipprivacywithdiffusionmodels",
-    "id": 6692,
+    "id": 7024,
     "title": "Diffence: Fencing Membership Privacy With Diffusion Models",
     "paper": "https://www.ndss-symposium.org/ndss-paper/diffence-fencing-membership-privacy-with-diffusion-models/",
     "method": "提出基于扩散模型、作用于推理前输入阶段的新型成员推断防御框架",
@@ -717,7 +717,7 @@
   },
   {
     "key": "dissectingpayloadbasedtransactionphishingonethereum",
-    "id": 6693,
+    "id": 7025,
     "title": "Dissecting Payload-based Transaction Phishing on Ethereum",
     "paper": "https://www.ndss-symposium.org/ndss-paper/dissecting-payload-based-transaction-phishing-on-ethereum/",
     "method": "提出首个针对以太坊“载荷式交易钓鱼”(PTXPHISH)的系统性研究与检测方法",
@@ -758,7 +758,7 @@
   },
   {
     "key": "duumviridetectingtrackersandmixedtrackerswithabreakagedetector",
-    "id": 6694,
+    "id": 7026,
     "title": "Duumviri: Detecting Trackers and Mixed Trackers with a Breakage Detector",
     "paper": "https://www.ndss-symposium.org/ndss-paper/duumviri-detecting-trackers-and-mixed-trackers-with-a-breakage-detector/",
     "method": "提出将机器学习断裂(breakage)检测器融入追踪器检测流程，并首次实现自动化混合追踪器检测",
@@ -799,7 +799,7 @@
   },
   {
     "key": "erwradaranadaptivedetectionsystemagainstevasiveransomwarebycontextualbehaviordetectionandfinegrainedcontentanalysis",
-    "id": 6695,
+    "id": 7027,
     "title": "ERW-Radar: An Adaptive Detection System against Evasive Ransomware by Contextual Behavior Detection and Fine-grained Content Analysis",
     "paper": "https://www.ndss-symposium.org/ndss-paper/erw-radar-an-adaptive-detection-system-against-evasive-ransomware-by-contextual-behavior-detection-and-fine-grained-content-analysis/",
     "method": "提出结合上下文行为关联与细粒度内容分析的自适应躲避型勒索软件检测系统",
@@ -840,7 +840,7 @@
   },
   {
     "key": "evocrawlexploringwebapplicationcodeandstateusingevolutionarysearch",
-    "id": 6696,
+    "id": 7028,
     "title": "EvoCrawl: Exploring Web Application Code and State using Evolutionary Search",
     "paper": "https://www.ndss-symposium.org/ndss-paper/evocrawl-exploring-web-application-code-and-state-using-evolutionary-search/",
     "method": "提出基于进化搜索的Web应用爬虫，高效探索满足特定应用状态约束的交互序列",
@@ -863,7 +863,7 @@
   },
   {
     "key": "explanationasawatermarktowardsharmlessandmultibitmodelownershipverificationviawatermarkingfeatureattribution",
-    "id": 6697,
+    "id": 7029,
     "title": "Explanation as a Watermark: Towards Harmless and Multi-bit Model Ownership Verification via Watermarking Feature Attribution",
     "paper": "https://www.ndss-symposium.org/ndss-paper/explanation-as-a-watermark-towards-harmless-and-multi-bit-model-ownership-verification-via-watermarking-feature-attribution/",
     "method": "提出将水印嵌入模型可解释性特征归因而非预测标签的全新“多比特”模型所有权水印范式",
@@ -895,7 +895,7 @@
   },
   {
     "key": "generatingapiparametersecurityruleswithllmforapimisusedetection",
-    "id": 6698,
+    "id": 7030,
     "title": "Generating API Parameter Security Rules with LLM for API Misuse Detection",
     "paper": "https://www.ndss-symposium.org/ndss-paper/generating-api-parameter-security-rules-with-llm-for-api-misuse-detection/",
     "method": "提出利用LLM自动生成API参数安全规则(APSR)并结合执行反馈验证的框架",
@@ -945,7 +945,7 @@
   },
   {
     "key": "heimdalltowardsriskawarenetworkmanagementoutsourcing",
-    "id": 6699,
+    "id": 7031,
     "title": "Heimdall: Towards Risk-Aware Network Management Outsourcing",
     "paper": "https://www.ndss-symposium.org/ndss-paper/heimdall-towards-risk-aware-network-management-outsourcing/",
     "method": "提出面向外包网络管理的风险感知端到端评估与监控框架",
@@ -977,7 +977,7 @@
   },
   {
     "key": "horcruxsynthesizesplitshiftandstayalivepreventingchanneldepletionviauniversalandenhancedmultihoppayments",
-    "id": 6700,
+    "id": 7032,
     "title": "Horcrux: Synthesize, Split, Shift and Stay Alive; Preventing Channel Depletion via Universal and Enhanced Multi-hop Payments",
     "paper": "https://www.ndss-symposium.org/ndss-paper/horcrux-synthesize-split-shift-and-stay-alive-preventing-channel-depletion-via-universal-and-enhanced-multi-hop-payments/",
     "method": "提出无需额外信任假设的通用高效多方虚拟通道协议，从根本上缓解支付通道网络的通道枯竭问题",
@@ -1018,7 +1018,7 @@
   },
   {
     "key": "incorporatinggradientstorulestowardslightweightadaptiveprovenancebasedintrusiondetection",
-    "id": 6701,
+    "id": 7033,
     "title": "Incorporating Gradients to Rules: Towards Lightweight, Adaptive Provenance-based Intrusion Detection",
     "paper": "https://www.ndss-symposium.org/ndss-paper/incorporating-gradients-to-rules-towards-lightweight-adaptive-provenance-based-intrusion-detection/",
     "method": "提出结合梯度下降优化的可自适应轻量级规则型溯源入侵检测系统",
@@ -1059,7 +1059,7 @@
   },
   {
     "key": "kronosasecureandgenericshardingblockchainconsensuswithoptimizedoverhead",
-    "id": 6702,
+    "id": 7034,
     "title": "Kronos: A Secure and Generic Sharding Blockchain Consensus with Optimized Overhead",
     "paper": "https://www.ndss-symposium.org/ndss-paper/kronos-a-secure-and-generic-sharding-blockchain-consensus-with-optimized-overhead/",
     "method": "提出基于缓冲区(buffer)机制的通用安全分片区块链共识范式，同时优化跨分片开销",
@@ -1109,7 +1109,7 @@
   },
   {
     "key": "leaklessselectivedataprotectionagainstmemoryleakageattacksforserverlessplatforms",
-    "id": 6703,
+    "id": 7035,
     "title": "LeakLess: Selective Data Protection against Memory Leakage Attacks for Serverless Platforms",
     "paper": "https://www.ndss-symposium.org/ndss-paper/leakless-selective-data-protection-against-memory-leakage-attacks-for-serverless-platforms/",
     "method": "提出面向无服务器平台的选择性数据保护方法，结合内存加密与独立I/O模块防御内存泄露攻击",
@@ -1141,7 +1141,7 @@
   },
   {
     "key": "magmawmodalityagnosticadversarialattacksonmachinelearningbasedwirelesscommunicationsystems",
-    "id": 6704,
+    "id": 7036,
     "title": "Magmaw: Modality-Agnostic Adversarial Attacks on Machine Learning-Based Wireless Communication Systems",
     "paper": "https://www.ndss-symposium.org/ndss-paper/magmaw-modality-agnostic-adversarial-attacks-on-machine-learning-based-wireless-communication-systems/",
     "method": "提出首个可对任意多模态无线信号生成通用对抗扰动的攻击方法",
@@ -1173,7 +1173,7 @@
   },
   {
     "key": "malintentcoverageguidedintentfuzzingframeworkforandroid",
-    "id": 6705,
+    "id": 7037,
     "title": "MALintent: Coverage Guided Intent Fuzzing Framework for Android",
     "paper": "https://www.ndss-symposium.org/ndss-paper/malintent-coverage-guided-intent-fuzzing-framework-for-android/",
     "method": "提出首个针对闭源已编译Android应用Intent处理程序的覆盖率引导灰盒模糊测试框架",
@@ -1214,7 +1214,7 @@
   },
   {
     "key": "manifoldchainmaximizingblockchainthroughputviabandwidthclusteredsharding",
-    "id": 6706,
+    "id": 7038,
     "title": "Manifoldchain: Maximizing Blockchain Throughput via Bandwidth-Clustered Sharding",
     "paper": "https://www.ndss-symposium.org/ndss-paper/manifoldchain-maximizing-blockchain-throughput-via-bandwidth-clustered-sharding/",
     "method": "提出按带宽聚类分片以最大化区块链吞吐量的新型分片协议",
@@ -1264,7 +1264,7 @@
   },
   {
     "key": "menssanaincorporesanosoundfirmwarecorporaforvulnerabilityresearch",
-    "id": 6707,
+    "id": 7039,
     "title": "Mens Sana In Corpore Sano: Sound Firmware Corpora for Vulnerability Research",
     "paper": "https://www.ndss-symposium.org/ndss-paper/mens-sana-in-corpore-sano-sound-firmware-corpora-for-vulnerability-research/",
     "method": "提出固件语料库科学严谨性构建指南，并据此构建新的大规模Linux固件语料库LFwC",
@@ -1314,7 +1314,7 @@
   },
   {
     "key": "minesharkcryptominingtrafficdetectionatscale",
-    "id": 6708,
+    "id": 7040,
     "title": "MineShark: Cryptomining Traffic Detection at Scale",
     "paper": "https://www.ndss-symposium.org/ndss-paper/mineshark-cryptomining-traffic-detection-at-scale/",
     "method": "提出可规模化部署的加密货币挖矿流量检测系统，结合学习模型与主动探测实现自我纠错",
@@ -1355,7 +1355,7 @@
   },
   {
     "key": "misdirectionoftrustdemystifyingtheabuseofdedicatedurlshorteningservice",
-    "id": 6709,
+    "id": 7041,
     "title": "Misdirection of Trust: Demystifying the Abuse of Dedicated URL Shortening Service",
     "paper": "https://www.ndss-symposium.org/ndss-paper/misdirection-of-trust-demystifying-the-abuse-of-dedicated-url-shortening-service/",
     "method": "提出首个系统研究专用短链服务(DUSS)被滥用于“误导攻击”的实证研究与检测工具Ditto",
@@ -1387,7 +1387,7 @@
   },
   {
     "key": "monetaexvivogpudriverfuzzingbyrecallinginvivoexecutionstates",
-    "id": 6710,
+    "id": 7042,
     "title": "Moneta: Ex-Vivo GPU Driver Fuzzing by Recalling In-Vivo Execution States",
     "paper": "https://www.ndss-symposium.org/ndss-paper/moneta-ex-vivo-gpu-driver-fuzzing-by-recalling-in-vivo-execution-states/",
     "method": "提出结合快照迁移与记录回放的离体(ex-vivo)GPU驱动模糊测试新方法",
@@ -1437,7 +1437,7 @@
   },
   {
     "key": "mtzktestingandexploringbugsinzeroknowledgezkcompilers",
-    "id": 6711,
+    "id": 7043,
     "title": "MTZK: Testing and Exploring Bugs in Zero-Knowledge (ZK) Compilers",
     "paper": "https://www.ndss-symposium.org/ndss-paper/mtzk-testing-and-exploring-bugs-in-zero-knowledge-zk-compilers/",
     "method": "提出基于变形测试(metamorphic testing)的零知识编译器正确性测试框架",
@@ -1469,7 +1469,7 @@
   },
   {
     "key": "offpathtcphijackinginwifinetworksapacketsizesidechannelattack",
-    "id": 6712,
+    "id": 7044,
     "title": "Off-Path TCP Hijacking in Wi-Fi Networks: A Packet-Size Side Channel Attack",
     "paper": "https://www.ndss-symposium.org/ndss-paper/off-path-tcp-hijacking-in-wi-fi-networks-a-packet-size-side-channel-attack/",
     "method": "提出利用WiFi加密帧可观测帧大小这一侧信道实现离路TCP劫持的新型攻击",
@@ -1501,7 +1501,7 @@
   },
   {
     "key": "ontherealismoflidarspoofingattacksagainstautonomousdrivingvehicleathighspeedandlongdistance",
-    "id": 6713,
+    "id": 7045,
     "title": "On the Realism of LiDAR Spoofing Attacks against Autonomous Driving Vehicle at High Speed and Long Distance",
     "paper": "https://www.ndss-symposium.org/ndss-paper/on-the-realism-of-lidar-spoofing-attacks-against-autonomous-driving-vehicle-at-high-speed-and-long-distance/",
     "method": "提出面向高速长距离真实自动驾驶场景的移动车辆LiDAR欺骗攻击系统(MVS)",
@@ -1551,7 +1551,7 @@
   },
   {
     "key": "passiveinferenceattacksonsplitlearningviaadversarialregularization",
-    "id": 6714,
+    "id": 7046,
     "title": "Passive Inference Attacks on Split Learning via Adversarial Regularization",
     "paper": "https://www.ndss-symposium.org/ndss-paper/passive-inference-attacks-on-split-learning-via-adversarial-regularization/",
     "method": "提出利用辅助数据和对抗正则化训练可解码模拟器实施拆分学习被动推断攻击的新框架",
@@ -1583,7 +1583,7 @@
   },
   {
     "key": "phantomlidarcrossmodalitysignalinjectionattacksagainstlidar",
-    "id": 6715,
+    "id": 7047,
     "title": "PhantomLiDAR: Cross-modality Signal Injection Attacks against LiDAR",
     "paper": "https://www.ndss-symposium.org/ndss-paper/phantomlidar-cross-modality-signal-injection-attacks-against-lidar/",
     "method": "提出针对LiDAR的跨模态信号注入攻击，利用故意电磁干扰(IEMI)而非激光信号操纵输出",
@@ -1615,7 +1615,7 @@
   },
   {
     "key": "powerradiomanipulatesensormeasurementviapowergndradiation",
-    "id": 6716,
+    "id": 7048,
     "title": "PowerRadio: Manipulate Sensor Measurement via Power GND Radiation",
     "paper": "https://www.ndss-symposium.org/ndss-paper/powerradio-manipulate-sensor-measurement-via-power-gnd-radiation/",
     "method": "提出利用家庭互联地线(GND)辐射注入信号从而远程操纵传感器读数的新型攻击向量",
@@ -1647,7 +1647,7 @@
   },
   {
     "key": "raconteuraknowledgeableinsightfulandportablellmpoweredshellcommandexplainer",
-    "id": 6717,
+    "id": 7049,
     "title": "RACONTEUR: A Knowledgeable, Insightful, and Portable LLM-Powered Shell Command Explainer",
     "paper": "https://www.ndss-symposium.org/ndss-paper/raconteur-a-knowledgeable-insightful-and-portable-llm-powered-shell-command-explainer/",
     "method": "提出注入专业知识的LLM驱动shell命令解释器，同时解释命令行为与背后意图",
@@ -1688,7 +1688,7 @@
   },
   {
     "key": "radseeseeyourhandwritingthroughwallsusingfmcwradar",
-    "id": 6718,
+    "id": 7050,
     "title": "RadSee: See Your Handwriting Through Walls Using FMCW Radar",
     "paper": "https://www.ndss-symposium.org/ndss-paper/radsee-see-your-handwriting-through-walls-using-fmcw-radar/",
     "method": "提出基于6GHz FMCW雷达的穿墙手写内容识别系统",
@@ -1729,7 +1729,7 @@
   },
   {
     "key": "redananempiricalstudyonremotedosattacksagainstnatnetworks",
-    "id": 6719,
+    "id": 7051,
     "title": "ReDAN: An Empirical Study on Remote DoS Attacks against NAT Networks",
     "paper": "https://www.ndss-symposium.org/ndss-paper/redan-an-empirical-study-on-remote-dos-attacks-against-nat-networks/",
     "method": "提出利用PMTUD机制缺陷实现NAT设备远程识别、进而远程终止NAT后主机TCP连接的DoS攻击方法。",
@@ -1761,7 +1761,7 @@
   },
   {
     "key": "reinforcementunlearning",
-    "id": 6720,
+    "id": 7052,
     "title": "Reinforcement Unlearning",
     "paper": "https://www.ndss-symposium.org/ndss-paper/reinforcement-unlearning/",
     "method": "提出「强化学习环境遗忘」这一新问题，设计两种使智能体遗忘特定训练环境影响的强化学习遗忘方法。",
@@ -1804,7 +1804,7 @@
   },
   {
     "key": "rethinkrevealthethreatofelectromagneticinterferenceonpowerinverters",
-    "id": 6721,
+    "id": 7053,
     "title": "ReThink: Reveal the Threat of Electromagnetic Interference on Power Inverters",
     "paper": "https://www.ndss-symposium.org/ndss-paper/rethink-reveal-the-threat-of-electromagnetic-interference-on-power-inverters/",
     "method": "提出利用高频电磁干扰（EMI）攻击光伏逆变器内部电流/电压传感器、诱导控制算法误判从而造成拒绝服务或物理损坏的新型物理层攻击。",
@@ -1827,7 +1827,7 @@
   },
   {
     "key": "revisitingembasedestimationforlocallydifferentiallyprivateprotocols",
-    "id": 6722,
+    "id": 7054,
     "title": "Revisiting EM-based Estimation for Locally Differentially Private Protocols",
     "paper": "https://www.ndss-symposium.org/ndss-paper/revisiting-em-based-estimation-for-locally-differentially-private-protocols/",
     "method": "提出受高斯混合模型启发的归约框架，将本地差分隐私（LDP）估计问题转化为混合模型的密度估计问题以改进EM估计。",
@@ -1859,7 +1859,7 @@
   },
   {
     "key": "revisitingphysicalworldadversarialattackontrafficsignrecognitionacommercialsystemsperspective",
-    "id": 6723,
+    "id": 7055,
     "title": "Revisiting Physical-World Adversarial Attack on Traffic Sign Recognition: A Commercial Systems Perspective",
     "paper": "https://www.ndss-symposium.org/ndss-paper/revisiting-physical-world-adversarial-attack-on-traffic-sign-recognition-a-commercial-systems-perspective/",
     "method": "首次对商用交通标志识别（TSR）系统开展大规模物理对抗攻击测量，并提出新的攻击成功率评估指标以刻画系统级防护设计的影响。",
@@ -1891,7 +1891,7 @@
   },
   {
     "key": "rondoscalableandreconfigurationfriendlyrandomnessbeacon",
-    "id": 6724,
+    "id": 7056,
     "title": "Rondo: Scalable and Reconfiguration-Friendly Randomness Beacon",
     "paper": "https://www.ndss-symposium.org/ndss-paper/rondo-scalable-and-reconfiguration-friendly-randomness-beacon/",
     "method": "提出首个基于「批量异步可验证秘密共享（bAVSS）」、避免O(n^3)通信开销的可扩展、支持重配置的分布式随机信标协议。",
@@ -1923,7 +1923,7 @@
   },
   {
     "key": "scrutinizertowardssecureforensicsoncompromisedtrustzone",
-    "id": 6725,
+    "id": 7057,
     "title": "SCRUTINIZER: Towards Secure Forensics on Compromised TrustZone",
     "paper": "https://www.ndss-symposium.org/ndss-paper/scrutinizer-towards-secure-forensics-on-compromised-trustzone/",
     "method": "提出首个针对已被攻陷的Arm TrustZone系统的安全数字取证方案，利用Arm CCA的Root world构建受保护的取证监控器。",
@@ -1973,7 +1973,7 @@
   },
   {
     "key": "secretspillingdriveleakinguserbehaviorthroughssdcontention",
-    "id": 6726,
+    "id": 7058,
     "title": "Secret Spilling Drive: Leaking User Behavior through SSD Contention",
     "paper": "https://www.ndss-symposium.org/ndss-paper/secret-spilling-drive-leaking-user-behavior-through-ssd-contention/",
     "method": "首次系统研究商用NVMe SSD内部的定时通道，提出基于I/O排队延迟尖峰构造跨虚拟机隐蔽信道及网站指纹侧信道的方法。",
@@ -2014,7 +2014,7 @@
   },
   {
     "key": "secureipaddressallocationatcloudscale",
-    "id": 6727,
+    "id": 7059,
     "title": "Secure IP Address Allocation at Cloud Scale",
     "paper": "https://www.ndss-symposium.org/ndss-paper/secure-ip-address-allocation-at-cloud-scale/",
     "method": "提出「IP扫描分段」（IP scan segmentation）云IP地址分配策略，在更强威胁模型下保护地址池免受对抗性扫描。",
@@ -2046,7 +2046,7 @@
   },
   {
     "key": "securetransformerinferencemadenoninteractive",
-    "id": 6728,
+    "id": 7060,
     "title": "Secure Transformer Inference Made Non-interactive",
     "paper": "https://www.ndss-symposium.org/ndss-paper/secure-transformer-inference-made-non-interactive/",
     "method": "提出首个非交互式安全Transformer推理协议NEXUS，客户端仅需一轮通信即可完成加密推理。",
@@ -2087,7 +2087,7 @@
   },
   {
     "key": "silencefalsealarmsidentifyingantireentrancypatternsonethereumtorefinesmartcontractreentrancydetection",
-    "id": 6729,
+    "id": 7061,
     "title": "Silence False Alarms: Identifying Anti-Reentrancy Patterns on Ethereum to Refine Smart Contract Reentrancy Detection",
     "paper": "https://www.ndss-symposium.org/ndss-paper/silence-false-alarms-identifying-anti-reentrancy-patterns-on-ethereum-to-refine-smart-contract-reentrancy-detection/",
     "method": "提出自动识别以太坊智能合约中「防重入模式」的系统AutoAR，用于降低现有重入漏洞检测工具的误报率。",
@@ -2119,7 +2119,7 @@
   },
   {
     "key": "theunusualsuspectsstudyingreasonsforlackingupdatesinwordpress",
-    "id": 6730,
+    "id": 7062,
     "title": "The (Un)usual Suspects – Studying Reasons for Lacking Updates in WordPress",
     "paper": "https://www.ndss-symposium.org/ndss-paper/the-unusual-suspects-studying-reasons-for-lacking-updates-in-wordpress/",
     "method": "采用扎根理论方法，首次系统性质性研究网站运营者不更新WordPress等CMS的深层原因。",
@@ -2151,7 +2151,7 @@
   },
   {
     "key": "themidastouchtriggeringthecapabilityofllmsforrmapimisusedetection",
-    "id": 6731,
+    "id": 7063,
     "title": "The Midas Touch: Triggering the Capability of LLMs for RM-API Misuse Detection",
     "paper": "https://www.ndss-symposium.org/ndss-paper/the-midas-touch-triggering-the-capability-of-llms-for-rm-api-misuse-detection/",
     "method": "提出LLM驱动的资源管理API（RM-API）误用检测方案ChatDetector，通过链式思维分解任务激发LLM能力以自动化文档理解和约束提取。",
@@ -2201,7 +2201,7 @@
   },
   {
     "key": "thephilosophersstonetrojaningpluginsoflargelanguagemodels",
-    "id": 6732,
+    "id": 7064,
     "title": "The Philosopher’s Stone: Trojaning Plugins of Large Language Models",
     "paper": "https://www.ndss-symposium.org/ndss-paper/the-philosophers-stone-trojaning-plugins-of-large-language-models/",
     "method": "提出两种针对LLM低秩适配器（LoRA adapter）的木马注入攻击POLISHED和FUSION，证明适配器可被用来控制LLM行为。",
@@ -2233,7 +2233,7 @@
   },
   {
     "key": "thepowerofwordsacomprehensiveanalysisofrationalesandtheireffectsonuserspermissiondecisions",
-    "id": 6733,
+    "id": 7065,
     "title": "The Power of Words: A Comprehensive Analysis of Rationales and Their Effects on Users' Permission Decisions",
     "paper": "https://www.ndss-symposium.org/ndss-paper/the-power-of-words-a-comprehensive-analysis-of-rationales-and-their-effects-on-users-permission-decisions/",
     "method": "通过大规模真实权限请求话术分析与用户实验，系统研究App权限请求说明（rationale）的措辞与设计要素对用户授权决策的影响。",
@@ -2265,7 +2265,7 @@
   },
   {
     "key": "theskeletonkeysalargescaleanalysisofcredentialleakageinminiapps",
-    "id": 6734,
+    "id": 7066,
     "title": "The Skeleton Keys: A Large Scale Analysis of Credential Leakage in Mini-apps",
     "paper": "https://www.ndss-symposium.org/ndss-paper/the-skeleton-keys-a-large-scale-analysis-of-credential-leakage-in-mini-apps/",
     "method": "首次系统研究「超级应用-小程序」（app-in-app）范式中的凭证认证机制，提出凭证泄露安全检测工具KeyMagnet。",
@@ -2297,7 +2297,7 @@
   },
   {
     "key": "themisregulatingtextualinversionforpersonalizedconceptcensorship",
-    "id": 6735,
+    "id": 7067,
     "title": "THEMIS: Regulating Textual Inversion for Personalized Concept Censorship",
     "paper": "https://www.ndss-symposium.org/ndss-paper/themis-regulating-textual-inversion-for-personalized-concept-censorship/",
     "method": "提出THEMIS框架，利用「正向后门」技术对文本反演（Textual Inversion）个性化生成模型实施概念审查。",
@@ -2329,7 +2329,7 @@
   },
   {
     "key": "timevaryingbottlenecklinksinleosatellitenetworksidentificationexploitsandcountermeasures",
-    "id": 6736,
+    "id": 7068,
     "title": "Time-varying Bottleneck Links in LEO Satellite Networks: Identification, Exploits, and Countermeasures",
     "paper": "https://www.ndss-symposium.org/ndss-paper/time-varying-bottleneck-links-in-leo-satellite-networks-identification-exploits-and-countermeasures/",
     "method": "首次系统研究低轨（LEO）卫星网络中时变瓶颈链路带来的链路洪泛攻击（LFA）风险，提出风险分析工具SKYFALL。",
@@ -2361,7 +2361,7 @@
   },
   {
     "key": "toosubtletonoticeinvestigatingexecutablestackissuesinlinuxsystems",
-    "id": 6737,
+    "id": 7069,
     "title": "Too Subtle to Notice: Investigating Executable Stack Issues in Linux Systems",
     "paper": "https://www.ndss-symposium.org/ndss-paper/too-subtle-to-notice-investigating-executable-stack-issues-in-linux-systems/",
     "method": "通过两项调查系统剖析Linux系统中可执行栈（违反W⊕X）问题反复出现的根本原因。",
@@ -2393,7 +2393,7 @@
   },
   {
     "key": "trajdeleterenablingtrajectoryforgettinginofflinereinforcementlearningagents",
-    "id": 6738,
+    "id": 7070,
     "title": "TrajDeleter: Enabling Trajectory Forgetting in Offline Reinforcement Learning Agents",
     "paper": "https://www.ndss-symposium.org/ndss-paper/trajdeleter-enabling-trajectory-forgetting-in-offline-reinforcement-learning-agents/",
     "method": "提出首个面向离线强化学习智能体的轨迹遗忘方法TrajDeleter，并配套评估方法TrajAuditor。",
@@ -2436,7 +2436,7 @@
   },
   {
     "key": "transparencyorinformationoverloadevaluatinguserscomprehensionandperceptionsoftheiosappprivacyreport",
-    "id": 6739,
+    "id": 7071,
     "title": "Transparency or Information Overload? Evaluating Users’ Comprehension and Perceptions of the iOS App Privacy Report",
     "paper": "https://www.ndss-symposium.org/ndss-paper/transparency-or-information-overload-evaluating-users-comprehension-and-perceptions-of-the-ios-app-privacy-report/",
     "method": "通过半结构化访谈评估苹果iOS App Privacy Report在提升用户对App数据/网络访问透明度方面的实际效果。",
@@ -2459,7 +2459,7 @@
   },
   {
     "key": "tweezersaframeworkforsecurityeventdetectionviaeventattributioncentrictweetembedding",
-    "id": 6740,
+    "id": 7072,
     "title": "Tweezers: A Framework for Security Event Detection via Event Attribution-centric Tweet Embedding",
     "paper": "https://www.ndss-symposium.org/ndss-paper/tweezers-a-framework-for-security-event-detection-via-event-attribution-centric-tweet-embedding/",
     "method": "提出以「事件归因」为核心的推文嵌入方法，构建安全事件检测框架Tweezers用于网络威胁情报（CTI）采集。",
@@ -2491,7 +2491,7 @@
   },
   {
     "key": "typeprohibitingtypeconfusionwithinlinetypeinformation",
-    "id": 6741,
+    "id": 7073,
     "title": "type++: Prohibiting Type Confusion with Inline Type Information",
     "paper": "https://www.ndss-symposium.org/ndss-paper/type-prohibiting-type-confusion-with-inline-type-information/",
     "method": "提出C++方言type++，通过为所有涉及向下转型的对象在生命周期内持续携带内联类型信息，从根本上防止类型混淆（bad casting）攻击。",
@@ -2532,7 +2532,7 @@
   },
   {
     "key": "understandingdataimportanceinmachinelearningattacksdoesvaluabledataposegreaterharm",
-    "id": 6742,
+    "id": 7074,
     "title": "Understanding Data Importance in Machine Learning Attacks: Does Valuable Data Pose Greater Harm?",
     "paper": "https://www.ndss-symposium.org/ndss-paper/understanding-data-importance-in-machine-learning-attacks-does-valuable-data-pose-greater-harm/",
     "method": "系统研究数据重要性（valuable data）与机器学习攻击脆弱性之间的关系，揭示高价值数据样本在特定攻击下更易受害。",
@@ -2564,7 +2564,7 @@
   },
   {
     "key": "understandingminiappmalwareidentificationdissectionandcharacterization",
-    "id": 6743,
+    "id": 7075,
     "title": "Understanding Miniapp Malware: Identification, Dissection, and Characterization",
     "paper": "https://www.ndss-symposium.org/ndss-paper/understanding-miniapp-malware-identification-dissection-and-characterization/",
     "method": "构建首个小程序恶意软件数据集，对微信生态中的恶意小程序进行大规模识别、剖析与特征刻画。",
@@ -2596,7 +2596,7 @@
   },
   {
     "key": "veribinadaptiveverificationofpatchesatthebinarylevel",
-    "id": 6744,
+    "id": 7076,
     "title": "VeriBin: Adaptive Verification of Patches at the Binary Level",
     "paper": "https://www.ndss-symposium.org/ndss-paper/veribin-adaptive-verification-of-patches-at-the-binary-level/",
     "method": "提出二进制级补丁验证系统VeriBin，判定二进制补丁是否「可安全应用」而不破坏原有功能。",
@@ -2628,7 +2628,7 @@
   },
   {
     "key": "wallbleedamemorydisclosurevulnerabilityinthegreatfirewallofchina",
-    "id": 6745,
+    "id": 7077,
     "title": "Wallbleed: A Memory Disclosure Vulnerability in the Great Firewall of China",
     "paper": "https://www.ndss-symposium.org/ndss-paper/wallbleed-a-memory-disclosure-vulnerability-in-the-great-firewall-of-china/",
     "method": "发现并披露「Wallbleed」——中国防火长城DNS注入子系统中存在的缓冲区过读内存泄露漏洞。",
@@ -2669,7 +2669,7 @@
   },
   {
     "key": "wavenwebassemblymemoryvirtualizationforenclaves",
-    "id": 6746,
+    "id": 7078,
     "title": "WAVEN: WebAssembly Memory Virtualization for Enclaves",
     "paper": "https://www.ndss-symposium.org/ndss-paper/waven-webassembly-memory-virtualization-for-enclaves/",
     "method": "提出WebAssembly内存虚拟化方案WAVEN，为TEE中的Wasm多租户运行时实现跨模块内存共享与细粒度页级访问控制。",
@@ -2701,7 +2701,7 @@
   },
   {
     "key": "welcometojurassicparkacomprehensivestudyofsecurityrisksindenoanditsecosystem",
-    "id": 6747,
+    "id": 7079,
     "title": "Welcome to Jurassic Park: A Comprehensive Study of Security Risks in Deno and its Ecosystem",
     "paper": "https://www.ndss-symposium.org/ndss-paper/welcome-to-jurassic-park-a-comprehensive-study-of-security-risks-in-deno-and-its-ecosystem/",
     "method": "系统研究新兴JavaScript运行时Deno及其生态deno.land的安全性，评估其权限系统与URL依赖导入机制的实际防护效果。",
@@ -2751,7 +2751,7 @@
   },
   {
     "key": "whoistryingtoaccessmyaccountexploringuserperceptionsandreactionstoriskbasedauthenticationnotifications",
-    "id": 6748,
+    "id": 7080,
     "title": "”Who is Trying to Access My Account?” Exploring User Perceptions and Reactions to Risk-based Authentication Notifications",
     "paper": "https://www.ndss-symposium.org/ndss-paper/who-is-trying-to-access-my-account-exploring-user-perceptions-and-reactions-to-risk-based-authentication-notifications/",
     "method": "通过混合方法用户研究，探究基于风险的认证（RBA）通知在非账户持有者触发场景下对用户风险感知与应对行为的实际效果。",
@@ -2774,7 +2774,7 @@
   },
   {
     "key": "whereareweoncyberaqualitativestudyonboardscybersecurityriskdecisionmaking",
-    "id": 6749,
+    "id": 7081,
     "title": "“Where Are We On Cyber?” – A Qualitative Study On Boards' Cybersecurity Risk Decision Making",
     "paper": "https://www.ndss-symposium.org/ndss-paper/where-are-we-on-cyber-a-qualitative-study-on-boards-cybersecurity-risk-decision-making/",
     "method": "通过深度访谈质性研究方法，揭示企业董事会网络安全风险决策过程中存在的权力失衡问题。",
@@ -2797,7 +2797,7 @@
   },
   {
     "key": "acomprehensivememorysafetyanalysisofbootloaders",
-    "id": 6750,
+    "id": 7082,
     "title": "A Comprehensive Memory Safety Analysis of Bootloaders",
     "paper": "https://www.ndss-symposium.org/ndss-paper/a-comprehensive-memory-safety-analysis-of-bootloaders/",
     "method": "首次对引导加载程序（bootloader）开展系统性内存安全分析，并设计配套的模糊测试框架发现新漏洞。",
@@ -2829,7 +2829,7 @@
   },
   {
     "key": "aformalapproachtomultilayeredprivilegesforenclaves",
-    "id": 6751,
+    "id": 7083,
     "title": "A Formal Approach to Multi-Layered Privileges for Enclaves",
     "paper": "https://www.ndss-symposium.org/ndss-paper/a-formal-approach-to-multi-layered-privileges-for-enclaves/",
     "method": "提出可验证的多层级Enclave间特权模型Palantir，用于安全的enclave功能扩展。",
@@ -2870,7 +2870,7 @@
   },
   {
     "key": "alargescalemeasurementstudyoftheproxyprotocolanditssecurityimplications",
-    "id": 6752,
+    "id": 7084,
     "title": "A Large-Scale Measurement Study of the PROXY Protocol and its Security Implications",
     "paper": "https://www.ndss-symposium.org/ndss-paper/a-large-scale-measurement-study-of-the-proxy-protocol-and-its-security-implications/",
     "method": "首次对HAProxy提出的PROXY协议在互联网范围内的部署与安全隐患开展大规模测量。",
@@ -2902,7 +2902,7 @@
   },
   {
     "key": "amultifacetedstudyontheuseoftlsandautodetectinemailecosystems",
-    "id": 6753,
+    "id": 7085,
     "title": "A Multifaceted Study on the Use of TLS and Auto-detect in Email Ecosystems",
     "paper": "https://www.ndss-symposium.org/ndss-paper/a-multifaceted-study-on-the-use-of-tls-and-auto-detect-in-email-ecosystems/",
     "method": "对邮件客户端TLS与「自动检测」配置功能的安全性开展多维度研究，覆盖客户端实现、部署指南与服务器端支持三个层面。",
@@ -2943,7 +2943,7 @@
   },
   {
     "key": "anewppmlparadigmforquantizedmodels",
-    "id": 6754,
+    "id": 7086,
     "title": "A New PPML Paradigm for Quantized Models",
     "paper": "https://www.ndss-symposium.org/ndss-paper/a-new-ppml-paradigm-for-quantized-models/",
     "method": "提出面向量化模型的新型隐私保护机器学习（PPML）范式，基于查找表实现高效的量化算子安全评估协议。",
@@ -2975,7 +2975,7 @@
   },
   {
     "key": "albathedawnofscalablebridgesforblockchains",
-    "id": 6755,
+    "id": 7087,
     "title": "Alba: The Dawn of Scalable Bridges for Blockchains",
     "paper": "https://www.ndss-symposium.org/ndss-paper/alba-the-dawn-of-scalable-bridges-for-blockchains/",
     "method": "提出「Pay2Chain」跨链桥概念及其实现Alba，利用支付通道等链下方案实现高效、安全、去信任的跨链条件支付。",
@@ -2998,7 +2998,7 @@
   },
   {
     "key": "allyourdatabasearebelongtouscharacterizingdatabaseransomwareattacks",
-    "id": 6756,
+    "id": 7088,
     "title": "All your (data)base are belong to us: Characterizing Database Ransom(ware) Attacks",
     "paper": "https://www.ndss-symposium.org/ndss-paper/all-your-database-are-belong-to-us-characterizing-database-ransomware-attacks/",
     "method": "首次系统研究数据库勒索（软件）攻击，提出基于赎金字条文本相似度与比特币链上信息追踪攻击团伙的聚类分析方法。",
@@ -3041,7 +3041,7 @@
   },
   {
     "key": "asgardprotectingondevicedeepneuralnetworkswithvirtualizationbasedtrustedexecutionenvironments",
-    "id": 6757,
+    "id": 7089,
     "title": "ASGARD: Protecting On-Device Deep Neural Networks with Virtualization-Based Trusted Execution Environments",
     "paper": "https://www.ndss-symposium.org/ndss-paper/asgard-protecting-on-device-deep-neural-networks-with-virtualization-based-trusted-execution-environments/",
     "method": "提出首个基于虚拟化TEE的方案ASGARD，在不修改厂商专有软件的前提下保护legacy Armv8-A SoC上的端侧深度神经网络模型。",
@@ -3082,7 +3082,7 @@
   },
   {
     "key": "attributingopensourcecontributionsiscriticalbutdifficultasystematicanalysisofgithubpracticesandtheirimpactonsoftwaresupplychainsecurity",
-    "id": 6758,
+    "id": 7090,
     "title": "Attributing Open-Source Contributions is Critical but Difficult: A Systematic Analysis of GitHub Practices and Their Impact on Software Supply Chain Security",
     "paper": "https://www.ndss-symposium.org/ndss-paper/attributing-open-source-contributions-is-critical-but-difficult-a-systematic-analysis-of-github-practices-and-their-impact-on-software-supply-chain-security/",
     "method": "通过混合方法研究揭示GitHub开源贡献归属机制可被冒用以伪造可信身份的安全风险，并评估提交签名等对策的实际采纳情况。",
@@ -3123,7 +3123,7 @@
   },
   {
     "key": "automatedmassmalwarefactorytheconvergenceofpiggybackingandadversarialexampleinandroidmalicioussoftwaregeneration",
-    "id": 6759,
+    "id": 7091,
     "title": "Automated Mass Malware Factory: The Convergence of Piggybacking and Adversarial Example in Android Malicious Software Generation",
     "paper": "https://www.ndss-symposium.org/ndss-paper/automated-mass-malware-factory-the-convergence-of-piggybacking-and-adversarial-example-in-android-malicious-software-generation/",
     "method": "提出将「寄生式」（piggybacking）恶意软件生成与对抗样本技术相结合的批量Android恶意软件自动生成方法。",
@@ -3173,7 +3173,7 @@
   },
   {
     "key": "automaticinsecurityexploringemailautoconfigurationinthewild",
-    "id": 6760,
+    "id": 7092,
     "title": "Automatic Insecurity: Exploring Email Auto-configuration in the Wild",
     "paper": "https://www.ndss-symposium.org/ndss-paper/automatic-insecurity-exploring-email-auto-configuration-in-the-wild/",
     "method": "首次对邮件客户端「自动配置」机制的安全隐患开展系统分析，涵盖实现与部署两方面。",
@@ -3214,7 +3214,7 @@
   },
   {
     "key": "automaticlibraryfuzzingthroughapirelationevolvement",
-    "id": 6761,
+    "id": 7093,
     "title": "Automatic Library Fuzzing through API Relation Evolvement",
     "paper": "https://www.ndss-symposium.org/ndss-paper/automatic-library-fuzzing-through-api-relation-evolvement/",
     "method": "提出基于API关系持续演化学习的自动化库模糊测试工具NEXZZER，用于挖掘软件库深层漏洞。",
@@ -3255,7 +3255,7 @@
   },
   {
     "key": "balancingprivacyanddatautilizationacomparativevignettestudyonuseracceptanceofdatatrusteesingermanyandtheus",
-    "id": 6762,
+    "id": 7094,
     "title": "Balancing Privacy and Data Utilization: A Comparative Vignette Study on User Acceptance of Data Trustees in Germany and the US",
     "paper": "https://www.ndss-symposium.org/ndss-paper/balancing-privacy-and-data-utilization-a-comparative-vignette-study-on-user-acceptance-of-data-trustees-in-germany-and-the-us/",
     "method": "通过跨国情景式（vignette）问卷研究，系统考察德国与美国用户对「数据受托人」（data trustee）模式的接受度及其影响因素。",
@@ -3287,7 +3287,7 @@
   },
   {
     "key": "barbierobustbackdoordetectionbasedonlatentseparability",
-    "id": 6763,
+    "id": 7095,
     "title": "BARBIE: Robust Backdoor Detection Based on Latent Separability",
     "paper": "https://www.ndss-symposium.org/ndss-paper/barbie-robust-backdoor-detection-based-on-latent-separability/",
     "method": "提出鲁棒的后门检测方法BARBIE，通过新的「相对竞争分数」（RCS）度量模型潜在表示可分性以抵御自适应后门攻击。",
@@ -3328,7 +3328,7 @@
   },
   {
     "key": "beyondclassificationinferringfunctionnamesinstrippedbinariesviadomainadaptedllms",
-    "id": 6764,
+    "id": 7096,
     "title": "Beyond Classification: Inferring Function Names in Stripped Binaries via Domain Adapted LLMs",
     "paper": "https://www.ndss-symposium.org/ndss-paper/beyond-classification-inferring-function-names-in-stripped-binaries-via-domain-adapted-llms/",
     "method": "用领域自适应生成式大模型，把函数名推断从固定词表分类改为自回归生成任务。",
@@ -3360,7 +3360,7 @@
   },
   {
     "key": "binenhanceanenhancementframeworkbasedonexternalenvironmentsemanticsforbinarycodesearch",
-    "id": 6765,
+    "id": 7097,
     "title": "BinEnhance: An Enhancement Framework Based on External Environment Semantics for Binary Code Search",
     "paper": "https://www.ndss-symposium.org/ndss-paper/binenhance-an-enhancement-framework-based-on-external-environment-semantics-for-binary-code-search/",
     "method": "利用函数间语义关系构建外部环境语义图，增强现有二进制代码内部语义模型的表示能力。",
@@ -3410,7 +3410,7 @@
   },
   {
     "key": "bitshielddefendingagainstbitflipattacksondnnexecutables",
-    "id": 6766,
+    "id": 7098,
     "title": "BitShield: Defending Against Bit-Flip Attacks on DNN Executables",
     "paper": "https://www.ndss-symposium.org/ndss-paper/bitshield-defending-against-bit-flip-attacks-on-dnn-executables/",
     "method": "首个针对DNN可执行文件比特翻转攻击(BFA)的防御，基于语义完整性校验主动检测攻击。",
@@ -3442,7 +3442,7 @@
   },
   {
     "key": "blackboxfuzzingofdistributedsystemswithmultidimensionalinputsandsymmetrybasedfeedbackpruning",
-    "id": 6767,
+    "id": 7099,
     "title": "Blackbox Fuzzing of Distributed Systems with Multi-Dimensional Inputs and Symmetry-Based Feedback Pruning",
     "paper": "https://www.ndss-symposium.org/ndss-paper/blackbox-fuzzing-of-distributed-systems-with-multi-dimensional-inputs-and-symmetry-based-feedback-pruning/",
     "method": "首个反馈引导的分布式系统黑盒模糊测试框架，提出多维输入空间与基于对称性的反馈剪枝。",
@@ -3483,7 +3483,7 @@
   },
   {
     "key": "blindfoldconfidentialmemorymanagementbyuntrustedoperatingsystem",
-    "id": 6768,
+    "id": 7100,
     "title": "Blindfold: Confidential Memory Management by Untrusted Operating System",
     "paper": "https://www.ndss-symposium.org/ndss-paper/blindfold-confidential-memory-management-by-untrusted-operating-system/",
     "method": "提出无需隐藏或加密内存即可实现机密内存管理的可信硬件辅助架构。",
@@ -3524,7 +3524,7 @@
   },
   {
     "key": "casprcontextawaresecuritypolicyrecommendation",
-    "id": 6769,
+    "id": 7101,
     "title": "CASPR: Context-Aware Security Policy Recommendation",
     "paper": "https://www.ndss-symposium.org/ndss-paper/caspr-context-aware-security-policy-recommendation/",
     "method": "提出上下文感知的安全策略推荐方法，结合多源上下文特征聚类自动推荐并修复SELinux策略规则。",
@@ -3574,7 +3574,7 @@
   },
   {
     "key": "cctagconfigurableandcombinabletaggedarchitecture",
-    "id": 6770,
+    "id": 7102,
     "title": "CCTAG: Configurable and Combinable Tagged Architecture",
     "paper": "https://www.ndss-symposium.org/ndss-paper/cctag-configurable-and-combinable-tagged-architecture/",
     "method": "提出可配置、可组合的标记式(tagged)硬件架构，作为统一原语支持多种内存安全防御机制并发运行而不冲突。",
@@ -3606,7 +3606,7 @@
   },
   {
     "key": "characterizingtheimpactofaudiodeepfakesinthepresenceofcochlearimplant",
-    "id": 6771,
+    "id": 7103,
     "title": "Characterizing the Impact of Audio Deepfakes in the Presence of Cochlear Implant",
     "paper": "https://www.ndss-symposium.org/ndss-paper/characterizing-the-impact-of-audio-deepfakes-in-the-presence-of-cochlear-implant/",
     "method": "首次研究音频深度伪造对人工耳蜗(CI)用户群体的影响，并评估CI模拟音频能否作为该群体检测能力的代理。",
@@ -3647,7 +3647,7 @@
   },
   {
     "key": "counterseveillanceperformancecounterattacksonamdsevsnp",
-    "id": 6772,
+    "id": 7104,
     "title": "CounterSEVeillance: Performance-Counter Attacks on AMD SEV-SNP",
     "paper": "https://www.ndss-symposium.org/ndss-paper/counterseveillance-performance-counter-attacks-on-amd-sev-snp/",
     "method": "提出首个在AMD SEV-SNP机密虚拟机上达到单指令级分辨率的性能计数器旁路攻击。",
@@ -3688,7 +3688,7 @@
   },
   {
     "key": "crosstalkinducedsidechannelthreatsinmultitenantnisqcomputers",
-    "id": 6773,
+    "id": 7105,
     "title": "Crosstalk-induced Side Channel Threats in Multi-Tenant NISQ Computers",
     "paper": "https://www.ndss-symposium.org/ndss-paper/crosstalk-induced-side-channel-threats-in-multi-tenant-nisq-computers/",
     "method": "首次在多租户NISQ量子计算机上以串扰(crosstalk)作为旁路攻击向量识别受害者量子算法。",
@@ -3720,7 +3720,7 @@
   },
   {
     "key": "ctrlaltdeceivequantifyinguserexposuretoonlinescams",
-    "id": 6774,
+    "id": 7106,
     "title": "Ctrl+Alt+Deceive: Quantifying User Exposure to Online Scams",
     "paper": "https://www.ndss-symposium.org/ndss-paper/ctrlaltdeceive-quantifying-user-exposure-to-online-scams/",
     "method": "首次对比研究多种在线诈骗类型对终端用户的实际暴露程度。",
@@ -3752,7 +3752,7 @@
   },
   {
     "key": "deanonymizingdeviceidentitiesviasidechannelattacksinexclusiveuseiotsmitigation",
-    "id": 6775,
+    "id": 7107,
     "title": "Deanonymizing Device Identities via Side-channel Attacks in Exclusive-use IoTs & Mitigation",
     "paper": "https://www.ndss-symposium.org/ndss-paper/deanonymizing-device-identities-via-side-channel-attacks-in-exclusive-use-iots-mitigation/",
     "method": "发现“专属使用(exclusive-use)”配对设备通信模式中存在可被利用的布尔型旁路，据此提出去匿名化追踪攻击并给出通用缓解方案。",
@@ -3784,7 +3784,7 @@
   },
   {
     "key": "defendingagainstmembershipinferenceattacksoniterativelypruneddeepneuralnetworks",
-    "id": 6776,
+    "id": 7108,
     "title": "Defending Against Membership Inference Attacks on Iteratively Pruned Deep Neural Networks",
     "paper": "https://www.ndss-symposium.org/ndss-paper/defending-against-membership-inference-attacks-on-iteratively-pruned-deep-neural-networks/",
     "method": "提出弱化迭代剪枝模型记忆效应的防御框架WeMem，专门针对剪枝模型的成员推理风险。",
@@ -3816,7 +3816,7 @@
   },
   {
     "key": "densityboostseverythingaonestopstrategyforimprovingperformancerobustnessandsustainabilityofmalwaredetectors",
-    "id": 6777,
+    "id": 7109,
     "title": "Density Boosts Everything: A One-stop Strategy for Improving Performance, Robustness, and Sustainability of Malware Detectors",
     "paper": "https://www.ndss-symposium.org/ndss-paper/density-boosts-everything-a-one-stop-strategy-for-improving-performance-robustness-and-sustainability-of-malware-detectors/",
     "method": "首次将“特征稀疏性”识别为恶意软件检测中投毒、逃逸、概念漂移等多重挑战的共同根源，提出压缩与密度提升训练一体化方案。",
@@ -3848,7 +3848,7 @@
   },
   {
     "key": "detectingimsicatchersbycharacterizingidentityexposingmessagesincellulartraffic",
-    "id": 6778,
+    "id": 7110,
     "title": "Detecting IMSI-Catchers by Characterizing Identity Exposing Messages in Cellular Traffic",
     "paper": "https://www.ndss-symposium.org/ndss-paper/detecting-imsi-catchers-by-characterizing-identity-exposing-messages-in-cellular-traffic/",
     "method": "提出基于标准协议消息流因果关系（而非相关行为）的IMSI-Catcher检测方法。",
@@ -3889,7 +3889,7 @@
   },
   {
     "key": "detectingransomwaredespiteiooverheadapracticalmultistagedapproach",
-    "id": 6779,
+    "id": 7111,
     "title": "Detecting Ransomware Despite I/O Overhead: A Practical Multi-Staged Approach",
     "paper": "https://www.ndss-symposium.org/ndss-paper/detecting-ransomware-despite-i-o-overhead-a-practical-multi-staged-approach/",
     "method": "提出可根据进程行为动态调整监控特征数量的多阶段勒索软件实时检测方法，兼顾检测精度与I/O性能开销。",
@@ -3921,7 +3921,7 @@
   },
   {
     "key": "distefanodecentralizedinfrastructureforsharingtrustedencryptedfactsandnothingmore",
-    "id": 6780,
+    "id": 7112,
     "title": "DiStefano: Decentralized Infrastructure for Sharing Trusted Encrypted Facts and Nothing More",
     "paper": "https://www.ndss-symposium.org/ndss-paper/distefano-decentralized-infrastructure-for-sharing-trusted-encrypted-facts-and-nothing-more/",
     "method": "提出面向TLS 1.3加密流量的高效恶意安全承诺(commitment)框架，支持第三方对任意可验证声明进行验证。",
@@ -3944,7 +3944,7 @@
   },
   {
     "key": "distributedfunctionsecretsharingandapplications",
-    "id": 6781,
+    "id": 7113,
     "title": "Distributed Function Secret Sharing and Applications",
     "paper": "https://www.ndss-symposium.org/ndss-paper/distributed-function-secret-sharing-and-applications/",
     "method": "提出无需可信第三方的分布式函数秘密分享(FSS)密钥生成方案。",
@@ -3976,7 +3976,7 @@
   },
   {
     "key": "dlboxnewmodeltrainingframeworkforprotectingtrainingdata",
-    "id": 6782,
+    "id": 7114,
     "title": "DLBox: New Model Training Framework for Protecting Training Data",
     "paper": "https://www.ndss-symposium.org/ndss-paper/dlbox-new-model-training-framework-for-protecting-training-data/",
     "method": "提出限制不可信AI开发者数据泄露路径的新型模型训练框架。",
@@ -4008,7 +4008,7 @@
   },
   {
     "key": "donotfollowthewhiterabbitchallengingthemythofharmlessopenredirection",
-    "id": 6783,
+    "id": 7115,
     "title": "Do (Not) Follow the White Rabbit: Challenging the Myth of Harmless Open Redirection",
     "paper": "https://www.ndss-symposium.org/ndss-paper/do-not-follow-the-white-rabbit-challenging-the-myth-of-harmless-open-redirection/",
     "method": "提出静态-动态结合的检测系统，重新评估长期被认为危害较低的客户端开放重定向漏洞。",
@@ -4049,7 +4049,7 @@
   },
   {
     "key": "dowereallyneedtodesignnewbyzantinerobustaggregationrules",
-    "id": 6784,
+    "id": 7116,
     "title": "Do We Really Need to Design New Byzantine-robust Aggregation Rules?",
     "paper": "https://www.ndss-symposium.org/ndss-paper/do-we-really-need-to-design-new-byzantine-robust-aggregation-rules/",
     "method": "主张无需设计新的拜占庭鲁棒聚合规则，通过服务器生成合成更新即可增强经典聚合规则的鲁棒性。",
@@ -4081,7 +4081,7 @@
   },
   {
     "key": "dshielddefendingagainstbackdoorattacksongraphneuralnetworksviadiscrepancylearning",
-    "id": 6785,
+    "id": 7117,
     "title": "DShield: Defending against Backdoor Attacks on Graph Neural Networks via Discrepancy Learning",
     "paper": "https://www.ndss-symposium.org/ndss-paper/dshield-defending-against-backdoor-attacks-on-graph-neural-networks-via-discrepancy-learning/",
     "method": "提出基于差异学习(discrepancy learning)的图神经网络后门防御框架，同时应对脏标签与干净标签两类攻击。",
@@ -4122,7 +4122,7 @@
   },
   {
     "key": "dumplingfinegraineddifferentialjavascriptenginefuzzing",
-    "id": 6786,
+    "id": 7118,
     "title": "DUMPLING: Fine-grained Differential JavaScript Engine Fuzzing",
     "paper": "https://www.ndss-symposium.org/ndss-paper/dumpling-fine-grained-differential-javascript-engine-fuzzing/",
     "method": "提出对JS引擎本身插桩、比较优化前后完整执行状态的细粒度差分模糊测试方法。",
@@ -4154,7 +4154,7 @@
   },
   {
     "key": "eagleyeexposinghiddenwebinterfacesiniotdevicesviaroutinganalysis",
-    "id": 6787,
+    "id": 7119,
     "title": "EAGLEYE: Exposing Hidden Web Interfaces in IoT Devices via Routing Analysis",
     "paper": "https://www.ndss-symposium.org/ndss-paper/eagleye-exposing-hidden-web-interfaces-in-iot-devices-via-routing-analysis/",
     "method": "提出基于路由分析、结合大语言模型推断候选值的IoT隐藏Web接口自动化挖掘方法。",
@@ -4195,7 +4195,7 @@
   },
   {
     "key": "eclipseattacksonmonerospeertopeernetwork",
-    "id": 6788,
+    "id": 7120,
     "title": "Eclipse Attacks on Monero's Peer-to-Peer Network",
     "paper": "https://www.ndss-symposium.org/ndss-paper/eclipse-attacks-on-moneros-peer-to-peer-network/",
     "method": "提出首个针对Monero的实用日蚀(eclipse)攻击，基于连接重置(connection reset)方法而非重启目标节点。",
@@ -4236,7 +4236,7 @@
   },
   {
     "key": "emiriseavesdroppingonirisinformationviaelectromagneticsidechannel",
-    "id": 6789,
+    "id": 7121,
     "title": "EMIRIS: Eavesdropping on Iris Information via Electromagnetic Side Channel",
     "paper": "https://www.ndss-symposium.org/ndss-paper/emiris-eavesdropping-on-iris-information-via-electromagnetic-side-channel/",
     "method": "提出通过电磁旁路窃取虹膜识别设备信息、并结合扩散模型重建高质量虹膜图像的攻击。",
@@ -4268,7 +4268,7 @@
   },
   {
     "key": "enhancingsecurityinthirdpartylibraryreusecomprehensivedetectionof1dayvulnerabilitythroughcodepatchanalysis",
-    "id": 6790,
+    "id": 7122,
     "title": "Enhancing Security in Third-Party Library Reuse – Comprehensive Detection of 1-day Vulnerability through Code Patch Analysis",
     "paper": "https://www.ndss-symposium.org/ndss-paper/enhancing-security-in-third-party-library-reuse-comprehensive-detection-of-1-day-vulnerability-through-code-patch-analysis/",
     "method": "提出结合大语言模型自动建库与哈希比对的第三方库(TPL)1-day漏洞检测工具VULTURE。",
@@ -4309,7 +4309,7 @@
   },
   {
     "key": "evaluatingmachinelearningbasediotdeviceidentificationmodelsforsecurityapplications",
-    "id": 6791,
+    "id": 7123,
     "title": "Evaluating Machine Learning-Based IoT Device Identification Models for Security Applications",
     "paper": "https://www.ndss-symposium.org/ndss-paper/evaluating-machine-learning-based-iot-device-identification-models-for-security-applications/",
     "method": "系统评估现有基于机器学习的IoT设备识别方案在真实多样网络环境下的性能退化问题并定位根因。",
@@ -4341,7 +4341,7 @@
   },
   {
     "key": "exploringuserperceptionsofsecurityauditingintheweb3ecosystem",
-    "id": 6792,
+    "id": 7124,
     "title": "Exploring User Perceptions of Security Auditing in the Web3 Ecosystem",
     "paper": "https://www.ndss-symposium.org/ndss-paper/exploring-user-perceptions-of-security-auditing-in-the-web3-ecosystem/",
     "method": "首次采用混合方法系统研究Web3用户对透明式安全审计的认知与行为影响。",
@@ -4364,7 +4364,7 @@
   },
   {
     "key": "fromlargetomammothacomparativeevaluationoflargelanguagemodelsinvulnerabilitydetection",
-    "id": 6793,
+    "id": 7125,
     "title": "From Large to Mammoth: A Comparative Evaluation of Large Language Models in Vulnerability Detection",
     "paper": "https://www.ndss-symposium.org/ndss-paper/from-large-to-mammoth-a-comparative-evaluation-of-large-language-models-in-vulnerability-detection/",
     "method": "对多种先进大语言模型在漏洞检测任务上做系统性对比评估。",
@@ -4396,7 +4396,7 @@
   },
   {
     "key": "fuzzuerenablingfuzzingofuefiinterfacesonedk2",
-    "id": 6794,
+    "id": 7126,
     "title": "FUZZUER: Enabling Fuzzing of UEFI Interfaces on EDK-2",
     "paper": "https://www.ndss-symposium.org/ndss-paper/fuzzuer-enabling-fuzzing-of-uefi-interfaces-on-edk-2/",
     "method": "提出首个面向EDK-2的UEFI接口反馈引导模糊测试技术，配合静态分析自动生成测试桩(harness)。",
@@ -4428,7 +4428,7 @@
   },
   {
     "key": "gadgetmeterquantitativelyandaccuratelygaugingtheexploitabilityofspeculativegadgets",
-    "id": 6795,
+    "id": 7127,
     "title": "GadgetMeter: Quantitatively and Accurately Gauging the Exploitability of Speculative Gadgets",
     "paper": "https://www.ndss-symposium.org/ndss-paper/gadgetmeter-quantitatively-and-accurately-gauging-the-exploitability-of-speculative-gadgets/",
     "method": "提出基于时序竞态条件量化评估推测执行gadget可利用性的框架GadgetMeter。",
@@ -4469,7 +4469,7 @@
   },
   {
     "key": "gapdiffprotectingjpegcompressedimagesfromdiffusionbasedfacialcustomization",
-    "id": 6796,
+    "id": 7128,
     "title": "GAP-Diff: Protecting JPEG-Compressed Images from Diffusion-based Facial Customization",
     "paper": "https://www.ndss-symposium.org/ndss-paper/gap-diff-protecting-jpeg-compressed-images-from-diffusion-based-facial-customization/",
     "method": "提出对抗JPEG压缩等预处理的扩散模型人脸定制防护框架GAP-Diff。",
@@ -4501,7 +4501,7 @@
   },
   {
     "key": "ghostshotmanipulatingtheimageofccdcameraswithelectromagneticinterference",
-    "id": 6797,
+    "id": 7129,
     "title": "GhostShot: Manipulating the Image of CCD Cameras with Electromagnetic Interference",
     "paper": "https://www.ndss-symposium.org/ndss-paper/ghostshot-manipulating-the-image-of-ccd-cameras-with-electromagnetic-interference/",
     "method": "提出利用故意电磁干扰(IEMI)向CCD相机可控注入任意灰度或彩色图像的增强型攻击GhostShot。",
@@ -4533,7 +4533,7 @@
   },
   {
     "key": "hadesattackunderstandingandevaluatingmanipulationrisksofemailblocklists",
-    "id": 6798,
+    "id": 7130,
     "title": "HADES Attack: Understanding and Evaluating Manipulation Risks of Email Blocklists",
     "paper": "https://www.ndss-symposium.org/ndss-paper/hades-attack-understanding-and-evaluating-manipulation-risks-of-email-blocklists/",
     "method": "首次揭示并评估针对邮件黑名单(DNSBL)诱捕服务器(capture server)机制的操纵攻击HADES。",
@@ -4565,7 +4565,7 @@
   },
   {
     "key": "hiddenandlostcontrolonsecuritydesignrisksiniotuserfacingmattercontroller",
-    "id": 6799,
+    "id": 7131,
     "title": "Hidden and Lost Control: on Security Design Risks in IoT User-Facing Matter Controller",
     "paper": "https://www.ndss-symposium.org/ndss-paper/hidden-and-lost-control-on-security-design-risks-in-iot-user-facing-matter-controller/",
     "method": "首次系统研究面向用户的Matter控制器安全设计缺陷，提出结合大语言模型的自动化检测工具。",
@@ -4597,7 +4597,7 @@
   },
   {
     "key": "hitchhikingvaccineenhancingbotnetremediationwithremotecodedeploymentreuse",
-    "id": 6800,
+    "id": 7132,
     "title": "Hitchhiking Vaccine: Enhancing Botnet Remediation With Remote Code Deployment Reuse",
     "paper": "https://www.ndss-symposium.org/ndss-paper/hitchhiking-vaccine-enhancing-botnet-remediation-with-remote-code-deployment-reuse/",
     "method": "提出劫持恶意软件自身更新机制分发定制修复载荷、以远程清除受感染僵尸网络终端的方法。",
@@ -4638,7 +4638,7 @@
   },
   {
     "key": "iknowwhatyouaskedpromptleakageviakvcachesharinginmultitenantllmserving",
-    "id": 6801,
+    "id": 7133,
     "title": "I Know What You Asked: Prompt Leakage via KV-Cache Sharing in Multi-Tenant LLM Serving",
     "paper": "https://www.ndss-symposium.org/ndss-paper/i-know-what-you-asked-prompt-leakage-via-kv-cache-sharing-in-multi-tenant-llm-serving/",
     "method": "首次研究多租户LLM服务框架中KV缓存共享机制引发的提示词泄露侧信道攻击PROMPTPEEK。",
@@ -4661,7 +4661,7 @@
   },
   {
     "key": "iknowwhatyoumemeunderstandinganddetectingharmfulmemeswithmultimodallargelanguagemodels",
-    "id": 6802,
+    "id": 7134,
     "title": "I know what you MEME! Understanding and Detecting Harmful Memes with Multimodal Large Language Models",
     "paper": "https://www.ndss-symposium.org/ndss-paper/i-know-what-you-meme-understanding-and-detecting-harmful-memes-with-multimodal-large-language-models/",
     "method": "提出结合自适应提示与思维链推理的多模态大语言模型有害表情包检测框架HMGUARD。",
@@ -4702,7 +4702,7 @@
   },
   {
     "key": "icsquartzscancycleawareandvendoragnosticfuzzingforindustrialcontrolsystems",
-    "id": 6803,
+    "id": 7135,
     "title": "ICSQuartz: Scan Cycle-Aware and Vendor-Agnostic Fuzzing for Industrial Control Systems",
     "paper": "https://www.ndss-symposium.org/ndss-paper/icsquartz-scan-cycle-aware-and-vendor-agnostic-fuzzing-for-industrial-control-systems/",
     "method": "提出首个面向IEC 61131-3结构化文本(ST)的原生工控系统模糊测试器，具备扫描周期感知能力。",
@@ -4734,7 +4734,7 @@
   },
   {
     "key": "impacttracingidentifyingtheculpritofmisinformationinencryptedmessagingsystems",
-    "id": 6804,
+    "id": 7136,
     "title": "Impact Tracing: Identifying the Culprit of Misinformation in Encrypted Messaging Systems",
     "paper": "https://www.ndss-symposium.org/ndss-paper/impact-tracing-identifying-the-culprit-of-misinformation-in-encrypted-messaging-systems/",
     "method": "提出兼顾追溯有效传播者与非关键用户隐私保护的“影响追溯(impact tracing)”新范式。",
@@ -4757,7 +4757,7 @@
   },
   {
     "key": "interventionalrootcauseanalysisoffailuresinmultisensorfusionperceptionsystems",
-    "id": 6805,
+    "id": 7137,
     "title": "Interventional Root Cause Analysis of Failures in Multi-Sensor Fusion Perception Systems",
     "paper": "https://www.ndss-symposium.org/ndss-paper/interventional-root-cause-analysis-of-failures-in-multi-sensor-fusion-perception-systems/",
     "method": "提出面向多传感器融合(MSF)感知系统故障的干预式根因分析方法IRCA，基于层级结构因果模型。",
@@ -4789,7 +4789,7 @@
   },
   {
     "key": "irisdynamicprivacypreservingsearchinauthenticatedchordpeertopeernetworks",
-    "id": 6806,
+    "id": 7138,
     "title": "Iris: Dynamic Privacy Preserving Search in Authenticated Chord Peer-to-Peer Networks",
     "paper": "https://www.ndss-symposium.org/ndss-paper/iris-dynamic-privacy-preserving-search-in-authenticated-chord-peer-to-peer-networks/",
     "method": "提出兼容现有Chord协议、可选择性启用的动态隐私保护查询方案，并给出新的隐私度量概念。",
@@ -4821,7 +4821,7 @@
   },
   {
     "key": "isolategptanexecutionisolationarchitectureforllmbasedagenticsystems",
-    "id": 6807,
+    "id": 7139,
     "title": "IsolateGPT: An Execution Isolation Architecture for LLM-Based Agentic Systems",
     "paper": "https://www.ndss-symposium.org/ndss-paper/isolategpt-an-execution-isolation-architecture-for-llm-based-agentic-systems/",
     "method": "提出面向LLM智能体系统的执行隔离架构IsolateGPT，将传统操作系统隔离思想引入LLM应用生态。",
@@ -4844,7 +4844,7 @@
   },
   {
     "key": "jbomauditassessingthelandscapecomplianceandsecurityimplicationsofjavasboms",
-    "id": 6808,
+    "id": 7140,
     "title": "JBomAudit: Assessing the Landscape, Compliance, and Security Implications of Java SBOMs",
     "paper": "https://www.ndss-symposium.org/ndss-paper/jbomaudit-assessing-the-landscape-compliance-and-security-implications-of-java-sboms/",
     "method": "首次对Java生态系统软件物料清单(SBOM)的完整性与准确性做系统性大规模评估。",
@@ -4876,7 +4876,7 @@
   },
   {
     "key": "kernelsnitchsidechannelattacksonkerneldatastructures",
-    "id": 6809,
+    "id": 7141,
     "title": "KernelSnitch: Side Channel-Attacks on Kernel Data Structures",
     "paper": "https://www.ndss-symposium.org/ndss-paper/kernelsnitch-side-channel-attacks-on-kernel-data-structures/",
     "method": "提出利用内核数据结构（哈希表/树）占用率导致访问耗时差异构造的新型软件侧信道攻击。",
@@ -4908,7 +4908,7 @@
   },
   {
     "key": "lhawkacontrollablephysicaladversarialpatchagainstalongdistancetarget",
-    "id": 6810,
+    "id": 7142,
     "title": "L-HAWK: A Controllable Physical Adversarial Patch Against a Long-Distance Target",
     "paper": "https://www.ndss-symposium.org/ndss-paper/l-hawk-a-controllable-physical-adversarial-patch-against-a-long-distance-target/",
     "method": "提出可由远程激光信号触发、仅对特定目标车辆生效的可控物理对抗补丁L-HAWK。",
@@ -4958,7 +4958,7 @@
   },
   {
     "key": "laddermultiobjectivebackdoorattackviaevolutionaryalgorithm",
-    "id": 6811,
+    "id": 7143,
     "title": "LADDER: Multi-Objective Backdoor Attack via Evolutionary Algorithm",
     "paper": "https://www.ndss-symposium.org/ndss-paper/ladder-multi-objective-backdoor-attack-via-evolutionary-algorithm/",
     "method": "提出基于多目标进化算法、同时兼顾空间域与频谱域多个攻击目标的黑盒后门攻击LADDER。",
@@ -5008,7 +5008,7 @@
   },
   {
     "key": "lamplightweightapproachesforlatencyminimizationinmixnetswithpracticaldeploymentconsiderations",
-    "id": 6812,
+    "id": 7144,
     "title": "LAMP: Lightweight Approaches for Latency Minimization in Mixnets with Practical Deployment Considerations",
     "paper": "https://www.ndss-symposium.org/ndss-paper/lamp-lightweight-approaches-for-latency-minimization-in-mixnets-with-practical-deployment-considerations/",
     "method": "提出面向实际部署、可轻量集成到现有混合网络的延迟最小化路由方案LAMP。",
@@ -5031,7 +5031,7 @@
   },
   {
     "key": "lendmeyourbeamprivacyimplicationsofplaintextbeamformingfeedbackinwifi",
-    "id": 6813,
+    "id": 7145,
     "title": "Lend Me Your Beam: Privacy Implications of Plaintext Beamforming Feedback in WiFi",
     "paper": "https://www.ndss-symposium.org/ndss-paper/lend-me-your-beam-privacy-implications-of-plaintext-beamforming-feedback-in-wifi/",
     "method": "提出利用WiFi波束成形反馈信息（BFI）明文传输特性实现占用检测的新型侧信道攻击LeakyBeam。",
@@ -5072,7 +5072,7 @@
   },
   {
     "key": "lightantennacharacterizingthelimitsoffluorescentlampinducedelectromagneticinterference",
-    "id": 6814,
+    "id": 7146,
     "title": "LightAntenna: Characterizing the Limits of Fluorescent Lamp-Induced Electromagnetic Interference",
     "paper": "https://www.ndss-symposium.org/ndss-paper/lightantenna-characterizing-the-limits-of-fluorescent-lamp-induced-electromagnetic-interference/",
     "method": "提出利用普通荧光灯作为隐蔽电磁干扰天线、对邻近物联网设备发起非接触式攻击的新型攻击面LightAntenna。",
@@ -5113,7 +5113,7 @@
   },
   {
     "key": "llmpiratellmsforblackboxhardwareippiracy",
-    "id": 6815,
+    "id": 7147,
     "title": "LLMPirate: LLMs for Black-box Hardware IP Piracy",
     "paper": "https://www.ndss-symposium.org/ndss-paper/llmpirate-llms-for-black-box-hardware-ip-piracy/",
     "method": "提出首个利用大语言模型自动生成能规避检测的硬件电路盗版变体的技术LLMPirate。",
@@ -5136,7 +5136,7 @@
   },
   {
     "key": "mingledpieaclusterminglingapproachformitigatingpreferenceprofilingincfl",
-    "id": 6816,
+    "id": 7148,
     "title": "MingledPie: A Cluster Mingling Approach for Mitigating Preference Profiling in CFL",
     "paper": "https://www.ndss-symposium.org/ndss-paper/mingledpie-a-cluster-mingling-approach-for-mitigating-preference-profiling-in-cfl/",
     "method": "提出通过跨簇混入伪装客户端来抵御聚类联邦学习中服务器偏好画像攻击的隐私增强框架MingledPie。",
@@ -5168,7 +5168,7 @@
   },
   {
     "key": "mysticetireachingthelatencylimitswithuncertifieddags",
-    "id": 6817,
+    "id": 7149,
     "title": "Mysticeti: Reaching the Latency Limits with Uncertified DAGs",
     "paper": "https://www.ndss-symposium.org/ndss-paper/mysticeti-reaching-the-latency-limits-with-uncertified-dags/",
     "method": "提出首个无需显式认证DAG区块、达到3轮消息延迟下界的基于DAG的拜占庭共识协议Mysticeti-C。",
@@ -5209,7 +5209,7 @@
   },
   {
     "key": "nodemedicfineautomaticdetectionandexploitsynthesisfornodejsvulnerabilities",
-    "id": 6818,
+    "id": 7150,
     "title": "NodeMedic-FINE: Automatic Detection and Exploit Synthesis for Node.js Vulnerabilities",
     "paper": "https://www.ndss-symposium.org/ndss-paper/nodemedic-fine-automatic-detection-and-exploit-synthesis-for-node-js-vulnerabilities/",
     "method": "提出结合类型/对象结构感知模糊测试与动态污点分析的Node.js漏洞检测与漏洞利用自动合成技术NodeMedic-FINE。",
@@ -5250,7 +5250,7 @@
   },
   {
     "key": "nonintrusiveandunconstrainedkeystrokeinferenceinvrplatformsviainfraredsidechannel",
-    "id": 6819,
+    "id": 7151,
     "title": "Non-intrusive and Unconstrained Keystroke Inference in VR Platforms via Infrared Side Channel",
     "paper": "https://www.ndss-symposium.org/ndss-paper/non-intrusive-and-unconstrained-keystroke-inference-in-vr-platforms-via-infrared-side-channel/",
     "method": "提出利用VR控制器红外信号侧信道推断虚拟键盘按键内容的新型攻击VRecKey。",
@@ -5282,7 +5282,7 @@
   },
   {
     "key": "onborrowedtimepreventingstaticsidechannelanalysis",
-    "id": 6820,
+    "id": 7152,
     "title": "On Borrowed Time – Preventing Static Side-Channel Analysis",
     "paper": "https://www.ndss-symposium.org/ndss-paper/on-borrowed-time-preventing-static-side-channel-analysis/",
     "method": "提出通过限制敏感数据在未保护临时存储中驻留时间来抵御静态侧信道攻击的新型防护机制Borrowed Time。",
@@ -5314,7 +5314,7 @@
   },
   {
     "key": "ontherobustnessofldpprotocolsfornumericalattributesunderdatapoisoningattacks",
-    "id": 6821,
+    "id": 7153,
     "title": "On the Robustness of LDP Protocols for Numerical Attributes under Data Poisoning Attacks",
     "paper": "https://www.ndss-symposium.org/ndss-paper/on-the-robustness-of-ldp-protocols-for-numerical-attributes-under-data-poisoning-attacks/",
     "method": "提出面向数值属性本地差分隐私协议的攻击驱动系统性鲁棒性评估框架及跨协议攻击增益度量指标。",
@@ -5346,7 +5346,7 @@
   },
   {
     "key": "onionfrankingabusereportsformixbasedprivatemessaging",
-    "id": 6822,
+    "id": 7154,
     "title": "Onion Franking: Abuse Reports for Mix-Based Private Messaging",
     "paper": "https://www.ndss-symposium.org/ndss-paper/onion-franking-abuse-reports-for-mix-based-private-messaging/",
     "method": "提出适用于任意基于洋葱加密的隐私消息系统的滥用举报机制。",
@@ -5369,7 +5369,7 @@
   },
   {
     "key": "oreoprotectingaslragainstmicroarchitecturalattacks",
-    "id": 6823,
+    "id": 7155,
     "title": "Oreo: Protecting ASLR Against Microarchitectural Attacks",
     "paper": "https://www.ndss-symposium.org/ndss-paper/oreo-protecting-aslr-against-microarchitectural-attacks/",
     "method": "提出软硬件协同设计的ASLR防护机制Oreo以抵御微架构侧信道攻击。",
@@ -5401,7 +5401,7 @@
   },
   {
     "key": "pbpposttrainingbackdoorpurificationformalwareclassifiers",
-    "id": 6824,
+    "id": 7156,
     "title": "PBP: Post-training Backdoor Purification for Malware Classifiers",
     "paper": "https://www.ndss-symposium.org/ndss-paper/pbp-post-training-backdoor-purification-for-malware-classifiers/",
     "method": "提出无需假设具体触发器嵌入机制、通过调节批归一化层统计量净化恶意软件分类器后门的训练后防御方法PBP。",
@@ -5433,7 +5433,7 @@
   },
   {
     "key": "policypulseprecisionsemanticroleextractionforenhancedprivacypolicycomprehension",
-    "id": 6825,
+    "id": 7157,
     "title": "PolicyPulse: Precision Semantic Role Extraction for Enhanced Privacy Policy Comprehension",
     "paper": "https://www.ndss-symposium.org/ndss-paper/policypulse-precision-semantic-role-extraction-for-enhanced-privacy-policy-comprehension/",
     "method": "提出面向隐私政策文本的语义角色抽取信息提取流水线PolicyPulse。",
@@ -5465,7 +5465,7 @@
   },
   {
     "key": "powerrelatedsidechannelattacksusingtheandroidsensorframework",
-    "id": 6826,
+    "id": 7158,
     "title": "Power-Related Side-Channel Attacks using the Android Sensor Framework",
     "paper": "https://www.ndss-symposium.org/ndss-paper/power-related-side-channel-attacks-using-the-android-sensor-framework/",
     "method": "提出利用安卓无特权传感器框架中暴露的功耗相关寄生信号实施功耗侧信道攻击的新方法。",
@@ -5497,7 +5497,7 @@
   },
   {
     "key": "pqconnectautomatedpostquantumendtoendtunnels",
-    "id": 6827,
+    "id": 7159,
     "title": "PQConnect: Automated Post-Quantum End-to-End Tunnels",
     "paper": "https://www.ndss-symposium.org/ndss-paper/pqconnect-automated-post-quantum-end-to-end-tunnels/",
     "method": "提出可自动为客户端与服务器建立端到端隧道的后量子安全隧道协议PQConnect。",
@@ -5547,7 +5547,7 @@
   },
   {
     "key": "privacypreservingdatadeduplicationforenhancingfederatedlearningoflanguagemodels",
-    "id": 6828,
+    "id": 7160,
     "title": "Privacy-Preserving Data Deduplication for Enhancing Federated Learning of Language Models",
     "paper": "https://www.ndss-symposium.org/ndss-paper/privacy-preserving-data-deduplication-for-enhancing-federated-learning-of-language-models/",
     "method": "提出面向联邦学习的高效隐私保护多方去重协议EP-MPD。",
@@ -5579,7 +5579,7 @@
   },
   {
     "key": "probemenotprotectingpretrainedencodersfrommaliciousprobing",
-    "id": 6829,
+    "id": 7161,
     "title": "Probe-Me-Not: Protecting Pre-trained Encoders from Malicious Probing",
     "paper": "https://www.ndss-symposium.org/ndss-paper/probe-me-not-protecting-pre-trained-encoders-from-malicious-probing/",
     "method": "提出限制预训练编码器在禁止领域上的探测（probing）性能、同时保持授权领域可用性的应用范围授权保护方法EncoderLock。",
@@ -5611,7 +5611,7 @@
   },
   {
     "key": "propertygptllmdrivenformalverificationofsmartcontractsthroughretrievalaugmentedpropertygeneration",
-    "id": 6830,
+    "id": 7162,
     "title": "PropertyGPT: LLM-driven Formal Verification of Smart Contracts through Retrieval-Augmented Property Generation",
     "paper": "https://www.ndss-symposium.org/ndss-paper/propertygpt-llm-driven-formal-verification-of-smart-contracts-through-retrieval-augmented-property-generation/",
     "method": "提出基于大语言模型与检索增强生成技术自动为智能合约生成形式化验证属性的方法PropertyGPT。",
@@ -5661,7 +5661,7 @@
   },
   {
     "key": "provablyunlearnabledataexamples",
-    "id": 6831,
+    "id": 7163,
     "title": "Provably Unlearnable Data Examples",
     "paper": "https://www.ndss-symposium.org/ndss-paper/provably-unlearnable-data-examples/",
     "method": "提出可对不可学习样本（Unlearnable Examples）不可学习性进行形式化认证的机制及相应构造方法PUE。",
@@ -5693,7 +5693,7 @@
   },
   {
     "key": "provguarddetectingsdncontrolpolicymanipulationviacontextualsemanticsofprovenancegraphs",
-    "id": 6832,
+    "id": 7164,
     "title": "ProvGuard: Detecting SDN Control Policy Manipulation via Contextual Semantics of Provenance Graphs",
     "paper": "https://www.ndss-symposium.org/ndss-paper/provguard-detecting-sdn-control-policy-manipulation-via-contextual-semantics-of-provenance-graphs/",
     "method": "提出基于溯源图上下文语义检测软件定义网络控制策略篡改（CPM）攻击的检测框架ProvGuard。",
@@ -5743,7 +5743,7 @@
   },
   {
     "key": "qmsanefficientlydetectinguninitializedmemoryerrorsduringfuzzing",
-    "id": 6833,
+    "id": 7165,
     "title": "QMSan: Efficiently Detecting Uninitialized Memory Errors During Fuzzing",
     "paper": "https://www.ndss-symposium.org/ndss-paper/qmsan-efficiently-detecting-uninitialized-memory-errors-during-fuzzing/",
     "method": "提出无需对全部代码完整插桩、多层机会式设计的未初始化内存使用（UUM）检测器QMSan。",
@@ -5784,7 +5784,7 @@
   },
   {
     "key": "raiflereconstructionattacksoninteractionbasedfederatedlearningwithadversarialdatamanipulation",
-    "id": 6834,
+    "id": 7166,
     "title": "RAIFLE: Reconstruction Attacks on Interaction-based Federated Learning with Adversarial Data Manipulation",
     "paper": "https://www.ndss-symposium.org/ndss-paper/raifle-reconstruction-attacks-on-interaction-based-federated-learning-with-adversarial-data-manipulation/",
     "method": "提出面向交互式联邦学习（联邦推荐、在线学习排序等）、通过服务器主动操纵物品特征增强重建成功率的优化攻击框架RAIFLE。",
@@ -5816,7 +5816,7 @@
   },
   {
     "key": "rcontainerasecurecontainerarchitecturethroughextendingarmccahardwareprimitives",
-    "id": 6835,
+    "id": 7167,
     "title": "RContainer: A Secure Container Architecture through Extending ARM CCA Hardware Primitives",
     "paper": "https://www.ndss-symposium.org/ndss-paper/rcontainer-a-secure-container-architecture-through-extending-arm-cca-hardware-primitives/",
     "method": "提出通过扩展ARM机密计算架构（CCA）硬件原语实现的安全容器架构RContainer。",
@@ -5848,7 +5848,7 @@
   },
   {
     "key": "recurrentprivatesetintersectionforunbalanceddatabaseswithcuckoohashingandleveledfhe",
-    "id": 6836,
+    "id": 7168,
     "title": "Recurrent Private Set Intersection for Unbalanced Databases with Cuckoo Hashing and Leveled FHE",
     "paper": "https://www.ndss-symposium.org/ndss-paper/recurrent-private-set-intersection-for-unbalanced-databases-with-cuckoo-hashing-and-leveled-fhe/",
     "method": "提出面向多次重复执行、集合规模不均衡场景优化的隐私集合求交（PSI）协议。",
@@ -5889,7 +5889,7 @@
   },
   {
     "key": "rediscoveringmethodconfusioninproposedsecurityfixesforbluetooth",
-    "id": 6837,
+    "id": 7169,
     "title": "Rediscovering Method Confusion in Proposed Security Fixes for Bluetooth",
     "paper": "https://www.ndss-symposium.org/ndss-paper/rediscovering-method-confusion-in-proposed-security-fixes-for-bluetooth/",
     "method": "提出扩展的蓝牙方法混淆（Method Confusion）威胁模型及相应新型安全修复方案。",
@@ -5939,7 +5939,7 @@
   },
   {
     "key": "repurposingneuralnetworksforefficientcryptographiccomputation",
-    "id": 6838,
+    "id": 7170,
     "title": "Repurposing Neural Networks for Efficient Cryptographic Computation",
     "paper": "https://www.ndss-symposium.org/ndss-paper/repurposing-neural-networks-for-efficient-cryptographic-computation/",
     "method": "提出将神经网络模型改造为密码学计算加速器的新颖应用范式。",
@@ -5962,7 +5962,7 @@
   },
   {
     "key": "rethinkingtrustinforgebasedgitsecurity",
-    "id": 6839,
+    "id": 7171,
     "title": "Rethinking Trust in Forge-Based Git Security",
     "paper": "https://www.ndss-symposium.org/ndss-paper/rethinking-trust-in-forge-based-git-security/",
     "method": "提出去中心化Git安全系统gittuf，将仓库安全责任从单一代码托管平台（forge）分散给所有用户。",
@@ -6012,7 +6012,7 @@
   },
   {
     "key": "retrofittingxomforstrippedbinarieswithoutembeddeddatarelocation",
-    "id": 6840,
+    "id": 7172,
     "title": "Retrofitting XoM for Stripped Binaries without Embedded Data Relocation",
     "paper": "https://www.ndss-symposium.org/ndss-paper/retrofitting-xom-for-stripped-binaries-without-embedded-data-relocation/",
     "method": "提出无需嵌入式数据重定位、可为剥离符号二进制文件改造执行专用内存（XoM）保护的细粒度技术PXoM。",
@@ -6044,7 +6044,7 @@
   },
   {
     "key": "revealingtheblackboxofdevicesearchenginescanningassetsstrategiesandethicalconsideration",
-    "id": 6841,
+    "id": 7173,
     "title": "Revealing the Black Box of Device Search Engine: Scanning Assets, Strategies, and Ethical Consideration",
     "paper": "https://www.ndss-symposium.org/ndss-paper/revealing-the-black-box-of-device-search-engine-scanning-assets-strategies-and-ethical-consideration/",
     "method": "提出首个针对设备搜索引擎（如Censys、Shodan）扫描行为与伦理规范的系统性实证分析框架。",
@@ -6087,7 +6087,7 @@
   },
   {
     "key": "revisitingconceptdriftinwindowsmalwaredetectionadaptationtorealdriftedmalwarewithminimalsamples",
-    "id": 6842,
+    "id": 7174,
     "title": "Revisiting Concept Drift in Windows Malware Detection: Adaptation to Real Drifted Malware with Minimal Samples",
     "paper": "https://www.ndss-symposium.org/ndss-paper/revisiting-concept-drift-in-windows-malware-detection-adaptation-to-real-drifted-malware-with-minimal-samples/",
     "method": "提出基于图神经网络与对抗域适应学习漂移不变特征的恶意软件概念漂移检测与分类新方法。",
@@ -6119,7 +6119,7 @@
   },
   {
     "key": "ringofgygesaccountableanonymousbroadcastviasecretsharedshuffle",
-    "id": 6843,
+    "id": 7175,
     "title": "Ring of Gyges: Accountable Anonymous Broadcast via Secret-Shared Shuffle",
     "paper": "https://www.ndss-symposium.org/ndss-paper/ring-of-gyges-accountable-anonymous-broadcast-via-secret-shared-shuffle/",
     "method": "提出兼顾匿名性与可追责性、基于秘密分享混洗的多方计算匿名广播系统Gyges。",
@@ -6169,7 +6169,7 @@
   },
   {
     "key": "safesplitanoveldefenseagainstclientsidebackdoorattacksinsplitlearning",
-    "id": 6844,
+    "id": 7176,
     "title": "SafeSplit: A Novel Defense Against Client-Side Backdoor Attacks in Split Learning",
     "paper": "https://www.ndss-symposium.org/ndss-paper/safesplit-a-novel-defense-against-client-side-backdoor-attacks-in-split-learning/",
     "method": "提出首个针对拆分学习（Split Learning）客户端后门攻击的防御方法SafeSplit。",
@@ -6210,7 +6210,7 @@
   },
   {
     "key": "safetymisalignmentagainstlargelanguagemodels",
-    "id": 6845,
+    "id": 7177,
     "title": "Safety Misalignment Against Large Language Models",
     "paper": "https://www.ndss-symposium.org/ndss-paper/safety-misalignment-against-large-language-models/",
     "method": "提出针对大语言模型安全对齐鲁棒性的首个统一评测框架，并提出新型自监督表示攻击（SSRA）与对应防御（SSRD）。",
@@ -6251,7 +6251,7 @@
   },
   {
     "key": "scalemiaascalablemodelinversionattackagainstsecurefederatedlearningvialatentspacereconstruction",
-    "id": 6846,
+    "id": 7178,
     "title": "Scale-MIA: A Scalable Model Inversion Attack against Secure Federated Learning via Latent Space Reconstruction",
     "paper": "https://www.ndss-symposium.org/ndss-paper/scale-mia-a-scalable-model-inversion-attack-against-secure-federated-learning-via-latent-space-reconstruction/",
     "method": "提出可在安全聚合协议保护下高效精确重建用户本地训练样本的可扩展模型逆向攻击Scale-MIA。",
@@ -6283,7 +6283,7 @@
   },
   {
     "key": "scammagnifierpiercingtheveiloffraudulentshoppingwebsitecampaigns",
-    "id": 6847,
+    "id": 7179,
     "title": "SCAMMAGNIFIER: Piercing the Veil of Fraudulent Shopping Website Campaigns",
     "paper": "https://www.ndss-symposium.org/ndss-paper/scammagnifier-piercing-the-veil-of-fraudulent-shopping-website-campaigns/",
     "method": "提出大规模检测与分析欺诈性购物网站的框架ScamMagnifier。",
@@ -6333,7 +6333,7 @@
   },
   {
     "key": "scopeverifanalyzingthesecurityofandroidsscopedstorageviadifferentialanalysis",
-    "id": 6848,
+    "id": 7180,
     "title": "ScopeVerif: Analyzing the Security of Android’s Scoped Storage via Differential Analysis",
     "paper": "https://www.ndss-symposium.org/ndss-paper/scopeverif-analyzing-the-security-of-androids-scoped-storage-via-differential-analysis/",
     "method": "提出首个针对安卓Scoped Storage机制的系统性安全分析工具ScopeVerif。",
@@ -6374,7 +6374,7 @@
   },
   {
     "key": "securedataanalyticsinapachesparkwithfinegrainedpolicyenforcementandisolatedexecution",
-    "id": 6849,
+    "id": 7181,
     "title": "Secure Data Analytics in Apache Spark with Fine-grained Policy Enforcement and Isolated Execution",
     "paper": "https://www.ndss-symposium.org/ndss-paper/secure-data-analytics-in-apache-spark-with-fine-grained-policy-enforcement-and-isolated-execution/",
     "method": "提出面向Apache Spark的细粒度策略强制与隔离执行安全数据分析框架Laputa。",
@@ -6406,7 +6406,7 @@
   },
   {
     "key": "securingbgpasapaspaandotherpostrovdefenses",
-    "id": 6850,
+    "id": 7182,
     "title": "Securing BGP ASAP: ASPA and other Post-ROV Defenses",
     "paper": "https://www.ndss-symposium.org/ndss-paper/securing-bgp-asap-aspa-and-other-post-rov-defenses/",
     "method": "提出针对ROV普及后新型post-ROV攻击（如伪造源劫持、新型spoofing攻击）的系统性评估，并验证ASPA及其扩展ASPAwN的防护效果。",
@@ -6447,7 +6447,7 @@
   },
   {
     "key": "shaftsecurehandyaccurateandfasttransformerinference",
-    "id": 6851,
+    "id": 7183,
     "title": "SHAFT: Secure, Handy, Accurate and Fast Transformer Inference",
     "paper": "https://www.ndss-symposium.org/ndss-paper/shaft-secure-handy-accurate-and-fast-transformer-inference/",
     "method": "提出面向Transformer模型的安全、精确且高效的隐私保护推理框架SHAFT。",
@@ -6479,7 +6479,7 @@
   },
   {
     "key": "sheepsclothingwolfsdatadetectingserverinducedclientvulnerabilitiesinwindowsremoteipc",
-    "id": 6852,
+    "id": 7184,
     "title": "Sheep's Clothing, Wolf's Data: Detecting Server-Induced Client Vulnerabilities in Windows Remote IPC",
     "paper": "https://www.ndss-symposium.org/ndss-paper/sheeps-clothing-wolfs-data-detecting-server-induced-client-vulnerabilities-in-windows-remote-ipc/",
     "method": "提出首个针对Windows远程IPC客户端的漏洞检测工具GLEIPNIR。",
@@ -6511,7 +6511,7 @@
   },
   {
     "key": "siguardguardingsecureinferencewithpostdataprivacy",
-    "id": 6853,
+    "id": 7185,
     "title": "SIGuard: Guarding Secure Inference with Post Data Privacy",
     "paper": "https://www.ndss-symposium.org/ndss-paper/siguard-guarding-secure-inference-with-post-data-privacy/",
     "method": "提出在不侵入现有安全多方计算推理协议计算过程的前提下、防止预测输出被成员推断攻击利用的输出隐私保护框架SIGuard。",
@@ -6534,7 +6534,7 @@
   },
   {
     "key": "sinieldistributedprivacypreservingzksnark",
-    "id": 6854,
+    "id": 7186,
     "title": "Siniel: Distributed Privacy-Preserving zkSNARK",
     "paper": "https://www.ndss-symposium.org/ndss-paper/siniel-distributed-privacy-preserving-zksnark/",
     "method": "提出可将zkSNARK证明生成完全外包给多个worker、且delegator无需持续参与MPC的私有委托框架。",
@@ -6566,7 +6566,7 @@
   },
   {
     "key": "sketchfeaturehighqualityperflowfeatureextractortowardssecurityawaredataplane",
-    "id": 6855,
+    "id": 7187,
     "title": "SketchFeature: High-Quality Per-Flow Feature Extractor Towards Security-Aware Data Plane",
     "paper": "https://www.ndss-symposium.org/ndss-paper/sketchfeature-high-quality-per-flow-feature-extractor-towards-security-aware-data-plane/",
     "method": "提出首个可完全部署在数据面的基于sketch的三阶（3rd-order）特征提取器，从根源消除现有提取器的可规避攻击面。",
@@ -6589,7 +6589,7 @@
   },
   {
     "key": "skillpovtowardsaccessibleandeffectiveprivacynoticeforamazonalexaskills",
-    "id": 6856,
+    "id": 7188,
     "title": "SKILLPoV: Towards Accessible and Effective Privacy Notice for Amazon Alexa Skills",
     "paper": "https://www.ndss-symposium.org/ndss-paper/skillpov-towards-accessible-and-effective-privacy-notice-for-amazon-alexa-skills/",
     "method": "提出「语音隐私通知」（Privacy Notice over Voice）理念，并实现自动生成工具SKILLPoV。",
@@ -6639,7 +6639,7 @@
   },
   {
     "key": "songbsabadualpreventionapproachagainstsingingvoiceconversionbasedillegalsongcovers",
-    "id": 6857,
+    "id": 7189,
     "title": "SongBsAb: A Dual Prevention Approach against Singing Voice Conversion based Illegal Song Covers",
     "paper": "https://www.ndss-symposium.org/ndss-paper/songbsab-a-dual-prevention-approach-against-singing-voice-conversion-based-illegal-song-covers/",
     "method": "提出首个针对歌声转换（SVC）非法翻唱的主动式双重防护方法SongBsAb。",
@@ -6689,7 +6689,7 @@
   },
   {
     "key": "spatialdomainwirelessjammingwithreconfigurableintelligentsurfaces",
-    "id": 6858,
+    "id": 7190,
     "title": "Spatial-Domain Wireless Jamming with Reconfigurable Intelligent Surfaces",
     "paper": "https://www.ndss-symposium.org/ndss-paper/spatial-domain-wireless-jamming-with-reconfigurable-intelligent-surfaces/",
     "method": "首次利用可重构智能表面（RIS）实现空间域可精准定位目标的无线干扰攻击。",
@@ -6712,7 +6712,7 @@
   },
   {
     "key": "speakupimlisteningextractingspeechfromzeropermissionvrsensors",
-    "id": 6859,
+    "id": 7191,
     "title": "Speak Up, I’m Listening: Extracting Speech from Zero-Permission VR Sensors",
     "paper": "https://www.ndss-symposium.org/ndss-paper/speak-up-im-listening-extracting-speech-from-zero-permission-vr-sensors/",
     "method": "提出首个利用VR设备运动传感器窃取扬声器语音内容的声学侧信道攻击IMMERSPY。",
@@ -6762,7 +6762,7 @@
   },
   {
     "key": "starshieldsforiosnavigatingthesecuritycosmosinsatellitecommunication",
-    "id": 6860,
+    "id": 7192,
     "title": "Starshields for iOS: Navigating the Security Cosmos in Satellite Communication",
     "paper": "https://www.ndss-symposium.org/ndss-paper/starshields-for-ios-navigating-the-security-cosmos-in-satellite-communication/",
     "method": "首次逆向工程Apple专有卫星通信协议并系统分析其安全与隐私性质。",
@@ -6803,7 +6803,7 @@
   },
   {
     "key": "staticallydiscovercrossentryuseafterfreevulnerabilitiesinthelinuxkernel",
-    "id": 6861,
+    "id": 7193,
     "title": "Statically Discover Cross-Entry Use-After-Free Vulnerabilities in the Linux Kernel",
     "paper": "https://www.ndss-symposium.org/ndss-paper/statically-discover-cross-entry-use-after-free-vulnerabilities-in-the-linux-kernel/",
     "method": "提出可在Linux内核规模上准确检测跨入口（cross-entry）UAF漏洞的静态分析工具UAFX。",
@@ -6835,7 +6835,7 @@
   },
   {
     "key": "thediscriminativepowerofcrosslayerrttsinfingerprintingproxytraffic",
-    "id": 6862,
+    "id": 7194,
     "title": "The Discriminative Power of Cross-layer RTTs in Fingerprinting Proxy Traffic",
     "paper": "https://www.ndss-symposium.org/ndss-paper/the-discriminative-power-of-cross-layer-rtts-in-fingerprinting-proxy-traffic/",
     "method": "发现一种基于跨层往返时延（RTT）错位、协议无关的混淆代理流量指纹识别方法。",
@@ -6867,7 +6867,7 @@
   },
   {
     "key": "theforkingwaywhenteesmeetconsensus",
-    "id": 6863,
+    "id": 7195,
     "title": "The Forking Way: When TEEs Meet Consensus",
     "paper": "https://www.ndss-symposium.org/ndss-paper/the-forking-way-when-tees-meet-consensus/",
     "method": "系统化梳理TEE与区块链共识结合的方式，并揭示多个生产级平台存在未公开的分叉攻击。",
@@ -6899,7 +6899,7 @@
   },
   {
     "key": "theguardiansofnamestreetstudyingthedefensiveregistrationpracticesofthefortune500",
-    "id": 6864,
+    "id": 7196,
     "title": "The Guardians of Name Street: Studying the Defensive Registration Practices of the Fortune 500",
     "paper": "https://www.ndss-symposium.org/ndss-paper/the-guardians-of-name-street-studying-the-defensive-registration-practices-of-the-fortune-500/",
     "method": "对财富500强企业防御性域名注册行为及其生态开展大规模实证研究。",
@@ -6940,7 +6940,7 @@
   },
   {
     "key": "thekidsareallrightinvestigatingthesusceptibilityofteensandadultstoyoutubegiveawayscams",
-    "id": 6865,
+    "id": 7197,
     "title": "The Kids Are All Right: Investigating the Susceptibility of Teens and Adults to YouTube Giveaway Scams",
     "paper": "https://www.ndss-symposium.org/ndss-paper/the-kids-are-all-right-investigating-the-susceptibility-of-teens-and-adults-to-youtube-giveaway-scams/",
     "method": "首个比较青少年与成人对YouTube赠品诈骗易感性差异的人类被试研究。",
@@ -6963,7 +6963,7 @@
   },
   {
     "key": "theroadtotrustbuildingenclaveswithinconfidentialvms",
-    "id": 6866,
+    "id": 7198,
     "title": "The Road to Trust: Building Enclaves within Confidential VMs",
     "paper": "https://www.ndss-symposium.org/ndss-paper/the-road-to-trust-building-enclaves-within-confidential-vms/",
     "method": "提出在机密虚拟机（CVM）内部构建硬件飞地的框架NestedSGX，防止被攻陷的guest OS篡改TEE内应用。",
@@ -7004,7 +7004,7 @@
   },
   {
     "key": "tmeboxscalableinprocessisolationthroughinteltmemkmemoryencryption",
-    "id": 6867,
+    "id": 7199,
     "title": "TME-Box: Scalable In-Process Isolation through Intel TME-MK Memory Encryption",
     "paper": "https://www.ndss-symposium.org/ndss-paper/tme-box-scalable-in-process-isolation-through-intel-tme-mk-memory-encryption/",
     "method": "提出复用Intel TME-MK内存加密特性实现细粒度、可扩展进程内隔离的新技术TME-Box。",
@@ -7045,7 +7045,7 @@
   },
   {
     "key": "towardsunderstandingunsafevideogeneration",
-    "id": 6868,
+    "id": 7200,
     "title": "Towards Understanding Unsafe Video Generation",
     "paper": "https://www.ndss-symposium.org/ndss-paper/towards-understanding-unsafe-video-generation/",
     "method": "首次系统研究视频生成模型（VGM）产生不安全内容的风险，并提出作用于模型内部采样过程的新防御方法。",
@@ -7095,7 +7095,7 @@
   },
   {
     "key": "translatingctorustlessonsfromauserstudy",
-    "id": 6869,
+    "id": 7201,
     "title": "Translating C To Rust: Lessons from a User Study",
     "paper": "https://www.ndss-symposium.org/ndss-paper/translating-c-to-rust-lessons-from-a-user-study/",
     "method": "首个针对人工将C代码翻译为Rust的用户研究，用以对比自动化翻译工具的表现与策略。",
@@ -7127,7 +7127,7 @@
   },
   {
     "key": "trumanconstructingdevicebehaviormodelsfromosdriverstofuzzvirtualdevices",
-    "id": 6870,
+    "id": 7202,
     "title": "Truman: Constructing Device Behavior Models from OS Drivers to Fuzz Virtual Devices",
     "paper": "https://www.ndss-symposium.org/ndss-paper/truman-constructing-device-behavior-models-from-os-drivers-to-fuzz-virtual-devices/",
     "method": "提出首个从开源OS驱动自动推断依赖关系以构建设备行为模型、指导虚拟设备模糊测试的通用引擎Truman。",
@@ -7168,7 +7168,7 @@
   },
   {
     "key": "trytopoisonmydeeplearningdatanowheretohideyourtrajectoryspectrum",
-    "id": 6871,
+    "id": 7203,
     "title": "Try to Poison My Deep Learning Data? Nowhere to Hide Your Trajectory Spectrum!",
     "paper": "https://www.ndss-symposium.org/ndss-paper/try-to-poison-my-deep-learning-data-nowhere-to-hide-your-trajectory-spectrum/",
     "method": "首次从频谱域研究中毒样本的训练轨迹特征，提出无需干净数据、通用性更强的后门样本检测方法TellTale。",
@@ -7200,7 +7200,7 @@
   },
   {
     "key": "twinfuzzdifferentialtestingofvideohardwareaccelerationstacks",
-    "id": 6872,
+    "id": 7204,
     "title": "TWINFUZZ: Differential Testing of Video Hardware Acceleration Stacks",
     "paper": "https://www.ndss-symposium.org/ndss-paper/twinfuzz-differential-testing-of-video-hardware-acceleration-stacks/",
     "method": "提出以白盒软件实现为间接代理，对不可观测的黑盒硬件加速视频解码栈进行差分模糊测试的方法TWINFUZZ。",
@@ -7232,7 +7232,7 @@
   },
   {
     "key": "tzdatashieldautomateddataprotectionforembeddedsystemsviadataflowbasedcompartmentalization",
-    "id": 6873,
+    "id": 7205,
     "title": "TZ-DATASHIELD: Automated Data Protection for Embedded Systems via Data-Flow-Based Compartmentalization",
     "paper": "https://www.ndss-symposium.org/ndss-paper/tz-datashield-automated-data-protection-for-embedded-systems-via-data-flow-based-compartmentalization/",
     "method": "提出基于敏感数据流（SDF）的细粒度区块化编译工具TZ-DATASHIELD，增强ARM TrustZone对强攻击者的防护。",
@@ -7273,7 +7273,7 @@
   },
   {
     "key": "uictxunderstandinguibehaviorswithcodecontextsformobileapplications",
-    "id": 6874,
+    "id": 7206,
     "title": "UI-CTX: Understanding UI Behaviors with Code Contexts for Mobile Applications",
     "paper": "https://www.ndss-symposium.org/ndss-paper/ui-ctx-understanding-ui-behaviors-with-code-contexts-for-mobile-applications/",
     "method": "提出融合代码上下文的UI控件行为表示方法UI-CTX，用于刻画控件的真实意图。",
@@ -7305,7 +7305,7 @@
   },
   {
     "key": "uncoveringtheicebergfromthetipgeneratingapispecificationsforbugdetectionviaspecificationpropagationanalysis",
-    "id": 6875,
+    "id": 7207,
     "title": "Uncovering the iceberg from the tip: Generating API Specifications for Bug Detection via Specification Propagation Analysis",
     "paper": "https://www.ndss-symposium.org/ndss-paper/uncovering-the-iceberg-from-the-tip-generating-api-specifications-for-bug-detection-via-specification-propagation-analysis/",
     "method": "提出「API规范传播」新思路及配套工具APISpecGen，沿层级化API调用链自动生成新的API使用规范。",
@@ -7355,7 +7355,7 @@
   },
   {
     "key": "unleashingthepowerofgenerativemodelinrecoveringvariablenamesfromstrippedbinary",
-    "id": 6876,
+    "id": 7208,
     "title": "Unleashing the Power of Generative Model in Recovering Variable Names from Stripped Binary",
     "paper": "https://www.ndss-symposium.org/ndss-paper/unleashing-the-power-of-generative-model-in-recovering-variable-names-from-stripped-binary/",
     "method": "提出结合生成式大模型能力并主动缓解其偏差的反编译变量名恢复新技术GenNm。",
@@ -7396,7 +7396,7 @@
   },
   {
     "key": "urvflundetectabledatareconstructionattackonverticalfederatedlearning",
-    "id": 6877,
+    "id": 7209,
     "title": "URVFL: Undetectable Data Reconstruction Attack on Vertical Federated Learning",
     "paper": "https://www.ndss-symposium.org/ndss-paper/urvfl-undetectable-data-reconstruction-attack-on-vertical-federated-learning/",
     "method": "提出首个可规避现有梯度比对检测机制的纵向联邦学习（VFL）恶意数据重构攻击URVFL。",
@@ -7428,7 +7428,7 @@
   },
   {
     "key": "voiceradarvoicedeepfakedetectionusingmicrofrequencyandcompositionalanalysis",
-    "id": 6878,
+    "id": 7210,
     "title": "VoiceRadar: Voice Deepfake Detection using Micro-Frequency and Compositional Analysis",
     "paper": "https://www.ndss-symposium.org/ndss-paper/voiceradar-voice-deepfake-detection-using-micro-frequency-and-compositional-analysis/",
     "method": "提出将物理模型与机器学习结合的语音深度伪造检测新方法VoiceRadar。",
@@ -7478,7 +7478,7 @@
   },
   {
     "key": "vulnerabilitywhereartthouaninvestigationofvulnerabilitymanagementinandroidsmartphonechipsets",
-    "id": 6879,
+    "id": 7211,
     "title": "Vulnerability, Where Art Thou? An Investigation of Vulnerability Management in Android Smartphone Chipsets",
     "paper": "https://www.ndss-symposium.org/ndss-paper/vulnerability-where-art-thou-an-investigation-of-vulnerability-management-in-android-smartphone-chipsets/",
     "method": "首次对Android智能手机芯片组漏洞的全生命周期管理开展系统实证研究。",
@@ -7519,7 +7519,7 @@
   },
   {
     "key": "vulshieldprotectingvulnerablecodebeforedeployingpatches",
-    "id": 6880,
+    "id": 7212,
     "title": "VulShield: Protecting Vulnerable Code Before Deploying Patches",
     "paper": "https://www.ndss-symposium.org/ndss-paper/vulshield-protecting-vulnerable-code-before-deploying-patches/",
     "method": "提出无需修改目标代码、不依赖新系统特性的自动化临时漏洞防护系统VulShield。",
@@ -7551,7 +7551,7 @@
   },
   {
     "key": "wasthisyouinvestigatingthedesignconsiderationsforsuspiciousloginnotifications",
-    "id": 6881,
+    "id": 7213,
     "title": "Was This You? Investigating the Design Considerations for Suspicious Login Notifications",
     "paper": "https://www.ndss-symposium.org/ndss-paper/was-this-you-investigating-the-design-considerations-for-suspicious-login-notifications/",
     "method": "首次系统研究可疑登录通知的设计要素对用户理解与参与度的影响。",
@@ -7583,7 +7583,7 @@
   },
   {
     "key": "whatsdoneisnotwhatsclaimeddetectingandinterpretinginconsistenciesinappbehaviors",
-    "id": 6882,
+    "id": 7214,
     "title": "What’s Done Is Not What’s Claimed: Detecting and Interpreting Inconsistencies in App Behaviors",
     "paper": "https://www.ndss-symposium.org/ndss-paper/whats-done-is-not-whats-claimed-detecting-and-interpreting-inconsistencies-in-app-behaviors/",
     "method": "提出从用户视角提取App行为并以自然语言解释「行为不一致」的工具InconPreter。",
@@ -7615,7 +7615,7 @@
   },
   {
     "key": "youcanrandbutyoucanthideaholisticsecurityanalysisofgooglefuchsiasandgvisorsnetworkstack",
-    "id": 6883,
+    "id": 7215,
     "title": "You Can Rand but You Can't Hide: A Holistic Security Analysis of Google Fuchsia's (and gVisor's) Network Stack",
     "paper": "https://www.ndss-symposium.org/ndss-paper/you-can-rand-but-you-cant-hide-a-holistic-security-analysis-of-google-fuchsias-and-gvisors-network-stack/",
     "method": "首次对Google Fuchsia／gVisor网络栈的算法安全性开展整体分析，发现可致设备追踪的漏洞组合。",
@@ -7656,7 +7656,7 @@
   },
   {
     "key": "yurascannerleveragingllmsfortaskdrivenwebappscanning",
-    "id": 6884,
+    "id": 7216,
     "title": "YuraScanner: Leveraging LLMs for Task-driven Web App Scanning",
     "paper": "https://www.ndss-symposium.org/ndss-paper/yurascanner-leveraging-llms-for-task-driven-web-app-scanning/",
     "method": "提出基于大语言模型的任务驱动型Web应用安全扫描器YuraScanner，以发现更深层应用状态。",

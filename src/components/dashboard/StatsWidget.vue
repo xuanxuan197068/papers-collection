@@ -3,11 +3,17 @@ import { useI18n } from 'vue-i18n';
 import { languageEmitter } from '@/locales';
 import paperStatistics from '@/assets/data/data-statistics.json'
 import { GithubService } from '@/service/GithubService.js';
-import { onMounted, onUnmounted, ref } from 'vue';
+import { computed, onMounted, onUnmounted, ref } from 'vue';
 
 const { t } = useI18n();
 const paperStatis = ref(paperStatistics);
-const githubData = ref({stars:'loading',forks:' ...', pushed: 'loading ...'});
+const githubData = ref({ stars: '—', forks: '' });
+
+// byPublication keys are one entry per venue; overview is (category, venue)
+// pairs and can double-count a venue that spans two categories.
+const totalPublications = computed(() => Object.keys(paperStatis.value.byPublication || {}).length);
+// Written by main.py when the data files are regenerated; '—' before that.
+const generatedAt = computed(() => (paperStatis.value.generated_at || '').slice(0, 10) || '—');
 
 // 语言切换处理
 const handleLanguageChange = () => {
@@ -16,20 +22,13 @@ const handleLanguageChange = () => {
 };
 
 onMounted(() => {
-    if (process.env.NODE_ENV === 'production') {
-        GithubService.getRepoStatisticsData().then((res) => {
-            const date = new Date(res['pushed_at']);
-            const year = date.getFullYear();
-            const month = (date.getMonth() + 1).toString().padStart(2, "0"); // 月份是0-11，所以+1
-            const day = date.getDate().toString().padStart(2, "0");
-            const localDateStr = `${year}-${month}-${day}`;
-            githubData.value = {
-                stars: res['stargazers_count'],
-                forks: ' / ' + res['forks_count'],
-                pushed: localDateStr,
-            }
-        })
-    }
+    GithubService.getRepoStatisticsData().then((res) => {
+        if (!res || typeof res.stargazers_count !== 'number') return;
+        githubData.value = {
+            stars: res.stargazers_count,
+            forks: ' / ' + res.forks_count,
+        }
+    })
     languageEmitter.on(handleLanguageChange);
 });
 
@@ -58,7 +57,7 @@ onUnmounted(() => {
                 <div class="flex justify-between mb-4">
                     <div>
                         <span class="block text-muted-color font-medium mb-4">{{ t('dashboard.totalPublications') }}</span>
-                        <div class="font-medium text-xl">{{ paperStatis.overview.length }}</div>
+                        <div class="font-medium text-xl">{{ totalPublications }}</div>
                     </div>
                     <div class="flex items-center justify-center bg-indigo-100 dark:bg-indigo-400/10 rounded-border" style="width: 2.5rem; height: 2.5rem">
                         <i class="pi pi-book text-indigo-500 !text-xl"></i>
@@ -84,7 +83,7 @@ onUnmounted(() => {
                 <div class="flex justify-between mb-4">
                     <div>
                         <span class="block text-muted-color font-medium mb-4">{{ t('dashboard.recentUpdate') }}</span>
-                        <span class="text-900 font-medium text-xl"> {{ githubData.pushed }} </span>
+                        <span class="text-900 font-medium text-xl"> {{ generatedAt }} </span>
                     </div>
                     <div class="flex items-center justify-center bg-orange-100 dark:bg-orange-400/10 rounded-border" style="width: 2.5rem; height: 2.5rem">
                         <i class="pi pi-sparkles text-orange-500 !text-xl"></i>

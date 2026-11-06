@@ -1,6 +1,6 @@
 [
   {
-    "id": 14326,
+    "id": 15519,
     "year": 2026,
     "title": "A Data-Driven Dynamic Execution Orchestration Architecture",
     "category": "system",
@@ -10,7 +10,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14327,
+    "id": 15520,
     "year": 2026,
     "title": "AGS: Accelerating 3D Gaussian Splatting SLAM via CODEC-Assisted Frame Covisibility Detection",
     "category": "system",
@@ -20,7 +20,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14328,
+    "id": 15521,
     "year": 2026,
     "title": "Cheddar: A Swift Fully Homomorphic Encryption Library Designed for GPU Architectures",
     "category": "system",
@@ -30,7 +30,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14329,
+    "id": 15522,
     "year": 2026,
     "title": "CHERI-SIMT: Implementing Capability Memory Protection in GPUs",
     "category": "system",
@@ -40,7 +40,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14330,
+    "id": 15523,
     "year": 2026,
     "title": "Compositional AI Beyond LLMs: System Implications of Neuro-Symbolic-Probabilistic Architectures",
     "category": "system",
@@ -50,7 +50,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14331,
+    "id": 15524,
     "year": 2026,
     "title": "cuJSON: A Highly Parallel JSON Parser for GPUs",
     "category": "system",
@@ -60,7 +60,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14332,
+    "id": 15525,
     "year": 2026,
     "title": "Dynamic Sparsity in Large-Scale Video DiT Training",
     "category": "system",
@@ -70,7 +70,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14333,
+    "id": 15526,
     "year": 2026,
     "title": "GFS: A Preemption-aware Scheduling Framework for GPU Clusters with Predictive Spot Instance Management",
     "category": "system",
@@ -80,7 +80,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14334,
+    "id": 15527,
     "year": 2026,
     "title": "Linear Layouts: Robust Code Generation of Efficient Tensor Computation Using F_2",
     "category": "system",
@@ -90,7 +90,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14335,
+    "id": 15528,
     "year": 2026,
     "title": "Lobster: A GPU-Accelerated Framework for Neurosymbolic Programming",
     "category": "system",
@@ -100,7 +100,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14336,
+    "id": 15529,
     "year": 2026,
     "title": "MoDM: Efficient Serving for Image Generation via Mixture-of-Diffusion Models",
     "category": "system",
@@ -110,7 +110,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14337,
+    "id": 15530,
     "year": 2026,
     "title": "NotebookOS: A Replicated Notebook Platform for Interactive Training with On-Demand GPUs",
     "category": "system",
@@ -120,7 +120,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14338,
+    "id": 15531,
     "year": 2026,
     "title": "QTurbo: A Robust and Efficient Compiler for Analog Quantum Simulation",
     "category": "system",
@@ -130,27 +130,27 @@
     "status": "notchecked"
   },
   {
-    "id": 14339,
+    "id": 15532,
     "year": 2026,
     "title": "Radshield: Software Radiation Protection for Commodity Hardware in Space",
     "category": "system",
     "publication": "ASPLOS",
     "paper": "https://doi.org/10.1145/3760250.3762218",
-    "abstract": "#",
+    "abstract": "Exponentially-declining launch costs have led to an explosion of inexpensive satellites launched to space, often equipped with off-the-shelf chips. These chips, however, lack hardware radiation protection, leaving them vulnerable to space radiation. We thus design Radshield, a software system protecting against the two most ubiquitous and costly radiation fault scenarios: (a) radiation-induced short-circuits that lead to permanent hardware failure; and (b) radiation-induced transient charges that result in single-bit silent data corruption (SDC). Radshield counters these failure scenarios with two components. First, it uses a short-circuit detector that can detect tiny increases in the device's current draw by estimating the normal current draw when resource utilization is low. Second, it duplicates the execution of spacecraft workloads in a CPU and memory-efficient manner, and catches SDCs even when they affect the CPU's pipeline or cache. In our experiments, we show Radshield is very effective at preventing both errors, and is 1.4-35.5\\texttimes{} more power-efficient than the state-of-the-art protection mechanisms in detecting SDC. Radshield is deployed on missions in low-earth orbit and in deep space.''The 9000 series is the most reliable computer ever made. No 9000 computer has ever made a mistake or distorted information. We are all, by any practical definition of the words, foolproof and incapable of error.''HAL, 2001: A Space Odyssey",
     "status": "notchecked"
   },
   {
-    "id": 14340,
+    "id": 15533,
     "year": 2026,
     "title": "Sequential Specifications for Precise Hardware Exceptions",
     "category": "system",
     "publication": "ASPLOS",
     "paper": "https://doi.org/10.1145/3760250.3762233",
-    "abstract": "#",
+    "abstract": "Modern processors are difficult to implement because pipelining makes them inherently parallel. A promising new approach, demonstrated in the PDL hardware description language, is to compile a high-level sequential specification into an efficient pipelined implementation. This high-level approach makes design-space exploration and reasoning easier. However, previous work on this approach does not support features needed for operating systems: hardware exceptions like traps and interrupts. The inherently non-sequential nature of these features makes it challenging to give them a sequential specification. They often require flushing the pipeline, writing to control state registers (CSRs), or resetting pipeline state. In this work, we develop XPDL, which extends PDL to support hardware exceptions. With this extension, logic for precise exceptions can be synthesized from a high-level specification, while maintaining the appealing properties of PDL. Using RISC-V processor designs, we demonstrate that XPDL flexibly supports exceptions with no impact on CPI (Cycles per Instructions), and minor overhead over frequency and area, and argue that the implementation preserves the one-instruction-at-a-time semantics of PDL.",
     "status": "notchecked"
   },
   {
-    "id": 14341,
+    "id": 15534,
     "year": 2026,
     "title": "SuperOffload: Unleashing the Power of Large-Scale LLM Training on Superchips",
     "category": "system",
@@ -160,7 +160,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14342,
+    "id": 15535,
     "year": 2026,
     "title": "The Configuration Wall: Characterization and Elimination of Accelerator Configuration Overhead",
     "category": "system",
@@ -170,7 +170,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14343,
+    "id": 15536,
     "year": 2026,
     "title": "Tilus: A Tile-Level GPGPU Programming Language for Low-Precision Computation",
     "category": "system",
@@ -180,7 +180,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14344,
+    "id": 15537,
     "year": 2026,
     "title": "TiNA: Tiered Network Buffer Architecture for Fast Networking in Chiplet-based CPUs",
     "category": "system",
@@ -190,7 +190,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14345,
+    "id": 15538,
     "year": 2026,
     "title": "XY-Serve: End-to-End Versatile Production Serving for Dynamic LLM Workloads",
     "category": "system",
@@ -200,7 +200,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14346,
+    "id": 15539,
     "year": 2026,
     "title": "Mission-Critical Enterprise Systems... What's a Mission? And What's Critical?: Processor and technology requirements for enterprise computing",
     "category": "system",
@@ -210,7 +210,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14347,
+    "id": 15540,
     "year": 2026,
     "title": "Unicorns, Centaurs, and Cyborgs: Co-design Powering the Intelligence Era",
     "category": "system",
@@ -220,7 +220,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14348,
+    "id": 15541,
     "year": 2026,
     "title": "Title: An AI Stack: From Scaling AI Workloads to Evaluating LLMs",
     "category": "system",
@@ -230,7 +230,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14349,
+    "id": 15542,
     "year": 2026,
     "title": "A Cost-Effective Near-Storage Processing Solution for Offline Inference of Long-Context LLMs",
     "category": "system",
@@ -240,7 +240,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14350,
+    "id": 15543,
     "year": 2026,
     "title": "A Framework for Developing and Optimizing Fully Homomorphic Encryption Programs on GPUs",
     "category": "system",
@@ -250,7 +250,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14351,
+    "id": 15544,
     "year": 2026,
     "title": "A Programming Model for Disaggregated Memory over CXL",
     "category": "system",
@@ -260,7 +260,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14352,
+    "id": 15545,
     "year": 2026,
     "title": "Accelerating Computation in Quantum LDPC Code",
     "category": "system",
@@ -270,7 +270,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14353,
+    "id": 15546,
     "year": 2026,
     "title": "AlphaSyndrome: Tackling the Syndrome Measurement Circuit Scheduling Problem for QEC Codes",
     "category": "system",
@@ -280,7 +280,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14354,
+    "id": 15547,
     "year": 2026,
     "title": "An MLIR Lowering Pipeline for Stencils at Wafer-Scale",
     "category": "system",
@@ -290,7 +290,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14355,
+    "id": 15548,
     "year": 2026,
     "title": "Anvil: A General-Purpose Timing-Safe Hardware Description Language",
     "category": "system",
@@ -300,7 +300,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14356,
+    "id": 15549,
     "year": 2026,
     "title": "APT: Securing Against DRAM Read Disturbance via Adaptive Probabilistic In-DRAM Trackers",
     "category": "system",
@@ -310,7 +310,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14357,
+    "id": 15550,
     "year": 2026,
     "title": "Arancini: A Hybrid Binary Translator for Weak Memory Model Architectures",
     "category": "system",
@@ -320,7 +320,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14358,
+    "id": 15551,
     "year": 2026,
     "title": "Architecting Scalable Trapped Ion Quantum Computers using Surface Codes",
     "category": "system",
@@ -330,7 +330,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14359,
+    "id": 15552,
     "year": 2026,
     "title": "Arm Weak Memory Consistency on Apple Silicon: What Is It Good For?",
     "category": "system",
@@ -340,7 +340,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14360,
+    "id": 15553,
     "year": 2026,
     "title": "Asynchrony and GPUs: Bridging this Dichotomy for I/O with AGIO",
     "category": "system",
@@ -350,7 +350,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14361,
+    "id": 15554,
     "year": 2026,
     "title": "Bat: Efficient Generative Recommender Serving with Bipartite Attention",
     "category": "system",
@@ -360,7 +360,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14362,
+    "id": 15555,
     "year": 2026,
     "title": "BitRed: Taming Non-Uniform Bit-Level Sparsity with a Programmable RISC-V ISA for DNN Acceleration",
     "category": "system",
@@ -370,7 +370,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14363,
+    "id": 15556,
     "year": 2026,
     "title": "BlendServe: Optimizing Offline Inference with Resource-Aware Batching",
     "category": "system",
@@ -380,7 +380,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14364,
+    "id": 15557,
     "year": 2026,
     "title": "Borrowing Dirty Qubits in Quantum Programs",
     "category": "system",
@@ -390,7 +390,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14365,
+    "id": 15558,
     "year": 2026,
     "title": "Bullet: Boosting GPU Utilization for LLM Serving via Dynamic Spatial-Temporal Orchestration",
     "category": "system",
@@ -400,7 +400,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14366,
+    "id": 15559,
     "year": 2026,
     "title": "CacheMind: From Miss Rates to Why - Natural-Language, Trace-Grounded Reasoning for Cache Replacement",
     "category": "system",
@@ -410,7 +410,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14367,
+    "id": 15560,
     "year": 2026,
     "title": "CEMU: Enabling Full-System Emulation of Computational Storage Beyond Hardware Limits",
     "category": "system",
@@ -420,7 +420,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14368,
+    "id": 15561,
     "year": 2026,
     "title": "CHEHAB RL: Learning to Optimize Fully Homomorphic Encryption Computations",
     "category": "system",
@@ -430,7 +430,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14369,
+    "id": 15562,
     "year": 2026,
     "title": "Chips Need DIP: Time-Proportional Per-Instruction Cycle Stacks at Dispatch",
     "category": "system",
@@ -440,7 +440,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14370,
+    "id": 15563,
     "year": 2026,
     "title": "CLM: Removing the GPU Memory Barrier for 3D Gaussian Splatting",
     "category": "system",
@@ -450,7 +450,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14371,
+    "id": 15564,
     "year": 2026,
     "title": "Co-Exploration of RISC-V Processor Microarchitectures and FreeRTOS Extensions for Lower Context-Switch Latency",
     "category": "system",
@@ -460,7 +460,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14372,
+    "id": 15565,
     "year": 2026,
     "title": "CoGraf: Fully Accelerating Graph Applications with Fine-Grained PIM",
     "category": "system",
@@ -470,7 +470,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14373,
+    "id": 15566,
     "year": 2026,
     "title": "COMPAS: A Distributed Multi-Party SWAP Test for Parallel Quantum Algorithms",
     "category": "system",
@@ -480,7 +480,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14374,
+    "id": 15567,
     "year": 2026,
     "title": "Compass: Navigating the Design Space of Taint Schemes for RTL Security Verification",
     "category": "system",
@@ -490,7 +490,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14375,
+    "id": 15568,
     "year": 2026,
     "title": "CounterPoint: Using Hardware Event Counters to Refute and Refine Microarchitectural Assumptions",
     "category": "system",
@@ -500,17 +500,17 @@
     "status": "notchecked"
   },
   {
-    "id": 14376,
+    "id": 15569,
     "year": 2026,
     "title": "CPU-Oblivious Offloading of Failure-Atomic Transactions for Disaggregated Memory",
     "category": "system",
     "publication": "ASPLOS",
     "paper": "https://doi.org/10.1145/3779212.3790146",
-    "abstract": "#",
+    "abstract": "Memory disaggregation introduces new challenges for application reliability, as compute server or interconnection failures can interrupt execution and lead to data inconsistency in the memory server. This paper presents Fanmem, a novel failure-atomic transaction system designed specifically for disaggregated memory architectures. Fanmem ensures data consistency in the presence of failures, drawing inspiration from persistent memory transactions while tailored for memory disaggregation. The key innovations of Fanmem include an asynchronous transaction model and the integration of a processing unit within the switch, enabling the offloading of time-consuming log persistency operations to the switch processing unit and significantly reducing the overhead on the compute servers. Evaluation confirms the effectiveness of Fanmem on two representative memory-disaggregated architectures. Compared to the state-of-the-art persistent memory transaction system, Fanmem achieves an average performance improvement of 1.2X and 1.7X on the respective architectures.",
     "status": "notchecked"
   },
   {
-    "id": 14377,
+    "id": 15570,
     "year": 2026,
     "title": "CREATE: Cross-Layer Resilience Characterization and Optimization for Efficient yet Reliable Embodied AI Systems",
     "category": "system",
@@ -520,7 +520,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14378,
+    "id": 15571,
     "year": 2026,
     "title": "CREST: High-Performance Contention Resolution for Disaggregated Transactions",
     "category": "system",
@@ -530,7 +530,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14379,
+    "id": 15572,
     "year": 2026,
     "title": "Cxlalloc: Safe and Efficient Memory Allocation for a CXL Pod",
     "category": "system",
@@ -540,7 +540,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14380,
+    "id": 15573,
     "year": 2026,
     "title": "CXLMC: Model Checking CXL Shared Memory Programs",
     "category": "system",
@@ -550,7 +550,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14381,
+    "id": 15574,
     "year": 2026,
     "title": "DARTH-PUM: A Hybrid Processing-Using-Memory Architecture",
     "category": "system",
@@ -560,7 +560,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14382,
+    "id": 15575,
     "year": 2026,
     "title": "Detecting Inconsistencies in Arm CCA's Formally Verified Specification",
     "category": "system",
@@ -570,7 +570,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14383,
+    "id": 15576,
     "year": 2026,
     "title": "DFVG: A Heterogeneous Architecture for Speculative Decoding with Draft-on-FPGA and Verify-on-GPU",
     "category": "system",
@@ -580,7 +580,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14384,
+    "id": 15577,
     "year": 2026,
     "title": "DIP: Efficient Large Multimodal Model Training with Dynamic Interleaved Pipeline",
     "category": "system",
@@ -590,7 +590,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14385,
+    "id": 15578,
     "year": 2026,
     "title": "EARTH: An Efficient MoE Accelerator with Entropy-Aware Speculative Prefetch and Result Reuse",
     "category": "system",
@@ -600,7 +600,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14386,
+    "id": 15579,
     "year": 2026,
     "title": "Efficient Remote Memory Ordering for Non-Coherent Systems",
     "category": "system",
@@ -610,7 +610,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14387,
+    "id": 15580,
     "year": 2026,
     "title": "Efficient Temporal Graph Network Training via Unified Redundancy Elimination",
     "category": "system",
@@ -620,17 +620,17 @@
     "status": "notchecked"
   },
   {
-    "id": 14388,
+    "id": 15581,
     "year": 2026,
     "title": "Enabling Fast Networking in the Public Cloud",
     "category": "system",
     "publication": "ASPLOS",
     "paper": "https://doi.org/10.1145/3779212.3790158",
-    "abstract": "#",
+    "abstract": "Despite a decade of research, most high-performance userspace network stacks remain impractical for public cloud tenants developing their applications atop Virtual Machines (VMs). We identify two root causes: (1) reliance on specialized NIC features (e.g., flow steering, deep buffers) absent in commodity cloud vNICs, and (2) rigid execution models ill-suited to diverse application needs. We present Machnet, a highperformance and flexible userspace network stack designed for public cloud VMs. Machnet uses only a minimal set of vNIC features that any major cloud provider supports. It also relies on a microkernel architecture to enable flexible application execution. We evaluate Machnet across three major public clouds and on production-grade applications, including a key-value store, an HTTP server, and a statemachine replication system. We release Machnet at https: //github.com/microsoft/machnet.",
     "status": "notchecked"
   },
   {
-    "id": 14389,
+    "id": 15582,
     "year": 2026,
     "title": "Evaluating Compiler Optimization Impacts on zkVM Performance",
     "category": "system",
@@ -640,7 +640,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14390,
+    "id": 15583,
     "year": 2026,
     "title": "Falcon: Algorithm-Hardware Co-Design for Efficient Fully Homomorphic Encryption Accelerator",
     "category": "system",
@@ -650,7 +650,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14391,
+    "id": 15584,
     "year": 2026,
     "title": "FastTTS: Accelerating Test-Time Scaling for Edge LLM Reasoning",
     "category": "system",
@@ -660,7 +660,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14392,
+    "id": 15585,
     "year": 2026,
     "title": "Finding Reusable Instructions via E-Graph Anti-Unification",
     "category": "system",
@@ -670,17 +670,17 @@
     "status": "notchecked"
   },
   {
-    "id": 14393,
+    "id": 15586,
     "year": 2026,
     "title": "Fine-grained and Non-intrusive LLM Training Monitoring via Microsecond-level Traffic Measurement",
     "category": "system",
     "publication": "ASPLOS",
     "paper": "https://doi.org/10.1145/3779212.3790163",
-    "abstract": "#",
+    "abstract": "Large language model (LLM) training is prone to anomalies due to its long duration and large scale, which can lead to significant performance degradation or even training crashes. Due to the synchronization nature of LLM training, anomalies exhibit the cascading effect, making their diagnosis challenging. Existing approaches rely on collecting communication operator information via code instrumentation, which yields only coarse-grained monitoring data and requires modifications to training code or communication libraries. We propose Pulse, a fine-grained, non-intrusive, and easy-to-deploy monitoring system. Our key idea is to enable fine-grained monitoring via traffic measurement. Pulse conducts microsecond-level RDMA traffic measurement on NICs, and transforms flow-level measurements into communication operator measurements, thereby enabling fine-grained and non-intrusive monitoring. We deploy Pulse on a testbed with 64 H200 GPUs and evaluate its anomaly localization capability under common failure scenarios. Pulse achieves machine-level localization in 10 out of 12 scenarios, while existing methods succeed in only 4 and even misdiagnose 2 of the remaining scenarios. Additionally, Pulse achieves over 90\\% precision and 100\\% recall, supports up to 2000 concurrent RDMA flow measurements per NIC, and imposes negligible overhead on training performance, making it a practical solution for real-world LLM training environments.",
     "status": "notchecked"
   },
   {
-    "id": 14394,
+    "id": 15587,
     "year": 2026,
     "title": "FlashMem: Supporting Modern DNN Workloads on Mobile with GPU Memory Hierarchy Optimizations",
     "category": "system",
@@ -690,7 +690,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14395,
+    "id": 15588,
     "year": 2026,
     "title": "FuseFlow: A Fusion-Centric Compilation Framework for Sparse Deep Learning on Streaming Dataflow",
     "category": "system",
@@ -700,7 +700,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14396,
+    "id": 15589,
     "year": 2026,
     "title": "Graphiti: Formally Verified Out-of-Order Execution in Dataflow Circuits",
     "category": "system",
@@ -710,7 +710,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14397,
+    "id": 15590,
     "year": 2026,
     "title": "gShare: Efficient GPU Sharing with Aggressive Scheduling in Multi-tenant FaaS platform",
     "category": "system",
@@ -720,7 +720,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14398,
+    "id": 15591,
     "year": 2026,
     "title": "GS-Scale: Unlocking Large-Scale 3D Gaussian Splatting Training via Host Offloading",
     "category": "system",
@@ -730,7 +730,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14399,
+    "id": 15592,
     "year": 2026,
     "title": "Hardwired-Neuron Language Processing Units as General-Purpose Cognitive Substrates",
     "category": "system",
@@ -740,7 +740,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14400,
+    "id": 15593,
     "year": 2026,
     "title": "HEPIC: Private Inference over Homomorphic Encryption with Client Intervention",
     "category": "system",
@@ -750,7 +750,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14401,
+    "id": 15594,
     "year": 2026,
     "title": "Highly Automated Verification of Security Properties for Unmodified System Software",
     "category": "system",
@@ -760,7 +760,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14402,
+    "id": 15595,
     "year": 2026,
     "title": "History Doesn't Repeat Itself but Rollouts Rhyme: Accelerating Reinforcement Learning with RhymeRL",
     "category": "system",
@@ -770,7 +770,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14403,
+    "id": 15596,
     "year": 2026,
     "title": "Hitchhike: Efficient Request Submission via Deferred Enforcement of Address Contiguity",
     "category": "system",
@@ -780,7 +780,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14404,
+    "id": 15597,
     "year": 2026,
     "title": "I/O Analysis is All You Need: An I/O Analysis for Long-Sequence Attention",
     "category": "system",
@@ -790,7 +790,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14405,
+    "id": 15598,
     "year": 2026,
     "title": "ICARUS: Criticality and Reuse based Instruction Caching for Datacenter Applications",
     "category": "system",
@@ -800,7 +800,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14406,
+    "id": 15599,
     "year": 2026,
     "title": "Insum: Sparse GPU Kernels Simplified and Optimized with Indirect Einsums",
     "category": "system",
@@ -810,7 +810,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14407,
+    "id": 15600,
     "year": 2026,
     "title": "iSwitch: QEC on Demand via In-Situ Encoding of Bare Qubits for Ion Trap Architectures",
     "category": "system",
@@ -820,27 +820,27 @@
     "status": "notchecked"
   },
   {
-    "id": 14408,
+    "id": 15601,
     "year": 2026,
     "title": "It Takes Two to Entangle",
     "category": "system",
     "publication": "ASPLOS",
     "paper": "https://doi.org/10.1145/3779212.3790178",
-    "abstract": "#",
+    "abstract": "Distributed machine learning training and inference is common today because today's large models require more memory and compute than can be provided by a single GPU. Distributed models are generally produced by programmers who take a sequential model specification and apply several distribution strategies to distribute state and computation across GPUs. Unfortunately, bugs can be introduced in the process, and a distributed model implementation's outputs might differ from the sequential model's outputs. In this paper, we describe an approach to statically identify such bugs by checking model refinement, that is, can the sequential model's outputs be reconstructed from the distributed model's outputs? Our approach, implemented in Entangle, uses iterative rewriting to prove model refinement. Our approach can scale to today's large models and deployments: we evaluate it using GPT and Llama-3. Further, it provides actionable outputs that aids in bug localization.",
     "status": "notchecked"
   },
   {
-    "id": 14409,
+    "id": 15602,
     "year": 2026,
     "title": "JOSer: Just-In-Time Object Serialization for Heavy Java Serialization Workloads",
     "category": "system",
     "publication": "ASPLOS",
     "paper": "https://doi.org/10.1145/3779212.3790179",
-    "abstract": "#",
+    "abstract": "Object serialization is critical in Java, which preserves objects in memory and transfers them among software systems if needed. However, the serialization techniques of modern Java systems are usually inflexible and inefficient under heavy serialization workloads, as they rely on manually-defined object schemas or omni-functional serializers. To tackle the above problem, we reveal a novel, serialization-specific optimization opportunity in Java. Based on it, we develop JOSer (Just-in-time Object SERializer), an efficient, Just-in-Time (JIT) object serialization technique. At runtime, JOSer generates a set of class-specific, JIT-friendly object serializers (i.e., serialization code), and then continuously optimizes them with the JIT compiler of Java Virtual Machine (JVM). JOSer also shares the metadata of objects under serialization and the serializers under optimization. We evaluate JOSer against six Java serialization techniques including OpenJDK's built-in serialization technique. Overall, JOSer improves the throughput by up to 20~83\\texttimes{} in serialization and 43~229\\texttimes{} in deserialization. JOSer has been successfully deployed in real-world products, reducing serialization CPU usage of Flink by 35.32~41.14\\% and latency of search recommendations by 30+ ms. JOSer grounds Apache Fory#8482;, an open-source serialization framework available at https://fory.apache.org/.",
     "status": "notchecked"
   },
   {
-    "id": 14410,
+    "id": 15603,
     "year": 2026,
     "title": "LAER-MoE: Load-Adaptive Expert Re-layout for Efficient Mixture-of-Experts Training",
     "category": "system",
@@ -850,7 +850,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14411,
+    "id": 15604,
     "year": 2026,
     "title": "LAIKA: Machine Learning-Assisted In-Kernel APU Acceleration",
     "category": "system",
@@ -860,7 +860,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14412,
+    "id": 15605,
     "year": 2026,
     "title": "Lifetime-Aware Design for Item-Level Intelligence at the Extreme Edge",
     "category": "system",
@@ -870,7 +870,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14413,
+    "id": 15606,
     "year": 2026,
     "title": "LOOPRAG: Enhancing Loop Transformation Optimization with Retrieval-Augmented Large Language Models",
     "category": "system",
@@ -880,7 +880,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14414,
+    "id": 15607,
     "year": 2026,
     "title": "LPO: Discovering Missed Peephole Optimizations with Large Language Models",
     "category": "system",
@@ -890,7 +890,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14415,
+    "id": 15608,
     "year": 2026,
     "title": "M2XFP: A Metadata-Augmented Microscaling Data Format for Efficient Low-bit Quantization",
     "category": "system",
@@ -900,7 +900,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14416,
+    "id": 15609,
     "year": 2026,
     "title": "Maverick: Rethinking TFHE Bootstrapping on GPUs via Algorithm-Hardware Co-Design",
     "category": "system",
@@ -910,7 +910,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14417,
+    "id": 15610,
     "year": 2026,
     "title": "MoE-APEX: An Efficient MoE Inference System with Adaptive Precision Expert Offloading",
     "category": "system",
@@ -920,7 +920,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14418,
+    "id": 15611,
     "year": 2026,
     "title": "MSCCL++: Rethinking GPU Communication Abstractions for AI Inference",
     "category": "system",
@@ -930,7 +930,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14419,
+    "id": 15612,
     "year": 2026,
     "title": "Mugi: Value Level Parallelism For Efficient LLMs",
     "category": "system",
@@ -940,7 +940,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14420,
+    "id": 15613,
     "year": 2026,
     "title": "Nebula: Infinite-Scale 3D Gaussian Splatting in VR via Collaborative Rendering and Accelerated Stereo Rasterization",
     "category": "system",
@@ -950,7 +950,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14421,
+    "id": 15614,
     "year": 2026,
     "title": "Nemo: A Low-Write-Amplification Cache for Tiny Objects on Log-Structured Flash Devices",
     "category": "system",
@@ -960,7 +960,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14422,
+    "id": 15615,
     "year": 2026,
     "title": "Neo: Real-Time On-Device 3D Gaussian Splatting with Reuse-and-Update Sorting Acceleration",
     "category": "system",
@@ -970,7 +970,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14423,
+    "id": 15616,
     "year": 2026,
     "title": "Neura: A Unified Framework for Hierarchical and Adaptive CGRAs",
     "category": "system",
@@ -980,7 +980,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14424,
+    "id": 15617,
     "year": 2026,
     "title": "oFFN: Outlier and Neuron-aware Structured FFN for Fast yet Accurate LLM Inference",
     "category": "system",
@@ -990,7 +990,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14425,
+    "id": 15618,
     "year": 2026,
     "title": "Once4All: Skeleton-Guided SMT Solver Fuzzing with LLM-Synthesized Generators",
     "category": "system",
@@ -1000,7 +1000,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14426,
+    "id": 15619,
     "year": 2026,
     "title": "Optimizer-Friendly Instrumentation for Event Quantification with PRUE Algorithm",
     "category": "system",
@@ -1010,7 +1010,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14427,
+    "id": 15620,
     "year": 2026,
     "title": "Ouroboros: Wafer-Scale SRAM CIM with Token-Grained Pipelining for Large Language Model Inference",
     "category": "system",
@@ -1020,7 +1020,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14428,
+    "id": 15621,
     "year": 2026,
     "title": "PACT: A Criticality-First Design for Tiered Memory",
     "category": "system",
@@ -1030,7 +1030,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14429,
+    "id": 15622,
     "year": 2026,
     "title": "Parameterized Hardware Design with Latency-Abstract Interfaces",
     "category": "system",
@@ -1040,7 +1040,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14430,
+    "id": 15623,
     "year": 2026,
     "title": "PAT: Accelerating LLM Decoding via Prefix-Aware Attention with Resource Efficient Multi-Tile Kernel",
     "category": "system",
@@ -1050,7 +1050,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14431,
+    "id": 15624,
     "year": 2026,
     "title": "Performance Predictability in Heterogeneous Memory",
     "category": "system",
@@ -1060,7 +1060,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14432,
+    "id": 15625,
     "year": 2026,
     "title": "PF-LLM: Large Language Model Hinted Hardware Prefetching",
     "category": "system",
@@ -1070,7 +1070,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14433,
+    "id": 15626,
     "year": 2026,
     "title": "PIPM: Partial and Incremental Page Migration for Multi-host CXL Disaggregated Shared Memory",
     "category": "system",
@@ -1080,7 +1080,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14434,
+    "id": 15627,
     "year": 2026,
     "title": "PrioriFI: More Informed Fault Injection for Edge Neural Networks",
     "category": "system",
@@ -1090,7 +1090,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14435,
+    "id": 15628,
     "year": 2026,
     "title": "PropHunt: Automated Optimization of Quantum Syndrome Measurement Circuits",
     "category": "system",
@@ -1100,7 +1100,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14436,
+    "id": 15629,
     "year": 2026,
     "title": "QoServe: Breaking the Silos of LLM Inference Serving",
     "category": "system",
@@ -1110,7 +1110,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14437,
+    "id": 15630,
     "year": 2026,
     "title": "Rage Against the State Machine: Type-Stated Hardware Peripherals for Increased Driver Correctness",
     "category": "system",
@@ -1120,7 +1120,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14438,
+    "id": 15631,
     "year": 2026,
     "title": "Reconfigurable Quantum Instruction Set Computers for High Performance Attainable on Hardware",
     "category": "system",
@@ -1130,7 +1130,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14439,
+    "id": 15632,
     "year": 2026,
     "title": "Reconfigurable Torus Fabrics for Multi-tenant ML",
     "category": "system",
@@ -1140,7 +1140,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14440,
+    "id": 15633,
     "year": 2026,
     "title": "RedFuser: An Automatic Operator Fusion Framework for Cascaded Reductions on AI Accelerators",
     "category": "system",
@@ -1150,7 +1150,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14441,
+    "id": 15634,
     "year": 2026,
     "title": "Reducing T Gates with Unitary Synthesis",
     "category": "system",
@@ -1160,7 +1160,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14442,
+    "id": 15635,
     "year": 2026,
     "title": "ReliaFHE: Resilient Design for Fully Homomorphic Encryption Accelerators",
     "category": "system",
@@ -1170,7 +1170,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14443,
+    "id": 15636,
     "year": 2026,
     "title": "REPA: Reconfigurable PIM for the Joint Acceleration of KV Cache Offloading and Processing",
     "category": "system",
@@ -1180,7 +1180,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14444,
+    "id": 15637,
     "year": 2026,
     "title": "RowArmor: Efficient and Comprehensive Protection Against DRAM Disturbance Attacks",
     "category": "system",
@@ -1190,7 +1190,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14445,
+    "id": 15638,
     "year": 2026,
     "title": "RTeAAL Sim: Using Tensor Algebra to Represent and Accelerate RTL Simulation",
     "category": "system",
@@ -1200,7 +1200,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14446,
+    "id": 15639,
     "year": 2026,
     "title": "Scaling Automated Database System Testing",
     "category": "system",
@@ -1210,7 +1210,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14447,
+    "id": 15640,
     "year": 2026,
     "title": "Segment Only Where You Look: Leveraging Human Gaze Behavior for Efficient Computer Vision Applications in Augmented Reality",
     "category": "system",
@@ -1220,7 +1220,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14448,
+    "id": 15641,
     "year": 2026,
     "title": "SEVI: Silent Data Corruption of Vector Instructions in Hyper-Scale Datacenters",
     "category": "system",
@@ -1230,7 +1230,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14449,
+    "id": 15642,
     "year": 2026,
     "title": "SG-IOV: Socket-Granular I/O Virtualization for SmartNIC-Based Container Networks",
     "category": "system",
@@ -1240,7 +1240,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14450,
+    "id": 15643,
     "year": 2026,
     "title": "Shift Parallelism: Low-Latency, High-Throughput LLM Inference for Dynamic Workloads",
     "category": "system",
@@ -1250,7 +1250,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14451,
+    "id": 15644,
     "year": 2026,
     "title": "Signal Breaker: Fuzzing Digital Signal Processors",
     "category": "system",
@@ -1260,7 +1260,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14452,
+    "id": 15645,
     "year": 2026,
     "title": "Skyler: Static Analysis for Predicting API-Driven Costs in Serverless Applications",
     "category": "system",
@@ -1270,7 +1270,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14453,
+    "id": 15646,
     "year": 2026,
     "title": "SLAWS: Spatial Locality Analysis and Workload Orchestration for Sparse Matrix Multiplication",
     "category": "system",
@@ -1280,7 +1280,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14454,
+    "id": 15647,
     "year": 2026,
     "title": "SNIP: An Adaptive Mixed Precision Framework for Subbyte Large Language Model Training",
     "category": "system",
@@ -1290,7 +1290,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14455,
+    "id": 15648,
     "year": 2026,
     "title": "SpeContext:  Enabling Efficient Long-context Reasoning with Speculative Context Sparsity in LLMs",
     "category": "system",
@@ -1300,7 +1300,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14456,
+    "id": 15649,
     "year": 2026,
     "title": "SpecProto: A Parallelizing Compiler for Speculative Decoding of Large Protocol Buffers Data",
     "category": "system",
@@ -1310,7 +1310,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14457,
+    "id": 15650,
     "year": 2026,
     "title": "STARC: Selective Token Access with Remapping and Clustering for Efficient LLM Decoding on PIM Systems",
     "category": "system",
@@ -1320,7 +1320,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14458,
+    "id": 15651,
     "year": 2026,
     "title": "Static Analysis for Efficient Streaming Tokenization",
     "category": "system",
@@ -1330,7 +1330,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14459,
+    "id": 15652,
     "year": 2026,
     "title": "STRAW: Stress-Aware WL-Based Read Disturbance Management for High-Density NAND Flash Memory",
     "category": "system",
@@ -1340,7 +1340,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14460,
+    "id": 15653,
     "year": 2026,
     "title": "Streaming Tensor Programs: A Streaming Abstraction for Dynamic Parallelism",
     "category": "system",
@@ -1350,7 +1350,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14461,
+    "id": 15654,
     "year": 2026,
     "title": "Taming the Long-Tail: Efficient Reasoning RL Training with Adaptive Drafter",
     "category": "system",
@@ -1360,7 +1360,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14462,
+    "id": 15655,
     "year": 2026,
     "title": "T-Control: An Efficient Dynamic Tensor Rematerialization System for DNN Training",
     "category": "system",
@@ -1370,7 +1370,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14463,
+    "id": 15656,
     "year": 2026,
     "title": "TEEM³: Core-Independent and Cooperating Trusted Execution Environments",
     "category": "system",
@@ -1380,7 +1380,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14464,
+    "id": 15657,
     "year": 2026,
     "title": "TetriServe: Efficiently Serving Mixed DiT Workloads",
     "category": "system",
@@ -1390,7 +1390,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14465,
+    "id": 15658,
     "year": 2026,
     "title": "TierX: A Simulation Framework for Multi-tier BCI System Design Evaluation and Exploration",
     "category": "system",
@@ -1400,7 +1400,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14466,
+    "id": 15659,
     "year": 2026,
     "title": "Toasty: Speeding Up Network I/O with Cache-Warm Buffers",
     "category": "system",
@@ -1410,7 +1410,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14467,
+    "id": 15660,
     "year": 2026,
     "title": "Towards High-Goodput LLM Serving with Prefill-decode Multiplexing",
     "category": "system",
@@ -1420,7 +1420,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14468,
+    "id": 15661,
     "year": 2026,
     "title": "TPLA: Tensor Parallel Latent Attention for Efficient Disaggregated Prefill & Decode Inference",
     "category": "system",
@@ -1430,7 +1430,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14469,
+    "id": 15662,
     "year": 2026,
     "title": "TreeVQA: A Tree-Structured Execution Framework for Shot Reduction in Variational Quantum Algorithms",
     "category": "system",
@@ -1440,7 +1440,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14470,
+    "id": 15663,
     "year": 2026,
     "title": "Trinity: Three-Dimensional Tensor Program Optimization via Tile-level Equality Saturation",
     "category": "system",
@@ -1450,7 +1450,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14471,
+    "id": 15664,
     "year": 2026,
     "title": "Triton-Sanitizer: A Fast and Device-Agnostic Memory Sanitizer for Triton with Rich Diagnostic Context",
     "category": "system",
@@ -1460,7 +1460,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14472,
+    "id": 15665,
     "year": 2026,
     "title": "Trust-V: Toward Secure and Reliable Storage for Trusted Execution Environments",
     "category": "system",
@@ -1470,7 +1470,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14473,
+    "id": 15666,
     "year": 2026,
     "title": "Understanding and Optimizing Database Pushdown on Disaggregated Storage",
     "category": "system",
@@ -1480,7 +1480,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14474,
+    "id": 15667,
     "year": 2026,
     "title": "Understanding Query Optimization Bugs in Graph Database Systems",
     "category": "system",
@@ -1490,7 +1490,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14475,
+    "id": 15668,
     "year": 2026,
     "title": "vCXLGen: Automated Synthesis and Verification of CXL Bridges for Heterogeneous Architectures",
     "category": "system",
@@ -1500,7 +1500,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14476,
+    "id": 15669,
     "year": 2026,
     "title": "SwiftSpec: Disaggregated Speculative Decoding and Fused Kernels for Low-Latency LLM Inference",
     "category": "system",
@@ -1510,7 +1510,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14477,
+    "id": 15670,
     "year": 2026,
     "title": "Wave: Leveraging Architecture Observation for Privacy-Preserving Model Oversight",
     "category": "system",
@@ -1520,7 +1520,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14478,
+    "id": 15671,
     "year": 2026,
     "title": "Wax: Optimizing Data Center Applications With Stale Profile",
     "category": "system",
@@ -1530,7 +1530,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14479,
+    "id": 15672,
     "year": 2026,
     "title": "WorksetEnclave: Towards Optimizing Cold Starts in Confidential Serverless with Workset-Based Enclave Restore",
     "category": "system",
@@ -1540,7 +1540,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14480,
+    "id": 15673,
     "year": 2026,
     "title": "ZipServ: Fast and Memory-Efficient LLM Inference with Hardware-Aware Lossless Compression",
     "category": "system",

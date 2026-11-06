@@ -100,19 +100,14 @@ function resolveCounts() {
     const explicit = paperStatistics.byPublicationAndYear || {};
     if (Object.keys(explicit).length) return explicit;
 
-    const years = paperStatistics.years || [];
+    // main.py stopped emitting overview[].data years ago; map_data ({year: count})
+    // is the live field, so rebuild from it.
     const overview = paperStatistics.overview || [];
     const reconstructed = {};
 
     overview.forEach(entry => {
-        if (!entry?.label || !Array.isArray(entry.data)) return;
-        reconstructed[entry.label] = {};
-        years.forEach((year, idx) => {
-            const count = entry.data[idx];
-            if (count !== undefined) {
-                reconstructed[entry.label][year] = count;
-            }
-        });
+        if (!entry?.label || !entry.map_data) return;
+        reconstructed[entry.label] = { ...entry.map_data };
     });
 
     return reconstructed;

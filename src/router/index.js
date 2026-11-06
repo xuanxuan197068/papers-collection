@@ -33,6 +33,10 @@ const routes = [
                 component: () => import('@/views/paper/MethodIndex.vue'),
             },
             {
+                path: '/paper/random',
+                component: () => import('@/views/paper/RandomPaper.vue'),
+            },
+            {
                 path: '/paper/submission-timeline',
                 component: () => import('@/views/paper/SubmissionTimeline.vue'),
             },

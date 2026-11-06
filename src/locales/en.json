@@ -21,6 +21,7 @@
         "trends": "Trends",
         "abstract": "Abstract",
         "methodIndex": "Method Index",
+        "randomPaper": "Daily Random",
         "submissionTimeline": "Submission Timeline",
         "reputation": "Reputation",
         "awards": "Awards",
@@ -175,6 +176,30 @@
                 "desc": "Words to highlight across titles/abstracts. Add multiple and they will be highlighted with the theme color.",
                 "placeholder": "Type a keyword and press Enter",
                 "add": "Add"
+            },
+            "randomSection": {
+                "label": "Daily random sampling",
+                "desc": "Sampling pool and weights for the Daily Random page."
+            },
+            "randomSampleCount": {
+                "label": "Daily sample size",
+                "desc": "Number of papers drawn per batch on the Daily Random page."
+            },
+            "randomYearsBack": {
+                "label": "Sampling window (years)",
+                "desc": "Only papers from the most recent N years enter the pool."
+            },
+            "randomExcludeRead": {
+                "label": "Exclude read papers",
+                "desc": "Papers marked as read are removed from the daily pool."
+            },
+            "randomCategoryWeights": {
+                "label": "Category weights",
+                "desc": "Relative draw weight per category (0.5–3.0, default 1.0). Clamped so every paper keeps a floor probability."
+            },
+            "randomKeywordBoost": {
+                "label": "Keyword boost",
+                "desc": "Weight multiplier when a title matches any preferred keyword (1.0–3.0)."
             }
         },
         "actions": {
@@ -279,6 +304,44 @@
             "user-study": "User study",
             "other": "Other",
             "legacy": "Legacy overview"
+        }
+    },
+    "randomPaper": {
+        "title": "Daily Random Papers",
+        "subtitle": "Seeded by date from the last {years} years — the batch stays the same all day.",
+        "loading": "Loading paper pool...",
+        "loadFailed": "Could not load the paper dataset.",
+        "retry": "Retry",
+        "degradedNotice": "Full dataset unavailable — sampling from the bundled preview ({count} papers).",
+        "poolCount": "{count} papers in today's pool",
+        "reshuffle": "Shuffle",
+        "notEnough": "Only {count} unread papers remain.",
+        "emptyPool": {
+            "title": "Nothing left to draw",
+            "desc": "Every paper in the pool is marked read. Turn off \"exclude read\" or clear the read list."
+        },
+        "excludeRead": "Exclude read",
+        "markRead": "Mark read",
+        "markUnread": "Unmark",
+        "readBadge": "Read",
+        "abstractTitle": "Abstract",
+        "abstractLoading": "Loading abstract...",
+        "copyAbstract": "Copy abstract",
+        "methodTitle": "Method index",
+        "noIndex": "No method index generated for {venue} yet.",
+        "readManager": {
+            "count": "{count} marked read",
+            "export": "Export JSON",
+            "exportEmpty": "No read papers to export.",
+            "clear": "Clear",
+            "clearTitle": "Clear read list",
+            "clearMessage": "Remove all {count} read marks? This cannot be undone.",
+            "cleared": "Read list cleared"
+        },
+        "toast": {
+            "saveFailed": "Could not save read status",
+            "abstractCopied": "Abstract copied",
+            "copyFailed": "Could not copy the abstract. Please try again"
         }
     },
     "awards": {

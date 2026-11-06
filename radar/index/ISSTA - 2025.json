@@ -1,7 +1,7 @@
 [
   {
     "key": "doctoroptimizingcontainerrebuildefficiencybyinstructionreorchestration",
-    "id": 11314,
+    "id": 12295,
     "title": "Doctor: Optimizing Container Rebuild Efficiency by Instruction Re-orchestration",
     "paper": "https://doi.org/10.1145/3728870",
     "method": "Doctor依据指令依赖和未来变更概率重排Dockerfile指令。",
@@ -26,7 +26,7 @@
   },
   {
     "key": "omnigirlamultilingualandmultimodalbenchmarkforgithubissueresolution",
-    "id": 11315,
+    "id": 12296,
     "title": "OmniGIRL: A Multilingual and Multimodal Benchmark for GitHub Issue Resolution",
     "paper": "https://doi.org/10.1145/3728871",
     "method": "构建覆盖多语言、多模态和多领域的GitHub问题修复基准OmniGIRL。",
@@ -51,7 +51,7 @@
   },
   {
     "key": "automatedattacksynthesisforconstantproductmarketmakers",
-    "id": 11316,
+    "id": 12297,
     "title": "Automated Attack Synthesis for Constant Product Market Makers",
     "paper": "https://doi.org/10.1145/3728872",
     "method": "CPMMX形式化组合性缺陷，并在区块链范围内自动合成攻击。",
@@ -76,7 +76,7 @@
   },
   {
     "key": "xfuzzaflexibleframeworkforfinegrainedruntimeadaptivefuzzingstrategycomposition",
-    "id": 11317,
+    "id": 12298,
     "title": "xFUZZ: A Flexible Framework for Fine-Grained, Runtime-Adaptive Fuzzing Strategy Composition",
     "paper": "https://doi.org/10.1145/3728873",
     "method": "xFUZZ在运行时细粒度组合输入调度与变异调度策略。",
@@ -101,7 +101,7 @@
   },
   {
     "key": "datahookanefficientandlightweightsystemcallhookingtechniquewithoutinstructionmodification",
-    "id": 11318,
+    "id": 12299,
     "title": "DataHook: An Efficient and Lightweight System Call Hooking Technique without Instruction Modification",
     "paper": "https://doi.org/10.1145/3728874",
     "method": "DataHook在不修改指令的情况下挂钩32位程序系统调用。",
@@ -124,7 +124,7 @@
   },
   {
     "key": "beyondstaticpatternmatchingrethinkingautomaticcryptographicapimisusedetectionintheeraofllms",
-    "id": 11319,
+    "id": 12300,
     "title": "Beyond Static Pattern Matching? Rethinking Automatic Cryptographic API Misuse Detection in the Era of LLMs",
     "paper": "https://doi.org/10.1145/3728875",
     "method": "系统研究大模型识别密码API误用的能力并实现检测系统。",
@@ -150,7 +150,7 @@
   },
   {
     "key": "moditectormoduledirectedtestingforautonomousdrivingsystems",
-    "id": 11320,
+    "id": 12301,
     "title": "MoDitector: Module-Directed Testing for Autonomous Driving Systems",
     "paper": "https://doi.org/10.1145/3728876",
     "method": "MoDitector面向指定自动驾驶模块生成可归因的安全关键场景。",
@@ -176,7 +176,7 @@
   },
   {
     "key": "freewavmenhancedwebassemblyruntimefuzzingguidedbyparsetreemutationandsnapshot",
-    "id": 11321,
+    "id": 12302,
     "title": "FreeWavm: Enhanced WebAssembly Runtime Fuzzing Guided by Parse Tree Mutation and Snapshot",
     "paper": "https://doi.org/10.1145/3728877",
     "method": "FreeWavm结合解析树结构变异与快照机制测试WebAssembly运行时。",
@@ -201,7 +201,7 @@
   },
   {
     "key": "smartllamadporeinforcedlargelanguagemodelforexplainablesmartcontractvulnerabilitydetection",
-    "id": 11322,
+    "id": 12303,
     "title": "Smart-LLaMA-DPO: Reinforced Large Language Model for Explainable Smart Contract Vulnerability Detection",
     "paper": "https://doi.org/10.1145/3728878",
     "method": "Smart-LLaMA-DPO用偏好优化强化LLaMA进行可解释合约漏洞检测。",
@@ -228,7 +228,7 @@
   },
   {
     "key": "areautonomouswebagentsgoodtesters",
-    "id": 11323,
+    "id": 12304,
     "title": "Are Autonomous Web Agents Good Testers?",
     "paper": "https://doi.org/10.1145/3728879",
     "method": "构建并定性评估自主Web测试代理PinATA的判定能力与失效模式。",
@@ -253,7 +253,7 @@
   },
   {
     "key": "preventingdisruptionofsystembackupagainstransomwareattacks",
-    "id": 11324,
+    "id": 12305,
     "title": "Preventing Disruption of System Backup against Ransomware Attacks",
     "paper": "https://doi.org/10.1145/3728880",
     "method": "Remembrall监控并阻止勒索软件破坏系统备份。",
@@ -278,7 +278,7 @@
   },
   {
     "key": "fairnessmediatorneutralizestereotypeassociationstomitigatebiasinlargelanguagemodels",
-    "id": 11325,
+    "id": 12306,
     "title": "Fairness Mediator: Neutralize Stereotype Associations to Mitigate Bias in Large Language Models",
     "paper": "https://doi.org/10.1145/3728881",
     "method": "FairMed通过中和刻板关联缓解大模型下游社会偏见。",
@@ -301,7 +301,7 @@
   },
   {
     "key": "krakenprogramadaptiveparallelfuzzing",
-    "id": 11326,
+    "id": 12307,
     "title": "KRAKEN: Program-Adaptive Parallel Fuzzing",
     "paper": "https://doi.org/10.1145/3728882",
     "method": "KraKen按程序运行反馈动态优化并行模糊测试策略。",
@@ -326,7 +326,7 @@
   },
   {
     "key": "modelcheckingguidedincrementaltestingfordistributedsystems",
-    "id": 11327,
+    "id": 12308,
     "title": "Model Checking Guided Incremental Testing for Distributed Systems",
     "paper": "https://doi.org/10.1145/3728883",
     "method": "iMocket复用系统演化信息增量执行模型检查引导测试。",
@@ -351,7 +351,7 @@
   },
   {
     "key": "understandingmodelweaknessesapathtostrengtheningdnnbasedandroidmalwaredetection",
-    "id": 11328,
+    "id": 12309,
     "title": "Understanding Model Weaknesses: A Path to Strengthening DNN-Based Android Malware Detection",
     "paper": "https://doi.org/10.1145/3728884",
     "method": "MalTutor诊断模型弱点并优化训练流程以增强恶意软件检测。",
@@ -377,7 +377,7 @@
   },
   {
     "key": "llm4szzenhancingszzalgorithmwithcontextenhancedassessmentonlargelanguagemodels",
-    "id": 11329,
+    "id": 12310,
     "title": "LLM4SZZ: Enhancing SZZ Algorithm with Context-Enhanced Assessment on Large Language Models",
     "paper": "https://doi.org/10.1145/3728885",
     "method": "LLM4SZZ按提交类型采用排序识别或上下文增强识别定位缺陷引入提交。",
@@ -400,7 +400,7 @@
   },
   {
     "key": "almondlearninganassemblylanguagemodelfor0shotcodeobfuscationdetection",
-    "id": 11330,
+    "id": 12311,
     "title": "ALMOND: Learning an Assembly Language Model for 0-Shot Code Obfuscation Detection",
     "paper": "https://doi.org/10.1145/3728886",
     "method": "ALMOND学习汇编语言表示，零样本识别二进制代码混淆。",
@@ -426,7 +426,7 @@
   },
   {
     "key": "topscoreonthewrongexamonbenchmarkinginmachinelearningforvulnerabilitydetection",
-    "id": 11331,
+    "id": 12312,
     "title": "Top Score on the Wrong Exam: On Benchmarking in Machine Learning for Vulnerability Detection",
     "paper": "https://doi.org/10.1145/3728887",
     "method": "审视机器学习漏洞检测的任务设定，并提出更能衡量真实能力的评测方向。",
@@ -452,7 +452,7 @@
   },
   {
     "key": "tracezipefficientdistributedtracingviatracecompression",
-    "id": 11332,
+    "id": 12313,
     "title": "Tracezip: Efficient Distributed Tracing via Trace Compression",
     "paper": "https://doi.org/10.1145/3728888",
     "method": "Tracezip压缩分布式调用轨迹以兼顾完整性和低开销。",
@@ -475,7 +475,7 @@
   },
   {
     "key": "wallshaveearsdemystifyingnotificationlistenerusageinandroidapps",
-    "id": 11333,
+    "id": 12314,
     "title": "Walls Have Ears: Demystifying Notification Listener Usage in Android Apps",
     "paper": "https://doi.org/10.1145/3728898",
     "method": "NLRadar结合静态分析与大模型审查Android通知监听服务使用。",
@@ -500,7 +500,7 @@
   },
   {
     "key": "safe4uidentifyingunsoundsafeencapsulationsofunsafecallsinrustusingllms",
-    "id": 11334,
+    "id": 12315,
     "title": "Safe4U: Identifying Unsound Safe Encapsulations of Unsafe Calls in Rust using LLMs",
     "paper": "https://doi.org/10.1145/3728890",
     "method": "Safe4U融合大模型、静态分析和领域知识识别Rust不健全封装。",
@@ -526,7 +526,7 @@
   },
   {
     "key": "llmhallucinationsinpracticalcodegenerationphenomenamechanismandmitigation",
-    "id": 11335,
+    "id": 12316,
     "title": "LLM Hallucinations in Practical Code Generation: Phenomena, Mechanism, and Mitigation",
     "paper": "https://doi.org/10.1145/3728894",
     "method": "在仓库级代码生成中刻画幻觉，并以检索增强方法缓解。",
@@ -551,7 +551,7 @@
   },
   {
     "key": "bridgetheislandspointeranalysisformicroservicesystems",
-    "id": 11336,
+    "id": 12317,
     "title": "Bridge the Islands: Pointer Analysis for Microservice Systems",
     "paper": "https://doi.org/10.1145/3728896",
     "method": "Micans跨微服务构建端到端值流，执行面向服务边界的指针分析。",
@@ -574,7 +574,7 @@
   },
   {
     "key": "programfeaturebasedbenchmarkingforfuzztesting",
-    "id": 11337,
+    "id": 12318,
     "title": "Program Feature-Based Benchmarking for Fuzz Testing",
     "paper": "https://doi.org/10.1145/3728899",
     "method": "FeatureBench生成具有可配置细粒度特征的程序来评估模糊测试器。",
@@ -600,7 +600,7 @@
   },
   {
     "key": "sokataxonomicanalysisofdefirugpullstypesdatasetandtoolassessment",
-    "id": 11338,
+    "id": 12319,
     "title": "SoK: A Taxonomic Analysis of DeFi Rug Pulls: Types, Dataset, and Tool Assessment",
     "paper": "https://doi.org/10.1145/3728900",
     "method": "从学术与产业资料构建DeFi跑路骗局分类、数据集并评估检测工具。",
@@ -626,7 +626,7 @@
   },
   {
     "key": "recurringvulnerabilitydetectionhowfararewe",
-    "id": 11339,
+    "id": 12320,
     "title": "Recurring Vulnerability Detection: How Far Are We?",
     "paper": "https://doi.org/10.1145/3728901",
     "method": "构建含4569个复发漏洞的大规模数据集并系统评估检测方法。",
@@ -652,7 +652,7 @@
   },
   {
     "key": "contestedconsistencyaidedtestedcodegenerationwithllm",
-    "id": 11340,
+    "id": 12321,
     "title": "ConTested: Consistency-Aided Tested Code Generation with LLM",
     "paper": "https://doi.org/10.1145/3728902",
     "method": "ConTested以少量用户反馈约束代码生成与测试结果的一致性。",
@@ -675,7 +675,7 @@
   },
   {
     "key": "robustvulnerabilitydetectionacrosscompilationsllvmirvsassemblywithtransformermodel",
-    "id": 11341,
+    "id": 12322,
     "title": "Robust Vulnerability Detection across Compilations: LLVM-IR vs. Assembly with Transformer Model",
     "paper": "https://doi.org/10.1145/3728903",
     "method": "比较并以Transformer建模LLVM-IR与汇编，实现跨编译配置漏洞检测。",
@@ -702,7 +702,7 @@
   },
   {
     "key": "routhsearchinferringpidparameterspecificationforflightcontrolprogrambycoordinatesearch",
-    "id": 11342,
+    "id": 12323,
     "title": "RouthSearch: Inferring PID Parameter Specification for Flight Control Program by Coordinate Search",
     "paper": "https://doi.org/10.1145/3728904",
     "method": "RouthSearch用坐标搜索推断飞控程序三维PID参数的安全范围。",
@@ -728,7 +728,7 @@
   },
   {
     "key": "programanalysiscombininggeneralizedbitlevelandwordlevelabstractions",
-    "id": 11343,
+    "id": 12324,
     "title": "Program Analysis Combining Generalized Bit-Level and Word-Level Abstractions",
     "paper": "https://doi.org/10.1145/3728905",
     "method": "组合广义位级与字级抽象以精确表示机器整数语义。",
@@ -751,7 +751,7 @@
   },
   {
     "key": "bridgingthegapsbetweengraphneuralnetworksanddataflowanalysisthecloserthebetter",
-    "id": 11344,
+    "id": 12325,
     "title": "Bridging the Gaps between Graph Neural Networks and Data-Flow Analysis: The Closer, the Better",
     "paper": "https://doi.org/10.1145/3728906",
     "method": "设计三种逐步贴近数据流算法的GNN架构，检验算法对齐作用。",
@@ -776,7 +776,7 @@
   },
   {
     "key": "audiotestprioritizingaudiotestcases",
-    "id": 11345,
+    "id": 12326,
     "title": "AudioTest: Prioritizing Audio Test Cases",
     "paper": "https://doi.org/10.1145/3728907",
     "method": "AudioTest无需全部人工标注即可优先选择高价值音频测试用例。",
@@ -799,7 +799,7 @@
   },
   {
     "key": "qtranextendingmetamorphicoraclebasedlogicalbugdetectiontechniquesformultipledbmsdialectsupport",
-    "id": 11346,
+    "id": 12327,
     "title": "QTRAN: Extending Metamorphic-Oracle Based Logical Bug Detection Techniques for Multiple-DBMS Dialect Support",
     "paper": "https://doi.org/10.1145/3728908",
     "method": "QTRAN借助大模型把变形测试逻辑迁移到不同DBMS方言。",
@@ -824,7 +824,7 @@
   },
   {
     "key": "guipilotaconsistencybasedmobileguitestingapproachfordetectingapplicationspecificbugs",
-    "id": 11347,
+    "id": 12328,
     "title": "GUIPilot: A Consistency-Based Mobile GUI Testing Approach for Detecting Application-Specific Bugs",
     "paper": "https://doi.org/10.1145/3728909",
     "method": "GUIPilot比较设计稿与移动应用实现，定位应用特有GUI不一致。",
@@ -847,7 +847,7 @@
   },
   {
     "key": "testingthefaulttoleranceofmultisensorfusionperceptioninautonomousdrivingsystems",
-    "id": 11348,
+    "id": 12329,
     "title": "Testing the Fault-Tolerance of Multi-sensor Fusion Perception in Autonomous Driving Systems",
     "paper": "https://doi.org/10.1145/3728910",
     "method": "FADE系统注入相机与激光雷达故障，评估多传感器融合感知容错。",
@@ -873,7 +873,7 @@
   },
   {
     "key": "keenhashhashingprogramsintofunctionawareembeddingsforlargescalebinarycodesimilarityanalysis",
-    "id": 11349,
+    "id": 12330,
     "title": "KEENHash: Hashing Programs into Function-Aware Embeddings for Large-Scale Binary Code Similarity Analysis",
     "paper": "https://doi.org/10.1145/3728911",
     "method": "KEENHash用大模型函数嵌入生成程序级哈希表示。",
@@ -898,7 +898,7 @@
   },
   {
     "key": "enhancingvulnerabilitydetectionviainterproceduralsemanticcompletion",
-    "id": 11350,
+    "id": 12331,
     "title": "Enhancing Vulnerability Detection via Inter-procedural Semantic Completion",
     "paper": "https://doi.org/10.1145/3728912",
     "method": "VulnSC补全被调函数语义，增强学习式漏洞检测器的过程间感知。",
@@ -924,7 +924,7 @@
   },
   {
     "key": "unlockinglowfrequencysyscallsinkernelfuzzingwithdependencybasedrag",
-    "id": 11351,
+    "id": 12332,
     "title": "Unlocking Low Frequency Syscalls in Kernel Fuzzing with Dependency-Based RAG",
     "paper": "https://doi.org/10.1145/3728913",
     "method": "SyzGPT以依赖关系检索增强大模型，为低频系统调用生成有效种子。",
@@ -950,7 +950,7 @@
   },
   {
     "key": "structureawarediagnosisguidedecufirmwarefuzzing",
-    "id": 11352,
+    "id": 12333,
     "title": "Structure-Aware, Diagnosis-Guided ECU Firmware Fuzzing",
     "paper": "https://doi.org/10.1145/3728914",
     "method": "EcuFuzz联合固件结构感知与诊断反馈测试ECU内外部输入。",
@@ -976,7 +976,7 @@
   },
   {
     "key": "fandangoevolvinglanguagebasedtesting",
-    "id": 11353,
+    "id": 12334,
     "title": "FANDANGO: Evolving Language-Based Testing",
     "paper": "https://doi.org/10.1145/3728915",
     "method": "FANDANGO让测试者以约束和目标演化形式语言，生成满足复杂条件的输入。",
@@ -1002,7 +1002,7 @@
   },
   {
     "key": "ztainthavocfromhavocmodetozeroexecutionfuzzingdriventaintinference",
-    "id": 11354,
+    "id": 12335,
     "title": "ZTaint-Havoc: From Havoc Mode to Zero-Execution Fuzzing-Driven Taint Inference",
     "paper": "https://doi.org/10.1145/3728916",
     "method": "ZTaint-Havoc形式化havoc变异过程，无需执行即可推断影响行为的热字节。",
@@ -1027,7 +1027,7 @@
   },
   {
     "key": "alowcostfeatureinteractionfaultlocalizationapproachforsoftwareproductlines",
-    "id": 11355,
+    "id": 12336,
     "title": "A Low-Cost Feature Interaction Fault Localization Approach for Software Product Lines",
     "paper": "https://doi.org/10.1145/3728917",
     "method": "CRFL用反事实推理定位软件产品线中的故障特征交互。",
@@ -1050,7 +1050,7 @@
   },
   {
     "key": "wildsyncautomatedfuzzingharnesssynthesisviawildapiusagerecovery",
-    "id": 11356,
+    "id": 12337,
     "title": "WildSync: Automated Fuzzing Harness Synthesis via Wild API Usage Recovery",
     "paper": "https://doi.org/10.1145/3728918",
     "method": "WildSync从真实代码恢复API用法并自动合成模糊测试驱动。",
@@ -1076,7 +1076,7 @@
   },
   {
     "key": "assessingscenegenerationtechniquesfortestingcolregscomplianceofautonomoussurfacevehicles",
-    "id": 11357,
+    "id": 12338,
     "title": "Assessing Scene Generation Techniques for Testing COLREGS-Compliance of Autonomous Surface Vehicles",
     "paper": "https://doi.org/10.1145/3728919",
     "method": "比较历史交通数据与生成技术构造海上避碰合规测试场景。",
@@ -1102,7 +1102,7 @@
   },
   {
     "key": "clause2invageneratecombinecheckframeworkforloopinvariantinference",
-    "id": 11358,
+    "id": 12339,
     "title": "Clause2Inv: A Generate-Combine-Check Framework for Loop Invariant Inference",
     "paper": "https://doi.org/10.1145/3728920",
     "method": "Clause2Inv由大模型生成子句，再用反例驱动组合并验证循环不变量。",
@@ -1125,7 +1125,7 @@
   },
   {
     "key": "copyandpasteidentifyingevminequivalentcodesmellsinmultichainreusecontracts",
-    "id": 11359,
+    "id": 12340,
     "title": "Copy-and-Paste? Identifying EVM-Inequivalent Code Smells in Multi-chain Reuse Contracts",
     "paper": "https://doi.org/10.1145/3728921",
     "method": "EquivGuard检测合约跨链复制时由EVM设计差异引起的不等价代码味道。",
@@ -1151,7 +1151,7 @@
   },
   {
     "key": "younameitirunitanllmagenttoexecutetestsofarbitraryprojects",
-    "id": 11360,
+    "id": 12341,
     "title": "You Name It, I Run It: An LLM Agent to Execute Tests of Arbitrary Projects",
     "paper": "https://doi.org/10.1145/3728922",
     "method": "ExecutionAgent读取任意项目并生成构建与测试执行脚本。",
@@ -1177,7 +1177,7 @@
   },
   {
     "key": "finding709defectsin258projectsanexperiencereportonapplyingcodeqltoopensourceembeddedsoftwareexperiencepaper",
-    "id": 11361,
+    "id": 12342,
     "title": "Finding 709 Defects in 258 Projects: An Experience Report on Applying CodeQL to Open-Source Embedded Software (Experience Paper)",
     "paper": "https://doi.org/10.1145/3728923",
     "method": "在258个嵌入式开源项目部署CodeQL，并结合程序分析与开发者调查。",
@@ -1202,7 +1202,7 @@
   },
   {
     "key": "enhancingsmartcontractsecurityanalysiswithexecutionpropertygraphs",
-    "id": 11362,
+    "id": 12343,
     "title": "Enhancing Smart Contract Security Analysis with Execution Property Graphs",
     "paper": "https://doi.org/10.1145/3728924",
     "method": "Clue为EVM执行构建属性图并据此开展动态安全分析。",
@@ -1228,7 +1228,7 @@
   },
   {
     "key": "mllmbasedui2codeautomationguidedbyuilayoutinformation",
-    "id": 11363,
+    "id": 12344,
     "title": "MLLM-Based UI2Code Automation Guided by UI Layout Information",
     "paper": "https://doi.org/10.1145/3728925",
     "method": "LayoutCoder提取网页元素关系和布局信息，引导多模态大模型生成UI代码。",
@@ -1251,7 +1251,7 @@
   },
   {
     "key": "quantumconcolictesting",
-    "id": 11364,
+    "id": 12345,
     "title": "Quantum Concolic Testing",
     "paper": "https://doi.org/10.1145/3728926",
     "method": "构建面向量子程序的首个具体—符号协同测试框架。",
@@ -1276,7 +1276,7 @@
   },
   {
     "key": "binqueryanovelframeworkfornaturallanguagebasedbinarycoderetrieval",
-    "id": 11365,
+    "id": 12346,
     "title": "BinQuery: A Novel Framework for Natural Language-Based Binary Code Retrieval",
     "paper": "https://doi.org/10.1145/3728927",
     "method": "BinQuery细粒度对齐自然语言意图与二进制函数表示。",
@@ -1302,7 +1302,7 @@
   },
   {
     "key": "bindsaefficientprecisebinarylevelpointeranalysiswithcontextsensitiveheapreconstruction",
-    "id": 11366,
+    "id": 12347,
     "title": "BinDSA: Efficient, Precise Binary-Level Pointer Analysis with Context-Sensitive Heap Reconstruction",
     "paper": "https://doi.org/10.1145/3728928",
     "method": "BinDSA通过上下文敏感堆重建执行高效二进制指针分析。",
@@ -1327,7 +1327,7 @@
   },
   {
     "key": "addingspatialmemorysafetytoedkiithroughcheckedcexperiencepaper",
-    "id": 11367,
+    "id": 12348,
     "title": "Adding Spatial Memory Safety to EDK II through Checked C (Experience Paper)",
     "paper": "https://doi.org/10.1145/3728929",
     "method": "将EDK II迁移到Checked C，并以e3c自动补充空间安全标注。",
@@ -1352,7 +1352,7 @@
   },
   {
     "key": "reacceptautomatedcoevolutionofproductionandtestcodebasedondynamicvalidationandlargelanguagemodels",
-    "id": 11368,
+    "id": 12349,
     "title": "REACCEPT: Automated Co-evolution of Production and Test Code Based on Dynamic Validation and Large Language Models",
     "paper": "https://doi.org/10.1145/3728930",
     "method": "ReAccept结合大模型、检索增强和动态验证同步演化生产与测试代码。",
@@ -1377,7 +1377,7 @@
   },
   {
     "key": "understandingpractitionersexpectationsonclearcodereviewcomments",
-    "id": 11369,
+    "id": 12350,
     "title": "Understanding Practitioners’ Expectations on Clear Code Review Comments",
     "paper": "https://doi.org/10.1145/3728931",
     "method": "归纳实践者对清晰代码审查评论的属性，并审计开源评论。",
@@ -1400,7 +1400,7 @@
   },
   {
     "key": "pepperpreferenceawareactivetrappingforransomware",
-    "id": 11370,
+    "id": 12351,
     "title": "Pepper: Preference-Aware Active Trapping for Ransomware",
     "paper": "https://doi.org/10.1145/3728932",
     "method": "Pepper学习勒索家族加密偏好，生成、部署并监控诱饵文件。",
@@ -1426,7 +1426,7 @@
   },
   {
     "key": "extendedrealitycybersicknessassessmentviauserreviewanalysis",
-    "id": 11371,
+    "id": 12352,
     "title": "Extended Reality Cybersickness Assessment via User Review Analysis",
     "paper": "https://doi.org/10.1145/3728933",
     "method": "XRCare从细粒度用户评论自动评估XR晕动症并推理根因。",
@@ -1449,7 +1449,7 @@
   },
   {
     "key": "wembyswebhuntingformemorycorruptioninwebassembly",
-    "id": 11372,
+    "id": 12353,
     "title": "Wemby’s Web: Hunting for Memory Corruption in WebAssembly",
     "paper": "https://doi.org/10.1145/3728937",
     "method": "Wemby系统分析WebAssembly内存破坏并搜索浏览器代码注入路径。",
@@ -1474,7 +1474,7 @@
   },
   {
     "key": "theincredibleshrinkingcontextinadecompilernearyou",
-    "id": 11373,
+    "id": 12354,
     "title": "The Incredible Shrinking Context... in a Decompiler Near You",
     "paper": "https://doi.org/10.1145/3728935",
     "method": "Shrnkr以静态分析恢复高度优化CPS表示中的高级控制流。",
@@ -1499,7 +1499,7 @@
   },
   {
     "key": "causalityaidedevaluationandexplanationoflargelanguagemodelbasedcodegeneration",
-    "id": 11374,
+    "id": 12355,
     "title": "Causality-Aided Evaluation and Explanation of Large Language Model-Based Code Generation",
     "paper": "https://doi.org/10.1145/3728938",
     "method": "用因果分析刻画提示与生成代码之间的作用关系。",
@@ -1522,7 +1522,7 @@
   },
   {
     "key": "adverintentagentadversarialreasoningforrepairbasedoninferredprogramintent",
-    "id": 11375,
+    "id": 12356,
     "title": "AdverIntent-Agent: Adversarial Reasoning for Repair Based on Inferred Program Intent",
     "paper": "https://doi.org/10.1145/3728939",
     "method": "AdverIntent-Agent先推断程序意图，再用批判与对抗推理审查补丁。",
@@ -1547,7 +1547,7 @@
   },
   {
     "key": "classevaltevaluatinglargelanguagemodelsinclasslevelcodetranslation",
-    "id": 11376,
+    "id": 12357,
     "title": "ClassEval-T: Evaluating Large Language Models in Class-Level Code Translation",
     "paper": "https://doi.org/10.1145/3728940",
     "method": "构建ClassEval-T，评估大模型在类级代码翻译中的整体语义保持。",
@@ -1572,7 +1572,7 @@
   },
   {
     "key": "portingsoftwarelibrariestoopenharmonytransitioningfromtypescriptorjavascripttoarkts",
-    "id": 11377,
+    "id": 12358,
     "title": "Porting Software Libraries to OpenHarmony: Transitioning from TypeScript or JavaScript to ArkTS",
     "paper": "https://doi.org/10.1145/3728941",
     "method": "ArkAdapter自动把TypeScript或JavaScript项目级库适配为ArkTS。",
@@ -1597,7 +1597,7 @@
   },
   {
     "key": "reinforcementlearningbasedfuzztestingforthegazeboroboticsimulator",
-    "id": 11378,
+    "id": 12359,
     "title": "Reinforcement Learning-Based Fuzz Testing for the Gazebo Robotic Simulator",
     "paper": "https://doi.org/10.1145/3728942",
     "method": "GzFuzz用强化学习在Gazebo巨大状态空间中选择结构化变异。",
@@ -1624,7 +1624,7 @@
   },
   {
     "key": "whydoesmytransactionfailafirstlookatfailedtransactionsonthesolanablockchain",
-    "id": 11379,
+    "id": 12360,
     "title": "Why Does My Transaction Fail? A First Look at Failed Transactions on the Solana Blockchain",
     "paper": "https://doi.org/10.1145/3728943",
     "method": "大规模测量Solana失败交易并归纳失败类型、来源与影响。",
@@ -1647,7 +1647,7 @@
   },
   {
     "key": "patchscopellmenhancedfinegrainedstablepatchclassificationforlinuxkernel",
-    "id": 11380,
+    "id": 12361,
     "title": "PatchScope: LLM-Enhanced Fine-Grained Stable Patch Classification for Linux Kernel",
     "paper": "https://doi.org/10.1145/3728944",
     "method": "PatchScope提取补丁语义并以两阶段分类预测Linux稳定版合并状态。",
@@ -1672,7 +1672,7 @@
   },
   {
     "key": "identifyingmultiparameterconstrainterrorsinpythondatasciencelibraryapidocumentation",
-    "id": 11381,
+    "id": 12362,
     "title": "Identifying Multi-parameter Constraint Errors in Python Data Science Library API Documentation",
     "paper": "https://doi.org/10.1145/3728945",
     "method": "MPChecker对照代码与文档检测Python API多参数约束不一致。",
@@ -1695,7 +1695,7 @@
   },
   {
     "key": "opdifferllmassistedopcodeleveldifferentialtestingofethereumvirtualmachine",
-    "id": 11382,
+    "id": 12363,
     "title": "OpDiffer: LLM-Assisted Opcode-Level Differential Testing of Ethereum Virtual Machine",
     "paper": "https://doi.org/10.1145/3728946",
     "method": "OpDiffer结合大模型与静态分析生成操作码级差分测试。",
@@ -1721,7 +1721,7 @@
   },
   {
     "key": "thefirstpromptcountsthemostanevaluationoflargelanguagemodelsoniterativeexamplebasedcodegeneration",
-    "id": 11383,
+    "id": 12364,
     "title": "The First Prompt Counts the Most! An Evaluation of Large Language Models on Iterative Example-Based Code Generation",
     "paper": "https://doi.org/10.1145/3728947",
     "method": "系统评估大模型依据迭代输入输出示例生成代码的能力。",
@@ -1746,7 +1746,7 @@
   },
   {
     "key": "nobiasleftbehindfairnesstestingfordeeprecommendersystemstargetinggeneraldisadvantagedgroups",
-    "id": 11384,
+    "id": 12365,
     "title": "No Bias Left Behind: Fairness Testing for Deep Recommender Systems Targeting General Disadvantaged Groups",
     "paper": "https://doi.org/10.1145/3728948",
     "method": "FairAS自适应采样搜索不限于预定义人口组的弱势用户群。",
@@ -1771,7 +1771,7 @@
   },
   {
     "key": "enhancedpromptingframeworkforcodesummarizationwithlargelanguagemodels",
-    "id": 11385,
+    "id": 12366,
     "title": "Enhanced Prompting Framework for Code Summarization with Large Language Models",
     "paper": "https://doi.org/10.1145/3728949",
     "method": "EP4CS融合离散与连续提示以增强大模型代码摘要。",
@@ -1794,7 +1794,7 @@
   },
   {
     "key": "aninvestigationonnumericalbugsingpuprogramstowardsautomatedbugdetection",
-    "id": 11386,
+    "id": 12367,
     "title": "An Investigation on Numerical Bugs in GPU Programs Towards Automated Bug Detection",
     "paper": "https://doi.org/10.1145/3728950",
     "method": "归纳GPU数值缺陷并实现覆盖六类问题的GPU-NBDetect原型。",
@@ -1819,7 +1819,7 @@
   },
   {
     "key": "alargescaleempiricalstudyonfinetuninglargelanguagemodelsforunittesting",
-    "id": 11387,
+    "id": 12368,
     "title": "A Large-Scale Empirical Study on Fine-Tuning Large Language Models for Unit Testing",
     "paper": "https://doi.org/10.1145/3728951",
     "method": "大规模研究大模型微调数据与策略对单元测试生成的影响。",
@@ -1842,7 +1842,7 @@
   },
   {
     "key": "decomadetectingandpurifyingcodedatasetwatermarksthroughdualchannelcodeabstraction",
-    "id": 11388,
+    "id": 12369,
     "title": "DeCoMa: Detecting and Purifying Code Dataset Watermarks through Dual Channel Code Abstraction",
     "paper": "https://doi.org/10.1145/3728952",
     "method": "DeCoMa用双通道代码抽象检测并净化代码数据水印。",
@@ -1867,7 +1867,7 @@
   },
   {
     "key": "detectingisolationanomaliesinrelationaldbmss",
-    "id": 11389,
+    "id": 12370,
     "title": "Detecting Isolation Anomalies in Relational DBMSs",
     "paper": "https://doi.org/10.1145/3728953",
     "method": "IsoRel以黑盒方式生成复杂SQL并检查关系数据库隔离语义。",
@@ -1892,7 +1892,7 @@
   },
   {
     "key": "rethinkingperformanceanalysisforconfigurablesoftwaresystemsacasestudyfromafitnesslandscapeperspective",
-    "id": 11390,
+    "id": 12371,
     "title": "Rethinking Performance Analysis for Configurable Software Systems: A Case Study from a Fitness Landscape Perspective",
     "paper": "https://doi.org/10.1145/3728954",
     "method": "用适应度景观框架刻画可配置软件的性能地形。",
@@ -1917,7 +1917,7 @@
   },
   {
     "key": "validatingnetworkprotocolparserswithtraceablerfcdocumentinterpretation",
-    "id": 11391,
+    "id": 12372,
     "title": "Validating Network Protocol Parsers with Traceable RFC Document Interpretation",
     "paper": "https://doi.org/10.1145/3728955",
     "method": "从RFC文档解释生成可追溯测试预言，验证网络协议解析器。",
@@ -1943,7 +1943,7 @@
   },
   {
     "key": "nadaneuralacceptancedrivenapproximatespecificationmining",
-    "id": 11392,
+    "id": 12373,
     "title": "NADA: Neural Acceptance-Driven Approximate Specification Mining",
     "paper": "https://doi.org/10.1145/3728956",
     "method": "NADA以正例接受和合成负例拒绝引导近似有限状态机搜索。",
@@ -1968,7 +1968,7 @@
   },
   {
     "key": "productivelydeployingemergingmodelsonemergingplatformsatopdownapproachfortestinganddebugging",
-    "id": 11393,
+    "id": 12374,
     "title": "Productively Deploying Emerging Models on Emerging Platforms: A Top-Down Approach for Testing and Debugging",
     "paper": "https://doi.org/10.1145/3728957",
     "method": "TapML自顶向下测试和调试模型在Metal、WebGPU等新平台的部署。",
@@ -1994,7 +1994,7 @@
   },
   {
     "key": "decllmllmaugmentedrecompilabledecompilationforenablingprogrammaticuseofdecompiledcode",
-    "id": 11394,
+    "id": 12375,
     "title": "DecLLM: LLM-Augmented Recompilable Decompilation for Enabling Programmatic Use of Decompiled Code",
     "paper": "https://doi.org/10.1145/3728958",
     "method": "DecLLM以重编译和运行反馈为预言，迭代修复反编译代码。",
@@ -2019,7 +2019,7 @@
   },
   {
     "key": "dynamicallyfusingpythonhpckernels",
-    "id": 11395,
+    "id": 12376,
     "title": "Dynamically Fusing Python HPC Kernels",
     "paper": "https://doi.org/10.1145/3728959",
     "method": "PyFuser自动分析并融合性能可移植的PyKokkos内核。",
@@ -2044,7 +2044,7 @@
   },
   {
     "key": "trattoaneurosymbolicapproachtoderivingaxiomatictestoracles",
-    "id": 11396,
+    "id": 12377,
     "title": "Tratto: A Neuro-Symbolic Approach to Deriving Axiomatic Test Oracles",
     "paper": "https://doi.org/10.1145/3728960",
     "method": "Tratto融合源码、文档和神经符号推理生成断言式测试预言。",
@@ -2067,7 +2067,7 @@
   },
   {
     "key": "verlogenhancingreleasenotegenerationforandroidappsusinglargelanguagemodels",
-    "id": 11397,
+    "id": 12378,
     "title": "VerLog: Enhancing Release Note Generation for Android Apps using Large Language Models",
     "paper": "https://doi.org/10.1145/3728961",
     "method": "VerLog利用大模型从Android应用变更生成完整、准确且易读的发行说明。",
@@ -2090,7 +2090,7 @@
   },
   {
     "key": "uncoveringapiscopemisalignmentintheappinappecosystem",
-    "id": 11398,
+    "id": 12379,
     "title": "Uncovering API-Scope Misalignment in the App-in-App Ecosystem",
     "paper": "https://doi.org/10.1145/3728962",
     "method": "ScopeChecker检测超级应用与小程序之间的API权限范围错位。",
@@ -2116,7 +2116,7 @@
   },
   {
     "key": "canllmsreplacehumanevaluatorsanempiricalstudyofllmasajudgeinsoftwareengineering",
-    "id": 11399,
+    "id": 12380,
     "title": "Can LLMs Replace Human Evaluators? An Empirical Study of LLM-as-a-Judge in Software Engineering",
     "paper": "https://doi.org/10.1145/3728963",
     "method": "系统比较多种LLM评审方式与人类对软件工程产出的评分一致性。",
@@ -2139,7 +2139,7 @@
   },
   {
     "key": "effectiverestapistestingwitherrormessageanalysis",
-    "id": 11400,
+    "id": 12381,
     "title": "Effective REST APIs Testing with Error Message Analysis",
     "paper": "https://doi.org/10.1145/3728964",
     "method": "EmRest分析错误消息以生成REST API有效输入和异常输入。",
@@ -2165,7 +2165,7 @@
   },
   {
     "key": "depstatedetectingsynchronizationfailurebugsindistributeddatabasemanagementsystems",
-    "id": 11401,
+    "id": 12382,
     "title": "DepState: Detecting Synchronization Failure Bugs in Distributed Database Management Systems",
     "paper": "https://doi.org/10.1145/3728965",
     "method": "DepState建模分布式数据库同步依赖状态并定向触发失效。",
@@ -2191,7 +2191,7 @@
   },
   {
     "key": "whathappenedinthispipelinediffingbuildlogswithcidiff",
-    "id": 11402,
+    "id": 12383,
     "title": "What Happened in This Pipeline? Diffing Build Logs with CiDiff",
     "paper": "https://doi.org/10.1145/3728966",
     "method": "CiDiff针对构建日志结构比较失败与成功流水线输出。",
@@ -2216,7 +2216,7 @@
   },
   {
     "key": "freesiaverifyingcorrectnessofteecommunicationwithconcurrentseparationlogic",
-    "id": 11403,
+    "id": 12384,
     "title": "Freesia: Verifying Correctness of TEE Communication with Concurrent Separation Logic",
     "paper": "https://doi.org/10.1145/3728967",
     "method": "Freesia以并发分离逻辑形式验证TEE通信的并发安全。",
@@ -2241,7 +2241,7 @@
   },
   {
     "key": "staticprogramreductionviatypedirectedslicing",
-    "id": 11404,
+    "id": 12385,
     "title": "Static Program Reduction via Type-Directed Slicing",
     "paper": "https://doi.org/10.1145/3728968",
     "method": "类型导向切片静态缩减程序并保持目标位置的类型检查结果。",
@@ -2267,7 +2267,7 @@
   },
   {
     "key": "logbasealargescalebenchmarkforsemanticlogparsing",
-    "id": 11405,
+    "id": 12386,
     "title": "LogBase: A Large-Scale Benchmark for Semantic Log Parsing",
     "paper": "https://doi.org/10.1145/3728969",
     "method": "LogBase构建带语义标注的大规模日志解析基准和评测工具。",
@@ -2292,7 +2292,7 @@
   },
   {
     "key": "strutstructuredseedcaseguidedunittestgenerationforcprogramsusingllms",
-    "id": 11406,
+    "id": 12387,
     "title": "STRUT: Structured Seed Case Guided Unit Test Generation for C Programs using LLMs",
     "paper": "https://doi.org/10.1145/3728970",
     "method": "STRUT用结构化种子用例引导大模型生成C程序单元测试。",
@@ -2317,7 +2317,7 @@
   },
   {
     "key": "sevaltowardsautomatedandcomprehensivesafetyevaluationforlargelanguagemodels",
-    "id": 11407,
+    "id": 12388,
     "title": "S-Eval: Towards Automated and Comprehensive Safety Evaluation for Large Language Models",
     "paper": "https://doi.org/10.1145/3728971",
     "method": "S-Eval依据综合风险分类自动生成和判定大模型安全测试。",
@@ -2343,7 +2343,7 @@
   },
   {
     "key": "improvingdeeplearningframeworktestingwithmodellevelmetamorphictesting",
-    "id": 11408,
+    "id": 12389,
     "title": "Improving Deep Learning Framework Testing with Model-Level Metamorphic Testing",
     "paper": "https://doi.org/10.1145/3728972",
     "method": "ModelMeta围绕模型结构定义四类变形关系测试深度学习框架。",
@@ -2368,7 +2368,7 @@
   },
   {
     "key": "hulkexploringdatasensitiveperformanceanomaliesindbmssviadatadrivenanalysis",
-    "id": 11409,
+    "id": 12390,
     "title": "Hulk: Exploring Data-Sensitive Performance Anomalies in DBMSs via Data-Driven Analysis",
     "paper": "https://doi.org/10.1145/3728973",
     "method": "Hulk通过数据驱动变换自动探索DBMS数据敏感性能异常。",
@@ -2393,7 +2393,7 @@
   },
   {
     "key": "typealiasanalysisenablingllvmirwithaccuratetypes",
-    "id": 11410,
+    "id": 12391,
     "title": "Type-Alias Analysis: Enabling LLVM IR with Accurate Types",
     "paper": "https://doi.org/10.1145/3728974",
     "method": "类型别名分析为LLVM IR变量维护多类型集合并跨指令推断。",
@@ -2416,7 +2416,7 @@
   },
   {
     "key": "automatedtesttransferacrossandroidappsusinglargelanguagemodels",
-    "id": 11411,
+    "id": 12392,
     "title": "Automated Test Transfer across Android Apps using Large Language Models",
     "paper": "https://doi.org/10.1145/3728975",
     "method": "LLMigrate理解UI操作意图并把使用型测试迁移到其他Android应用。",
@@ -2442,7 +2442,7 @@
   },
   {
     "key": "incrementalverificationofconcurrentprogramsthroughrefinementconstraintadaptation",
-    "id": 11412,
+    "id": 12393,
     "title": "Incremental Verification of Concurrent Programs through Refinement Constraint Adaptation",
     "paper": "https://doi.org/10.1145/3728976",
     "method": "基于内核源码适配调度细化约束，增量验证演化中的并发程序。",
@@ -2465,7 +2465,7 @@
   },
   {
     "key": "fixingoutsidetheboxuncoveringtacticsforopensourcesecurityissuemanagement",
-    "id": 11413,
+    "id": 12394,
     "title": "Fixing Outside the Box: Uncovering Tactics for Open-Source Security Issue Management",
     "paper": "https://doi.org/10.1145/3728977",
     "method": "构建44类开源安全问题修复策略层次分类并评估成本与效果。",
@@ -2491,7 +2491,7 @@
   },
   {
     "key": "intentionbasedguitestmigrationformobileappsusinglargelanguagemodels",
-    "id": 11414,
+    "id": 12395,
     "title": "Intention-Based GUI Test Migration for Mobile Apps using Large Language Models",
     "paper": "https://doi.org/10.1145/3728978",
     "method": "ITeM用大模型提取测试意图并迁移移动应用GUI测试。",
@@ -2517,7 +2517,7 @@
   },
   {
     "key": "gopvdetectingblockingconcurrencybugsrelatedtosharedmemorysynchronizationingo",
-    "id": 11415,
+    "id": 12396,
     "title": "GoPV: Detecting Blocking Concurrency Bugs Related to Shared-Memory Synchronization in Go",
     "paper": "https://doi.org/10.1145/3728979",
     "method": "GoPV联合并发分析与支配关系分析检测Go同步原语阻塞缺陷。",
@@ -2542,7 +2542,7 @@
   },
   {
     "key": "moreeffectivejavascriptbreakingchangedetectionviadynamicobjectrelationgraph",
-    "id": 11416,
+    "id": 12397,
     "title": "More Effective JavaScript Breaking Change Detection via Dynamic Object Relation Graph",
     "paper": "https://doi.org/10.1145/3728980",
     "method": "Diagnose迭代探索API并构建动态对象关系图检测破坏性变更。",
@@ -2567,7 +2567,7 @@
   },
   {
     "key": "swegptaprocesscentriclanguagemodelforautomatedsoftwareimprovement",
-    "id": 11417,
+    "id": 12398,
     "title": "SWE-GPT: A Process-Centric Language Model for Automated Software Improvement",
     "paper": "https://doi.org/10.1145/3728981",
     "method": "SWE-GPT学习开发者思考、工具使用和角色交互等软件维护过程。",
@@ -2593,7 +2593,7 @@
   },
   {
     "key": "icepreicsprotocolreverseengineeringviadatadrivenconcolicexecution",
-    "id": 11418,
+    "id": 12399,
     "title": "ICEPRE: ICS Protocol Reverse Engineering via Data-Driven Concolic Execution",
     "paper": "https://doi.org/10.1145/3728982",
     "method": "ICEPRE融合网络轨迹、静态分析和concolic执行逆向ICS协议。",
@@ -2619,7 +2619,7 @@
   },
   {
     "key": "gamifyingtestinginintellijareplicabilitystudy",
-    "id": 11419,
+    "id": 12400,
     "title": "Gamifying Testing in IntelliJ: A Replicability Study",
     "paper": "https://doi.org/10.1145/3728983",
     "method": "复现实验评估IntelliGame游戏化插件对开发者编写和运行测试的影响。",
@@ -2642,7 +2642,7 @@
   },
   {
     "key": "crossprobellmempoweredcrossprojectbugdetectionfordeeplearningframeworks",
-    "id": 11420,
+    "id": 12401,
     "title": "CrossProbe: LLM-Empowered Cross-Project Bug Detection for Deep Learning Frameworks",
     "paper": "https://doi.org/10.1145/3728984",
     "method": "CrossProbe利用不同深度学习框架的镜像问题引导跨项目测试生成。",

@@ -1,0 +1,656 @@
+{
+  "date": "2026-10-20",
+  "interest": "智能体蜜罐、欺骗与情报获取",
+  "scope": "Purposeful selection from every locally represented venue; not exhaustive.",
+  "records_in_local_library": 16338,
+  "venue_count": 11,
+  "selected_count": 23,
+  "evidence_counts": {
+    "F": 18,
+    "A": 4,
+    "S": 1
+  },
+  "evidence_levels": {
+    "F": "Full-text experimental sections reviewed; no reproduction performed.",
+    "S": "Author slides reviewed; full paper not verified.",
+    "A": "Only abstract/metadata verified; experimental details unresolved."
+  },
+  "papers": [
+    {
+      "key": "cpds",
+      "local_id": 4147,
+      "local_title": "Cyber-Physical Deception Through Coordinated IoT Honeypots",
+      "publication": "USENIX Sec",
+      "year": 2025,
+      "local_metadata_file": "src/assets/data/meta_json/USENIX Sec - 2025.json",
+      "evidence_level": "F",
+      "access_result": {
+        "key": "cpds",
+        "url": "https://www.usenix.org/system/files/usenixsecurity25-guan.pdf",
+        "resolved_url": "https://www.usenix.org/system/files/usenixsecurity25-guan.pdf",
+        "status": "ok",
+        "kind": "pdf",
+        "sha256": "f1666ee4a3f8207e42b761255d7298efc7a45aeb73fa59c84ab3d4ebd68aa585"
+      },
+      "report_heading": "**① CPDS — Cyber-Physical Deception Through Coordinated IoT Honeypots（2025；ID 4147；F）**",
+      "review_fields": {
+        "对比设计": "不只与其他蜜罐比，还加入真实设备。§5.2 的跨设备场景比较真实 IoT、CPDS、彼此不协调的独立蜜罐；参与者通过交互判断真伪。摄像头、扬声器、灯泡的反馈是否相互吻合，是关键检验点。",
+        "消融": "跨设备场景里的“无协调蜜罐”直接检验协调机制。另一场景还改变摄像头视频表现，包含多项增强，不能把其全部收益归因于协调。",
+        "指标／证据": "真伪判断、交互有效性；另测设备数量变化下的延迟和资源开销。后者属于扩展性测试。",
+        "可迁移": "你的多主机蜜罐应检查文件、身份、网络拓扑和时间线的一致性，并设置“所有主机各自回复，但不共享状态”的对照。",
+        "阅读提醒": "§5.2 正文的部分人数与 Table 4 不一致；如复用成功率，应以明确的表格分母重新计算，不能直接拼接正文数字。"
+      },
+      "source_links": [
+        "https://www.usenix.org/system/files/usenixsecurity25-guan.pdf"
+      ],
+      "report": "report.md"
+    },
+    {
+      "key": "cheat",
+      "local_id": 4535,
+      "local_title": "Cloak, Honey, Trap: Proactive Defenses Against LLM Agents",
+      "publication": "USENIX Sec",
+      "year": 2025,
+      "local_metadata_file": "src/assets/data/meta_json/USENIX Sec - 2025.json",
+      "evidence_level": "F",
+      "access_result": {
+        "key": "cheat",
+        "url": "https://www.usenix.org/system/files/usenixsecurity25-ayzenshteyn.pdf",
+        "resolved_url": "https://www.usenix.org/system/files/usenixsecurity25-ayzenshteyn.pdf",
+        "status": "ok",
+        "kind": "pdf",
+        "sha256": "6d28561e978618737ba04bb16ad5dfad9f97fa07c03c63ad2a4989c1b1516cf1"
+      },
+      "report_heading": "**② CHeaT — Cloak, Honey, Trap: Proactive Defenses Against LLM Agents（2025；ID 4535；F）**",
+      "review_fields": {
+        "对比设计": "覆盖 PentestGPT、AutoAttacker、PenHeal，以及不同模型后端。先让攻击者在无防御环境完成 CTF，再测试加入防御后的结果；细粒度测试还覆盖不同输入位置和欺骗技术。",
+        "消融性质": "单独测试技术类别，是技术效果分解；上下文增强、预处理、系统提示加固、微调等是适应性攻击者／防御鲁棒性设置，不应全部称为组件消融。",
+        "关键控制": "部分困难任务在无防御时就无法完成，不能将这些任务上的失败都记成防御贡献。",
+        "可迁移": "先证明攻击智能体会攻，再比较它是否被诱导、偏离目标、暴露额外行为。攻击失败与情报增加应分别报告。"
+      },
+      "source_links": [
+        "https://www.usenix.org/system/files/usenixsecurity25-ayzenshteyn.pdf"
+      ],
+      "report": "report.md"
+    },
+    {
+      "key": "honeyplc",
+      "local_id": 3153,
+      "local_title": "HoneyPLC: A Next-Generation Honeypot for Industrial Control Systems",
+      "publication": "ACM CCS",
+      "year": 2020,
+      "local_metadata_file": "src/assets/data/meta_json/ACM CCS - 2020.json",
+      "evidence_level": "F",
+      "access_result": {
+        "key": "honeyplc",
+        "url": "https://carlosrubiomedrano.com/publications/honeyPLC-next-generation-ccs2020.pdf",
+        "resolved_url": "https://carlosrubiomedrano.com/publications/honeyPLC-next-generation-ccs2020.pdf",
+        "status": "ok",
+        "kind": "pdf",
+        "sha256": "6595701ff850e7dbe8de3ee098fd68f552aac45847a3d4462dd569f686ebaba3"
+      },
+      "report_heading": "**③ HoneyPLC — A Next-Generation Honeypot for Industrial Control Systems（2020；ID 3153；F）**",
+      "review_fields": {
+        "对比设计": "以真实 PLC 为真实性参照，并与 Conpot、S7commTrace 等现有蜜罐比较。评价包括 Nmap／PLCScan 指纹、Shodan HoneyScore、工程软件的连接及程序块操作，最后补充长期在线观测。",
+        "消融": "正文未确认完整的逐组件去除实验。系统对比、协议功能覆盖、线上部署不能改称消融。",
+        "指标": "是否被识别成真实设备、是否支持深入交互，以及实际收集的交互日志。个别基线崩溃或未被索引是缺失结果，不能记作零分。",
+        "可迁移": "做三层证据：自动探测像不像、真实工具能不能持续操作、线上是否产生有意义的后续行为。流量体积本身不等于情报价值。"
+      },
+      "source_links": [
+        "https://carlosrubiomedrano.com/publications/honeyPLC-next-generation-ccs2020.pdf"
+      ],
+      "report": "report.md"
+    },
+    {
+      "key": "subplay",
+      "local_id": 2089,
+      "local_title": "SUB-PLAY: Adversarial Policies against Partially Observed Multi-Agent Reinforcement Learning Systems",
+      "publication": "ACM CCS",
+      "year": 2024,
+      "local_metadata_file": "src/assets/data/meta_json/ACM CCS - 2024.json",
+      "evidence_level": "F",
+      "access_result": {
+        "key": "subplay",
+        "url": "https://arxiv.org/html/2402.03741",
+        "resolved_url": "https://arxiv.org/html/2402.03741",
+        "status": "ok",
+        "kind": "html",
+        "sha256": "82badc367c293f706ee8d287abde22d99527ba21ee5ba77cbe804fd44bd11a4f"
+      },
+      "report_heading": "**④ SUB-PLAY — Adversarial Policies against Partially Observed Multi-Agent Reinforcement Learning Systems（2024；ID 2089；F）**",
+      "review_fields": {
+        "对比设计": "在 Predator-prey、World Communication 等环境比较启发式、Self-play、Victim-play，改变距离／区域等观测限制，以受害策略的任务表现衡量攻击效果。",
+        "消融": "§5.3、Table 2 检验 Subgame Construction（SC）、Transition Dissemination（TD）、Policy Meritocracy（PM）及其组合，展示结构划分、经验传播和策略筛选的贡献。",
+        "额外测试": "不同观测条件下迁移、扩展性与成本，属于泛化和资源测试。",
+        "可迁移": "如果蜜罐策略面对只能看到部分环境的攻击者，测试“不同可见信息”及策略迁移；经验共享应单独消融。这里是多智能体仿真，不是网络蜜罐效果的直接证据。"
+      },
+      "source_links": [
+        "https://arxiv.org/html/2402.03741"
+      ],
+      "report": "report.md"
+    },
+    {
+      "key": "incalmo",
+      "local_id": 244,
+      "local_title": "Incalmo: an Autonomous Llm-Assisted System for Red Teaming Multi-Host Networks",
+      "publication": "IEEE S&P",
+      "year": 2026,
+      "local_metadata_file": "src/assets/data/meta_json/IEEE S&P - 2026.json",
+      "evidence_level": "F",
+      "access_result": {
+        "key": "incalmo",
+        "url": "https://arxiv.org/html/2501.16466v4",
+        "resolved_url": "https://arxiv.org/html/2501.16466v4",
+        "status": "ok",
+        "kind": "html",
+        "sha256": "83a4e6d3f2d5304f1701690efe7e251a7229f75a8bf8327ba06aa22fb121c4a1"
+      },
+      "report_heading": "**⑤ Incalmo — an Autonomous LLM-Assisted System for Red Teaming Multi-Host Networks（2026；ID 244；F）**",
+      "review_fields": {
+        "对比设计": "使用 MHBench 多主机环境；与 ExpertPromptShell 比较时控制模型后端。完整比较覆盖 40 个环境，每环境 5 次、每次 75 分钟；模型和消融分析有较小的环境子集，不能宣称全部模型都跑过完整矩阵。",
+        "消融": "Incalmo-WHT 去掉高层任务接口、改用低层任务；Incalmo-WS 使规划器无法访问环境和攻击图服务，但底层任务智能体仍使用这些服务，不能写成“系统彻底删除状态服务”。",
+        "指标": "Success 是多次尝试中是否至少一次拿到关键资产，Reliability 是尝试层面的可靠性，Total Acquisition 关注资产获取范围，三者分母不同。",
+        "可迁移": "用足够强的多主机攻击者检验蜜罐，并拆开“规划接口”和“状态知识”贡献；不要用 best-of-5 成功率冒充单次成功率。"
+      },
+      "source_links": [
+        "https://arxiv.org/html/2501.16466v4"
+      ],
+      "report": "report.md"
+    },
+    {
+      "key": "depcomm",
+      "local_id": 997,
+      "local_title": "DEPCOMM: Graph Summarization on System Audit Logs for Attack Investigation",
+      "publication": "IEEE S&P",
+      "year": 2022,
+      "local_metadata_file": "src/assets/data/meta_json/IEEE S&P - 2022.json",
+      "evidence_level": "F",
+      "access_result": {
+        "key": "depcomm",
+        "url": "https://par.nsf.gov/servlets/purl/10287251",
+        "resolved_url": "https://par.nsf.gov/servlets/purl/10287251",
+        "status": "ok",
+        "kind": "pdf",
+        "sha256": "0ce799d821854eee93359cce932f66048fb9ed934bd3a6eff1cfd88c8f3e2bff"
+      },
+      "report_heading": "**⑥ DEPCOMM — Graph Summarization on System Audit Logs for Attack Investigation（2022；ID 997；F）**",
+      "review_fields": {
+        "对比设计": "6 个自建多步攻击与 8 个 DARPA TC 案例；与 NoDoze 比较调查摘要，与多种社区发现方法比较社区质量，还检查与 HOLMES 的配合。",
+        "组件评价": "分别检查社区发现、压缩、InfoPath 排序和耗时。压缩前后比较节点／边数量，同时核验 InfoPaths 未改变；这比仅报告“日志减少了多少”更有说服力。不同社区算法的比较不等于只替换一个内部模块的严格消融。",
+        "指标": "社区 F1、攻击信息保留、Top-k 路径可解释性、压缩率、运行时间。",
+        "可迁移": "蜜罐情报摘要必须证明关键事件和因果关系保留下来；建议比较原始日志、规则摘要、通用 LLM 摘要、你的证据图摘要。"
+      },
+      "source_links": [
+        "https://par.nsf.gov/servlets/purl/10287251"
+      ],
+      "report": "report.md"
+    },
+    {
+      "key": "chimera",
+      "local_id": 6598,
+      "local_title": "Chimera: Harnessing Multi-Agent LLMs for Automatic Insider Threat Simulation",
+      "publication": "NDSS",
+      "year": 2026,
+      "local_metadata_file": "src/assets/data/meta_json/NDSS - 2026.json",
+      "evidence_level": "F",
+      "access_result": {
+        "key": "chimera",
+        "url": "https://www.ndss-symposium.org/wp-content/uploads/2026-f375-paper.pdf",
+        "resolved_url": "https://www.ndss-symposium.org/wp-content/uploads/2026-f375-paper.pdf",
+        "status": "ok",
+        "kind": "pdf",
+        "sha256": "8e51dbb0083ae4f4f58d2f1acc4d65d612f4fd88a99ff93457b5c48a492518cc"
+      },
+      "report_heading": "**⑦ Chimera — Harnessing Multi-Agent LLMs for Automatic Insider Threat Simulation（2026；ID 6598；F）**",
+      "review_fields": {
+        "对比设计": "在技术、金融、医疗等企业场景生成多角色行为，用专家判断与定量分析检验真实性，再用检测器检验数据的下游用途；比较涉及 ChimeraLog、CERT、TWOS，但各数据集并非参与每个实验。",
+        "下游验证": "SVM、CNN、GCN、DS-IID 等检测器，在同数据集与跨数据集设置下评估，并重复实验。不同基础模型也有比较。",
+        "消融": "正文未确认系统性“去掉某个角色／记忆／规划模块”的消融；换模型和跨数据集测试不能代替这一点。",
+        "可迁移": "蜜罐生成的行为或情报可同时接受专家真实性检查和下游检测／调查验证。更难被检测的数据，不自动等于更真实的数据。"
+      },
+      "source_links": [
+        "https://www.ndss-symposium.org/wp-content/uploads/2026-f375-paper.pdf"
+      ],
+      "report": "report.md"
+    },
+    {
+      "key": "honeysat",
+      "local_id": 6653,
+      "local_title": "HoneySat: A Network-based Satellite Honeypot Framework",
+      "publication": "NDSS",
+      "year": 2026,
+      "local_metadata_file": "src/assets/data/meta_json/NDSS - 2026.json",
+      "evidence_level": "F",
+      "access_result": {
+        "key": "honeysat",
+        "url": "https://www.ndss-symposium.org/wp-content/uploads/2026-f537-paper.pdf",
+        "resolved_url": "https://www.ndss-symposium.org/wp-content/uploads/2026-f537-paper.pdf",
+        "status": "ok",
+        "kind": "pdf",
+        "sha256": "992161a3b194a444ad9c9aca5aef4ea528266d9f82c2fcce6e367bd314a0070e"
+      },
+      "report_heading": "**⑧ HoneySat — A Network-based Satellite Honeypot Framework（2026；ID 6653；F）**",
+      "review_fields": {
+        "对比设计": "先按 SPACE-SHIELD 检查攻击技术的可实现范围，再由 10 位有经验的卫星操作者完成任务、评价逼真度，辅以在线交互和扩展协议的验证。",
+        "关键边界": "专家知道自己面对仿真环境，所以评分是逼真度评价，不能转述成盲测欺骗成功率。威胁框架中的“可适用技术”也不等于全部已实现。",
+        "消融": "未确认经典的组件去除实验；核心是功能、专家和实地观测的多类证据。",
+        "可迁移": "在缺少同领域可运行基线时，先建立真实业务任务与协议行为的评价标准，并明确哪些是真实交互、哪些是专家主观判断。"
+      },
+      "source_links": [
+        "https://www.ndss-symposium.org/wp-content/uploads/2026-f537-paper.pdf"
+      ],
+      "report": "report.md"
+    },
+    {
+      "key": "marg",
+      "local_id": 8269,
+      "local_title": "Can Cooperative Multi-Agent Reinforcement Learning Boost Automatic Web Testing? An Exploratory Study",
+      "publication": "ASE",
+      "year": 2024,
+      "local_metadata_file": "src/assets/data/meta_json/ASE - 2024.json",
+      "evidence_level": "F",
+      "access_result": {
+        "key": "marg",
+        "url": "https://yepangliu.github.io/files/ASE2024-MARG.pdf",
+        "resolved_url": "https://yepangliu.github.io/files/ASE2024-MARG.pdf",
+        "status": "ok",
+        "kind": "pdf",
+        "sha256": "89e8bc1f31f7a7caf751c4df69688049cb4b5be0b1ead69b12a403e1b6cd5088"
+      },
+      "report_heading": "**⑨ MARG — Can Cooperative Multi-Agent Reinforcement Learning Boost Automatic Web Testing?（2024；ID 8269；F）**",
+      "review_fields": {
+        "对比设计": "9 个网站，比较 WebExplor、QExplore 与相同智能体数量的独立 Q-learning（IQL_N），以及不同协作方式。固定 2 小时时间预算，重复 3 次。",
+        "消融／结构对照": "同样 N 个智能体，独立学习对照共享／交流学习，可区分“多开几个智能体”和“协作机制”的收益；另改变智能体数量。",
+        "指标": "状态、动作、故障覆盖，通信和信息传播成本。相同运行时长并不意味着相同总算力，资源成本还需单列。",
+        "可迁移": "多蜜罐协作必须比较“相同数量但不交换情报”的版本。否则无法判断收益来自协作还是预算增加。"
+      },
+      "source_links": [
+        "https://yepangliu.github.io/files/ASE2024-MARG.pdf"
+      ],
+      "report": "report.md"
+    },
+    {
+      "key": "sejury",
+      "local_id": 8084,
+      "local_title": "SE-Jury: An LLM-as-Ensemble-Judge Metric for Narrowing the Gap with Human Evaluation in SE",
+      "publication": "ASE",
+      "year": 2025,
+      "local_metadata_file": "src/assets/data/meta_json/ASE - 2025.json",
+      "evidence_level": "F",
+      "access_result": {
+        "key": "sejury",
+        "url": "https://arxiv.org/html/2505.20854",
+        "resolved_url": "https://arxiv.org/html/2505.20854",
+        "status": "ok",
+        "kind": "html",
+        "sha256": "4650056e64bdff5940651d625125b260202c0f7dac7b4581069f2dbf19abcecb"
+      },
+      "report_heading": "**⑩ SE-Jury — An LLM-as-Ensemble-Judge Metric for Narrowing the Gap with Human Evaluation in SE（2025；ID 8084；F）**",
+      "review_fields": {
+        "对比设计": "比较单一评审策略、集成策略以及不同模型，考察与人类判断的相关性／一致性和成本。",
+        "消融": "“无 Team Selection”使用全部策略的简单集成；再同时取消策略选择与定制策略，退回普通提示。后一步是组合移除，不能解释成两个互相独立的单因素效应。",
+        "关键控制": "用于选择策略的少量带标签样本与测试样本分开；另借可执行测试结果检验评价可靠性。",
+        "可迁移": "给情报摘要打分的 LLM 评审器需要独立人工标注校准；不能既用同一批样本优化评分提示，又报告其测试一致性。"
+      },
+      "source_links": [
+        "https://arxiv.org/html/2505.20854"
+      ],
+      "report": "report.md"
+    },
+    {
+      "key": "autoresttest",
+      "local_id": 9757,
+      "local_title": "A Multi-Agent Approach for REST API Testing with Semantic Graphs and LLM-Driven Inputs",
+      "publication": "ICSE",
+      "year": 2025,
+      "local_metadata_file": "src/assets/data/meta_json/ICSE - 2025.json",
+      "evidence_level": "F",
+      "access_result": {
+        "key": "autoresttest",
+        "url": "https://arxiv.org/html/2411.07098",
+        "resolved_url": "https://arxiv.org/html/2411.07098",
+        "status": "ok",
+        "kind": "html",
+        "sha256": "dde68936b2dac46ff27a01d1b8dad8c7354f612a484a24ea55380ae3ced0e450"
+      },
+      "report_heading": "**⑪ AutoRestTest — A Multi-Agent Approach for REST API Testing with Semantic Graphs and LLM-Driven Inputs（2025；ID 9757；F）**",
+      "review_fields": {
+        "对比设计": "12 个 REST 服务，与 ARAT-RL、EvoMaster、MoRest、RESTler 比较；使用 RESTGPT 增强的规范减轻输入信息不对等。每次 1 小时，重复 10 次。",
+        "消融": "去 LLM 输入生成、去 temporal-difference Q-learning、去语义属性依赖图 SPDG。作者明确保留智能体骨架，因此“Without Learning”不是“删掉多智能体”。",
+        "指标": "方法／行／分支覆盖、操作覆盖和失败响应；HTTP 500 不自动等于独立安全漏洞。",
+        "可迁移": "为蜜罐设计“策略不再更新但仍能正常运行”“取消依赖图但接口可用”的消融，比直接删掉整个执行链更能解释收益。"
+      },
+      "source_links": [
+        "https://arxiv.org/html/2411.07098"
+      ],
+      "report": "report.md"
+    },
+    {
+      "key": "codesummary",
+      "local_id": 10110,
+      "local_title": "Evaluating Code Summarization Techniques: A New Metric and an Empirical Characterization",
+      "publication": "ICSE",
+      "year": 2024,
+      "local_metadata_file": "src/assets/data/meta_json/ICSE - 2024.json",
+      "evidence_level": "F",
+      "access_result": {
+        "key": "codesummary",
+        "url": "https://arxiv.org/html/2312.15475",
+        "resolved_url": "https://arxiv.org/html/2312.15475",
+        "status": "ok",
+        "kind": "html",
+        "sha256": "492764868ed2da3a06eaa3a3d6e03c975b4bfee3b2c8f93916bf8fb8364a6ed2"
+      },
+      "report_heading": "**⑫ SIDE — Evaluating Code Summarization Techniques: A New Metric and an Empirical Characterization（2024；ID 10110；F）**",
+      "review_fields": {
+        "对比设计": "用 5,201 条开发者评价比较包括 SIDE 在内的 40 种指标，涉及简洁性、流畅性、内容充分性等，分析指标间关系和对人工评价的解释力。",
+        "消融": "对比训练时加入 hard negatives 与只用随机负例；§5.2 报告影响很小，主要研究发现没有因此改变。",
+        "值得学的地方": "消融无明显提升也应如实呈现，不能因模块“理论上重要”就选择性忽略结果。",
+        "可迁移": "情报摘要要分别评价内容覆盖、事实正确、冗余和可读性，不能仅凭与参考文本词汇相似就判定有效。代码领域的评测结论仍需在安全情报数据上重验证。"
+      },
+      "source_links": [
+        "https://arxiv.org/html/2312.15475"
+      ],
+      "report": "report.md"
+    },
+    {
+      "key": "mastest",
+      "local_id": 11675,
+      "local_title": "Enhancing Multi-agent System Testing with Diversity-Guided Exploration and Adaptive Critical State Exploitation",
+      "publication": "ISSTA",
+      "year": 2024,
+      "local_metadata_file": "src/assets/data/meta_json/ISSTA - 2024.json",
+      "evidence_level": "A",
+      "access_result": {
+        "key": "mastest",
+        "url": "https://is.cas.cn/ztzl2016/2024xsnh/2024hbzs/202408/P020240828564827483868.pdf",
+        "status": "error",
+        "error": "404 Client Error: Not Found for url: https://is.cas.cn/ztzl2016/2024xsnh/2024hbzs/202408/P020240828564827483868.pdf"
+      },
+      "report_heading": "**⑬ MASTest — Enhancing Multi-agent System Testing with Diversity-Guided Exploration and Adaptive Critical State Exploitation（2024；ID 11675；A）**",
+      "review_fields": {
+        "为什么选": "同时关注多智能体行为多样性和关键状态，对“如何让攻击者暴露更丰富行为”的测试设计有启发。",
+        "已确认范围": "摘要描述多样性引导探索与关键状态利用。全文入口未取得可读内容；作者单位海报被搜索引擎索引，但直接访问返回 404，不能当作已读海报。",
+        "未确认": "基线名单、预算、重复次数、确切消融组合与表格数字，均不填写。",
+        "后续核查问题": "是否分别去掉个体／群体多样性、关键状态选择及扰动自适应；是否同时报告不同失败类型和发现总数。这里是阅读问题，**不是原文结论**。"
+      },
+      "source_links": [
+        "https://2024.issta.org/details/issta-2024-papers/119/Enhancing-Multi-agent-System-Testing-with-Diversity-Guided-Exploration-and-Adaptive-C"
+      ],
+      "report": "report.md"
+    },
+    {
+      "key": "judge",
+      "local_id": 11535,
+      "local_title": "Can LLMs Replace Human Evaluators? An Empirical Study of LLM-as-a-Judge in Software Engineering",
+      "publication": "ISSTA",
+      "year": 2025,
+      "local_metadata_file": "src/assets/data/meta_json/ISSTA - 2025.json",
+      "evidence_level": "F",
+      "access_result": {
+        "key": "judge",
+        "url": "https://arxiv.org/html/2502.06193",
+        "resolved_url": "https://arxiv.org/html/2502.06193",
+        "status": "ok",
+        "kind": "html",
+        "sha256": "578ab7db83f8b705870497301f2f0e035c929db2f98995fca445e4680cc14e25"
+      },
+      "report_heading": "**⑭ Can LLMs Replace Human Evaluators? An Empirical Study of LLM-as-a-Judge in Software Engineering（2025；ID 11535；F）**",
+      "review_fields": {
+        "对比设计": "在代码翻译、生成和摘要三类任务，对比传统指标、嵌入／概率指标、直接 LLM 打分及不同评审策略，与人工标签计算相关性。",
+        "实验性质": "这是评测实证研究，不是一个新模块系统的常规消融。额外比较逐个打分与成对选择，并交换答案先后顺序，测判断是否一致。",
+        "可迁移": "情报质量盲评时隐藏方法名、交换候选输出顺序，单独测位置偏差；评审器在代码生成上的好表现，不能直接迁移成情报摘要的有效性证明。"
+      },
+      "source_links": [
+        "https://arxiv.org/html/2502.06193"
+      ],
+      "report": "report.md"
+    },
+    {
+      "key": "pwn",
+      "local_id": 12919,
+      "local_title": "Getting pwn’d by AI: Penetration Testing with Large Language Models",
+      "publication": "FSE",
+      "year": 2023,
+      "local_metadata_file": "src/assets/data/meta_json/FSE - 2023.json",
+      "evidence_level": "F",
+      "access_result": {
+        "key": "pwn",
+        "url": "https://arxiv.org/pdf/2308.00121",
+        "resolved_url": "https://arxiv.org/pdf/2308.00121",
+        "status": "ok",
+        "kind": "pdf",
+        "sha256": "2690e4e30125b73f658b1545412829cd23a3dd7f540306d8e7ba22811b4f466e"
+      },
+      "report_heading": "**⑮ Getting pwn’d by AI: Penetration Testing with Large Language Models（2023；ID 12919；F）**",
+      "review_fields": {
+        "实验设计": "探索性原型，分别研究高层辅助和低层执行；低层在刻意配置脆弱点的 Linux 虚拟机里执行“建议—执行—反馈”的闭环，并记录行为，重复多次观察稳定性。",
+        "比较与消融边界": "文中讨论与传统工具的差异，但不是现代大规模基准下的完整 SOTA 对比；没有系统性模块消融。不能把展望里的记忆、反思等方案写成已经验证的模块。",
+        "可迁移": "可作为廉价攻击闭环参照和失败案例分析来源；正式蜜罐实验应补上环境多样性、统一预算和更强攻击者。"
+      },
+      "source_links": [
+        "https://arxiv.org/pdf/2308.00121"
+      ],
+      "report": "report.md"
+    },
+    {
+      "key": "mtas",
+      "local_id": 12736,
+      "local_title": "MTAS: A Reference-Free Approach for Evaluating Abstractive Summarization Systems",
+      "publication": "FSE",
+      "year": 2024,
+      "local_metadata_file": "src/assets/data/meta_json/FSE - 2024.json",
+      "evidence_level": "A",
+      "access_result": {
+        "key": "mtas",
+        "url": "https://dl.acm.org/doi/pdf/10.1145/3660820",
+        "status": "error",
+        "error": "403 Client Error: Forbidden for url: https://dl.acm.org/doi/pdf/10.1145/3660820"
+      },
+      "report_heading": "**⑯ MTAS — A Reference-Free Approach for Evaluating Abstractive Summarization Systems（2024；ID 12736；A）**",
+      "review_fields": {
+        "为什么选": "情报常没有唯一参考摘要，MTAS 的无参考、蜕变关系评价与这个问题契合。",
+        "已确认范围": "摘要提出利用输入变换及摘要一致性检查评价抽象摘要系统。",
+        "未确认": "ACM 全文请求返回 403，因此不列具体基线或消融结果。",
+        "迁移建议，非原文实验事实": "给同一日志改排序、增加无关事件、做等价字段改名，再检查关键攻击事实是否保持；前提是该变换确实不改变安全语义，尤其不能随意打乱有因果含义的时间顺序。"
+      },
+      "source_links": [
+        "https://2024.esec-fse.org/details/fse-2024-research-papers/103/MTAS-A-Reference-Free-Approach-for-Evaluating-Abstractive-Summarization-Systems",
+        "https://doi.org/10.1145/3660820"
+      ],
+      "report": "report.md"
+    },
+    {
+      "key": "fleetio",
+      "local_id": 14722,
+      "local_title": "FleetIO: Managing Multi-Tenant Cloud Storage with Multi-Agent Reinforcement Learning",
+      "publication": "ASPLOS",
+      "year": 2025,
+      "local_metadata_file": "src/assets/data/meta_json/ASPLOS - 2025.json",
+      "evidence_level": "F",
+      "access_result": {
+        "key": "fleetio",
+        "url": "https://snir.cs.illinois.edu/listed/fleetIO.pdf",
+        "resolved_url": "https://snir.cs.illinois.edu/listed/fleetIO.pdf",
+        "status": "ok",
+        "kind": "pdf",
+        "sha256": "802f8dfffdfb93721f2b8a0f1c0e04cda5f6d7394e7126cb065b895ffcc8a90c"
+      },
+      "report_heading": "**⑰ FleetIO — Managing Multi-Tenant Cloud Storage with Multi-Agent Reinforcement Learning（2025；ID 14722；F）**",
+      "review_fields": {
+        "对比设计": "原型系统上比较硬件隔离、软件隔离、SSDKeeper、基于历史窗口的自适应分配；联合看利用率与 P99 延迟，另测规模和负载切换。",
+        "消融": "FleetIO-Unified-Global 保留全局奖励但统一偏好参数；FleetIO-Customized-Local 保留个性化参数但只用本地奖励；完整版同时具备二者。可定位个性化权衡与全局协作激励的作用。",
+        "可迁移": "如果你用强化学习优化蜜罐，可比较“单节点交互收益”和“整个网络的新增情报收益”，避免各节点重复套取相同信息。这里是奖励设计借鉴，不能把存储实验当作欺骗效果证明。"
+      },
+      "source_links": [
+        "https://snir.cs.illinois.edu/listed/fleetIO.pdf"
+      ],
+      "report": "report.md"
+    },
+    {
+      "key": "mulberry",
+      "local_id": 14945,
+      "local_title": "MulBERRY: Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems",
+      "publication": "ASPLOS",
+      "year": 2024,
+      "local_metadata_file": "src/assets/data/meta_json/ASPLOS - 2024.json",
+      "evidence_level": "S",
+      "access_result": {
+        "key": "mulberry",
+        "url": "https://zishenwan.github.io/publication/ASPLOS24_mulberry_slide.pdf",
+        "resolved_url": "https://zishenwan.github.io/publication/ASPLOS24_mulberry_slide.pdf",
+        "status": "ok",
+        "kind": "pdf",
+        "sha256": "fe571d09831a3e9c1ac1dcd729d5af4ae30a8c9cf48e3e97d6c55c0431d91499"
+      },
+      "report_heading": "**⑱ MulBERRY — Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems（2024；ID 14945；S）**",
+      "review_fields": {
+        "已核对材料": "作者会议报告幻灯片，未取得正式论文全文。",
+        "可确认设计": "与 Classical MA 比较，改变电压和低电压智能体数量；同时看任务成功率、飞行距离／能耗和任务数量。第 52 页说明所报结果取 500 次运行平均；后续页逐步展示设备端方案及资源／协作优化。",
+        "消融边界": "幻灯片展示递增加入优化的层次，但不足以完整核实每一步的实验控制及独立贡献，不将其整理成已确认的单因素消融表。",
+        "可迁移": "对蜜罐“更便宜”的论证需同步报告任务质量；模型缩小、并发增加之后，情报量是否下降要一起看。"
+      },
+      "source_links": [
+        "https://zishenwan.github.io/publication/ASPLOS24_mulberry_slide.pdf"
+      ],
+      "report": "report.md"
+    },
+    {
+      "key": "potemkin",
+      "local_id": 14444,
+      "local_title": "Scalability, fidelity, and containment in the potemkin virtual honeyfarm",
+      "publication": "SOSP",
+      "year": 2005,
+      "local_metadata_file": "src/assets/data/meta_json/SOSP - 2005.json",
+      "evidence_level": "F",
+      "access_result": {
+        "key": "potemkin",
+        "url": "https://web.stanford.edu/class/archive/cs/cs240/cs240.1086/readings/potemkin.pdf",
+        "resolved_url": "https://web.stanford.edu/class/archive/cs/cs240/cs240.1086/readings/potemkin.pdf",
+        "status": "ok",
+        "kind": "pdf",
+        "sha256": "63958700db1c15cb2c7bba528096f04138b92ceae6dbbefabf2ed490fba27a35"
+      },
+      "report_heading": "**⑲ Potemkin — Scalability, fidelity, and containment in the potemkin virtual honeyfarm（2005；ID 14444；F）**",
+      "review_fields": {
+        "对比设计": "用真实网络流量评估地址复用、所需 VM 数和资源需求；改变 VM 空闲回收时间，比较开／关扫描过滤。再拆解克隆、共享内存和网关成本。",
+        "消融／微基准": "同一流量下开关 scan filter 是明确机制对照；Fork 与预分配域比较克隆时间。内存共享实验还报告实际克隆上限与容量外推，二者不能混用。",
+        "指标": "平均／峰值活跃 VM、启动延迟、内存、CPU、网关开销。",
+        "可迁移": "LLM 蜜罐需测并发和冷启动；“节省资源”的策略是否漏掉有价值的会话，也应另作验证。这篇没有替你证明这一情报收益问题。"
+      },
+      "source_links": [
+        "https://web.stanford.edu/class/archive/cs/cs240/cs240.1086/readings/potemkin.pdf"
+      ],
+      "report": "report.md"
+    },
+    {
+      "key": "backtracker",
+      "local_id": 14514,
+      "local_title": "Backtracking intrusions",
+      "publication": "SOSP",
+      "year": 2003,
+      "local_metadata_file": "src/assets/data/meta_json/SOSP - 2003.json",
+      "evidence_level": "F",
+      "access_result": {
+        "key": "backtracker",
+        "url": "https://www.cs.rochester.edu/meetings/sosp2003/papers/p190-king.pdf",
+        "resolved_url": "https://www.cs.rochester.edu/meetings/sosp2003/papers/p190-king.pdf",
+        "status": "ok",
+        "kind": "pdf",
+        "sha256": "286f035fece4e0f9992b1e805404e10f0efff9ce6192c872a924f44046f90bbb"
+      },
+      "report_heading": "**⑳ Backtracking intrusions（2003；ID 14514；F）**",
+      "review_fields": {
+        "对比设计": "使用真实蜜罐入侵案例和混有正常负载的自建攻击，比较过滤前后的依赖图，检查能否保留导致入侵的关键链条。",
+        "组件检验": "逐步加入不同依赖过滤，减少无关节点／边；额外过滤可能影响证据范围，所以不能只比较图变小的程度。",
+        "控制开销的方式": "用 ReVirt 重放同一执行轨迹，比较有无事件日志记录器，避免两次真人攻击不同而污染性能比较。",
+        "可迁移": "情报去噪必须报告关键因果路径召回；确定性重放适合日志开销，交互策略会改变后续行为时，则不能用同一静态轨迹代替完整闭环效果实验。"
+      },
+      "source_links": [
+        "https://www.cs.rochester.edu/meetings/sosp2003/papers/p190-king.pdf"
+      ],
+      "report": "report.md"
+    },
+    {
+      "key": "cdsmg",
+      "local_id": 15928,
+      "local_title": "Learning Sequential Deception Defense Strategy Against APT Using Stackelberg Markov Game",
+      "publication": "TIFS",
+      "year": 2026,
+      "local_metadata_file": "src/assets/data/meta_json/TIFS - 2026.json",
+      "evidence_level": "A",
+      "access_result": {
+        "key": "cdsmg",
+        "url": "https://doi.org/10.1109/TIFS.2026.3664334",
+        "status": "error",
+        "error": "Document is empty"
+      },
+      "report_heading": "**㉑ Learning Sequential Deception Defense Strategy Against APT Using Stackelberg Markov Game（2026；ID 15928；A）**",
+      "review_fields": {
+        "为什么选": "与多阶段、策略性欺骗最直接相关，摘要涉及序贯决策和改进 PPO。",
+        "证据范围": "本次只有本地摘要和出版身份；未取得全文。",
+        "不能确认": "具体基线、奖励定义、环境划分、消融组件及重复次数。",
+        "建议后续重点读": "是否在同样防御预算下比较静态、随机和学习策略；是否分开检验状态建模、动作选择与奖励。上述是待核查问题，不是已证实的原文实验。"
+      },
+      "source_links": [
+        "https://doi.org/10.1109/TIFS.2026.3664334"
+      ],
+      "report": "report.md"
+    },
+    {
+      "key": "disguise",
+      "local_id": 15830,
+      "local_title": "Disguise While Defense: Avoid Refusal Responses in LLM's Defense via a Multi-Agent Attacker-Disguiser Game",
+      "publication": "TIFS",
+      "year": 2026,
+      "local_metadata_file": "src/assets/data/meta_json/TIFS - 2026.json",
+      "evidence_level": "A",
+      "access_result": {
+        "key": "disguise",
+        "url": "https://ieeexplore.ieee.org/document/11218933/",
+        "status": "error",
+        "error": "Document is empty"
+      },
+      "report_heading": "**㉒ Disguise While Defense: Avoid Refusal Responses in LLM’s Defense via a Multi-Agent Attacker-Disguiser Game（2026；ID 15830；A）**",
+      "review_fields": {
+        "为什么选": "与欺骗和多智能体博弈相关，可启发区分表面响应与实际目标达成。",
+        "证据范围": "摘要可确认博弈式方法及相关策略学习；全文访问未返回可读内容。",
+        "不能确认": "不能仅根据方法包含多个模块，就断言论文逐一消融了这些模块，也不填写未经核实的成功率。",
+        "迁移边界": "这类攻击／防御博弈不等同于蜜罐情报收集。你的最终目标仍需以实际行为和可验证情报定义。"
+      },
+      "source_links": [
+        "https://ieeexplore.ieee.org/document/11218933/",
+        "https://doi.org/10.1109/TIFS.2025.3626228"
+      ],
+      "report": "report.md"
+    },
+    {
+      "key": "automaltool",
+      "local_id": 16116,
+      "local_title": "Automatic Red Teaming LLM-Based Agents With Model Context Protocol Tools",
+      "publication": "TIFS",
+      "year": 2026,
+      "local_metadata_file": "src/assets/data/meta_json/TIFS - 2026.json",
+      "evidence_level": "F",
+      "access_result": {
+        "key": "automaltool",
+        "url": "https://nesa.zju.edu.cn/download/auto_20260505_T-IFS-23770_CameraReady.pdf",
+        "resolved_url": "https://nesa.zju.edu.cn/download/auto_20260505_T-IFS-23770_CameraReady.pdf",
+        "status": "ok",
+        "kind": "pdf",
+        "sha256": "74bf7efb5af1b7bbe14a001cc5680040840ce46ee634a1cd8e042c2f94d2f79a"
+      },
+      "report_heading": "**㉓ AutoMalTool — Automatic Red Teaming LLM-Based Agents With Model Context Protocol Tools（2026；ID 16116；F）**",
+      "review_fields": {
+        "对比设计": "作者终稿覆盖 Claude Desktop、Cline、Cursor、Windsurf，3 类 MCP 服务、53 个原始工具；对不同目标代理／后端测试，再用 MCP-Scan 与 A.I.G 检验检测表现。A.I.G 使用核心模块复现，非整个产品直接对比。",
+        "关键指标": "生成成功率 GSR 与实际代理上的有效率 ESR 分开；后者的分母是成功生成的样本，不能直接当成所有初始任务的端到端成功率。",
+        "组件评价": "§V-D 分别抽样核验任务生成、Oracle 判定、模拟代理与真实代理的一致性；§V-E 换代理模型做敏感性测试。它们不是完整的逐组件去除消融。",
+        "可迁移": "内部模拟器觉得“已骗到”，仍需部署后验证真实行为。选中含某种标记的样本再与总体比较，也不是对该标记的因果消融。"
+      },
+      "source_links": [
+        "https://nesa.zju.edu.cn/download/auto_20260505_T-IFS-23770_CameraReady.pdf"
+      ],
+      "report": "report.md"
+    }
+  ]
+}

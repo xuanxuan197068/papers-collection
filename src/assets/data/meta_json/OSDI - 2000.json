@@ -1,0 +1,242 @@
+[
+  {
+    "id": 18044,
+    "year": 2000,
+    "title": "Checking system rules using system-specific, programmer-written compiler extensions",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1251229.1251230",
+    "abstract": "Systems software such as OS kernels, embedded systems, and libraries must obey many rules for both correctness and performance. Common examples include \"accesses to variable A must be guarded by lock B,\" \"system calls must check user pointers for validity before using them,\" and \"message handlers should free their buffers as quickly as possible to allow greater parallelism.\" Unfortunately, adherence to these rules is largely unchecked.This paper attacks this problem by showing how system implementors can use meta-level compilation (MC) to write simple, system-specific compiler extensions that automatically check their code for rule violations. By melding domain-specific knowledge with the automatic machinery of compilers, MC brings the benefits of language-level checking and optimizing to the higher, \"meta\" level of the systems implemented in these languages. This paper demonstrates the effectiveness of the MC approach by applying it to four complex, real systems: Linux, OpenBSD, the Xok exokernel, and the FLASH machine's embedded software. MC extensions found roughly 500 errors in these systems and led to numerous kernel patches. Most extensions were less than a hundred lines of code and written by implementors who had a limited understanding of the systems checked.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18045,
+    "year": 2000,
+    "title": "Devil: an IDL for hardware programming",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1251229.1251231",
+    "abstract": "To keep up with the frantic pace at which devices come out, drivers need to be quickly developed, debugged and tested. Although a driver is a critical system component, the driver development process has made little (if any) progress. The situation is particularly disastrous when considering the hardware operating code (i.e., the layer interacting with the device). Writing this code often relies on inaccurate or incomplete device documentation and involves assembly-level operations. As a result, hard-ware operating code is tedious to write, prone to errors, and hard to debug and maintain.This paper presents a new approach to developing hardware operating code based on an Interface Definition Language (IDL) for hard-ware functionalities, named Devil. This IDL allows a high-level definition of the communication with a device. A compiler automatically checks the consistency of a Devil definition and generates efficient low-level code.Because the Devil compiler checks safety critical properties, the long-awaited notion of robustness for hardware operating code is made possible. Finally, the wide variety of devices that we have already specified (mouse, sound, DMA, interrupt, Ethernet, video, and IDE disk controllers) demonstrates the expressiveness of the Devil language.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18046,
+    "year": 2000,
+    "title": "Taming the memory hogs: using compiler-inserted releases to manage physical memory intelligently",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1251229.1251232",
+    "abstract": "Out-of-core applications consume physical resources at a rapid rate, causing interactive applications sharing the same machine to exhibit poor response times. This behavior is the result of default resource management strategies in the OS that are inappropriate for memory-intensive applications. Using an approach that integrates compiler analysis with simple OS support and a run-time layer that adapts to dynamic conditions, we have shown that the impact of out-of-core applications on interactive ones can be greatly mitigated. A combination of prefetching pages that will soon be needed, and releasing pages no longer in use results in good throughput for the out-of-core task and good response time for the interactive one. Each class of application performs well according to the metric most important to it. In addition, the OS does not need to attempt to identify these application classes, or modify its default resource management policies in any way. We also observe that when an out-of-core application releases pages, it both improves the response time of interactive tasks, and also improves its own performance through better replacement decisions and reduced memory management overhead.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18047,
+    "year": 2000,
+    "title": "Surplus fair scheduling: a proportional-share CPU scheduling algorithm for symmetric multiprocessors",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1251229.1251233",
+    "abstract": "In this paper, we present surplus fair scheduling (SFS), a proportional-share CPU scheduler designed for symmetric multiprocessors. We first show that the infeasibility of certain weight assignments in multiprocessor environments results in unfairness or starvation in many existing proportional-share schedulers. We present a novel weight readjustment algorithm to translate infeasible weight assignments to a set of feasible weights. We show that weight readjustment enables existing proportional-share schedulers to significantly reduce, but not eliminate, the unfairness in their allocations. We then present surplus fair scheduling, a proportional-share scheduler that is designed explicitly for multiprocessor environments. We implement our scheduler in the Linux kernel and demonstrate its efficacy through an experimental evaluation. Our results show that SFS can achieve proportionate allocation, application isolation and good interactive performance, albeit at a slight increase in scheduling overhead. We conclude from our results that a proportional-share scheduler such as SFS is not only practical but also desirable for server operating systems.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18048,
+    "year": 2000,
+    "title": "Performance-driven processor allocation",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1251229.1251234",
+    "abstract": "This work is focused on processor allocation in shared-memory multiprocessor systems, where no knowledge of the application is available when applications are submitted. We perform the processor allocation taking into account the characteristics of the application measured at run-time. We want to demonstrate the importance of an accurate performance analysis and the criteria used to distribute the processors. With this aim, we present the SelfAnalyzer, an approach to dynamically analyzing the performance of applications (speedup, efficiency and execution time), and the Performance-Driven Processor Allocation (PDPA), a new scheduling policy that distributes processors considering both the global conditions of the system and the particular characteristics of running applications. This work also defends the importance of the interaction between the medium-term and the long-term scheduler to control the multiprogramming level in the case of the clairvoyant scheduling pol-icies1. We have implemented our proposal in an SGI Origin2000 with 64 processors and we have compared its performance with that of some scheduling policies proposed so far and with the native IRIX scheduling policy. Results show that the combination of the SelfAnalyzer+PDPA with the medium/long-term scheduling interaction outperforms the rest of the scheduling policies evaluated. The evaluation shows that in workloads where a simple equipartition performs well, the PDPA also performs well, and in extreme workloads where all the applications have a bad performance, our proposal can achieve a speedup of 3.9 with respect to an equipartition and 11.8 with respect to the native IRIX scheduling policy.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18049,
+    "year": 2000,
+    "title": "Policies for dynamic clock scheduling",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1251229.1251235",
+    "abstract": "Pocket computers are beginning to emerge that provide sufficient processing capability and memory capacity to run traditional desktop applications and operating systems on them. The increasing demand placed on these systems by software is competing against the continuing trend in the design of low-power microprocessors towards increasing the amount of computation per unit of energy. Consequently, in spite of advances in low-power circuit design, the microprocessor is likely to continue to account for a significant portion of the overall power consumption of pocket computers.This paper investigates clock scaling algorithms on the Itsy, an experimental pocket computer that runs a complete, functional multitasking operating system (a version of Linux 2.0.30). We implemented a number of clock scaling algorithms that are used to adjust the processor speed to reduce the power used by the processor. After testing these algorithms, we conclude that currently proposed algorithms consistently fail to achieve their goal of saving power while not causing user applications to change their interactive behavior.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18050,
+    "year": 2000,
+    "title": "Towards higher disk head utilization: extracting free bandwidth from busy disk drives",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1251229.1251236",
+    "abstract": "Freeblock scheduling is a new approach to utilizing more of a disk's potential media bandwidth. By filling rotational latency periods with useful media transfers, 20-50\\% of a never-idle disk's bandwidth can often be provided to background applications with no effect on foreground response times. This paper describes freeblock scheduling and demonstrates its value with simulation studies of two concrete applications: segment cleaning and data mining. Free segment cleaning often allows an LFS file system to maintain its ideal write performance when cleaning overheads would otherwise reduce performance by up to a factor of three. Free data mining can achieve over 47 full disk scans per day on an active transaction processing system, with no effect on its disk performance.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18051,
+    "year": 2000,
+    "title": "Latency management in storage systems",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1251229.1251237",
+    "abstract": "Storage Latency Estimation Descriptors, or SLEDs, are an API that allow applications to understand and take advantage of the dynamic state of a storage system. By accessing data in the file system cache or high-speed storage first, total I/O workloads can be reduced and performance improved. SLEDs report estimated data latency, allowing users, system utilities, and scripts to make file access decisions based on those retrieval time estimates. SLEDs thus can be used to improve individual application performance, reduce system workloads, and improve the user experience with more predictable behavior.We have modified the Linux 2.2 kernel to support SLEDs, and several Unix utilities and astronomical applications have been modified to use them. As a result, execution times of the Unix utilities when data file sizes exceed the size of the file system buffer cache have been reduced from 50\\% up to more than an order of magnitude. The astronomical applications incurred 30-50\\% fewer page faults and reductions in execution time of 10-35\\%. Performance of applications which use SLEDs also degrade more gracefully as data file size grows.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18052,
+    "year": 2000,
+    "title": "A low-overhead high-performance unified buffer management scheme that exploits sequential and looping references",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1251229.1251238",
+    "abstract": "In traditional file system implementations, the Least Recently Used (LRU) block replacement scheme is widely used to manage the buffer cache due to its simplicity and adaptability. However, the LRU scheme exhibits performance degradations because it does not make use of reference regularities such as sequential and looping references. In this paper, we present a Unified Buffer Management (UBM) scheme that exploits these regularities and yet, is simple to deploy. The UBM scheme automatically detects sequential and looping references and stores the detected blocks in separate partitions of the buffer cache. These partitions are managed by appropriate replacement schemes based on their detected patterns. The allocation problem among the divided partitions is also tackled with the use of the notion of marginal gains. In both trace-driven simulation experiments and experimental studies using an actual implementation in the FreeBSD operating system, the performance gains obtained through the use of this scheme are substantial. The results show that the hit ratios improve by as much as 57.7\\% (with an average of 29.2\\%) and the elapsed times are reduced by as much as 67.2\\% (with an average of 28.7\\%) compared to the LRU scheme for the workloads we used.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18053,
+    "year": 2000,
+    "title": "How to build a trusted database system on untrusted storage",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1251229.1251239",
+    "abstract": "Some emerging applications require programs to maintain sensitive state on untrusted hosts. This paper presents the architecture and implementation of a trusted database system, TDB, which leverages a small amount of trusted storage to protect a scalable amount of untrusted storage. The database is encrypted and validated against a collision-resistant hash kept in trusted storage, so untrusted programs cannot read the database or modify it undetectably. TDB integrates encryption and hashing with a low-level data model, which protects data and metadata uniformly, unlike systems built on top of a conventional database system. The implementation exploits synergies between hashing and log-structured storage. Preliminary performance results show that TDB outperforms an off-the-shelf embedded database system, thus supporting the suitability of the TDB architecture.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18054,
+    "year": 2000,
+    "title": "End-to-end authorization",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1251229.1251240",
+    "abstract": "Many boundaries impede the flow of authorization information, forcing applications that span those boundaries into hop-by-hop approaches to authorization. We present a unified approach to authorization. Our approach allows applications that span administrative, network, abstraction, and protocol boundaries to understand the end-to-end authority that justifies any given request. The resulting distributed systems are more secure and easier to audit.We describe boundaries that can interfere with end-to-end authorization, and outline our unified approach. We describe the system we built and the applications we adapted to use our unified authorization system, and measure its costs. We conclude that our system is a practical approach to the desirable goal of end-to-end authorization.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18055,
+    "year": 2000,
+    "title": "Self-securing storage: protecting data in compromised system",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1251229.1251241",
+    "abstract": "Self-securing storage prevents intruders from undetectably tampering with or permanently deleting stored data. To accomplish this, self-securing storage devices internally audit all requests and keep old versions of data for a window of time, regardless of the commands received from potentially compromised host operating systems. Within the window, system administrators have this valuable information for intrusion diagnosis and recovery. Our implementation, called S4, combines log-structuring with journal-based metadata to minimize the performance costs of comprehensive versioning. Experiments show that self-securing storage devices can deliver performance that is comparable with conventional storage systems. In addition, analyses indicate that several weeks worth of all versions can reasonably be kept on state-of-the-art disks, especially when differencing and compression technologies are employed.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18056,
+    "year": 2000,
+    "title": "Fast and secure distributed read-only file system",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1251229.1251242",
+    "abstract": "Internet users increasingly rely on publicly available data for everything from software installation to investment decisions. Unfortunately, the vast majority of public content on the Internet comes with no integrity or authenticity guarantees. This paper presents the self-certifying read-only file system, a content distribution system providing secure, scalable access to public, read-only data.The read-only file system makes the security of published content independent from that of the distribution infrastructure. In a secure area (perhaps off-line), a publisher creates a digitally-signed database out of a file system's contents. The publisher then replicates the database on untrusted content-distribution servers, allowing for high availability. The read-only file system protocol furthermore pushes the cryptographic cost of content verification entirely onto clients, allowing servers to scale to a large number of clients. Measurements of an implementation show that an individual server running on a 550 Mhz Pentium III with FreeBSD can support 1,012 connections per second and 300 concurrent clients compiling a large software package.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18057,
+    "year": 2000,
+    "title": "Overcast: reliable multicasting with on overlay network",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1251229.1251243",
+    "abstract": "Overcast is an application-level multicasting system that can be incrementally deployed using today's Internet infrastructure. These properties stem from Overcast's implementation as an overlay network. An overlay network consists of a collection of nodes placed at strategic locations in an existing network fabric. These nodes implement a network abstraction on top of the network provided by the underlying substrate network.Overcast provides scalable and reliable single-source multicast using a simple protocol for building efficient data distribution trees that adapt to changing network conditions. To support fast joins, Overcast implements a new protocol for efficiently tracking the global status of a changing distribution tree.Results based on simulations confirm that Overcast provides its added functionality while performing competitively with IP Multicast. Simulations indicate that Overcast quickly builds bandwidth-efficient distribution trees that, compared to IP Multicast, provide 70\\%-100\\% of the total bandwidth possible, at a cost of somewhat less than twice the network load. In addition, Overcast adapts quickly to changes caused by the addition of new nodes or the failure of existing nodes without causing undue load on the multicast source.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18058,
+    "year": 2000,
+    "title": "System support for bandwidth management and content adaptation in internet applications",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1251229.1251244",
+    "abstract": "This paper describes the implementation and evaluation of an operating system module, the Congestion Manager (CM), which provides integrated network flow management and exports a convenient programming interface that allows applications to be notified of, and adapt to, changing network conditions. We describe the API by which applications interface with the CM, and the architectural considerations that factored into the design. To evaluate the architecture and API, we describe our implementations of TCP; a streaming layered audio/video application; and an interactive audio application using the CM, and show that they achieve adaptive behavior without incurring much end-system overhead. All flows including TCP benefit from the sharing of congestion information, and applications are able to incorporate new functionality such as congestion control and adaptive behavior.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18059,
+    "year": 2000,
+    "title": "Operating system management of MEMS-based storage devices",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1251229.1251245",
+    "abstract": "MEMS-based storage devices promise significant performance, reliability, and power improvements relative to disk drives. This paper compares and contrasts these two storage technologies and explores how the physical characteristics of MEMS-based storage devices change four aspects of operating system (OS) management: request scheduling, data placement, failure management, and power conservation. Straightforward adaptations of existing disk request scheduling algorithms are found to be appropriate for MEMS-based storage devices. A new bipartite data placement scheme is shown to better match these devices' novel mechanical positioning characteristics. With aggressive internal redundancy, MEMS-based storage devices can mask and tolerate failure modes that halt operation or cause data loss for disks. In addition, MEMS-based storage devices simplify power management because the devices can be stopped and started rapidly.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18060,
+    "year": 2000,
+    "title": "Trading capacity for performance in a disk array",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1251229.1251246",
+    "abstract": "A variety of performance-enhancing techniques, such as striping, mirroring, and rotational data replication, exist in the disk array literature. Given a fixed budget of disks, one must intelligently choose what combination of these techniques to employ. In this paper, we present a way of designing disk arrays that can flexibly and systematically reduce seek and rotational delay in a balanced manner. We give analytical models that can guide an array designer towards optimal configurations by considering both disk and workload characteristics. We have implemented a prototype disk array that incorporates the configuration models. In the process, we have also developed a robust disk head position prediction mechanism without any hardware support. The resulting prototype demonstrates the effectiveness of the configuration models.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18061,
+    "year": 2000,
+    "title": "Interposed request routing for scalable network storage",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1251229.1251247",
+    "abstract": "This paper explores interposed request routing in Slice, a new storage system architecture for high-speed networks incorporating network-attached block storage. Slice interposes a request switching filter - called a µproxy - along each client's network path to the storage service (e.g., in a network adapter or switch). The µproxy intercepts request traffic and distributes it across a server ensemble. We propose request routing schemes for I/O and file service traffic, and explore their effect on service structure.The Slice prototype uses a packet filter µproxy to virtualize the standard Network File System (NFS) protocol, presenting to NFS clients a unified shared file volume with scalable bandwidth and capacity. Experimental results from the industry-standard SPECsfs97 workload demonstrate that the architecture enables construction of powerful network-attached storage services by aggregating cost-effective components on a switched Gigabit Ethernet LAN.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18062,
+    "year": 2000,
+    "title": "Proactive recovery in a Byzantine-fault-tolerant system",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1251229.1251248",
+    "abstract": "This paper describes an asynchronous state-machine replication system that tolerates Byzantine faults, which can be caused by malicious attacks or software errors. Our system is the first to recover Byzantine-faulty replicas proactively and it performs well because it uses symmetric rather than public-key cryptography for authentication. The recovery mechanism allows us to tolerate any number of faults over the lifetime of the system provided fewer than 1/3 of the replicas become faulty within a window of vulnerability that is small under normal conditions. The window may increase under a denial-of-service attack but we can detect and respond to such attacks. The paper presents results of experiments showing that overall performance is good and that even a small window of vulnerability has little impact on service latency.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18063,
+    "year": 2000,
+    "title": "Exploring failure transparency and the limits of generic recovery",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1251229.1251249",
+    "abstract": "We explore the abstraction of failure transparency in which the operating system provides the illusion of failure-free operation. To provide failure transparency, an operating system must recover applications after hardware, operating system, and application failures, and must do so without help from the programmer or unduly slowing failure-free performance. We describe two invariants that must be upheld to provide failure transparency: one that ensures sufficient application state is saved to guarantee the user cannot discern failures, and another that ensures sufficient application state is lost to allow recovery from failures affecting application state. We find that several real applications get failure transparency in the presence of simple stop failures with overhead of 0-12\\%. Less encouragingly, we find that applications violate one invariant in the course of upholding the other for more than 90\\% of application faults and 3-15\\% of operating system faults, rendering transparent recovery impossible for these cases.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18064,
+    "year": 2000,
+    "title": "Design and evaluation of a continuous consistency model for replicated services",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1251229.1251250",
+    "abstract": "The tradeoffs between consistency, performance, and availability are well understood. Traditionally, however, designers of replicated systems have been forced to choose from either strong consistency guarantees or none at all. This paper explores the semantic space between traditional strong and optimistic consistency models for replicated services. We argue that an important class of applications can tolerate relaxed consistency, but benefit from bounding the maximum rate of inconsistent access in an application-specific manner. Thus, we develop a set of metrics, Numerical Error, Order Error, and Staleness, to capture the consistency spectrum. We then present the design and implementation of TACT, a middleware layer that enforces arbitrary consistency bounds among replicas using these metrics. Finally, we show that three replicated applications demonstrate significant semantic and performance benefits from using our framework.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18065,
+    "year": 2000,
+    "title": "Scalable, distributed data structures for internet service construction",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1251229.1251251",
+    "abstract": "This paper presents a new persistent data management layer designed to simplify cluster-based Internet service construction. This self-managing layer, called a distributed data structure (DDS), presents a conventional single-site data structure interface to service authors, but partitions and replicates the data across a cluster. We have designed and implemented a distributed hash table DDS that has properties necessary for Internet services (incremental scaling of throughput and data capacity, fault tolerance and high availability, high concurrency, consistency, and durability). The hash table uses two-phase commits to present a coherent view of its data across all cluster nodes, allowing any node to service any task. We show that the distributed hash table simplifies Internet service construction by decoupling service-specific logic from the complexities of persistent, consistent state management, and by allowing services to inherit the necessary service properties from the DDS rather than having to implement the properties themselves. We have scaled the hash table to a 128 node cluster, 1 terabyte of storage, and an in-core read throughput of 61,432 operations/s and write throughput of 13,582 operations/s.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18066,
+    "year": 2000,
+    "title": "Processes in KaffeOS: isolation, resource management, and sharing in java",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1251229.1251252",
+    "abstract": "Single-language runtime systems, in the form of Java virtual machines, are widely deployed platforms for executing untrusted mobile code. These runtimes provide some of the features that operating systems provide: inter-application memory protection and basic system services. They do not, however, provide the ability to isolate applications from each other, or limit their resource consumption. This paper describes KaffeOS, a Java runtime system that provides these features. The KaffeOS architecture takes many lessons from operating system design, such as the use of a user/kernel boundary, and employs garbage collection techniques, such as write barriers.The KaffeOS architecture supports the OS abstraction of a process in a Java virtual machine. Each process executes as if it were run in its own virtual machine, including separate garbage collection of its own heap. The difficulty in designing KaffeOS lay in balancing the goals of isolation and resource management against the goal of allowing direct sharing of objects. Overall, KaffeOS is no more than 11\\% slower than the freely available JVM on which it is based, which is an acceptable penalty for the safety that it provides. Because of its implementation base, KaffeOS is substantially slower than commercial JVMs for trusted code, but it clearly outperforms those JVMs in the presence of denial-of-service attacks or misbehaving code.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18067,
+    "year": 2000,
+    "title": "Knit: component composition for systems software",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1251229.1251253",
+    "abstract": "Knit is a new component definition and linking language for systems code. Knit helps make C code more understandable and reusable by third parties, helps eliminate much of the performance overhead of componentization, detects subtle errors in component composition that cannot be caught with normal component type systems, and provides a foundation for developing future analyses over C-based components, such as cross-component optimization. The language is especially designed for use with component kits, where standard linking tools provide inadequate support for component configuration. In particular, we developed Knit for use with the OSKit, a large collection of components for building low-level systems. However, Knit is not OSKit-specific, and we have implemented parts of the Click modular router in terms of Knit components to illustrate the expressiveness and flexibility of our language. This paper provides an overview of the Knit language and its applications.",
+    "status": "notchecked"
+  }
+]

@@ -1,0 +1,262 @@
+[
+  {
+    "id": 17964,
+    "year": 2008,
+    "title": "DryadLINQ: a system for general-purpose distributed data-parallel computing using a high-level language",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1855741.1855742",
+    "abstract": "DryadLINQ is a system and a set of language extensions that enable a new programming model for large scale distributed computing. It generalizes previous execution environments such as SQL, MapReduce, and Dryad in two ways: by adopting an expressive data model of strongly typed .NET objects; and by supporting general-purpose imperative and declarative operations on datasets within a traditional high-level programming language.A DryadLINQ program is a sequential program composed of LINQ expressions performing arbitrary side-effect-free transformations on datasets, and can be written and debugged using standard .NET development tools. The DryadLINQ system automatically and transparently translates the data-parallel portions of the program into a distributed execution plan which is passed to the Dryad execution platform. Dryad, which has been in continuous operation for several years on production clusters made up of thousands of computers, ensures efficient, reliable execution of this plan.We describe the implementation of the DryadLINQ compiler and runtime. We evaluate DryadLINQ on a varied set of programs drawn from domains such as web-graph analysis, large-scale log mining, and machine learning. We show that excellent absolute performance can be attained--a general-purpose sort of 1012 Bytes of data executes in 319 seconds on a 240-computer, 960- disk cluster--as well as demonstrating near-linear scaling of execution time on representative applications as we vary the number of computers used for a job.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17965,
+    "year": 2008,
+    "title": "Everest: scaling down peak loads through I/O off-loading",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1855741.1855743",
+    "abstract": "Bursts in data center workloads are a real problem for storage subsystems. Data volumes can experience peak I/O request rates that are over an order of magnitude higher than average load. This requires significant overprovisioning, and often still results in significant I/O request latency during peaks.In order to address this problem we propose Everest, which allows data written to an overloaded volume to be temporarily off-loaded into a short-term virtual store. Everest creates the short-term store by opportunistically pooling underutilized storage resources either on a server or across servers within the data center. Writes are temporarily off-loaded from overloaded volumes to lightly loaded volumes, thereby reducing the I/O load on the former. Everest is transparent to and usable by unmodified applications, and does not change the persistence or consistency of the storage system. We evaluate Everest using traces from a production Exchange mail server as well as other benchmarks: our results show a 1.4-70 times reduction in mean response times during peaks.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17966,
+    "year": 2008,
+    "title": "Improving MapReduce performance in heterogeneous environments",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1855741.1855744",
+    "abstract": "MapReduce is emerging as an important programming model for large-scale data-parallel applications such as web indexing, data mining, and scientific simulation. Hadoop is an open-source implementation of MapReduce enjoying wide adoption and is often used for short jobs where low response time is critical. Hadoop's performance is closely tied to its task scheduler, which implicitly assumes that cluster nodes are homogeneous and tasks make progress linearly, and uses these assumptions to decide when to speculatively re-execute tasks that appear to be stragglers. In practice, the homogeneity assumptions do not always hold. An especially compelling setting where this occurs is a virtualized data center, such as Amazon's Elastic Compute Cloud (EC2). We show that Hadoop's scheduler can cause severe performance degradation in heterogeneous environments. We design a new scheduling algorithm, Longest Approximate Time to End (LATE), that is highly robust to heterogeneity. LATE can improve Hadoop response times by a factor of 2 in clusters of 200 virtual machines on EC2.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17967,
+    "year": 2008,
+    "title": "Corey: an operating system for many cores",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1855741.1855745",
+    "abstract": "Multiprocessor application performance can be limited by the operating system when the application uses the operating system frequently and the operating system services use data structures shared and modified by multiple processing cores. If the application does not need the sharing, then the operating system will become an unnecessary bottleneck to the application's performance.This paper argues that applications should control sharing: the kernel should arrange each data structure so that only a single processor need update it, unless directed otherwise by the application. Guided by this design principle, this paper proposes three operating system abstractions (address ranges, kernel cores, and shares) that allow applications to control inter-core sharing and to take advantage of the likely abundance of cores by dedicating cores to specific operating system functions.Measurements of microbenchmarks on the Corey prototype operating system, which embodies the new abstractions, show how control over sharing can improve performance. Application benchmarks, using MapReduce and a Web server, show that the improvements can be significant for overall performance: MapReduce on Corey performs 25\\% faster than on Linux when using 16 cores. Hardware event counters confirm that these improvements are due to avoiding operations that are expensive on multicore machines.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17968,
+    "year": 2008,
+    "title": "CuriOS: improving reliability through operating system structure",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1855741.1855746",
+    "abstract": "An error that occurs in a microkernel operating system service can potentially result in state corruption and service failure. A simple restart of the failed service is not always the best solution for reliability. Blindly restarting a service which maintains client-related state such as session information results in the loss of this state and affects all clients that were using the service. CuriOS represents a novel OS design that uses lightweight distribution, isolation and persistence of OS service state to mitigate the problem of state loss during a restart. The design also significantly reduces error propagation within client-related state maintained by an OS service. This is achieved by encapsulating services in separate protection domains and granting access to client-related state only when required for request processing. Fault injection experiments show that it is possible to recover from between 87\\% and 100\\% of manifested errors in OS services such as the file system, network, timer and scheduler while maintaining low performance overheads.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17969,
+    "year": 2008,
+    "title": "Redline: first class support for interactivity in commodity operating systems",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1855741.1855747",
+    "abstract": "While modern workloads are increasingly interactive and resource-intensive (e.g., graphical user interfaces, browsers, and multimedia players), current operating systems have not kept up. These operating systems, which evolved from core designs that date to the 1970s and 1980s, provide good support for batch and command-line applications, but their ad hoc attempts to handle interactive workloads are poor. Their best-effort, priority-based schedulers provide no bounds on delays, and their resource managers (e.g., memory managers and disk I/O schedulers) are mostly oblivious to response time requirements. Pressure on any one of these resources can significantly degrade application responsiveness.We present Redline, a system that brings first-class support for interactive applications to commodity operating systems. Redline works with unaltered applications and standard APIs. It uses lightweight specifications to orchestrate memory and disk I/O management so that they serve the needs of interactive applications. Unlike realtime systems that treat specifications as strict requirements and thus pessimistically limit system utilization, Redline dynamically adapts to recent load, maximizing responsiveness and system utilization. We show that Redline delivers responsiveness to interactive applications even in the face of extreme workloads including fork bombs, memory bombs and bursty, large disk I/O requests, reducing application pauses by up to two orders of magnitude.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17970,
+    "year": 2008,
+    "title": "Network imprecision: a new consistency metric for scalable monitoring",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1855741.1855748",
+    "abstract": "This paper introduces a new consistency metric, Network Imprecision (NI), to address a central challenge in largescale monitoring systems: safeguarding accuracy despite node and network failures. To implement NI, an overlay that monitors a set of attributes also monitors its own state so that queries return not only attribute values but also information about the stability of the overlay--the number of nodes whose recent updates may be missing and the number of nodes whose inputs may be double counted due to overlay reconfigurations. When NI indicates that the network is stable, query results are guaranteed to reflect the true state of the system. But when the network is unstable, NI puts applications on notice that query results should not be trusted, allowing them to take corrective action such as filtering out inconsistent results. To scalably implement NI's introspection, our prototype introduces a key optimization, dual-tree prefix aggregation, which exploits overlay symmetry to reduce overheads by more than an order of magnitude. Evaluation of three monitoring applications demonstrates that NI flags inaccurate results while incurring low overheads, and monitoring applications that use NI to select good information can improve their accuracy by up to an order of magnitude.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17971,
+    "year": 2008,
+    "title": "Lightweight, high-resolution monitoring for troubleshooting production systems",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1855741.1855749",
+    "abstract": "Production systems are commonly plagued by intermittent problems that are difficult to diagnose. This paper describes a new diagnostic tool, called Chopstix, that continuously collects profiles of low-level OS events (e.g., scheduling, L2 cache misses, CPU utilization, I/O operations, page allocation, locking) at the granularity of executables, procedures and instructions. Chopstix then reconstructs these events offline for analysis. We have used Chopstix to diagnose several elusive problems in a largescale production system, thereby reducing these intermittent problems to reproducible bugs that can be debugged using standard techniques. The key to Chopstix is an approximate data collection strategy that incurs very low overhead. An evaluation shows Chopstix requires under 1\\% of the CPU, under 256KB of RAM, and under 16MB of disk space per day to collect a rich set of system-wide data.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17972,
+    "year": 2008,
+    "title": "Automating network application dependency discovery: experiences, limitations, and new solutions",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1855741.1855750",
+    "abstract": "Large enterprise networks consist of thousands of services and applications. The performance and reliability of any particular application may depend on multiple services, spanning many hosts and network components. While the knowledge of such dependencies is invaluable for ensuring the stability and efficiency of these applications, thus far the only proven way to discover these complex dependencies is by exploiting human expert knowledge, which does not scale with the number of applications in large enterprises.Recently, researchers have proposed automated discovery of dependencies from network traffic [8, 18]. In this paper, we present a comprehensive study of the performance and limitations of this class of dependency discovery techniques (including our own prior work), by comparing with the ground truth of five dominant Microsoft applications. We introduce a new system, Orion, that discovers dependencies using packet headers and timing information in network traffic based on a novel insight of delay spike based analysis. Orion improves the state of the art significantly, but some shortcomings still remain. To take the next step forward, Orion incorporates external tests to reduce errors to a manageable level. Our results show Orion provides a solid foundation for combining automated discovery with simple testing to obtain accurate and validated dependencies.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17973,
+    "year": 2008,
+    "title": "SQCK: a declarative file system checker",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1855741.1855751",
+    "abstract": "The lowly state of the art for file system checking and repair does not match what is needed to keep important data available for users. Current file system checkers, such as e2fsck, are complex pieces of imperfect code written in low-level languages. We introduce SQCK, a file system checker based on a declarative query language; declarative queries are a natural match for the cross-checking that must be performed across the many structures of a file system image. We show that SQCK is able to perform the same functionality as e2fsck with surprisingly elegant and compact queries. We also show that SQCK can easily perform more useful repairs than e2fsck by combining information available across the file system. Finally, our prototype implementation of SQCK achieves this improved functionality with comparable performance to e2fsck.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17974,
+    "year": 2008,
+    "title": "Transactional flash",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1855741.1855752",
+    "abstract": "Transactional flash (TxFlash) is a novel solid-state drive (SSD) that uses flash memory and exports a transactional interface (WriteAtomic) to the higher-level software. The copy-on-write nature of the flash translation layer and the fast random access makes flash memory the right medium to support such an interface. We further develop a novel commit protocol called cyclic commit for TxFlash; the protocol has been specified formally and model checked.Our evaluation, both on a simulator and an emulator on top of a real SSD, shows that TxFlash does not increase the flash firmware complexity significantly and provides transactional features with very small overheads (less than 1\\%), thereby making file systems easier to build. It further shows that the new cyclic commit protocol significantly outperforms traditional commit for small transactions (95\\% improvement in transaction throughput) and completely eliminates the space overhead due to commit records.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17975,
+    "year": 2008,
+    "title": "Avoiding file system micromanagement with range writes",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1855741.1855753",
+    "abstract": "We introduce range writes, a simple but powerful change to the disk interface that removes the need for file system micromanagement of block placement. By allowing a file system to specify a set of possible address targets, range writes enable the disk to choose the final on-disk location of the request; the disk improves performance by writing to the closest location and subsequently reporting its choice to the file system above. The result is a clean separation of responsibility; the file system (as high-level manager) provides coarse-grained control over placement, while the disk (as low-level worker) makes the final fine-grained placement decision to improve write performance. We show the benefits of range writes through numerous simulations and a prototype implementation, in some cases improving performance by a factor of three across both synthetic and real workloads.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17976,
+    "year": 2008,
+    "title": "Binary translation using peephole superoptimizers",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1855741.1855754",
+    "abstract": "We present a new scheme for performing binary translation that produces code comparable to or better than existing binary translators with much less engineering effort. Instead of hand-coding the translation from one instruction set to another, our approach automatically learns translation rules using superoptimization techniques. We have implemented a PowerPC-x86 binary translator and report results on small and large computeintensive benchmarks. When compared to the native compiler, our translated code achieves median performance of 67\\% on large benchmarks and in some small stress tests actually outperforms the native compiler. We also report comparisons with the open source binary translator Qemu and a commercial tool, Apple's Rosetta. We consistently outperformthe former and are comparable to or faster than the latter on all but one benchmark.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17977,
+    "year": 2008,
+    "title": "R2: an application-level kernel for record and replay",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1855741.1855755",
+    "abstract": "Library-based record and replay tools aim to reproduce an application's execution by recording the results of selected functions in a log and during replay returning the results from the log rather than executing the functions. These tools must ensure that a replay run is identical to the record run. The challenge in doing so is that only invocations of a function by the application should be recorded, recording the side effects of a function call can be difficult, and not executing function calls during replay, multithreading, and the presence of the tool may change the application's behavior from recording to replay. These problems have limited the use of such tools.R2 allows developers to choose functions that can be recorded and replayed correctly. Developers annotate the chosen functions with simple keywords so that R2 can handle calls with side effects andmultithreading. R2 generates code for record and replay from templates, allowing developers to avoid implementing stubs for hundreds of functions manually. To track whether an invocation is on behalf of the application or the implementation of a selected function, R2 maintains a mode bit, which stubs save and restore.We have implemented R2 on Windows and annotated large parts (1,300 functions) of the Win32 API, and two higher-level interfaces (MPI and SQLite). R2 can replay multithreaded web and database servers that previous library-based tools cannot replay. By allowing developers to choose high-level interfaces, R2 can also keep recording overhead small; experiments show that its recording overhead for Apache is approximately 10\\%, that recording and replaying at the SQLite interface can reduce the log size up to 99\\% (compared to doing so at the Win32 API), and that using optimization annotations for BitTorrent and MPI applications achieves log size reduction ranging from 13.7\\% to 99.4\\%.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17978,
+    "year": 2008,
+    "title": "KLEE: unassisted and automatic generation of high-coverage tests for complex systems programs",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1855741.1855756",
+    "abstract": "We present a new symbolic execution tool, KLEE, capable of automatically generating tests that achieve high coverage on a diverse set of complex and environmentally-intensive programs. We used KLEE to thoroughly check all 89 stand-alone programs in the GNU COREUTILS utility suite, which form the core user-level environment installed on millions of Unix systems, and arguably are the single most heavily tested set of open-source programs in existence. KLEE-generated tests achieve high line coverage -- on average over 90\\% per tool (median: over 94\\%) -- and significantly beat the coverage of the developers' own hand-written test suite. When we did the same for 75 equivalent tools in the BUSYBOX embedded system suite, results were even better, including 100\\% coverage on 31 of them.We also used KLEE as a bug finding tool, applying it to 452 applications (over 430K total lines of code), where it found 56 serious bugs, including three in COREUTILS that had been missed for over 15 years. Finally, we used KLEE to crosscheck purportedly identical BUSYBOX and COREUTILS utilities, finding functional correctness errors and a myriad of inconsistencies.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17979,
+    "year": 2008,
+    "title": "Hardware enforcement of application security policies using tagged memory",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1855741.1855757",
+    "abstract": "Computers are notoriously insecure, in part because application security policies do not map well onto traditional protection mechanisms such as Unix user accounts or hardware page tables. Recent work has shown that application policies can be expressed in terms of information flow restrictions and enforced in an OS kernel, providing a strong assurance of security. This paper shows that enforcement of these policies can be pushed largely into the processor itself, by using tagged memory support, which can provide stronger security guarantees by enforcing application security even if the OS kernel is compromised.We present the Loki tagged memory architecture, along with a novel operating system structure that takes advantage of tagged memory to enforce application security policies in hardware. We built a full-system prototype of Loki by modifying a synthesizable SPARC core, mapping it to an FPGA board, and porting HiStar, a Unix-like operating system, to run on it. One result is that Loki allows HiStar, an OS already designed to have a small trusted kernel, to further reduce the amount of trusted code by a factor of two, and to enforce security despite kernel compromises. Using various workloads, we also demonstrate that HiStar running on Loki incurs a low performance overhead.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17980,
+    "year": 2008,
+    "title": "Device driver safety through a reference validation mechanism",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1855741.1855758",
+    "abstract": "Device drivers typically execute in supervisor mode and thus must be fully trusted. This paper describes how to move them out of the trusted computing base, by running them without supervisor privileges and constraining their interactions with hardware devices. An implementation of this approach in the Nexus operating system executes drivers in user space, leveraging hardware isolation and checking their behavior against a safety specification. These Nexus drivers have performance comparable to inkernel, trusted drivers, with a level of CPU overhead acceptable for most applications. For example, the monitored driver for an Intel e1000 Ethernet card has throughput comparable to a trusted driver for the same hardware under Linux. And a monitored driver for the Intel i810 sound card provides continuous playback. Drivers for a disk and a USB mouse have also been moved successfully to operate in user space with safety specifications.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17981,
+    "year": 2008,
+    "title": "Digging for data structures",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1855741.1855759",
+    "abstract": "Because writing computer programs is hard, computer programmers are taught to use encapsulation and modularity to hide complexity and reduce the potential for errors. Their programs will have a high-level, hierarchical structure that reflects their choice of internal abstractions. We designed and forged a system, Laika, that detects this structure in memory using Bayesian unsupervised learning. Because almost all programs use data structures, their memory images consist of many copies of a relatively small number of templates. Given a memory image, Laika can find both the data structures and their instantiations.We then used Laika to detect three common polymorphic botnets by comparing their data structures. Because it avoids their code polymorphism entirely, Laika is extremely accurate. Finally, we argue that writing a data structure polymorphic virus is likely to be considerably harder than writing a code polymorphic virus.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17982,
+    "year": 2008,
+    "title": "Finding and reproducing Heisenbugs in concurrent programs",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1855741.1855760",
+    "abstract": "Concurrency is pervasive in large systems. Unexpected interference among threads often results in \"Heisenbugs\" that are extremely difficult to reproduce and eliminate. We have implemented a tool called CHESS for finding and reproducing such bugs. When attached to a program, CHESS takes control of thread scheduling and uses efficient search techniques to drive the program through possible thread interleavings. This systematic exploration of program behavior enables CHESS to quickly uncover bugs that might otherwise have remained hidden for a long time. For each bug, CHESS consistently reproduces an erroneous execution manifesting the bug, thereby making it significantly easier to debug the problem. CHESS scales to large concurrent programs and has found numerous bugs in existing systems that had been tested extensively prior to being tested by CHESS. CHESS has been integrated into the test frameworks of many code bases inside Microsoft and is used by testers on a daily basis.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17983,
+    "year": 2008,
+    "title": "Gadara: dynamic deadlock avoidance for multithreaded programs",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1855741.1855761",
+    "abstract": "Deadlock is an increasingly pressing concern as the multicore revolution forces parallel programming upon the average programmer. Existing approaches to deadlock impose onerous burdens on developers, entail high runtime performance overheads, or offer no help for unmodified legacy code. Gadara automates dynamic deadlock avoidance for conventional multithreaded programs. It employs whole-program static analysis to model programs, and Discrete Control Theory to synthesize lightweight, decentralized, highly concurrent logic that controls them at runtime. Gadara is safe, and can be applied to legacy code with modest programmer effort. Gadara is efficient because it performs expensive deadlock-avoidance computations offline rather than online. We have implemented Gadara for C/Pthreads programs. In benchmark tests, Gadara successfully avoids injected deadlock faults, imposes negligible to modest performance overheads (at most 18\\%), and outperforms a software transactional memory system. Tests on a real application show that Gadara identifies and avoids both previously known and unknown deadlocks while adding performance overheads ranging from negligible to 10\\%.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17984,
+    "year": 2008,
+    "title": "Deadlock immunity: enabling systems to defend against deadlocks",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1855741.1855762",
+    "abstract": "Deadlock immunity is a property by which programs, once afflicted by a given deadlock, develop resistance against future occurrences of that and similar deadlocks. We describe a technique that enables programs to automatically gain such immunity without assistance from programmers or users. We implemented the technique for both Java and POSIX threads and evaluated it with several real systems, including MySQL, JBoss, SQLite, Apache ActiveMQ, Limewire, and Java JDK. The results demonstrate effectiveness against real deadlock bugs, while incurring modest performance overhead and scaling to 1024 threads. We therefore conclude that deadlock immunity offers programmers and users an attractive tool for coping with elusive deadlocks.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17985,
+    "year": 2008,
+    "title": "Difference engine: harnessing memory redundancy in virtual machines",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1855741.1855763",
+    "abstract": "Virtual machine monitors (VMMs) are a popular platform for Internet hosting centers and cloud-based compute services. By multiplexing hardware resources among virtual machines (VMs) running commodity operating systems, VMMs decrease both the capital outlay and management overhead of hosting centers. Appropriate placement and migration policies can take advantage of statistical multiplexing to effectively utilize available processors. However, main memory is not amenable to such multiplexing and is often the primary bottleneck in achieving higher degrees of consolidation.Previous efforts have shown that content-based page sharing provides modest decreases in the memory footprint of VMs running similar operating systems and applications. Our studies show that significant additional gains can be had by leveraging both sub-page level sharing (through page patching) and in-core memory compression. We build Difference Engine, an extension to the Xen virtual machine monitor, to support each of these--in addition to standard copy-on-write full page sharing--and demonstrate substantial savings not only between VMs running similar applications and operating systems (up to 90\\%), but even across VMs running disparate workloads (up to 65\\%). In head-to-head memory-savings comparisons, Difference Engine outperforms VMware ESX server by a factor of 1.5 for homogeneous workloads and by a factor of 1.6-2.5 for heterogeneous workloads. In all cases, the performance overhead of Difference Engine is less than 7\\%.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17986,
+    "year": 2008,
+    "title": "Quanto: tracking energy in networked embedded systems",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1855741.1855764",
+    "abstract": "We present Quanto, a network-wide time and energy profiler for embedded network devices. By combining well-defined interfaces for hardware power states, fast high-resolution energy metering, and causal tracking of programmer-defined activities, Quanto can map how energy and time are spent on nodes and across a network. Implementing Quanto on the TinyOS operating system required modifying under 350 lines of code and adding 1275 new lines. We show that being able to take fine-grained energy consumption measurements as fast as reading a counter allows developers to precisely quantify the effects of low-level system implementation decisions, such as using DMA versus direct bus operations, or the effect of external interference on the power draw of a low duty-cycle radio. Finally, Quanto is lightweight enough that it has a minimal effect on system behavior: each sample takes 100 CPU cycles and 12 bytes of RAM.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17987,
+    "year": 2008,
+    "title": "Leveraging legacy code to deploy desktop applications on the web",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1855741.1855765",
+    "abstract": "Xax is a browser plugin model that enables developers to leverage existing tools, libraries, and entire programs to deliver feature-rich applications on the web. Xax employs a novel combination of mechanisms that collectively provide security, OS-independence, performance, and support for legacy code. These mechanisms include memory-isolated native code execution behind a narrow syscall interface, an abstraction layer that provides a consistent binary interface across operating systems, system services via hooks to existing browser mechanisms, and lightweight modifications to existing tool chains and code bases. We demonstrate a variety of applications and libraries from existing code bases, in several languages, produced with various tool chains, running in multiple browsers on multiple operating systems. With roughly two person-weeks of effort, we ported 3.3 million lines of code to Xax, including a PDF viewer, a Python interpreter, a speech synthesizer, and an OpenGL pipeline.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17988,
+    "year": 2008,
+    "title": "FlightPath: obedience vs. choice in cooperative services",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1855741.1855766",
+    "abstract": "We present FlightPath, a novel peer-to-peer streaming application that provides a highly reliable data stream to a dynamic set of peers. We demonstrate that FlightPath reduces jitter compared to previous works by several orders of magnitude. Furthermore, FlightPath uses a number of run-time adaptations to maintain low jitter despite 10\\% of the population behaving maliciously and the remaining peers acting selfishly. At the core of FlightPath's success are approximate equilibria. These equilibria allow us to design incentives to limit selfish behavior rigorously, yet they provide sufficient flexibility to build practical systems. We show how to use an undefined-Nash equilibrium, instead of a strict Nash, to engineer a live streaming system that uses bandwidth efficiently, absorbs flash crowds, adapts to sudden peer departures, handles churn, and tolerates malicious activity.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17989,
+    "year": 2008,
+    "title": "Mencius: building efficient replicated state machines for WANs",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1855741.1855767",
+    "abstract": "We present a protocol for general state machine replication - a method that provides strong consistency - that has high performance in a wide-area network. In particular, our protocol Mencius has high throughput under high client load and low latency under low client load even under changing wide-area network environment and client load. We develop our protocol as a derivation from the well-known protocol Paxos. Such a development can be changed or further refined to take advantage of specific network or application requirements.",
+    "status": "notchecked"
+  }
+]

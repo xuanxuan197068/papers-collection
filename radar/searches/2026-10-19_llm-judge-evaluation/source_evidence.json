@@ -1,0 +1,89 @@
+[
+  {
+    "key": "reconstruction",
+    "url": "https://www.usenix.org/system/files/usenixsecurity25-wen.pdf",
+    "matched_pages": [
+      2,
+      6,
+      7,
+      8,
+      9,
+      11,
+      12,
+      13,
+      14,
+      15,
+      18,
+      19,
+      20
+    ],
+    "match_count": 23
+  },
+  {
+    "key": "refusal",
+    "url": "https://www.usenix.org/system/files/usenixsecurity25-song-minkyoo.pdf",
+    "matched_pages": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      20
+    ],
+    "match_count": 11
+  },
+  {
+    "key": "twinbreak",
+    "url": "https://www.usenix.org/system/files/usenixsecurity25-krauss.pdf",
+    "matched_pages": [
+      3,
+      8,
+      15,
+      17
+    ],
+    "match_count": 7
+  },
+  {
+    "key": "papillon",
+    "url": "https://www.usenix.org/system/files/usenixsecurity25-gong-xueluan.pdf",
+    "matched_pages": [
+      11,
+      19
+    ],
+    "match_count": 4
+  },
+  {
+    "key": "selfdefend",
+    "url": "https://www.usenix.org/system/files/usenixsecurity25-wang-xunguang.pdf",
+    "matched_pages": [
+      8,
+      18,
+      21
+    ],
+    "match_count": 5
+  },
+  {
+    "key": "sketches",
+    "url": "https://arxiv.org/html/2412.13386",
+    "matched_pages": [],
+    "match_count": 6
+  },
+  {
+    "key": "seval",
+    "url": "https://arxiv.org/html/2405.14191",
+    "matched_pages": [],
+    "match_count": 6
+  },
+  {
+    "key": "sejury",
+    "url": "https://arxiv.org/html/2505.20854",
+    "matched_pages": [],
+    "match_count": 6
+  },
+  {
+    "key": "diting",
+    "url": "https://arxiv.org/html/2505.19502",
+    "matched_pages": [],
+    "match_count": 6
+  }
+]

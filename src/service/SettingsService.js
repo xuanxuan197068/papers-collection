@@ -16,7 +16,12 @@ const DEFAULT_SETTINGS = () => ({
     showStatusDots: false,
     llmEndpoint: '',
     llmApiKey: '',
-    keywords: []
+    keywords: [],
+    randomSampleCount: 5,
+    randomYearsBack: 3,
+    randomExcludeRead: true,
+    randomCategoryWeights: {},
+    randomKeywordBoost: 1.5
 });
 
 const runtimeSettings = reactive(DEFAULT_SETTINGS());
@@ -196,6 +201,32 @@ export async function saveFavorites(ids) {
         const tx = db.transaction(STORE, 'readwrite');
         const store = tx.objectStore(STORE);
         const req = store.put({ key: 'favorites', value: plain });
+        req.onsuccess = () => resolve();
+        req.onerror = () => reject(req.error);
+    });
+}
+
+// Read-paper ledger for the Daily Random page. Keyed by normalized title key
+// (ids drift whenever main.py rebuilds the corpus), value mirrors the shape of
+// radar/state/read_status.json entries: { title, venue, date }.
+export async function loadReadPapers() {
+    const db = await openDb(true);
+    return new Promise((resolve, reject) => {
+        const tx = db.transaction(STORE, 'readonly');
+        const store = tx.objectStore(STORE);
+        const req = store.get('readPapers');
+        req.onsuccess = () => resolve(req.result && req.result.value ? req.result.value : {});
+        req.onerror = () => reject(req.error);
+    });
+}
+
+export async function saveReadPapers(readMap) {
+    const db = await ensureDbAndDefaults();
+    const plain = toPlainSettings(readMap);
+    return new Promise((resolve, reject) => {
+        const tx = db.transaction(STORE, 'readwrite');
+        const store = tx.objectStore(STORE);
+        const req = store.put({ key: 'readPapers', value: plain });
         req.onsuccess = () => resolve();
         req.onerror = () => reject(req.error);
     });

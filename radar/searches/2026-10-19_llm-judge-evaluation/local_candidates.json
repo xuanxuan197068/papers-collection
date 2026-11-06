@@ -1,0 +1,293 @@
+{
+  "meta_files": 117,
+  "total_rows": 16338,
+  "query": "llm.as.a.judge|llm.as.judge|llm.{0,30}judg|gpt.{0,30}judg|large language model.{0,35}judg|llm.{0,25}scor|gpt.{0,25}scor",
+  "candidates": [
+    {
+      "id": 2090,
+      "year": 2024,
+      "title": "Optimization-based Prompt Injection Attack to LLM-as-a-Judge",
+      "category": "top-tier",
+      "publication": "ACM CCS",
+      "paper": "https://doi.org/10.1145/3658644.3690291",
+      "abstract": "LLM-as-a-Judge uses a large language model (LLM) to select the best response from a set of candidates for a given question. LLM-as-a-Judge has many applications such as LLM-powered search, reinforcement learning with AI feedback (RLAIF), and tool selection. In this work, we propose JudgeDeceiver, an optimization-based prompt injection attack to LLM-as-a-Judge. JudgeDeceiver injects a carefully crafted sequence into an attacker-controlled candidate response such that LLM-as-a-Judge selects the candidate response for an attacker-chosen question no matter what other candidate responses are. Specifically, we formulate finding such sequence as an optimization problem and propose a gradient based method to approximately solve it. Our extensive evaluation shows that JudgeDeceive is highly effective, and is much more effective than existing prompt injection attacks that manually craft the injected sequences and jailbreak attacks when extended to our problem. We also show the effectiveness of JudgeDeceiver in three case studies, i.e., LLM-powered search, RLAIF, and tool selection. Moreover, we consider defenses including known-answer detection, perplexity detection, and perplexity windowed detection. Our results show these defenses are insufficient, highlighting the urgent need for developing new defense strategies.",
+      "status": "done",
+      "_source_file": "ACM CCS - 2024.json"
+    },
+    {
+      "id": 8457,
+      "year": 2024,
+      "title": "Emergence of A Novel Domain Expert: A Generative AI-based Framework for Software Function Point Analysis",
+      "category": "software-engineering",
+      "publication": "ASE",
+      "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10764829",
+      "abstract": "Estimating software functional size is a crucial initial step before development, impacting costs and timelines. This involves applying standard Function Point Analysis (FPA) to the Software Requirements Specification (SRS). However, manual analysis by Function Point (FP) analysts during the splitting of FP entries from SRS remains inefficient and costly. To address this issue, for the first time, we propose an AI-based domain expert for FPA, named FPA-EX. It employs a large language model (LLM), intelligently extracts software FP entries from SRS, providing automated support to enhance efficiency. Specifically, we construct a multi-domain FPA dataset through collecting and annotating 778 question-answer pairs related to various SRS. Based on this dataset, we present a novel densely supervised fine-tuning (DSFT) on LLM, which performs entries-level optimization over the human augmented text, ensuring precise FPs outputs. Finally, we design a ConceptAct Promting (CAP) process for correct logical reasoning. Experiments demonstrate the superior performance of FPA-EX, particularly higher than GPT3.5 by 0.491 on F1 scores. Furthermore, in practical application, FPA-EX significantly enhances the productivity of FP analysts, contributing to a shift towards more intelligent work patterns.CCS Concepts• Software and its engineering → Requirements analysis.",
+      "status": "notchecked",
+      "_source_file": "ASE - 2024.json"
+    },
+    {
+      "id": 8519,
+      "year": 2024,
+      "title": "Cross-lingual Code Clone Detection: When LLMs Fail Short Against Embedding-based Classifier",
+      "category": "software-engineering",
+      "publication": "ASE",
+      "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10764826",
+      "abstract": "Cross-lingual code clone detection has gained attention in software development due to the use of multiple programming languages. Recent advances in machine learning, particularly Large Language Models (LLMs), have motivated a reexamination of this problem.This paper evaluates the performance of four LLMs and eight prompts for detecting cross-lingual code clones, as well as a pre-trained embedding model for classifying clone pairs. Both approaches are tested on the XLCoST and CodeNet datasets.Our findings show that while LLMs achieve high F1 scores (up to 0.98) on straightforward programming examples, they struggle with complex cases and cross-lingual understanding. In contrast, embedding models, which map code fragments from different languages into a common representation space, allow for the training of a basic classifier that outperforms LLMs by approximately 2 and 24 percentage points on the XLCoST and CodeNet datasets, respectively. This suggests that embedding models provide more robust representations, enabling state-of-the-art performance in cross-lingual code clone detection.",
+      "status": "notchecked",
+      "_source_file": "ASE - 2024.json"
+    },
+    {
+      "id": 7891,
+      "year": 2025,
+      "title": "Code-DiTing: Automatic Evaluation of Code Generation without References or Test Cases",
+      "category": "software-engineering",
+      "publication": "ASE",
+      "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334693",
+      "abstract": "Trustworthy evaluation methods for code snippets play a crucial role in neural code generation. Traditional methods, which either rely on reference solutions or require executable test cases, have inherent limitation in flexibility and scalability. The recent LLM-as-Judge methodology offers a promising alternative by directly evaluating functional consistency between the problem description and the generated code. To systematically understand the landscape of these LLM-as-Judge methods, we conduct a comprehensive empirical study across three diverse datasets. Our investigation reveals the pros and cons of two categories of LLM-as-Judge methods: the methods based on general foundation models can achieve good performance but require complex prompts and lack explainability, while the methods based on reasoning foundation models provide better explainability with simpler prompts but demand substantial computational resources due to their large parameter sizes. To address these limitations, we propose Code-DiTing, a novel code evaluation method that balances accuracy, efficiency and explainability. We develop a data distillation framework that effectively transfers reasoning capabilities from DeepSeek-R1-671B to our Code-DiTing 1.5B and 7B models, significantly enhancing evaluation explainability and reducing the computational cost. With the majority vote strategy in the inference process, Code-DiTing 1.5B outperforms all models with the same magnitude of parameters and achieves performance which would normally exhibit in a model with 5 times of parameter scale. Code-DiTing 7B surpasses GPT-4o and DeepSeek-V3 671B, even though it only uses 1% of the parameter volume of these large models. Further experiments show that Code-DiTing is robust to preference leakage and can serve as a promising alternative for code evaluation.",
+      "status": "notchecked",
+      "_source_file": "ASE - 2025.json"
+    },
+    {
+      "id": 7915,
+      "year": 2025,
+      "title": "Uncovering Prompt Elements: Cloning System Prompts from Behavioral Traces",
+      "category": "software-engineering",
+      "publication": "ASE",
+      "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334253",
+      "abstract": "We introduce prompt cloning, a new black-box attack that reconstructs functionally equivalent system prompts rather than extracts original system prompts. Unlike prompt stealing, prompt cloning exploits the insight that system prompts leave persistent behavioral traces in outputs, even under strong alignment and prompt-level defenses. Our method decomposes system behavior into semantically interpretable elements, selectively elicits them through carefully designed queries, and aggregates representative traces to synthesize high-fidelity cloned prompts. Extensive evaluations show that cloned prompts replicate functional behavior with up to 85% semantic similarity, outperforming base LLMs by up to 8%, and even exceeding original system prompts when transferred to different back-end models. We also conduct a large-scale study on GitHub repositories, revealing that single-prompt architectures remain widespread in open-source LLM applications, reinforcing the real-world relevance of our threat model. Our findings reveal that prompt cloning enables unauthorized replication of confidential LLM behavior and underscore the urgent need for defenses that go beyond hiding prompt text.",
+      "status": "notchecked",
+      "_source_file": "ASE - 2025.json"
+    },
+    {
+      "id": 7967,
+      "year": 2025,
+      "title": "CoorLog: Efficient-Generalizable Log Anomaly Detection via Adaptive Coordinator in Software Evolution",
+      "category": "software-engineering",
+      "publication": "ASE",
+      "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334611",
+      "abstract": "Frequent software updates lead to log evolution, posing generalization challenges for current log anomaly detection. Traditional log anomaly detection research focuses on using small deep learning models (SMs), but these models inherently lack generalization due to their closed-world assumption. Large language models (LLMs) exhibit strong semantic understanding and generalization capabilities, making them promising for log anomaly detection. However, they suffer from computational inefficiencies. To balance efficiency and generalization, we propose a collaborative log anomaly detection scheme (CoorLog) that uses an adaptive coordinator to integrate SM and LLM. The coordinator determines if incoming logs have evolved. Non-evolved logs are routed to the SM, while evolved logs are directed to the LLM for detailed inference using the constructed Evol-CoT. To gradually adapt to evolution, we introduce the adaptive evolution mechanism (AEM), which updates the coordinator to redirect evolved logs identified by the LLM to the SM. Simultaneously, the SM is fine-tuned to inherit the LLM’s judgment on these logs. Extensive experiments on real-world datasets demonstrate that CoorLog achieves superior F1-scores in both intra-version and inter-version anomaly detection. Additionally, CoorLog reduces processing time by 91.63% and token consumption by 85.59% compared to using an LLM alone.",
+      "status": "notchecked",
+      "_source_file": "ASE - 2025.json"
+    },
+    {
+      "id": 8084,
+      "year": 2025,
+      "title": "SE-Jury: An LLM-as-Ensemble-Judge Metric for Narrowing the Gap with Human Evaluation in SE",
+      "category": "software-engineering",
+      "publication": "ASE",
+      "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334309",
+      "abstract": "Large Language Models (LLMs) and other automated techniques have been increasingly used to support software developers by generating software artifacts such as code snippets, patches, and comments. However, accurately assessing the correctness of these generated artifacts remains a significant challenge. On one hand, human evaluation provides high accuracy but is labor-intensive and lacks scalability. On the other hand, many automatic evaluation metrics are scalable and require minimal human effort, but they often fail to accurately reflect the actual correctness of generated software artifacts.In this paper, we present SE-Jury, the first evaluation metric for LLM-as-Ensemble-Judge specifically designed to accurately assess the correctness of generated software artifacts. SE-Jury first defines five distinct evaluation strategies, each implemented as an independent judge. A dynamic team selection mechanism then identifies the most appropriate subset of judges as a team to produce a final correctness score through ensembling. We evaluate SE-Jury across a diverse set of software engineering (SE) benchmarks that span three popular SE tasks: code generation, automated program repair, and code summarization. Results demonstrate that SE-Jury consistently achieves a higher correlation with human judgments, with improvements ranging from 29.6%–140.8% over existing automatic metrics. SE-Jury reaches agreement levels with human annotators that are close to inter-annotator agreement in code generation and program repair. These findings underscore SE-Jury’s potential as a scalable and reliable alternative to human evaluation in these SE tasks.",
+      "status": "notchecked",
+      "_source_file": "ASE - 2025.json"
+    },
+    {
+      "id": 8180,
+      "year": 2025,
+      "title": "What Types of Code Review Comments Do Developers Most Frequently Resolve?",
+      "category": "software-engineering",
+      "publication": "ASE",
+      "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334442",
+      "abstract": "Large language model (LLM)-powered code review automation tools have been introduced to generate code review comments. However, not all generated comments will drive code changes. Understanding what types of generated review comments are likely to trigger code changes is crucial for identifying those that are actionable. In this paper, we set out to investigate (1) the types of review comments written by humans and LLMs, and (2) the types of generated comments that are most frequently resolved by developers. To do so, we developed an LLM-as-a-Judge to automatically classify review comments based on our own taxonomy of five categories. Our empirical study confirms that (1) the LLM reviewer and human reviewers exhibit distinct strengths and weaknesses depending on the project context, and (2) readability, bugs, and maintainability-related comments had higher resolution rates than those focused on code design. These results suggest that a substantial proportion of LLM-generated comments are actionable and can be resolved by developers. Our work highlights the complementarity between LLM and human reviewers and offers suggestions to improve the practical effectiveness of LLM-powered code review tools.",
+      "status": "notchecked",
+      "_source_file": "ASE - 2025.json"
+    },
+    {
+      "id": 8211,
+      "year": 2025,
+      "title": "Measuring LLM Code Generation Stability via Structural Entropy",
+      "category": "software-engineering",
+      "publication": "ASE",
+      "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334330",
+      "abstract": "Assessing the stability of code generation from large language models (LLMs) is essential for judging their reliability in real-world development. We extend prior \"structural-entropy\" concepts to the program domain by pairing entropy with abstract-syntax-tree (AST) analysis. For any fixed prompt, we collect the multiset of depth-bounded subtrees of AST in each generated program and treat their relative frequencies as a probability distribution. We then measure stability in two complementary ways: (i) Jensen–Shannon divergence, a symmetric, bounded indicator of structural overlap, and (ii) a Structural Cross-Entropy ratio that highlights missing high-probability patterns. Both metrics admit structural-only and token-aware variants, enabling separate views on control-flow shape and identifier-level variability. Unlike pass@k, BLEU, or CodeBLEU, our metrics are reference-free, language-agnostic, and execution-independent. We benchmark several leading LLMs on standard code generation tasks, demonstrating that AST-driven structural entropy reveals nuances in model consistency and robustness. The method runs in O(n,d) time with no external tests, providing a lightweight addition to the code-generation evaluation toolkit.",
+      "status": "notchecked",
+      "_source_file": "ASE - 2025.json"
+    },
+    {
+      "id": 12508,
+      "year": 2025,
+      "title": "Hallucination Detection in Large Language Models with Metamorphic Relations",
+      "category": "software-engineering",
+      "publication": "FSE",
+      "paper": "https://doi.org/10.1145/3715735",
+      "abstract": "Large Language Models (LLMs) are prone to hallucinations, e.g., factually incorrect information, in their responses. These hallucinations present challenges for LLM-based applications that demand high factual accuracy. Existing hallucination detection methods primarily depend on external resources, which can suffer from issues such as low availability, incomplete coverage, privacy concerns, high latency, low reliability, and poor scalability. There are also methods depending on output probabilities, which are often inaccessible for closed-source LLMs like GPT models. This paper presents MetaQA, a self-contained hallucination detection approach that leverages metamorphic relation and prompt mutation. Unlike existing methods, MetaQA operates without any external resources and is compatible with both open-source and closed-source LLMs. MetaQA is based on the hypothesis that if an LLM’s response is a hallucination, the designed metamorphic relations will be violated. We compare MetaQA with the state-of-the-art zero-resource hallucination detection method, SelfCheckGPT, across multiple datasets, and on two open-source and two closed-source LLMs. Our results reveal that MetaQA outperforms SelfCheckGPT in terms of precision, recall, and f1 score. For the four LLMs we study, MetaQA outperforms SelfCheckGPT with a superiority margin ranging from 0.041 - 0.113 (for precision), 0.143 - 0.430 (for recall), and 0.154 - 0.368 (for F1-score). For instance, with Mistral-7B, MetaQA achieves an average F1-score of 0.435, compared to SelfCheckGPT’s F1-score of 0.205, representing an improvement rate of 112.2\\%. MetaQA also demonstrates superiority across all different categories of questions.",
+      "status": "notchecked",
+      "_source_file": "FSE - 2025.json"
+    },
+    {
+      "id": 12535,
+      "year": 2025,
+      "title": "The Struggles of LLMs in Cross-Lingual Code Clone Detection",
+      "category": "software-engineering",
+      "publication": "FSE",
+      "paper": "https://doi.org/10.1145/3715764",
+      "abstract": "With the involvement of multiple programming languages in modern software development, cross-lingual code clone detection has gained traction within the software engineering community. Numerous studies have explored this topic, proposing various promising approaches. Inspired by the significant advances in machine learning in recent years, particularly Large Language Models (LLMs), which have demonstrated their ability to tackle various tasks, this paper revisits cross-lingual code clone detection. We evaluate the performance of five (05) LLMs and, eight prompts (08) for the identification of cross-lingual code clones. Additionally, we compare these results against two baseline methods. Finally, we evaluate a pre-trained embedding model to assess the effectiveness of the generated representations for classifying clone and non-clone pairs. The studies involving LLMs and Embedding models are evaluated using two widely used cross-lingual datasets, XLCoST and CodeNet. Our results show that LLMs can achieve high F1 scores, up to 0.99, for straightforward programming examples. However, they not only perform less well on programs associated with complex programming challenges but also do not necessarily understand the meaning of “code clones” in a cross-lingual setting. We show that embedding models used to represent code fragments from different programming languages in the same representation space enable the training of a basic classifier that outperforms all LLMs by ∼1 and ∼20 percentage points on the XLCoST and CodeNet datasets, respectively. This finding suggests that, despite the apparent capabilities of LLMs, embeddings provided by embedding models offer suitable representations to achieve state-of-the-art performance in cross-lingual code clone detection.",
+      "status": "notchecked",
+      "_source_file": "FSE - 2025.json"
+    },
+    {
+      "id": 10072,
+      "year": 2024,
+      "title": "ChatGPT Incorrectness Detection in Software Reviews",
+      "category": "software-engineering",
+      "publication": "ICSE",
+      "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10549751",
+      "abstract": "We conducted a survey of 135 software engineering (SE) practitioners to understand how they use Generative Al-based chatbots like ChatGPT for SE tasks. We find that they want to use ChatGPT for SE tasks like software library selection but often worry about the truthfulness of ChatGPT responses. We developed a suite of techniques and a tool called CID (ChatGPT Incorrectness Detector) to automatically test and detect the incorrectness in ChatGPT re-sponses. CID is based on the iterative prompting to ChatGPT by asking it contextually similar but textually divergent questions (using an approach that utilizes metamorphic relationships in texts). The underlying principle in CID is that for a given question, a response that is different from other responses (across multiple incarnations of the question) is likely an incorrect response. In a benchmark study of library selection, we show that CID can detect incorrect responses from ChatGPT with an Fl-score of 0.74 - 0.75.",
+      "status": "notchecked",
+      "_source_file": "ICSE - 2024.json"
+    },
+    {
+      "id": 9752,
+      "year": 2025,
+      "title": "COCA: Generative Root Cause Analysis for Distributed Systems with Code Knowledge",
+      "category": "software-engineering",
+      "publication": "ICSE",
+      "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11029720",
+      "abstract": "Runtime failures are commonplace in modern distributed systems. When such issues arise, users often turn to platforms such as Github or JIRA to report them and request assistance. Automatically identifying the root cause of these failures is critical for ensuring high reliability and availability. However, prevailing automatic root cause analysis (RCA) approaches rely significantly on comprehensive runtime monitoring data, which is often not fully available in issue platforms. Recent methods leverage large language models (LLMs) to analyze issue reports, but their effectiveness is limited by incomplete or ambiguous user-provided information. To obtain more accurate and comprehensive RCA results, the core idea of this work is to extract additional diagnostic clues from code to supplement data-limited issue reports. Specifically, we propose COCA, a code knowledge enhanced root cause analysis approach for issue reports. Based on the data within issue reports, COCA intelligently extracts relevant code snippets and reconstructs execution paths, providing a comprehensive execution context for further RCA. Subsequently, COCA constructs a prompt combining historical issue reports along with profiled code knowledge, enabling the LLMs to generate detailed root cause summaries and localize responsible components. Our evaluation on datasets from five real-world distributed systems demonstrates that COCA significantly outperforms existing methods, achieving a $\\mathbf{2 8. 3 \\%}$ improvement in root cause localization and a 22.0 % improvement in root cause summarization. Furthermore, COCA's performance consistency across various LLMs underscores its robust generalizability.",
+      "status": "notchecked",
+      "_source_file": "ICSE - 2025.json"
+    },
+    {
+      "id": 9773,
+      "year": 2025,
+      "title": "The Seeds of the Future Sprout from History: Fuzzing for Unveiling Vulnerabilities in Prospective Deep-Learning Libraries",
+      "category": "software-engineering",
+      "publication": "ICSE",
+      "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11029791",
+      "abstract": "The widespread application of large language models (LLMs) underscores the importance of deep learning (DL) technologies that rely on foundational DL libraries such as PyTorch and TensorFlow. Despite their robust features, these libraries face challenges with scalability and adaptation to rapid advancements in the LLM community. In response, tech giants like Apple and Huawei are developing their own DL libraries to enhance performance, increase scalability, and safeguard intellectual property. Ensuring the security of these libraries is crucial, with fuzzing being a vital solution. However, existing fuzzing frameworks struggle with target flexibility, effectively testing bug-prone API sequences, and leveraging the limited available information in new libraries. To address these limitations, we propose FUTURE, the first universal fuzzing framework tailored for newly introduced and prospective DL libraries. FUTURE leverages historical bug information from existing libraries and fine-tunes LLMs for specialized code generation. This strategy helps identify bugs in new libraries and uses insights from these libraries to enhance security in existing ones, creating a cycle from history to future and back. To evaluate FUTURE's effectiveness, we conduct comprehensive evaluations on three newly introduced DL libraries. Evaluation results demonstrate that FUTURE significantly outperforms existing fuzzers in bug detection, success rate of bug reproduction, validity rate of code generation, and API coverage. Notably, FUTURE has detected 148 bugs across 452 targeted APIs, including 142 previously unknown bugs. Among these, 10 have been assigned CVE IDs. Additionally, FUTURE detects 7 bugs in PyTorch, demonstrating its ability to enhance security in existing libraries in reverse.",
+      "status": "notchecked",
+      "_source_file": "ICSE - 2025.json"
+    },
+    {
+      "id": 9776,
+      "year": 2025,
+      "title": "An Exploratory Study of ML Sketches and Visual Code Assistants",
+      "category": "software-engineering",
+      "publication": "ICSE",
+      "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11029898",
+      "abstract": "This paper explores the integration of Visual Code Assistants in Integrated Development Environments (IDEs). In Software Engineering, whiteboard sketching is often the initial step before coding, serving as a crucial collaboration tool for developers. Previous studies have investigated patterns in SE sketches and how they are used in practice, yet methods for directly using these sketches for code generation remain limited. The emergence of visually-equipped large language models presents an opportunity to bridge this gap, which is the focus of our research. In this paper, we built a first prototype of a Visual Code Assistant to get user feedback regarding in-IDE sketch-to-code tools. We conduct an experiment with 19 data scientists, most of whom regularly sketch as part of their job. We investigate developers' mental models by analyzing patterns commonly observed in their sketches when developing an ML workflow. Analysis indicates that diagrams were the preferred organizational component (52.6%), often accompanied by lists (42.1%) and numbered points (36.8%). Our tool converts their sketches into a Python notebook by querying an LLM. We use an LLM-as-judge setup to score the quality of the generated code, finding that even brief sketching can effectively generate useful code outlines. We also find a positive correlation between sketch time and the quality of the generated code. We conclude the study by conducting extensive interviews to assess the tool's usefulness, explore potential use cases, and understand developers' needs. As noted by participants, promising applications for these assistants include education, prototyping, and collaborative settings. Our findings signal promise for the next generation of Code Assistants to integrate visual information, both to improve code generation and to better leverage developers' existing sketching practices.",
+      "status": "notchecked",
+      "_source_file": "ICSE - 2025.json"
+    },
+    {
+      "id": 9872,
+      "year": 2025,
+      "title": "Decoding Secret Memorization in Code LLMs Through Token-Level Characterization",
+      "category": "software-engineering",
+      "publication": "ICSE",
+      "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11029894",
+      "abstract": "Code Large Language Models (LLMs) have demonstrated remarkable capabilities in generating, understanding, and manipulating programming code. However, their training process inadvertently leads to the memorization of sensitive information, posing severe privacy risks. Existing studies on memorization in LLMs primarily rely on prompt engineering techniques, which suffer from limitations such as widespread hallucination and inefficient extraction of the target sensitive information. In this paper, we present a novel approach to characterize real and fake secrets generated by Code LLMs based on token probabilities. We identify four key characteristics that differentiate genuine secrets from hallucinated ones, providing insights into distinguishing real and fake secrets. To overcome the limitations of existing works, we propose DeSec,a two-stage method that leverages token-level features derived from the identified characteristics to guide the token decoding process. DeSec consists of constructing an offline token scoring model using a proxy Code LLM and employing the scoring model to guide the decoding process by reassigning token likelihoods. Through extensive experiments on four state-of-the-art Code LLMs using a diverse dataset, we demonstrate the superior performance of DeSec in achieving a higher plausible rate and extracting more real secrets compared to existing baselines. Our findings highlight the effectiveness of our token-level approach in enabling an extensive assessment of the privacy leakage risks associated with Code LLMs.",
+      "status": "notchecked",
+      "_source_file": "ICSE - 2025.json"
+    },
+    {
+      "id": 366,
+      "year": 2025,
+      "title": "GPTracker: A Large-Scale Measurement of Misused GPTs",
+      "category": "top-tier",
+      "publication": "IEEE S&P",
+      "paper": "https://doi.ieeecomputersociety.org/10.1109/SP61157.2025.00118",
+      "abstract": " Large language model (LLM)-powered agents, particularly GPTs by OpenAI, have revolutionized how AI is customized, deployed, and used. However, misuse of GPTs has emerged as a critical, yet largely underexplored, issue within OpenAI's GPT Store. In this paper, we present the first large-scale measurement study on misused GPTs. We introduce GPTRACKER, a framework designed to continuously collect GPTs from the official GPT Store and automate the interaction with them. As of the submission of this paper, GPTRACKER has collected 755,297 GPTs and 28,464 GPT conversation flows over eight months. Using an LLM-driven scoring system combined with human review, we identify 2,051 misused GPTs across ten forbidden scenarios. Through both static and dynamic analyses, we explore the landscape of these misused GPTs, including the trends, builders, operation mechanisms, and effectiveness. We find that builders of misused GPTs employ various tactics to bypass OpenAI's review system, such as integrating external APIs, hiding intention in descriptions, and URL redirection. Notably, GPTs activating external APIs are more likely to provide answers to inappropriate queries than other misused GPTs, showing an average 22.81% increase in answer rate in the Illegal Activity scenario. Leveraging VirusTotal, we identify 50 malicious domains shown on 446 GPTs, where 33 are labeled as phishing, 28 as malware, and 2 as spam, with some domains receiving multiple labels. We responsibly disclosed our findings to OpenAI on September 11, 2024, and November 12, 2024. 1,316 out of 1,804 GPTs reported in the first disclosure were removed by September 25. Our study sheds light on the alarming misuse of GPTs in the emerging GPT marketplace and offers actionable recommendations for stakeholders to mitigate future misuse.11Our code is available at https://github.com/TrustAIRLab/GPTracker. Disclaimer. This paper includes examples of hateful and disturbing content. Reader discretion is advised. ",
+      "status": "done",
+      "_source_file": "IEEE S&P - 2025.json"
+    },
+    {
+      "id": 11607,
+      "year": 2024,
+      "title": "Oracle-Guided Program Selection from Large Language Models",
+      "category": "software-engineering",
+      "publication": "ISSTA",
+      "paper": "https://doi.org/10.1145/3650212.3680308",
+      "abstract": "While large language models (LLMs) have shown significant advancements in code generation, their susceptibility to producing incorrect code poses a significant challenge to the adoption of LLM-generated programs. This issue largely stems from the reliance on natural language descriptions as informal oracles in code generation. Current strategies to mitigate this involve selecting the best program from multiple LLM-generated alternatives, judged by criteria like the consistency of their execution results on an LLM-generated test suite. However, this approach has crucial limitations: (1) LLMs often generate redundant tests or tests that cannot distinguish between correct and incorrect solutions, (2) the used consistency criteria, such as the majority vote, fail to foster developer trust due to the absence of transparent rationale behind the made choices. In this work, we propose a new perspective on increasing the quality of LLM-generated code via program selection using the LLM as a test oracle. Our method is based on our experimentally confirmed observation that LLMs serve more effectively as oracles when tasked with selecting the correct output from multiple choices. Leveraging this insight, we first generate distinguishing inputs that capture semantic discrepancies of programs sampled from an LLM, and record outputs produced by the programs on these inputs. An LLM then selects the most likely to be correct output from these, guided by the natural language problem description. We implemented this idea in a tool LLMCodeChoice and evaluated its accuracy in generating and selecting standalone programs. Our experiments demonstrated its effectiveness in improving pass@1 by 3.6-7\\% on HumanEval and MBPP benchmarks compared to the state-of-art CodeT. Most interestingly, the selected input-output specifications helped us to uncover incompleteness and ambiguities in task descriptions and also identify incorrect ground-truth implementations in the benchmarks.",
+      "status": "notchecked",
+      "_source_file": "ISSTA - 2024.json"
+    },
+    {
+      "id": 11652,
+      "year": 2024,
+      "title": "Identifying Smart Contract Security Issues in Code Snippets from Stack Overflow",
+      "category": "software-engineering",
+      "publication": "ISSTA",
+      "paper": "https://doi.org/10.1145/3650212.3680353",
+      "abstract": "Smart contract developers frequently seek solutions to developmental challenges on Q&amp;A platforms such as Stack Overflow (SO). Although community responses often provide viable solutions, the embedded code snippets can also contain hidden vulnerabilities. Integrating such code directly into smart contracts may make them susceptible to malicious attacks. We conducted an online survey and received 74 responses from smart contract developers. The results of this survey indicate that the majority (86.4\\%) of participants do not sufficiently consider security when reusing SO code snippets. Despite the existence of various tools designed to detect vulnerabilities in smart contracts, these tools are typically developed for analyzing fully-completed smart contracts and thus are ineffective for analyzing typical code snippets as found on SO. We introduce SOChecker, the first tool designed to identify potential vulnerabilities in incomplete SO smart contract code snippets. SOChecker first leverages a fine-tuned Llama2 model for code completion, followed by the application of symbolic execution methods for vulnerability detection. Our experimental results, derived from a dataset comprising 897 code snippets collected from smart contract-related SO posts, demonstrate that SOChecker achieves an F1 score of 68.2\\%, greatly surpassing GPT-3.5 and GPT-4 (20.9\\% and 33.2\\% F1 Scores respectively). Our findings underscore the need to improve the security of code snippets from Q&amp;A websites.",
+      "status": "notchecked",
+      "_source_file": "ISSTA - 2024.json"
+    },
+    {
+      "id": 11519,
+      "year": 2025,
+      "title": "The First Prompt Counts the Most! An Evaluation of Large Language Models on Iterative Example-Based Code Generation",
+      "category": "software-engineering",
+      "publication": "ISSTA",
+      "paper": "https://doi.org/10.1145/3728947",
+      "abstract": "The capabilities of Large Language Models (LLMs) in code generation have been extensively studied, particularly for implementing target functionalities from natural-language descriptions. As an alternative to natural language, input-output (I/O) examples provide an accessible, unambiguous, and flexible way to describe functionalities. However, their inherent diversity, opaqueness, and incompleteness impose greater challenges for understanding and implementing the target requirements. Therefore, generating code from I/O examples (i.e., example-based code generation) provides a new perspective, allowing us to additionally evaluate LLMs’ capability to infer target functionalities from limited information and to process new-form requirements. However, related research about LLMs in example-based code generation remains largely unexplored. To fill this gap, this paper presents the first comprehensive study on example-based code generation using LLMs. To address the incorrectness caused by the incompleteness of I/O examples, we adopt an iterative evaluation framework and formalize the objective of example-based code generation as two sequential sub-objectives: generating code conforming to the given examples and generating code that successfully implements the target functionalities from (iteratively) given examples. We assess six state-of-the-art LLMs using a new benchmark of 172 diverse target functionalities (derived from HumanEval and CodeHunt). The results demonstrate that when requirements are described using iterative I/O examples rather than natural language, the LLMs’ score decreases by over 60\\%, indicating that example-based code generation remains challenging for the evaluated LLMs. Notably, the vast majority (even over 95\\%) of successfully implemented functionalities are achieved in the first round of the iterations, suggesting that the LLMs struggle to effectively utilize the iteratively supplemented requirements. Furthermore, we find that combining I/O examples with even imprecise and fragmental natural language descriptions greatly improves LLM performance, and the selection of initial I/O examples can also influence the score, suggesting opportunities for prompt optimization. These findings highlight the importance of early prompts during interactions and offer critical insights and implications for enhancing LLM-based code generation.",
+      "status": "notchecked",
+      "_source_file": "ISSTA - 2025.json"
+    },
+    {
+      "id": 11535,
+      "year": 2025,
+      "title": "Can LLMs Replace Human Evaluators? An Empirical Study of LLM-as-a-Judge in Software Engineering",
+      "category": "software-engineering",
+      "publication": "ISSTA",
+      "paper": "https://doi.org/10.1145/3728963",
+      "abstract": "Recently, large language models (LLMs) have been deployed to tackle various software engineering (SE) tasks like code generation, significantly advancing the automation of SE tasks. However, assessing the quality of these LLM-generated code and text remains challenging. The commonly used Pass@k metric necessitates extensive unit tests and configured environments, demands a high labor cost, and is not suitable for evaluating LLM-generated text. Conventional metrics like BLEU, which measure only lexical rather than semantic similarity, have also come under scrutiny. In response, a new trend has emerged to employ LLMs for automated evaluation, known as LLM-as-a-judge. These LLM-as-a-judge methods are claimed to better mimic human assessment than conventional metrics without relying on high-quality reference answers. Nevertheless, their exact human alignment in SE tasks remains unexplored. In this paper, we empirically explore LLM-as-a-judge methods for evaluating SE tasks, focusing on their alignment with human judgments. We select seven LLM-as-a-judge methods that utilize general-purpose LLMs, alongside two LLMs specifically fine-tuned for evaluation. After generating and manually scoring LLM responses on three recent SE datasets of code translation, code generation, and code summarization, we then prompt these methods to evaluate each response. Finally, we compare the scores generated by these methods with human evaluation. The results indicate that output-based methods reach the highest Pearson correlation of 81.32 and 68.51 with human scores in code translation and generation, achieving near-human evaluation, noticeably outperforming ChrF++, one of the best conventional metrics, at 34.23 and 64.92. Such output-based methods prompt LLMs to output judgments directly, and exhibit more balanced score distributions that resemble human score patterns. Finally, we provide insights and implications, concluding that current state-of-the-art LLM-as-a-judge methods can potentially replace human evaluations in certain SE tasks.",
+      "status": "notchecked",
+      "_source_file": "ISSTA - 2025.json"
+    },
+    {
+      "id": 7133,
+      "year": 2024,
+      "title": "MASTERKEY: Automated Jailbreaking of Large Language Model Chatbots",
+      "category": "top-tier",
+      "publication": "NDSS",
+      "paper": "https://www.ndss-symposium.org/ndss-paper/masterkey-automated-jailbreaking-of-large-language-model-chatbots/",
+      "abstract": "Large language models (LLMs), such as chatbots, have made significant strides in various fields but remain vulnerable to jailbreak attacks, which aim to elicit inappropriate responses. Despite efforts to identify these weaknesses, current strategies are ineffective against mainstream LLM chatbots, mainly due to undisclosed defensive measures by service providers. Our paper introduces MASTERKEY, a framework exploring the dynamics of jailbreak attacks and countermeasures. We present a novel method based on time-based characteristics to dissect LLM chatbot defenses. This technique, inspired by time-based SQL injection, uncovers the workings of these defenses and demonstrates a proof-of-concept attack on several LLM chatbots. \nAdditionally, MASTERKEY features an innovative approach for automatically generating jailbreak prompts that target well-defended LLM chatbots. By fine-tuning an LLM with jailbreak prompts, we create attacks with a 21.58% success rate, significantly higher than the 7.33% achieved by existing methods. We have informed service providers of these findings, highlighting the urgent need for stronger defenses. This work not only reveals vulnerabilities in LLMs but also underscores the importance of robust defenses against such attacks.",
+      "status": "notchecked",
+      "_source_file": "NDSS - 2024.json"
+    },
+    {
+      "id": 6567,
+      "year": 2026,
+      "title": "Automated Code Annotation with LLMs for Establishing TEE Boundaries",
+      "category": "top-tier",
+      "publication": "NDSS",
+      "paper": "https://www.ndss-symposium.org/ndss-paper/automated-code-annotation-with-llms-for-establishing-tee-boundaries/",
+      "abstract": "Modern systems increasingly rely on Trusted Execution Environments (TEEs), such as Intel SGX and ARM TrustZone, to securely isolate sensitive code and reduce the Trusted Computing Base (TCB).\nHowever, identifying the precise regions of code especially those involving cryptographic logic that should reside within a TEE remains challenging, as it requires deep manual inspection and is not supported by automated tools yet.  To solve this open problem, we propose LLM based Code Annotation Logic (LLM-CAL), a tool that automates the identification of security-sensitive code regions at scale by leveraging most recent and advanced Large Language Models (LLMs). Our approach leverages foundational LLMs (Gemma-2B, CodeGemma-2B, and LLaMA-7B), which we fine-tuned using a newly collected and manually labeled dataset of over 4,000 C source files. We encode local context features, global semantic information, and structural metadata into compact input sequences that guide the model in capturing subtle patterns of security sensitivity in code. The fine-tuning process is based on quantized LoRA—a parameter-efficient technique that introduces lightweight, trainable adapters into the LLM architecture. To support practical deployment, we developed a scalable pipeline for data preprocessing and inference. LLM-CAL achieves an F1 score of 98.40% and a recall of 97.50% in identifying sensitive and non-sensitive code. It represents the first effort to automate the annotation of cryptographic security-sensitive code for TEE-enabled platforms, aiming to minimize the Trusted Computing Base (TCB) and optimize TEE usage to enhance overall system security.",
+      "status": "notchecked",
+      "_source_file": "NDSS - 2026.json"
+    },
+    {
+      "id": 16208,
+      "year": 2026,
+      "title": "Sparsity-Controllable Normality Learning With Vision-Language Models for Scenario-Related Video Anomaly Detection",
+      "category": "journal",
+      "publication": "TIFS",
+      "paper": "https://doi.org/10.1109/TIFS.2026.3723187",
+      "abstract": "Video anomaly detection (VAD) is critical for automation systems and security surveillance. Recently, multimodal vision–language models (MLLMs) have attracted increasing attention due to their rich pre-trained knowledge and strong explainability. However, existing MLLM-based approaches struggle to adapt to real-world settings where anomaly definitions are complex: they either rely on the model’s built-in knowledge and mainly capture only generic anomalies, or require anomalous samples for supervised fine-tuning—which are often rare and may raise legal or privacy concerns. To address this challenge, we propose a Sparsity-Controllable Vision-Language Model (SCVLM) for scenario-related anomaly detection. SCVLM learns normality from unlabeled normal data by jointly reconstructing multimodal representations and summarizing textual descriptions, thus enabling anomalies to be detected as deviations from the learned normal patterns. We introduce a Sparsity-Controllable Memory Block (SCMB) to improve memory addressing mechanism for pretrained multimodal representations. During inference, anomalies are detected by fusing two modality-specific reconstruction-errors with an LLM-based textual anomaly scoring mechanism. Meanwhile, we fuse the interpretable cues from each detection branch to derive anomaly reasoning consistent with human commonsense. Extensive experiments on challenging benchmarks demonstrate that SCVLM achieves state-of-the-art detection performance. Our code is available at https://github.com/SCVLM/SCVLM",
+      "status": "notchecked",
+      "_source_file": "TIFS - 2026.json"
+    },
+    {
+      "id": 4136,
+      "year": 2025,
+      "title": "Refusal Is Not an Option: Unlearning Safety Alignment of Large Language Models",
+      "category": "top-tier",
+      "publication": "USENIX Sec",
+      "paper": "https://www.usenix.org/conference/usenixsecurity25/presentation/song-minkyoo",
+      "abstract": "Safety alignment has become an indispensable procedure to ensure the safety of large language models (LLMs), as they are reported to generate harmful, privacy-sensitive, and copy-righted content when prompted with adversarial instructions. Machine unlearning is a representative approach to establishing the safety of LLMs, enabling them to forget problematic training instances and thereby minimize their influence. However, no prior study has investigated the feasibility of adversarial unlearning—using seemingly legitimate unlearning requests to compromise the safety of a target LLM.\nIn this paper, we introduce novel attack methods designed to break LLM safety alignment through unlearning. The key idea lies in crafting unlearning instances that cause the LLM to forget its mechanisms for rejecting harmful instructions. Specifically, we propose two attack methods. The first involves explicitly extracting rejection responses from the target LLM and feeding them back for unlearning. The second attack exploits LLM agents to obscure rejection responses by merging them with legitimate-looking unlearning requests, increasing their chances of bypassing internal filtering systems. Our evaluations show that these attacks significantly compromise the safety of two open-source LLMs: LLaMA and Phi. LLaMA's harmfulness scores increase by an average factor of 11 across four representative unlearning methods, while Phi exhibits a 61.8× surge in the rate of unsafe responses. Furthermore, we demonstrate that our unlearning attack is also effective against OpenAI's fine-tuning service, increasing GPT-4o's harmfulness score by 2.21×. Our work identifies a critical vulnerability in unlearning and represents an important first step toward developing safe and responsible unlearning practices while honoring users' unlearning requests. Our code is available at https://doi.org/10.5281/zenodo.15628860.",
+      "status": "notchecked",
+      "_source_file": "USENIX Sec - 2025.json"
+    },
+    {
+      "id": 4408,
+      "year": 2025,
+      "title": "SoK: Data Reconstruction Attacks Against Machine Learning Models: Definition, Metrics, and Benchmark",
+      "category": "top-tier",
+      "publication": "USENIX Sec",
+      "paper": "https://www.usenix.org/conference/usenixsecurity25/presentation/wen",
+      "abstract": "Data reconstruction attacks, which aim to recover the training dataset of a target model with limited access, have gained increasing attention in recent years. However, there is currently no consensus on a formal definition of data reconstruction attacks or appropriate evaluation metrics for measuring their quality. This lack of rigorous definitions and universal metrics has hindered further advancement in this field. In this paper, we address this issue in the vision domain by proposing a unified attack taxonomy and formal definitions of data reconstruction attacks. We first propose a set of quantitative evaluation metrics that consider important criteria such as quantifiability, consistency, precision, and diversity. Additionally, we leverage large language models (LLMs) as a substitute for human judgment, enabling visual evaluation with an emphasis on high-quality reconstructions. Using our proposed taxonomy and metrics, we present a unified framework for systematically evaluating the strengths and limitations of existing attacks and establishing a benchmark for future research. Empirical results, primarily from a memorization perspective, not only validate the effectiveness of our metrics but also offer valuable insights for designing new attacks.",
+      "status": "notchecked",
+      "_source_file": "USENIX Sec - 2025.json"
+    }
+  ]
+}

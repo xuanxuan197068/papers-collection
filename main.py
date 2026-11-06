@@ -32,6 +32,7 @@ class Statistics:
     byPublicationAndYear: dict = field(default_factory=dict)
     byPublicationAndYearAndStatus: dict = field(default_factory=dict)
     years: list = field(default_factory=list)
+    generated_at: str = ''
 
 @dataclass
 class PaperInfo:
@@ -298,6 +299,7 @@ def export_data_json(project_base):
            
     statistics.byYear = dict(sorted(statistics.byYear.items(), key=lambda x: int(x[0])))
     statistics.years = list(statistics.byYear.keys())
+    statistics.generated_at = datetime.datetime.now().astimezone().isoformat(timespec='seconds')
 
     for json_name, json_file in {
         'data-statistics.json': statistics,

@@ -1,0 +1,884 @@
+{
+  "date": "2026-10-20",
+  "interest": "智能体蜜罐、欺骗与情报获取",
+  "record_count": 16338,
+  "file_count": 117,
+  "venue_counts": {
+    "ACM CCS": 2306,
+    "ASE": 1769,
+    "ASPLOS": 1224,
+    "FSE": 1738,
+    "ICSE": 1802,
+    "IEEE S&P": 1648,
+    "ISSTA": 827,
+    "NDSS": 1335,
+    "SOSP": 523,
+    "TIFS": 577,
+    "USENIX Sec": 2589
+  },
+  "files": [
+    {
+      "path": "src/assets/data/meta_json/ACM CCS - 2015.json",
+      "sha256": "c205cd470f3f1d3cae6139b6230ce464f06e6f13d2d342b30764bbd94e30a51a",
+      "count": 127
+    },
+    {
+      "path": "src/assets/data/meta_json/ACM CCS - 2016.json",
+      "sha256": "3943a194471bbbba619647df4f99b313bce162987ff85564a12fb671c7ce160c",
+      "count": 137
+    },
+    {
+      "path": "src/assets/data/meta_json/ACM CCS - 2017.json",
+      "sha256": "951da64b4db65c5d672cc4732671c77dd926efff04fe079f74d3b17d3e13d48f",
+      "count": 151
+    },
+    {
+      "path": "src/assets/data/meta_json/ACM CCS - 2018.json",
+      "sha256": "9c1fd5eeef10226791caefb2b51e6cd75a256b87a18f125025294b329934cd10",
+      "count": 134
+    },
+    {
+      "path": "src/assets/data/meta_json/ACM CCS - 2019.json",
+      "sha256": "366fb11d52a198c8143b72ba19d87c772fd367961c5b2849afac7671afc95815",
+      "count": 149
+    },
+    {
+      "path": "src/assets/data/meta_json/ACM CCS - 2020.json",
+      "sha256": "04227441480fa6f1dacd2ce867c9bee45bc9050f57aca75a66db039eae9a5674",
+      "count": 121
+    },
+    {
+      "path": "src/assets/data/meta_json/ACM CCS - 2021.json",
+      "sha256": "6ef426549bb053da613f6bce1c69b959d0e14ae01b351b51b7b94e2bead3171a",
+      "count": 222
+    },
+    {
+      "path": "src/assets/data/meta_json/ACM CCS - 2022.json",
+      "sha256": "49d56a3cb3ff3d78dbaa13dff3808f10d8c2af1784fcf1a505d9b65d0177a74c",
+      "count": 218
+    },
+    {
+      "path": "src/assets/data/meta_json/ACM CCS - 2023.json",
+      "sha256": "d134db4ce67ab550242230fc58659e702e25e74f8c05370cd1973679c7059989",
+      "count": 234
+    },
+    {
+      "path": "src/assets/data/meta_json/ACM CCS - 2024.json",
+      "sha256": "1449fbe1a733eee69c57c7fb55876d329909e70ec94dbf5c5eb7474df1a0fd6b",
+      "count": 418
+    },
+    {
+      "path": "src/assets/data/meta_json/ACM CCS - 2025.json",
+      "sha256": "d1384b511d4a51c9ea067f67ba91d12b84069c1bfb9ee20f4ca5c6f737ffd725",
+      "count": 395
+    },
+    {
+      "path": "src/assets/data/meta_json/ASE - 2015.json",
+      "sha256": "2b6eab94e58053e1416c34b724880bad7c1da01b0b8035e5a68aa7a84ad1e30e",
+      "count": 100
+    },
+    {
+      "path": "src/assets/data/meta_json/ASE - 2016.json",
+      "sha256": "df37b9d807a29c8e2318fcdb02067d75f08ba509bc9e3cffe79c12cff0859aa2",
+      "count": 100
+    },
+    {
+      "path": "src/assets/data/meta_json/ASE - 2017.json",
+      "sha256": "79842efc17e33642be77fcca858c041043540a23f3afd6fd507aaff4deda01c7",
+      "count": 117
+    },
+    {
+      "path": "src/assets/data/meta_json/ASE - 2018.json",
+      "sha256": "24bffaba6e9aa639b9611875523e618a507dd85f041e668b80f49a539bc2ffd2",
+      "count": 111
+    },
+    {
+      "path": "src/assets/data/meta_json/ASE - 2019.json",
+      "sha256": "47ce8eda20361ef0fbfb816d23770006a83fb49c7519ad32828a1aac099df5ac",
+      "count": 154
+    },
+    {
+      "path": "src/assets/data/meta_json/ASE - 2020.json",
+      "sha256": "06d07815dcafb99e79e5de18556e517f90e7bb1c7b8d9c704b678e31f7f5cec6",
+      "count": 158
+    },
+    {
+      "path": "src/assets/data/meta_json/ASE - 2021.json",
+      "sha256": "f0d9d72447a59bb656b58a6e4fcfc8b349d67c0eaedd1dec50223ee71c6164b6",
+      "count": 165
+    },
+    {
+      "path": "src/assets/data/meta_json/ASE - 2023.json",
+      "sha256": "2447fa2df822c95e7a591512722252cd191655724e4095e1c901e72f681f0fe7",
+      "count": 208
+    },
+    {
+      "path": "src/assets/data/meta_json/ASE - 2024.json",
+      "sha256": "3943ffa5cb510a24758b6b89434238502924189e75c5f23d8aa2a5066256ec41",
+      "count": 267
+    },
+    {
+      "path": "src/assets/data/meta_json/ASE - 2025.json",
+      "sha256": "b80529dc7e15116d2e3a842bb4412ffd2db5b84cc59a956b6681fc050d25ccdc",
+      "count": 389
+    },
+    {
+      "path": "src/assets/data/meta_json/ASPLOS - 2015.json",
+      "sha256": "9ee06d9834062df3427ad837df128447c42d3a8fbf9ba1ae2c927499bcc5dd9f",
+      "count": 50
+    },
+    {
+      "path": "src/assets/data/meta_json/ASPLOS - 2016.json",
+      "sha256": "2321b56d2038252bbaa47a835a9e8676d13861dfde22e108890c5491f39846aa",
+      "count": 56
+    },
+    {
+      "path": "src/assets/data/meta_json/ASPLOS - 2017.json",
+      "sha256": "6b499607aa9c476846c930053edf849e808c559be3781380c62b84b1975ef763",
+      "count": 57
+    },
+    {
+      "path": "src/assets/data/meta_json/ASPLOS - 2018.json",
+      "sha256": "46f39ba28daee12c560fba1f0836a6b2cfdc1e196cd8c784253e34fc56a4435b",
+      "count": 57
+    },
+    {
+      "path": "src/assets/data/meta_json/ASPLOS - 2019.json",
+      "sha256": "ec97159014e8d40af9920ddc13d6f532347627354e8b0b61c3bec684b9b69bcc",
+      "count": 76
+    },
+    {
+      "path": "src/assets/data/meta_json/ASPLOS - 2020.json",
+      "sha256": "24ea6139ad78e524f88ed6f341d8d6337b3bcedfe5705a9ee69a5c9a0d283142",
+      "count": 88
+    },
+    {
+      "path": "src/assets/data/meta_json/ASPLOS - 2021.json",
+      "sha256": "b5735157388f36f4bfadd03ae8fbd8e9cfa09e8516bac6c435dd4f20ba859a98",
+      "count": 75
+    },
+    {
+      "path": "src/assets/data/meta_json/ASPLOS - 2022.json",
+      "sha256": "714fd6e4d88dae959ff31e6a69797058a33fa09b0ff5bf2311450dc9fbc14378",
+      "count": 80
+    },
+    {
+      "path": "src/assets/data/meta_json/ASPLOS - 2023.json",
+      "sha256": "a2a8431883d32af6aa0a83fa60912bac361da3be308e6b698e814d723e8e2710",
+      "count": 153
+    },
+    {
+      "path": "src/assets/data/meta_json/ASPLOS - 2024.json",
+      "sha256": "0ce5f2857c12d856f4a535e7f9c314abdde8d81823b0eca6685fe176d256bb26",
+      "count": 198
+    },
+    {
+      "path": "src/assets/data/meta_json/ASPLOS - 2025.json",
+      "sha256": "29739ef0ce9887495cf7155f2e9cefd1993e2649b3649e517dd302b579ba9371",
+      "count": 179
+    },
+    {
+      "path": "src/assets/data/meta_json/ASPLOS - 2026.json",
+      "sha256": "65c3f1ea114546b7500c03fd34d97c7520034227fc938e84d547889598ef8078",
+      "count": 155
+    },
+    {
+      "path": "src/assets/data/meta_json/FSE - 2015.json",
+      "sha256": "ce8b1858db22b1924ebc00c5f0284cf733cae8c6f36b6d73ab2602fa390b9363",
+      "count": 124
+    },
+    {
+      "path": "src/assets/data/meta_json/FSE - 2017.json",
+      "sha256": "261989a5108e1752bd88fc6e9ae3862611c3391e77ffa0bd98725fa2b2cec025",
+      "count": 124
+    },
+    {
+      "path": "src/assets/data/meta_json/FSE - 2018.json",
+      "sha256": "809ce31b7bd00a2b50bc226ff26ea39b88861543c3921f55a464a4e39d6df56d",
+      "count": 124
+    },
+    {
+      "path": "src/assets/data/meta_json/FSE - 2019.json",
+      "sha256": "9b7aaa59a20e6ad3b15dedf356db750af20ded0bb9ee45b921c0454bbfcc500a",
+      "count": 150
+    },
+    {
+      "path": "src/assets/data/meta_json/FSE - 2020.json",
+      "sha256": "9097efcbd8cf818ad269aec30642095e3efed1e34d522c66764e8d950e8af4bd",
+      "count": 169
+    },
+    {
+      "path": "src/assets/data/meta_json/FSE - 2021.json",
+      "sha256": "591ded3b3b8034033d989c600c033931e872356fdacd6d1598f44342f006adbb",
+      "count": 188
+    },
+    {
+      "path": "src/assets/data/meta_json/FSE - 2022.json",
+      "sha256": "2a97fbd0d60de6a30f1c6154c26cfacf9744ca72021168ed9a2e096758cbc7cf",
+      "count": 186
+    },
+    {
+      "path": "src/assets/data/meta_json/FSE - 2023.json",
+      "sha256": "61976821a96466daab5e8ade5d93ce1e36f90ce71f6b7cf69fb639adb244a2ed",
+      "count": 205
+    },
+    {
+      "path": "src/assets/data/meta_json/FSE - 2024.json",
+      "sha256": "943d72dc06733e25993a3ef55c020621984baff9bddd7b33e8eef51d4aa933a6",
+      "count": 121
+    },
+    {
+      "path": "src/assets/data/meta_json/FSE - 2025.json",
+      "sha256": "01f22ef33364b2c9e777cab16d84383a6bbe47cf8e626e671d776d7008175087",
+      "count": 135
+    },
+    {
+      "path": "src/assets/data/meta_json/FSE - 2026.json",
+      "sha256": "a68a6f517a6463ede2c8b4bec4feb7868613814cbf60b961b8873e3435735f92",
+      "count": 212
+    },
+    {
+      "path": "src/assets/data/meta_json/ICSE - 2015.json",
+      "sha256": "f1cc5698d1b255f0ad3d949ee3a2e1d2f094cd86cc7bfda42e9bc6d51f2668cc",
+      "count": 215
+    },
+    {
+      "path": "src/assets/data/meta_json/ICSE - 2016.json",
+      "sha256": "2c44d0e16602cb0d0b874eb07feabf0a629013b1165a02c5e58638424c505d48",
+      "count": 101
+    },
+    {
+      "path": "src/assets/data/meta_json/ICSE - 2017.json",
+      "sha256": "3c41621c9d0d7895bf03e2dbf763fdb2e1074912594f58a6590e8c089fc9daf9",
+      "count": 68
+    },
+    {
+      "path": "src/assets/data/meta_json/ICSE - 2018.json",
+      "sha256": "cb398ad00c2a0ded4b22c5dc33d1d5ecb6673771eff6068d012a92478b28267c",
+      "count": 153
+    },
+    {
+      "path": "src/assets/data/meta_json/ICSE - 2019.json",
+      "sha256": "4bbb7508a29b958bae640bc10b0dc390091709363060527757dcc3d70f604017",
+      "count": 109
+    },
+    {
+      "path": "src/assets/data/meta_json/ICSE - 2020.json",
+      "sha256": "fc72efb37f8c7f4a13f34314eb9581f624f585c6116f782b9638f7a9a76f4925",
+      "count": 129
+    },
+    {
+      "path": "src/assets/data/meta_json/ICSE - 2021.json",
+      "sha256": "4b8957a44423ed815183af9dbd10db0d08e73bfa18d99c0a56e8da42f5fa6cdd",
+      "count": 138
+    },
+    {
+      "path": "src/assets/data/meta_json/ICSE - 2022.json",
+      "sha256": "7d94ae11fdfcbdf57a0dbfc8cc79164486d074a14e6b31c1c8661f8cf8119dac",
+      "count": 197
+    },
+    {
+      "path": "src/assets/data/meta_json/ICSE - 2023.json",
+      "sha256": "4217cafabaf9e0aea60692b2419e83962b0a2e7aea6d02840367e919e68fb87b",
+      "count": 210
+    },
+    {
+      "path": "src/assets/data/meta_json/ICSE - 2024.json",
+      "sha256": "9cce021c132cec19df8d87f0b27814a32b2db122d96132b11688c57b10859623",
+      "count": 237
+    },
+    {
+      "path": "src/assets/data/meta_json/ICSE - 2025.json",
+      "sha256": "e5434a702ca7374d445cf27c47c4a5c31b48292c444fd8dad880196fd9670755",
+      "count": 245
+    },
+    {
+      "path": "src/assets/data/meta_json/IEEE S&P - 2015.json",
+      "sha256": "a4a8ba5fc1329d823abb39066014a81c4b679512773e73598caa9a9d6a474abc",
+      "count": 55
+    },
+    {
+      "path": "src/assets/data/meta_json/IEEE S&P - 2016.json",
+      "sha256": "503d96dee8b6f03ebef221063b1e312b855a219d4a7024147df5f8a16c43c22d",
+      "count": 55
+    },
+    {
+      "path": "src/assets/data/meta_json/IEEE S&P - 2017.json",
+      "sha256": "bc397a49f420ee2893ec2ed75ca2e6600524f09da8ce6b96b7a9054d47cef539",
+      "count": 60
+    },
+    {
+      "path": "src/assets/data/meta_json/IEEE S&P - 2018.json",
+      "sha256": "9213af7f8dab50fbac00f8fdc9d3b4e1cf723c458651b7b4b24f9e62286b0dad",
+      "count": 63
+    },
+    {
+      "path": "src/assets/data/meta_json/IEEE S&P - 2019.json",
+      "sha256": "0d06587082ebbebf6d7aec4c15d5f31ddf753df6fc77815ec4e36251f7ea1117",
+      "count": 84
+    },
+    {
+      "path": "src/assets/data/meta_json/IEEE S&P - 2020.json",
+      "sha256": "519b23614eec4c2db92e004388c67e04c0e23d6d9c2094d9b887f74f4354b4d3",
+      "count": 104
+    },
+    {
+      "path": "src/assets/data/meta_json/IEEE S&P - 2021.json",
+      "sha256": "6300665ae64f608682fd5a3921fd83aa73dac455fc1c3b6cf1abaddf1d36251b",
+      "count": 115
+    },
+    {
+      "path": "src/assets/data/meta_json/IEEE S&P - 2022.json",
+      "sha256": "fda36888cd8d9aaa18e04a66769ff354648d3a8897963f5cf061c61e05675c7c",
+      "count": 147
+    },
+    {
+      "path": "src/assets/data/meta_json/IEEE S&P - 2023.json",
+      "sha256": "37a64f7bfafdf6dee1eaf230a72a9e1696b269ef8f00c73d22b0b13bdfde6502",
+      "count": 195
+    },
+    {
+      "path": "src/assets/data/meta_json/IEEE S&P - 2024.json",
+      "sha256": "5381d961d53c21ea8cfec6b201740caf437af2cbf733570b27a30ab2b27a3a0c",
+      "count": 261
+    },
+    {
+      "path": "src/assets/data/meta_json/IEEE S&P - 2025.json",
+      "sha256": "3aecd2a46c1f79c1686d33ef0e9f06ff600e4c01e417459ff1ed4607e27b3ccc",
+      "count": 255
+    },
+    {
+      "path": "src/assets/data/meta_json/IEEE S&P - 2026.json",
+      "sha256": "7f6698317d04c98421f86754c086abf2a99ea98c6ffdbe1141e9a4d6751a530c",
+      "count": 254
+    },
+    {
+      "path": "src/assets/data/meta_json/ISSTA - 2015.json",
+      "sha256": "f439d79b59e12f554b01f675512616ac6b058eb3e207b167e69d64c42c179d32",
+      "count": 44
+    },
+    {
+      "path": "src/assets/data/meta_json/ISSTA - 2016.json",
+      "sha256": "ace10fafa1dc40fca93c3d2fd525c31471dc4cc2f060c1cb2d9f685555379585",
+      "count": 41
+    },
+    {
+      "path": "src/assets/data/meta_json/ISSTA - 2017.json",
+      "sha256": "a770194e251a00e2d9aeafc016a7e54b623518aaac6c8a4db1b915a87a69240e",
+      "count": 55
+    },
+    {
+      "path": "src/assets/data/meta_json/ISSTA - 2018.json",
+      "sha256": "7f1dae5c34cb11ba37e619225aa872f71c4b3854486567f0c929b4f51cbebec3",
+      "count": 37
+    },
+    {
+      "path": "src/assets/data/meta_json/ISSTA - 2019.json",
+      "sha256": "87a33258e13ea408ce1f687295fbfee9a34646207a91d8c3f287baf08926d2e6",
+      "count": 49
+    },
+    {
+      "path": "src/assets/data/meta_json/ISSTA - 2020.json",
+      "sha256": "d1d39731f3b1824fbf1852289b990a91325d3f16c41701ce28751520ecf9c32b",
+      "count": 55
+    },
+    {
+      "path": "src/assets/data/meta_json/ISSTA - 2021.json",
+      "sha256": "b092fade143840286f605fedbfede5163e04c994769ec452c62cd69d9b226945",
+      "count": 59
+    },
+    {
+      "path": "src/assets/data/meta_json/ISSTA - 2022.json",
+      "sha256": "986daa7ab0d90b31917ea4544379ad2de35d4ac4835652d6e51f9f33d204ddd1",
+      "count": 72
+    },
+    {
+      "path": "src/assets/data/meta_json/ISSTA - 2023.json",
+      "sha256": "ff875582331d2bbe38c27dc605e86764300b7c089370031f91438da929e67815",
+      "count": 138
+    },
+    {
+      "path": "src/assets/data/meta_json/ISSTA - 2024.json",
+      "sha256": "864617cd1b1066114ead23bfb5078c15b19f8e90d75a635ce402738a5f7b96db",
+      "count": 170
+    },
+    {
+      "path": "src/assets/data/meta_json/ISSTA - 2025.json",
+      "sha256": "78ec58db517d7606662de406eae427699e812cdb2cae3c7a8098ee140369cd95",
+      "count": 107
+    },
+    {
+      "path": "src/assets/data/meta_json/NDSS - 2015.json",
+      "sha256": "6ee0f12038ba80bb50a61051003408b88688ac7e9dd54f71e27cf7cb9c7ded7a",
+      "count": 73
+    },
+    {
+      "path": "src/assets/data/meta_json/NDSS - 2016.json",
+      "sha256": "c7220e2d707dd7e8cadadef0f7f227c310290e69377101746e0d116e67780b2c",
+      "count": 61
+    },
+    {
+      "path": "src/assets/data/meta_json/NDSS - 2017.json",
+      "sha256": "5c7d74ce41308176fdfc36422d40cef635e262f7535b2554e04ee75a5e8b67cf",
+      "count": 68
+    },
+    {
+      "path": "src/assets/data/meta_json/NDSS - 2018.json",
+      "sha256": "611ca011e240e816a912a61e077a87fdbb37aaf5fcbf6c9c859a83c291753eea",
+      "count": 71
+    },
+    {
+      "path": "src/assets/data/meta_json/NDSS - 2019.json",
+      "sha256": "5952a52d7034a2ff3b4b5d8b9c871cf82d331128cf80103679091bff21b1582d",
+      "count": 89
+    },
+    {
+      "path": "src/assets/data/meta_json/NDSS - 2020.json",
+      "sha256": "d8d88de706226803f322b7dfb03355ab0175d18a4b501f2e2b9b734e693c3b71",
+      "count": 88
+    },
+    {
+      "path": "src/assets/data/meta_json/NDSS - 2021.json",
+      "sha256": "57fd804cdb4609d9eeae743e318f883045b012a5b72d8d740f16b73f1f499425",
+      "count": 90
+    },
+    {
+      "path": "src/assets/data/meta_json/NDSS - 2022.json",
+      "sha256": "68fc7de1d47c11c9cc4fbb549f4df926c2f009a83b73e889d626e37c015c64f3",
+      "count": 85
+    },
+    {
+      "path": "src/assets/data/meta_json/NDSS - 2023.json",
+      "sha256": "b8715f6825a77665e258f2f496a4e3a3247b1dc4fd3e3213b18693db7faa80fc",
+      "count": 94
+    },
+    {
+      "path": "src/assets/data/meta_json/NDSS - 2024.json",
+      "sha256": "e3406c11275fb13f6bf98c2b2e92f13470db1a52780f1677b6a325ab626430f1",
+      "count": 140
+    },
+    {
+      "path": "src/assets/data/meta_json/NDSS - 2025.json",
+      "sha256": "e4847faf652c7f1e99d02c64d16777af8ed931a50fc8a5e3d2c5366f1a3393a0",
+      "count": 211
+    },
+    {
+      "path": "src/assets/data/meta_json/NDSS - 2026.json",
+      "sha256": "7322316db9fdf33a96abece844946cbcda5de0949880085f18511a194eba3f53",
+      "count": 265
+    },
+    {
+      "path": "src/assets/data/meta_json/SOSP - 2001.json",
+      "sha256": "2f7a4d8efa0203e6629327f8f1825f9897ccb2a0c8d2799cb6410c1a942ff253",
+      "count": 17
+    },
+    {
+      "path": "src/assets/data/meta_json/SOSP - 2003.json",
+      "sha256": "c491468ef27ee6dfc92de7ffe18553cb88ea79f6fc9342e00ace9fa9477ccc30",
+      "count": 21
+    },
+    {
+      "path": "src/assets/data/meta_json/SOSP - 2005.json",
+      "sha256": "fd98065876411fcb7a3d39e3d922cad50294e5c9a8fd9e38bb85440a1074bad0",
+      "count": 66
+    },
+    {
+      "path": "src/assets/data/meta_json/SOSP - 2007.json",
+      "sha256": "b59a8860cab34e78d289242f5fa7aba5fe1ce21e04558d42e3f0887539e3db6f",
+      "count": 25
+    },
+    {
+      "path": "src/assets/data/meta_json/SOSP - 2009.json",
+      "sha256": "ac0719dc389b42aa7818c200fe50cf9cfa985b90ea83b2f30c13d2edfa4ba973",
+      "count": 23
+    },
+    {
+      "path": "src/assets/data/meta_json/SOSP - 2011.json",
+      "sha256": "41a3ce17550786c56dbb26c0bd91a72e336896f96f813b351dee9278dc41d4c0",
+      "count": 28
+    },
+    {
+      "path": "src/assets/data/meta_json/SOSP - 2013.json",
+      "sha256": "9ac8b23df485512e0e59d6e8cbbccf9f2666f2e0468a242e13379db702bfc9f3",
+      "count": 30
+    },
+    {
+      "path": "src/assets/data/meta_json/SOSP - 2015.json",
+      "sha256": "8662f958aacdd9a840c4bb3762e5e2c1a2d442b999159d0dbb8cc305d05e0b4d",
+      "count": 30
+    },
+    {
+      "path": "src/assets/data/meta_json/SOSP - 2017.json",
+      "sha256": "26ea79b2ef8f6ffad9858a926785e19cb95be152ffe0d5553c429819583af5ee",
+      "count": 39
+    },
+    {
+      "path": "src/assets/data/meta_json/SOSP - 2019.json",
+      "sha256": "a8416f7b88509398737e791c0f26fee1423b000fad45f19138c3a9b4526fe7b0",
+      "count": 38
+    },
+    {
+      "path": "src/assets/data/meta_json/SOSP - 2021.json",
+      "sha256": "e48e7e2116cfe55f8d650cc7d814467d38399460cc5c66ac5796581cec0bc2f5",
+      "count": 54
+    },
+    {
+      "path": "src/assets/data/meta_json/SOSP - 2023.json",
+      "sha256": "baf7cb1f714b56ac3403766e4d82f8ba437199187c99ce121b91228b767757be",
+      "count": 43
+    },
+    {
+      "path": "src/assets/data/meta_json/SOSP - 2024.json",
+      "sha256": "c02b09822d0ac0a1f50f9094b68e18e091f5ec90978c7652b8f6dcd842eaefcd",
+      "count": 43
+    },
+    {
+      "path": "src/assets/data/meta_json/SOSP - 2025.json",
+      "sha256": "48beab415bc04c8dfb35570d025cb0079b60c6927e78413b0bdc58e450e69848",
+      "count": 66
+    },
+    {
+      "path": "src/assets/data/meta_json/TIFS - 2026.json",
+      "sha256": "e759d6e2f35be20d3da68d8aeb94a692f55eaf4833c3bd39e7ca07296475723c",
+      "count": 577
+    },
+    {
+      "path": "src/assets/data/meta_json/USENIX Sec - 2015.json",
+      "sha256": "3de7b1d53b6e1ac5a9ff06051a788d2950459f9c1cafafed44069082d17fb972",
+      "count": 76
+    },
+    {
+      "path": "src/assets/data/meta_json/USENIX Sec - 2016.json",
+      "sha256": "9538163c9d6e123d7623850dfcfcde3d8c4867fc9a4bc872f8b326b0a66a6097",
+      "count": 83
+    },
+    {
+      "path": "src/assets/data/meta_json/USENIX Sec - 2017.json",
+      "sha256": "900635c1806193b14e3f0650a0d3c825ec8f12d986db5e1debd2c1e55c686fa2",
+      "count": 90
+    },
+    {
+      "path": "src/assets/data/meta_json/USENIX Sec - 2018.json",
+      "sha256": "b76cfc289fb8e5f5e7a020abf73f821be962ebb6596621d9a665a5f0004a0d32",
+      "count": 110
+    },
+    {
+      "path": "src/assets/data/meta_json/USENIX Sec - 2019.json",
+      "sha256": "13b505843b840ba31bf8c4943852d8b7dd2cc517d10ac97227864ad3f1f17254",
+      "count": 124
+    },
+    {
+      "path": "src/assets/data/meta_json/USENIX Sec - 2020.json",
+      "sha256": "4237f0ed562bd4ca7e8e1adecd2fbdf3d05e2e3d5f96b67982be39fe41888d41",
+      "count": 159
+    },
+    {
+      "path": "src/assets/data/meta_json/USENIX Sec - 2021.json",
+      "sha256": "79b692c559340d954f1f3f087b0940ef4a733843a94736ab744a02efba364d7e",
+      "count": 247
+    },
+    {
+      "path": "src/assets/data/meta_json/USENIX Sec - 2022.json",
+      "sha256": "5f9aa255b9daec2a356b71070aaacd2313ade11603fb47f8a73d2f8cc55c3f1d",
+      "count": 256
+    },
+    {
+      "path": "src/assets/data/meta_json/USENIX Sec - 2023.json",
+      "sha256": "bf44eb2c1b6578557243e70283f47a131539553f3e89b968ecfaedde612d894a",
+      "count": 422
+    },
+    {
+      "path": "src/assets/data/meta_json/USENIX Sec - 2024.json",
+      "sha256": "6bf4ec6b29c53c99caf1c1303daf4496b6201ebd15de9cf69aecc41510aa1c4d",
+      "count": 417
+    },
+    {
+      "path": "src/assets/data/meta_json/USENIX Sec - 2025.json",
+      "sha256": "305d159e36d4904826727f2a3b9dfc420184364423710748603c3eb3c392b2bf",
+      "count": 440
+    },
+    {
+      "path": "src/assets/data/meta_json/USENIX Sec - 2026.json",
+      "sha256": "e059dcf0e3e5609180558a43fc3f33642ba3ee76509d0ee346798f9b08285189",
+      "count": 165
+    }
+  ],
+  "selected": [
+    {
+      "key": "cpds",
+      "id": 4147,
+      "year": 2025,
+      "title": "Cyber-Physical Deception Through Coordinated IoT Honeypots",
+      "category": "top-tier",
+      "publication": "USENIX Sec",
+      "paper": "https://www.usenix.org/conference/usenixsecurity25/presentation/guan",
+      "abstract": "As Internet of Things (IoT) devices become widely deployed, they face numerous threats due to the inherent vulnerabilities and interconnected nature of these devices. One effective approach to enhancing IoT security is the deployment of honeypot systems, which can attract, engage, and deceive potential attackers, thereby exposing their attack methodologies and strategies. However, traditional honeypots often fail to effectively deceive attackers due to their inability to emulate the physical and network dependencies present in real-world IoT environments. Consequently, attackers can easily detect inconsistencies among the honeypots after launching attacks from multiple sources, spanning both cyber and physical domains, to verify device status. To address this challenge, we propose a Cyber-Physical Deception System (CPDS) capable of mimicking the intricate cyber-physical connections among IoT devices by coordinating various IoT honeypots. Specifically, we model the vulnerabilities of individual IoT devices by collecting and analyzing attack traces. We analyze the physical and network dependencies among IoT devices and formulate them as Prolog rules. Then, we coordinate the honeypots based on the attacker's actions and the dependency rules, ensuring cross-layer consistency among the honeypots. We implemented our deception system by leveraging software-defined networking, enhancing existing IoT honeypots, and configuring them to work in concert. Through online deployment, human evaluation on real attack scenario and extensive simulation experiments, we have demonstrated the effectiveness of CPDS in terms of fidelity and scalability.",
+      "status": "notchecked",
+      "source": "src/assets/data/meta_json/USENIX Sec - 2025.json"
+    },
+    {
+      "key": "cheat",
+      "id": 4535,
+      "year": 2025,
+      "title": "Cloak, Honey, Trap: Proactive Defenses Against LLM Agents",
+      "category": "top-tier",
+      "publication": "USENIX Sec",
+      "paper": "https://www.usenix.org/conference/usenixsecurity25/presentation/ayzenshteyn",
+      "abstract": "Recent advances in large language models (LLMs) have enabled autonomous penetration testing tools capable of assessing network security by compromising hosts. However, the same artificial intelligence (AI)  capabilities can empower attackers to automate attacks at scale.\nThis paper presents a cost-effective defense framework using deception and counterattacks to exploit LLM weaknesses—such as biases, memory limitations, and tokenization issues—to disrupt, detect, or neutralize malicious agents. For example, we are able to cloak assets with misdirection, lure, and expose AI adversaries by using LLM-specific honey-tokens and trap agents using loops and other techniques. We also demonstrate several novel exploits such as inducing an agent to execute untrusted code, potentially giving defenders reverse access to the attacker's infrastructure. Overall, our approach introduces 6 strategies and 15 techniques, most of which do not rely on prompt injection.\nWith black box assumptions, we are able to protect a variety of 11 different Capture the Flag (CTF) machines with a 100% success rate. To help the community, we release CHeaT, an open-source tool that automatically inserts traps, cloaks, and honey-tokens seamlessly into network assets. This work establishes a scalable proactive defense paradigm leveraging LLM vulnerabilities to counter AI-driven threats.",
+      "status": "notchecked",
+      "source": "src/assets/data/meta_json/USENIX Sec - 2025.json"
+    },
+    {
+      "key": "honeyplc",
+      "id": 3153,
+      "year": 2020,
+      "title": "HoneyPLC: A Next-Generation Honeypot for Industrial Control Systems",
+      "category": "top-tier",
+      "publication": "ACM CCS",
+      "paper": "https://doi.org/10.1145/3372297.3423356",
+      "abstract": "Industrial Control Systems (ICS) provide management and control capabilities for mission-critical utilities such as the nuclear, power, water, and transportation grids. Within ICS, Programmable Logic Controllers (PLCs) play a key role as they serve as a convenient bridge between the cyber and the physical worlds, e.g., controlling centrifuge machines in nuclear power plants. The critical roles that ICS and PLCs play have made them the target of sophisticated cyberattacks that are designed to disrupt their operation, which creates both social unrest and financial losses. In this context, honeypots have been shown to be highly valuable tools for collecting real data, e.g., malware payload, to better understand the many different methods and strategies that attackers use. However, existing state-of-the-art honeypots for PLCs lack sophisticated service simulations that are required to obtain valuable data. Worse, they cannot adapt while ICS malware keeps evolving, and attack patterns become more sophisticated. To overcome these shortcomings, we present HoneyPLC, a high-interaction, extensible, and malware collecting honeypot supporting a broad spectrum of PLCs models and vendors. Results from our experiments show that HoneyPLC exhibits a high level of camouflaging: it is identified as real devices by multiple widely used reconnaissance tools, including Nmap, Shodan's Honeyscore, the Siemens Step7 Manager, PLCinject, and PLCScan, with a high level of confidence. We deployed HoneyPLC on Amazon AWS and recorded a large amount of interesting interactions over the Internet, showing not only that attackers are in fact targeting ICS systems, but also that HoneyPLC can effectively engage and deceive them while collecting data samples for future analysis.",
+      "status": "done",
+      "source": "src/assets/data/meta_json/ACM CCS - 2020.json"
+    },
+    {
+      "key": "subplay",
+      "id": 2089,
+      "year": 2024,
+      "title": "SUB-PLAY: Adversarial Policies against Partially Observed Multi-Agent Reinforcement Learning Systems",
+      "category": "top-tier",
+      "publication": "ACM CCS",
+      "paper": "https://doi.org/10.1145/3658644.3670293",
+      "abstract": "Recent advancements in multi-agent reinforcement learning (MARL) have opened up vast application prospects, such as swarm control of drones, collaborative manipulation by robotic arms, and multi-target encirclement. However, potential security threats during the MARL deployment need more attention and thorough investigation. Recent research reveals that attackers can rapidly exploit the victim's vulnerabilities, generating adversarial policies that result in the failure of specific tasks. For instance, reducing the winning rate of a superhuman-level Go AI to around 20\\%. Existing studies predominantly focus on two-player competitive environments, assuming attackers possess complete global state observation.In this study, we unveil, for the first time, the capability of attackers to generate adversarial policies even when restricted to partial observations of the victims in multi-agent competitive environments. Specifically, we propose a novel black-box attack (SUB-PLAY) that incorporates the concept of constructing multiple subgames to mitigate the impact of partial observability and suggests sharing transitions among subpolicies to improve attackers' exploitative ability. Extensive evaluations demonstrate the effectiveness of SUB-PLAY under three typical partial observability limitations. Visualization results indicate that adversarial policies induce significantly different activations of the victims' policy networks. Furthermore, we evaluate three potential defenses aimed at exploring ways to mitigate security threats posed by adversarial policies, providing constructive recommendations for deploying MARL in competitive environments.",
+      "status": "done",
+      "source": "src/assets/data/meta_json/ACM CCS - 2024.json"
+    },
+    {
+      "key": "incalmo",
+      "id": 244,
+      "year": 2026,
+      "title": "Incalmo: an Autonomous Llm-Assisted System for Red Teaming Multi-Host Networks",
+      "category": "top-tier",
+      "publication": "IEEE S&P",
+      "paper": "https://doi.org/10.1109/SP63933.2026.00132",
+      "abstract": "Security operators use red teams to simulate real attackers and proactively find defense gaps. In realistic enterprise settings, this involves executing multi-host network attacks spanning many \"stepping stone\" hosts. Unfortunately, red teams are expensive and entail significant expertise and effort. Given the promise of LLMs in CTF challenges, we first analyze if LLMs can autonomously execute multi-host red team exercises. We find that state-of-the-art LLM-assisted offense systems (e.g., PentestGPT, CyberSecEval3) with leading LLMs (e.g., Sonnet 4, Gemini 2.5 Pro) are unable to do so. Building on our observations in understanding the failure modes of state-of-the-art systems, we argue the need to improve the abstractions and interfaces for LLM-assisted red teaming. Based on this insight, we present the design and implementation of Incalmo, an LLM-assisted system for autonomously red teaming multi-host networks. Incalmo uses LLMs to plan red team exercises in terms of high-level declarative tasks that are executed by domain-specific task agents. Incalmo also uses auxiliary services to manage context and acquired assets. For our evaluation, we develop MHBench, a novel multi-host attack benchmark with 40 realistic emulated networks (from 22 to 50 hosts). We find that Incalmo successfully acquires critical assets (i.e., key hosts or data) in 37 out of 40 MHBench environments. In contrast, state-of-the-art LLM-assisted systems succeed in only 3 out of 40 environments. We show that Incalmo is efficient-successful attacks took 12-54 minutes and cost <$15 in LLM credits.",
+      "status": "notchecked",
+      "source": "src/assets/data/meta_json/IEEE S&P - 2026.json"
+    },
+    {
+      "key": "depcomm",
+      "id": 997,
+      "year": 2022,
+      "title": "DEPCOMM: Graph Summarization on System Audit Logs for Attack Investigation",
+      "category": "top-tier",
+      "publication": "IEEE S&P",
+      "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9833632",
+      "abstract": "Causality analysis generates a dependency graph from system audit logs, which has emerged as an important solution for attack investigation. In the dependency graph, nodes represent system entities (e.g., processes and files) and edges represent dependencies among entities (e.g., a process writing to a file). Despite the promising early results, causality analysis often produces a large graph (> 100,000 edges) and it is a daunting task for security analysts to inspect such a large graph for attack investigation. To address challenges in attack investigation, we propose DEPCOMM, a graph summarization approach that generates a summary graph from a dependency graph by partitioning a large graph into process-centric communities and presenting summaries for each community. Specifically, each community consists of a set of intimate processes that cooperate with each other to accomplish certain system activities (e.g., file compression), and the resources (e.g., files) accessed by these processes. Within a community, DEPCOMM further identifies redundant edges caused by less-important and repetitive system activities, and perform compression on these edges. Finally, DEPCOMM generates the summary for each community using the InfoPaths that represent the information flows across communities. These InfoPaths are more likely to capture a set of attack-related processes that work together to achieve certain malicious goals. Our evaluations on real attacks ($\\sim 150$ million events) demonstrate that DEPCOMM generates 18.4 communities on average for a dependency graph, which is $\\sim 70 \\times$ smaller than the original graph. Our compression further reduces the edges in each community to 32.1 on average. Compared with the 9 state-of-the-art community detection algorithms, on average, DEPCOMM achieves a $2.29\\times$ better F1-score than these algorithms in detecting communities. Through cooperating with the automatic techniques HOLMES, DEPCOMM can identify attack-related communities by a recall of 96.2%. Our case studies on the real attacks also demonstrate DEPCOMM’s effectiveness in facilitating attack investigation.",
+      "status": "notchecked",
+      "source": "src/assets/data/meta_json/IEEE S&P - 2022.json"
+    },
+    {
+      "key": "chimera",
+      "id": 6598,
+      "year": 2026,
+      "title": "Chimera: Harnessing Multi-Agent LLMs for Automatic Insider Threat Simulation",
+      "category": "top-tier",
+      "publication": "NDSS",
+      "paper": "https://www.ndss-symposium.org/ndss-paper/chimera-harnessing-multi-agent-llms-for-automatic-insider-threat-simulation/",
+      "abstract": "Insider threat, which can lead to unacceptable losses, is a widespread and significant security concern, making its detection essential. Recently, machine learning based insider threat detection (ITD) methods have been proposed with promising results. Despite this success, a major challenge, the lack of sufficient data, limits the further development of these ITD methods. The paradox is that enterprise internal data is highly sensitive and typically inaccessible, while public datasets are either limited in real-world coverage or, in the case of synthetic data, lack rich semantic information and realistic behavioral patterns. As a result, there is a crucial need for the construction of real-world insider threat datasets.To address this challenge, we propose Chimera, the first large language model (LLM)-based multi-agent framework to automatically simulate both benign and malicious insider activities, as well as collect logs across diverse enterprise environments. Based on analysis of organizational composition and structural characteristics of the organization, Chimera customizes each LLM agent to represent an individual employee by detailed role modeling and couples with modules of group meetings, pairwise interactions, and self-organized scheduling. In this way, Chimera can reflect the complexities of real-world enterprise operations accurately. The current version of Chimera consists of 15 distinct types of manually abstracted insider attacks, such as intellectual property theft and system sabotage. Using Chimera, we simulate the benign and attack activities across three typical data-sensitive organizational scenarios, including technology company, finance corporation, and medical institution, and generate a new dataset named ChimeraLog to facilitate the development of machine learning-based ITD methods.To evaluate the quality and authenticity of ChimeraLog, we conduct comprehensive human studies and quantitative analyses. The results demonstrate both the diversity and realism of the dataset. Further expert analysis highlights the presence of realistic threat patterns as well as explainable activity traces. In addition, we evaluate the effectiveness of existing insider threat detection methods on ChimeraLog. The average F1-score achieved is 0.83, which is notably lower than the score of 0.99 observed on the baseline dataset CERT, thereby illustrating the greater difficulty posed by ChimeraLog for threat detection tasks.",
+      "status": "notchecked",
+      "source": "src/assets/data/meta_json/NDSS - 2026.json"
+    },
+    {
+      "key": "honeysat",
+      "id": 6653,
+      "year": 2026,
+      "title": "HoneySat: A Network-based Satellite Honeypot Framework",
+      "category": "top-tier",
+      "publication": "NDSS",
+      "paper": "https://www.ndss-symposium.org/ndss-paper/honeysat-a-network-based-satellite-honeypot-framework/",
+      "abstract": "Satellites are the backbone of mission-critical services that enable our modern society to function, for example, GPS. For years, satellites were assumed to be secure because of their indecipherable architectures and the reliance on security by obscurity. However, technological advancements have made these assumptions obsolete, paving the way for potential attacks.\nUnfortunately, there is no way to collect data on satellite adversarial techniques, hindering the generation of intelligence that leads to the development of countermeasures.In this paper, we present HoneySat, the first high-interaction satellite honeypot framework, capable of convincingly simulating a real-world CubeSat, a type of Small Satellite (SmallSat). To provide evidence of HoneySat's effectiveness, we surveyed SmallSat operators and deployed HoneySat over the Internet.Our results show that 90% of satellite operators agreed that HoneySat provides a realistic simulation. Additionally, HoneySat successfully deceived adversaries in the wild and collected 22 real-world adversarial interactions. Finally, we performed a hardware-in-the-loop operation where HoneySat successfully communicated with an in-orbit, operational SmallSat mission.",
+      "status": "notchecked",
+      "source": "src/assets/data/meta_json/NDSS - 2026.json"
+    },
+    {
+      "key": "marg",
+      "id": 8269,
+      "year": 2024,
+      "title": "Can Cooperative Multi-Agent Reinforcement Learning Boost Automatic Web Testing? An Exploratory Study",
+      "category": "software-engineering",
+      "publication": "ASE",
+      "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10765036",
+      "abstract": "Reinforcement learning (RL)-based web GUI testing techniques have attracted significant attention in both academia and industry due to their ability to facilitate automatic and intelligent exploration of websites under test. Yet, the existing approaches that leverage a single RL agent often struggle to comprehensively explore the vast state space of large-scale websites with complex structures and dynamic content. Observing this phenomenon and recognizing the benefit of multiple agents, we explore the use of Multi-Agent RL (MARL) algorithms for automatic web GUI testing, aiming to improve test efficiency and coverage. However, how to share information among different agents to avoid redundant actions and achieve effective cooperation is a non-trivial problem. To address the challenge, we propose the first MARL-based web GUI testing system, MARG, which coordinates multiple testing agents to efficiently explore a website under test. To share testing experience among different agents, we have designed two data sharing schemes: one centralized scheme with a shared Q-table to facilitate efficient communication, and another distributed scheme with data exchange to decrease the overhead of maintaining Q-tables. We have evaluated MARG on nine popular real-world websites. When configuring with five agents, MARG achieves an average increase of 4.34 and 3.89 times in the number of explored states, as well as a corresponding increase of 4.03 and 3.76 times in the number of detected failures, respectively, when compared to two state-of-the-art approaches. Additionally, compared to independently running the same number of agents, MARG can explore 36.42% more unique web states. These results demonstrate the usefulness of MARL in enhancing the efficiency and performance of web GUI testing tasks.",
+      "status": "notchecked",
+      "source": "src/assets/data/meta_json/ASE - 2024.json"
+    },
+    {
+      "key": "sejury",
+      "id": 8084,
+      "year": 2025,
+      "title": "SE-Jury: An LLM-as-Ensemble-Judge Metric for Narrowing the Gap with Human Evaluation in SE",
+      "category": "software-engineering",
+      "publication": "ASE",
+      "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334309",
+      "abstract": "Large Language Models (LLMs) and other automated techniques have been increasingly used to support software developers by generating software artifacts such as code snippets, patches, and comments. However, accurately assessing the correctness of these generated artifacts remains a significant challenge. On one hand, human evaluation provides high accuracy but is labor-intensive and lacks scalability. On the other hand, many automatic evaluation metrics are scalable and require minimal human effort, but they often fail to accurately reflect the actual correctness of generated software artifacts.In this paper, we present SE-Jury, the first evaluation metric for LLM-as-Ensemble-Judge specifically designed to accurately assess the correctness of generated software artifacts. SE-Jury first defines five distinct evaluation strategies, each implemented as an independent judge. A dynamic team selection mechanism then identifies the most appropriate subset of judges as a team to produce a final correctness score through ensembling. We evaluate SE-Jury across a diverse set of software engineering (SE) benchmarks that span three popular SE tasks: code generation, automated program repair, and code summarization. Results demonstrate that SE-Jury consistently achieves a higher correlation with human judgments, with improvements ranging from 29.6%–140.8% over existing automatic metrics. SE-Jury reaches agreement levels with human annotators that are close to inter-annotator agreement in code generation and program repair. These findings underscore SE-Jury’s potential as a scalable and reliable alternative to human evaluation in these SE tasks.",
+      "status": "notchecked",
+      "source": "src/assets/data/meta_json/ASE - 2025.json"
+    },
+    {
+      "key": "autoresttest",
+      "id": 9757,
+      "year": 2025,
+      "title": "A Multi-Agent Approach for REST API Testing with Semantic Graphs and LLM-Driven Inputs",
+      "category": "software-engineering",
+      "publication": "ICSE",
+      "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11029879",
+      "abstract": "As modern web services increasingly rely on REST APIs, their thorough testing has become crucial. Furthermore, the advent of REST API documentation languages, such as the OpenAPI Specification, has led to the emergence of many black-box REST API testing tools. However, these tools often focus on individual test elements in isolation (e.g., APIs, parameters, values), resulting in lower coverage and less effectiveness in fault detection. To address these limitations, we present AutoRestTest, the first black-box tool to adopt a dependency-embedded multi-agent approach for REST API testing that integrates multi-agent reinforcement learning (MARL) with a semantic property dependency graph (SPDG) and Large Language Models (LLMs). Our approach treats REST API testing as a separable problem, where four agents-API, dependency, parameter, and value agents-collaborate to optimize API exploration. LLMs handle domain-specific value generation, the SPDG model simplifies the search space for dependencies using a similarity score between API operations, and MARL dynamically optimizes the agents' behavior. Our evaluation of AutoRestTest on 12 real-world REST services shows that it outperforms the four leading black-box REST API testing tools, including those assisted by RESTGPT (which generates realistic test inputs using LLMs), in terms of code coverage, operation coverage, and fault detection. Notably, AutoRestTest is the only tool able to trigger an internal server error in the Spotify service. Our ablation study illustrates that each component of AutoRestTest-the SPDG, the LLM, and the agent-learning mechanism-contributes to its overall effectiveness.",
+      "status": "notchecked",
+      "source": "src/assets/data/meta_json/ICSE - 2025.json"
+    },
+    {
+      "key": "codesummary",
+      "id": 10110,
+      "year": 2024,
+      "title": "Evaluating Code Summarization Techniques: A New Metric and an Empirical Characterization",
+      "category": "software-engineering",
+      "publication": "ICSE",
+      "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10548808",
+      "abstract": "Several code summarization techniques have been proposed in the literature to automatically document a code snippet or a function. Ideally, software developers should be involved in assessing the quality of the generated summaries. However, in most cases, researchers rely on automatic evaluation metrics such as BLEU, ROUGE, and METEOR. These metrics are all based on the same assumption: The higher the textual similarity between the generated summary and a reference summary written by developers, the higher its quality. However, there are two reasons for which this assumption falls short: (i) reference summaries, e.g., code comments collected by mining software repositories, may be of low quality or even outdated; (ii) generated summaries, while using a different wording than a reference one, could be semantically equivalent to it, thus still being suitable to document the code snippet. In this paper, we perform a thorough empirical investigation on the complementarity of different types of metrics in capturing the quality of a generated summary. Also, we propose to address the limitations of existing metrics by considering a new dimension, capturing the extent to which the generated summary aligns with the semantics of the documented code snippet, independently from the reference summary. To this end, we present a new metric based on contrastive learning to capture said aspect. We empirically show that the inclusion of this novel dimension enables a more effective representation of developers' evaluations regarding the quality of automatically generated summaries.",
+      "status": "notchecked",
+      "source": "src/assets/data/meta_json/ICSE - 2024.json"
+    },
+    {
+      "key": "mastest",
+      "id": 11675,
+      "year": 2024,
+      "title": "Enhancing Multi-agent System Testing with Diversity-Guided Exploration and Adaptive Critical State Exploitation",
+      "category": "software-engineering",
+      "publication": "ISSTA",
+      "paper": "https://doi.org/10.1145/3650212.3680376",
+      "abstract": "Multi-agent systems (MASs) have achieved remarkable success in multi-robot control, intelligent transportation, and multiplayer games, etc. Thorough testing for MAS is urgently needed to ensure its robustness in the face of constantly changing and unexpected scenarios. Existing methods mainly focus on single-agent system testing and cannot be directly applied to MAS testing due to the complexity of MAS. To our best knowledge, there are fewer studies on MAS testing. While several studies have focused on adversarial attacks on MASs, they primarily target failure detection from an attack perspective, i.e., discovering failure scenarios, while ignoring the diversity of scenarios. In this paper, to highlight a typical balance between exploration (diversifying behaviors) and exploitation (detecting failures), we propose an advanced testing framework for MAS called with diversity-guided exploration and adaptive critical state exploitation. It incorporates both individual diversity and team diversity, and designs an adaptive perturbation mechanism to perturb the action at the critical states, so as to trigger more and more diverse failure scenarios of the system. We evaluate MASTest on two popular MAS simulation environments: Coop Navi and StarCraft II. Results show that the average distance of the resulting failure scenarios is increased by 29.55\\%-103.57\\% and 74.07\\%-370.00\\% on two environments compared to the baselines. Also, the failure patterns found by MASTest are improved by 71.44\\%-300.00\\% and 50\\%-500.00\\% on two experimental environments compared to the baselines.",
+      "status": "notchecked",
+      "source": "src/assets/data/meta_json/ISSTA - 2024.json"
+    },
+    {
+      "key": "judge",
+      "id": 11535,
+      "year": 2025,
+      "title": "Can LLMs Replace Human Evaluators? An Empirical Study of LLM-as-a-Judge in Software Engineering",
+      "category": "software-engineering",
+      "publication": "ISSTA",
+      "paper": "https://doi.org/10.1145/3728963",
+      "abstract": "Recently, large language models (LLMs) have been deployed to tackle various software engineering (SE) tasks like code generation, significantly advancing the automation of SE tasks. However, assessing the quality of these LLM-generated code and text remains challenging. The commonly used Pass@k metric necessitates extensive unit tests and configured environments, demands a high labor cost, and is not suitable for evaluating LLM-generated text. Conventional metrics like BLEU, which measure only lexical rather than semantic similarity, have also come under scrutiny. In response, a new trend has emerged to employ LLMs for automated evaluation, known as LLM-as-a-judge. These LLM-as-a-judge methods are claimed to better mimic human assessment than conventional metrics without relying on high-quality reference answers. Nevertheless, their exact human alignment in SE tasks remains unexplored. In this paper, we empirically explore LLM-as-a-judge methods for evaluating SE tasks, focusing on their alignment with human judgments. We select seven LLM-as-a-judge methods that utilize general-purpose LLMs, alongside two LLMs specifically fine-tuned for evaluation. After generating and manually scoring LLM responses on three recent SE datasets of code translation, code generation, and code summarization, we then prompt these methods to evaluate each response. Finally, we compare the scores generated by these methods with human evaluation. The results indicate that output-based methods reach the highest Pearson correlation of 81.32 and 68.51 with human scores in code translation and generation, achieving near-human evaluation, noticeably outperforming ChrF++, one of the best conventional metrics, at 34.23 and 64.92. Such output-based methods prompt LLMs to output judgments directly, and exhibit more balanced score distributions that resemble human score patterns. Finally, we provide insights and implications, concluding that current state-of-the-art LLM-as-a-judge methods can potentially replace human evaluations in certain SE tasks.",
+      "status": "notchecked",
+      "source": "src/assets/data/meta_json/ISSTA - 2025.json"
+    },
+    {
+      "key": "pwn",
+      "id": 12919,
+      "year": 2023,
+      "title": "Getting pwn’d by AI: Penetration Testing with Large Language Models",
+      "category": "software-engineering",
+      "publication": "FSE",
+      "paper": "https://doi.org/10.1145/3611643.3613083",
+      "abstract": "The field of software security testing, more specifically penetration testing, requires high levels of expertise and involves many manual testing and analysis steps. This paper explores the potential use of large-language models, such as GPT3.5, to augment penetration testers with AI sparring partners. We explore two distinct use cases: high-level task planning for security testing assignments and low-level vulnerability hunting within a vulnerable virtual machine. For the latter, we implemented a closed-feedback loop between LLM-generated low-level actions with a vulnerable virtual machine (connected through SSH) and allowed the LLM to analyze the machine state for vulnerabilities and suggest concrete attack vectors which were automatically executed within the virtual machine. We discuss promising initial results, detail avenues for improvement, and close deliberating on the ethics of AI sparring partners.",
+      "status": "notchecked",
+      "source": "src/assets/data/meta_json/FSE - 2023.json"
+    },
+    {
+      "key": "mtas",
+      "id": 12736,
+      "year": 2024,
+      "title": "MTAS: A Reference-Free Approach for Evaluating Abstractive Summarization Systems",
+      "category": "software-engineering",
+      "publication": "FSE",
+      "paper": "https://doi.org/10.1145/3660820",
+      "abstract": "Abstractive summarization (AS) systems, which aim to generate a text for summarizing crucial information of the original document, have been widely adopted in recent years. Unfortunately, factually unreliable summaries may still occur, leading to unexpected misunderstanding and distortion of information. This calls for methods that can properly evaluate the quality of AS systems. Yet, the existing reference-based evaluation approach for AS relies on reference summaries as well as automatic evaluation metrics (e.g., ROUGE). Therefore, the reference-based evaluation approach is highly restricted by the availability and quality of reference summaries as well as the capability of existing automatic evaluation metrics. In this study, we propose MTAS, a novel metamorphic testing based approach for evaluating AS in a reference-free way. Our two major contributions are (i) five metamorphic relations towards AS, which involve semantic-preserving and focus-preserving transformations at the document level, and (ii) a summary consistency evaluation metric SCY, which measures the alignment between a pair of summaries by incorporating both the semantic and factual consistency. Our experimental results show that the proposed metric SCY has a significantly higher correlation with human judgment as compared to a set of existing metrics. It is also demonstrated that MTAS can break the dependence on reference summaries, and it successfully reports a large number of summary inconsistencies, revealing various summarization issues on state-of-the-art AS systems.",
+      "status": "notchecked",
+      "source": "src/assets/data/meta_json/FSE - 2024.json"
+    },
+    {
+      "key": "fleetio",
+      "id": 14722,
+      "year": 2025,
+      "title": "FleetIO: Managing Multi-Tenant Cloud Storage with Multi-Agent Reinforcement Learning",
+      "category": "system",
+      "publication": "ASPLOS",
+      "paper": "https://doi.org/10.1145/3669940.3707229",
+      "abstract": "Cloud platforms have been virtualizing storage devices like flash-based solid-state drives (SSDs) to make effective use of storage resources. They enable either software-isolated instance or hardware-isolated instance for facilitating the storage sharing between multi-tenant applications. However, for decades, they have to combat the fundamental tussle between the performance isolation and resource utilization. They suffer from either long tail latency caused by weak isolation or low storage utilization caused by strong isolation.In this paper, we present FleetIO, a learning-based storage virtualization framework that employs reinforcement learning (RL) for managing virtualized SSDs. FleetIO explores the unique features of RL to handle the dynamic changes of application workloads and storage states, and integrates the storage scheduling into the RL decision-making process. It achieves both performance isolation and improved storage utilization by enabling dynamic fine-grained storage harvesting across collocated application instances, while minimizing its negative impact on their service-level objectives (SLOs). FleetIO clusters workloads into different types (e.g., latency-sensitive and bandwidth-intensive) based on the collected I/O traces at runtime, and fine-tunes the RL reward functions for each type of workloads. We implement FleetIO on a real programmable SSD board and evaluate it with diverse cloud applications. We show that FleetIO improves the overall storage utilization of the shared SSD by up to 1.4\\texttimes{}, and decreases the tail latency of I/O requests by 1.5\\texttimes{} on average, compared to the state-of-the-art storage sharing approaches.",
+      "status": "notchecked",
+      "source": "src/assets/data/meta_json/ASPLOS - 2025.json"
+    },
+    {
+      "key": "mulberry",
+      "id": 14945,
+      "year": 2024,
+      "title": "MulBERRY: Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems",
+      "category": "system",
+      "publication": "ASPLOS",
+      "paper": "https://doi.org/10.1145/3620665.3640420",
+      "abstract": "The adoption of autonomous swarms, consisting of a multitude of unmanned aerial vehicles (UAVs), operating in a collaborative manner, has become prevalent in mainstream application domains for both military and civilian purposes. These swarms are expected to collaboratively carry out navigation tasks and employ complex reinforcement learning (RL) models within the stringent onboard size, weight, and power constraints. While techniques such as reducing onboard operating voltage can improve the energy efficiency of both computation and flight missions, they can lead to on-chip bit failures that are detrimental to mission safety and performance.To this end, we propose MulBERRY, a multi-agent robust learning framework to enhance bit error robustness and energy efficiency for resource-constrained autonomous UAV swarms. MulBERRY supports multi-agent robust learning, both offline and on-device, with adaptive and collaborative agent-server optimizations. For the first time, MulBERRY demonstrates the practicality of robust low-voltage operation on multi-UAV systems leading to energy savings in both compute and mission quality-of-flight. We conduct extensive system-level experiments on autonomous multi-UAV navigation by leveraging algorithm-level robust learning techniques, and hardware-level bit error, thermal, and power characterizations. Through evaluations, we demonstrate that MulBERRY achieves robustness-performance-efficiency co-optimizations for autonomous UAV swarms. We also show that MulBERRY generalizes well across fault patterns, environments, UAV types, UAV agent numbers, and RL policies, with up to 18.97\\% reduction in flight energy, 22.07\\% increase in the number of successful missions, and 4.16\\texttimes{} processing energy reduction.",
+      "status": "notchecked",
+      "source": "src/assets/data/meta_json/ASPLOS - 2024.json"
+    },
+    {
+      "key": "potemkin",
+      "id": 14444,
+      "year": 2005,
+      "title": "Scalability, fidelity, and containment in the potemkin virtual honeyfarm",
+      "category": "system",
+      "publication": "SOSP",
+      "paper": "https://doi.org/10.1145/1095809.1095825",
+      "abstract": "The rapid evolution of large-scale worms, viruses and bot-nets have made Internet malware a pressing concern. Such infections are at the root of modern scourges including DDoS extortion, on-line identity theft, SPAM, phishing, and piracy. However, the most widely used tools for gathering intelligence on new malware -- network honeypots -- have forced investigators to choose between monitoring activity at a large scale or capturing behavior with high fidelity. In this paper, we describe an approach to minimize this tension and improve honeypot scalability by up to six orders of magnitude while still closely emulating the execution behavior of individual Internet hosts. We have built a prototype honeyfarm system, called Potemkin, that exploits virtual machines, aggressive memory sharing, and late binding of resources to achieve this goal. While still an immature implementation, Potemkin has emulated over 64,000 Internet honeypots in live test runs, using only a handful of physical servers.",
+      "status": "notchecked",
+      "source": "src/assets/data/meta_json/SOSP - 2005.json"
+    },
+    {
+      "key": "backtracker",
+      "id": 14514,
+      "year": 2003,
+      "title": "Backtracking intrusions",
+      "category": "system",
+      "publication": "SOSP",
+      "paper": "https://doi.org/10.1145/945445.945467",
+      "abstract": "Analyzing intrusions today is an arduous, largely manual task because system administrators lack the information and tools needed to understand easily the sequence of steps that occurred in an attack. The goal of BackTracker is to identify automatically potential sequences of steps that occurred in an intrusion. Starting with a single detection point (e.g., a suspicious file), BackTracker identifies files and processes that could have affected that detection point and displays chains of events in a dependency graph. We use BackTracker to analyze several real attacks against computers that we set up as honeypots. In each case, BackTracker is able to highlight effectively the entry point used to gain access to the system and the sequence of steps from that entry point to the point at which we noticed the intrusion. The logging required to support BackTracker added 9\\% overhead in running time and generated 1.2 GB per day of log data for an operating-system intensive workload.",
+      "status": "notchecked",
+      "source": "src/assets/data/meta_json/SOSP - 2003.json"
+    },
+    {
+      "key": "cdsmg",
+      "id": 15928,
+      "year": 2026,
+      "title": "Learning Sequential Deception Defense Strategy Against APT Using Stackelberg Markov Game",
+      "category": "journal",
+      "publication": "TIFS",
+      "paper": "https://doi.org/10.1109/TIFS.2026.3664334",
+      "abstract": "Advanced Persistent Threats (APTs) have become one of the most prominent cybersecurity risks globally. The external network-facing (ENF) services (e.g., e-commerce platforms) within a system are particularly vulnerable, as they are directly exposed to the Internet and often serve as the primary targets for attackers. By deploying deception resources to protect these ENF services, defenders can detect threats early, block potential attacks, and enhance overall system resilience. However, most existing studies on cyber deception strategies assume simultaneous moves by both attacker and defender. Furthermore, few works have considered the evolution of the system state resulting from APT attacks on the ENF services. To address these limitations, this paper proposes a Cyber Deception Stackelberg Markov Game (CDSMG) for protecting ENF services, which dynamically captures state transitions and accurately characterizes the strategic interactions between defenders and APT attackers. In CDSMG, the defender acts as the leader, who proactively selects a subset of services to deploy the deception resources based on the current system state, while the APT attacker plays as the follower, making a best response which incorporates the defender’s policy into its own strategy. To overcome the challenge of the combinatorial optimization problem of selecting a subset of services, we propose a revised version of the PPO algorithm by using no-replacement sampling to select multiple services at once, thereby significantly reducing the action space size. Finally, experimental results demonstrate that our approach effectively defends against APT attacks. It not only outperforms several baseline methods but also exhibits better scalability and robustness under varied model parameter settings.",
+      "status": "notchecked",
+      "source": "src/assets/data/meta_json/TIFS - 2026.json"
+    },
+    {
+      "key": "disguise",
+      "id": 15830,
+      "year": 2026,
+      "title": "Disguise While Defense: Avoid Refusal Responses in LLM's Defense via a Multi-Agent Attacker-Disguiser Game",
+      "category": "journal",
+      "publication": "TIFS",
+      "paper": "https://doi.org/10.1109/TIFS.2025.3626228",
+      "abstract": "With the enhanced performance of large language models (LLMs) on natural language processing tasks, potential moral and ethical issues of LLMs arise in the Web service. Malicious attackers exist who induce LLMs to jailbreak and generate information containing illegal, privacy-invasive information through techniques such as prompt engineering. As a result, LLMs counter malicious attackers’ attacks using techniques such as safety alignment. However, the strong defense mechanism of the LLMs through rejection replies, which are typically unrelated to the attacker’s query, is easily identified by attackers and leaks information that strengthens their capabilities. We propose an LLM-driven defense task that generates safe and disguised responses which remain relevant to the attack request while concealing defensive intent and withholding any useful information from the attacker. To achieve this task, we construct an LLM-based multi-agent attacker-disguiser game that trains two LLM-based players to select in-context learning (ICL) examples and strategies, guiding them to better generation and approach to Nash equilibrium. To enhance the LLMs’ generation via ICL, we apply the Minimax Q-learning to optimize the players for choosing ICL examples. To further refine generation, we use policy gradient (PG) to train the strategy selectors to select prompt strategies for LLMs. To improve the ICL examples and prompts for LLMs’ generation, we iteratively train the players with ICL sample selection training and prompt strategy training. The goal of this game is to arrive at the Nash equilibrium. Through training, we obtain an LLM-based defender which can receive jailbreak prompts from malicious users and output safe and disguised responses. The experiments reveal that our method strengthens the LLM’s ability to disguise the defense intent compared to other methods. Our method also minimizes the attacker-perceived drop in attack success rate, while delivering the largest actual reduction. This effectively misleads the attacker’s evaluation and enhances practical defense utility.",
+      "status": "notchecked",
+      "source": "src/assets/data/meta_json/TIFS - 2026.json"
+    },
+    {
+      "key": "automaltool",
+      "id": 16116,
+      "year": 2026,
+      "title": "Automatic Red Teaming LLM-Based Agents With Model Context Protocol Tools",
+      "category": "journal",
+      "publication": "TIFS",
+      "paper": "https://doi.org/10.1109/TIFS.2026.3691201",
+      "abstract": "The remarkable capability of large language models (LLMs) has led to the wide application of LLM-based agents in various domains. To standardize interactions between LLM-based agents and their environments, model context protocol (MCP) tools have become the de facto standard and are now widely integrated into these agents. However, the incorporation of MCP tools introduces the risk of tool poisoning attacks, which can manipulate the behavior of LLM-based agents. Although previous studies have identified such vulnerabilities, their red teaming approaches have largely remained at the proof-of-concept stage, leaving the automatic and systematic red teaming of LLM-based agents under the MCP tool poisoning paradigm an open question. To bridge this gap, we propose AutoMalTool, an automated red teaming framework for LLM-based agents by generating malicious MCP tools. Our extensive evaluation shows that AutoMalTool effectively generates malicious MCP tools capable of manipulating the behavior of mainstream LLM-based agents while evading current detection mechanisms, thereby revealing new security risks in these agents.",
+      "status": "notchecked",
+      "source": "src/assets/data/meta_json/TIFS - 2026.json"
+    }
+  ]
+}

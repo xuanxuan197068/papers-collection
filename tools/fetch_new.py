@@ -154,7 +154,8 @@ def process_site(pub_key, pub, site, args, missing):
                 papers.append(paper)
     if not papers:
         statuses = ', '.join(
-            f'{log["toc"]}:xml={log["venue_xml_status"]}/api={log["search_api_status"]}'
+            f'{log["toc"]}:xml={log["venue_xml_status"]}'
+            f'/api={log["search_api_status"]}/sparql={log.get("sparql_status")}'
             for log in logs
         )
         print(f'[{label}] DBLP has no data yet ({statuses}) '

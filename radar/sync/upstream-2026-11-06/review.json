@@ -1,0 +1,20 @@
+{
+  "document_aliases": {
+    "https://www.usenix.org/conference/usenixsecurity26/presentation/hetterich-lorenz-2": "https://www.usenix.org/conference/usenixsecurity26/presentation/hetterich-lorenz-loongleak",
+    "https://www.usenix.org/conference/usenixsecurity26/yu-jerry": "https://www.usenix.org/conference/usenixsecurity26/presentation/yu-jerry"
+  },
+  "evidence": [
+    {
+      "source": "https://www.usenix.org/conference/usenixsecurity26/presentation/hetterich-lorenz-2",
+      "observed_redirect": "https://www.usenix.org/conference/usenixsecurity26/presentation/hetterich-lorenz-loongleak",
+      "official_title": "Loongleak: Architectural Cross-Privilege-Boundary Data Leakage on LoongArch CPUs",
+      "note": "Official USENIX redirect and BibTeX retain the old URL; replace the existing embargo placeholder rather than importing a duplicate."
+    },
+    {
+      "source": "https://www.usenix.org/conference/usenixsecurity26/technical-sessions",
+      "official_title": "BLE Theft Auto: Evaluating the Security of Aftermarket BLE-based Automotive Remote Control Systems",
+      "official_url": "https://www.usenix.org/conference/usenixsecurity26/presentation/yu-jerry",
+      "note": "The author's CDN URL omits /presentation/. The official schedule lists the same title with a paper-author field and PDF media. Correct this URL when importing."
+    }
+  ]
+}

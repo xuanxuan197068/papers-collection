@@ -1,0 +1,290 @@
+{
+  "key": "mulberry",
+  "url": "https://zishenwan.github.io/publication/ASPLOS24_mulberry_slide.pdf",
+  "resolved_url": "https://zishenwan.github.io/publication/ASPLOS24_mulberry_slide.pdf",
+  "status": "ok",
+  "kind": "pdf",
+  "sha256": "fe571d09831a3e9c1ac1dcd729d5af4ae30a8c9cf48e3e97d6c55c0431d91499",
+  "pages": [
+    {
+      "pdf_page": 1,
+      "text": "MulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ZishenWan1,Nandhini Chandramoorthy2,Karthik Swaminathan2, Pin-Yu Chen2,Kshitij Bhardwaj3,VijayJanapaReddi4,ArijitRaychowdhury1 \nASPLOS2024\n"
+    },
+    {
+      "pdf_page": 2,
+      "text": "ExecutiveSummaryThroughthistalk,wewill:•Understandthechallengesofbuildingefficientandresilientswarmautonomoussystems•Optimizetheefficiency-performance-resilienceofswarmintelligenceviaalgorithm-hardware-systemco-designapproach\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024"
+    },
+    {
+      "pdf_page": 3,
+      "text": "Motivation\nPerformanceEfficiency\nReliabilityGoal:Improveoperationalresiliency(Temporal/SpatialRedundancy)\nGoal:Improvemissionquality(AutonomyAlgorithms) Goal:Improvecomputeefficiency(SoftwareOptimization,HardwareArchitecture)\nPerformance-Efficiency-ReliabilityCo-Optimization\nSwarmAutonomousMachines\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024"
+    },
+    {
+      "pdf_page": 4,
+      "text": "WhatisAutonomousMachineSystem?\nSensingPerceptionPlanningControl\nActuationEnd-to-EndLearning(ReinforcementLearning)\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024"
+    },
+    {
+      "pdf_page": 5,
+      "text": "WhatisSwarmAutonomousMachineSystem?Agent 0\nSensing Data 0\nUpdate Policy\naction\nAgent 1\nSensing Data 1\nUpdate Policy\naction\nAgent n-1\nSensing Data n-1\nUpdate Policy\naction\nθ0\nk+\nServer\nθ1\nk-\nθn-1\nk-\nθn-1\nk+\nθ1\nk+θ0\nk-\nθ0\nk-\nθi\nk+\n= f (                          )θ1\nk-\nθn-1\nk-\n,, … ,\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\n"
+    },
+    {
+      "pdf_page": 6,
+      "text": "WhatisSwarmAutonomousMachineSystem?Agent 0\nSensing Data 0\nUpdate Policy\naction\nAgent 1\nSensing Data 1\nUpdate Policy\naction\nAgent n-1\nSensing Data n-1\nUpdate Policy\naction\nθ0\nk+\nServer\nθ1\nk-\nθn-1\nk-\nθn-1\nk+\nθ1\nk+θ0\nk-\nθ0\nk-\nθi\nk+\n= f (                          )θ1\nk-\nθn-1\nk-\n,, … ,\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\n"
+    },
+    {
+      "pdf_page": 7,
+      "text": "Challenge1: Strict Resource Budgets\nBatteryCapacity(mAh)\nSize(mm)\nEndurance(min)3830\n1300\n24072503356\n30\n15Nano-Drone(CrazyFile)\nMicro-Drone(Vortox250Pro)\nMini-Drone(DJIMavicPro)\nSearchandRescue\nScanning\nPackageDelivery Drones are size, weight, and power (SWaP) constrained\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024"
+    },
+    {
+      "pdf_page": 8,
+      "text": "Energy-EfficientAutonomousSystemSoftwareOptimization(e.g.,quantization,sparsity)\nLowerprocessoroperatingvoltage\nHardwareOptimization(e.g.,optimizeddataflow,specializedcomputeunit)Loweroperatingvoltagequadraticallyreducesenergy\nSRAM Access Energy vs. Operating Voltage\n0⊿65 0⊿70 0⊿75 0⊿80 0⊿85\nNormalized Operating Voltage ( Vmin)\n2⊿0\n2⊿5\n3⊿0\n3⊿5\nEnergy per\nSRAM Access (nJ)\nDatameasuredfrom14nmFinFETSRAMchips\nEnergy∝Voltage2MulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024"
+    },
+    {
+      "pdf_page": 9,
+      "text": "Challenge2:Compute-PhysicsCorrelation\nRotorPower(95%)ComputePower(5%)\nComputepowerisonlyasmallfractionoftotaldronepower->Willoptimizecomputebringsystemenergy-savings?Powerbreakdownmeasuredfrom3DRSolodrone\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024"
+    },
+    {
+      "pdf_page": 10,
+      "text": "Challenge3:LowVoltageInducesFaults\nDatameasuredfrom14nmFinFETSRAMchips\nSRAM Access Energy vs. Operating Voltage\n0⊿65 0⊿70 0⊿75 0⊿80 0⊿85\nSupply Voltage (Normalized byVmin)\n2⊿0\n2⊿5\n3⊿0\n3⊿5\nEnergy per\nSRAM Access (nJ)\nSRAM Access Energy / Bit Error Rate vs. Operating Voltage\n0⊿65 0⊿70 0⊿75 0⊿80 0⊿85\nSupply Voltage (Normalized byVmin)\n2⊿0\n2⊿5\n3⊿0\n3⊿5\nEnergy per\nSRAM Access (nJ) SRAM Energy\nBit Error Ratep 10°5\n10°3\n10°1\n101\nBit error Ratep(%)\n[HPCA19]Resilient Low Voltage Accelerators for High Energy Efficiency[MLSys21]Bit Error Robustness for Energy-Efficient DNN Accelerators\nTechnology14nmChipDimension2.05mmx1.13mmMemoryCapacity128KBweight,16KBinputFrequency/Voltage330MHzforVdd=0.8V\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024"
+    },
+    {
+      "pdf_page": 11,
+      "text": "Challenge3:LowVoltageInducesFaults\nChip 1 Chip 2128 columns64 rows\nBit error subset of\nV oltageBit error rate p\n0⊿75 0⊿80 0⊿85 0⊿90 0⊿95 1⊿00\nSupply Voltage, Normalized by 1 = Vmin\n10°5\n10°3\n10°1\n101\nBit error Ratepin %\nBit Error Ratep\nNormalized Energy 0⊿6\n0⊿7\n0⊿8\n0⊿9\n1⊿0\nNormalized Energy\nper SRAM Access\nSRAM Access Energy / Bit Error Rate vs. Operating Voltage\n0⊿65 0⊿70 0⊿75 0⊿80 0⊿85\nSupply Voltage (Normalized byVmin)\n2⊿0\n2⊿5\n3⊿0\n3⊿5\nEnergy per\nSRAM Access (nJ) SRAM Energy\nBit Error Ratep 10°5\n10°3\n10°1\n101\nBit error Ratep(%)\nOperatingbelowratedvoltagerangeresultsinmemorybiterrors,negativelyimpactingsafetyDatameasuredfrom14nmFinFETSRAMchips\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024"
+    },
+    {
+      "pdf_page": 12,
+      "text": "MulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\nHowcanweachieveaggressiveenergy-savingsunderlow-voltageoperation,yetremaincomputationally-resilientforswarmautonomoussystems?\n(performance-efficiency-resilienceco-optimization)\nMulBERRY"
+    },
+    {
+      "pdf_page": 13,
+      "text": "MulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\nMulBERRYFramework(MulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems) \nDronesSystemCharacterizationEfficientandRobustSwarmSystemDesignDeploymentandEvaluationinsightdesign"
+    },
+    {
+      "pdf_page": 14,
+      "text": "MulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\nDronesSystemCharacterizationEfficientandRobustSwarmSystemDesignDeploymentandEvaluationinsightdesign\nMulBERRYFramework(MulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems) "
+    },
+    {
+      "pdf_page": 15,
+      "text": "SmallComputePower,LargeSystemImpact!\nRotorPower(95%)ComputePower(5%)\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024"
+    },
+    {
+      "pdf_page": 16,
+      "text": "Heatsink\nNum. of MissionsFlight Energy\nSupply V oltage\nHeatsink Payload Weight\nPayload Weight\nFlight Acceleration & Velocity\nFlight Velocity\nFlight Time & Flight Energy\n(a)\n(b)\n(c)\n(d)\nMission Performance(Flight Time  , Energy  , #Missions  )V oltage-Physics Relationship(Payload  , Flight Velocity  )Low-V oltage Operation(Supply V oltage  )\nSmallComputePower,LargeSystemImpact!\nRotorPower(95%)ComputePower(5%)\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\nLow-voltageoperation  "
+    },
+    {
+      "pdf_page": 17,
+      "text": "Low-voltageoperationPayloadweight  \n Heatsink\nNum. of MissionsFlight Energy\nSupply V oltage\nHeatsink Payload Weight\nPayload Weight\nFlight Acceleration & Velocity\nFlight Velocity\nFlight Time & Flight Energy\n(a)\n(b)\n(c)\n(d)\nMission Performance(Flight Time  , Energy  , #Missions  )V oltage-Physics Relationship(Payload  , Flight Velocity  )Low-V oltage Operation(Supply V oltage  )\nSmallComputePower,LargeSystemImpact!\n(Peaktemperature,heatsinksizeandweight)HotSpotanalysis[1]+heatsinkmodeling[2][1]Hotspot 6.0: Validation, acceleration and extension[2]CelsiaHeatsink SizeSimulator\nRotorPower(95%)ComputePower(5%)\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024"
+    },
+    {
+      "pdf_page": 18,
+      "text": "Heatsink\nNum. of MissionsFlight Energy\nSupply V oltage\nHeatsink Payload Weight\nPayload Weight\nFlight Acceleration & Velocity\nFlight Velocity\nFlight Time & Flight Energy\n(a)\n(b)\n(c)\n(d)\nMission Performance(Flight Time  , Energy  , #Missions  )V oltage-Physics Relationship(Payload  , Flight Velocity  )Low-V oltage Operation(Supply V oltage  )\nSmallComputePower,LargeSystemImpact!\nRotorPower(95%)ComputePower(5%)\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\nLow-voltageoperationPayloadweight  Safeflightvelocity "
+    },
+    {
+      "pdf_page": 19,
+      "text": "Heatsink\nNum. of MissionsFlight Energy\nSupply V oltage\nHeatsink Payload Weight\nPayload Weight\nFlight Acceleration & Velocity\nFlight Velocity\nFlight Time & Flight Energy\n(a)\n(b)\n(c)\n(d)\nMission Performance(Flight Time  , Energy  , #Missions  )V oltage-Physics Relationship(Payload  , Flight Velocity  )Low-V oltage Operation(Supply V oltage  )\nSmallComputePower,LargeSystemImpact!\nRotorPower(95%)ComputePower(5%)\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\nLow-voltageoperationPayloadweight  Flighttime&energySafeflightvelocity "
+    },
+    {
+      "pdf_page": 20,
+      "text": "SmallComputePower,LargeSystemImpact!\nRotorPower(95%)ComputePower(5%)\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\nHeatsink\nNum. of MissionsFlight Energy\nSupply V oltage\nHeatsink Payload Weight\nPayload Weight\nFlight Acceleration & Velocity\nFlight Velocity\nFlight Time & Flight Energy\n(a)\n(b)\n(c)\n(d)\nMission Performance(Flight Time  , Energy  , #Missions  )V oltage-Physics Relationship(Payload  , Flight Velocity  )Low-V oltage Operation(Supply V oltage  )\nLow-voltageoperationPayloadweight  Flighttime&energySafeflightvelocity Numberofmissions"
+    },
+    {
+      "pdf_page": 21,
+      "text": "SmallComputePower,LargeSystemImpact!\nComputepowerhashugeimpactsonend-to-endautonomoussystemmissionenergy\nRotorPower(95%)ComputePower(5%)\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\nHeatsink\nNum. of MissionsFlight Energy\nSupply V oltage\nHeatsink Payload Weight\nPayload Weight\nFlight Acceleration & Velocity\nFlight Velocity\nFlight Time & Flight Energy\n(a)\n(b)\n(c)\n(d)\nMission Performance(Flight Time  , Energy  , #Missions  )V oltage-Physics Relationship(Payload  , Flight Velocity  )Low-V oltage Operation(Supply V oltage  )"
+    },
+    {
+      "pdf_page": 22,
+      "text": "DronesSystemCharacterizationEfficientandRobustSwarmSystemDesignDeploymentandEvaluationinsightdesign\nMulBERRYFramework(MulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems) \nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024"
+    },
+    {
+      "pdf_page": 23,
+      "text": "MulBERRYSystemDesignPrinciple•DesignPrinciple:Cross-layerswarmrobustlearningframework,integratesalgorithm-levelerror-awarelearningwithsystem-levelcollaborative server-agent optimization and hardware-level thermal-voltage adaptive adjustment.\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024"
+    },
+    {
+      "pdf_page": 24,
+      "text": "MulBERRYObjective•DesignPrinciple:Cross-layerswarmrobustlearningframework,integratesalgorithm-levelerror-awarelearningwithsystem-levelcollaborative server-agent optimization and hardware-level thermal-voltage adaptive adjustment.\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\n•Achieve:Aggressive energy-savings under low-voltage operation, yet computationally-resilient for swarmautonomous systems.\n"
+    },
+    {
+      "pdf_page": 25,
+      "text": "MulBERRY Key TechniquesSuccess Rate\nProcessing\nFlight Energy\n#Missions\nRobustness\nEfficiency\nQuality-of-Flight\nEnergy\n  Dynamic \nCommunication\nAdjustment \nDynamic \nServer Para.\nLearn with \ninjected random \nbit-flips\nMulti-\nAgent \nRobust \nPolicy\nAgent1\nAgentN\n…\nV/F\nV/F\nServer\nαkβk\nθN\nk+\nθ1\nk+\nθN\nk-\nθ1\nk-\n     Collaborative \nSprint-or-Slack \n     Payload \nOptimization\nLearn with actual low-voltage bit-flips\n1\n2\n3\n4\nOffline Learning On-Device Robust Learning Improvements\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024"
+    },
+    {
+      "pdf_page": 26,
+      "text": "MulBERRY Key TechniquesSuccess Rate\nProcessing\nFlight Energy\n#Missions\nRobustness\nEfficiency\nQuality-of-Flight\nEnergy\n  Dynamic \nCommunication\nAdjustment \nDynamic \nServer Para.\nLearn with \ninjected random \nbit-flips\nMulti-\nAgent \nRobust \nPolicy\nAgent1\nAgentN\n…\nV/F\nV/F\nServer\nαkβk\nθN\nk+\nθ1\nk+\nθN\nk-\nθ1\nk-\n     Collaborative \nSprint-or-Slack \n     Payload \nOptimization\nLearn with actual low-voltage bit-flips\n1\n2\n3\n4\nOffline Learning On-Device Robust Learning Improvements\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\nTwo-StageSwarmRobustLearning"
+    },
+    {
+      "pdf_page": 27,
+      "text": "MulBERRY Key TechniquesSuccess Rate\nProcessing\nFlight Energy\n#Missions\nRobustness\nEfficiency\nQuality-of-Flight\nEnergy\n  Dynamic \nCommunication\nAdjustment \nDynamic \nServer Para.\nLearn with \ninjected random \nbit-flips\nMulti-\nAgent \nRobust \nPolicy\nAgent1\nAgentN\n…\nV/F\nV/F\nServer\nαkβk\nθN\nk+\nθ1\nk+\nθN\nk-\nθ1\nk-\n     Collaborative \nSprint-or-Slack \n     Payload \nOptimization\nLearn with actual low-voltage bit-flips\n1\n2\n3\n4\nOffline Learning On-Device Robust Learning Improvements\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\nTwo-StageSwarmRobustLearning"
+    },
+    {
+      "pdf_page": 28,
+      "text": "MulBERRY Key TechniquesSuccess Rate\nProcessing\nFlight Energy\n#Missions\nRobustness\nEfficiency\nQuality-of-Flight\nEnergy\n  Dynamic \nCommunication\nAdjustment \nDynamic \nServer Para.\nLearn with \ninjected random \nbit-flips\nMulti-\nAgent \nRobust \nPolicy\nAgent1\nAgentN\n…\nV/F\nV/F\nServer\nαkβk\nθN\nk+\nθ1\nk+\nθN\nk-\nθ1\nk-\n     Collaborative \nSprint-or-Slack \n     Payload \nOptimization\nLearn with actual low-voltage bit-flips\n1\n2\n3\n4\nOffline Learning On-Device Robust Learning Improvements\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\nTwo-StageSwarmRobustLearning"
+    },
+    {
+      "pdf_page": 29,
+      "text": "MulBERRYFramework\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\n"
+    },
+    {
+      "pdf_page": 30,
+      "text": "MulBERRYFrameworkStart:Initializeswarm autonomy model\nGoal:learnrobust swarm autonomy model\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024"
+    },
+    {
+      "pdf_page": 31,
+      "text": "MulBERRYFrameworkStart:Initializeswarm autonomy model\nGoal:learnrobust swarm autonomy model\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\nAgent error-aware learning; Server-agent communication"
+    },
+    {
+      "pdf_page": 32,
+      "text": "MulBERRYFrameworkStart:Initializeswarm autonomy model\nGoal:learnrobust swarm autonomy model\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\nAgent error-aware learning; Server-agent communication\nSwarm error-aware learning"
+    },
+    {
+      "pdf_page": 33,
+      "text": "MulBERRYFrameworkStart:Initializeswarm autonomy model\nGoal:learnrobust swarm autonomy model\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\nAgent error-aware learning; Server-agent communicationErrorinjectionSwarm error-aware learning"
+    },
+    {
+      "pdf_page": 34,
+      "text": "MulBERRYFrameworkStart:Initializeswarm autonomy model\nGoal:learnrobust swarm autonomy model\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\nAgent error-aware learning; Server-agent communicationErrorinjectionLoss&gradientonperturbedweightsSwarm error-aware learning"
+    },
+    {
+      "pdf_page": 35,
+      "text": "MulBERRYFrameworkStart:Initializeswarm autonomy model\nGoal:learnrobust swarm autonomy model\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\nAgent error-aware learning; Server-agent communication\nGradientupdate(clean&perturbed)\nErrorinjectionLoss&gradientonperturbedweightsSwarm error-aware learning"
+    },
+    {
+      "pdf_page": 36,
+      "text": "MulBERRY Key TechniquesSuccess Rate\nProcessing\nFlight Energy\n#Missions\nRobustness\nEfficiency\nQuality-of-Flight\nEnergy\n  Dynamic \nCommunication\nAdjustment \nDynamic \nServer Para.\nLearn with \ninjected random \nbit-flips\nMulti-\nAgent \nRobust \nPolicy\nAgent1\nAgentN\n…\nV/F\nV/F\nServer\nαkβk\nθN\nk+\nθ1\nk+\nθN\nk-\nθ1\nk-\n     Collaborative \nSprint-or-Slack \n     Payload \nOptimization\nLearn with actual low-voltage bit-flips\n1\n2\n3\n4\nOffline Learning On-Device Robust Learning Improvements\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\nLow-VoltagePayload Optimization\nTwo-StageSwarmRobustLearning"
+    },
+    {
+      "pdf_page": 37,
+      "text": "Low-VoltagePayloadOptimization\nUnderlow-voltage,MulBERRYreducesdronepayload,leadingtoincreasedsafeflightvelocity,thusreducingmissiontimeandenergyMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\nHeatsink\nNum. of MissionsFlight Energy\nSupply V oltage\nHeatsink Payload Weight\nPayload Weight\nFlight Acceleration & Velocity\nFlight Velocity\nFlight Time & Flight Energy\n(a)\n(b)\n(c)\n(d)\nMission Performance(Flight Time  , Energy  , #Missions  )V oltage-Physics Relationship(Payload  , Flight Velocity  )Low-V oltage Operation(Supply V oltage  )"
+    },
+    {
+      "pdf_page": 38,
+      "text": "MulBERRY Key TechniquesSuccess Rate\nProcessing\nFlight Energy\n#Missions\nRobustness\nEfficiency\nQuality-of-Flight\nEnergy\n  Dynamic \nCommunication\nAdjustment \nDynamic \nServer Para.\nLearn with \ninjected random \nbit-flips\nMulti-\nAgent \nRobust \nPolicy\nAgent1\nAgentN\n…\nV/F\nV/F\nServer\nαkβk\nθN\nk+\nθ1\nk+\nθN\nk-\nθ1\nk-\n     Collaborative \nSprint-or-Slack \n     Payload \nOptimization\nLearn with actual low-voltage bit-flips\n1\n2\n3\n4\nOffline Learning On-Device Robust Learning Improvements\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\nLow-VoltagePayload OptimizationCollaborativeSprint-or-SlackOperation\nTwo-StageSwarmRobustLearning"
+    },
+    {
+      "pdf_page": 39,
+      "text": "Sprint-or-Slack OperationUAVSprint:operateatnominalvoltage(noerror,highenergy)UAVSlack:operateatlowvoltage(witherror,lowenergy)\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\nT=0 T=1 T=2 T=3\nCollaborative Sprint-or-Slack Operation\nModel Converges\nPowerPowerPowerPower\nTpeak < Theatsink\nTpeak < Theatsink\nTpeak < Theatsink\nTpeak < Theatsink\nUA V1\nUA V2\nUA V3\nUA V4\nPower\nTpeak > Theatsink\nAll UA Vs Running at Vsprint\nAll UA Vs Running at Vslack\nModel Converges\nPower\nTpeak < Theatsink\nModel \nDoes Not Converge\n(a)\n(b) (c)\nT=0 T=1 T=2 T=3\nCollaborative Sprint-or-Slack Operation\nModel Converges\nPowerPowerPowerPower\nTpeak < Theatsink\nTpeak < Theatsink\nTpeak < Theatsink\nTpeak < Theatsink\nUA V1\nUA V2\nUA V3\nUA V4\nPower\nTpeak > Theatsink\nAll UA Vs Running at Vsprint\nAll UA Vs Running at Vslack\nModel Converges\nPower\nTpeak < Theatsink\nModel \nDoes Not Converge\n(a)\n(b) (c)\n"
+    },
+    {
+      "pdf_page": 40,
+      "text": "Sprint-or-Slack OperationUAVSprint:operateatnominalvoltage(noerror,highenergy)UAVSlack:operateatlowvoltage(witherror,lowenergy)\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024T=0 T=1 T=2 T=3\nCollaborative Sprint-or-Slack Operation\nModel Converges\nPowerPowerPowerPower\nTpeak < Theatsink\nTpeak < Theatsink\nTpeak < Theatsink\nTpeak < Theatsink\nUA V1\nUA V2\nUA V3\nUA V4\nPower\nTpeak > Theatsink\nAll UA Vs Running at Vsprint\nAll UA Vs Running at Vslack\nModel Converges\nPower\nTpeak < Theatsink\nModel \nDoes Not Converge\n(a)\n(b) (c)\nT=0 T=1 T=2 T=3\nCollaborative Sprint-or-Slack Operation\nModel Converges\nPowerPowerPowerPower\nTpeak < Theatsink\nTpeak < Theatsink\nTpeak < Theatsink\nTpeak < Theatsink\nUA V1\nUA V2\nUA V3\nUA V4\nPower\nTpeak > Theatsink\nAll UA Vs Running at Vsprint\nAll UA Vs Running at Vslack\nModel Converges\nPower\nTpeak < Theatsink\nModel \nDoes Not Converge\n(a)\n(b) (c)\nT=0 T=1 T=2 T=3\nCollaborative Sprint-or-Slack Operation\nModel Converges\nPowerPowerPowerPower\nTpeak < Theatsink\nTpeak < Theatsink\nTpeak < Theatsink\nTpeak < Theatsink\nUA V1\nUA V2\nUA V3\nUA V4\nPower\nTpeak > Theatsink\nAll UA Vs Running at Vsprint\nAll UA Vs Running at Vslack\nModel Converges\nPower\nTpeak < Theatsink\nModel \nDoes Not Converge\n(a)\n(b) (c)\nAllUAVsareSprinting"
+    },
+    {
+      "pdf_page": 41,
+      "text": "Sprint-or-Slack OperationUAVSprint:operateatnominalvoltage(noerror,highenergy)UAVSlack:operateatlowvoltage(witherror,lowenergy)\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024T=0 T=1 T=2 T=3\nCollaborative Sprint-or-Slack Operation\nModel Converges\nPowerPowerPowerPower\nTpeak < Theatsink\nTpeak < Theatsink\nTpeak < Theatsink\nTpeak < Theatsink\nUA V1\nUA V2\nUA V3\nUA V4\nPower\nTpeak > Theatsink\nAll UA Vs Running at Vsprint\nAll UA Vs Running at Vslack\nModel Converges\nPower\nTpeak < Theatsink\nModel \nDoes Not Converge\n(a)\n(b) (c)\nT=0 T=1 T=2 T=3\nCollaborative Sprint-or-Slack Operation\nModel Converges\nPowerPowerPowerPower\nTpeak < Theatsink\nTpeak < Theatsink\nTpeak < Theatsink\nTpeak < Theatsink\nUA V1\nUA V2\nUA V3\nUA V4\nPower\nTpeak > Theatsink\nAll UA Vs Running at Vsprint\nAll UA Vs Running at Vslack\nModel Converges\nPower\nTpeak < Theatsink\nModel \nDoes Not Converge\n(a)\n(b) (c)\nT=0 T=1 T=2 T=3\nCollaborative Sprint-or-Slack Operation\nModel Converges\nPowerPowerPowerPower\nTpeak < Theatsink\nTpeak < Theatsink\nTpeak < Theatsink\nTpeak < Theatsink\nUA V1\nUA V2\nUA V3\nUA V4\nPower\nTpeak > Theatsink\nAll UA Vs Running at Vsprint\nAll UA Vs Running at Vslack\nModel Converges\nPower\nTpeak < Theatsink\nModel \nDoes Not Converge\n(a)\n(b) (c)\nT=0 T=1 T=2 T=3\nCollaborative Sprint-or-Slack Operation\nModel Converges\nPowerPowerPowerPower\nTpeak < Theatsink\nTpeak < Theatsink\nTpeak < Theatsink\nTpeak < Theatsink\nUA V1\nUA V2\nUA V3\nUA V4\nPower\nTpeak > Theatsink\nAll UA Vs Running at Vsprint\nAll UA Vs Running at Vslack\nModel Converges\nPower\nTpeak < Theatsink\nModel \nDoes Not Converge\n(a)\n(b) (c)\nAllUAVsareSprintingAllUAVsareSlacking"
+    },
+    {
+      "pdf_page": 42,
+      "text": "Sprint-or-SlackOperation\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\n1 1/2 1/4 1/6 1/8 1/10 1/12 0\nSprinting Duty Cycle ( ¥)\n56\n60\n64\n68\n72Peak Temperature ( oC)"
+    },
+    {
+      "pdf_page": 43,
+      "text": "Sprint-or-SlackOperation\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\n1 1/2 1/4 1/6 1/8 1/10 1/12 0\nSprinting Duty Cycle ( ¥)\n56\n60\n64\n68\n72Peak Temperature ( oC)\nSprintingDutyCycle(η):fraction of period for which theUAV is sprinting alwayssprintingalwaysslacking"
+    },
+    {
+      "pdf_page": 44,
+      "text": "Sprint-or-SlackOperation\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\n1 1/2 1/4 1/6 1/8 1/10 1/12 0\nSprinting Duty Cycle ( ¥)\n56\n60\n64\n68\n72Peak Temperature ( oC)\nSprintingDutyCycle(η):fraction of period for which theUAV is sprinting \n0.4 mm\nFPUDcache\nIcacheALUFrontendPTWBufferCore Configuration Parameters4 X RISC-V Rocket cores Core type16K 4-way I+D cachesCache0.16 mm2in 12nm techRouted core area0.54 V to 1 VVoltage range117 mWto 399 mWPower\n0.4 mm\n0.4 mm\nPower117mW to 399mW\nVoltage Range0.54V to 1V\nRouted Core Area0.4mm x 0.4mm\n16KB 4-way I+D CachesCache\n4 x RISC-V Rocket CoresCore Type\nGF 12nmTechnology\nHardware Configuration Parameters\n(a) (b)\n0.4 mm\nalwayssprintingalwaysslacking"
+    },
+    {
+      "pdf_page": 45,
+      "text": "Sprint-or-Slack Operation\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\n1 1/2 1/4 1/6 1/8 1/10 1/12 0\nSprinting Duty Cycle ( ¥)\n56\n60\n64\n68\n72Peak Temperature ( oC)\nTemperatureheatmapη=1\n0.4 mm\nFPUDcache\nIcacheALUFrontendPTWBufferCore Configuration Parameters4 X RISC-V Rocket cores Core type16K 4-way I+D cachesCache0.16 mm2in 12nm techRouted core area0.54 V to 1 VVoltage range117 mWto 399 mWPower\n0.4 mm\n0.4 mm\nPower117mW to 399mW\nVoltage Range0.54V to 1V\nRouted Core Area0.4mm x 0.4mm\n16KB 4-way I+D CachesCache\n4 x RISC-V Rocket CoresCore Type\nGF 12nmTechnology\nHardware Configuration Parameters\n(a) (b)\n0.4 mm\nSprintingDutyCycle(η):fraction of period for which theUAV is sprinting alwayssprintingalwaysslacking"
+    },
+    {
+      "pdf_page": 46,
+      "text": "Sprint-or-Slack Operation\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\n1 1/2 1/4 1/6 1/8 1/10 1/12 0\nSprinting Duty Cycle ( ¥)\n56\n60\n64\n68\n72Peak Temperature ( oC)\nTemperatureheatmapη=1Temperatureheatmapη=0\n0.4 mm\nFPUDcache\nIcacheALUFrontendPTWBufferCore Configuration Parameters4 X RISC-V Rocket cores Core type16K 4-way I+D cachesCache0.16 mm2in 12nm techRouted core area0.54 V to 1 VVoltage range117 mWto 399 mWPower\n0.4 mm\n0.4 mm\nPower117mW to 399mW\nVoltage Range0.54V to 1V\nRouted Core Area0.4mm x 0.4mm\n16KB 4-way I+D CachesCache\n4 x RISC-V Rocket CoresCore Type\nGF 12nmTechnology\nHardware Configuration Parameters\n(a) (b)\n0.4 mm\nSprintingDutyCycle(η):fraction of period for which theUAV is sprinting alwayssprintingalwaysslacking\nNote:forbettervisualization, colorscalesaredifferent"
+    },
+    {
+      "pdf_page": 47,
+      "text": "Collaborative Sprint-or-Slack Operation\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024T=0 T=1 T=2 T=3\nCollaborative Sprint-or-Slack Operation\nModel Converges\nPowerPowerPowerPower\nTpeak < Theatsink\nTpeak < Theatsink\nTpeak < Theatsink\nTpeak < Theatsink\nUA V1\nUA V2\nUA V3\nUA V4\nPower\nTpeak > Theatsink\nAll UA Vs Running at Vsprint\nAll UA Vs Running at Vslack\nModel Converges\nPower\nTpeak < Theatsink\nModel \nDoes Not Converge\n(a)\n(b) (c)\nUAVSprint:operateatnominalvoltage(noerror,highenergy)UAVSlack:operateatlowvoltage(witherror,lowenergy)\nT=0 T=1 T=2 T=3\nCollaborative Sprint-or-Slack Operation\nModel Converges\nPowerPowerPowerPower\nTpeak < Theatsink\nTpeak < Theatsink\nTpeak < Theatsink\nTpeak < Theatsink\nUA V1\nUA V2\nUA V3\nUA V4\nPower\nTpeak > Theatsink\nAll UA Vs Running at Vsprint\nAll UA Vs Running at Vslack\nModel Converges\nPower\nTpeak < Theatsink\nModel \nDoes Not Converge\n(a)\n(b) (c)\nT=0 T=1 T=2 T=3\nCollaborative Sprint-or-Slack Operation\nModel Converges\nPowerPowerPowerPower\nTpeak < Theatsink\nTpeak < Theatsink\nTpeak < Theatsink\nTpeak < Theatsink\nUA V1\nUA V2\nUA V3\nUA V4\nPower\nTpeak > Theatsink\nAll UA Vs Running at Vsprint\nAll UA Vs Running at Vslack\nModel Converges\nPower\nTpeak < Theatsink\nModel \nDoes Not Converge\n(a)\n(b) (c)\nCollaborativeSprint-or-Slack"
+    },
+    {
+      "pdf_page": 48,
+      "text": "MulBERRY Key TechniquesSuccess Rate\nProcessing\nFlight Energy\n#Missions\nRobustness\nEfficiency\nQuality-of-Flight\nEnergy\n  Dynamic \nCommunication\nAdjustment \nDynamic \nServer Para.\nLearn with \ninjected random \nbit-flips\nMulti-\nAgent \nRobust \nPolicy\nAgent1\nAgentN\n…\nV/F\nV/F\nServer\nαkβk\nθN\nk+\nθ1\nk+\nθN\nk-\nθ1\nk-\n     Collaborative \nSprint-or-Slack \n     Payload \nOptimization\nLearn with actual low-voltage bit-flips\n1\n2\n3\n4\nOffline Learning On-Device Robust Learning Improvements\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\nLow-Voltage Payload OptimizationCollaborativeSprint-or-SlackOperation\nAdaptive SwarmKnowledgeSharing\nTwo-StageSwarmRobustLearning"
+    },
+    {
+      "pdf_page": 49,
+      "text": "DronesSystemCharacterizationEfficientandRobustSwarmSystemDesignDeploymentandEvaluationinsightdesign\nMulBERRYFramework(MulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems) \nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024"
+    },
+    {
+      "pdf_page": 50,
+      "text": "SwarmUAVsExperimental Setup(Sim/Task)• Simulation Platform:\n(3D realistic environments)Unreal EngineAirSim(Drone dynamics)+\nSensor\nAction#parameter = 1.1MB\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\n•Task:collaborativepackagedeliveryorsurveillance•PolicyArchitectureofeachUAV:\n•Swarmsize:4-UAV,8-UAV,12-UAV"
+    },
+    {
+      "pdf_page": 51,
+      "text": "SwarmUAVsExperimental Setup(UAVPlatform)\nNano-Drone27gtakeoffweight15gmaxpayload250mAhbattery\nMicro-Drone80gtakeoffweight70gmaxpayload1100mAhbatteryMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\nBitcraze CrazyflieUAVDJI TelloUAV"
+    },
+    {
+      "pdf_page": 52,
+      "text": "SwarmUAVsExperimental Setup(Hardware)\n0.4 mm\nFPUDcache\nIcache\nALU\nFrontendPTWBuffer\nCore Configuration Parameters4 X RISC-V Rocket cores Core type16K 4-way I+D cachesCache0.16 mm2in 12nm techRouted core area0.54 V to 1 VVoltage range117 mWto 399 mWPower\n0.4 mm\n0.4 mm\nPower 117mW to 399mW\nVoltage Range0.54V to 1V\nRouted Core Area0.4mm x 0.4mm\n16KB 4-way I+D \nCachesCache\n4 x RISC-V \nRocket CoresCore Type\nGF 12nmTechnology\nHardware Configuration Parameters\n(a) (b)\n0.4 mm\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\nLayoutofoneRISC-VRocketcore\nEvaluation Metrics•Compute-level: •ProcessingEnergy•System-level: •Avg.flight success rate•Avg. flight time•Avg. flight energy•Avg. #missionsAll reportedresults are averaged from 500 runs"
+    },
+    {
+      "pdf_page": 53,
+      "text": "Robustness&MissionEfficiencyImprovement\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\nRobustness Improvement Flight Mission Efficiency Improvement\n0⊿72 0⊿75 0⊿78 0⊿81 0⊿84\nNormalized Voltage (Vmin)\n25\n30\n35\n40Flight Distance (m)\n#L V A=1\n#L V A=2\n#L V A=3\n#L V A=4\n#L V A=1\n#L V A=2\n#L V A=3\n#L V A=4\n0⊿72 0⊿75 0⊿78 0⊿81 0⊿84\nNormalized Voltage (Vmin)\n40\n50\n60\n70\n80\n90Success RateSR(%)\n#L V A=1\n#L V A=2\n#L V A=3\n#L V A=4\n#L V A=1\n#L V A=2\n#L V A=3\n#L V A=4\nHigher \nis better\nClassical MAMulBERRY\nLower is \nbetter\nMulBERRY\n(a) (b)\nClassical MA\n0.68 0.70 0.71 0.73 0.74 0.76 0.77 0.79 0.80\nNormalized Voltage (Vmin)\n21⊿0\n21⊿5\n22⊿0\n22⊿5\n23⊿0\n23⊿5\n24⊿0\nFlight DistanceD(m)\n(#LVA:numberoflow-voltageUAVs)\nMulBERRY improvesmissionrobustnessunderlow-voltageoperation"
+    },
+    {
+      "pdf_page": 54,
+      "text": "Robustness&MissionEfficiencyImprovement\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\nRobustness Improvement Flight Mission Efficiency Improvement\n0⊿72 0⊿75 0⊿78 0⊿81 0⊿84\nNormalized Voltage (Vmin)\n25\n30\n35\n40Flight Distance (m)\n#L V A=1\n#L V A=2\n#L V A=3\n#L V A=4\n#L V A=1\n#L V A=2\n#L V A=3\n#L V A=4\n0⊿72 0⊿75 0⊿78 0⊿81 0⊿84\nNormalized Voltage (Vmin)\n40\n50\n60\n70\n80\n90Success RateSR(%)\n#L V A=1\n#L V A=2\n#L V A=3\n#L V A=4\n#L V A=1\n#L V A=2\n#L V A=3\n#L V A=4\nHigher \nis better\nClassical MAMulBERRY\nLower is \nbetter\nMulBERRY\n(a) (b)\nClassical MA\n0.68 0.70 0.71 0.73 0.74 0.76 0.77 0.79 0.80\nNormalized Voltage (Vmin)\n21⊿0\n21⊿5\n22⊿0\n22⊿5\n23⊿0\n23⊿5\n24⊿0\nFlight DistanceD(m)\nRobustness Improvement Flight Mission Efficiency Improvement\n0⊿72 0⊿75 0⊿78 0⊿81 0⊿84\nNormalized Voltage (Vmin)\n25\n30\n35\n40Flight Distance (m)\n#L V A=1\n#L V A=2\n#L V A=3\n#L V A=4\n#L V A=1\n#L V A=2\n#L V A=3\n#L V A=4\n0⊿72 0⊿75 0⊿78 0⊿81 0⊿84\nNormalized Voltage (Vmin)\n40\n50\n60\n70\n80\n90Success RateSR(%)\n#L V A=1\n#L V A=2\n#L V A=3\n#L V A=4\n#L V A=1\n#L V A=2\n#L V A=3\n#L V A=4\nHigher \nis better\nClassical MAMulBERRY\nLower is \nbetter\nMulBERRY\n(a) (b)\nClassical MA\n0.68 0.70 0.71 0.73 0.74 0.76 0.77 0.79 0.80\nNormalized Voltage (Vmin)\n21⊿0\n21⊿5\n22⊿0\n22⊿5\n23⊿0\n23⊿5\n24⊿0\nFlight DistanceD(m)\nMulBERRY improvesmissionrobustnessunderlow-voltageoperation(#LVA:numberoflow-voltageUAVs)"
+    },
+    {
+      "pdf_page": 55,
+      "text": "Robustness&MissionEfficiencyImprovement\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\n0.680.700.710.730.740.760.770.790.80\nNormalized Voltage (Vmin)\n62\n64\n66\n68\n70\n72\n74Flight EnergyE(J)\n0.680.700.710.730.740.760.770.790.80\nNormalized Voltage (Vmin)\n41424344454647484950Num. of MissionsN\nSweet Spot:          61.42J @0.70VminBaseline V oltage: 75.80J @1V\n(18.97%  )\nSweet Spot:          49.01 @0.70VminBaseline V oltage: 40.15 @1V (22.07%  )\nLower is better\nHigher is better\nMission Energy Consumption\nNumber of Competed Missions \nOn-DeviceMulBERRY"
+    },
+    {
+      "pdf_page": 56,
+      "text": "Robustness&MissionEfficiencyImprovement\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\n0.680.700.710.730.740.760.770.790.80\nNormalized Voltage (Vmin)\n62\n64\n66\n68\n70\n72\n74Flight EnergyE(J)\n0.680.700.710.730.740.760.770.790.80\nNormalized Voltage (Vmin)\n41424344454647484950Num. of MissionsN\nSweet Spot:          61.42J @0.70VminBaseline V oltage: 75.80J @1V\n(18.97%  )\nSweet Spot:          49.01 @0.70VminBaseline V oltage: 40.15 @1V (22.07%  )\nLower is better\nHigher is better\nMission Energy Consumption\nNumber of Competed Missions \nOn-DeviceMulBERRY+PayloadOptimization"
+    },
+    {
+      "pdf_page": 57,
+      "text": "Robustness&MissionEfficiencyImprovement\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\n0.680.700.710.730.740.760.770.790.80\nNormalized Voltage (Vmin)\n62\n64\n66\n68\n70\n72\n74Flight EnergyE(J)\n0.680.700.710.730.740.760.770.790.80\nNormalized Voltage (Vmin)\n41424344454647484950Num. of MissionsN\nSweet Spot:          61.42J @0.70VminBaseline V oltage: 75.80J @1V\n(18.97%  )\nSweet Spot:          49.01 @0.70VminBaseline V oltage: 40.15 @1V (22.07%  )\nLower is better\nHigher is better\nMission Energy Consumption\nNumber of Competed Missions \nOn-DeviceMulBERRY+PayloadOptimization+CollaborativeSprint-or-Slack"
+    },
+    {
+      "pdf_page": 58,
+      "text": "Robustness&MissionEfficiencyImprovement\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\n0.680.700.710.730.740.760.770.790.80\nNormalized Voltage (Vmin)\n62\n64\n66\n68\n70\n72\n74Flight EnergyE(J)\n0.680.700.710.730.740.760.770.790.80\nNormalized Voltage (Vmin)\n41424344454647484950Num. of MissionsN\nSweet Spot:          61.42J @0.70VminBaseline V oltage: 75.80J @1V\n(18.97%  )\nSweet Spot:          49.01 @0.70VminBaseline V oltage: 40.15 @1V (22.07%  )\nLower is better\nHigher is better\nMission Energy Consumption\nNumber of Competed Missions \nOn-DeviceMulBERRY+PayloadOptimization+CollaborativeSprint-or-Slack+AdaptiveCommunicationInterval+AdaptiveKnowledgeSharingPara.\n18.97%LessFlightEnergy22.07%More#CompletedMissions"
+    },
+    {
+      "pdf_page": 59,
+      "text": "EffectivenessAcrossVoltagesandChips\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\n"
+    },
+    {
+      "pdf_page": 60,
+      "text": "EffectivenessAcrossVoltagesandChips\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024"
+    },
+    {
+      "pdf_page": 61,
+      "text": "EffectivenessAcrossVoltagesandChips\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\nMulBERRY isscalableacrossvoltagesandchips,andconsistentlyimprovesefficiencyandrobustness"
+    },
+    {
+      "pdf_page": 62,
+      "text": "Effectiveness Across Environments\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024"
+    },
+    {
+      "pdf_page": 63,
+      "text": "Effectiveness Across Environments\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024"
+    },
+    {
+      "pdf_page": 64,
+      "text": "Effectiveness Across Environments\nMulBERRY isadaptiveacrossenvironments,andconsistentlyimprovesefficiency;Sparseobstacleenvironmentsenableloweroperatingvoltage\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024"
+    },
+    {
+      "pdf_page": 65,
+      "text": "Effectiveness Across DronesandModels\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024"
+    },
+    {
+      "pdf_page": 66,
+      "text": "Effectiveness Across DronesandModels\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024"
+    },
+    {
+      "pdf_page": 67,
+      "text": "Effectiveness Across DronesandModels\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\nMulBERRY isadaptiveacrossdronesandmodels,andconsistentlyimprovesefficiencyandrobustness;MulBERRYenablesmoremissionenergysavingsundersmallerUAVsandlargermodels"
+    },
+    {
+      "pdf_page": 68,
+      "text": "Summary\nDronesSystemCharacterizationEfficientandRobustSwarmSystemDesignDeploymentandEvaluationinsightdesign\nRotorPower(95%)ComputePower(5%)\nComputepower:smallportion,bigimpact!\nAggressiveenergy-savingyetcomputational-resilient\nSuccess Rate\nProcessing\nFlight Energy\n#Missions\nRobustness\nEfficiency\nQuality-of-Flight\nEnergy\n  Dynamic \nCommunication\nAdjustment \nDynamic \nServer Para.\nLearn with \ninjected random \nbit-flips\nMulti-\nAgent \nRobust \nPolicy\nAgent1\nAgentN\n…\nV/F\nV/F\nServer\nαkβk\nθN\nk+\nθ1\nk+\nθN\nk-\nθ1\nk-\n     Collaborative \nSprint-or-Slack \n     Payload \nOptimization\nLearn with actual low-voltage bit-flips\n1\n2\n3\n4\nOffline Learning On-Device Robust Learning Improvements\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024"
+    },
+    {
+      "pdf_page": 69,
+      "text": "Summary\nMulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ASPLOS2024 05/01/2024\nReliability\nPerformanceEfficiency\nMulBERRYachieveaggressiveenergy-savingsunderlow-voltageoperation,yetremaincomputationally-resilientforswarmautonomoussystems\n"
+    },
+    {
+      "pdf_page": 70,
+      "text": "MulBERRY:Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems ZishenWan1,Nandhini Chandramoorthy2,Karthik Swaminathan2, Pin-Yu Chen2,Kshitij Bhardwaj3,VijayJanapaReddi4,ArijitRaychowdhury1 \nEmail:zishenwan@gatech.eduWeb:https://zishenwan.github.io\nPaperWebpage"
+    }
+  ]
+}

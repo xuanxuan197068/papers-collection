@@ -49,13 +49,76 @@
       "attempts": 2,
       "last_attempt": "2026-07-13",
       "paper": "https://doi.org/10.1109/TIFS.2026.3688912"
-    }
-  },
-  "IEEE S&P - 2026": {
-    "Lost in Translation: Text Message Spoofing via Email": {
+    },
+    "Verifiable and Fair Registered Attribute-Based Multi-Hop Proxy Re-Encryption Scheme for LLM Agents": {
       "attempts": 1,
-      "last_attempt": "2026-08-05",
-      "paper": "https://doi.org/10.1109/SP63933.2026.00168"
+      "last_attempt": "2026-09-24",
+      "paper": "https://doi.org/10.1109/TIFS.2026.3711852"
+    },
+    "Posterior Verifiable Timed Adaptor Signatures for Scriptless Payment Channel Networks": {
+      "attempts": 1,
+      "last_attempt": "2026-09-24",
+      "paper": "https://doi.org/10.1109/TIFS.2026.3711859"
+    },
+    "PREFed: An Effective and Stealthy Static-Anchor Backdoor Attack via Trigger Pre-Optimization in Federated Learning": {
+      "attempts": 1,
+      "last_attempt": "2026-09-24",
+      "paper": "https://doi.org/10.1109/TIFS.2026.3716241"
+    },
+    "Plausibly Deniable Covert Communication via Saved Game State: Capacity and Feasibility": {
+      "attempts": 1,
+      "last_attempt": "2026-09-24",
+      "paper": "https://doi.org/10.1109/TIFS.2026.3725569"
+    },
+    "CVFL-Pro: A Collusion-Resistant Verification Federated Learning Framework With Adaptive Communication Optimization": {
+      "attempts": 1,
+      "last_attempt": "2026-09-24",
+      "paper": "https://doi.org/10.1109/TIFS.2026.3714152"
+    },
+    "Distributed Functional Mechanism in Shallow Networks: Differential Privacy Without Gradient Noise": {
+      "attempts": 1,
+      "last_attempt": "2026-09-24",
+      "paper": "https://doi.org/10.1109/TIFS.2026.3712214"
+    },
+    "Spatial-Temporal Decoupled Invertible Neural Networks for Skeleton-Based Video Anomaly Detection": {
+      "attempts": 1,
+      "last_attempt": "2026-09-24",
+      "paper": "https://doi.org/10.1109/TIFS.2026.3725570"
+    },
+    "RLAgent-GSSTI: Automated Grey-Box SSTI Vulnerability Detection Based on Reinforcement Learning Agent": {
+      "attempts": 1,
+      "last_attempt": "2026-09-24",
+      "paper": "https://doi.org/10.1109/TIFS.2026.3725559"
+    },
+    "Detection and Mitigation Data Poisoning Attacks in Multimodal Online Federated Learning": {
+      "attempts": 1,
+      "last_attempt": "2026-09-24",
+      "paper": "https://doi.org/10.1109/TIFS.2026.3707417"
+    },
+    "UTFormer: An Ultra-Lightweight Transformer for Traffic Classification": {
+      "attempts": 1,
+      "last_attempt": "2026-09-24",
+      "paper": "https://doi.org/10.1109/TIFS.2026.3711855"
+    },
+    "Intrusion Detection System for Open Network Scenarios: A Known/Unknown Attack Detection Method Based on Inter-Class Relationships": {
+      "attempts": 1,
+      "last_attempt": "2026-09-24",
+      "paper": "https://doi.org/10.1109/TIFS.2026.3729506"
+    },
+    "Protecting Your Customized LLM Systems From Backdoored Instructions With Metacognitive Probing": {
+      "attempts": 1,
+      "last_attempt": "2026-09-24",
+      "paper": "https://doi.org/10.1109/TIFS.2026.3714137"
+    },
+    "PACT: Enhancing Privacy and Efficiency in Tree Evaluation via Secure Parallel Comparison and Oblivious Tree Aggregation": {
+      "attempts": 1,
+      "last_attempt": "2026-09-24",
+      "paper": "https://doi.org/10.1109/TIFS.2026.3723094"
+    },
+    "Privacy-Preserving Deduplication and Data Integrity Auditing for Compressed Cloud Storage": {
+      "attempts": 1,
+      "last_attempt": "2026-09-24",
+      "paper": "https://doi.org/10.1109/TIFS.2026.3723105"
     }
   },
   "USENIX Sec - 2025": {
@@ -70,43 +133,6 @@
       "attempts": 1,
       "last_attempt": "2026-08-05",
       "paper": "https://doi.org/10.1145/3691620.3695263"
-    }
-  },
-  "ASPLOS - 2026": {
-    "Radshield: Software Radiation Protection for Commodity Hardware in Space": {
-      "attempts": 1,
-      "last_attempt": "2026-08-05",
-      "paper": "https://doi.org/10.1145/3760250.3762218"
-    },
-    "Sequential Specifications for Precise Hardware Exceptions": {
-      "attempts": 1,
-      "last_attempt": "2026-08-05",
-      "paper": "https://doi.org/10.1145/3760250.3762233"
-    },
-    "CPU-Oblivious Offloading of Failure-Atomic Transactions for Disaggregated Memory": {
-      "attempts": 1,
-      "last_attempt": "2026-08-05",
-      "paper": "https://doi.org/10.1145/3779212.3790146"
-    },
-    "Enabling Fast Networking in the Public Cloud": {
-      "attempts": 1,
-      "last_attempt": "2026-08-05",
-      "paper": "https://doi.org/10.1145/3779212.3790158"
-    },
-    "Fine-grained and Non-intrusive LLM Training Monitoring via Microsecond-level Traffic Measurement": {
-      "attempts": 1,
-      "last_attempt": "2026-08-05",
-      "paper": "https://doi.org/10.1145/3779212.3790163"
-    },
-    "It Takes Two to Entangle": {
-      "attempts": 1,
-      "last_attempt": "2026-08-05",
-      "paper": "https://doi.org/10.1145/3779212.3790178"
-    },
-    "JOSer: Just-In-Time Object Serialization for Heavy Java Serialization Workloads": {
-      "attempts": 1,
-      "last_attempt": "2026-08-05",
-      "paper": "https://doi.org/10.1145/3779212.3790179"
     }
   }
 }

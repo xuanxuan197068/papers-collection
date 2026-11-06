@@ -1,7 +1,7 @@
 [
   {
     "key": "lithosanoperatingsystemforefficientmachinelearningongpus",
-    "id": 13667,
+    "id": 14996,
     "title": "LithOS: An Operating System for Efficient Machine Learning on GPUs",
     "paper": "https://doi.org/10.1145/3731569.3764818",
     "method": "This paper introduces LithOS, a first step towards a GPU OS.LithOS includes the following new abstractions and mechanisms for efficient GPU management: (i) a novel TPC Scheduler that supports spatial scheduling at the granularity of individual TPCs, unlocking efficient TPC stealing between workloads; (ii) a transparent kernel atomizer to…",
@@ -24,7 +24,7 @@
   },
   {
     "key": "μforksupportingposixforkwithinasingleaddressspaceos",
-    "id": 13668,
+    "id": 14997,
     "title": "μFork: Supporting POSIX fork Within a Single-Address-Space OS",
     "paper": "https://doi.org/10.1145/3731569.3764809",
     "method": "We propose μFork, a single-address-space operating system design supporting POSIX fork on modern hardware without compromising on any of these key objectives. μFork emulates POSIX processes (μprocesses) and achieves fork by creating for the child a copy of the parent μprocess' memory at a different location within a single address space.",
@@ -47,7 +47,7 @@
   },
   {
     "key": "tockfromresearchtosecuring10millioncomputers",
-    "id": 13669,
+    "id": 14998,
     "title": "Tock: From Research To Securing 10 Million Computers",
     "paper": "https://doi.org/10.1145/3731569.3764828",
     "method": "This paper focuses on the impact of Tock's technical design on its adoption, the challenges and unexpected benefits of using a type-safe language (Rust)—particularly in security-sensitive settings—and the experience of supporting a production open-source operating system from academia.",
@@ -70,7 +70,7 @@
   },
   {
     "key": "protoaguidedjourneythroughmodernosconstruction",
-    "id": 13670,
+    "id": 14999,
     "title": "Proto: A Guided Journey through Modern OS Construction",
     "paper": "https://doi.org/10.1145/3731569.3764811",
     "method": "Each prototype introduces a minimal set of OS mechanisms, driven by the needs of specific apps.",
@@ -93,7 +93,7 @@
   },
   {
     "key": "cheriotrtosanosforfinegrainedmemorysafecompartmentsonlowcostembeddeddevices",
-    "id": 13671,
+    "id": 15000,
     "title": "CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost Embedded Devices",
     "paper": "https://doi.org/10.1145/3731569.3764844",
     "method": "This fundamental tension leads to the current status-quo where exploitable devices put individuals and critical infrastructure at risk.We present the design of a dependable embedded OS where compartmentalization and memory safety are first-class citizens.",
@@ -116,7 +116,7 @@
   },
   {
     "key": "thedesignandimplementationofavirtualfirmwaremonitor",
-    "id": 13672,
+    "id": 15001,
     "title": "The Design and Implementation of a Virtual Firmware Monitor",
     "paper": "https://doi.org/10.1145/3731569.3764826",
     "method": "In this paper we demonstrate that vendor firmware can be safely and efficiently deprivileged, decoupling its functionality from isolation enforcement.We introduce a new class of systems, called virtual firmware monitors, that run unmodified vendor firmware in userspace through software-based virtualization of the highest privilege mode of…",
@@ -139,7 +139,7 @@
   },
   {
     "key": "oasispoolingpciedevicesovercxltoboostutilization",
-    "id": 13673,
+    "id": 15002,
     "title": "Oasis: Pooling PCIe Devices Over CXL to Boost Utilization",
     "paper": "https://doi.org/10.1145/3731569.3764812",
     "method": "We design Oasis,1 a system that pools PCIe devices in software over CXL memory pools.",
@@ -162,7 +162,7 @@
   },
   {
     "key": "spiritfairallocationofinterdependentresourcesinremotememorysystems",
-    "id": 13674,
+    "id": 15003,
     "title": "Spirit: Fair Allocation of Interdependent Resources in Remote Memory Systems",
     "paper": "https://doi.org/10.1145/3731569.3764805",
     "method": "Such interdependence is unique to each application and hard to capture offline.We propose Spirit, a multi-user framework for fair resource allocation in remote memory systems.",
@@ -185,7 +185,7 @@
   },
   {
     "key": "scalablefarmemorybalancingfaultsandevictions",
-    "id": 13675,
+    "id": 15004,
     "title": "Scalable Far Memory: Balancing Faults and Evictions",
     "paper": "https://doi.org/10.1145/3731569.3764842",
     "method": "As thread count increases, current systems encounter scalability bottlenecks in TLB shootdowns, page accounting, and memory allocation.This paper presents three design principles that address these scalability challenges and enable efficient memory offloading.",
@@ -208,7 +208,7 @@
   },
   {
     "key": "deviceassistedlivemigrationofrdmadevices",
-    "id": 13676,
+    "id": 15005,
     "title": "Device-Assisted Live Migration of RDMA Devices",
     "paper": "https://doi.org/10.1145/3731569.3764795",
     "method": "Recently, we have seen growing pressure to move highperformance workloads, such as HPC and AI, to cloud environments that offer more affordable and manageable infrastructure.",
@@ -231,7 +231,7 @@
   },
   {
     "key": "demeterascalableandelastictieredmemorysolutionforvirtualizedcloudviaguestdelegation",
-    "id": 13677,
+    "id": 15006,
     "title": "Demeter: A Scalable and Elastic Tiered Memory Solution for Virtualized Cloud via Guest Delegation",
     "paper": "https://doi.org/10.1145/3731569.3764801",
     "method": "We present Demeter, introducing a paradigm shift through guest-delegated tiered memory management based on two key insights: (1) delegation to guests eliminates both expensive access tracking at the hypervisor level and frequent TLB flushes that severely degrade memory virtualization performance under two-dimensional address translation,…",
@@ -254,7 +254,7 @@
   },
   {
     "key": "robustllmtraininginfrastructureatbytedance",
-    "id": 13678,
+    "id": 15007,
     "title": "Robust LLM Training Infrastructure at ByteDance",
     "paper": "https://doi.org/10.1145/3731569.3764838",
     "method": "This paper presents ByteRobust, a large-scale GPU infrastructure management system tailored for robust and stable training of LLMs.",
@@ -279,7 +279,7 @@
   },
   {
     "key": "sailorautomatingdistributedtrainingoverdynamicheterogeneousandgeodistributedclusters",
-    "id": 13679,
+    "id": 15008,
     "title": "Sailor: Automating Distributed Training over Dynamic, Heterogeneous, and Geo-distributed Clusters",
     "paper": "https://doi.org/10.1145/3731569.3764839",
     "method": "We present Sailor, a system that automates distributed training over heterogeneous, geo-distributed, and dynamically available resources.",
@@ -302,7 +302,7 @@
   },
   {
     "key": "dcpaddressinginputdynamisminlongcontexttrainingviadynamiccontextparallelism",
-    "id": 13680,
+    "id": 15009,
     "title": "DCP: Addressing Input Dynamism In Long-Context Training via Dynamic Context Parallelism",
     "paper": "https://doi.org/10.1145/3731569.3764849",
     "method": "In this paper, we present DCP, a dynamic context parallel training framework that introduces fine-grained blockwise partitioning of both data and computation.",
@@ -325,7 +325,7 @@
   },
   {
     "key": "trainverifyequivalencebasedverificationfordistributedllmtraining",
-    "id": 13681,
+    "id": 15010,
     "title": "TrainVerify: Equivalence-Based Verification for Distributed LLM Training",
     "paper": "https://doi.org/10.1145/3731569.3764850",
     "method": "These bugs are challenging to expose through testing.We introduce TrainVerify, a system for verifiable distributed training of LLMs to eliminate parallelization bugs.",
@@ -348,7 +348,7 @@
   },
   {
     "key": "mycrofttracingdependenciesincollectivecommunicationtowardsreliablellmtraining",
-    "id": 13682,
+    "id": 15011,
     "title": "Mycroft: Tracing Dependencies in Collective Communication Towards Reliable LLM Training",
     "paper": "https://doi.org/10.1145/3731569.3764848",
     "method": "Unfortunately, today's collective communication libraries operate as black boxes, hiding critical information needed for effective root cause analysis.We propose Mycroft, a lightweight distributed tracing and root cause analysis system designed to address previously hidden reliability issues in collective communication.",
@@ -371,7 +371,7 @@
   },
   {
     "key": "mitigatingapplicationresourceoverloadwithtargetedtaskcancellation",
-    "id": 13683,
+    "id": 15012,
     "title": "Mitigating Application Resource Overload with Targeted Task Cancellation",
     "paper": "https://doi.org/10.1145/3731569.3764835",
     "method": "Traditional overload control mechanisms, which rely on global signals, such as queuing delays, fail to handle application resource overload effectively because they cannot accurately predict which requests will monopolize critical resources.In this paper, we propose Atropos, an overload control framework that proactively cancels the culpr…",
@@ -394,7 +394,7 @@
   },
   {
     "key": "orthrusefficientandtimelydetectionofsilentuserdatacorruptioninthecloudwithresourceadaptivecomputationvalidation",
-    "id": 13684,
+    "id": 15013,
     "title": "Orthrus: Efficient and Timely Detection of Silent User Data Corruption in the Cloud with Resource-Adaptive Computation Validation",
     "paper": "https://doi.org/10.1145/3731569.3764832",
     "method": "This paper introduces Orthrus, a solution for the timely detection of silent user data corruption caused by post-installation CPU errors.",
@@ -417,7 +417,7 @@
   },
   {
     "key": "optimisticrecoveryforhighavailabilitysoftwareviapartialprocessstatepreservation",
-    "id": 13685,
+    "id": 15014,
     "title": "Optimistic Recovery for High-Availability Software via Partial Process State Preservation",
     "paper": "https://doi.org/10.1145/3731569.3764858",
     "method": "Existing techniques either guarantee correctness by discarding all state but suffer from long downtime, or preserve all state to recover quickly but reintroduce the fault.We present Phoenix, a framework that enables a new design point of optimistic custom recovery for high-availability software through partial process state preservation.",
@@ -440,7 +440,7 @@
   },
   {
     "key": "copterefficientlargescaleresourceallocationviacontinualoptimization",
-    "id": 13686,
+    "id": 15015,
     "title": "COpter: Efficient Large-Scale Resource-Allocation via Continual Optimization",
     "paper": "https://doi.org/10.1145/3731569.3764846",
     "method": "This paper introduces continual optimization, which reframes round-based resource allocation as a sequence of interconnected problems, leveraging the observation that these resource allocation problems often only change by small amounts across successive rounds to reduce solving times.",
@@ -463,7 +463,7 @@
   },
   {
     "key": "fastendtoendperformancesimulationofacceleratedhardwaresoftwarestacks",
-    "id": 13687,
+    "id": 15016,
     "title": "Fast End-to-End Performance Simulation of Accelerated Hardware-Software Stacks",
     "paper": "https://doi.org/10.1145/3731569.3764825",
     "method": "As a result, development of accelerated stacks is non-interactive, and this hurts productivity.We propose a way to simulate end-to-end performance that is orders-of-magnitude faster yet still accurate.",
@@ -486,7 +486,7 @@
   },
   {
     "key": "characterizingmobilesocforacceleratingheterogeneousllminference",
-    "id": 13688,
+    "id": 15017,
     "title": "Characterizing Mobile SoC for Accelerating Heterogeneous LLM Inference",
     "paper": "https://doi.org/10.1145/3731569.3764808",
     "method": "Drawing on these observations, we propose different heterogeneous parallel mechanisms to fully exploit both GPU and NPU computational power and memory bandwidth.",
@@ -511,7 +511,7 @@
   },
   {
     "key": "iccacheefficientlargelanguagemodelservingviaincontextcaching",
-    "id": 13689,
+    "id": 15018,
     "title": "IC-Cache: Efficient Large Language Model Serving via In-context Caching",
     "paper": "https://doi.org/10.1145/3731569.3764829",
     "method": "However, naively caching and reusing past responses leads to a big quality drop.In this paper, we introduce IC-Cache, a caching system that enables live LLM capability augmentation to improve serving efficiency: by leveraging historical request-response pairs from larger models as in-context examples, IC-Cache empowers small LLMs to imita…",
@@ -534,7 +534,7 @@
   },
   {
     "key": "prefillonlyaninferenceengineforprefillonlyworkloadsinlargelanguagemodelapplications",
-    "id": 13690,
+    "id": 15019,
     "title": "PrefillOnly: An Inference Engine for Prefill-only Workloads in Large Language Model Applications",
     "paper": "https://doi.org/10.1145/3731569.3764834",
     "method": "In this paper, we present PrefillOnly, the first LLM inference engine that improves the inference throughput and latency by fully embracing the properties of prefill-only workloads.",
@@ -557,7 +557,7 @@
   },
   {
     "key": "pieaprogrammableservingsystemforemergingllmapplications",
-    "id": 13691,
+    "id": 15020,
     "title": "Pie: A Programmable Serving System for Emerging LLM Applications",
     "paper": "https://doi.org/10.1145/3731569.3764814",
     "method": "This paper introduces Pie, a programmable LLM serving system designed for flexibility and efficiency.",
@@ -580,7 +580,7 @@
   },
   {
     "key": "diffkvdifferentiatedmemorymanagementforlargelanguagemodelswithparallelkvcompaction",
-    "id": 13692,
+    "id": 15021,
     "title": "DiffKV: Differentiated Memory Management for Large Language Models with Parallel KV Compaction",
     "paper": "https://doi.org/10.1145/3731569.3764810",
     "method": "To address such limitations, we introduce DiffKV, a novel framework for efficient KV cache compression that exploits three levels of differentiation in the KV cache: (1) the differing impact of keys and values on attention computation, (2) the varying importance of tokens, and (3) the diverse dynamic sparsity patterns across attention hea…",
@@ -605,7 +605,7 @@
   },
   {
     "key": "jengaeffectivememorymanagementforservingllmwithheterogeneity",
-    "id": 13693,
+    "id": 15022,
     "title": "Jenga: Effective Memory Management for Serving LLM with Heterogeneity",
     "paper": "https://doi.org/10.1145/3731569.3764823",
     "method": "Existing approaches, such as PagedAttention, struggle with modern LLMs because of the growing heterogeneity in the sizes of models' internal embeddings and attention mechanisms.In this paper, we present Jenga, a memory allocation framework for these heterogeneous LLMs.",
@@ -628,7 +628,7 @@
   },
   {
     "key": "cacheextcustomizingthepagecachewithebpf",
-    "id": 13694,
+    "id": 15023,
     "title": "cache_ext: Customizing the Page Cache with eBPF",
     "paper": "https://doi.org/10.1145/3731569.3764820",
     "method": "To address these shortcomings, we design a flexible eBPF-based framework for the Linux page cache, called cache_ext, that allows developers to customize the page cache without modifying the kernel. cache_ext enables applications to customize the page cache policy for their specific needs, while also ensuring that different applications' p…",
@@ -651,7 +651,7 @@
   },
   {
     "key": "aeoliaafastandsecureuserspaceinterruptbasedstoragestack",
-    "id": 13695,
+    "id": 15024,
     "title": "Aeolia: A Fast and Secure Userspace Interrupt-Based Storage Stack",
     "paper": "https://doi.org/10.1145/3731569.3764816",
     "method": "In contrast, interrupt-based kernel stacks inherently suffer from subpar I/O performance but achieve advantages in resource sharing.We present Aeolia, a novel storage stack that achieves great I/O performance while offering efficient and secure resource sharing.",
@@ -676,7 +676,7 @@
   },
   {
     "key": "sleepingwithoneeyeopenfastsustainablestoragewithsandman",
-    "id": 13696,
+    "id": 15025,
     "title": "Sleeping with One Eye Open: Fast, Sustainable Storage with Sandman",
     "paper": "https://doi.org/10.1145/3731569.3764804",
     "method": "Guided by the lessons learned, we propose Sandman, a scheduling framework that combines the fast resource scaling mechanism, resource monitoring, and I/O burst detection policies.",
@@ -699,7 +699,7 @@
   },
   {
     "key": "loomefficientcaptureandqueryingofhighfrequencytelemetry",
-    "id": 13697,
+    "id": 15026,
     "title": "Loom: Efficient Capture and Querying of High-Frequency Telemetry",
     "paper": "https://doi.org/10.1145/3731569.3764853",
     "method": "Key to Loom's design is that it combines the high ingest capability of log-based storage with lightweight, sparse, and domain-specific indexes that accelerate queries.",
@@ -722,7 +722,7 @@
   },
   {
     "key": "pestocookinguphighperformancebftqueries",
-    "id": 13698,
+    "id": 15027,
     "title": "Pesto: Cooking up High Performance BFT Queries",
     "paper": "https://doi.org/10.1145/3731569.3764799",
     "method": "This paper presents Pesto, a high-performance Byzantine Fault Tolerant (BFT) database that offers full SQL compatibility.",
@@ -745,7 +745,7 @@
   },
   {
     "key": "tigaacceleratinggeodistributedtransactionswithsynchronizedclocks",
-    "id": 13699,
+    "id": 15028,
     "title": "Tiga: Accelerating Geo-Distributed Transactions with Synchronized Clocks",
     "paper": "https://doi.org/10.1145/3731569.3764854",
     "method": "This paper presents Tiga, a new design for geo-replicated and scalable transactional databases such as Google Spanner.",
@@ -768,7 +768,7 @@
   },
   {
     "key": "tempocompileddynamicdeeplearningwithsymbolicdependencegraphs",
-    "id": 13700,
+    "id": 15029,
     "title": "Tempo: Compiled Dynamic Deep Learning with Symbolic Dependence Graphs",
     "paper": "https://doi.org/10.1145/3731569.3764840",
     "method": "Based on this, Tempo constructs a symbolic dependence graph, which concisely encodes dynamic dependencies between operators, and applies whole-program optimizations, such as algebraic simplifications, vectorization, tiling, and fusion.",
@@ -793,7 +793,7 @@
   },
   {
     "key": "sandanewprogrammingabstractionforvideobaseddeeplearning",
-    "id": 13701,
+    "id": 15030,
     "title": "SAND: A New Programming Abstraction for Video-based Deep Learning",
     "paper": "https://doi.org/10.1145/3731569.3764847",
     "method": "Existing solutions partially mitigate these issues but remain inefficient and resource-constrained.We present SAND, a framework for VDL that integrates system-level optimizations to simplify the preprocessing pipeline and maximize resource efficiency.",
@@ -816,7 +816,7 @@
   },
   {
     "key": "metisfastqualityawareragsystemswithconfigurationadaptation",
-    "id": 13702,
+    "id": 15031,
     "title": "METIS: Fast Quality-Aware RAG Systems with Configuration Adaptation",
     "paper": "https://doi.org/10.1145/3731569.3764855",
     "method": "To balance both quality and response delay, this paper presents METIS, the first RAG system that jointly schedules queries and adapts the key RAG configurations of each query, such as the number of retrieved text chunks and synthesis methods.",
@@ -839,7 +839,7 @@
   },
   {
     "key": "hedraragcooptimizinggenerationandretrievalforheterogeneousragworkflows",
-    "id": 13703,
+    "id": 15032,
     "title": "HedraRAG: Co-Optimizing Generation and Retrieval for Heterogeneous RAG Workflows",
     "paper": "https://doi.org/10.1145/3731569.3764806",
     "method": "We present HedraRAG, a new system built on RAGraph, a graph-based abstraction that exposes optimization opportunities across stage-level parallelism, intra-request similarity, and inter-request skewness.",
@@ -862,7 +862,7 @@
   },
   {
     "key": "coyotev2raisingthelevelofabstractionfordatacenterfpgas",
-    "id": 13704,
+    "id": 15033,
     "title": "Coyote v2: Raising the Level of Abstraction for Data Center FPGAs",
     "paper": "https://doi.org/10.1145/3731569.3764845",
     "method": "In this paper, we present Coyote v2, an open-source FPGA shell built with a novel, three-layer hierarchical design supporting dynamic partial reconfiguration of services and user logic, with a unified logic interface, and high-level software abstractions which facilitate application deployment, multi-tenancy and transparent workload pipel…",
@@ -885,7 +885,7 @@
   },
   {
     "key": "knightertransformingstaticanalysiswithllmsynthesizedcheckers",
-    "id": 13705,
+    "id": 15034,
     "title": "KNighter: Transforming Static Analysis with LLM-Synthesized Checkers",
     "paper": "https://doi.org/10.1145/3731569.3764827",
     "method": "While large language models (LLMs) have shown promise for static analysis, directly applying them to scan large systems remains impractical due to computational constraints and contextual limitations.We present KNighter, the first approach that unlocks scalable LLM-based static analysis by automatically synthesizing static analyzers from…",
@@ -908,7 +908,7 @@
   },
   {
     "key": "fawkesfindingdatadurabilitybugsindbmssviarecovereddatastateverification",
-    "id": 13706,
+    "id": 15035,
     "title": "Fawkes: Finding Data Durability Bugs in DBMSs via Recovered Data State Verification",
     "paper": "https://doi.org/10.1145/3731569.3764841",
     "method": "Furthermore, existing testing methods(e.g., Mallory) are often inadequate for detecting DDBs, particularly those that cause data loss or data inconsistency following DBMS failures.This paper presents a comprehensive study of 43 DDBs across four widely used DBMSs.",
@@ -931,7 +931,7 @@
   },
   {
     "key": "ghostintheandroidshellpragmatictestoraclespecificationofaproductionhypervisor",
-    "id": 13707,
+    "id": 15036,
     "title": "Ghost in the Android Shell: Pragmatic Test-oracle Specification of a Production Hypervisor",
     "paper": "https://doi.org/10.1145/3731569.3764817",
     "method": "Developing systems code that robustly provides its intended security guarantees remains very challenging: conventional practice does not suffice, and full functional verification, while now feasible in some contexts, has substantial barriers to entry and use.In this paper, we explore an alternative, more lightweight approach to building c…",
@@ -954,7 +954,7 @@
   },
   {
     "key": "ebpfmisbehaviordetectionfuzzingwithaspecificationbasedoracle",
-    "id": 13708,
+    "id": 15037,
     "title": "eBPF Misbehavior Detection: Fuzzing with a Specification-Based Oracle",
     "paper": "https://doi.org/10.1145/3731569.3764797",
     "method": "While prior works on fuzzing the eBPF verifier have been effective, their bug oracles only hint at the existence of bugs indirectly (e.g., when a memory error occurs in downstream execution) instead of showing the root cause, confining them to uncover a narrow range of security bugs only with no detection of usability issues.In this paper…",
@@ -979,7 +979,7 @@
   },
   {
     "key": "wasitdeepandcontinuousdifferentialtestingofwebassemblysysteminterfaceimplementations",
-    "id": 13709,
+    "id": 15038,
     "title": "WASIT: Deep and Continuous Differential Testing of WebAssembly System Interface Implementations",
     "paper": "https://doi.org/10.1145/3731569.3764819",
     "method": "This paper presents WASIT, a powerful specification-driven differential testing framework for WebAssembly (Wasm) system interface (WASI) implementations.",
@@ -1002,7 +1002,7 @@
   },
   {
     "key": "proveittothekernelpreciseextensionanalysisviaproofguidedabstractionrefinement",
-    "id": 13710,
+    "id": 15039,
     "title": "Prove It to the Kernel: Precise Extension Analysis via Proof-Guided Abstraction Refinement",
     "paper": "https://doi.org/10.1145/3731569.3764796",
     "method": "To ensure safety, an in-kernel verifier statically analyzes these extensions; however, its imprecise analysis frequently results in the erroneous rejection of safe extensions, exposing a critical tension between the precision and computational complexity of the verifier that limits kernel extensibility.We propose a proof-guided abstractio…",
@@ -1025,7 +1025,7 @@
   },
   {
     "key": "atmospherepracticalverifiedkernelswithrustandverus",
-    "id": 13711,
+    "id": 15040,
     "title": "Atmosphere: Practical Verified Kernels with Rust and Verus",
     "paper": "https://doi.org/10.1145/3731569.3764821",
     "method": "We develop all code in Rust and prove its functional correctness, i.e., refinement of a high-level specification, with Verus.",
@@ -1048,7 +1048,7 @@
   },
   {
     "key": "automanfacilitatingverifieddistributedsystemsdevelopmentthroughautomaticcodegenerationandmanualoptimizations",
-    "id": 13712,
+    "id": 15041,
     "title": "AutoMan: Facilitating Verified Distributed Systems Development Through Automatic Code Generation and Manual Optimizations",
     "paper": "https://doi.org/10.1145/3731569.3764822",
     "method": "In this paper, we design, develop, and evaluate the AutoMan workflow, which makes developing distributed systems with refinement-based formal verification techniques more accessible and practical for both experts and developers.",
@@ -1071,7 +1071,7 @@
   },
   {
     "key": "ticktockverifiedisolationinaproductionembeddedos",
-    "id": 13713,
+    "id": 15042,
     "title": "TickTock: Verified Isolation in a Production Embedded OS",
     "paper": "https://doi.org/10.1145/3731569.3764856",
     "method": "We present a case study formally verifying process isolation in the Tock production microcontroller OS kernel.",
@@ -1094,7 +1094,7 @@
   },
   {
     "key": "orqcomplexanalyticsonprivatedatawithstrongsecurityguarantees",
-    "id": 13714,
+    "id": 15043,
     "title": "ORQ: Complex Analytics on Private Data with Strong Security Guarantees",
     "paper": "https://doi.org/10.1145/3731569.3764833",
     "method": "We present Orq, a system that enables collaborative analysis of large private datasets using cryptographically secure multi-party computation (MPC).",
@@ -1117,7 +1117,7 @@
   },
   {
     "key": "tripcoercionresistantregistrationforevotingwithverifiabilityandusabilityinvotegral",
-    "id": 13715,
+    "id": 15044,
     "title": "TRIP: Coercion-resistant Registration for E-Voting with Verifiability and Usability in Votegral",
     "paper": "https://doi.org/10.1145/3731569.3764837",
     "method": "Online voting is convenient and flexible, but amplifies the risks of voter coercion and vote buying.",
@@ -1140,7 +1140,7 @@
   },
   {
     "key": "moiraioptimizingplacementofdataandcomputeinhybridclouds",
-    "id": 13716,
+    "id": 15045,
     "title": "Moirai: Optimizing Placement of Data and Compute in Hybrid Clouds",
     "paper": "https://doi.org/10.1145/3731569.3764802",
     "method": "We present Moirai, a cost-optimization framework that analyzes job accesses and data dependencies and optimizes the placement of both in hybrid clouds.",
@@ -1165,7 +1165,7 @@
   },
   {
     "key": "taichiageneralhighefficiencyschedulingframeworkforsmartnicsinhyperscaleclouds",
-    "id": 13717,
+    "id": 15046,
     "title": "Tai Chi: A General High-Efficiency Scheduling Framework for SmartNICs in Hyperscale Clouds",
     "paper": "https://doi.org/10.1145/3731569.3764851",
     "method": "Unfortunately, achieving control-plane SLO improvements through co-scheduling with idle data-plane services remains highly challenging, due to the combined effects of intrinsic scheduling latency and the substantial architectural complexity inherent to control-plane ecosystems.We present Tai Chi, a hardware and software co-designed schedu…",
@@ -1188,7 +1188,7 @@
   },
   {
     "key": "quiltresourceawaremergingofserverlessworkflows",
-    "id": 13718,
+    "id": 15047,
     "title": "Quilt: Resource-aware Merging of Serverless Workflows",
     "paper": "https://doi.org/10.1145/3731569.3764830",
     "method": "Quilt is compatible with existing platforms without modification (Fission, OpenWhisk, and OpenFaaS), can merge functions in different languages (C, C++, Swift, Go, Rust) by acting at the level of LLVM IR, and requires no input or help from developers.",
@@ -1211,7 +1211,7 @@
   },
   {
     "key": "mantleefficienthierarchicalmetadatamanagementforcloudobjectstorageservices",
-    "id": 13719,
+    "id": 15048,
     "title": "Mantle: Efficient Hierarchical Metadata Management for Cloud Object Storage Services",
     "paper": "https://doi.org/10.1145/3731569.3764824",
     "method": "Prior optimizations, largely designed for distributed file systems (with least adoption in clouds), do not apply due to COSS-specific constraints like stateless proxies and limited APIs.Mantle is a new COSS metadata service for modern cloud workloads.",
@@ -1234,7 +1234,7 @@
   },
   {
     "key": "unlockingtrueelasticityforthecloudnativeerawithdandelion",
-    "id": 13720,
+    "id": 15049,
     "title": "Unlocking True Elasticity for the Cloud-Native Era with Dandelion",
     "paper": "https://doi.org/10.1145/3731569.3764803",
     "method": "We propose Dandelion, an elastic cloud platform with a declarative cloud-native programming model that replaces POSIX-based network interfaces with higher-level (e.g., HTTP-based) interfaces for applications to interact with remote services like cloud storage, databases, and AI inference services.",
@@ -1257,7 +1257,7 @@
   },
   {
     "key": "runningconsistentapplicationsclosertouserswithradicalforlowerlatency",
-    "id": 13721,
+    "id": 15050,
     "title": "Running Consistent Applications Closer to Users with Radical for Lower Latency",
     "paper": "https://doi.org/10.1145/3731569.3764831",
     "method": "Running applications close to users—in nearby datacenters, at edge points of presence, or in on-premises clusters—is attractive, as it reduces end-to-end latency.",
@@ -1280,7 +1280,7 @@
   },
   {
     "key": "managingscalabledirectstorageaccessesforgpuswithgofs",
-    "id": 13722,
+    "id": 15051,
     "title": "Managing Scalable Direct Storage Accesses for GPUs with GoFS",
     "paper": "https://doi.org/10.1145/3731569.3764857",
     "method": "However, current GPUDirect Storage solutions still rely on the host file system to manage the storage device, direct storage accesses are still bottlenecked by the host.In this paper, we develop a GPU-orchestrated file system (GoFS) for scaling the direct storage accesses for GPU programs, by fully offloading the storage management to the…",
@@ -1303,7 +1303,7 @@
   },
   {
     "key": "phoenixosconcurrentoslevelgpucheckpointandrestorewithvalidatedspeculation",
-    "id": 13723,
+    "id": 15052,
     "title": "PhoenixOS: Concurrent OS-level GPU Checkpoint and Restore with Validated Speculation",
     "paper": "https://doi.org/10.1145/3731569.3764813",
     "method": "PhOS further proposes several GPU-aware techniques for efficient GPU C/R, including coordinated checkpoint data transfer and execution context pool.",
@@ -1326,7 +1326,7 @@
   },
   {
     "key": "ktransformersunleashingthefullpotentialofcpugpuhybridinferenceformoemodels",
-    "id": 13724,
+    "id": 15053,
     "title": "KTransformers: Unleashing the Full Potential of CPU/GPU Hybrid Inference for MoE Models",
     "paper": "https://doi.org/10.1145/3731569.3764843",
     "method": "However, existing hybrid solutions remain bottlenecked by CPU computation limits and CPU-GPU synchronization overheads, severely restricting their ability to efficiently run state-of-the-art large MoE models, such as the 671B DeepSeek-V3/R1.This paper presents KTransformers, a high-performance inference system designed specifically for ef…",
@@ -1349,7 +1349,7 @@
   },
   {
     "key": "aegaeoneffectivegpupoolingforconcurrentllmservingonthemarket",
-    "id": 13725,
+    "id": 15054,
     "title": "Aegaeon: Effective GPU Pooling for Concurrent LLM Serving on the Market",
     "paper": "https://doi.org/10.1145/3731569.3764815",
     "method": "While existing multi-model serving solutions use GPU pooling and server-less computing to improve resource efficiency, their effective-ness is limited to supporting at most two or three models per GPU, which is inadequate for fully utilizing GPU resources.We propose Aegaeon, a multi-model serving system that performs model auto-scaling at…",
@@ -1372,7 +1372,7 @@
   },
   {
     "key": "mercuryunlockingmultigpuoperatoroptimizationforllmsviaremotememoryscheduling",
-    "id": 13726,
+    "id": 15055,
     "title": "Mercury: Unlocking Multi-GPU Operator Optimization for LLMs via Remote Memory Scheduling",
     "paper": "https://doi.org/10.1145/3731569.3764798",
     "method": "In this paper, we propose Mercury, a multi-GPU operator compiler based on a loop-based intermediate representation, CommIR.",
@@ -1395,7 +1395,7 @@
   },
   {
     "key": "howtocopymemorycoordinatedasynchronouscopyasafirstclassosservice",
-    "id": 13727,
+    "id": 15056,
     "title": "How to Copy Memory? Coordinated Asynchronous Copy as a First-Class OS Service",
     "paper": "https://doi.org/10.1145/3731569.3764800",
     "method": "This paper argues for copy as a first-class OS service, offering three key benefits: (1) with the asynchronous copy abstraction provided by the service, applications can overlap their execution with copy; (2) the service can effectively utilize hardware capabilities to enhance copy performance; (3) the service's global view of copies furt…",
@@ -1418,7 +1418,7 @@
   },
   {
     "key": "cortenmmefficientmemorymanagementwithstrongcorrectnessguarantees",
-    "id": 13728,
+    "id": 15057,
     "title": "CortenMM: Efficient Memory Management with Strong Correctness Guarantees",
     "paper": "https://doi.org/10.1145/3731569.3764836",
     "method": "We observe that both issues stem from the conventional design of memory management systems with two levels of abstraction: a software-level abstraction (e.g., VMA trees in Linux) and a hardware-level abstraction (typically, page tables).",
@@ -1443,7 +1443,7 @@
   },
   {
     "key": "rearchitectingthethreadmodelofinmemorykeyvaluestoreswithμtps",
-    "id": 13729,
+    "id": 15058,
     "title": "Rearchitecting the Thread Model of In-Memory Key-Value Stores with μTPS",
     "paper": "https://doi.org/10.1145/3731569.3764794",
     "method": "This paper presents μTPS, a new thread architecture tailored for in-memory key-value stores (KVSs) that operate at tens of millions of operations per second.",
@@ -1466,7 +1466,7 @@
   },
   {
     "key": "flexguardfastmutualexclusionindependentofsubscription",
-    "id": 13730,
+    "id": 15059,
     "title": "FlexGuard: Fast Mutual Exclusion Independent of Subscription",
     "paper": "https://doi.org/10.1145/3731569.3764852",
     "method": "We present FlexGuard, the first approach that systematically switches from busy-waiting to blocking precisely when a lock-holding thread is preempted.",
@@ -1489,7 +1489,7 @@
   },
   {
     "key": "scalableaddressspacesusingconcurrentintervalskiplist",
-    "id": 13731,
+    "id": 15060,
     "title": "Scalable Address Spaces using Concurrent Interval Skiplist",
     "paper": "https://doi.org/10.1145/3731569.3764807",
     "method": "While prior works have attempted to address this issue, they either fail to sufficiently parallelize operations or are impractical for real-world kernels.We present the first scalable and practical address space design that parallelizes critical operations.",
@@ -1512,7 +1512,7 @@
   },
   {
     "key": "analyzingandenhancingarckfsananecdotalexampleofbenefitsofartifactevaluation",
-    "id": 13732,
+    "id": 15061,
     "title": "Analyzing and Enhancing ArckFS: An Anecdotal Example of Benefits of Artifact Evaluation",
     "paper": "https://doi.org/10.1145/3731569.3768291",
     "method": "Their analysis identifies (1) insufficient clarity in the paper on the handling of multi-inode operations, and (2) several implementation bugs in ArckFS that cause occasional operation failures or potential crash inconsistencies during inode creation.Through close collaboration between the KAIST and Trio authors, we have enhanced the Trio…",

@@ -1,6 +1,6 @@
 [
   {
-    "id": 15387,
+    "id": 16580,
     "year": 2017,
     "title": "Determining Application-specific Peak Power and Energy Requirements for Ultra-low Power Processors",
     "category": "system",
@@ -10,7 +10,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15388,
+    "id": 16581,
     "year": 2017,
     "title": "Prophet: Precise QoS Prediction on Non-Preemptive Accelerators to Improve Utilization in Warehouse-Scale Computers",
     "category": "system",
@@ -20,7 +20,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15389,
+    "id": 16582,
     "year": 2017,
     "title": "Mallacc: Accelerating Memory Allocation",
     "category": "system",
@@ -30,7 +30,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15390,
+    "id": 16583,
     "year": 2017,
     "title": "REDSPY: Exploring Value Locality in Software",
     "category": "system",
@@ -40,7 +40,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15391,
+    "id": 16584,
     "year": 2017,
     "title": "Translation-Triggered Prefetching",
     "category": "system",
@@ -50,7 +50,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15392,
+    "id": 16585,
     "year": 2017,
     "title": "Typed Architectures: Architectural Support for Lightweight Scripting",
     "category": "system",
@@ -60,7 +60,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15393,
+    "id": 16586,
     "year": 2017,
     "title": "Failure-Atomic Slotted Paging for Persistent Memory",
     "category": "system",
@@ -70,7 +70,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15394,
+    "id": 16587,
     "year": 2017,
     "title": "What Scalable Programs Need from Transactional Memory",
     "category": "system",
@@ -80,7 +80,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15395,
+    "id": 16588,
     "year": 2017,
     "title": "TriCheck: Memory Model Verification at the Trisection of Software, Hardware, and ISA",
     "category": "system",
@@ -90,7 +90,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15396,
+    "id": 16589,
     "year": 2017,
     "title": "An Analysis of Persistent Memory Use with WHISPER",
     "category": "system",
@@ -100,7 +100,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15397,
+    "id": 16590,
     "year": 2017,
     "title": "ProRace: Practical Data Race Detection for Production Use",
     "category": "system",
@@ -110,7 +110,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15398,
+    "id": 16591,
     "year": 2017,
     "title": "Crossing Guard: Mediating Host-Accelerator Coherence Interactions",
     "category": "system",
@@ -120,7 +120,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15399,
+    "id": 16592,
     "year": 2017,
     "title": "An Architecture Supporting Formal and Compositional Binary Analysis",
     "category": "system",
@@ -130,7 +130,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15400,
+    "id": 16593,
     "year": 2017,
     "title": "AsyncClock: Scalable Inference of Asynchronous Event Causality",
     "category": "system",
@@ -140,7 +140,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15401,
+    "id": 16594,
     "year": 2017,
     "title": "Black-box Concurrent Data Structures for NUMA Architectures",
     "category": "system",
@@ -150,7 +150,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15402,
+    "id": 16595,
     "year": 2017,
     "title": "CoRAL: Confined Recovery in Distributed Asynchronous Graph Processing",
     "category": "system",
@@ -160,7 +160,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15403,
+    "id": 16596,
     "year": 2017,
     "title": "KickStarter: Fast and Accurate Computations on Streaming Graphs via Trimmed Approximations",
     "category": "system",
@@ -170,7 +170,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15404,
+    "id": 16597,
     "year": 2017,
     "title": "Browsix: Bridging the Gap Between Unix and the Browser",
     "category": "system",
@@ -180,7 +180,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15405,
+    "id": 16598,
     "year": 2017,
     "title": "Optimizing CNNs on Multicores for Scalability, Performance and Goodput",
     "category": "system",
@@ -190,7 +190,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15406,
+    "id": 16599,
     "year": 2017,
     "title": "Locality Transformations for Nested Recursive Iteration Spaces",
     "category": "system",
@@ -200,7 +200,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15407,
+    "id": 16600,
     "year": 2017,
     "title": "Locality-Aware CTA Clustering for Modern GPUs",
     "category": "system",
@@ -210,7 +210,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15408,
+    "id": 16601,
     "year": 2017,
     "title": "Sound Loop Superoptimization for Google Native Client",
     "category": "system",
@@ -220,7 +220,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15409,
+    "id": 16602,
     "year": 2017,
     "title": "Improving Datacenter Efficiency",
     "category": "system",
@@ -230,7 +230,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15410,
+    "id": 16603,
     "year": 2017,
     "title": "DudeTM: Building Durable Transactions with Decoupling for Persistent Memory",
     "category": "system",
@@ -240,7 +240,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15411,
+    "id": 16604,
     "year": 2017,
     "title": "ReFlex: Remote Flash ≈ Local Flash",
     "category": "system",
@@ -250,7 +250,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15412,
+    "id": 16605,
     "year": 2017,
     "title": "Approximate Storage of Compressed and Encrypted Videos",
     "category": "system",
@@ -260,7 +260,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15413,
+    "id": 16606,
     "year": 2017,
     "title": "Exploiting Intra-Request Slack to Improve SSD Performance",
     "category": "system",
@@ -270,7 +270,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15414,
+    "id": 16607,
     "year": 2017,
     "title": "Graspan: A Single-machine Disk-based Graph System for Interprocedural Static Analyses of Large-scale Systems Code",
     "category": "system",
@@ -280,7 +280,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15415,
+    "id": 16608,
     "year": 2017,
     "title": "SC-DCNN: Highly-Scalable Deep Convolutional Neural Network using Stochastic Computing",
     "category": "system",
@@ -290,7 +290,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15416,
+    "id": 16609,
     "year": 2017,
     "title": "3DGates: An Instruction-Level Energy Analysis and Optimization of 3D Printers",
     "category": "system",
@@ -300,7 +300,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15417,
+    "id": 16610,
     "year": 2017,
     "title": "Efficient Address Translation for Architectures with Multiple Page Sizes",
     "category": "system",
@@ -310,7 +310,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15418,
+    "id": 16611,
     "year": 2017,
     "title": "Page Fault Support for Network Controllers",
     "category": "system",
@@ -320,7 +320,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15419,
+    "id": 16612,
     "year": 2017,
     "title": "Towards \"Full Containerization\" in Containerized Network Function Virtualization",
     "category": "system",
@@ -330,7 +330,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15420,
+    "id": 16613,
     "year": 2017,
     "title": "FLEP: Enabling Flexible and Efficient Preemption on GPUs",
     "category": "system",
@@ -340,7 +340,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15421,
+    "id": 16614,
     "year": 2017,
     "title": "SaberLDA: Sparsity-Aware Learning of Topic Models on GPUs",
     "category": "system",
@@ -350,7 +350,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15422,
+    "id": 16615,
     "year": 2017,
     "title": "Moonwalk: NRE Optimization in ASIC Clouds",
     "category": "system",
@@ -360,7 +360,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15423,
+    "id": 16616,
     "year": 2017,
     "title": "Dynamic Resource Management for Efficient Utilization of Multitasking GPUs",
     "category": "system",
@@ -370,7 +370,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15424,
+    "id": 16617,
     "year": 2017,
     "title": "Identifying Security Critical Properties for the Dynamic Verification of a Processor",
     "category": "system",
@@ -380,7 +380,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15425,
+    "id": 16618,
     "year": 2017,
     "title": "Verification of a Practical Hardware Security Architecture Through Static Information Flow Analysis",
     "category": "system",
@@ -390,7 +390,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15426,
+    "id": 16619,
     "year": 2017,
     "title": "CHERI JNI: Sinking the Java Security Model into the C",
     "category": "system",
@@ -400,7 +400,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15427,
+    "id": 16620,
     "year": 2017,
     "title": "GRIFFIN: Guarding Control Flows Using Intel Processor Trace",
     "category": "system",
@@ -410,7 +410,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15428,
+    "id": 16621,
     "year": 2017,
     "title": "Bolt: I Know What You Did Last Summer... In The Cloud",
     "category": "system",
@@ -420,7 +420,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15429,
+    "id": 16622,
     "year": 2017,
     "title": "Neurosurgeon: Collaborative Intelligence Between the Cloud and Mobile Edge",
     "category": "system",
@@ -430,7 +430,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15430,
+    "id": 16623,
     "year": 2017,
     "title": "Thermostat: Application-transparent Page Management for Two-tiered Main Memory",
     "category": "system",
@@ -440,7 +440,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15431,
+    "id": 16624,
     "year": 2017,
     "title": "Breaking the Boundaries in Heterogeneous-ISA Datacenters",
     "category": "system",
@@ -450,7 +450,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15432,
+    "id": 16625,
     "year": 2017,
     "title": "Automated Synthesis of Comprehensive Memory Model Litmus Test Suites",
     "category": "system",
@@ -460,7 +460,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15433,
+    "id": 16626,
     "year": 2017,
     "title": "DCatch: Automatically Detecting Distributed Concurrency Bugs in Cloud Systems",
     "category": "system",
@@ -470,7 +470,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15434,
+    "id": 16627,
     "year": 2017,
     "title": "Towards Practical Default-On Multi-Core Record/Replay",
     "category": "system",
@@ -480,7 +480,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15435,
+    "id": 16628,
     "year": 2017,
     "title": "Pallas: Semantic-Aware Checking for Finding Deep Bugs in Fast Path",
     "category": "system",
@@ -490,7 +490,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15436,
+    "id": 16629,
     "year": 2017,
     "title": "Hardware-Software Co-design to Mitigate DRAM Refresh Overheads: A Case for Refresh-Aware Process Scheduling",
     "category": "system",
@@ -500,7 +500,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15437,
+    "id": 16630,
     "year": 2017,
     "title": "Kill the Program Counter: Reconstructing Program Behavior in the Processor Cache Hierarchy",
     "category": "system",
@@ -510,7 +510,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15438,
+    "id": 16631,
     "year": 2017,
     "title": "TETRIS: Scalable and Efficient Neural Network Acceleration with 3D Memory",
     "category": "system",
@@ -520,7 +520,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15439,
+    "id": 16632,
     "year": 2017,
     "title": "History-Based Arbitration for Fairness in Processor-Interconnect of NUMA Servers",
     "category": "system",
@@ -530,7 +530,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15440,
+    "id": 16633,
     "year": 2017,
     "title": "Enabling Lightweight Transactions with Precision Time",
     "category": "system",
@@ -540,7 +540,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15441,
+    "id": 16634,
     "year": 2017,
     "title": "IncBricks: Toward In-Network Computation with an In-Network Cache",
     "category": "system",
@@ -550,7 +550,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15442,
+    "id": 16635,
     "year": 2017,
     "title": "AMNESIAC: Amnesic Automatic Computer",
     "category": "system",
@@ -560,7 +560,7 @@
     "status": "notchecked"
   },
   {
-    "id": 15443,
+    "id": 16636,
     "year": 2017,
     "title": "Voltage Regulator Efficiency Aware Power Management",
     "category": "system",

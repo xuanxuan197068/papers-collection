@@ -1,0 +1,422 @@
+[
+  {
+    "id": 17867,
+    "year": 2014,
+    "title": "Arrakis: the operating system is the control plane",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685050",
+    "abstract": "Recent device hardware trends enable a new approach to the design of network server operating systems. In a traditional operating system, the kernel mediates access to device hardware by server applications, to enforce process isolation as well as network and disk security. We have designed and implemented a new operating system, Arrakis, that splits the traditional role of the kernel in two. Applications have direct access to virtualized I/O devices, allowing most I/O operations to skip the kernel entirely, while the kernel is re-engineered to provide network and disk protection without kernel mediation of every operation. We describe the hardware and software changes needed to take advantage of this new abstraction, and we illustrate its power by showing improvements of 2-5x in latency and 9x in throughput for a popular persistent NoSQL store relative to a well-tuned Linux implementation.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17868,
+    "year": 2014,
+    "title": "Decoupling cores, kernels, and operating systems",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685051",
+    "abstract": "We present Barrelfish/DC, an extension to the Barrelfish OS which decouples physical cores from a native OS kernel, and furthermore the kernel itself from the rest of the OS and application state. In Barrelfish/DC, native kernel code on any core can be quickly replaced, kernel state moved between cores, and cores added and removed from the system transparently to applications and OS processes, which continue to execute.Barrelfish/DC is a multikernel with two novel ideas: the use of boot drivers to abstract cores as regular devices, and a partitioned capability system for memory management which externalizes core-local kernel state.We show by performance measurements of real applications and device drivers that the approach is practical enough to be used for a number of purposes, such as online kernel upgrades, and temporarily delivering hard real-time performance by executing a process under a specialized, single-application kernel.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17869,
+    "year": 2014,
+    "title": "Jitk: a trustworthy in-kernel interpreter infrastructure",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685052",
+    "abstract": "Modern operating systems run multiple interpreters in the kernel, which enable user-space applications to add new functionality or specialize system policies. The correctness of such interpreters is critical to the overall system security: bugs in interpreters could allow adversaries to compromise user-space applications and even the kernel.Jitk is a new infrastructure for building in-kernel interpreters that guarantee functional correctness as they compile user-space policies down to native instructions for execution in the kernel. To demonstrate Jitk, we implement two interpreters in the Linux kernel, BPF and INET-DIAG, which are used for network and system call filtering and socket monitoring, respectively. To help application developers write correct filters, we introduce a high-level rule language, along with a proof that Jitk correctly translates high-level rules all the way to native machine code, and demonstrate that this language can be integrated into OpenSSH with tens of lines of code. We built a prototype of Jitk on top of the CompCert verified compiler and integrated it into the Linux kernel. Experimental results show that Jitk is practical, fast, and trustworthy.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17870,
+    "year": 2014,
+    "title": "IX: a protected dataplane operating system for high throughput and low latency",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685053",
+    "abstract": "The conventional wisdom is that aggressive networking requirements, such as high packet rates for small messages and microsecond-scale tail latency, are best addressed outside the kernel, in a user-level networking stack. We present IX, a dataplane operating system that provides high I/O performance, while maintaining the key advantage of strong protection offered by existing kernels. IX uses hardware virtualization to separate management and scheduling functions of the kernel (control plane) from network processing (dataplane). The data-plane architecture builds upon a native, zero-copy API and optimizes for both bandwidth and latency by dedicating hardware threads and networking queues to data-plane instances, processing bounded batches of packets to completion, and by eliminating coherence traffic and multi-core synchronization. We demonstrate that IX outperforms Linux and state-of-the-art, user-space network stacks significantly in both throughput and end-to-end latency. Moreover, IX improves the throughput of a widely deployed, key-value store by up to 3.6x and reduces tail latency by more than 2x.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17871,
+    "year": 2014,
+    "title": "Willow: a user-programmable SSD",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685055",
+    "abstract": "We explore the potential of making programmability a central feature of the SSD interface. Our prototype system, called Willow, allows programmers to augment and extend the semantics of an SSD with application-specific features without compromising file system protections. The SSD Apps running on Willow give applications low-latency, high-bandwidth access to the SSD's contents while reducing the load that IO processing places on the host processor. The programming model for SSD Apps provides great flexibility, supports the concurrent execution of multiple SSD Apps in Willow, and supports the execution of trusted code in Willow.We demonstrate the effectiveness and flexibility of Willow by implementing six SSD Apps and measuring their performance. We find that defining SSD semantics in software is easy and beneficial, and that Willow makes it feasible for a wide range of IO-intensive applications to benefit from a customized SSD interface.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17872,
+    "year": 2014,
+    "title": "Physical disentanglement in a container-based file system",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685056",
+    "abstract": "We introduce IceFS, a novel file system that separates physical structures of the file system. A new abstraction, the cube, is provided to enable the grouping of files and directories inside a physically isolated container. We show three major benefits of cubes within IceFS: localized reaction to faults, fast recovery, and concurrent file-system updates. We demonstrate these benefits within a VMware-based virtualized environment and within the Hadoop distributed file system. Results show that our prototype can significantly improve availability and performance, sometimes by an order of magnitude.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17873,
+    "year": 2014,
+    "title": "Customizable and extensible deployment for mobile/cloud applications",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685057",
+    "abstract": "Modern applications face new challenges in managing today's highly distributed and heterogeneous environment. For example, they must stitch together code that crosses smartphones, tablets, personal devices, and cloud services, connected by variable wide-area networks, such as WiFi and 4G. This paper describes Sapphire, a distributed programming platform that simplifies the programming of today's mobile/cloud applications. Sapphire's key design feature is its distributed runtime system, which supports a flexible and extensible deployment layer for solving complex distributed systems tasks, such as fault-tolerance, code-offloading, and caching. Rather than writing distributed systems code, programmers choose deployment managers that extend Sapphire's kernel to meet their applications' deployment requirements. In this way, each application runs on an underlying platform that is customized for its own distribution needs.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17874,
+    "year": 2014,
+    "title": "Pebbles: fine-grained data management abstractions for modern operating systems",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685058",
+    "abstract": "Support for fine-grained data management has all but disappeared from modern operating systems such as Android and iOS. Instead, we must rely on each individual application to manage our data properly - e.g., to delete our emails, documents, and photos in full upon request; to not collect more data than required for its function; and to back up our data to reliable backends. Yet, research studies and media articles constantly remind us of the poor data management practices applied by our applications. We have developed Pebbles, a fine-grained data management system that enables management at a powerful new level of abstraction: application-level data objects, such as emails, documents, notes, notebooks, bank accounts, etc. The key contribution is Pebbles's ability to discover such high-level objects in arbitrary applications without requiring any input from or modifications to these applications. Intuitively, it seems impossible for an OS-level service to understand object structures in unmodified applications, however we observe that the high-level storage abstractions embedded in modern OSes - relational databases and object-relational mappers - bear significant structural information that makes object recognition possible and accurate.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17875,
+    "year": 2014,
+    "title": "Protecting users by confining JavaScript with COWL",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685060",
+    "abstract": "Modern web applications are conglomerations of JavaScript written by multiple authors: application developers routinely incorporate code from third-party libraries, and mashup applications synthesize data and code hosted at different sites. In current browsers, a web application's developer and user must trust third-party code in libraries not to leak the user's sensitive information from within applications. Even worse, in the status quo, the only way to implement some mashups is for the user to give her login credentials for one site to the operator of another site. Fundamentally, today's browser security model trades privacy for flexibility because it lacks a sufficient mechanism for confining untrusted code. We present COWL, a robust JavaScript confinement system for modern web browsers. COWL introduces label-based mandatory access control to browsing contexts in a way that is fully backward-compatible with legacy web content. We use a series of case-study applications to motivate COWL's design and demonstrate how COWL allows both the inclusion of untrusted scripts in applications and the building of mashups that combine sensitive information from multiple mutually distrusting origins, all while protecting users' privacy. Measurements of two COWL implementations, one in Firefox and one in Chromium, demonstrate a virtually imperceptible increase in page-load latency.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17876,
+    "year": 2014,
+    "title": "Code-pointer integrity",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685061",
+    "abstract": "Systems code is often written in low-level languages like C/C++, which offer many benefits but also delegate memory management to programmers. This invites memory safety bugs that attackers can exploit to divert control flow and compromise the system. Deployed defense mechanisms (e.g., ASLR, DEP) are incomplete, and stronger defense mechanisms (e.g., CFI) often have high overhead and limited guarantees [19, 15, 9].We introduce code-pointer integrity (CPI), a new design point that guarantees the integrity of all code pointers in a program (e.g., function pointers, saved return addresses) and thereby prevents all control-flow hijack attacks, including return-oriented programming. We also introduce code-pointer separation (CPS), a relaxation of CPI with better performance properties. CPI and CPS offer substantially better security-to-overhead ratios than the state of the art, they are practical (we protect a complete FreeBSD system and over 100 packages like apache and postgresql), effective (prevent all attacks in the RIPE benchmark), and efficient: on SPEC CPU2006, CPS averages 1.2\\% overhead for C and 1.9\\% for C/C++, while CPI's overhead is 2.9\\% for C and 8.4\\% for C/C++.A prototype implementation of CPI and CPS can be obtained from http://levee.epfl.ch.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17877,
+    "year": 2014,
+    "title": "Ironclad apps: end-to-end security via automated full-system verification",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685062",
+    "abstract": "An Ironclad App lets a user securely transmit her data to a remote machine with the guarantee that every instruction executed on that machine adheres to a formal abstract specification of the app's behavior. This does more than eliminate implementation vulnerabilities such as buffer overflows, parsing errors, or data leaks; it tells the user exactly how the app will behave at all times. We provide these guarantees via complete, low-level software verification. We then use cryptography and secure hardware to enable secure channels from the verified software to remote users. To achieve such complete verification, we developed a set of new and modified tools, a collection of techniques and engineering disciplines, and a methodology focused on rapid development of verified systems software. We describe our methodology, formal results, and lessons we learned from building a full stack of verified software. That software includes a verified kernel; verified drivers; verified system and crypto libraries including SHA, HMAC, and RSA; and four Ironclad Apps.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17878,
+    "year": 2014,
+    "title": "SHILL: a secure shell scripting language",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685063",
+    "abstract": "The Principle of Least Privilege suggests that software should be executed with no more authority than it requires to accomplish its task. Current security tools make it difficult to apply this principle: they either require significant modifications to applications or do not facilitate reasoning about combining untrustworthy components.We propose SHILL, a secure shell scripting language. SHILL scripts enable compositional reasoning about security through contracts that limit the effects of script execution, including the effects of programs invoked by the script. SHILL contracts are declarative security policies that act as documentation for consumers of SHILL scripts, and are enforced through a combination of language design and sandboxing.We have implemented a prototype of SHILL for FreeBSD and used it for several case studies including a grading script and a script to download, compile, and install software. Our experience indicates that SHILL is a practical and useful system security tool, and can provide fine-grained security guarantees.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17879,
+    "year": 2014,
+    "title": "GPUnet: networking abstractions for GPU programs",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685065",
+    "abstract": "Despite the popularity of GPUs in high-performance and scientific computing, and despite increasingly general-purpose hardware capabilities, the use of GPUs in network servers or distributed systems poses significant challenges.GPUnet is a native GPU networking layer that provides a socket abstraction and high-level networking APIs for GPU programs. We use GPUnet to streamline the development of high-performance, distributed applications like in-GPU-memory MapReduce and a new class of low-latency, high-throughput GPU-native network services such as a face verification server.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17880,
+    "year": 2014,
+    "title": "The mystery machine: end-to-end performance analysis of large-scale internet services",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685066",
+    "abstract": "Current debugging and optimization methods scale poorly to deal with the complexity of modern Internet services, in which a single request triggers parallel execution of numerous heterogeneous software components over a distributed set of computers. The Achilles' heel of current methods is the need for a complete and accurate model of the system under observation: producing such a model is challenging because it requires either assimilating the collective knowledge of hundreds of programmers responsible for the individual components or restricting the ways in which components interact.Fortunately, the scale of modern Internet services offers a compensating benefit: the sheer volume of requests serviced means that, even at low sampling rates, one can gather a tremendous amount of empirical performance observations and apply \"big data\" techniques to analyze those observations. In this paper, we show how one can automatically construct a model of request execution from pre-existing component logs by generating a large number of potential hypotheses about program behavior and rejecting hypotheses contradicted by the empirical observations. We also show how one can validate potential performance improvements without costly implementation effort by leveraging the variation in component behavior that arises naturally over large numbers of requests to measure the impact of optimizing individual components or changing scheduling behavior.We validate our methodology by analyzing performance traces of over 1.3 million requests to Facebook servers. We present a detailed study of the factors that affect the end-to-end latency of such requests. We also use our methodology to suggest and validate a scheduling optimization for improving Facebook request latency.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17881,
+    "year": 2014,
+    "title": "End-to-end performance isolation through virtual datacenters",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685067",
+    "abstract": "The lack of performance isolation in multi-tenant datacenters at appliances like middleboxes and storage servers results in volatile application performance. To insulate tenants, we propose giving them the abstraction of a dedicated virtual datacenter (VDC). VDCs encapsulate end-to-end throughput guarantees--specified in a new metric based on virtual request cost--that hold across distributed appliances and the intervening network.We present Pulsar, a system that offers tenants their own VDCs. Pulsar comprises a logically centralized controller that uses new mechanisms to estimate tenants' demands and appliance capacities, and allocates datacenter resources based on flexible policies. These allocations are enforced at end-host hypervisors through multi-resource token buckets that ensure tenants with changing workloads cannot affect others. Pulsar's design does not require changes to applications, guest OSes, or appliances. Through a prototype deployed across 113 VMs, three appliances, and a 40 Gbps network, we show that Pulsar enforces tenants' VDCs while imposing overheads of less than 2\\% at the data and control plane.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17882,
+    "year": 2014,
+    "title": "Simple testing can prevent most critical failures: an analysis of production failures in distributed data-intensive systems",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685068",
+    "abstract": "Large, production quality distributed systems still fail periodically, and do so sometimes catastrophically, where most or all users experience an outage or data loss. We present the result of a comprehensive study investigating 198 randomly selected, user-reported failures that occurred on Cassandra, HBase, Hadoop Distributed File System (HDFS), Hadoop MapReduce, and Redis, with the goal of understanding how one or multiple faults eventually evolve into a user-visible failure. We found that from a testing point of view, almost all failures require only 3 or fewer nodes to reproduce, which is good news considering that these services typically run on a very large number of nodes. However, multiple inputs are needed to trigger the failures with the order between them being important. Finally, we found the error logs of these systems typically contain sufficient data on both the errors and the input events that triggered the failure, enabling the diagnose and the reproduction of the production failures.We found the majority of catastrophic failures could easily have been prevented by performing simple testing on error handling code - the last line of defense - even without an understanding of the software design. We extracted three simple rules from the bugs that have lead to some of the catastrophic failures, and developed a static checker, Aspirator, capable of locating these bugs. Over 30\\% of the catastrophic failures would have been prevented had Aspirator been used and the identified bugs fixed. Running Aspirator on the code of 9 distributed systems located 143 bugs and bad practices that have been fixed or confirmed by the developers.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17883,
+    "year": 2014,
+    "title": "Shielding applications from an untrusted cloud with Haven",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685070",
+    "abstract": "Today's cloud computing infrastructure requires substantial trust. Cloud users rely on both the provider's staff and its globally-distributed software/hardware platform not to expose any of their private data.We introduce the notion of shielded execution, which protects the confidentiality and integrity of a program and its data from the platform on which it runs (i.e., the cloud operator's OS, VM and firmware). Our prototype, Haven, is the first system to achieve shielded execution of unmodified legacy applications, including SQL Server and Apache, on a commodity OS (Windows) and commodity hardware. Haven leverages the hardware protection of Intel SGX to defend against privileged code and physical attacks such as memory probes, but also addresses the dual challenges of executing unmodified legacy binaries and protecting them from a malicious host. This work motivated recent changes in the SGX specification.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17884,
+    "year": 2014,
+    "title": "Apollo: scalable and coordinated scheduling for cloud-scale computing",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685071",
+    "abstract": "Efficiently scheduling data-parallel computation jobs over cloud-scale computing clusters is critical for job performance, system throughput, and resource utilization. It is becoming even more challenging with growing cluster sizes and more complex workloads with diverse characteristics. This paper presents Apollo, a highly scalable and coordinated scheduling framework, which has been deployed on production clusters at Microsoft to schedule thousands of computations with millions of tasks efficiently and effectively on tens of thousands of machines daily. The framework performs scheduling decisions in a distributed manner, utilizing global cluster information via a loosely coordinated mechanism. Each scheduling decision considers future resource availability and optimizes various performance and system factors together in a single unified model. Apollo is robust, with means to cope with unexpected system dynamics, and can take advantage of idle system resources gracefully while supplying guaranteed resources when needed.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17885,
+    "year": 2014,
+    "title": "The power of choice in data-aware cluster scheduling",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685072",
+    "abstract": "Providing timely results in the face of rapid growth in data volumes has become important for analytical frameworks. For this reason, frameworks increasingly operate on only a subset of the input data. A key property of such sampling is that combinatorially many subsets of the input are present. We present KMN, a system that leverages these choices to perform data-aware scheduling, i.e., minimize time taken by tasks to read their inputs, for a DAG of tasks. KMN not only uses choices to co-locate tasks with their data but also percolates such combinatorial choices to downstream tasks in the DAG by launching a few additional tasks at every upstream stage. Evaluations using workloads from Facebook and Conviva on a 100-machine EC2 cluster show that KMN reduces average job duration by 81\\% using just 5\\% additional resources.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17886,
+    "year": 2014,
+    "title": "Heading off correlated failures through independence-as-a-service",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685073",
+    "abstract": "Today's systems pervasively rely on redundancy to ensure reliability. In complex multi-layered hardware/software stacks, however - especially in the clouds where many independent businesses deploy interacting services on common infrastructure - seemingly independent systems may share deep, hidden dependencies, undermining redundancy efforts and introducing unanticipated correlated failures. Complementing existing post-failure forensics, we propose Independence-as-a-Service (or INDaaS), an architecture to audit the independence of redundant systems proactively, thus avoiding correlated failures. INDaaS first utilizes pluggable dependency acquisition modules to collect the structural dependency information (including network, hardware, and software dependencies) from a variety of sources. With this information, INDaaS then quantifies the independence of systems of interest using pluggable auditing modules, offering various performance, precision, and data secrecy tradeoffs. While the most general and efficient auditing modules assume the auditor is able to obtain all required information, INDaaS can employ private set intersection cardinality protocols to quantify the independence even across businesses unwilling to share their full structural information with anyone. We evaluate the practicality of INDaaS with three case studies via auditing realistic network, hardware, and software dependency structures.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17887,
+    "year": 2014,
+    "title": "Characterizing storage workloads with counter stacks",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685075",
+    "abstract": "Existing techniques for identifying working set sizes based on miss ratio curves (MRCs) have large memory overheads which make them impractical for storage workloads. We present a novel data structure, the counter stack, which can produce approximate MRCs while using sublinear space. We show how counter stacks can be checkpointed to produce workload representations that are many orders of magnitude smaller than full traces, and we describe techniques for estimating MRCs of arbitrary workload combinations over arbitrary windows in time. Finally, we show how online analysis using counter stacks can provide valuable insight into live workloads.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17888,
+    "year": 2014,
+    "title": "Pelican: a building block for exascale cold data storage",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685076",
+    "abstract": "A significant fraction of data stored in cloud storage is rarely accessed. This data is referred to as cold data; cost-effective storage for cold data has become a challenge for cloud providers. Pelican is a rack-scale hard-disk based storage unit designed as the basic building block for exabyte scale storage for cold data. In Pelican, server, power, cooling and interconnect bandwidth resources are provisioned by design to support cold data workloads; this right-provisioning significantly reduces Pelican's total cost of ownership compared to traditional disk-based storage.Resource right-provisioning in Pelican means only 8\\% of the drives can be concurrently spinning. This introduces complex resource management to be handled by the Pelican storage stack. Resource restrictions are expressed as constraints over the hard drives. The data layout and IO scheduling ensures that these constraints are not violated. We evaluate the performance of a prototype Pelican, and compare against a traditional resource overprovisioned storage rack using a cross-validated simulator. We show that compared to this overprovisioned storage rack Pelican performs well for cold workloads, providing high throughput with acceptable latency.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17889,
+    "year": 2014,
+    "title": "A self-configurable geo-replicated cloud storage system",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685077",
+    "abstract": "Reconfiguring a cloud storage system can improve its overall service. Tuba is a geo-replicated key-value store that automatically reconfigures its set of replicas while respecting application-defined constraints so that it adapts to changes in clients' locations or request rates. New replicas may be added, existing replicas moved, replicas upgraded from secondary to primary, and the update propagation between replicas adjusted. Tuba extends a commercial cloud-based service, Microsoft Azure Storage, with broad consistency choices (as in Bayou), consistency-based SLAs (as in Pileus), and a novel replication configuration service. Compared with a system that is statically configured, our evaluation shows that Tuba increases the reads that return strongly consistent data by 63\\%.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17890,
+    "year": 2014,
+    "title": "f4: Facebook's warm BLOB storage system",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685078",
+    "abstract": "Facebook's corpus of photos, videos, and other Binary Large OBjects (BLOBs) that need to be reliably stored and quickly accessible is massive and continues to grow. As the footprint of BLOBs increases, storing them in our traditional storage system, Haystack, is becoming increasingly inefficient. To increase our storage efficiency, measured in the effective-replication-factor of BLOBs, we examine the underlying access patterns of BLOBs and identify temperature zones that include hot BLOBs that are accessed frequently and warm BLOBs that are accessed far less often. Our overall BLOB storage system is designed to isolate warm BLOBs and enable us to use a specialized warm BLOB storage system, f4. f4 is a new system that lowers the effective-replication-factor of warm BLOBs while remaining fault tolerant and able to support the lower throughput demands.f4 currently stores over 65PBs of logical BLOBs and reduces their effective-replication-factor from 3.6 to either 2.8 or 2.1. f4 provides low latency; is resilient to disk, host, rack, and datacenter failures; and provides sufficient throughput for warm BLOBs.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17891,
+    "year": 2014,
+    "title": "SAMC: semantic-aware model checking for fast discovery of deep bugs in cloud systems",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685080",
+    "abstract": "The last five years have seen a rise of implementation-level distributed system model checkers (dmck) for verifying the reliability of real distributed systems. Existing dmcks however rarely exercise multiple failures due to the state-space explosion problem, and thus do not address present reliability challenges of cloud systems in dealing with complex failures. To scale dmck, we introduce semantic-aware model checking (SAMC), a white-box principle that takes simple semantic information of the target system and incorporates that knowledge into state-space reduction policies. We present four novel reduction policies: local-message independence (LMI), crash-message independence (CMI), crash recovery symmetry (CRS), and reboot synchronization symmetry (RSS), which collectively alleviate redundant reorderings of messages, crashes, and reboots. SAMC is systematic; it does not use randomness or bug-specific knowledge. SAMC is simple; users write protocol-specific rules in few lines of code. SAMC is powerful; it can find deep bugs one to three orders of magnitude faster compared to state-of-the-art techniques.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17892,
+    "year": 2014,
+    "title": "SKI: exposing kernel concurrency bugs through systematic schedule exploration",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685081",
+    "abstract": "Kernel concurrency bugs are notoriously difficult to find during testing since they are only triggered under certain instruction interleavings. Unfortunately, no tools for systematically subjecting kernel code to concurrency tests have been proposed to date. This gap in tool support may be explained by the challenge of controlling precisely which kernel interleavings are executed without modifying the kernel under test itself. Furthermore, to be practical, prohibitive runtime overheads must be avoided and tools must remain portable as the kernel evolves.In this paper, we propose SKI, the first tool for the systematic exploration of possible interleavings of kernel code. SKI finds kernel bugs in unmodified kernels, and is thus directly applicable to different kernels. To achieve control over kernel interleavings in a portable way, SKI uses an adapted virtual machine monitor that performs an efficient analysis of the kernel execution on a virtual multiprocessor platform. This enables SKI to determine which kernel execution flows are eligible to run, and also to selectively control which flows may proceed. In addition, we detail several essential optimizations that enable SKI to scale to real-world concurrency bugs.We reliably reproduced previously reported bugs by applying SKI to different versions of the Linux kernel and to the FreeBSD kernel. Our evaluation further shows that SKI was able to discover, in widely used and already heavily tested file systems (e.g., ext4, btrfs), several unknown bugs, some of which pose the risk of data loss.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17893,
+    "year": 2014,
+    "title": "All file systems are not created equal: on the complexity of crafting crash-consistent applications",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685082",
+    "abstract": "We present the first comprehensive study of application-level crash-consistency protocols built atop modern file systems. We find that applications use complex update protocols to persist state, and that the correctness of these protocols is highly dependent on subtle behaviors of the underlying file system, which we term persistence properties. We develop a tool named BOB that empirically tests persistence properties, and use it to demonstrate that these properties vary widely among six popular Linux file systems. We build a framework named ALICE that analyzes application update protocols and finds crash vulnerabilities, i.e., update protocol code that requires specific persistence properties to hold for correctness. Using ALICE, we analyze eleven widely-used systems (including databases, key-value stores, version control systems, distributed systems, and virtualization software) and find a total of 60 vulnerabilities, many of which lead to severe consequences. We also show that ALICE can be used to evaluate the effect of new file-system designs on application-level consistency.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17894,
+    "year": 2014,
+    "title": "Torturing databases for fun and profit",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685083",
+    "abstract": "Programmers use databases when they want a high level of reliability. Specifically, they want the sophisticated ACID (atomicity, consistency, isolation, and durability) protection modern databases provide. However, the ACID properties are far from trivial to provide, particularly when high performance must be achieved. This leads to complex and error-prone code--even at a low defect rate of one bug per thousand lines, the millions of lines of code in a commercial OLTP database can harbor thousands of bugs.Here we propose a method to expose and diagnose violations of the ACID properties. We focus on an ostensibly easy case: power faults. Our framework includes workloads to exercise the ACID guarantees, a record/replay subsystem to allow the controlled injection of simulated power faults, a ranking algorithm to prioritize where to fault based on our experience, and a multi-layer tracer to diagnose root causes. Using our framework, we study 8 widely-used databases, ranging from open-source key-value stores to high-end commercial OLTP servers. Surprisingly, all 8 databases exhibit erroneous behavior. For the open-source databases, we are able to diagnose the root causes using our tracer, and for the proprietary commercial databases we can reproducibly induce data loss.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17895,
+    "year": 2014,
+    "title": "Fast databases with fast durability and recovery through multicore parallelism",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685085",
+    "abstract": "Multicore in-memory databases for modern machines can support extraordinarily high transaction rates for online transaction processing workloads. A potential weakness, however, is recovery from crash failures. Can classical techniques, such as checkpoints, be made both efficient enough to keep up with current systems' memory sizes and transaction rates, and smart enough to avoid additional contention? Starting from an efficient multicore database system, we show that naive logging and checkpoints make normal-case execution slower, but that frequent disk synchronization allows us to keep up with many workloads with only a modest reduction in throughput. We design throughout for parallelism: during logging, during checkpointing, and during recovery. The result is fast. Given appropriate hardware (three SSDs and a RAID), a 32-core system can recover a 43.2 GB key-value database in 106 seconds, and a &gt; 70 GB TPC-C database in 211 seconds.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17896,
+    "year": 2014,
+    "title": "Extracting more concurrency from distributed transactions",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685086",
+    "abstract": "Distributed storage systems run transactions across machines to ensure serializability. Traditional protocols for distributed transactions are based on two-phase locking (2PL) or optimistic concurrency control (OCC). 2PL serializes transactions as soon as they conflict and OCC resorts to aborts, leaving many opportunities for concurrency on the table. This paper presents ROCOCO, a novel concurrency control protocol for distributed transactions that outperforms 2PL and OCC by allowing more concurrency. ROCOCO executes a transaction as a collection of atomic pieces, each of which commonly involves only a single server. Servers first track dependencies between concurrent transactions without actually executing them. At commit time, a transaction's dependency information is sent to all servers so they can re-order conflicting pieces and execute them in a serializable order.We compare ROCOCO to OCC and 2PL using a scaled TPC-C benchmark. ROCOCO outperforms 2PL and OCC in workloads with varying degrees of contention. When the contention is high, ROCOCO's throughput is 130\\% and 347\\% higher than that of 2PL and OCC.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17897,
+    "year": 2014,
+    "title": "Salt: combining ACID and BASE in a distributed database",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685087",
+    "abstract": "This paper presents Salt, a distributed database that allows developers to improve the performance and scalability of their ACID applications through the incremental adoption of the BASE approach. Salt's motivation is rooted in the Pareto principle: for many applications, the transactions that actually test the performance limits of ACID are few. To leverage this insight, Salt introduces BASE transactions, a new abstraction that encapsulates the workflow of performance-critical transactions. BASE transactions retain desirable properties like atomicity and durability, but, through the new mechanism of Salt Isolation, control which granularity of isolation they offer to other transactions, depending on whether they are BASE or ACID. This flexibility allows BASE transactions to reap the performance benefits of the BASE paradigm without compromising the guarantees enjoyed by the remaining ACID transactions. For example, in our MySQL Cluster-based implementation of Salt, BASE-ifying just one out of 11 transactions in the open source ticketing application Fusion Ticket yields a 6.5x increase over the throughput obtained with an ACID implementation.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17898,
+    "year": 2014,
+    "title": "Phase reconciliation for contended in-memory transactions",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685088",
+    "abstract": "Multicore main-memory database performance can collapse when many transactions contend on the same data. Contending transactions are executed serially--either by locks or by optimistic concurrency control aborts--in order to ensure that they have serializable effects. This leaves many cores idle and performance poor. We introduce a new concurrency control technique, phase reconciliation, that solves this problem for many important workloads. Doppel, our phase reconciliation database, repeatedly cycles through joined, split, and reconciliation phases. Joined phases use traditional concurrency control and allow any transaction to execute. When workload contention causes unnecessary serial execution, Doppel switches to a split phase. There, updates to contended items modify per-core state, and thus proceed in parallel on different cores. Not all transactions can execute in a split phase; for example, all modifications to a contended item must commute. A reconciliation phase merges these per-core states into the global store, producing a complete database ready for joined-phase transactions. A key aspect of this design is determining which items to split, and which operations to allow on split items.Phase reconciliation helps most when there are many updates to a few popular database records. Its throughput is up to 38x higher than conventional concurrency control protocols on microbenchmarks, and up to 3x on a larger application, at the cost of increased latency for some transactions.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17899,
+    "year": 2014,
+    "title": "Eidetic systems",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685090",
+    "abstract": "The vast majority of state produced by a typical computer is generated, consumed, then lost forever. We argue that a computer system should instead provide the ability to recall any past state that existed on the computer, and further, that it should be able to provide the lineage of any byte in a current or past state. We call a system with this ability an eidetic computer system. To preserve all prior state efficiently, we observe and leverage the synergy between deterministic replay and information flow. By dividing the system into groups of replaying processes and tracking dependencies among groups, we enable the analysis of information flow among groups, make it possible for one group to regenerate the data needed by another, and permit the replay of subsets of processes rather than of the entire system. We use model-based compression and deduplicated file recording to reduce the space overhead of deterministic replay. We also develop a variety of linkage functions to analyze the lineage of state, and we apply these functions via retrospective binary analysis. In this paper we present Arnold, the first practical eidetic computing platform. Preliminary data from several weeks of continuous use on our workstations shows that Arnold's storage requirements for 4 or more years of usage can be satisfied by adding a 4 TB hard drive to the system. Further, the performance overhead on almost all workloads we measured was under 8\\%. We show that Arnold can reconstruct prior state and answer lineage queries, including backward queries (on what did this item depend?) and forward queries (what other state did this item affect?).",
+    "status": "notchecked"
+  },
+  {
+    "id": 17900,
+    "year": 2014,
+    "title": "Detecting covert timing channels with time-deterministic replay",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685091",
+    "abstract": "This paper presents a mechanism called time-deterministic replay (TDR) that can reproduce the execution of a program, including its precise timing. Without TDR, reproducing the timing of an execution is difficult because there are many sources of timing variability - such as preemptions, hardware interrupts, cache effects, scheduling decisions, etc. TDR uses a combination of techniques to either mitigate or eliminate most of these sources of variability. Using a prototype implementation of TDR in a Java Virtual Machine, we show that it is possible to reproduce the timing to within 1.85\\% of the original execution, even on commodity hardware.The paper discusses several potential applications of TDR, and studies one of them in detail: the detection of a covert timing channel. Timing channels can be used to exfiltrate information from a compromised machine; they work by subtly varying the timing of the machine's outputs, and it is this variation that can be detected with TDR. Unlike prior solutions, which generally look for a specific type of timing channel, our approach can detect a wide variety of channels with high accuracy.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17901,
+    "year": 2014,
+    "title": "Identifying information disclosure in web applications with retroactive auditing",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685092",
+    "abstract": "RAIL is a framework for building web applications that can precisely identify inappropriately disclosed data after a vulnerability is discovered. To do so, RAIL introduces retroactive disclosure auditing: re-running the application with previous inputs once the vulnerability is fixed, to determine what data should have been disclosed. A key challenge for RAIL is to reconcile state divergence between the original and replay executions, so that the differences between executions precisely correspond to inappropriately disclosed data. RAIL provides application developers with APIs to address this challenge, by identifying sensitive data, assigning semantic names to non-deterministic inputs, and tracking dependencies.Results from a prototype of RAIL built on top of the Meteor framework show that RAIL can quickly and precisely identify data disclosure from complex attacks, including programming bugs, administrative mistakes, and stolen passwords. RAIL incurs up to 22\\% throughput overhead and 0.5 KB storage overhead per request. Porting three existing web applications required fewer than 25 lines of code changes per application.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17902,
+    "year": 2014,
+    "title": "Project Adam: building an efficient and scalable deep learning training system",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685094",
+    "abstract": "Large deep neural network models have recently demonstrated state-of-the-art accuracy on hard visual recognition tasks. Unfortunately such models are extremely time consuming to train and require large amount of compute cycles. We describe the design and implementation of a distributed system called Adam comprised of commodity server machines to train such models that exhibits world-class performance, scaling and task accuracy on visual recognition tasks. Adam achieves high efficiency and scalability through whole system co-design that optimizes and balances workload computation and communication. We exploit asynchrony throughout the system to improve performance and show that it additionally improves the accuracy of trained models. Adam is significantly more efficient and scalable than was previously thought possible and used 30x fewer machines to train a large 2 billion connection model to 2x higher accuracy in comparable time on the ImageNet 22,000 category image classification task than the system that previously held the record for this benchmark. We also show that task accuracy improves with larger models. Our results provide compelling evidence that a distributed systems-driven approach to deep learning using current training algorithms is worth pursuing.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17903,
+    "year": 2014,
+    "title": "Scaling distributed machine learning with the parameter server",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685095",
+    "abstract": "We propose a parameter server framework for distributed machine learning problems. Both data and workloads are distributed over worker nodes, while the server nodes maintain globally shared parameters, represented as dense or sparse vectors and matrices. The framework manages asynchronous data communication between nodes, and supports flexible consistency models, elastic scalability, and continuous fault tolerance.To demonstrate the scalability of the proposed framework, we show experimental results on petabytes of real data with billions of examples and parameters on problems ranging from Sparse Logistic Regression to Latent Dirichlet Allocation and Distributed Sketching.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17904,
+    "year": 2014,
+    "title": "GraphX: graph processing in a distributed dataflow framework",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685096",
+    "abstract": "In pursuit of graph processing performance, the systems community has largely abandoned general-purpose distributed dataflow frameworks in favor of specialized graph processing systems that provide tailored programming abstractions and accelerate the execution of iterative graph algorithms. In this paper we argue that many of the advantages of specialized graph processing systems can be recovered in a modern general-purpose distributed dataflow system. We introduce GraphX, an embedded graph processing framework built on top of Apache Spark, a widely used distributed dataflow system. GraphX presents a familiar composable graph abstraction that is sufficient to express existing graph APIs, yet can be implemented using only a few basic dataflow operators (e.g., join, map, group-by). To achieve performance parity with specialized graph systems, GraphX recasts graph-specific optimizations as distributed join optimizations and materialized view maintenance. By leveraging advances in distributed dataflow frameworks, GraphX brings low-cost fault tolerance to graph processing. We evaluate GraphX on real workloads and demonstrate that GraphX achieves an order of magnitude performance gain over the base dataflow framework and matches the performance of specialized graph processing systems while enabling a wider range of computation.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17905,
+    "year": 2014,
+    "title": "Nail: a practical tool for parsing and generating data formats",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685098",
+    "abstract": "Nail is a tool that greatly reduces the programmer effort for safely parsing and generating data formats defined by a grammar. Nail introduces several key ideas to achieve its goal. First, Nail uses a protocol grammar to define not just the data format, but also the internal object model of the data. Second, Nail eliminates the notion of semantic actions, used by existing parser generators, which reduces the expressive power but allows Nail to both parse data formats and generate them from the internal object model, by establishing a semantic bijection between the data format and the object model. Third, Nail introduces dependent fields and stream transforms to capture protocol features such as size and offset fields, checksums, and compressed data, which are impractical to express in existing protocol languages. Using Nail, we implement an authoritative DNS server in C in under 300 lines of code and grammar, and an unzip program in C in 220 lines of code and grammar, demonstrating that Nail makes it easy to parse complex real-world data formats. Performance experiments show that a Nail-based DNS server can outperform the widely used BIND DNS server on an authoritative workload, demonstrating that systems built with Nail can achieve good performance.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17906,
+    "year": 2014,
+    "title": "lprof: a non-intrusive request flow profiler for distributed systems",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685099",
+    "abstract": "Applications implementing cloud services, such as HDFS, Hadoop YARN, Cassandra, and HBase, are mostly built as distributed systems designed to scale. In order to analyze and debug the performance of these systems effectively and efficiently, it is essential to understand the performance behavior of service requests, both in aggregate and individually.lprof is a profiling tool that automatically reconstructs the execution flow of each request in a distributed application. In contrast to existing approaches that require instrumentation, lprof infers the request-flow entirely from runtime logs and thus does not require any modifications to source code. lprof first statically analyzes an application's binary code to infer how logs can be parsed so that the dispersed and intertwined log entries can be stitched together and associated to specific individual requests.We validate lprof using the four widely used distributed services mentioned above. Our evaluation shows lprof's precision in request extraction is 88\\%, and lprof is helpful in diagnosing 65\\% of the sampled real-world performance anomalies.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17907,
+    "year": 2014,
+    "title": "Pydron: semi-automatic parallelization for multi-core and the cloud",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685100",
+    "abstract": "The cloud, rack-scale computing, and multi-core are the basis for today's computing platforms. Their intrinsic parallelism is a challenge for programmers, specially in areas lacking the necessary economies of scale in application/ code reuse because of the small number of potential users and frequently changing code and data. In this paper, based on an on-going collaboration with several projects in astrophysics, we present Pydron, a system to parallelize and execute sequential Python code on a cloud, cluster, or multi-core infrastructure. While focused on scientific applications, the solution we propose is general and provides a competitive alternative to moving the development effort to application specific platforms. Pydron uses semi-automatic parallelization and can parallelize with an API of only two decorators. Pydron also supports the scheduling and run-time management of the parallel code, regardless of the target platform. First experiences with real astrophysics data pipelines indicate Pydron significantly simplifies development without sacrificing the performance gains of parallelism at the machine or cluster level.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17908,
+    "year": 2014,
+    "title": "User-guided device driver synthesis",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/2685048.2685101",
+    "abstract": "Automatic device driver synthesis is a radical approach to creating drivers faster and with fewer defects by generating them automatically based on hardware device specifications. We present the design and implementation of a new driver synthesis toolkit, called Termite-2. Termite-2 is the first tool to combine the power of automation with the flexibility of conventional development. It is also the first practical synthesis tool based on abstraction refinement. Finally, it is the first synthesis tool to support automated debugging of input specifications. We demonstrate the practicality of Termite-2 by synthesizing drivers for a number of I/O devices representative of a typical embedded platform.",
+    "status": "notchecked"
+  }
+]

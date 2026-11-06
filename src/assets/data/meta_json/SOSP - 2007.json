@@ -1,6 +1,6 @@
 [
   {
-    "id": 14197,
+    "id": 15390,
     "year": 2007,
     "title": "Protection and communication abstractions for web browsers in MashupOS",
     "category": "system",
@@ -10,7 +10,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14198,
+    "id": 15391,
     "year": 2007,
     "title": "AjaxScope: a platform for remotely monitoring the client-side behavior of web 2.0 applications",
     "category": "system",
@@ -20,7 +20,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14199,
+    "id": 15392,
     "year": 2007,
     "title": "Secure web applications via automatic partitioning",
     "category": "system",
@@ -30,7 +30,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14200,
+    "id": 15393,
     "year": 2007,
     "title": "Zyzzyva: speculative byzantine fault tolerance",
     "category": "system",
@@ -40,7 +40,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14201,
+    "id": 15394,
     "year": 2007,
     "title": "Tolerating byzantine faults in transaction processing systems using commit barrier scheduling",
     "category": "system",
@@ -50,7 +50,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14202,
+    "id": 15395,
     "year": 2007,
     "title": "Low-overhead byzantine fault-tolerant storage",
     "category": "system",
@@ -60,7 +60,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14203,
+    "id": 15396,
     "year": 2007,
     "title": "TxLinux: using and managing hardware transactional memory in an operating system",
     "category": "system",
@@ -70,7 +70,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14204,
+    "id": 15397,
     "year": 2007,
     "title": "MUVI: automatically inferring multi-variable access correlations and detecting related semantic and concurrency bugs",
     "category": "system",
@@ -80,7 +80,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14205,
+    "id": 15398,
     "year": 2007,
     "title": "Bouncer: securing software by blocking bad input",
     "category": "system",
@@ -90,7 +90,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14206,
+    "id": 15399,
     "year": 2007,
     "title": "Triage: diagnosing production run failures at the user's site",
     "category": "system",
@@ -100,7 +100,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14207,
+    "id": 15400,
     "year": 2007,
     "title": "/*icomment: bugs or bad comments?*/",
     "category": "system",
@@ -110,7 +110,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14208,
+    "id": 15401,
     "year": 2007,
     "title": "Sinfonia: a new paradigm for building scalable distributed systems",
     "category": "system",
@@ -120,7 +120,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14209,
+    "id": 15402,
     "year": 2007,
     "title": "PeerReview: practical accountability for distributed systems",
     "category": "system",
@@ -130,7 +130,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14210,
+    "id": 15403,
     "year": 2007,
     "title": "Attested append-only memory: making adversaries stick to their word",
     "category": "system",
@@ -140,7 +140,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14211,
+    "id": 15404,
     "year": 2007,
     "title": "Dynamo: amazon's highly available key-value store",
     "category": "system",
@@ -150,7 +150,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14212,
+    "id": 15405,
     "year": 2007,
     "title": "Staged deployment in mirage, an integrated software upgrade testing and distribution system",
     "category": "system",
@@ -160,7 +160,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14213,
+    "id": 15406,
     "year": 2007,
     "title": "AutoBash: improving configuration management with operating system causality analysis",
     "category": "system",
@@ -170,7 +170,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14214,
+    "id": 15407,
     "year": 2007,
     "title": "Integrating concurrency control and energy management in device drivers",
     "category": "system",
@@ -180,7 +180,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14215,
+    "id": 15408,
     "year": 2007,
     "title": "VirtualPower: coordinated power management in virtualized enterprise systems",
     "category": "system",
@@ -190,7 +190,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14216,
+    "id": 15409,
     "year": 2007,
     "title": "DejaView: a personal virtual computer recorder",
     "category": "system",
@@ -200,7 +200,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14217,
+    "id": 15410,
     "year": 2007,
     "title": "Improving file system reliability with I/O shepherding",
     "category": "system",
@@ -210,7 +210,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14218,
+    "id": 15411,
     "year": 2007,
     "title": "Generalized file system dependencies",
     "category": "system",
@@ -220,7 +220,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14219,
+    "id": 15412,
     "year": 2007,
     "title": "Information flow control for standard OS abstractions",
     "category": "system",
@@ -230,7 +230,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14220,
+    "id": 15413,
     "year": 2007,
     "title": "SecVisor: a tiny hypervisor to provide lifetime kernel code integrity for commodity OSes",
     "category": "system",
@@ -240,7 +240,7 @@
     "status": "notchecked"
   },
   {
-    "id": 14221,
+    "id": 15414,
     "year": 2007,
     "title": "Secure virtual architecture: a safe execution environment for commodity operating systems",
     "category": "system",

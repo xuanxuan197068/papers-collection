@@ -1,7 +1,7 @@
 [
   {
     "key": "acceleratingnumbertheoretictransformwithmultigpusystemsforefficientzeroknowledgeproof",
-    "id": 14190,
+    "id": 15674,
     "title": "Accelerating Number Theoretic Transform with Multi-GPU Systems for Efficient Zero Knowledge Proof",
     "paper": "https://doi.org/10.1145/3669940.3707241",
     "method": "提出面向多 GPU 层次结构的 UniNTT，以递归分解和统一硬件抽象优化数论变换。",
@@ -24,7 +24,7 @@
   },
   {
     "key": "acceleratingretrievalaugmentedgeneration",
-    "id": 14191,
+    "id": 15675,
     "title": "Accelerating Retrieval-Augmented Generation",
     "paper": "https://doi.org/10.1145/3669940.3707264",
     "method": "分析 RAG 检索与生成的性能耦合，并设计基于 CXL 的近内存精确近邻检索设备 IKS。",
@@ -47,7 +47,7 @@
   },
   {
     "key": "anaanattentiveautonomousdrivingsystem",
-    "id": 14192,
+    "id": 15676,
     "title": "AnA: An Attentive Autonomous Driving System",
     "paper": "https://doi.org/10.1145/3669940.3707261",
     "method": "构建由规划查询驱动感知任务选择与异常监控的注意式自动驾驶系统 AnA。",
@@ -72,7 +72,7 @@
   },
   {
     "key": "anykeyakeyvaluessdforallworkloadtypes",
-    "id": 14193,
+    "id": 15677,
     "title": "AnyKey: A Key-Value SSD for All Workload Types",
     "paper": "https://doi.org/10.1145/3669940.3707279",
     "method": "设计元数据规模不随键尺寸增长的通用键值 SSD AnyKey。",
@@ -95,7 +95,7 @@
   },
   {
     "key": "arcwarpleveladaptiveatomicreductioningpustoacceleratedifferentiablerendering",
-    "id": 14194,
+    "id": 15678,
     "title": "ARC: Warp-level Adaptive Atomic Reduction in GPUs to Accelerate Differentiable Rendering",
     "paper": "https://doi.org/10.1145/3669940.3707238",
     "method": "提出在 GPU 核心进行 warp 级归约并在核心与 L2 原子单元间自适应分流的 ARC。",
@@ -118,7 +118,7 @@
   },
   {
     "key": "automatictracingintaskbasedruntimesystems",
-    "id": 14195,
+    "id": 15679,
     "title": "Automatic Tracing in Task-Based Runtime Systems",
     "paper": "https://doi.org/10.1145/3669940.3707237",
     "method": "以动态字符串分析自动识别重复任务片段并缓存依赖分析，形成 Apophenia 自动追踪系统。",
@@ -141,7 +141,7 @@
   },
   {
     "key": "batchzkafullypipelinedgpuacceleratedsystemforbatchgenerationofzeroknowledgeproofs",
-    "id": 14196,
+    "id": 15680,
     "title": "BatchZK: A Fully Pipelined GPU-Accelerated System for Batch Generation of Zero-Knowledge Proofs",
     "paper": "https://doi.org/10.1145/3669940.3707270",
     "method": "构建全流水 GPU 批量零知识证明系统，结合定制协议模块、动态加载和多流重叠。",
@@ -164,7 +164,7 @@
   },
   {
     "key": "bytefssystemsupportforcxlbasedmemorysemanticsolidstatedrives",
-    "id": 14197,
+    "id": 15681,
     "title": "ByteFS: System Support for (CXL-based) Memory-Semantic Solid-State Drives",
     "paper": "https://doi.org/10.1145/3669940.3707250",
     "method": "协同重设计文件系统与 SSD 固件，使 ByteFS 同时支持字节级和块级访问。",
@@ -187,7 +187,7 @@
   },
   {
     "key": "cinnamonaframeworkforscaleoutencryptedai",
-    "id": 14198,
+    "id": 15682,
     "title": "Cinnamon: A Framework for Scale-Out Encrypted AI",
     "paper": "https://doi.org/10.1145/3669940.3707260",
     "method": "以算法、编译器和硬件协同的多层并行框架扩展全同态加密 AI。",
@@ -210,7 +210,7 @@
   },
   {
     "key": "closurexcompilersupportforcorrectpersistentfuzzing",
-    "id": 14199,
+    "id": 15683,
     "title": "ClosureX: Compiler Support for Correct Persistent Fuzzing",
     "paper": "https://doi.org/10.1145/3669940.3707281",
     "method": "用 LLVM passes 精细恢复每个测试用例专属状态，在持久化模糊测试中兼顾速度与语义正确性。",
@@ -235,7 +235,7 @@
   },
   {
     "key": "coachexploitingtemporalpatternsforallresourceoversubscriptionincloudplatforms",
-    "id": 14200,
+    "id": 15684,
     "title": "Coach: Exploiting Temporal Patterns for All-Resource Oversubscription in Cloud Platforms",
     "paper": "https://doi.org/10.1145/3669940.3707226",
     "method": "利用虚拟机资源时序互补性，结合长期预测和 CoachVM 保障/超卖份额实现全资源超卖。",
@@ -258,7 +258,7 @@
   },
   {
     "key": "composingdistributedcomputationsthroughtaskandkernelfusion",
-    "id": 14201,
+    "id": 15685,
     "title": "Composing Distributed Computations Through Task and Kernel Fusion",
     "paper": "https://doi.org/10.1145/3669940.3707216",
     "method": "以分布式计算中间表示分析任务融合，并通过 JIT 进一步融合任务内部核函数。",
@@ -281,7 +281,7 @@
   },
   {
     "key": "concertoautomaticcommunicationoptimizationandschedulingforlargescaledeeplearning",
-    "id": 14202,
+    "id": 15686,
     "title": "Concerto: Automatic Communication Optimization and Scheduling for Large-Scale Deep Learning",
     "paper": "https://doi.org/10.1145/3669940.3707223",
     "method": "把通信调度建模为资源约束项目调度，并自动分解同步通信以创造计算通信重叠。",
@@ -304,7 +304,7 @@
   },
   {
     "key": "cooperativegracefuldegradationincontainerizedclouds",
-    "id": 14203,
+    "id": 15687,
     "title": "Cooperative Graceful Degradation in Containerized Clouds",
     "paper": "https://doi.org/10.1145/3669940.3707244",
     "method": "借助容器关键性标签和对角缩放，构建 Phoenix 自动化云韧性控制器。",
@@ -329,7 +329,7 @@
   },
   {
     "key": "copperandwirebridgingexpressivenessandperformanceforservicemeshpolicies",
-    "id": 14204,
+    "id": 15688,
     "title": "Copper and Wire: Bridging Expressiveness and Performance for Service Mesh Policies",
     "paper": "https://doi.org/10.1145/3669940.3707257",
     "method": "从通信抽象、策略语言和轻量控制面三层重构服务网格架构。",
@@ -352,7 +352,7 @@
   },
   {
     "key": "crushacreditbasedapproachforfunctionalunitsharingindynamicallyscheduledhls",
-    "id": 14205,
+    "id": 15689,
     "title": "CRUSH: A Credit-Based Approach for Functional Unit Sharing in Dynamically Scheduled HLS",
     "paper": "https://doi.org/10.1145/3669940.3707273",
     "method": "提出信用式 CRUSH 策略，在动态调度 HLS 数据流电路中安全共享功能单元。",
@@ -375,7 +375,7 @@
   },
   {
     "key": "darwingameplayingtournamentsfortuningapplicationsinnoisycloudenvironments",
-    "id": 14206,
+    "id": 15690,
     "title": "DarwinGame: Playing Tournaments for Tuning Applications in Noisy Cloud Environments",
     "paper": "https://doi.org/10.1145/3669940.3707259",
     "method": "以锦标赛式重复比较参数配置，构建能抵抗共享云干扰的 DarwinGame 调优器。",
@@ -398,7 +398,7 @@
   },
   {
     "key": "debuggertoolchainvalidationviacrossleveldebugging",
-    "id": 14207,
+    "id": 15691,
     "title": "Debugger Toolchain Validation via Cross-Level Debugging",
     "paper": "https://doi.org/10.1145/3669940.3707271",
     "method": "比较同一可执行文件的源码级与指令级调试轨迹，依据三类跨层关系检测工具链错误。",
@@ -421,7 +421,7 @@
   },
   {
     "key": "designandoperationofsharedmachinelearningclustersoncampus",
-    "id": 14208,
+    "id": 15692,
     "title": "Design and Operation of Shared Machine Learning Clusters on Campus",
     "paper": "https://doi.org/10.1145/3669940.3707266",
     "method": "提出四层可扩展全栈 SING 方案，并总结校园共享 GPU 集群的实际部署与运维经验。",
@@ -444,7 +444,7 @@
   },
   {
     "key": "diluenablinggpuresourcingondemandforserverlessdlservingviaintrospectiveelasticity",
-    "id": 14209,
+    "id": 15693,
     "title": "Dilu: Enabling GPU Resourcing-on-Demand for Serverless DL Serving via Introspective Elasticity",
     "paper": "https://doi.org/10.1145/3669940.3707251",
     "method": "用多因素画像、互补调度和二维协同伸缩实现 Dilu 的细粒度 GPU 按需供给。",
@@ -467,7 +467,7 @@
   },
   {
     "key": "dvsyncdecoupledrenderinganddisplayingforsmartphonegraphics",
-    "id": 14210,
+    "id": 15694,
     "title": "D-VSync: Decoupled Rendering and Displaying for Smartphone Graphics",
     "paper": "https://doi.org/10.1145/3669940.3707235",
     "method": "将渲染执行与物理显示解耦，使长帧能够提前利用短帧节省的计算窗口。",
@@ -490,7 +490,7 @@
   },
   {
     "key": "earlyterminationforhyperdimensionalcomputingusinginferentialstatistics",
-    "id": 14211,
+    "id": 15695,
     "title": "Early Termination for Hyperdimensional Computing Using Inferential Statistics",
     "paper": "https://doi.org/10.1145/3669940.3707254",
     "method": "将超维计算重述为统计采样与检验，用 Omen 在准确率保证下动态提前终止推理。",
@@ -513,7 +513,7 @@
   },
   {
     "key": "earthonboardsatelliteimagerycompressionleveraginghistoricalearthobservations",
-    "id": 14212,
+    "id": 15696,
     "title": "Earth+: On-Board Satellite Imagery Compression Leveraging Historical Earth Observations",
     "paper": "https://doi.org/10.1145/3669940.3707222",
     "method": "让地面站向卫星上传星座近期参考图像，Earth+ 仅下传相对参考图变化的区域。",
@@ -536,7 +536,7 @@
   },
   {
     "key": "edmanultralowlatencyethernetfabricformemorydisaggregation",
-    "id": 14213,
+    "id": 15697,
     "title": "EDM: An Ultra-Low Latency Ethernet Fabric for Memory Disaggregation",
     "paper": "https://doi.org/10.1145/3669940.3707221",
     "method": "将远程内存协议栈下沉到以太网 PHY，并在交换机 PHY 中集中调度虚电路。",
@@ -559,7 +559,7 @@
   },
   {
     "key": "efficientlosslesscompressionofscientificfloatingpointdataoncpusandgpus",
-    "id": 14214,
+    "id": 15698,
     "title": "Efficient Lossless Compression of Scientific Floating-Point Data on CPUs and GPUs",
     "paper": "https://doi.org/10.1145/3669940.3707280",
     "method": "设计四种 CPU/GPU 完全兼容的单双精度科学浮点无损压缩算法。",
@@ -582,7 +582,7 @@
   },
   {
     "key": "enhancingcgraefficiencythroughalignedcomputeandcommunicationprovisioning",
-    "id": 14215,
+    "id": 15699,
     "title": "Enhancing CGRA Efficiency Through Aligned Compute and Communication Provisioning",
     "paper": "https://doi.org/10.1145/3669940.3707230",
     "method": "识别数据流图重复 motif，并由 Plaid 架构与编译器协同执行、路由和分层映射。",
@@ -605,7 +605,7 @@
   },
   {
     "key": "exo2growingaschedulinglanguage",
-    "id": 14216,
+    "id": 15700,
     "title": "Exo 2: Growing a Scheduling Language",
     "paper": "https://doi.org/10.1145/3669940.3707218",
     "method": "通过可信细粒度原语与 Cursors 机制，让用户在编译器外定义和组合调度操作。",
@@ -628,7 +628,7 @@
   },
   {
     "key": "fastondevicellminferencewithnpus",
-    "id": 14217,
+    "id": 15701,
     "title": "Fast On-device LLM Inference with NPUs",
     "paper": "https://doi.org/10.1145/3669940.3707239",
     "method": "从提示、张量和 Transformer 块三层重构并调度 CPU/GPU/NPU 协同推理。",
@@ -651,7 +651,7 @@
   },
   {
     "key": "fasterchaitinlikeregisterallocationviagrammaticaldecompositionsofcontrolflowgraphs",
-    "id": 14218,
+    "id": 15702,
     "title": "Faster Chaitin-like Register Allocation via Grammatical Decompositions of Control-Flow Graphs",
     "paper": "https://doi.org/10.1145/3669940.3707286",
     "method": "提出精确刻画程序控制流图的语法分解，并据此设计更快的 Chaitin 式寄存器分配动态规划算法。",
@@ -674,7 +674,7 @@
   },
   {
     "key": "fleetiomanagingmultitenantcloudstoragewithmultiagentreinforcementlearning",
-    "id": 14219,
+    "id": 15703,
     "title": "FleetIO: Managing Multi-Tenant Cloud Storage with Multi-Agent Reinforcement Learning",
     "paper": "https://doi.org/10.1145/3669940.3707229",
     "method": "以多智能体强化学习按运行时 I/O 轨迹分类负载并动态调度虚拟化 SSD 资源。",
@@ -700,7 +700,7 @@
   },
   {
     "key": "forecastinggpuperformancefordeeplearningtrainingandinference",
-    "id": 14220,
+    "id": 15704,
     "title": "Forecasting GPU Performance for Deep Learning Training and Inference",
     "paper": "https://doi.org/10.1145/3669940.3707265",
     "method": "将内核划分为 tile，以机器学习预测 tile 性能并用基本性能定律约束和聚合端到端延迟。",
@@ -725,7 +725,7 @@
   },
   {
     "key": "frugalefficientandeconomicembeddingmodeltrainingwithcommoditygpus",
-    "id": 14221,
+    "id": 15705,
     "title": "Frugal: Efficient and Economic Embedding Model Training with Commodity GPUs",
     "paper": "https://doi.org/10.1145/3669940.3707245",
     "method": "利用主动刷新和两级优先队列，把商品 GPU 间经主机内存的通信移出训练关键路径。",
@@ -748,7 +748,7 @@
   },
   {
     "key": "fsmoeaflexibleandscalabletrainingsystemforsparsemixtureofexpertsmodels",
-    "id": 14222,
+    "id": 15706,
     "title": "FSMoE: A Flexible and Scalable Training System for Sparse Mixture-of-Experts Models",
     "paper": "https://doi.org/10.1145/3669940.3707272",
     "method": "统一抽象并在线画像 MoE 模块，协同调度通信计算并自适应划分梯度。",
@@ -771,7 +771,7 @@
   },
   {
     "key": "fusionananalyticsobjectstoreoptimizedforquerypushdown",
-    "id": 14223,
+    "id": 15707,
     "title": "Fusion: An Analytics Object Store Optimized for Query Pushdown",
     "paper": "https://doi.org/10.1145/3669940.3707234",
     "method": "协同设计纠删码条带构造和文件放置，使可计算单元在存储节点上保持完整。",
@@ -794,7 +794,7 @@
   },
   {
     "key": "graphpipeimprovingperformanceandscalabilityofdnntrainingwithgraphpipelineparallelism",
-    "id": 14224,
+    "id": 15708,
     "title": "GraphPipe: Improving Performance and Scalability of DNN Training with Graph Pipeline Parallelism",
     "paper": "https://doi.org/10.1145/3669940.3707220",
     "method": "以 DAG 保留 DNN 拓扑，将模型分成图式流水阶段并联合优化微批调度。",
@@ -817,7 +817,7 @@
   },
   {
     "key": "haloloopawarebootstrappingmanagementforfullyhomomorphicencryption",
-    "id": 14225,
+    "id": 15709,
     "title": "HALO: Loop-aware Bootstrapping Management for Fully Homomorphic Encryption",
     "paper": "https://doi.org/10.1145/3669940.3707275",
     "method": "匹配循环密文层级并通过变量打包、展开和目标层调整优化 FHE bootstrapping 放置。",
@@ -840,7 +840,7 @@
   },
   {
     "key": "helixservinglargelanguagemodelsoverheterogeneousgpusandnetworkviamaxflow",
-    "id": 14226,
+    "id": 15710,
     "title": "Helix: Serving Large Language Models over Heterogeneous GPUs and Network via Max-Flow",
     "paper": "https://doi.org/10.1145/3669940.3707215",
     "method": "把异构 GPU 与网络上的 LLM 推理建模为加权有向图最大流，并用 MILP 联合优化放置与调度。",
@@ -863,7 +863,7 @@
   },
   {
     "key": "hhoudiniscalableinvariantlearning",
-    "id": 14227,
+    "id": 15711,
     "title": "H-Houdini: Scalable Invariant Learning",
     "paper": "https://doi.org/10.1145/3669940.3707263",
     "method": "把单体 SMT 检查分解为可并行、记忆化的小型层次检查，再正确组合成归纳不变量。",
@@ -888,7 +888,7 @@
   },
   {
     "key": "instructionawarecooperativetlbandcachereplacementpolicies",
-    "id": 14228,
+    "id": 15712,
     "title": "Instruction-Aware Cooperative TLB and Cache Replacement Policies",
     "paper": "https://doi.org/10.1145/3669940.3707247",
     "method": "协同设计 iTP 的 STLB 指令优先替换与 xPTP 的 L2 页表优先替换，并按压力自适应切换。",
@@ -911,7 +911,7 @@
   },
   {
     "key": "marionettearowhammerattackviarowcoupling",
-    "id": 14229,
+    "id": 15713,
     "title": "Marionette: A RowHammer Attack via Row Coupling",
     "paper": "https://doi.org/10.1145/3669940.3707242",
     "method": "测量 DRAM 耦合行的锤击能力，并利用远端耦合行构造可绕过处理器侧防御的 Marionette 攻击。",
@@ -936,7 +936,7 @@
   },
   {
     "key": "medusaacceleratingserverlessllminferencewithmaterialization",
-    "id": 14230,
+    "id": 15714,
     "title": "Medusa: Accelerating Serverless LLM Inference with Materialization",
     "paper": "https://doi.org/10.1145/3669940.3707285",
     "method": "把 CUDA 图和 KV 缓存初始化信息离线物化并在线恢复，以缩短无服务器大模型冷启动。",
@@ -959,7 +959,7 @@
   },
   {
     "key": "metasapiensrealtimeneuralrenderingwithefficiencyawarepruningandacceleratedfoveatedrendering",
-    "id": 14231,
+    "id": 15715,
     "title": "MetaSapiens: Real-Time Neural Rendering with Efficiency-Aware Pruning and Accelerated Foveated Rendering",
     "paper": "https://doi.org/10.1145/3669940.3707227",
     "method": "结合效率感知剪枝、注视点渲染和负载均衡加速器，在移动端实现实时点式神经渲染。",
@@ -982,7 +982,7 @@
   },
   {
     "key": "mintcostefficienttracingwithallrequestscollectionviacommonalityandvariabilityanalysis",
-    "id": 14232,
+    "id": 15716,
     "title": "Mint: Cost-Efficient Tracing with All Requests Collection via Commonality and Variability Analysis",
     "paper": "https://doi.org/10.1145/3669940.3707287",
     "method": "将分布式轨迹解析为公共模式与可变参数，在代理侧聚合模式、过滤参数以捕获全部请求。",
@@ -1005,7 +1005,7 @@
   },
   {
     "key": "moatsecurelymitigatingrowhammerwithperrowactivationcounters",
-    "id": 14233,
+    "id": 15717,
     "title": "MOAT: Securely Mitigating Rowhammer with Per-Row Activation Counters",
     "paper": "https://doi.org/10.1145/3669940.3707278",
     "method": "设计采用 eligibility 与 alert 双阈值的逐行激活计数防御，并对安全阈值给出证明分析。",
@@ -1030,7 +1030,7 @@
   },
   {
     "key": "moelightninghighthroughputmoeinferenceonmemoryconstrainedgpus",
-    "id": 14234,
+    "id": 15718,
     "title": "MoE-Lightning: High-Throughput MoE Inference on Memory-constrained GPUs",
     "paper": "https://doi.org/10.1145/3669940.3707267",
     "method": "用分页权重的 CPU-GPU-I/O 流水线和分层 Roofline 性能模型选择高吞吐 MoE 推理策略。",
@@ -1053,7 +1053,7 @@
   },
   {
     "key": "mvqtowardsefficientdnncompressionandaccelerationwithmaskedvectorquantization",
-    "id": 14235,
+    "id": 15719,
     "title": "MVQ: Towards Efficient DNN Compression and Acceleration with Masked Vector Quantization",
     "paper": "https://doi.org/10.1145/3669940.3707268",
     "method": "联合 N:M 剪枝、masked k-means 向量量化和稀疏脉动阵列加速 DNN。",
@@ -1076,7 +1076,7 @@
   },
   {
     "key": "nazarmonitoringandadaptingmlmodelsonmobiledevices",
-    "id": 14236,
+    "id": 15720,
     "title": "Nazar: Monitoring and Adapting ML Models on Mobile Devices",
     "paper": "https://doi.org/10.1145/3669940.3707246",
     "method": "在无需用户反馈下持续监控移动端模型，聚合设备退化现象、定位共同根因并针对性适配。",
@@ -1101,7 +1101,7 @@
   },
   {
     "key": "optimizingdatalogforthegpu",
-    "id": 14237,
+    "id": 15721,
     "title": "Optimizing Datalog for the GPU",
     "paper": "https://doi.org/10.1145/3669940.3707274",
     "method": "以 HISA 范围索引数据结构和迭代关系代数内核实现 GPUlog 的 GPU Datalog 后端。",
@@ -1124,7 +1124,7 @@
   },
   {
     "key": "optimizingquantumcircuitsfastandslow",
-    "id": 14238,
+    "id": 15722,
     "title": "Optimizing Quantum Circuits, Fast and Slow",
     "paper": "https://doi.org/10.1145/3669940.3707240",
     "method": "在统一抽象下协同快速重写与慢速酉综合，形成简单的 guoq 量子电路优化算法。",
@@ -1147,7 +1147,7 @@
   },
   {
     "key": "partircomposingspmdpartitioningstrategiesformachinelearning",
-    "id": 14239,
+    "id": 15723,
     "title": "PartIR: Composing SPMD Partitioning Strategies for Machine Learning",
     "paper": "https://doi.org/10.1145/3669940.3707284",
     "method": "以 schedule 风格 API 增量重写机器学习 IR，组合用户定义或自动生成的多种 SPMD 分片策略。",
@@ -1170,7 +1170,7 @@
   },
   {
     "key": "pccheckpersistentconcurrentcheckpointingforml",
-    "id": 14240,
+    "id": 15724,
     "title": "PCcheck: Persistent Concurrent Checkpointing for ML",
     "paper": "https://doi.org/10.1145/3669940.3707255",
     "method": "让训练与持久化检查点并发执行，支持 SSD 与持久内存及单机/分布式配置。",
@@ -1195,7 +1195,7 @@
   },
   {
     "key": "performancepredictionofonnicnetworkfunctionswithmultiresourcecontentionandtrafficawareness",
-    "id": 14241,
+    "id": 15725,
     "title": "Performance Prediction of On-NIC Network Functions with Multi-Resource Contention and Traffic Awareness",
     "paper": "https://doi.org/10.1145/3669940.3707232",
     "method": "建立同时刻画 SmartNIC 多资源争用和外部流量属性的 Yala 网络功能性能预测系统。",
@@ -1218,7 +1218,7 @@
   },
   {
     "key": "pipellmfastandconfidentiallargelanguagemodelserviceswithspeculativepipelinedencryption",
-    "id": 14242,
+    "id": 15726,
     "title": "PipeLLM: Fast and Confidential Large Language Model Services with Speculative Pipelined Encryption",
     "paper": "https://doi.org/10.1145/3669940.3707224",
     "method": "预测 LLM 服务将访问的数据，把加密与 GPU 计算投机式流水重叠并在误判时低成本让出流水线。",
@@ -1243,7 +1243,7 @@
   },
   {
     "key": "pulseacceleratingdistributedpointertraversalsondisaggregatedmemory",
-    "id": 14243,
+    "id": 15727,
     "title": "pulse: Accelerating Distributed Pointer-Traversals on Disaggregated Memory",
     "paper": "https://doi.org/10.1145/3669940.3707253",
     "method": "把链式数据结构指针遍历下沉到解耦内存附近，并以 pulse 框架支持分布式执行。",
@@ -1266,7 +1266,7 @@
   },
   {
     "key": "qeccsynthalayoutsynthesizerforquantumerrorcorrectioncodesonsparsearchitectures",
-    "id": 14244,
+    "id": 15728,
     "title": "QECC-Synth: A Layout Synthesizer for Quantum Error Correction Codes on Sparse Architectures",
     "paper": "https://doi.org/10.1145/3669940.3707236",
     "method": "系统分类 ancilla bridge 的设计自由度，并用 MaxSAT 自动综合稀疏硬件上的量子纠错布局。",
@@ -1289,7 +1289,7 @@
   },
   {
     "key": "rangeblocksasynchronizationfacilityfordomainspecificarchitectures",
-    "id": 14245,
+    "id": 15729,
     "title": "RANGE-BLOCKS: A Synchronization Facility for Domain-Specific Architectures",
     "paper": "https://doi.org/10.1145/3669940.3707225",
     "method": "以键范围作为同步边界，用小型片上表紧凑表达嵌套对象互斥。",
@@ -1312,7 +1312,7 @@
   },
   {
     "key": "rassmresiduebasedaccelerationofsinglesparsematrixcomputationviaadaptivetiling",
-    "id": 14246,
+    "id": 15730,
     "title": "RASSM: Residue-based Acceleration of Single Sparse Matrix Computation via Adaptive Tiling",
     "paper": "https://doi.org/10.1145/3669940.3707219",
     "method": "以 residue matrix 紧凑表示非零分布，按输入自适应选择二维 tile 大小。",
@@ -1335,7 +1335,7 @@
   },
   {
     "key": "resbmregionbasedscaleandminimallevelbootstrappingmanagementforfheviamincut",
-    "id": 14247,
+    "id": 15731,
     "title": "ReSBM: Region-based Scale and Minimal-Level Bootstrapping Management for FHE via Min-Cut",
     "paper": "https://doi.org/10.1145/3669940.3707276",
     "method": "将数据流图划分为乘法深度为一的区域，以最小割和分层策略联合放置 scale 管理与 bootstrapping。",
@@ -1358,7 +1358,7 @@
   },
   {
     "key": "rethinkingjavaperformanceanalysis",
-    "id": 14248,
+    "id": 15732,
     "title": "Rethinking Java Performance Analysis",
     "paper": "https://doi.org/10.1145/3669940.3707217",
     "method": "全面更新 DaCapo，按 47 维刻画 22 个工作负载，并以主成分分析检验多样性和集成新方法。",
@@ -1381,7 +1381,7 @@
   },
   {
     "key": "robustnessverificationforcheckingcrashconsistencyofnonvolatilememory",
-    "id": 14249,
+    "id": 15733,
     "title": "Robustness Verification for Checking Crash Consistency of Non-volatile Memory",
     "paper": "https://doi.org/10.1145/3669940.3707269",
     "method": "把崩溃后 NVM 状态可达性约化为带额外顺序约束的崩溃前执行有效性，并以 SMT 搜索所有部分执行。",
@@ -1406,7 +1406,7 @@
   },
   {
     "key": "rtlverificationforsecurespeculationusingcontractshadowlogic",
-    "id": 14250,
+    "id": 15734,
     "title": "RTL Verification for Secure Speculation Using Contract Shadow Logic",
     "paper": "https://doi.org/10.1145/3669940.3707243",
     "method": "利用架构设计知识构造 Contract Shadow Logic，验证以软硬件契约表达的安全推测性质。",
@@ -1431,7 +1431,7 @@
   },
   {
     "key": "segueampcolorguardoptimizingsfiperformanceandscalabilityonmodernarchitectures",
-    "id": 14251,
+    "id": 15735,
     "title": "Segue \\&amp; ColorGuard: Optimizing SFI Performance and Scalability on Modern Architectures",
     "paper": "https://doi.org/10.1145/3669940.3707249",
     "method": "分别利用 x86-64 分段降低 SFI 内存访问插桩成本，并用内存标签扩展同地址空间隔离实例数。",
@@ -1456,7 +1456,7 @@
   },
   {
     "key": "selectivelyuniformconcurrencytesting",
-    "id": 14252,
+    "id": 15736,
     "title": "Selectively Uniform Concurrency Testing",
     "paper": "https://doi.org/10.1145/3669940.3707214",
     "method": "在选定程序事件子集上进行交错空间均匀采样，形成在线随机并发测试算法 SURW。",
@@ -1479,7 +1479,7 @@
   },
   {
     "key": "smoothedifferentiableegraphextraction",
-    "id": 14253,
+    "id": 15737,
     "title": "SmoothE: Differentiable E-Graph Extraction",
     "paper": "https://doi.org/10.1145/3669940.3707262",
     "method": "把离散 e-graph 提取松弛为概率化连续可微优化，并用梯度下降和 GPU 稀疏并行搜索表达式。",
@@ -1502,7 +1502,7 @@
   },
   {
     "key": "supernovaalgorithmhardwarecodesignforresourceawareslam",
-    "id": 14254,
+    "id": 15738,
     "title": "SuperNoVA: Algorithm-Hardware Co-Design for Resource-Aware SLAM",
     "paper": "https://doi.org/10.1145/3669940.3707258",
     "method": "跨算法和硬件动态构造满足时延目标的子图、虚拟化图处理资源并加速 SLAM 后端。",
@@ -1525,7 +1525,7 @@
   },
   {
     "key": "tallynonintrusiveperformanceisolationforconcurrentdeeplearningworkloads",
-    "id": 14255,
+    "id": 15739,
     "title": "Tally: Non-Intrusive Performance Isolation for Concurrent Deep Learning Workloads",
     "paper": "https://doi.org/10.1145/3669940.3707282",
     "method": "在 GPU 线程块粒度调度并发内核，以非侵入方式隔离高优先推理和尽力训练。",
@@ -1548,7 +1548,7 @@
   },
   {
     "key": "targetawareimplementationofrealexpressions",
-    "id": 14256,
+    "id": 15740,
     "title": "Target-Aware Implementation of Real Expressions",
     "paper": "https://doi.org/10.1145/3669940.3707277",
     "method": "用目标描述刻画运算符的实数近似、成本和精度，并迭代搜索等价的目标专用程序。",
@@ -1571,7 +1571,7 @@
   },
   {
     "key": "telaatemporalloadawarecloudvirtualdiskplacementscheme",
-    "id": 14257,
+    "id": 15741,
     "title": "Tela: A Temporal Load-Aware Cloud Virtual Disk Placement Scheme",
     "paper": "https://doi.org/10.1145/3669940.3707252",
     "method": "以一组可解释模型预测虚拟磁盘时序负载和仓库峰值，再按模式执行削峰均衡放置。",
@@ -1594,7 +1594,7 @@
   },
   {
     "key": "unizkacceleratingzeroknowledgeproofwithunifiedhardwareandflexiblekernelmapping",
-    "id": 14258,
+    "id": 15742,
     "title": "UniZK: Accelerating Zero-Knowledge Proof with Unified Hardware and Flexible Kernel Mapping",
     "paper": "https://doi.org/10.1145/3669940.3707228",
     "method": "以增强局部互连和向量模式的统一脉动阵列，配合灵活映射支持多种 ZKP 计算核。",
@@ -1617,7 +1617,7 @@
   },
   {
     "key": "usinganalyticalperformancepowermodelandfinegraineddvfstoenhanceaiacceleratorenergyefficiency",
-    "id": 14259,
+    "id": 15743,
     "title": "Using Analytical Performance/Power Model and Fine-Grained DVFS to Enhance AI Accelerator Energy Efficiency",
     "paper": "https://doi.org/10.1145/3669940.3707231",
     "method": "为每个算子建立分段线性性能与温度相关功耗模型，并用遗传搜索选择细粒度 DVFS。",
@@ -1640,7 +1640,7 @@
   },
   {
     "key": "vattentiondynamicmemorymanagementforservingllmswithoutpagedattention",
-    "id": 14260,
+    "id": 15744,
     "title": "vAttention: Dynamic Memory Management for Serving LLMs without PagedAttention",
     "paper": "https://doi.org/10.1145/3669940.3707256",
     "method": "使用 CUDA 虚拟内存 API 解耦虚拟与物理分配，使 KV 缓存虚拟连续而物理按需映射。",
@@ -1663,7 +1663,7 @@
   },
   {
     "key": "zraidleveragingzonerandomwriteareazrwaforalleviatingpartialparitytaxinznsraid",
-    "id": 14261,
+    "id": 15745,
     "title": "ZRAID: Leveraging Zone Random Write Area (ZRWA) for Alleviating Partial Parity Tax in ZNS RAID",
     "paper": "https://doi.org/10.1145/3669940.3707248",
     "method": "利用数据区的 ZRWA 临时存放部分校验，将写入分散并由后续数据覆盖过期校验。",
@@ -1686,7 +1686,7 @@
   },
   {
     "key": "acceleratingllmservingformultiturndialogueswithefficientresourcemanagement",
-    "id": 14262,
+    "id": 15746,
     "title": "Accelerating LLM Serving for Multi-turn Dialogues with Efficient Resource Management",
     "paper": "https://doi.org/10.1145/3676641.3716245",
     "method": "构建 GPU-CPU-SSD 多级 KV 缓存复用历史轮次，并公平重排请求以缓解队头阻塞。",
@@ -1709,7 +1709,7 @@
   },
   {
     "key": "affinitybasedoptimizationsfortfheonprocessingindram",
-    "id": 14263,
+    "id": 15747,
     "title": "Affinity-based Optimizations for TFHE on Processing-in-DRAM",
     "paper": "https://doi.org/10.1145/3676641.3716246",
     "method": "分析 TFHE 子任务数据亲和模式，并用离线调度在维持并行性下最小化远程数据访问。",
@@ -1732,7 +1732,7 @@
   },
   {
     "key": "amuletautomateddesigntimetestingofsecurespeculationcountermeasures",
-    "id": 14264,
+    "id": 15748,
     "title": "AMuLeT: Automated Design-Time Testing of Secure Speculation Countermeasures",
     "paper": "https://doi.org/10.1145/3676641.3716247",
     "method": "把商业 CPU 的模型式关系测试迁移到微架构模拟器，并放大泄漏以自动搜索防御漏洞。",
@@ -1758,7 +1758,7 @@
   },
   {
     "key": "aquanetworkacceleratedmemoryoffloadingforllmsinscaleupgpudomains",
-    "id": 14265,
+    "id": 15749,
     "title": "Aqua: Network-Accelerated Memory Offloading for LLMs in Scale-Up GPU Domains",
     "paper": "https://doi.org/10.1145/3676641.3715983",
     "method": "以网络加速的推理状态分页支持时间片抢占，使突发负载下 LLM 仍保持响应和吞吐。",
@@ -1781,7 +1781,7 @@
   },
   {
     "key": "becimorbememoryadualmodeawarednncompilerforcimaccelerators",
-    "id": 14266,
+    "id": 15750,
     "title": "Be CIM or Be Memory: A Dual-mode-aware DNN Compiler for CIM Accelerators",
     "paper": "https://doi.org/10.1145/3676641.3716248",
     "method": "把计算/内存模式切换纳入 CIM 编译空间，用动态规划与混合整数规划分配网络段资源。",
@@ -1804,7 +1804,7 @@
   },
   {
     "key": "bqsimgpuacceleratedbatchquantumcircuitsimulationusingdecisiondiagram",
-    "id": 14267,
+    "id": 15751,
     "title": "BQSim: GPU-accelerated Batch Quantum Circuit Simulation using Decision Diagram",
     "paper": "https://doi.org/10.1145/3676641.3715984",
     "method": "用决策图压缩量子电路并转换为 GPU 高效结构，再以任务图重叠内核与数据移动。",
@@ -1829,7 +1829,7 @@
   },
   {
     "key": "cascadeadependencyawareefficienttrainingframeworkfortemporalgraphneuralnetwork",
-    "id": 14268,
+    "id": 15752,
     "title": "Cascade: A Dependency-aware Efficient Training Framework for Temporal Graph Neural Network",
     "paper": "https://doi.org/10.1145/3676641.3716250",
     "method": "按节点空间和时间依赖自适应组批，并依节点记忆相似性和运行反馈调整更新频率。",
@@ -1852,7 +1852,7 @@
   },
   {
     "key": "ciphermatchacceleratinghomomorphicencryptionbasedstringmatchingviamemoryefficientdatapackingandinflashprocessing",
-    "id": 14269,
+    "id": 15753,
     "title": "CIPHERMATCH: Accelerating Homomorphic Encryption-Based String Matching via Memory-Efficient Data Packing and In-Flash Processing",
     "paper": "https://doi.org/10.1145/3676641.3716251",
     "method": "协同设计紧凑密文数据打包、仅加法匹配算法与 NAND 闪存内处理架构。",
@@ -1875,7 +1875,7 @@
   },
   {
     "key": "comettowardspracticalw4a4kv4llmsserving",
-    "id": 14270,
+    "id": 15754,
     "title": "COMET: Towards Practical W4A4KV4 LLMs Serving",
     "paper": "https://doi.org/10.1145/3676641.3716252",
     "method": "以细粒度混合精度量化、W4Ax 内核和 SM 负载均衡实现权重、激活与 KV 缓存全 4 bit 服务。",
@@ -1898,7 +1898,7 @@
   },
   {
     "key": "concurrencyinformedorchestrationforserverlessfunctions",
-    "id": 14271,
+    "id": 15755,
     "title": "Concurrency-Informed Orchestration for Serverless Functions",
     "paper": "https://doi.org/10.1145/3676641.3716253",
     "method": "利用容器级和函数并发信息，在延迟热启动与冷启动间投机决策并平衡驱逐。",
@@ -1921,7 +1921,7 @@
   },
   {
     "key": "controlledpreemptionamplifyingsidechannelattacksfromuserspace",
-    "id": 14272,
+    "id": 15756,
     "title": "Controlled Preemption: Amplifying Side-Channel Attacks from Userspace",
     "paper": "https://doi.org/10.1145/3676641.3715985",
     "method": "利用调度器公平启发式让单个非特权攻击线程反复抢占同核受害线程，放大侧信道时间分辨率。",
@@ -1946,7 +1946,7 @@
   },
   {
     "key": "coserveefficientcollaborationofexpertscoemodelinferencewithlimitedmemory",
-    "id": 14273,
+    "id": 15757,
     "title": "CoServe: Efficient Collaboration-of-Experts (CoE) Model Inference with Limited Memory",
     "paper": "https://doi.org/10.1145/3676641.3715986",
     "method": "依据专家依赖联合调度请求和管理专家，并离线画像异构 CPU/GPU 的资源分配。",
@@ -1971,7 +1971,7 @@
   },
   {
     "key": "ctxnlasoftwarehardwarecodesignedsolutionforefficientcxlbasedtransactionprocessing",
-    "id": 14274,
+    "id": 15758,
     "title": "CTXNL: A Software-Hardware Co-designed Solution for Efficient CXL-Based Transaction Processing",
     "paper": "https://doi.org/10.1145/3676641.3716244",
     "method": "针对事务数据松散一致性，软硬件协同提供可选择的混合 CXL coherence primitive。",
@@ -1994,7 +1994,7 @@
   },
   {
     "key": "cxlforkfastremoteforkovercxlfabrics",
-    "id": 14275,
+    "id": 15759,
     "title": "CXLfork: Fast Remote Fork over CXL Fabrics",
     "paper": "https://doi.org/10.1145/3676641.3715988",
     "method": "利用全局共享 CXL 内存去重进程状态，实现跨节点近零序列化、零拷贝的远程 fork。",
@@ -2017,7 +2017,7 @@
   },
   {
     "key": "datacacheforintermittentcomputingsystemswithnonvolatilemainmemory",
-    "id": 14276,
+    "id": 15760,
     "title": "Data Cache for Intermittent Computing Systems with Non-Volatile Main Memory",
     "paper": "https://doi.org/10.1145/3676641.3715989",
     "method": "把写后读依赖检测直接集成到数据缓存，形成无需额外跟踪器的 NACHO。",
@@ -2040,7 +2040,7 @@
   },
   {
     "key": "dynamicpartialdeadlockdetectionandrecoveryviagarbagecollection",
-    "id": 14277,
+    "id": 15761,
     "title": "Dynamic Partial Deadlock Detection and Recovery via Garbage Collection",
     "paper": "https://doi.org/10.1145/3676641.3715990",
     "method": "借用垃圾收集标记阶段保守近似消息传递对象活性，并自动检测和修复部分死锁。",
@@ -2065,7 +2065,7 @@
   },
   {
     "key": "dynaxsparseattentionaccelerationwithdynamicxmfinegrainedstructuredpruning",
-    "id": 14278,
+    "id": 15762,
     "title": "DynaX: Sparse Attention Acceleration with Dynamic X:M Fine-Grained Structured Pruning",
     "paper": "https://doi.org/10.1145/3676641.3715991",
     "method": "动态选择每组重要 attention 分数数量，并把分数块重排为匹配处理阵列的硬件块。",
@@ -2088,7 +2088,7 @@
   },
   {
     "key": "einsumtreesanabstractionforoptimizingtheexecutionoftensorexpressions",
-    "id": 14279,
+    "id": 15763,
     "title": "Einsum Trees: An Abstraction for Optimizing the Execution of Tensor Expressions",
     "paper": "https://doi.org/10.1145/3676641.3716254",
     "method": "引入 Einsum Tree IR，在既定 contraction path 上全局联合优化所有二元收缩的数据布局。",
@@ -2111,7 +2111,7 @@
   },
   {
     "key": "elasticmiterformallyverifieddataflowcircuitrewrites",
-    "id": 14280,
+    "id": 15764,
     "title": "ElasticMiter: Formally Verified Dataflow Circuit Rewrites",
     "paper": "https://doi.org/10.1145/3676641.3715993",
     "method": "为延迟不敏感电路建立通用等价验证框架，并验证简化数据流电路的图重写规则。",
@@ -2134,7 +2134,7 @@
   },
   {
     "key": "embracingimbalancedynamicloadshiftingamongmicroservicecontainersinsharedclusters",
-    "id": 14281,
+    "id": 15765,
     "title": "Embracing Imbalance: Dynamic Load Shifting among Microservice Containers in Shared Clusters",
     "paper": "https://doi.org/10.1145/3676641.3716255",
     "method": "利用在线时延梯度联合优化微服务容器间负载迁移、连接管理和资源伸缩。",
@@ -2157,7 +2157,7 @@
   },
   {
     "key": "enablingefficientmobiletracingwithbtrace",
-    "id": 14282,
+    "id": 15766,
     "title": "Enabling Efficient Mobile Tracing with BTrace",
     "paper": "https://doi.org/10.1145/3676641.3715994",
     "method": "把全局追踪缓冲区分块并动态分给需求最大的 CPU 核，兼顾连续轨迹长度和性能。",
@@ -2180,7 +2180,7 @@
   },
   {
     "key": "energyawareschedulingandinputbufferoverflowpreventionforenergyharvestingsystems",
-    "id": 14283,
+    "id": 15767,
     "title": "Energy-aware Scheduling and Input Buffer Overflow Prevention for Energy-harvesting Systems",
     "paper": "https://doi.org/10.1145/3676641.3715995",
     "method": "用能量感知调度选择端到端时延最低作业，并以排队论预测溢出后主动降级任务。",
@@ -2205,7 +2205,7 @@
   },
   {
     "key": "existenablingextremelyefficientintraservicetracingobservabilityindatacenters",
-    "id": 14284,
+    "id": 15768,
     "title": "EXIST: Enabling Extremely Efficient Intra-Service Tracing Observability in Datacenters",
     "paper": "https://doi.org/10.1145/3676641.3716283",
     "method": "利用现成硬件追踪，消除昂贵控制、动态分配缓冲并在集群层协调覆盖。",
@@ -2228,7 +2228,7 @@
   },
   {
     "key": "extendeduserinterruptsxuifastandflexiblenotificationwithoutpolling",
-    "id": 14285,
+    "id": 15769,
     "title": "Extended User Interrupts (xUI): Fast and Flexible Notification without Polling",
     "paper": "https://doi.org/10.1145/3676641.3716028",
     "method": "在 Intel UIPI 上增加跟踪中断、硬件安全点、内核绕过定时器和中断转发。",
@@ -2251,7 +2251,7 @@
   },
   {
     "key": "fattreeqramahighbandwidthsharedquantumrandomaccessmemoryforparallelqueries",
-    "id": 14286,
+    "id": 15770,
     "title": "Fat-Tree QRAM: A High-Bandwidth Shared Quantum Random Access Memory for Parallel Queries",
     "paper": "https://doi.org/10.1145/3676641.3716256",
     "method": "构建可流水并发量子查询的 fat-tree QRAM，并设计调度协议最大化硬件利用率。",
@@ -2274,7 +2274,7 @@
   },
   {
     "key": "flexprofflexiblesidechannelfreememoryaccess",
-    "id": 14287,
+    "id": 15771,
     "title": "FLEXPROF: Flexible, Side-Channel-Free Memory Access",
     "paper": "https://doi.org/10.1145/3676641.3715997",
     "method": "将安全内存控制器时隙分为读优化和写优化模式，并以粗粒度画像无泄漏地配置比例。",
@@ -2299,7 +2299,7 @@
   },
   {
     "key": "flexspacceleratinglargelanguagemodeltrainingviaflexiblesequenceparallelism",
-    "id": 14288,
+    "id": 15772,
     "title": "FlexSP: Accelerating Large Language Model Training via Flexible Sequence Parallelism",
     "paper": "https://doi.org/10.1145/3676641.3715998",
     "method": "每个训练步捕获序列长度异质性，以线性规划选择最佳散射策略组合。",
@@ -2322,7 +2322,7 @@
   },
   {
     "key": "formalisingcxlcachecoherence",
-    "id": 14289,
+    "id": 15773,
     "title": "Formalising CXL Cache Coherence",
     "paper": "https://doi.org/10.1145/3676641.3715999",
     "method": "依据英文标准在 Isabelle 中形式化 CXL.cache，并机械证明一致性性质和关键场景限制。",
@@ -2345,7 +2345,7 @@
   },
   {
     "key": "generalizingreusepatternsforefficientdnnonmicrocontrollers",
-    "id": 14290,
+    "id": 15774,
     "title": "Generalizing Reuse Patterns for Efficient DNN on Microcontrollers",
     "paper": "https://doi.org/10.1145/3676641.3716257",
     "method": "把复用模式推广为输入/激活矩阵行列重排关系，并用精度和时延模型选择模式。",
@@ -2370,7 +2370,7 @@
   },
   {
     "key": "gigaflowpipelineawaresubtraversalcachingformodernsmartnics",
-    "id": 14291,
+    "id": 15775,
     "title": "Gigaflow: Pipeline-Aware Sub-Traversal Caching for Modern SmartNICs",
     "paper": "https://doi.org/10.1145/3676641.3716000",
     "method": "按 vSwitch 可编程流水线中的共享子遍历建立缓存规则，而非缓存完整流。",
@@ -2393,7 +2393,7 @@
   },
   {
     "key": "hardwaresentinelprotectingsoftwareapplicationsfromhardwaresilentdatacorruptions",
-    "id": 14292,
+    "id": 15776,
     "title": "Hardware Sentinel: Protecting Software Applications from Hardware Silent Data Corruptions",
     "paper": "https://doi.org/10.1145/3676641.3716258",
     "method": "从段错误、core dump、崩溃和日志等软件失败指标反推硬件静默数据损坏。",
@@ -2418,7 +2418,7 @@
   },
   {
     "key": "harmoniaaunifiedframeworkforheterogeneousfpgaaccelerationinthecloud",
-    "id": 14293,
+    "id": 15777,
     "title": "Harmonia: A Unified Framework for Heterogeneous FPGA Acceleration in the Cloud",
     "paper": "https://doi.org/10.1145/3676641.3716259",
     "method": "以平台专属适配层屏蔽硬件差异，再以模块化统一 shell 和命令接口承载跨平台角色。",
@@ -2441,7 +2441,7 @@
   },
   {
     "key": "hetecarchitecturesforheterogeneousquantumerrorcorrectioncodes",
-    "id": 14294,
+    "id": 15778,
     "title": "HetEC: Architectures for Heterogeneous Quantum Error Correction Codes",
     "paper": "https://doi.org/10.1145/3676641.3716001",
     "method": "用 ancilla bus 集成 surface code 与 gross code，联合优化跨码数据移动、路由和资源权衡。",
@@ -2464,7 +2464,7 @@
   },
   {
     "key": "hierarchicalprefetchingasoftwarehardwareinstructionprefetcherforserverapplications",
-    "id": 14295,
+    "id": 15779,
     "title": "Hierarchical Prefetching: A Software-Hardware Instruction Prefetcher for Server Applications",
     "paper": "https://doi.org/10.1145/3676641.3716260",
     "method": "由软件识别数十至数百 KB 的功能 bundle，并由轻量硬件整体 record-and-replay 预取。",
@@ -2487,7 +2487,7 @@
   },
   {
     "key": "hyperhammerbreakingfreefromkvmenforcedisolation",
-    "id": 14296,
+    "id": 15780,
     "title": "HyperHammer: Breaking Free from KVM-Enforced Isolation",
     "paper": "https://doi.org/10.1145/3676641.3716002",
     "method": "在特定现代虚拟化配置上工程化 RowHammer 位翻转，跨越 KVM 内存隔离并进一步控制 hypervisor。",
@@ -2512,7 +2512,7 @@
   },
   {
     "key": "kernelgptenhancedkernelfuzzingvialargelanguagemodels",
-    "id": 14297,
+    "id": 15781,
     "title": "KernelGPT: Enhanced Kernel Fuzzing via Large Language Models",
     "paper": "https://doi.org/10.1145/3676641.3716022",
     "method": "用大模型迭代综合系统调用规范，并根据验证反馈自动调试和修复后交给 Syzkaller。",
@@ -2537,7 +2537,7 @@
   },
   {
     "key": "klotskiefficientmixtureofexpertinferenceviaexpertawaremultibatchpipeline",
-    "id": 14298,
+    "id": 15782,
     "title": "Klotski: Efficient Mixture-of-Expert Inference via Expert-Aware Multi-Batch Pipeline",
     "paper": "https://doi.org/10.1145/3676641.3716261",
     "method": "根据专家激活、异构计算和 I/O 需求编排多批次顺序，并约束感知规划换入和预取。",
@@ -2560,7 +2560,7 @@
   },
   {
     "key": "loadandmlpawarethreadorchestrationforrecommendationsystemsinferenceoncpus",
-    "id": 14299,
+    "id": 15783,
     "title": "Load and MLP-Aware Thread Orchestration for Recommendation Systems Inference on CPUs",
     "paper": "https://doi.org/10.1145/3676641.3716003",
     "method": "最小化 embedding table 核分配，按 MLP 特征调度，并结合 work stealing 与表重排平衡 chiplet。",
@@ -2583,7 +2583,7 @@
   },
   {
     "key": "m5masteringpagemigrationandmemorymanagementforcxlbasedtieredmemorysystems",
-    "id": 14300,
+    "id": 15784,
     "title": "M5: Mastering Page Migration and Memory Management for CXL-based Tiered Memory Systems",
     "paper": "https://doi.org/10.1145/3676641.3711999",
     "method": "在 CXL 控制器内按 4KB 页和 64B word 精确计数访问，为页面迁移提供硬件热度画像。",
@@ -2606,7 +2606,7 @@
   },
   {
     "key": "mdpeekbreakingbalancedbranchesinsgxwithmemorydisambiguationunitsidechannels",
-    "id": 14301,
+    "id": 15785,
     "title": "MDPeek: Breaking Balanced Branches in SGX with Memory Disambiguation Unit Side Channels",
     "paper": "https://doi.org/10.1145/3676641.3716004",
     "method": "逆向 MDU 启用与更新逻辑，利用其新泄漏源识别并攻击 SGX 中秘密相关分支。",
@@ -2631,7 +2631,7 @@
   },
   {
     "key": "microblossomacceleratedminimumweightperfectmatchingdecodingforquantumerrorcorrection",
-    "id": 14302,
+    "id": 15786,
     "title": "Micro Blossom: Accelerated Minimum-Weight Perfect Matching Decoding for Quantum Error Correction",
     "paper": "https://doi.org/10.1145/3676641.3716005",
     "method": "把 MWPM 解码器划分到软件与每个图顶点/边一组并行单元的可编程加速器。",
@@ -2654,7 +2654,7 @@
   },
   {
     "key": "mocsystemefficientfaulttoleranceforsparsemixtureofexpertsmodeltraining",
-    "id": 14303,
+    "id": 15787,
     "title": "MoC-System: Efficient Fault Tolerance for Sparse Mixture-of-Experts Model Training",
     "paper": "https://doi.org/10.1145/3676641.3716006",
     "method": "选择性保存部分专家、完全分片检查点并异步管理内存快照与持久化。",
@@ -2679,7 +2679,7 @@
   },
   {
     "key": "mosaicexploitinginstructionlevelparallelismondeeplearningacceleratorswithitextessellation",
-    "id": 14304,
+    "id": 15788,
     "title": "Mosaic: Exploiting Instruction-Level Parallelism on Deep Learning Accelerators with iTex Tessellation",
     "paper": "https://doi.org/10.1145/3676641.3716262",
     "method": "以 iTex 仿射抽象从底向上用不同指令拼嵌 tensor 任务，并调度异构运算单元并行执行。",
@@ -2702,7 +2702,7 @@
   },
   {
     "key": "necroreaperpruningawaydeadmemorytrafficinwarehousescalecomputers",
-    "id": 14305,
+    "id": 15789,
     "title": "Necro-reaper: Pruning away Dead Memory Traffic in Warehouse-Scale Computers",
     "paper": "https://doi.org/10.1145/3676641.3716007",
     "method": "用新 ISA 指令配合画像编译器和定制分配器，避免释放数据写回与未初始化数据取入。",
@@ -2725,7 +2725,7 @@
   },
   {
     "key": "octocachecachingvoxelsforaccelerating3doccupancymappinginautonomoussystems",
-    "id": 14306,
+    "id": 15790,
     "title": "OctoCache: Caching Voxels for Accelerating 3D Occupancy Mapping in Autonomous Systems",
     "paper": "https://doi.org/10.1145/3676641.3716263",
     "method": "通过缓存访问优化、voxel 顺序重排和工作流并行化加速 OctoMap。",
@@ -2748,7 +2748,7 @@
   },
   {
     "key": "optimizingdeeplearninginferenceefficiencythroughblockdependencyanalysis",
-    "id": 14307,
+    "id": 15791,
     "title": "Optimizing Deep Learning Inference Efficiency through Block Dependency Analysis",
     "paper": "https://doi.org/10.1145/3676641.3716264",
     "method": "从编译低层阶段抽取 block 依赖，简化算子间关系并发现隐藏 GPU 并行机会。",
@@ -2771,7 +2771,7 @@
   },
   {
     "key": "orionafullyhomomorphicencryptionframeworkfordeeplearning",
-    "id": 14308,
+    "id": 15792,
     "title": "Orion: A Fully Homomorphic Encryption Framework for Deep Learning",
     "paper": "https://doi.org/10.1145/3676641.3716008",
     "method": "自动把 PyTorch 网络翻译为 FHE，使用单次多路打包以及自动 bootstrapping 与 scale 管理。",
@@ -2794,7 +2794,7 @@
   },
   {
     "key": "os2gahighperformancedpuoffloadingarchitectureforgpubaseddeeplearningwithobjectstorage",
-    "id": 14309,
+    "id": 15793,
     "title": "OS2G: A High-Performance DPU Offloading Architecture for GPU-based Deep Learning with Object Storage",
     "paper": "https://doi.org/10.1145/3676641.3716265",
     "method": "把高并发异步对象客户端下沉到 DPU，并通过 GPUDirect DPU 让数据直达 GPU。",
@@ -2817,7 +2817,7 @@
   },
   {
     "key": "papiexploitingdynamicparallelisminlargelanguagemodeldecodingwithaprocessinginmemoryenabledcomputingsystem",
-    "id": 14310,
+    "id": 15794,
     "title": "PAPI: Exploiting Dynamic Parallelism in Large Language Model Decoding with a Processing-In-Memory-Enabled Computing System",
     "paper": "https://doi.org/10.1145/3676641.3716009",
     "method": "在线刻画解码内核的计算/内存瓶颈，并动态调度到 GPU 或不同能力的混合 PIM 单元。",
@@ -2840,7 +2840,7 @@
   },
   {
     "key": "parendithousandwayparallelrtlsimulation",
-    "id": 14311,
+    "id": 15795,
     "title": "Parendi: Thousand-Way Parallel RTL Simulation",
     "paper": "https://doi.org/10.1145/3676641.3716010",
     "method": "以新分区和编译技术把细粒度 RTL 并行映射到最多 5888 个 Graphcore IPU 核。",
@@ -2865,7 +2865,7 @@
   },
   {
     "key": "pastfutureschedulerforllmservingunderslaguarantees",
-    "id": 14312,
+    "id": 15796,
     "title": "Past-Future Scheduler for LLM Serving under SLA Guarantees",
     "paper": "https://doi.org/10.1145/3676641.3716011",
     "method": "结合历史输出长度分布与未来各时间点内存占用，精确估计运行批次峰值资源。",
@@ -2888,7 +2888,7 @@
   },
   {
     "key": "paveinformationflowcontrolforprivacypreservingonlinedataprocessingservices",
-    "id": 14313,
+    "id": 15797,
     "title": "Pave: Information Flow Control for Privacy-preserving Online Data Processing Services",
     "paper": "https://doi.org/10.1145/3676641.3716266",
     "method": "在 Intel SGX 上运行 PaveBox 监控沙箱所有输入输出流，并依据形式化策略阻止隐私泄漏。",
@@ -2913,7 +2913,7 @@
   },
   {
     "key": "phaseprintexposingcloudfpgafingerprintsbyinducingtimingfaultsatruntime",
-    "id": 14314,
+    "id": 15798,
     "title": "PhasePrint: Exposing Cloud FPGA Fingerprints by Inducing Timing Faults at Runtime",
     "paper": "https://doi.org/10.1145/3676641.3716012",
     "method": "动态调整片内相关时钟相位诱发 timing fault，把错误位置编码为 FPGA 制造差异指纹。",
@@ -2938,7 +2938,7 @@
   },
   {
     "key": "picachuplugincgrahandlingupcomingnonlinearoperationsinllms",
-    "id": 14315,
+    "id": 15799,
     "title": "PICACHU: Plug-In CGRA Handling Upcoming Nonlinear Operations in LLMs",
     "paper": "https://doi.org/10.1145/3676641.3716013",
     "method": "为 LLM 全部非线性算子设计可插拔 CGRA、自定义算法和专用编译工具链。",
@@ -2961,7 +2961,7 @@
   },
   {
     "key": "pimisallyouneedacxlenabledgpufreesystemforlargelanguagemodelinference",
-    "id": 14316,
+    "id": 15800,
     "title": "PIM Is All You Need: A CXL-Enabled GPU-Free System for Large Language Model Inference",
     "paper": "https://doi.org/10.1145/3676641.3716267",
     "method": "以 CXL 扩展内存容纳模型/KV，并用 bank 旁处理和 CXL 集体通信构建无 GPU 推理系统。",
@@ -2984,7 +2984,7 @@
   },
   {
     "key": "piratenocompromiselowbandwidthvrstreamingforedgedevices",
-    "id": 14317,
+    "id": 15801,
     "title": "Pirate: No Compromise Low-Bandwidth VR Streaming for Edge Devices",
     "paper": "https://doi.org/10.1145/3676641.3716268",
     "method": "利用双目相似性，交替传输单眼视图并以视差和光流迭代合成另一眼。",
@@ -3007,7 +3007,7 @@
   },
   {
     "key": "podattentionunlockingfullprefilldecodeoverlapforfasterllminference",
-    "id": 14318,
+    "id": 15802,
     "title": "POD-Attention: Unlocking Full Prefill-Decode Overlap for Faster LLM Inference",
     "paper": "https://doi.org/10.1145/3676641.3715996",
     "method": "在同一 GPU multiprocessor 上联合分配计算与带宽资源，并发执行 prefill 和 decode attention。",
@@ -3030,7 +3030,7 @@
   },
   {
     "key": "practicalfederatedrecommendationmodellearningusingoramwithcontrolledprivacy",
-    "id": 14319,
+    "id": 15803,
     "title": "Practical Federated Recommendation Model Learning Using ORAM with Controlled Privacy",
     "paper": "https://doi.org/10.1145/3676641.3716014",
     "method": "让用户仅更新大型 embedding 表的小子集，以 ORAM 隐藏访问，并用 ε-FDP 控制隐私性能权衡。",
@@ -3053,7 +3053,7 @@
   },
   {
     "key": "protectingcryptographiccodeagainstspectrersbandinfactallknownspectrevariants",
-    "id": 14320,
+    "id": 15804,
     "title": "Protecting Cryptographic Code Against Spectre-RSB: (and, in Fact, All Known Spectre Variants)",
     "paper": "https://doi.org/10.1145/3676641.3716015",
     "method": "建立值依赖信息流类型系统并配套编译变换，以 Coq 证明低层代码在推测执行下不泄密。",
@@ -3078,7 +3078,7 @@
   },
   {
     "key": "pruneradraftthenverifyexplorationmechanismtoacceleratetensorprogramtuning",
-    "id": 14321,
+    "id": 15805,
     "title": "Pruner: A Draft-then-Verify Exploration Mechanism to Accelerate Tensor Program Tuning",
     "paper": "https://doi.org/10.1145/3676641.3716269",
     "method": "先用符号分析器粗筛小规模候选，再用准确学习代价模型验证，并以 momentum 在线跨平台适配。",
@@ -3103,7 +3103,7 @@
   },
   {
     "key": "rattefuzzingformiscompilationsinmultilevelcompilersusingcomposablesemantics",
-    "id": 14322,
+    "id": 15806,
     "title": "Ratte: Fuzzing for Miscompilations in Multi-Level Compilers Using Composable Semantics",
     "paper": "https://doi.org/10.1145/3676641.3716270",
     "method": "为 MLIR dialect 定义可组合语义和模块化 fuzzer，使语义与无未定义行为测试生成相互验证。",
@@ -3128,7 +3128,7 @@
   },
   {
     "key": "recaintegratedaccelerationforrealtimeandefficientcooperativeembodiedautonomousagents",
-    "id": 14323,
+    "id": 15807,
     "title": "ReCA: Integrated Acceleration for Real-Time and Efficient Cooperative Embodied Autonomous Agents",
     "paper": "https://doi.org/10.1145/3676641.3716016",
     "method": "跨算法、双层记忆、分层协作规划和异构硬件协同加速多具身智能体。",
@@ -3154,7 +3154,7 @@
   },
   {
     "key": "relaxcomposableabstractionsforendtoenddynamicmachinelearning",
-    "id": 14324,
+    "id": 15808,
     "title": "Relax: Composable Abstractions for End-to-End Dynamic Machine Learning",
     "paper": "https://doi.org/10.1145/3676641.3716249",
     "method": "以单一跨层表示封装计算图、tensor loop 和外部库，并用一等符号 shape 全局跟踪动态计算。",
@@ -3179,7 +3179,7 @@
   },
   {
     "key": "reloadreloadexploitingcacheandmemorycontentionsidechannelonamdsev",
-    "id": 14325,
+    "id": 15809,
     "title": "Reload+Reload: Exploiting Cache and Memory Contention Side Channel on AMD SEV",
     "paper": "https://doi.org/10.1145/3676641.3716017",
     "method": "利用新发现的 cache flush 与 memory contention 泄漏分别构造 RRFS 和 RRMB 攻击。",
@@ -3204,7 +3204,7 @@
   },
   {
     "key": "rescqrealtimeschedulingforcontinuousanglequantumerrorcorrectionarchitectures",
-    "id": 14326,
+    "id": 15810,
     "title": "RESCQ: Realtime Scheduling for Continuous Angle Quantum Error Correction Architectures",
     "paper": "https://doi.org/10.1145/3676641.3716018",
     "method": "按资源状态预期生产率动态重分配，并自适应选择重新计算调度的频率。",
@@ -3227,7 +3227,7 @@
   },
   {
     "key": "savingenergywithpervariablebitwidthspeculation",
-    "id": 14327,
+    "id": 15811,
     "title": "Saving Energy with Per-Variable Bitwidth Speculation",
     "paper": "https://doi.org/10.1145/3676641.3716271",
     "method": "编译器按变量预期需求缩窄位宽，硬件监控误投机并在原始位宽重执行保证正确。",
@@ -3250,7 +3250,7 @@
   },
   {
     "key": "shadowloadinjectingstateintohardwareprefetchers",
-    "id": 14328,
+    "id": 15812,
     "title": "ShadowLoad: Injecting State into Hardware Prefetchers",
     "paper": "https://doi.org/10.1145/3676641.3716020",
     "method": "用 StrideRE 自动逆向 stride prefetcher，并注入状态把不可访问受害数据带入缓存。",
@@ -3275,7 +3275,7 @@
   },
   {
     "key": "simplifyingandacceleratingnorflashiostackforramrestrictedmicrocontrollers",
-    "id": 14329,
+    "id": 15813,
     "title": "Simplifying and Accelerating NOR Flash I/O Stack for RAM-Restricted Microcontrollers",
     "paper": "https://doi.org/10.1145/3676641.3716272",
     "method": "利用小文件和确定 I/O 模式，把块级组织与磨损均衡放宽到协同的文件级管理。",
@@ -3298,7 +3298,7 @@
   },
   {
     "key": "skiaexposingshadowbranches",
-    "id": 14330,
+    "id": 15814,
     "title": "Skia: Exposing Shadow Branches",
     "paper": "https://doi.org/10.1145/3676641.3716273",
     "method": "解码 FDIP 已取入 cache line 的未使用字节，将其中 shadow branch 放入并行访问的 SBB。",
@@ -3321,7 +3321,7 @@
   },
   {
     "key": "smackefficientinstructioncacheattacksviaselfmodifyingcodeconflicts",
-    "id": 14331,
+    "id": 15815,
     "title": "SMaCk: Efficient Instruction Cache Attacks via Self-Modifying Code Conflicts",
     "paper": "https://doi.org/10.1145/3676641.3716274",
     "method": "利用 x86 自修改代码影响指令 cache line 的命中/未命中时序差异增强缓存攻击。",
@@ -3346,7 +3346,7 @@
   },
   {
     "key": "snowploweffectivekernelfuzzingwithalearnedwhiteboxtestmutator",
-    "id": 14332,
+    "id": 15816,
     "title": "Snowplow: Effective Kernel Fuzzing with a Learned White-box Test Mutator",
     "paper": "https://doi.org/10.1145/3676641.3716019",
     "method": "训练白盒模型结合测试程序、内核覆盖和目标覆盖，预测最有希望的参数变异。",
@@ -3371,7 +3371,7 @@
   },
   {
     "key": "spindleefficientdistributedtrainingofmultitasklargemodelsviawavefrontscheduling",
-    "id": 14333,
+    "id": 15817,
     "title": "Spindle: Efficient Distributed Training of Multi-Task Large Models via Wavefront Scheduling",
     "paper": "https://doi.org/10.1145/3676641.3715992",
     "method": "把多任务多模态模型执行拆成 wave，顺序求解异质感知并行与依赖驱动调度。",
@@ -3394,7 +3394,7 @@
   },
   {
     "key": "squeezingoperatorperformancepotentialfortheascendarchitecture",
-    "id": 14334,
+    "id": 15818,
     "title": "Squeezing Operator Performance Potential for the Ascend Architecture",
     "paper": "https://doi.org/10.1145/3676641.3716243",
     "method": "构建组件式 roofline 模型定位 Ascend 算子瓶颈，并总结基于分析的优化流程。",
@@ -3417,7 +3417,7 @@
   },
   {
     "key": "stramashafusedkerneloperatingsystemforcachecoherentheterogeneousisaplatforms",
-    "id": 14335,
+    "id": 15819,
     "title": "Stramash: A Fused-Kernel Operating System For Cache-Coherent, Heterogeneous-ISA Platforms",
     "paper": "https://doi.org/10.1145/3676641.3716275",
     "method": "把异构 ISA CPU 视为共享 cache-coherent 内存的统一内核，设计新的 fused-kernel OS 机制。",
@@ -3440,7 +3440,7 @@
   },
   {
     "key": "streamgridstreamingpointcloudanalyticsviacompulsorysplittinganddeterministictermination",
-    "id": 14336,
+    "id": 15820,
     "title": "StreamGrid: Streaming Point Cloud Analytics via Compulsory Splitting and Deterministic Termination",
     "paper": "https://doi.org/10.1145/3676641.3716021",
     "method": "以 compulsory splitting 和 deterministic termination 改写点云计算，并自动优化片上缓冲。",
@@ -3463,7 +3463,7 @@
   },
   {
     "key": "systematiccxlmemorycharacterizationandperformanceanalysisatscale",
-    "id": 14337,
+    "id": 15821,
     "title": "Systematic CXL Memory Characterization and Performance Analysis at Scale",
     "paper": "https://doi.org/10.1145/3676641.3715987",
     "method": "用 Melody 跨工作负载、真实设备、延迟档位和 CPU 平台系统刻画 CXL 内存。",
@@ -3486,7 +3486,7 @@
   },
   {
     "key": "tacklingmlbaseddynamicmispredictionsusingstaticallycomputedinvariantsforattacksurfacereduction",
-    "id": 14338,
+    "id": 15822,
     "title": "Tackling ML-based Dynamic Mispredictions using Statically Computed Invariants for Attack Surface Reduction",
     "paper": "https://doi.org/10.1145/3676641.3716276",
     "method": "用 ML 预测动态函数调用集合，再以 Datalog 静态计算 ensue() 关系区分模型误判与攻击。",
@@ -3511,7 +3511,7 @@
   },
   {
     "key": "taintemudecouplingtrackingfromfunctionaldomainsforarchitectureagnosticandefficientwholesystemtainttracking",
-    "id": 14339,
+    "id": 15823,
     "title": "TaintEMU: Decoupling Tracking from Functional Domains for Architecture-Agnostic and Efficient Whole-System Taint Tracking",
     "paper": "https://doi.org/10.1145/3676641.3716023",
     "method": "在 QEMU TCG 和宿主资源层彻底解耦功能与污点域，并直接由 TCG 操作生成跟踪指令。",
@@ -3536,7 +3536,7 @@
   },
   {
     "key": "taopttoolagnosticoptimizationofparallelizedautomatedmobileuitesting",
-    "id": 14340,
+    "id": 15824,
     "title": "TaOPT: Tool-Agnostic Optimization of Parallelized Automated Mobile UI Testing",
     "paper": "https://doi.org/10.1145/3676641.3716282",
     "method": "在线推断应用松耦合 UI 子空间，并把不同设备引导到互异子空间而不修改测试工具。",
@@ -3559,7 +3559,7 @@
   },
   {
     "key": "tapasthermalandpowerawareschedulingforllminferenceincloudplatforms",
-    "id": 14341,
+    "id": 15825,
     "title": "TAPAS: Thermal- and Power-Aware Scheduling for LLM Inference in Cloud Platforms",
     "paper": "https://doi.org/10.1145/3676641.3716025",
     "method": "利用历史温度/功耗和 SaaS 可适配性，联合放置 GPU VM、路由请求并应急重配置。",
@@ -3584,7 +3584,7 @@
   },
   {
     "key": "tnicatrustednicarchitectureahardwarenetworksubstrateforbuildinghighperformancetrustworthydistributedsystems",
-    "id": 14342,
+    "id": 15826,
     "title": "TNIC: A Trusted NIC Architecture: A hardware-network substrate for building high-performance trustworthy distributed systems",
     "paper": "https://doi.org/10.1145/3676641.3716277",
     "method": "在 NIC 建立最小形式验证 silicon root-of-trust，提供可转移认证、不可抵赖分叉和可信网络栈。",
@@ -3609,7 +3609,7 @@
   },
   {
     "key": "towardsendtoendoptimizationofllmbasedapplicationswithayo",
-    "id": 14343,
+    "id": 15827,
     "title": "Towards End-to-End Optimization of LLM-based Applications with Ayo",
     "paper": "https://doi.org/10.1145/3676641.3716278",
     "method": "把 LLM 应用工作流细化为 primitive 级 dataflow graph，跨模块并行、流水和调度。",
@@ -3632,7 +3632,7 @@
   },
   {
     "key": "towardssoundreassemblyofmodernx8664binaries",
-    "id": 14344,
+    "id": 15828,
     "title": "Towards Sound Reassembly of Modern x86-64 Binaries",
     "paper": "https://doi.org/10.1145/3676641.3716026",
     "method": "利用 CET 性质精确符号化动态指针，并过近似间接分支目标以覆盖所有可能内存引用。",
@@ -3655,7 +3655,7 @@
   },
   {
     "key": "treeletacceleratedraytracingongpus",
-    "id": 14345,
+    "id": 15829,
     "title": "Treelet Accelerated Ray Tracing on GPUs",
     "paper": "https://doi.org/10.1145/3676641.3716279",
     "method": "虚拟化 ray 扩大并发复用，动态切换 treelet queue 遍历模式并重打包 warp。",
@@ -3678,7 +3678,7 @@
   },
   {
     "key": "velaavirtualizedllmtrainingsystemwithgpudirectroce",
-    "id": 14346,
+    "id": 15830,
     "title": "Vela: A Virtualized LLM Training System with GPU Direct RoCE",
     "paper": "https://doi.org/10.1145/3676641.3716280",
     "method": "以 KVM、虚拟 RoCE 和 GPU-NIC peer-to-peer DMA 构建云原生大模型训练系统。",
@@ -3701,7 +3701,7 @@
   },
   {
     "key": "velosiraptorcodesynthesisformemorytranslation",
-    "id": 14347,
+    "id": 15831,
     "title": "Velosiraptor: Code Synthesis for Memory Translation",
     "paper": "https://doi.org/10.1145/3676641.3711998",
     "method": "从内存硬件映射行为和 OS 环境高层规范自动综合并验证低层配置代码。",
@@ -3726,7 +3726,7 @@
   },
   {
     "key": "virgoclusterlevelmatrixunitintegrationingpusforscalabilityandenergyefficiency",
-    "id": 14348,
+    "id": 15832,
     "title": "Virgo: Cluster-level Matrix Unit Integration in GPUs for Scalability and Energy Efficiency",
     "paper": "https://doi.org/10.1145/3676641.3716281",
     "method": "将矩阵单元从单个 SIMT core 解耦并集成到 core cluster，增大操作粒度并卸载寄存器访问。",
@@ -3749,7 +3749,7 @@
   },
   {
     "key": "virtuosoenablingfastandaccuratevirtualmemoryresearchviaanimitationbasedoperatingsystemsimulationmethodology",
-    "id": 14349,
+    "id": 15833,
     "title": "Virtuoso: Enabling Fast and Accurate Virtual Memory Research via an Imitation-based Operating System Simulation Methodology",
     "paper": "https://doi.org/10.1145/3676641.3716027",
     "method": "以轻量用户态 MimicOS 仅模仿所需内核功能，并接入多种架构模拟器评估虚拟内存共设计。",
@@ -3774,7 +3774,7 @@
   },
   {
     "key": "willweeverhavetrulysecureoperatingsystems",
-    "id": 14350,
+    "id": 15834,
     "title": "Will We Ever have Truly Secure Operating Systems?",
     "paper": "https://doi.org/10.1145/3676642.3729205",
     "method": "回顾 seL4 验证边界，并以简单、模块化、严格职责分离和用例专属策略设计 LionsOS。",
@@ -3799,7 +3799,7 @@
   },
   {
     "key": "hasmachinelearningforsystemsreachedaninflectionpoint",
-    "id": 14351,
+    "id": 15835,
     "title": "Has Machine Learning for Systems Reached an Inflection Point?",
     "paper": "https://doi.org/10.1145/3676642.3729206",
     "method": "从跨领域拐点比较出发，对 ML for Systems 工作进行分类并提出研究机会。",
@@ -3812,7 +3812,7 @@
   },
   {
     "key": "theasplos2025eurosys2025contestonintraoperatorparallelismfordistributeddeeplearning",
-    "id": 14352,
+    "id": 15836,
     "title": "The ASPLOS 2025 / EuroSys 2025 Contest on Intra-Operator Parallelism for Distributed Deep Learning",
     "paper": "https://doi.org/10.1145/3676642.3736399",
     "method": "组织多月模型分区竞赛，并总结问题形式、关键挑战、机会、新基准套件和提交质量。",
@@ -3835,7 +3835,7 @@
   },
   {
     "key": "asdrexploitingadaptivesamplinganddatareuseforcimbasedinstantneuralrendering",
-    "id": 14353,
+    "id": 15837,
     "title": "ASDR: Exploiting Adaptive Sampling and Data Reuse for CIM-based Instant Neural Rendering",
     "paper": "https://doi.org/10.1145/3676642.3736117",
     "method": "按像素渲染难度动态采样、近似解耦颜色与密度，并映射到 ReRAM CIM 复用架构。",
@@ -3858,7 +3858,7 @@
   },
   {
     "key": "cogentadaptablecompilertoolchainfortaggingriscvbinaries",
-    "id": 14354,
+    "id": 15838,
     "title": "COGENT: Adaptable Compiler Toolchain for Tagging RISC-V Binaries",
     "paper": "https://doi.org/10.1145/3676642.3736125",
     "method": "以 LLVM 编译器、tag-aware 反汇编器和完整性检查器生成多粒度、可变宽 RISC-V 指令标签。",
@@ -3884,7 +3884,7 @@
   },
   {
     "key": "deepcontextacontextawarecrossplatformandcrossframeworktoolforperformanceprofilingandanalysisofdeeplearningworkloads",
-    "id": 14355,
+    "id": 15839,
     "title": "DeepContext: A Context-aware, Cross-platform, and Cross-framework Tool for Performance Profiling and Analysis of Deep Learning Workloads",
     "paper": "https://doi.org/10.1145/3676642.3736127",
     "method": "通过框架无关 shim 关联 Python、深度学习框架、C/C++ 库与 GPU 执行上下文并自动诊断。",
@@ -3907,7 +3907,7 @@
   },
   {
     "key": "dejavuzzdisclosingtransientexecutionbugswithdynamicswappablememoryanddifferentialinformationflowtrackingassistedprocessorfuzzing",
-    "id": 14356,
+    "id": 15840,
     "title": "DejaVuzz: Disclosing Transient Execution Bugs with Dynamic Swappable Memory and Differential Information Flow Tracking Assisted Processor Fuzzing",
     "paper": "https://doi.org/10.1145/3676642.3736115",
     "method": "用动态可交换内存定向构造 transient window，并以差分信息流、taint coverage 与 liveness 引导变异。",
@@ -3932,7 +3932,7 @@
   },
   {
     "key": "faultescapingimprovingrobustnessofdpuenhancedplatformwithmutualassistedvmrecovery",
-    "id": 14357,
+    "id": 15841,
     "title": "Fault Escaping: Improving Robustness of DPU Enhanced Platform with Mutual Assisted VM Recovery",
     "paper": "https://doi.org/10.1145/3676642.3736124",
     "method": "把 DPU SoC 与宿主分裂 hypervisor 视为冗余对等体，以混合同步共享 VM 状态并从故障侧逃逸。",
@@ -3957,7 +3957,7 @@
   },
   {
     "key": "hoppsleveragingsparsitytoaccelerateautomataprocessing",
-    "id": 14358,
+    "id": 15842,
     "title": "Hopps: Leveraging Sparsity to Accelerate Automata Processing",
     "paper": "https://doi.org/10.1145/3676642.3736126",
     "method": "混合稠密高吞吐与压缩稀疏单元，并用映射算法把状态和工作负载分配到合适单元。",
@@ -3982,7 +3982,7 @@
   },
   {
     "key": "hybridtieranadaptiveandlightweightcxlmemorytieringsystem",
-    "id": 14359,
+    "id": 15843,
     "title": "HybridTier: an Adaptive and Lightweight CXL-Memory Tiering System",
     "paper": "https://doi.org/10.1145/3676642.3736119",
     "method": "同时跟踪长期访问频率和短期 momentum，并用概率统计和局部性数据结构压低元数据开销。",
@@ -4005,7 +4005,7 @@
   },
   {
     "key": "λtrimoptimizingfunctioninitializationinserverlessapplicationswithcostdrivendebloating",
-    "id": 14360,
+    "id": 15844,
     "title": "λ-trim: Optimizing Function Initialization in Serverless Applications With Cost-driven Debloating",
     "paper": "https://doi.org/10.1145/3676642.3736129",
     "method": "用静态分析、适配 serverless 定价的 profiler 和 debloater，按时延与内存成本优先删除冗余 Python 模块。",
@@ -4028,7 +4028,7 @@
   },
   {
     "key": "neuralinkfastondevicellminferencewithneuroncoactivationlinking",
-    "id": 14361,
+    "id": 15845,
     "title": "Neuralink: Fast on-Device LLM Inference with Neuron Co-Activation Linking",
     "paper": "https://doi.org/10.1145/3676642.3736114",
     "method": "离线按神经元共激活模式重排 flash 布局，在线以硬件适配访问与缓存连续读取相关神经元。",
@@ -4051,7 +4051,7 @@
   },
   {
     "key": "powermoveoptimizingcompilationforneutralatomquantumcomputerswithzonedarchitecture",
-    "id": 14362,
+    "id": 15846,
     "title": "PowerMove: Optimizing Compilation for Neutral Atom Quantum Computers with Zoned Architecture",
     "paper": "https://doi.org/10.1145/3676642.3736128",
     "method": "联合协调 gate 调度、qubit 定位、原子移动与跨 zone 通信，优化中性原子量子编译。",
@@ -4074,7 +4074,7 @@
   },
   {
     "key": "pushtappimbasedinmemoryhtapwithunifieddatastorageformat",
-    "id": 14363,
+    "id": 15847,
     "title": "PUSHtap: PIM-based In-Memory HTAP with Unified Data Storage Format",
     "paper": "https://doi.org/10.1145/3676642.3736120",
     "method": "利用 CPU 交错访问与 PIM 局部访问构造统一二维数据格式，并实现 MVCC 与并发访问扩展。",
@@ -4097,7 +4097,7 @@
   },
   {
     "key": "sylqsvscalingsymbolicexecutionofhardwaredesignswithquerycaching",
-    "id": 14364,
+    "id": 15848,
     "title": "SYLQ-SV: Scaling Symbolic Execution of Hardware Designs with Query Caching",
     "paper": "https://doi.org/10.1145/3676642.3736123",
     "method": "为 SystemVerilog 构建完整符号执行引擎，并缓存 SMT 查询以缓解路径爆炸。",
@@ -4122,7 +4122,7 @@
   },
   {
     "key": "synostructuredsynthesisforneuraloperators",
-    "id": 14365,
+    "id": 15849,
     "title": "Syno: Structured Synthesis for Neural Operators",
     "paper": "https://doi.org/10.1145/3676642.3736118",
     "method": "用 tensor 维度细粒度原语、表达式规范化和引导随机树搜索自动综合新神经算子。",
@@ -4147,7 +4147,7 @@
   },
   {
     "key": "tempgraphanefficientchaindriventemporalgraphcomputingframeworkonthegpu",
-    "id": 14366,
+    "id": 15850,
     "title": "TempGraph: An Efficient Chain-driven Temporal Graph Computing Framework on the GPU",
     "paper": "https://doi.org/10.1145/3676642.3736116",
     "method": "将时序图变换为互不相交依赖链，并用 Generate-Activate-Compute 和 shortcut 解耦链间依赖。",
@@ -4170,7 +4170,7 @@
   },
   {
     "key": "voyagerinputadaptivealgebraictransformationsforhighperformancegraphneuralnetworks",
-    "id": 14367,
+    "id": 15851,
     "title": "Voyager: Input-Adaptive Algebraic Transformations for High-Performance Graph Neural Networks",
     "paper": "https://doi.org/10.1145/3676642.3736121",
     "method": "按图结构动态生成重排与融合候选，以符号属性剪枝并在运行时选择最佳 transformation。",
@@ -4195,7 +4195,7 @@
   },
   {
     "key": "waveoffloadingresourcemanagementtosmartniccores",
-    "id": 14368,
+    "id": 15852,
     "title": "Wave: Offloading Resource Management to SmartNIC Cores",
     "paper": "https://doi.org/10.1145/3676642.3736113",
     "method": "用 Linux 用户态进程/agent 在 SmartNIC ARM 核执行 OS 决策，并提供微秒级主机通信 API。",

@@ -2256,7 +2256,7 @@
     "category": "top-tier",
     "publication": "IEEE S&P",
     "paper": "https://doi.org/10.1109/SP63933.2026.00168",
-    "abstract": "#",
+    "abstract": " This paper identifies and empirically validates a class of vulnerabilities in smartphone messaging systems that allows attackers to easily spoof the identity of participants, even injecting themselves into existing conversations. These issues arise from ambiguities at two levels of the messaging stack. First, that major carriers provide gateways between traditional open email services and the transport services (e.g. IMS) that manage the delivery of SMS/MMS messages in IP-based cellular networks. Second, that the standard messaging apps offered by popular smartphones support identity aliasing both across protocols (e.g., iMessage, RCS, SMS/MMS) and across identifier types (i.e., email addresses, phone numbers, etc.). Taken together, we show that carefully crafted email messages can be used to coerce carriers to issue spoofed IMS messages that will then be displayed as the sender of the attacker's choosing (e.g., arbitrary email address, phone number or short code) — including injecting forged messages into existing messaging threads. We demonstrate working versions of these attacks across a variety of phones (both Android and iPhone) and wireless carriers (including AT&T, Verizon, T-Mobile, and Google Fi), describe how they could be used to support more complex attacks and discuss the range of mitigations and defenses that would offer improved protection. ",
     "status": "notchecked"
   },
   {

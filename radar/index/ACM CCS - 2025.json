@@ -1,7 +1,7 @@
 [
   {
     "key": "oedipusllmenchancedreasoningcaptchasolver",
-    "id": 1594,
+    "id": 1649,
     "title": "Oedipus: LLM-enchanced Reasoning CAPTCHA Solver",
     "paper": "https://doi.org/10.1145/3719027.3744872",
     "method": "提出 Oedipus，以 CAPTCHA 专用 DSL 将推理验证码拆成多步可执行子任务，再由多模态 LLM 依次求解。",
@@ -33,7 +33,7 @@
   },
   {
     "key": "theodysseyofrobotstxtgovernancemeasuringconventionimplicationsofwebbotsinlargelanguagemodelservices",
-    "id": 1595,
+    "id": 1650,
     "title": "The Odyssey of robots.txt Governance: Measuring Convention Implications of Web Bots in Large Language Model Services",
     "paper": "https://doi.org/10.1145/3719027.3765063",
     "method": "对大规模 robots.txt 文件和 18 类 LLM 机器人开展系统测量，刻画访问规则采用情况及实际违规行为。",
@@ -65,7 +65,7 @@
   },
   {
     "key": "jsdeobsbenchmeasuringandbenchmarkingllmsforjavascriptdeobfuscation",
-    "id": 1596,
+    "id": 1651,
     "title": "JsDeObsBench: Measuring and Benchmarking LLMs for JavaScript Deobfuscation",
     "paper": "https://doi.org/10.1145/3719027.3744871",
     "method": "构建覆盖多类混淆变换的 JsDeObsBench，系统评估多种 LLM 的 JavaScript 去混淆能力、语法正确性和执行可靠性。",
@@ -99,7 +99,7 @@
   },
   {
     "key": "quantifyingsecuritytraininginorganizationsthroughtheanalysisofussec10kfilings",
-    "id": 1597,
+    "id": 1652,
     "title": "Quantifying Security Training in Organizations Through the Analysis of U.S. SEC 10-K Filings",
     "paper": "https://doi.org/10.1145/3719027.3765179",
     "method": "抓取 5,286 家美国公司的 SEC 10-K 文件，以关键词检索和主题分析给出组织安全培训采用情况的下界估计。",
@@ -131,7 +131,7 @@
   },
   {
     "key": "whispertestavoicecontrolbasedlibraryforiosuiautomation",
-    "id": 1598,
+    "id": 1653,
     "title": "WhisperTest: A Voice-Control-based Library for iOS UI Automation",
     "paper": "https://doi.org/10.1145/3719027.3765183",
     "method": "利用 iOS Voice Control、系统日志和无障碍界面观测实现无需越狱的 UI 自动化，并可选用多模态 LLM 处理异构对话框。",
@@ -174,7 +174,7 @@
   },
   {
     "key": "thechallengesandopportunitieswithcybersecurityregulationsacasestudyoftheuselectricpowersector",
-    "id": 1599,
+    "id": 1654,
     "title": "The Challenges and Opportunities with Cybersecurity Regulations: A Case Study of the US Electric Power Sector",
     "paper": "https://doi.org/10.1145/3719027.3765184",
     "method": "通过对具有 NERC CIP 直接经验的电力行业人员开展半结构化访谈，分析法规制定、采用和审计中的实践障碍。",
@@ -197,7 +197,7 @@
   },
   {
     "key": "automaticallydetectingonlinedeceptivepatterns",
-    "id": 1600,
+    "id": 1655,
     "title": "Automatically Detecting Online Deceptive Patterns",
     "paper": "https://doi.org/10.1145/3719027.3765191",
     "method": "提出 AutoBot，从网页截图提取交互元素和文本特征，再由 LLM 判断并定位欺骗性设计，同时蒸馏出轻量检测模型。",
@@ -240,7 +240,7 @@
   },
   {
     "key": "synthesisofsoundandpreciseleakagecontractsforopensourceriscvprocessors",
-    "id": 1601,
+    "id": 1656,
     "title": "Synthesis of Sound and Precise Leakage Contracts for Open-Source RISC-V Processors",
     "paper": "https://doi.org/10.1145/3719027.3765148",
     "method": "提出 LeaSyn，在用户给定契约模板空间内交替进行经验驱动的泄漏契约合成与形式验证，自动得到精确且可靠的契约。",
@@ -272,7 +272,7 @@
   },
   {
     "key": "wanillasoundnoninterferenceanalysisforwebassembly",
-    "id": 1602,
+    "id": 1657,
     "title": "Wanilla: Sound Noninterference Analysis for WebAssembly",
     "paper": "https://doi.org/10.1145/3719027.3765156",
     "method": "提出将可靠可达性分析提升为非干扰分析的方法，通过污点跟踪与值敏感关系推理验证 WebAssembly 信息流和内存完整性。",
@@ -304,7 +304,7 @@
   },
   {
     "key": "securingcryptographicsoftwareviatypedassemblylanguage",
-    "id": 1603,
+    "id": 1658,
     "title": "Securing Cryptographic Software via Typed Assembly Language",
     "paper": "https://doi.org/10.1145/3719027.3765116",
     "method": "提出 SecSep 和类型化汇编语言 Octal，通过编译期推断重写汇编栈布局，将秘密与公开数据分区以支持安全推测执行。",
@@ -338,7 +338,7 @@
   },
   {
     "key": "formallyverifiedcorrectnessboundsforlatticebasedcryptography",
-    "id": 1604,
+    "id": 1659,
     "title": "Formally Verified Correctness Bounds for Lattice-Based Cryptography",
     "paper": "https://doi.org/10.1145/3719027.3765218",
     "method": "将格基 KEM 的错误解密统计事件形式化，并机器验证其概率上界，覆盖带启发式近似的 ML-KEM 和无近似的 FrodoKEM。",
@@ -370,7 +370,7 @@
   },
   {
     "key": "enablingsecureandefficientdatalosspreventionwitharetentionawareversioningssd",
-    "id": 1605,
+    "id": 1660,
     "title": "Enabling Secure and Efficient Data Loss Prevention with a Retention-aware Versioning SSD",
     "paper": "https://doi.org/10.1145/3719027.3765135",
     "method": "提出 LAST，在 SSD 的 FTL 中记录数据失效顺序，并按保留时长有序回收历史版本以延长设备级恢复窗口。",
@@ -404,7 +404,7 @@
   },
   {
     "key": "dontpanicfindingbugshiddenbehindrustruntimesafetychecks",
-    "id": 1606,
+    "id": 1661,
     "title": "Don't Panic! Finding Bugs Hidden Behind Rust Runtime Safety Checks",
     "paper": "https://doi.org/10.1145/3719027.3765142",
     "method": "提出 PanicKiller，以跨 IR 分析识别运行时安全检查和不安全代码，动态追踪关键输入字节并据此优先化与变异测试输入。",
@@ -447,7 +447,7 @@
   },
   {
     "key": "hardeningdeepneuralnetworkbinariesagainstreverseengineeringattacks",
-    "id": 1607,
+    "id": 1662,
     "title": "Hardening Deep Neural Network Binaries against Reverse Engineering Attacks",
     "paper": "https://doi.org/10.1145/3719027.3765144",
     "method": "提出 NeuroShield，通过灵活算子融合、伪算子插入和计算重排对 DNN 二进制进行专用混淆。",
@@ -490,7 +490,7 @@
   },
   {
     "key": "crossxgeneralizedandstablecrosscacheattackonthelinuxkernel",
-    "id": 1608,
+    "id": 1663,
     "title": "CROSS-X: Generalized and Stable Cross-Cache Attack on the Linux Kernel",
     "paper": "https://doi.org/10.1145/3719027.3765152",
     "method": "系统分析 Linux cross-cache 攻击机制，提出两种稳健策略，并自动筛选具备喷射、低干扰和利用原语的目标对象。",
@@ -524,7 +524,7 @@
   },
   {
     "key": "uncoveringhiddenpathsin5gexploitingprotocoltunnelingandnetworkboundarybridging",
-    "id": 1609,
+    "id": 1664,
     "title": "Uncovering Hidden Paths in 5G: Exploiting Protocol Tunneling and Network Boundary Bridging",
     "paper": "https://doi.org/10.1145/3719027.3765206",
     "method": "从攻击者控制的 UE 发送对抗性但合规的隧道流量，跨六种 5G 核心实现测试路由、分段和协议验证边界，并构造三类攻击。",
@@ -558,7 +558,7 @@
   },
   {
     "key": "findingsshstrictkeyexchangeviolationsbystatelearning",
-    "id": 1610,
+    "id": 1665,
     "title": "Finding SSH Strict Key Exchange Violations by State Learning",
     "paper": "https://doi.org/10.1145/3719027.3765208",
     "method": "聚焦启用 strict KEX 的 SSH 握手阶段，以黑盒状态学习恢复完整握手机并查找规范违例。",
@@ -592,7 +592,7 @@
   },
   {
     "key": "ocraptreconstructingaptstoriesfromauditlogsusingsubgraphanomalydetectionandllms",
-    "id": 1611,
+    "id": 1666,
     "title": "OCR-APT: Reconstructing APT Stories from Audit Logs using Subgraph Anomaly Detection and LLMs",
     "paper": "https://doi.org/10.1145/3719027.3765219",
     "method": "以 GNN 从溯源图检测行为子图异常，再由 LLM 分阶段重建并逐段验证完整 APT 攻击故事。",
@@ -635,7 +635,7 @@
   },
   {
     "key": "citestingsystematictestingofcontextintegrityviolationsinltecorenetworks",
-    "id": 1612,
+    "id": 1667,
     "title": "CITesting: Systematic Testing of Context Integrity Violations in LTE Core Networks",
     "paper": "https://doi.org/10.1145/3719027.3765230",
     "method": "提出 CITesting，系统探索 LTE 过程链和信息元素，并以有状态双 UE 控制与行为 oracle 检测跨用户上下文完整性违例。",
@@ -679,7 +679,7 @@
   },
   {
     "key": "cryptgnnenablingsecureinferenceforgraphneuralnetworks",
-    "id": 1613,
+    "id": 1668,
     "title": "CryptGNN: Enabling Secure Inference for Graph Neural Networks",
     "paper": "https://doi.org/10.1145/3719027.3765232",
     "method": "提出 CryptGNN，以分布式安全多方计算实现 GNN 的消息传递与特征变换，同时保护客户端图数据和第三方模型参数。",
@@ -711,7 +711,7 @@
   },
   {
     "key": "plrvoadvancingdifferentiallyprivatedeeplearningviaprivacylossrandomvariableoptimization",
-    "id": 1614,
+    "id": 1669,
     "title": "PLRV-O: Advancing Differentially Private Deep Learning via Privacy Loss Random Variable Optimization",
     "paper": "https://doi.org/10.1145/3719027.3765151",
     "method": "提出 PLRV-O，在隐私损失矩可紧密刻画的参数化噪声分布空间中优化 DP-SGD，并按任务配置适配隐私—效用权衡。",
@@ -743,7 +743,7 @@
   },
   {
     "key": "zorrozeroknowledgerobustnessandprivacyforsplitlearning",
-    "id": 1615,
+    "id": 1670,
     "title": "ZORRO: Zero-Knowledge Robustness and Privacy for Split Learning",
     "paper": "https://doi.org/10.1145/3719027.3765160",
     "method": "提出 ZORRO，以交互式零知识证明强制客户端正确执行本地防御，并在频域检查模型分区后传递可验证的良性检查点。",
@@ -777,7 +777,7 @@
   },
   {
     "key": "importsnaredirectedcodemanualhijackinginretrievalaugmentedcodegeneration",
-    "id": 1616,
+    "id": 1671,
     "title": "ImportSnare: Directed 'Code Manual' Hijacking in Retrieval-Augmented Code Generation",
     "paper": "https://doi.org/10.1145/3719027.3765161",
     "method": "提出 ImportSnare，以位置感知束搜索提升投毒文档排名，并用多语言诱导序列操纵检索增强代码生成推荐恶意依赖。",
@@ -811,7 +811,7 @@
   },
   {
     "key": "genericanonymitywrapperformessagingprotocols",
-    "id": 1617,
+    "id": 1672,
     "title": "Generic Anonymity Wrapper for Messaging Protocols",
     "paper": "https://doi.org/10.1145/3719027.3765186",
     "method": "形式化通用匿名包装器，以底层消息协议共享密钥持续派生对称密钥，隐藏线上及本地状态中的通信元数据。",
@@ -852,7 +852,7 @@
   },
   {
     "key": "pantherprivateapproximatenearestneighborsearchinthesingleserversetting",
-    "id": 1618,
+    "id": 1673,
     "title": "Panther: Private Approximate Nearest Neighbor Search in the Single Server Setting",
     "paper": "https://doi.org/10.1145/3719027.3765190",
     "method": "提出 Panther，在单服务器条件下协同设计 PIR、秘密共享、混淆电路和同态加密以实现高效私有近似近邻搜索。",
@@ -875,7 +875,7 @@
   },
   {
     "key": "trouttworoundthresholdecdsafromclassgroups",
-    "id": 1619,
+    "id": 1674,
     "title": "Trout: Two-Round Threshold ECDSA from Class Groups",
     "paper": "https://doi.org/10.1145/3719027.3765192",
     "method": "提出基于类群线性同态加密、承诺和缩放解密的任意阈值两轮 ECDSA，并支持可识别中止。",
@@ -907,7 +907,7 @@
   },
   {
     "key": "encryptedmatrixvectorproductsfromsecretdualcodes",
-    "id": 1620,
+    "id": 1675,
     "title": "Encrypted Matrix-Vector Products from Secret Dual Codes",
     "paper": "https://doi.org/10.1145/3719027.3765194",
     "method": "基于 LPN/LSN 假设和秘密对偶线性码构造离线加密矩阵、在线加密查询的高效矩阵向量乘协议。",
@@ -939,7 +939,7 @@
   },
   {
     "key": "kzhfoldaccountablevotingfromsublinearaccumulation",
-    "id": 1621,
+    "id": 1676,
     "title": "KZH-Fold: Accountable Voting from Sublinear Accumulation",
     "paper": "https://doi.org/10.1145/3719027.3744796",
     "method": "提出 KZH 多项式承诺和 KZH-fold 次线性累积方案，并据此构建次线性证明的 IVC/PCD 与大规模可问责投票。",
@@ -980,7 +980,7 @@
   },
   {
     "key": "syrasybilresilientanonymoussignatureswithapplicationstodecentralizedidentity",
-    "id": 1622,
+    "id": 1677,
     "title": "SyRA: Sybil-Resilient Anonymous Signatures with Applications to Decentralized Identity",
     "paper": "https://doi.org/10.1145/3719027.3744806",
     "method": "形式化 Sybil 抗性匿名签名，并以两级 VRF 构造 SASSI，将低熵现实身份转换为跨上下文不可链接的唯一凭证。",
@@ -1012,7 +1012,7 @@
   },
   {
     "key": "surpassingthewordsizelimitationoftfhewithnoisecalibration",
-    "id": 1623,
+    "id": 1678,
     "title": "Surpassing the Word Size Limitation of TFHE with Noise Calibration",
     "paper": "https://doi.org/10.1145/3719027.3744808",
     "method": "提出 TFHE 噪声校准方法，以二次数量 PBS 调用把同态函数求值域扩展到字长之外，并用于长数组稳定排序。",
@@ -1044,7 +1044,7 @@
   },
   {
     "key": "qvnetdecentralizedselftallyingquadraticvotingwithmaximalballotsecrecy",
-    "id": 1624,
+    "id": 1679,
     "title": "QV-net: Decentralized Self-Tallying Quadratic Voting with Maximal Ballot Secrecy",
     "paper": "https://doi.org/10.1145/3719027.3744810",
     "method": "提出无需可信计票方的自计票二次投票协议，以平方和知识论证和跨密钥聚合范围证明同时保证选票秘密与完整性。",
@@ -1085,7 +1085,7 @@
   },
   {
     "key": "endtoendencryptedgitservices",
-    "id": 1625,
+    "id": 1680,
     "title": "End-to-End Encrypted Git Services",
     "paper": "https://doi.org/10.1145/3719027.3744815",
     "method": "形式化端到端加密 Git 的关键安全性质，提出兼容现有服务器且开销仅随每次编辑差分增长的两种构造。",
@@ -1117,7 +1117,7 @@
   },
   {
     "key": "ringsgoptimalsecurevertexcentriccomputationforcollaborativegraphprocessing",
-    "id": 1626,
+    "id": 1681,
     "title": "RingSG: Optimal Secure Vertex-Centric Computation for Collaborative Graph Processing",
     "paper": "https://doi.org/10.1145/3719027.3744824",
     "method": "提出 Ring-ScatterGather，将隐私图计算分解为可并行且互斥的 MPC 任务，并结合份额转换和 oblivious 聚合优化顶点中心计算。",
@@ -1158,7 +1158,7 @@
   },
   {
     "key": "nebulaefficientprivateandaccuratehistogramestimation",
-    "id": 1627,
+    "id": 1682,
     "title": "Nebula: Efficient, Private and Accurate Histogram Estimation",
     "paper": "https://doi.org/10.1145/3719027.3744789",
     "method": "提出 Nebula，让客户端本地编码数据，使不可信聚合服务器仅学习超过阈值的值，并给出差分隐私、效用和效率保证。",
@@ -1190,7 +1190,7 @@
   },
   {
     "key": "anonymityunveiledapracticalframeworkforauditingdatauseindeeplearningmodels",
-    "id": 1628,
+    "id": 1683,
     "title": "Anonymity Unveiled: A Practical Framework for Auditing Data Use in Deep Learning Models",
     "paper": "https://doi.org/10.1145/3719027.3744794",
     "method": "提出 MembershipTracker，先对少量目标样本做可记忆的轻量定向标记，再以专用成员推断核验模型是否使用这些数据训练。",
@@ -1222,7 +1222,7 @@
   },
   {
     "key": "posteriorsecurityanonymityandmessagehidingofstandardsignatures",
-    "id": 1629,
+    "id": 1684,
     "title": "Posterior Security: Anonymity and Message Hiding of Standard Signatures",
     "paper": "https://doi.org/10.1145/3719027.3744797",
     "method": "定义数字签名的后验安全，并分别通过转换器将标准签名匿名化或把消息隐藏在承诺中。",
@@ -1254,7 +1254,7 @@
   },
   {
     "key": "accuracyfordifferentiallyprivatequotientsbyfractionaluncertainties",
-    "id": 1630,
+    "id": 1685,
     "title": "Accuracy for Differentially Private Quotients by Fractional Uncertainties",
     "paper": "https://doi.org/10.1145/3719027.3744799",
     "method": "利用不确定性传播为差分隐私和的平均值或商计算置信区间，并以准确性调谐器反推最小数据规模和隐私预算权衡。",
@@ -1286,7 +1286,7 @@
   },
   {
     "key": "sabotefficientandstronglyanonymousbootstrappingofcommunicationchannels",
-    "id": 1631,
+    "id": 1686,
     "title": "Sabot: Efficient and Strongly Anonymous Bootstrapping of Communication Channels",
     "paper": "https://doi.org/10.1145/3719027.3744803",
     "method": "提出 Sabot，由客户端协作生成私有关系矩阵，再结合多服务器分片和 PIR 匿名发现潜在通信伙伴。",
@@ -1318,7 +1318,7 @@
   },
   {
     "key": "lzksalatticebasedspecialzeroknowledgeproofsforsecureaggregationsinputverification",
-    "id": 1632,
+    "id": 1687,
     "title": "LZKSA: Lattice-Based Special Zero-Knowledge Proofs for Secure Aggregation's Input Verification",
     "paper": "https://doi.org/10.1145/3719027.3744812",
     "method": "提出 LZKSA，以七种基于 Ring-LWE 的专用零知识证明验证安全聚合密钥使用及输入范数、余弦相似度约束。",
@@ -1352,7 +1352,7 @@
   },
   {
     "key": "aseaofcyberthreatsmaritimecybersecurityfromtheperspectiveofmariners",
-    "id": 1633,
+    "id": 1688,
     "title": "A Sea of Cyber Threats: Maritime Cybersecurity from the Perspective of Mariners",
     "paper": "https://doi.org/10.1145/3719027.3744816",
     "method": "通过对 21 名高级船员开展问卷和半结构化访谈，从操作者视角归纳海事网络威胁、培训与响应缺口。",
@@ -1375,7 +1375,7 @@
   },
   {
     "key": "measuringandaugmentinglargelanguagemodelsforsolvingcapturetheflagchallenges",
-    "id": 1634,
+    "id": 1689,
     "title": "Measuring and Augmenting Large Language Models for Solving Capture-the-Flag Challenges",
     "paper": "https://doi.org/10.1145/3719027.3744855",
     "method": "构建 CTFKnow 衡量 LLM 的 CTF 知识及应用能力，并提出结合两阶段 RAG 与交互式环境增强的 CTFAgent。",
@@ -1419,7 +1419,7 @@
   },
   {
     "key": "exposingtherootsofdnsabuseadatadrivenanalysisofkeyfactorsbehindphishingdomainregistrations",
-    "id": 1635,
+    "id": 1690,
     "title": "Exposing the Roots of DNS Abuse: A Data-Driven Analysis of Key Factors Behind Phishing Domain Registrations",
     "paper": "https://doi.org/10.1145/3719027.3744869",
     "method": "构建恶意与良性域名数据集，提取注册属性、主动核验和响应安全三类 73 个特征，并以 GLM 分析钓鱼注册驱动因素。",
@@ -1453,7 +1453,7 @@
   },
   {
     "key": "noiseandstressdonthelpwithlearningaqualitativestudytoinformdesignofeffectivecybersecurityawarenessinmanufacturingenvironments",
-    "id": 1636,
+    "id": 1691,
     "title": "Noise and Stress Don't Help With Learning: A Qualitative Study to Inform Design of Effective Cybersecurity Awareness in Manufacturing Environments",
     "paper": "https://doi.org/10.1145/3719027.3744880",
     "method": "在六处生产场所访谈 33 名制造业工人并进行定性内容分析，以识别安全认知、工作价值和培训交付偏好。",
@@ -1485,7 +1485,7 @@
   },
   {
     "key": "anempiricalstudymeasuringinthewildcryptographicmicroarchitecturalsidechannelpatches",
-    "id": 1637,
+    "id": 1692,
     "title": "An Empirical Study Measuring In-The-Wild Cryptographic Microarchitectural Side-Channel Patches",
     "paper": "https://doi.org/10.1145/3719027.3744881",
     "method": "构建 SideBench 补丁集，并以动态污点分析和静态符号执行组成的 SideEval 自动评估密码侧信道补丁安全性和性能。",
@@ -1519,7 +1519,7 @@
   },
   {
     "key": "caniocsimposecosttheeffectsofpublishingthreatintelligenceonadversarybehavior",
-    "id": 1638,
+    "id": 1693,
     "title": "Can IOCs Impose Cost? The Effects of Publishing Threat Intelligence on Adversary Behavior",
     "paper": "https://doi.org/10.1145/3719027.3765026",
     "method": "将两家商业 IOC 源与真实网络流量元数据回溯匹配，比较发布前后 150 天的攻击资源活动并进行统计建模。",
@@ -1553,7 +1553,7 @@
   },
   {
     "key": "tempestloracrosstechnologycovertcommunication",
-    "id": 1639,
+    "id": 1694,
     "title": "TEMPEST-LoRa: Cross-Technology Covert Communication",
     "paper": "https://doi.org/10.1145/3719027.3744817",
     "method": "提出 TEMPEST-LoRa，通过操纵视频线缆产生可被商用 LoRa 节点远距离接收的调制电磁泄漏。",
@@ -1587,7 +1587,7 @@
   },
   {
     "key": "molebreakinggputeewithgpuembeddedmcu",
-    "id": 1640,
+    "id": 1695,
     "title": "MOLE: Breaking GPU TEE with GPU-Embedded MCU",
     "paper": "https://doi.org/10.1145/3719027.3744823",
     "method": "提出 MOLE，向 Arm Mali GPU 内嵌 MCU 注入恶意固件，从可信边界内部绕过 GPU TEE 的隔离保证。",
@@ -1621,7 +1621,7 @@
   },
   {
     "key": "wiretapbreakingserversgxviadrambusinterposition",
-    "id": 1641,
+    "id": 1696,
     "title": "WireTap: Breaking Server SGX via DRAM Bus Interposition",
     "paper": "https://doi.org/10.1145/3719027.3765204",
     "method": "以低成本 DRAM 总线插入硬件采集服务器 SGX 内存流量，利用确定性内存加密提取认证密钥并攻击实际区块链部署。",
@@ -1655,7 +1655,7 @@
   },
   {
     "key": "onevideotostealthemall3dprintingiptheftthroughopticalsidechannels",
-    "id": 1642,
+    "id": 1697,
     "title": "One Video to Steal Them All: 3D-Printing IP Theft through Optical Side-Channels",
     "paper": "https://doi.org/10.1145/3719027.3744837",
     "method": "从打印视频追踪喷嘴轨迹并恢复进给、挤出参数及 G-code，再用旋转和平移不变的等价检查器验证窃取结果。",
@@ -1689,7 +1689,7 @@
   },
   {
     "key": "controllocphysicalworldhijackingattackoncamerabasedperceptioninautonomousdriving",
-    "id": 1643,
+    "id": 1698,
     "title": "ControlLoc: Physical-World Hijacking Attack on Camera-based Perception in Autonomous Driving",
     "paper": "https://doi.org/10.1145/3719027.3744842",
     "method": "提出 ControlLoc，先选择最优物理补丁位置，再生成能够操纵多目标跟踪所感知位置和形状的对抗补丁。",
@@ -1723,7 +1723,7 @@
   },
   {
     "key": "pipidlightpupillaryresponsebaseduserauthenticationforvirtualreality",
-    "id": 1644,
+    "id": 1699,
     "title": "PipID: Light-Pupillary Response Based User Authentication for Virtual Reality",
     "paper": "https://doi.org/10.1145/3719027.3744850",
     "method": "提出 PipID，在 VR 屏幕显示随机颜色刺激，以商用眼动仪采集并清洗双眼瞳孔响应作为抗重放身份特征。",
@@ -1755,7 +1755,7 @@
   },
   {
     "key": "rvismithfuzzingcompilersforrvvintrinsics",
-    "id": 1645,
+    "id": 1700,
     "title": "RVISmith: Fuzzing Compilers for RVV Intrinsics",
     "paper": "https://doi.org/10.1145/3719027.3744790",
     "method": "提出 RVISmith，依据正式 RVV intrinsic 规范随机生成高覆盖、多序列且无已知未定义行为的 C 程序，并开展差分测试。",
@@ -1789,7 +1789,7 @@
   },
   {
     "key": "fuzzingprocessingpipelinesforzeroknowledgecircuits",
-    "id": 1646,
+    "id": 1701,
     "title": "Fuzzing Processing Pipelines for Zero-Knowledge Circuits",
     "paper": "https://doi.org/10.1145/3719027.3744791",
     "method": "提出 Circuzz，系统生成零知识电路及其变换，并以蜕变关系作为 oracle 检测不同 ZK 处理流水线中的逻辑错误。",
@@ -1814,7 +1814,7 @@
   },
   {
     "key": "errormessagestofuzzingdetectingxpsparsingvulnerabilitiesinwindowsprintingcomponents",
-    "id": 1647,
+    "id": 1702,
     "title": "Error Messages to Fuzzing: Detecting XPS Parsing Vulnerabilities in Windows Printing Components",
     "paper": "https://doi.org/10.1145/3719027.3744807",
     "method": "提出 PrintXPSurge，用 LLM 修复语义约束生成有效 XPS，逐步重建打印工作流状态，并回溯确认解析器崩溃。",
@@ -1857,7 +1857,7 @@
   },
   {
     "key": "syzspecspecificationgenerationforlinuxkernelfuzzingviaunderconstrainedsymbolicexecution",
-    "id": 1648,
+    "id": 1703,
     "title": "SyzSpec: Specification Generation for Linux Kernel Fuzzing via Under-Constrained Symbolic Execution",
     "paper": "https://doi.org/10.1145/3719027.3744811",
     "method": "提出 SyzSpec，对 syscall handler 做完全跨过程欠约束符号执行，并改进符号指针推理以自动生成精确 syzkaller 描述。",
@@ -1900,7 +1900,7 @@
   },
   {
     "key": "validatinginteriorgatewayroutingprotocolsviaequivalenttopologysynthesis",
-    "id": 1649,
+    "id": 1704,
     "title": "Validating Interior Gateway Routing Protocols via Equivalent Topology Synthesis",
     "paper": "https://doi.org/10.1145/3719027.3744826",
     "method": "提出 ToDiff，生成随机有效 IGP 网络，以语义引导程序合成得到等价拓扑程序，再通过模拟结果差分发现协议实现错误。",
@@ -1944,7 +1944,7 @@
   },
   {
     "key": "disaaccuratelearningbasedstaticdisassemblywithattentions",
-    "id": 1650,
+    "id": 1705,
     "title": "Disa: Accurate Learning-based Static Disassembly with Attentions",
     "paper": "https://doi.org/10.1145/3719027.3744828",
     "method": "提出 Disa，以多头自注意力学习超集指令关联来推断边界，并用块内存值集分析生成更精确 CFG。",
@@ -1978,7 +1978,7 @@
   },
   {
     "key": "efficientconstantsizelinkableringsignaturesforadhocringsviapairingbasedsetmembershiparguments",
-    "id": 1651,
+    "id": 1706,
     "title": "Efficient Constant-Size Linkable Ring Signatures for Ad-Hoc Rings via Pairing-Based Set Membership Arguments",
     "paper": "https://doi.org/10.1145/3719027.3744830",
     "method": "提出基于配对的常数大小集合成员论证，并结合 KZG 承诺构造支持临时大环和作用域链接的常数大小可链接环签名。",
@@ -2010,7 +2010,7 @@
   },
   {
     "key": "forkingtherandaomanipulatingethereumsdistributedrandomnessbeacon",
-    "id": 1652,
+    "id": 1707,
     "title": "Forking the RANDAO: Manipulating Ethereum's Distributed Randomness Beacon",
     "paper": "https://doi.org/10.1145/3719027.3744852",
     "method": "提出并评估 RANDAO 分叉攻击，通过选择性分叉诚实提议者区块操纵随机数并最大化费用与区块奖励。",
@@ -2044,7 +2044,7 @@
   },
   {
     "key": "mininginlogarithmicspacewithvariabledifficulty",
-    "id": 1653,
+    "id": 1708,
     "title": "Mining in Logarithmic Space with Variable Difficulty",
     "paper": "https://doi.org/10.1145/3719027.3744874",
     "method": "构造支持可变挖矿难度、完整性和在线性的非交互简洁 PoW 区块链表示，并证明其对有界对手安全。",
@@ -2067,7 +2067,7 @@
   },
   {
     "key": "bitcoinundervolatileblockrewardshowmempoolstatisticscaninfluencebitcoinmining",
-    "id": 1654,
+    "id": 1709,
     "title": "Bitcoin Under Volatile Block Rewards: How Mempool Statistics Can Influence Bitcoin Mining",
     "paper": "https://doi.org/10.1145/3719027.3744875",
     "method": "用 A3C 强化学习代理在复现历史 mempool 行为的可变奖励环境中搜索近优挖矿策略并分析攻击激励。",
@@ -2101,7 +2101,7 @@
   },
   {
     "key": "onfrontrunningrisksinbatchorderfairsystemsforblockchains",
-    "id": 1655,
+    "id": 1710,
     "title": "On Frontrunning Risks in Batch-Order Fair Systems for Blockchains",
     "paper": "https://doi.org/10.1145/3719027.3744879",
     "method": "分析 Themis 实用批次顺序公平性，构造利用临时信息不对称的 Ambush 抢跑攻击，并以延迟 gossip 缓解。",
@@ -2136,7 +2136,7 @@
   },
   {
     "key": "aegistetheringablockchainwithprimarychainstake",
-    "id": 1656,
+    "id": 1711,
     "title": "Aegis: Tethering a Blockchain with Primary-Chain Stake",
     "paper": "https://doi.org/10.1145/3719027.3744885",
     "method": "证明部分同步下系链链的不可能性边界，并提出以主链引用定义委员会、主链检查点延续决策和重置更新委员会的 Aegis。",
@@ -2168,7 +2168,7 @@
   },
   {
     "key": "splitunlearning",
-    "id": 1657,
+    "id": 1712,
     "title": "Split Unlearning",
     "paper": "https://doi.org/10.1145/3719027.3744787",
     "method": "提出 SplitWiper，以一次单向传播解耦客户端和服务器训练信号，实现分割学习中的 SISA 遗忘，并以差分隐私和标签扩展保护标签。",
@@ -2200,7 +2200,7 @@
   },
   {
     "key": "slotprovenancedrivenaptdetectionthroughgraphreinforcementlearning",
-    "id": 1658,
+    "id": 1713,
     "title": "Slot: Provenance-Driven APT Detection through Graph Reinforcement Learning",
     "paper": "https://doi.org/10.1145/3719027.3744788",
     "method": "提出 Slot，从溯源图挖掘多层行为关系，以半监督图强化学习适应新活动，并聚类自动构建攻击链。",
@@ -2245,7 +2245,7 @@
   },
   {
     "key": "combatingconceptdriftwithexplanatorydetectionandadaptationforandroidmalwareclassification",
-    "id": 1659,
+    "id": 1714,
     "title": "Combating Concept Drift with Explanatory Detection and Adaptation for Android Malware Classification",
     "paper": "https://doi.org/10.1145/3719027.3744792",
     "method": "提出 DREAM，在对比自编码器潜空间融合分类器预测与专家行为概念，以可解释漂移检测选择样本并指导概念修订。",
@@ -2289,7 +2289,7 @@
   },
   {
     "key": "rethinkingmachineunlearninginimagegenerationmodels",
-    "id": 1660,
+    "id": 1715,
     "title": "Rethinking Machine Unlearning in Image Generation Models",
     "paper": "https://doi.org/10.1145/3719027.3744793",
     "method": "提出 CatIGMU 任务分类、EvalIGMU 五维评测框架和 DataIGM 数据集，系统规范图像生成模型遗忘的定义与验证。",
@@ -2332,7 +2332,7 @@
   },
   {
     "key": "tensorshieldsafeguardingondeviceinferencebyshieldingcriticaldnntensorswithtee",
-    "id": 1661,
+    "id": 1716,
     "title": "TensorShield: Safeguarding On-Device Inference by Shielding Critical DNN Tensors with TEE",
     "paper": "https://doi.org/10.1145/3719027.3744798",
     "method": "提出 TensorShield，以注意力迁移 XAI 评估关键张量，并结合关键特征识别和延迟感知放置，仅在 TEE 内保护必要张量。",
@@ -2366,7 +2366,7 @@
   },
   {
     "key": "poisonspotprecisespottingofcleanlabelbackdoorsviafinegrainedtrainingprovenancetracking",
-    "id": 1662,
+    "id": 1717,
     "title": "PoisonSpot: Precise Spotting of Clean-Label Backdoors via Fine-Grained Training Provenance Tracking",
     "paper": "https://doi.org/10.1145/3719027.3744802",
     "method": "提出 PoisonSpot，借鉴动态污点追踪记录单个训练样本对参数更新的影响谱系，并据此为可疑样本计算投毒分数。",
@@ -2400,7 +2400,7 @@
   },
   {
     "key": "poolapracticalotbasedoprffromlearningwithrounding",
-    "id": 1663,
+    "id": 1718,
     "title": "Pool: A Practical OT-based OPRF from Learning with Rounding",
     "paper": "https://doi.org/10.1145/3719027.3765054",
     "method": "提出 Pool，以 OT 和 LWR 伪随机函数构造轮次最优、可预处理的后量子 OPRF。",
@@ -2423,7 +2423,7 @@
   },
   {
     "key": "zeroknowledgeaiinferencewithhighprecision",
-    "id": 1664,
+    "id": 1719,
     "title": "Zero-Knowledge AI Inference with High Precision",
     "paper": "https://doi.org/10.1145/3719027.3765056",
     "method": "提出 ZIP，原生支持 IEEE-754 双精度语义，并以相对误差驱动证明和强化算术约束验证 AI 推理的线性与非线性层。",
@@ -2455,7 +2455,7 @@
   },
   {
     "key": "newpermutationdecompositiontechniquesforefficienthomomorphicpermutation",
-    "id": 1665,
+    "id": 1720,
     "title": "New Permutation Decomposition Techniques for Efficient Homomorphic Permutation",
     "paper": "https://doi.org/10.1145/3719027.3765078",
     "method": "定义同态置换的理想分解形式，搜索深度一分解，并为弱结构任意置换设计新的网络结构。",
@@ -2487,7 +2487,7 @@
   },
   {
     "key": "leveragingdiscreteckkstobootstrapinhighprecision",
-    "id": 1666,
+    "id": 1721,
     "title": "Leveraging Discrete CKKS to Bootstrap in High Precision",
     "paper": "https://doi.org/10.1145/3719027.3765080",
     "method": "改进 EvalRound 并利用 CKKS 离散数据处理技术，构造成本近乎不随精度增长的非迭代高精度自举。",
@@ -2510,7 +2510,7 @@
   },
   {
     "key": "graftingdecoupledscalefactorsandmodulusinrnsckks",
-    "id": 1667,
+    "id": 1722,
     "title": "Grafting: Decoupled Scale Factors and Modulus in RNS-CKKS",
     "paper": "https://doi.org/10.1145/3719027.3765083",
     "method": "提出 Grafting，以可复用通用 sprouts 解耦 RNS-CKKS 的尺度因子与模数，实现任意位长重缩放和统一参数复用。",
@@ -2542,7 +2542,7 @@
   },
   {
     "key": "towardsverifiablefheinpracticeprovingcorrectexecutionoftfhesbootstrappingusingplonky2",
-    "id": 1668,
+    "id": 1723,
     "title": "Towards Verifiable FHE in Practice: Proving Correct Execution of TFHE's Bootstrapping using plonky2",
     "paper": "https://doi.org/10.1145/3719027.3765097",
     "method": "将 TFHE 可编程自举改写为适合算术电路的形式，并以 plonky2 递归 IVC 在实际资源内证明完整自举正确执行。",
@@ -2574,7 +2574,7 @@
   },
   {
     "key": "probabilisticskippingbaseddatastructureswithrobustefficiencyguarantees",
-    "id": 1669,
+    "id": 1724,
     "title": "Probabilistic Skipping-Based Data Structures with Robust Efficiency Guarantees",
     "paper": "https://doi.org/10.1145/3719027.3765149",
     "method": "构造针对哈希表、跳表和 treap 的自适应退化攻击，定义 AAPC 安全性质并修改数据结构以恢复可证明效率。",
@@ -2608,7 +2608,7 @@
   },
   {
     "key": "shiftpiranefficientpirsystemwithgravityshiftingfromclienttoserver",
-    "id": 1670,
+    "id": 1725,
     "title": "ShiftPIR: An Efficient PIR System with Gravity Shifting from Client to Server",
     "paper": "https://doi.org/10.1145/3719027.3765153",
     "method": "提出 ShiftPIR，由客户端发送基于预上传种子密文的明文偏移，服务器用同态旋转重建查询并并行展开。",
@@ -2640,7 +2640,7 @@
   },
   {
     "key": "updatableapakesecurityagainstbulkprecomputationattacks",
-    "id": 1671,
+    "id": 1726,
     "title": "Updatable aPAKE: Security Against Bulk Precomputation Attacks",
     "paper": "https://doi.org/10.1145/3719027.3765155",
     "method": "定义可更新 aPAKE，使盐值在每次成功认证后隐式刷新，并将该机制可证明地集成到 OKAPE-HMQV 等协议。",
@@ -2674,7 +2674,7 @@
   },
   {
     "key": "foundingzeroknowledgeproofoftrainingonoptimumvicinity",
-    "id": 1672,
+    "id": 1727,
     "title": "Founding Zero-Knowledge Proof of Training on Optimum Vicinity",
     "paper": "https://doi.org/10.1145/3719027.3744862",
     "method": "不再证明完整训练轨迹，而以最优邻域证明凸优化模型接近数学最优解，从而同时降低成本并限制随机种子偏置。",
@@ -2697,7 +2697,7 @@
   },
   {
     "key": "revisitingkeyedverificationanonymouscredentials",
-    "id": 1673,
+    "id": 1728,
     "title": "Revisiting Keyed-Verification Anonymous Credentials",
     "paper": "https://doi.org/10.1145/3719027.3765163",
     "method": "为 KVAC 引入可提取性与一次以上不可伪造定义，并改进 CMZ/PS MAC 和 BBDT/BBS MAC 的匿名性与发行效率。",
@@ -2729,7 +2729,7 @@
   },
   {
     "key": "subversionresilientkeyexchangeinthepostquantumworld",
-    "id": 1674,
+    "id": 1729,
     "title": "Subversion-resilient Key-exchange in the Post-quantum World",
     "paper": "https://doi.org/10.1145/3719027.3765165",
     "method": "扩展反向防火墙式抗后门 AKE 的安全定义与形式验证，并引入可重随机化 KEM 构造经典和 Kyber 后量子实例。",
@@ -2772,7 +2772,7 @@
   },
   {
     "key": "poisoningattackstolocaldifferentialprivacyforrankingestimation",
-    "id": 1675,
+    "id": 1730,
     "title": "Poisoning Attacks to Local Differential Privacy for Ranking Estimation",
     "paper": "https://doi.org/10.1145/3719027.3744821",
     "method": "针对 kRR、OUE 和 OLH 排名估计定义攻击成本与最优攻击项，通过有限伪用户精确调节频率以操纵排序。",
@@ -2815,7 +2815,7 @@
   },
   {
     "key": "mitigatingdatapoisoningattackstolocaldifferentialprivacy",
-    "id": 1676,
+    "id": 1731,
     "title": "Mitigating Data Poisoning Attacks to Local Differential Privacy",
     "paper": "https://doi.org/10.1145/3719027.3744839",
     "method": "提出覆盖恶意报告检测、隐蔽攻击模式识别和受损效用恢复的 LDP 频率估计投毒缓解框架。",
@@ -2858,7 +2858,7 @@
   },
   {
     "key": "riddlemethisstealthymembershipinferenceforretrievalaugmentedgeneration",
-    "id": 1677,
+    "id": 1732,
     "title": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation",
     "paper": "https://doi.org/10.1145/3719027.3744840",
     "method": "构造只有目标文档存在时才能回答的自然文本查询，以少量交互隐蔽推断文档是否属于 RAG 数据库。",
@@ -2892,7 +2892,7 @@
   },
   {
     "key": "exploitingthesharedstorageapi",
-    "id": 1678,
+    "id": 1733,
     "title": "Exploiting the Shared Storage API",
     "paper": "https://doi.org/10.1145/3719027.3744848",
     "method": "系统分析 Chrome Shared Storage API 的设计与实现，通过多种攻击绕过跨站重识别和数据泄漏限制。",
@@ -2917,7 +2917,7 @@
   },
   {
     "key": "fingerprintingsdksformobileappsandwheretofindthemunderstandingthemarketfordevicefingerprinting",
-    "id": 1679,
+    "id": 1734,
     "title": "Fingerprinting SDKs for Mobile Apps and Where to Find Them: Understanding the Market for Device Fingerprinting",
     "paper": "https://doi.org/10.1145/3719027.3744877",
     "method": "从 Maven 仓库和 Google Play 构建大规模 SDK—应用数据，以静态分析追踪 500 多类设备信号外传并按 SDK 市场类别归因。",
@@ -2951,7 +2951,7 @@
   },
   {
     "key": "pandarethinkingmetricdifferentialprivacyoptimizationatscalewithanchorbasedapproximation",
-    "id": 1680,
+    "id": 1735,
     "title": "PAnDA: Rethinking Metric Differential Privacy Optimization at Scale with Anchor-Based Approximation",
     "paper": "https://doi.org/10.1145/3719027.3765042",
     "method": "提出 PAnDA，让用户选择少量锚记录，服务器仅在缩减域上求解紧凑线性规划，并给出概率度量差分隐私保证。",
@@ -2983,7 +2983,7 @@
   },
   {
     "key": "lockthedoorbutkeepthewindowopenextractingappprotectedaccessibilityinformationfrombrowserrenderedwebsites",
-    "id": 1681,
+    "id": 1736,
     "title": "Lock the Door But Keep the Window Open: Extracting App-Protected Accessibility Information from Browser-Rendered Websites",
     "paper": "https://doi.org/10.1145/3719027.3744822",
     "method": "提出 SOMBRA，自动映射原生应用中受保护的无障碍视图与浏览器渲染网站元素，检测跨端保护不一致造成的敏感信息泄漏。",
@@ -3018,7 +3018,7 @@
   },
   {
     "key": "bacscanautomaticblackboxdetectionofbrokenaccesscontrolvulnerabilitiesinwebapplications",
-    "id": 1682,
+    "id": 1737,
     "title": "BACScan: Automatic Black-Box Detection of Broken-Access-Control Vulnerabilities in Web Applications",
     "paper": "https://doi.org/10.1145/3719027.3744825",
     "method": "提出 BACScan，通过推断操作依赖网页并分析操作反馈，黑盒判定未授权读取和修改是否真实发生。",
@@ -3052,7 +3052,7 @@
   },
   {
     "key": "analyzingpdfslikebinariesadversariallyrobustpdfmalwareanalysisviaintermediaterepresentationandlanguagemodel",
-    "id": 1683,
+    "id": 1738,
     "title": "Analyzing PDFs like Binaries: Adversarially Robust PDF Malware Analysis via Intermediate Representation and Language Model",
     "paper": "https://doi.org/10.1145/3719027.3744829",
     "method": "将 PDF 对象转换为类汇编 PDFObj IR，以预训练语言模型提取语义，并构造对象引用图联合建模结构。",
@@ -3095,7 +3095,7 @@
   },
   {
     "key": "localframesexploitinginheritedoriginstobypasscontentblockers",
-    "id": 1684,
+    "id": 1739,
     "title": "Local Frames: Exploiting Inherited Origins to Bypass Content Blockers",
     "paper": "https://doi.org/10.1145/3719027.3744843",
     "method": "围绕四类隐私工具能力构造 local frame 规避测试，并在六款工具和大规模真实网站上测量继承源处理缺陷。",
@@ -3129,7 +3129,7 @@
   },
   {
     "key": "enhancedwebapplicationsecuritythroughproactivedeaddropresolverremediation",
-    "id": 1685,
+    "id": 1740,
     "title": "Enhanced Web Application Security Through Proactive Dead Drop Resolver Remediation",
     "paper": "https://doi.org/10.1145/3719027.3744860",
     "method": "提出 VADER，从在野恶意样本中恢复分层操纵的 Web dead drop，并将发现模式用于平台主动扫描和修复。",
@@ -3163,7 +3163,7 @@
   },
   {
     "key": "foredroidscenarioawareanalysisforandroidmalwaredetectionandexplanation",
-    "id": 1686,
+    "id": 1741,
     "title": "ForeDroid: Scenario-Aware Analysis for Android Malware Detection and Explanation",
     "paper": "https://doi.org/10.1145/3719027.3765207",
     "method": "提出 ForeDroid，将功能场景内的恶意意图建模为行为不一致，结合调用链、LLM 摘要、无监督异常检测和细粒度解释。",
@@ -3207,7 +3207,7 @@
   },
   {
     "key": "logicalrelationsforformallyverifiedauthenticateddatastructures",
-    "id": 1687,
+    "id": 1742,
     "title": "Logical Relations for Formally Verified Authenticated Data Structures",
     "paper": "https://doi.org/10.1145/3719027.3744801",
     "method": "提出面向抗碰撞哈希程序的关系分离逻辑，构造类型系统语义模型并在 Rocq/Iris 中验证认证数据结构自动生成库。",
@@ -3239,7 +3239,7 @@
   },
   {
     "key": "jazzlinecomposablecryptolinefunctionalcorrectnessproofsforjasminprograms",
-    "id": 1688,
+    "id": 1743,
     "title": "Jazzline: Composable CryptoLine Functional Correctness Proofs for Jasmin Programs",
     "paper": "https://doi.org/10.1145/3719027.3744814",
     "method": "扩展 Jasmin 注解并自动翻译到 CryptoLine，再抽取证明语义到 EasyCrypt，使低层半自动证明可组合进高层正确性开发。",
@@ -3271,7 +3271,7 @@
   },
   {
     "key": "breakingandprovablyrestoringauthenticationaformalanalysisofspdm12includingcrossprotocolattacks",
-    "id": 1689,
+    "id": 1744,
     "title": "Breaking and Provably Restoring Authentication: A Formal Analysis of SPDM 1.2 including Cross-Protocol Attacks",
     "paper": "https://doi.org/10.1145/3719027.3744865",
     "method": "在 Tamarin 中整体建模 SPDM 1.2 全流程及密钥交换模式交互，发现并实证跨协议认证攻击，再验证修复后的完整协议。",
@@ -3315,7 +3315,7 @@
   },
   {
     "key": "approximatealgorithmsforverifyingdifferentialprivacywithgaussiandistributions",
-    "id": 1690,
+    "id": 1745,
     "title": "Approximate Algorithms for Verifying Differential Privacy with Gaussian Distributions",
     "paper": "https://doi.org/10.1145/3719027.3765043",
     "method": "提出 DiPApprox，以积分近似和尾概率界任意精度计算混合离散、连续采样程序的概率，近乎判定其差分隐私。",
@@ -3347,7 +3347,7 @@
   },
   {
     "key": "ilacorrectnessviatypecheckingforfullyhomomorphicencryption",
-    "id": 1691,
+    "id": 1746,
     "title": "ILA: Correctness via Type Checking for Fully Homomorphic Encryption",
     "paper": "https://doi.org/10.1145/3719027.3765068",
     "method": "提出面向同态算术电路的 ILA 中间表示和定量类型系统，静态追踪密文噪声、环绕误差并推断模数切换位置。",
@@ -3379,7 +3379,7 @@
   },
   {
     "key": "protocolstocodeformalverificationofasecurenextgenerationinternetrouter",
-    "id": 1692,
+    "id": 1747,
     "title": "Protocols to Code: Formal Verification of a Secure Next-Generation Internet Router",
     "paper": "https://doi.org/10.1145/3719027.3765104",
     "method": "通过 Isabelle/HOL 协议模型逐层精化，并验证生产 Go 路由器代码无崩溃、无数据竞争且符合最具体模型，可靠连接协议到实现。",
@@ -3413,7 +3413,7 @@
   },
   {
     "key": "syzparamincorporatingruntimeparametersintokerneldriverfuzzing",
-    "id": 1693,
+    "id": 1748,
     "title": "SyzParam: Incorporating Runtime Parameters into Kernel Driver Fuzzing",
     "paper": "https://doi.org/10.1145/3719027.3744838",
     "method": "提出 SyzParam，静态提取驱动运行时参数与设备关系，并在相关驱动执行时优先变异 sysfs 参数。",
@@ -3456,7 +3456,7 @@
   },
   {
     "key": "revivingdiscardedvulnerabilitiesexploitingpreviouslyunexploitablelinuxkernelbugsthroughcontrolmetadatafields",
-    "id": 1694,
+    "id": 1749,
     "title": "Reviving Discarded Vulnerabilities: Exploiting Previously Unexploitable Linux Kernel Bugs Through Control Metadata Fields",
     "paper": "https://doi.org/10.1145/3719027.3744841",
     "method": "提出基于控制元数据字段的内核利用方法，并用 MetaXploit 自动寻找可由弱原语篡改且能改变对象行为的字段。",
@@ -3490,7 +3490,7 @@
   },
   {
     "key": "bastagbytelevelaccesscontrolonsharedmemoryusingarmmemorytaggingextension",
-    "id": 1695,
+    "id": 1750,
     "title": "BASTAG: Byte-level Access Control on Shared Memory using ARM Memory Tagging Extension",
     "paper": "https://doi.org/10.1145/3719027.3744849",
     "method": "提出 BASTAG，以影子内存标签为实际共享内存目标关联独立 MTE 标签，实现高效字节级权限。",
@@ -3524,7 +3524,7 @@
   },
   {
     "key": "intentawarefuzzingforandroidhardenedapplication",
-    "id": 1696,
+    "id": 1751,
     "title": "Intent-aware Fuzzing for Android Hardened Application",
     "paper": "https://doi.org/10.1145/3719027.3744858",
     "method": "提出基于 eBPF 的 AHA-Fuzz，生成有效 Intent、选择性反馈覆盖，并专门触发定时行为和检测信息泄漏。",
@@ -3567,7 +3567,7 @@
   },
   {
     "key": "securingmixedrustwithhardwarecapabilities",
-    "id": 1697,
+    "id": 1752,
     "title": "Securing Mixed Rust with Hardware Capabilities",
     "paper": "https://doi.org/10.1145/3719027.3744861",
     "method": "提出 CapsLock，在机器码级利用硬件能力执行 Rust 所有权、借用和 AXM 原则，并以访问即撤销补充时间安全。",
@@ -3601,7 +3601,7 @@
   },
   {
     "key": "promefuzzaknowledgedrivenapproachtofuzzingharnessgenerationwithlargelanguagemodels",
-    "id": 1698,
+    "id": 1753,
     "title": "PromeFuzz: A Knowledge-Driven Approach to Fuzzing Harness Generation with Large Language Models",
     "paper": "https://doi.org/10.1145/3719027.3765222",
     "method": "提出 PromeFuzz，融合代码元数据、API 文档和真实调用相关性构建知识库，以 RAG 生成 harness 并用专用 sanitizer 精炼和分诊崩溃。",
@@ -3644,7 +3644,7 @@
   },
   {
     "key": "swallowatransferrobustwebsitefingerprintingattackviaconsistentfeaturelearning",
-    "id": 1699,
+    "id": 1754,
     "title": "Swallow: A Transfer-Robust Website Fingerprinting Attack via Consistent Feature Learning",
     "paper": "https://doi.org/10.1145/3719027.3744795",
     "method": "提出跨网络条件对齐的 Consistent Interaction Feature，并以三种数据增强模拟变化，使网站指纹攻击快速迁移且抵抗防御。",
@@ -3679,7 +3679,7 @@
   },
   {
     "key": "flowsentryacceleratingnetflowbasedddosdetection",
-    "id": 1700,
+    "id": 1755,
     "title": "FlowSentry: Accelerating NetFlow-based DDoS Detection",
     "paper": "https://doi.org/10.1145/3719027.3744800",
     "method": "提出 FlowSentry，以 sketch 滑窗过滤高频 NetFlow，再关联跨路由器部分报告推断恶意流量异常增长。",
@@ -3713,7 +3713,7 @@
   },
   {
     "key": "1bitpersistentpathvalidationwithcustomizednoisesignalcharacteristics",
-    "id": 1701,
+    "id": 1756,
     "title": "1BIT: Persistent Path Validation with Customized Noise Signal Characteristics",
     "paper": "https://doi.org/10.1145/3719027.3744819",
     "method": "提出 1BIT，将异常信号检测引入持续路径验证，以哈希和少量二进制运算压缩头部并定位路径故障。",
@@ -3747,7 +3747,7 @@
   },
   {
     "key": "rebirthdayattackrevivingdnscachepoisoningwiththebirthdayparadox",
-    "id": 1702,
+    "id": 1757,
     "title": "RebirthDay Attack: Reviving DNS Cache Poisoning with the Birthday Paradox",
     "paper": "https://doi.org/10.1145/3719027.3744832",
     "method": "提出 RebirthDay，利用 ECS 扩展的一致性检查缺陷绕过查询聚合，重新使生日悖论式 DNS 缓存投毒可行。",
@@ -3781,7 +3781,7 @@
   },
   {
     "key": "5grnakaarandomnumberbasedauthenticationandkeyagreementprotocolfor5gsystems",
-    "id": 1703,
+    "id": 1758,
     "title": "5G-RNAKA : A Random Number-based Authentication and Key Agreement Protocol for 5G Systems",
     "paper": "https://doi.org/10.1145/3719027.3744844",
     "method": "提出 5G-RNAKA，以 USIM 随机数替代遗留 SQN 作为会话标识，并在 Tamarin 中验证隐私、认证和机密性。",
@@ -3822,7 +3822,7 @@
   },
   {
     "key": "discoveringandexploitingiotdevicehiddenattributesanewvulnerabilityinsmarthomes",
-    "id": 1704,
+    "id": 1759,
     "title": "Discovering and Exploiting IoT Device Hidden Attributes: A New Vulnerability in Smart Homes",
     "paper": "https://doi.org/10.1145/3719027.3744847",
     "method": "系统识别用户不可见但可经 API 配置的 IoT 隐藏属性，验证端到端攻击，并自动修补边缘驱动。",
@@ -3866,7 +3866,7 @@
   },
   {
     "key": "mm4flowapretrainedmultimodalmodelforversatilenetworktrafficanalysis",
-    "id": 1705,
+    "id": 1760,
     "title": "MM4flow: A Pre-trained Multi-modal Model for Versatile Network Traffic Analysis",
     "paper": "https://doi.org/10.1145/3719027.3744804",
     "method": "提出 MM4flow，将网络流拆为原始字节和传输模式两模态，先用 70TB 真实流量单模态预训练，再以交叉注意力融合微调。",
@@ -3909,7 +3909,7 @@
   },
   {
     "key": "sylvatailoringpersonalizedadversarialdefenseinpretrainedmodelsviacollaborativefinetuning",
-    "id": 1706,
+    "id": 1761,
     "title": "Sylva: Tailoring Personalized Adversarial Defense in Pre-trained Models via Collaborative Fine-tuning",
     "paper": "https://doi.org/10.1145/3719027.3744805",
     "method": "提出 Sylva，两阶段先以 LoRA 本地对抗微调和联邦聚合个性化鲁棒性，再用博弈式层选择平衡良性精度。",
@@ -3943,7 +3943,7 @@
   },
   {
     "key": "unmasktamperingefficientdocumenttamperinglocalizationunderrecapturingattackswithrealdistortionknowledge",
-    "id": 1707,
+    "id": 1762,
     "title": "Unmask Tampering: Efficient Document Tampering Localization under Recapturing Attacks with Real Distortion Knowledge",
     "paper": "https://doi.org/10.1145/3719027.3744809",
     "method": "提出 RHSyn，以真实半调图案查表合成打印扫描失真，并用掩码参数高效微调适配文档篡改定位模型。",
@@ -3977,7 +3977,7 @@
   },
   {
     "key": "ragwmanefficientblackboxwatermarkingapproachforretrievalaugmentedgenerationoflargelanguagemodels",
-    "id": 1708,
+    "id": 1763,
     "title": "RAG-WM: An Efficient Black-Box Watermarking Approach for Retrieval-Augmented Generation of Large Language Models",
     "paper": "https://doi.org/10.1145/3719027.3744813",
     "method": "提出 RAG-WM，以水印实体关系元组和生成器、影子 RAG、判别器多 LLM 交互生成知识水印并黑盒验证。",
@@ -4020,7 +4020,7 @@
   },
   {
     "key": "membershipinferenceattacksasprivacytoolsreliabilitydisparityandensemble",
-    "id": 1709,
+    "id": 1764,
     "title": "Membership Inference Attacks as Privacy Tools: Reliability, Disparity and Ensemble",
     "paper": "https://doi.org/10.1145/3719027.3744818",
     "method": "提出覆盖率与稳定性框架分析不同 MIA 及其实例间差异，并以三种集成策略组合互补攻击。",
@@ -4052,7 +4052,7 @@
   },
   {
     "key": "promptinferenceattackondistributedlargelanguagemodelinferenceframeworks",
-    "id": 1710,
+    "id": 1765,
     "title": "Prompt Inference Attack on Distributed Large Language Model Inference Frameworks",
     "paper": "https://doi.org/10.1145/3719027.3744820",
     "method": "针对分布式 LLM 中间输出，在同分布、异分布及无辅助数据和有限查询三种约束下设计提示重建攻击。",
@@ -4086,7 +4086,7 @@
   },
   {
     "key": "differentiallyprivateaccessinencryptedsearchachievingprivacyatasmallcost",
-    "id": 1711,
+    "id": 1766,
     "title": "Differentially Private Access in Encrypted Search: Achieving Privacy at a Small Cost?",
     "paper": "https://doi.org/10.1145/3719027.3765038",
     "method": "以真实数据上的查询与数据推断攻击审计两类差分隐私访问范围查询方案，并形式化 DP access 安全定义。",
@@ -4130,7 +4130,7 @@
   },
   {
     "key": "silentthresholdtraitortracingampenhancingmempoolprivacy",
-    "id": 1712,
+    "id": 1767,
     "title": "Silent Threshold Traitor Tracing \\&amp; Enhancing Mempool Privacy",
     "paper": "https://doi.org/10.1145/3719027.3765099",
     "method": "定义 silent threshold traitor-tracing，结合静默设置、阈值解密和无可信机构公开追踪，并给出通用编译及 DPEPD 构造。",
@@ -4162,7 +4162,7 @@
   },
   {
     "key": "pulseparallelprivatesetunionforlargescaleentities",
-    "id": 1713,
+    "id": 1768,
     "title": "PULSE: Parallel Private Set Union for Large-Scale Entities",
     "paper": "https://doi.org/10.1145/3719027.3765108",
     "method": "提出统一 mPSU 设计框架和 PULSE，以公钥加密重组协议阶段，使大量参与方始终并行计算。",
@@ -4185,7 +4185,7 @@
   },
   {
     "key": "veloxscalablefairasynchronousmpcfromlightweightcryptography",
-    "id": 1714,
+    "id": 1769,
     "title": "Velox: Scalable Fair Asynchronous MPC from Lightweight Cryptography",
     "paper": "https://doi.org/10.1145/3719027.3765114",
     "method": "提出 Velox，以对称加密和哈希等轻量原语构造对最优腐败阈值公平、后量子且可扩展的异步 MPC。",
@@ -4217,7 +4217,7 @@
   },
   {
     "key": "howtorecoveracryptographicsecretfromthecloud",
-    "id": 1715,
+    "id": 1770,
     "title": "How to Recover a Cryptographic Secret From the Cloud",
     "paper": "https://doi.org/10.1145/3719027.3765127",
     "method": "提出基于 TEE 的云端秘密恢复协议，使用户在凭证仍在时始终保密，并在设备和全部凭证丢失后多数情况下仍可恢复。",
@@ -4249,7 +4249,7 @@
   },
   {
     "key": "mlcubeacceleratingmodulelatticebasedcryptographyusingmachinelearningacceleratorswithamemorylessdesign",
-    "id": 1716,
+    "id": 1771,
     "title": "ML-Cube: Accelerating Module-Lattice-Based Cryptography using Machine Learning Accelerators with a Memory-Less Design",
     "paper": "https://doi.org/10.1145/3719027.3765130",
     "method": "提出 ML-Cube，解析 Tensor Core 内部机制并设计密码数学变换，在寄存器内完成无外存 (I)NTT、乘法及并行 ML-KEM/ML-DSA。",
@@ -4281,7 +4281,7 @@
   },
   {
     "key": "nodeshieldruntimeenforcementofsecurityenhancedsbomsfornodejs",
-    "id": 1717,
+    "id": 1772,
     "title": "NodeShield: Runtime Enforcement of Security-Enhanced SBOMs for Node.js",
     "paper": "https://doi.org/10.1145/3719027.3765136",
     "method": "提出 NodeShield，以 SBOM 约束依赖层级、CBOM 描述组件能力，并通过代码外提在原生 Node.js 上运行时强制。",
@@ -4315,7 +4315,7 @@
   },
   {
     "key": "passwordsandfido2aremeanttobesecretapracticalsecureauthenticationchannelforwebbrowsers",
-    "id": 1718,
+    "id": 1773,
     "title": "Passwords and FIDO2 Are Meant To Be Secret: A Practical Secure Authentication Channel for Web Browsers",
     "paper": "https://doi.org/10.1145/3719027.3765195",
     "method": "在 Firefox 中构建浏览器到认证端点的安全通道，隔离密码自动填充与 FIDO2 数据，使页面脚本和扩展无法窃取。",
@@ -4349,7 +4349,7 @@
   },
   {
     "key": "beawareofwhatyouletpassdemystifyingurlbasedauthenticationbypassvulnerabilityinjavawebapplications",
-    "id": 1719,
+    "id": 1774,
     "title": "Be Aware of What You Let Pass: Demystifying URL-based Authentication Bypass Vulnerability in Java Web Applications",
     "paper": "https://doi.org/10.1145/3719027.3765199",
     "method": "研究 53 个真实 UABVuln 根因，并提出 UABScan，以模式化静态分析匹配 Java Web 路由、认证与清洗处理不一致。",
@@ -4383,7 +4383,7 @@
   },
   {
     "key": "samescriptdifferentbehaviorcharacterizingdivergentjavascriptexecutionacrossdifferentdeviceplatforms",
-    "id": 1720,
+    "id": 1775,
     "title": "Same Script, Different Behavior: Characterizing Divergent JavaScript Execution Across Different Device Platforms",
     "paper": "https://doi.org/10.1145/3719027.3765202",
     "method": "结合脚本结构静态分析与移动、桌面运行时动态追踪，定位相同 JavaScript 的平台条件分支及其追踪行为。",
@@ -4415,7 +4415,7 @@
   },
   {
     "key": "conflictingscoresconfusingsignalsanempiricalstudyofvulnerabilityscoringsystems",
-    "id": 1721,
+    "id": 1776,
     "title": "Conflicting Scores, Confusing Signals: An Empirical Study of Vulnerability Scoring Systems",
     "paper": "https://doi.org/10.1145/3719027.3765210",
     "method": "以 600 个微软真实漏洞和实际利用结果，对 CVSS、SSVC、EPSS 与 Exploitability Index 开展大规模排序与分层对比。",
@@ -4440,7 +4440,7 @@
   },
   {
     "key": "onhyperparametersandbackdoorresistanceinhorizontalfederatedlearning",
-    "id": 1722,
+    "id": 1777,
     "title": "On Hyperparameters and Backdoor-Resistance in Horizontal Federated Learning",
     "paper": "https://doi.org/10.1145/3719027.3765211",
     "method": "从理论和测量上分析良性客户端超参数对 HFL 后门效果的影响，并系统评测调参后的攻击—防御组合。",
@@ -4474,7 +4474,7 @@
   },
   {
     "key": "empoweringparentstosupportchildrensonlinesecurityandprivacyfindingsfromarandomizedcontrolledtrial",
-    "id": 1723,
+    "id": 1778,
     "title": "Empowering Parents to Support Children's Online Security and Privacy: Findings from a Randomized Controlled Trial",
     "paper": "https://doi.org/10.1145/3719027.3765214",
     "method": "先调查 210 名美国父母设计六段短视频干预，再以 201 人、14 周随机对照试验评估长期安全素养和沟通策略。",
@@ -4506,7 +4506,7 @@
   },
   {
     "key": "securityandprivacyperceptionsofpakistanifacebookmatrimonygroupusers",
-    "id": 1724,
+    "id": 1779,
     "title": "Security and Privacy Perceptions of Pakistani Facebook Matrimony Group Users",
     "paper": "https://doi.org/10.1145/3719027.3765221",
     "method": "通过 23 次半结构化访谈分析巴基斯坦 Facebook 婚恋群用户的风险认知、信息分享、信任与文化规范。",
@@ -4529,7 +4529,7 @@
   },
   {
     "key": "divefuzzenhancingcpufuzzingviadiverseinstructionconstruction",
-    "id": 1725,
+    "id": 1780,
     "title": "DiveFuzz: Enhancing CPU Fuzzing via Diverse Instruction Construction",
     "paper": "https://doi.org/10.1145/3719027.3765167",
     "method": "提出 DiveFuzz，在运行时精细控制操作数生成多样写回值与上下文语义，并动态平衡 opcode 分布和排除误报。",
@@ -4572,7 +4572,7 @@
   },
   {
     "key": "threatfromwindshieldvehiclewindowsasinvoluntaryattacksourcesonautomotivevoiceassistants",
-    "id": 1726,
+    "id": 1781,
     "title": "Threat from Windshield: Vehicle Windows as Involuntary Attack Sources on Automotive Voice Assistants",
     "paper": "https://doi.org/10.1145/3719027.3765171",
     "method": "提出 ShieldSpear，把贴于挡风玻璃外侧的微型压电元件同时作为扬声器和麦克风，注入不可听命令并窃取驾驶员声纹。",
@@ -4615,7 +4615,7 @@
   },
   {
     "key": "muovmaskingtheunbalancedoilandvinegardigitalsignatureschemeatfirstandhigherorder",
-    "id": 1727,
+    "id": 1782,
     "title": "mUOV: Masking the Unbalanced Oil and Vinegar Digital Signature Scheme at First- and Higher-Order",
     "paper": "https://doi.org/10.1145/3719027.3765188",
     "method": "分析 UOV 签名中的功耗泄漏变量，设计任意阶掩码点积和矩阵向量乘 gadget，并形式与实证验证。",
@@ -4658,7 +4658,7 @@
   },
   {
     "key": "securityawaresensorfusionwithmatethemultiagenttrustestimator",
-    "id": 1728,
+    "id": 1783,
     "title": "Security-Aware Sensor Fusion with MATE: the Multi-Agent Trust Estimator",
     "paper": "https://doi.org/10.1145/3719027.3765193",
     "method": "提出 MATE，把代理信任建模为隐马尔可夫过程，以传感器偏差伪测量进行贝叶斯更新并重加权融合。",
@@ -4702,7 +4702,7 @@
   },
   {
     "key": "adversariallyrobustassemblylanguagemodelforpackedexecutablesdetection",
-    "id": 1729,
+    "id": 1784,
     "title": "Adversarially Robust Assembly Language Model for Packed Executables Detection",
     "paper": "https://doi.org/10.1145/3719027.3765157",
     "method": "提出 Pack-ALM，将原生与加壳二进制预处理为真、伪指令，并预训练汇编语言模型识别加壳语义。",
@@ -4737,7 +4737,7 @@
   },
   {
     "key": "blackoutdataobliviouscomputationwithblindedcapabilities",
-    "id": 1730,
+    "id": 1785,
     "title": "BLACKOUT: Data-Oblivious Computation with Blinded Capabilities",
     "paper": "https://doi.org/10.1145/3719027.3765169",
     "method": "扩展 CHERI 为 blinded capabilities，并在 FPGA、编译器和操作系统中强制经盲能力访问的数据执行保持数据无关。",
@@ -4771,7 +4771,7 @@
   },
   {
     "key": "needleinahaystackautomatedandscalablevulnerabilityhuntinginthewindowsalpcsea",
-    "id": 1731,
+    "id": 1786,
     "title": "Needle in a Haystack: Automated and Scalable Vulnerability Hunting in the Windows ALPC Sea",
     "paper": "https://doi.org/10.1145/3719027.3765180",
     "method": "提出系统级 ALPC 流量录制—重放 fuzzing，直接变异底层消息，并加入非崩溃型信息泄漏检测。",
@@ -4805,7 +4805,7 @@
   },
   {
     "key": "styledtostealtheoverlookedattacksurfaceinemailclients",
-    "id": 1732,
+    "id": 1787,
     "title": "Styled to Steal: The Overlooked Attack Surface in Email Clients",
     "paper": "https://doi.org/10.1145/3719027.3765189",
     "method": "构造纯 CSS 明文外传，通过容器查询、懒加载字体和上下文字体连字把每个加密邮件字符映射为网络请求。",
@@ -4839,7 +4839,7 @@
   },
   {
     "key": "denialofsequencingattacksinethereumlayer2rollups",
-    "id": 1733,
+    "id": 1788,
     "title": "Denial of Sequencing Attacks in Ethereum Layer 2 Rollups",
     "paper": "https://doi.org/10.1145/3719027.3765100",
     "method": "提出零成本 denial-of-sequencing 攻击，以侧信道或不完整检查构造通过合法性过滤但执行后丢弃的无效交易。",
@@ -4873,7 +4873,7 @@
   },
   {
     "key": "realizingcorruptedshardtoleranceashardingblockchainwithpreservingglobalresilience",
-    "id": 1734,
+    "id": 1789,
     "title": "Realizing Corrupted-Shard Tolerance: A Sharding Blockchain with Preserving Global Resilience",
     "paper": "https://doi.org/10.1145/3719027.3765132",
     "method": "提出 Camael，以两阶段活性举报、轻量快照、安全状态判定和定罪重配置容忍被腐化分片。",
@@ -4916,7 +4916,7 @@
   },
   {
     "key": "litepotpracticalpowersoftausetupceremony",
-    "id": 1735,
+    "id": 1790,
     "title": "Lite-PoT: Practical Powers-of-Tau Setup Ceremony",
     "paper": "https://doi.org/10.1145/3719027.3765182",
     "method": "提出 Lite-PoT，以欺诈证明把单贡献者链上群运算降为常数，并聚合多份随机贡献为一次更新。",
@@ -4948,7 +4948,7 @@
   },
   {
     "key": "asecuresequenceranddataavailabilitycommitteeforrollups",
-    "id": 1736,
+    "id": 1791,
     "title": "A Secure Sequencer and Data Availability Committee for Rollups",
     "paper": "https://doi.org/10.1145/3719027.3765187",
     "method": "把 sequencer 与 DAC 正确性检查建模为 L1 仲裁的双人欺诈证明游戏，并在 Lean4 验证诚实获胜策略。",
@@ -4982,7 +4982,7 @@
   },
   {
     "key": "safeguardinggraphneuralnetworksagainsttopologyinferenceattacks",
-    "id": 1737,
+    "id": 1792,
     "title": "Safeguarding Graph Neural Networks against Topology Inference Attacks",
     "paper": "https://doi.org/10.1145/3719027.3765173",
     "method": "提出黑盒图级拓扑推断攻击，并以双层优化和元梯度迭代生成合成训练图的 PGR 防御。",
@@ -5017,7 +5017,7 @@
   },
   {
     "key": "moechoexploitingsidechannelattackstocompromiseuserprivacyinmixtureofexpertsllms",
-    "id": 1738,
+    "id": 1793,
     "title": "MoEcho: Exploiting Side-Channel Attacks to Compromise User Privacy in Mixture-of-Experts LLMs",
     "paper": "https://doi.org/10.1145/3719027.3765174",
     "method": "提出 MoEcho，利用 CPU/GPU 上四种架构侧信道观察输入依赖的专家激活，推断或重建 MoE 文本与视觉隐私。",
@@ -5051,7 +5051,7 @@
   },
   {
     "key": "removalattackanddefenseonaigeneratedcontentlatentbasedwatermarking",
-    "id": 1739,
+    "id": 1794,
     "title": "Removal Attack and Defense on AI-generated Content Latent-based Watermarking",
     "paper": "https://doi.org/10.1145/3719027.3765175",
     "method": "发现潜空间水印对象位置泄漏分布边界，构造低失真移除攻击，并以秘密变换隐藏边界且证明攻击退化为白噪声。",
@@ -5086,7 +5086,7 @@
   },
   {
     "key": "villainnettargetedpoisoningattacksagainstsupernetsalongtheaccuracylatencyparetofrontier",
-    "id": 1740,
+    "id": 1795,
     "title": "VillainNet: Targeted Poisoning Attacks Against SuperNets Along the Accuracy-Latency Pareto Frontier",
     "paper": "https://doi.org/10.1145/3719027.3765185",
     "method": "提出 VillainNet，以架构和计算距离感知优化，只在指定运行场景或子网配置激活 SuperNet 后门。",
@@ -5120,7 +5120,7 @@
   },
   {
     "key": "efficientfuzzypsibasedonprefixrepresentation",
-    "id": 1741,
+    "id": 1796,
     "title": "Efficient Fuzzy PSI Based on Prefix Representation",
     "paper": "https://doi.org/10.1145/3719027.3765203",
     "method": "以二进制前缀表示把模糊匹配对距离阈值的复杂度降为对数，并结合空间哈希构造低高维 fuzzy PSI。",
@@ -5152,7 +5152,7 @@
   },
   {
     "key": "armadillorobustsingleserversecureaggregationforfederatedlearningwithinputvalidation",
-    "id": 1742,
+    "id": 1797,
     "title": "Armadillo: Robust Single-Server Secure Aggregation for Federated Learning with Input Validation",
     "paper": "https://doi.org/10.1145/3719027.3765216",
     "method": "提出 Armadillo，以两层安全聚合和常数轮协议排除恶意客户端影响，只允许其在预定义合法范围内谎报输入。",
@@ -5186,7 +5186,7 @@
   },
   {
     "key": "theochauthenticatedencryptionscheme",
-    "id": 1743,
+    "id": 1798,
     "title": "The OCH Authenticated Encryption Scheme",
     "paper": "https://doi.org/10.1145/3719027.3765224",
     "method": "提出 OCH，以模块化变换构造兼具多用户认证加密、上下文承诺、256 位 nonce 和可选 nonce 隐私的 AEAD。",
@@ -5218,7 +5218,7 @@
   },
   {
     "key": "fromottoolewithsubquadraticcommunication",
-    "id": 1744,
+    "id": 1799,
     "title": "From OT to OLE with Subquadratic Communication",
     "paper": "https://doi.org/10.1145/3719027.3765225",
     "method": "以中国剩余定理改进 Gilboa OLE-to-OT，并用数论、信息论或 RSA 技术恢复恶意安全同时保持次二次通信。",
@@ -5259,7 +5259,7 @@
   },
   {
     "key": "interoperablesymmetricmessagefranking",
-    "id": 1745,
+    "id": 1800,
     "title": "Interoperable Symmetric Message Franking",
     "paper": "https://doi.org/10.1145/3719027.3744864",
     "method": "形式化跨服务商对称消息举报安全定义，并构造允许收件人动态选择举报平台的服务器串联协议。",
@@ -5291,7 +5291,7 @@
   },
   {
     "key": "gibbonfastersecuretwopartytrainingofgradientboostingdecisiontree",
-    "id": 1746,
+    "id": 1801,
     "title": "Gibbon: Faster Secure Two-party Training of Gradient Boosting Decision Tree",
     "paper": "https://doi.org/10.1145/3719027.3744866",
     "method": "提出 Gibbon，联合重构 GBDT 算法和密码协议，消除反演、优化 sigmoid，并以 RLWE/MLWE 加速二元矩阵乘。",
@@ -5332,7 +5332,7 @@
   },
   {
     "key": "breakingandfixingcontentdefinedchunking",
-    "id": 1747,
+    "id": 1802,
     "title": "Breaking and Fixing Content-Defined Chunking",
     "paper": "https://doi.org/10.1145/3719027.3744870",
     "method": "分析五种真实 keyed CDC 并以弱已知/选择明文恢复密钥，继而形式化 KCDC 安全并提出可证明安全替代构造。",
@@ -5376,7 +5376,7 @@
   },
   {
     "key": "refinedtfheleveledhomomorphicevaluationanditsapplication",
-    "id": 1748,
+    "id": 1803,
     "title": "Refined TFHE Leveled Homomorphic Evaluation and Its Application",
     "paper": "https://doi.org/10.1145/3719027.3744873",
     "method": "修补 NTT 电路自举并设计 split FFT 版本，再扩展高精度整数 LHE 及多比特提取以加速大电路。",
@@ -5408,7 +5408,7 @@
   },
   {
     "key": "ccasecuretraceablethresholdidbasedencryptionandapplication",
-    "id": 1749,
+    "id": 1804,
     "title": "CCA-Secure Traceable Threshold (ID-based) Encryption and Application",
     "paper": "https://doi.org/10.1145/3719027.3744876",
     "method": "强化可追踪阈值加密为 CCA 安全且解密一致，通过身份基方案、一时签名、指纹码和正确加密证明构造实例。",
@@ -5449,7 +5449,7 @@
   },
   {
     "key": "highthroughputuniversallycomposablethresholdfhedecryption",
-    "id": 1750,
+    "id": 1805,
     "title": "High-Throughput Universally Composable Threshold FHE Decryption",
     "paper": "https://doi.org/10.1145/3719027.3744884",
     "method": "提出无需 noise flooding 的阈值 FHE 解密，以离线预处理比较门、在线 MPC 舍入安全移除密文噪声，并证明 UC 安全。",
@@ -5481,7 +5481,7 @@
   },
   {
     "key": "harnessingsparsificationinfederatedlearningasecureefficientanddifferentiallyprivaterealization",
-    "id": 1751,
+    "id": 1806,
     "title": "Harnessing Sparsification in Federated Learning: A Secure, Efficient, and Differentially Private Realization",
     "paper": "https://doi.org/10.1145/3719027.3765044",
     "method": "提出 Clover，在三服务器分布式信任下私密聚合 top-k 稀疏梯度，并加入分布式噪声和轻量完整性检查。",
@@ -5524,7 +5524,7 @@
   },
   {
     "key": "countingsubgraphsundershuffledifferentialprivacy",
-    "id": 1752,
+    "id": 1807,
     "title": "Counting Subgraphs under Shuffle Differential Privacy",
     "paper": "https://doi.org/10.1145/3719027.3765047",
     "method": "提出 shuffle DP 下三角形、四环和三跳路径计数协议，在分布式局部邻居数据上改善本地与既有洗牌方案效用。",
@@ -5547,7 +5547,7 @@
   },
   {
     "key": "managingcorrelationsindataandprivacydemand",
-    "id": 1753,
+    "id": 1808,
     "title": "Managing Correlations in Data and Privacy Demand",
     "paper": "https://doi.org/10.1145/3719027.3765048",
     "method": "提出 add-remove heterogeneous DP，同时建模用户数据和隐私偏好，以假设检验形式化保证并构造无需先验相关性的统计机制。",
@@ -5588,7 +5588,7 @@
   },
   {
     "key": "bfididentityinferenceattacksutilizingbeamformingfeedbackinformation",
-    "id": 1754,
+    "id": 1809,
     "title": "BFId: Identity Inference Attacks Utilizing Beamforming Feedback Information",
     "paper": "https://doi.org/10.1145/3719027.3765062",
     "method": "BFId利用WiFi波束成形反馈感知步态并推断人员身份。",
@@ -5611,7 +5611,7 @@
   },
   {
     "key": "systematicassessmentoftabulardatasynthesis",
-    "id": 1755,
+    "id": 1810,
     "title": "Systematic Assessment of Tabular Data Synthesis",
     "paper": "https://doi.org/10.1145/3719027.3765067",
     "method": "构建统一框架，从效用和隐私等维度系统评价表格数据合成算法。",
@@ -5636,7 +5636,7 @@
   },
   {
     "key": "peekabooiseeyourqueriespassiveattacksagainstdsseviaintermittentobservations",
-    "id": 1756,
+    "id": 1811,
     "title": "Peekaboo, I See Your Queries: Passive Attacks Against DSSE Via Intermittent Observations",
     "paper": "https://doi.org/10.1145/3719027.3765075",
     "method": "Peekaboo从间歇观测恢复动态可搜索加密的搜索模式并推断查询。",
@@ -5659,7 +5659,7 @@
   },
   {
     "key": "isthisascamthenatureandqualityofredditdiscussionaboutscams",
-    "id": 1757,
+    "id": 1812,
     "title": "'Is this a scam?': The Nature and Quality of Reddit Discussion about Scams",
     "paper": "https://doi.org/10.1145/3719027.3765030",
     "method": "对Reddit诈骗讨论开展多阶段主题分析，评估求助内容与建议质量。",
@@ -5684,7 +5684,7 @@
   },
   {
     "key": "leakyappslargescaleanalysisofsecretsdistributedinandroidandiosapps",
-    "id": 1758,
+    "id": 1813,
     "title": "Leaky Apps: Large-scale Analysis of Secrets Distributed in Android and iOS Apps",
     "paper": "https://doi.org/10.1145/3719027.3765033",
     "method": "大规模逆向移动应用，追踪内嵌凭据的类型、演化与撤销情况。",
@@ -5710,7 +5710,7 @@
   },
   {
     "key": "wejustdidnothavethatontheembeddedsysteminsightsandchallengesforsecuringmicrocontrollersystemsfromtheembeddedctfcompetitions",
-    "id": 1759,
+    "id": 1814,
     "title": "'We just did not have that on the embedded system': Insights and Challenges for Securing Microcontroller Systems from the Embedded CTF Competitions",
     "paper": "https://doi.org/10.1145/3719027.3765039",
     "method": "从嵌入式CTF竞赛观察中归纳微控制器安全开发与教育障碍。",
@@ -5736,7 +5736,7 @@
   },
   {
     "key": "walkingthelastmilestudyingdecompileroutputcorrectioninpractice",
-    "id": 1760,
+    "id": 1815,
     "title": "Walking The Last Mile: Studying Decompiler Output Correction in Practice",
     "paper": "https://doi.org/10.1145/3719027.3765040",
     "method": "利用真实平台数据研究人类如何修正Python反编译输出。",
@@ -5761,7 +5761,7 @@
   },
   {
     "key": "aqualitativeanalysisoffuzzerusabilityandchallenges",
-    "id": 1761,
+    "id": 1816,
     "title": "A Qualitative Analysis of Fuzzer Usability and Challenges",
     "paper": "https://doi.org/10.1145/3719027.3765055",
     "method": "质性研究开发者使用模糊测试器的实际流程、困难和工具缺口。",
@@ -5786,7 +5786,7 @@
   },
   {
     "key": "itshouldbeeasybutnewusersexperiencesandchallengeswithsecretmanagementtools",
-    "id": 1762,
+    "id": 1817,
     "title": "It Should Be Easy but... New Users' Experiences and Challenges with Secret Management Tools",
     "paper": "https://doi.org/10.1145/3719027.3765065",
     "method": "观察新用户采用秘密管理工具，归纳文档、界面和心智模型障碍。",
@@ -5811,7 +5811,7 @@
   },
   {
     "key": "charmcheckpointedandhashedcountersforflexibleandefficientrowhammermitigation",
-    "id": 1763,
+    "id": 1818,
     "title": "CHaRM: Checkpointed and Hashed Counters for Flexible and Efficient Rowhammer Mitigation",
     "paper": "https://doi.org/10.1145/3719027.3765021",
     "method": "CHaRM在CPU内用检查点和哈希计数器跟踪大量DRAM行激活。",
@@ -5836,7 +5836,7 @@
   },
   {
     "key": "zvdetectorstateguidedvulnerabilitydetectionsystemforzigbeedevices",
-    "id": 1764,
+    "id": 1819,
     "title": "ZVDetector: State-Guided Vulnerability Detection System for Zigbee Devices",
     "paper": "https://doi.org/10.1145/3719027.3765035",
     "method": "ZVDetector依据设备状态和消息关系引导Zigbee固件模糊测试。",
@@ -5862,7 +5862,7 @@
   },
   {
     "key": "exfilstateautomateddiscoveryoftimerfreecachesidechannelsonarmcpus",
-    "id": 1765,
+    "id": 1820,
     "title": "ExfilState: Automated Discovery of Timer-Free Cache Side Channels on ARM CPUs",
     "paper": "https://doi.org/10.1145/3719027.3765061",
     "method": "ExfilState以模糊测试自动搜索把缓存状态泄露到架构状态的指令序列。",
@@ -5887,7 +5887,7 @@
   },
   {
     "key": "milesandetectingexploitablemicroarchitecturalleakageviadifferentialhardwaresoftwaretainttracking",
-    "id": 1766,
+    "id": 1821,
     "title": "MileSan: Detecting Exploitable Microarchitectural Leakage via Differential Hardware-Software Taint Tracking",
     "paper": "https://doi.org/10.1145/3719027.3765066",
     "method": "MileSan差分比较架构与微架构污点流，检测可被软件观察的泄露。",
@@ -5913,7 +5913,7 @@
   },
   {
     "key": "boltbandwidthoptimizedlightningfastobliviousmappoweredbysecurehbmaccelerators",
-    "id": 1767,
+    "id": 1822,
     "title": "BOLT: Bandwidth-Optimized Lightning-Fast Oblivious Map powered by Secure HBM Accelerators",
     "paper": "https://doi.org/10.1145/3719027.3765069",
     "method": "BOLT以安全HBM加速器实现带宽优化的高性能不经意映射。",
@@ -5938,7 +5938,7 @@
   },
   {
     "key": "flexemutowardsflexiblemcuperipheralemulation",
-    "id": 1768,
+    "id": 1823,
     "title": "FlexEmu: Towards Flexible MCU Peripheral Emulation",
     "paper": "https://doi.org/10.1145/3719027.3765086",
     "method": "FlexEmu用有限硬件原语抽象外设并自动生成跨平台MCU模拟器。",
@@ -5964,7 +5964,7 @@
   },
   {
     "key": "rethinkingtamperevidentloggingahighperformancecodesignedauditingsystem",
-    "id": 1769,
+    "id": 1824,
     "title": "Rethinking Tamper-Evident Logging: A High-Performance, Co-Designed Auditing System",
     "paper": "https://doi.org/10.1145/3719027.3765024",
     "method": "Nitro软硬件协同记录可验证审计日志并细粒度定位篡改。",
@@ -5989,7 +5989,7 @@
   },
   {
     "key": "empiricalsecurityanalysisofsoftwarebasedfaultisolationthroughcontrolledfaultinjection",
-    "id": 1770,
+    "id": 1825,
     "title": "Empirical Security Analysis of Software-based Fault Isolation through Controlled Fault Injection",
     "paper": "https://doi.org/10.1145/3719027.3765027",
     "method": "以受控故障注入忠实模拟现代软件故障隔离边界并测试逃逸。",
@@ -6015,7 +6015,7 @@
   },
   {
     "key": "gputravellingefficientconfidentialcollaborativetrainingwithteeenabledgpus",
-    "id": 1771,
+    "id": 1826,
     "title": "GPU Travelling: Efficient Confidential Collaborative Training with TEE-Enabled GPUs",
     "paper": "https://doi.org/10.1145/3719027.3765029",
     "method": "GPU Travelling让可信GPU在协作方之间移动以执行机密联合训练。",
@@ -6038,7 +6038,7 @@
   },
   {
     "key": "sleepinggiantsactivatingdormantjavadeserializationgadgetchainsthroughstealthycodechanges",
-    "id": 1772,
+    "id": 1827,
     "title": "Sleeping Giants - Activating Dormant Java Deserialization Gadget Chains through Stealthy Code Changes",
     "paper": "https://doi.org/10.1145/3719027.3765031",
     "method": "分析三类隐蔽代码变更如何在依赖中激活休眠Java反序列化链。",
@@ -6063,7 +6063,7 @@
   },
   {
     "key": "parcelmismatchdemystifiedaddressingadecadeoldsecuritychallengeinandroid",
-    "id": 1773,
+    "id": 1828,
     "title": "Parcel Mismatch Demystified: Addressing a Decade-Old Security Challenge in Android",
     "paper": "https://doi.org/10.1145/3719027.3765034",
     "method": "ParcelTaint以静态污点分析系统检测Android IPC Parcel读写错位。",
@@ -6089,7 +6089,7 @@
   },
   {
     "key": "deprivileginglowlevelgpudriversefficientlywithuserspaceprocessesandchericompartments",
-    "id": 1774,
+    "id": 1829,
     "title": "Deprivileging Low-Level GPU Drivers Efficiently with User-Space Processes and CHERI Compartments",
     "paper": "https://doi.org/10.1145/3719027.3765036",
     "method": "将低层GPU驱动移出内核，并比较用户态进程与CHERI隔离舱方案。",
@@ -6114,7 +6114,7 @@
   },
   {
     "key": "towardsaformalfoundationforblockchainzkrollups",
-    "id": 1775,
+    "id": 1830,
     "title": "Towards a Formal Foundation for Blockchain ZK Rollups",
     "paper": "https://doi.org/10.1145/3719027.3765115",
     "method": "建立ZK Rollup形式模型，以模型检查和性质测试分析安全与抗审查。",
@@ -6139,7 +6139,7 @@
   },
   {
     "key": "formalsecurityandfunctionalverificationofcryptographicprotocolimplementationsinrust",
-    "id": 1776,
+    "id": 1831,
     "title": "Formal Security and Functional Verification of Cryptographic Protocol Implementations in Rust",
     "paper": "https://doi.org/10.1145/3719027.3765213",
     "method": "建立Rust密码协议实现的功能正确性与安全性联合形式验证流程。",
@@ -6164,7 +6164,7 @@
   },
   {
     "key": "secureparsingandserializingwithseparationlogicappliedtocborcddlandcose",
-    "id": 1777,
+    "id": 1832,
     "title": "Secure Parsing and Serializing with Separation Logic Applied to CBOR, CDDL, and COSE",
     "paper": "https://doi.org/10.1145/3719027.3765120",
     "method": "PulseParse提供经分离逻辑验证的不可塑二进制解析与序列化组合器。",
@@ -6189,7 +6189,7 @@
   },
   {
     "key": "loopingforgoodcyclicproofsforsecurityprotocols",
-    "id": 1778,
+    "id": 1833,
     "title": "Looping for Good: Cyclic Proofs for Security Protocols",
     "paper": "https://doi.org/10.1145/3719027.3765131",
     "method": "为Tamarin加入健全的循环证明规则以自动归纳协议性质。",
@@ -6212,7 +6212,7 @@
   },
   {
     "key": "privacypreservingruntimeverification",
-    "id": 1779,
+    "id": 1834,
     "title": "Privacy-Preserving Runtime Verification",
     "paper": "https://doi.org/10.1145/3719027.3765137",
     "method": "设计协议让第三方验证时同时隐藏系统轨迹和监控规格。",
@@ -6237,7 +6237,7 @@
   },
   {
     "key": "generalizedsecuritypreservingrefinementforconcurrentsystems",
-    "id": 1780,
+    "id": 1835,
     "title": "Generalized Security-Preserving Refinement for Concurrent Systems",
     "paper": "https://doi.org/10.1145/3719027.3765138",
     "method": "提出适用于并发系统和复杂策略的广义安全保持细化。",
@@ -6260,7 +6260,7 @@
   },
   {
     "key": "prototypesurgerytailoringneuralprototypesviasoftlabelsforefficientmachineunlearning",
-    "id": 1781,
+    "id": 1836,
     "title": "Prototype Surgery: Tailoring Neural Prototypes via Soft Labels for Efficient Machine Unlearning",
     "paper": "https://doi.org/10.1145/3719027.3744827",
     "method": "Prototype Surgery直接用软标签调整DNN类别原型完成机器遗忘。",
@@ -6285,7 +6285,7 @@
   },
   {
     "key": "safeguiderrobustandpracticalcontentsafetycontrolfortexttoimagemodels",
-    "id": 1782,
+    "id": 1837,
     "title": "SafeGuider: Robust and Practical Content Safety Control for Text-to-Image Models",
     "paper": "https://doi.org/10.1145/3719027.3744835",
     "method": "SafeGuider依据Stable Diffusion文本编码器机理增强内容安全控制。",
@@ -6311,7 +6311,7 @@
   },
   {
     "key": "secaligndefendingagainstpromptinjectionwithpreferenceoptimization",
-    "id": 1783,
+    "id": 1838,
     "title": "SecAlign: Defending Against Prompt Injection with Preference Optimization",
     "paper": "https://doi.org/10.1145/3719027.3744836",
     "method": "SecAlign用安全偏好优化训练模型遵循系统指令而拒绝外部注入。",
@@ -6337,7 +6337,7 @@
   },
   {
     "key": "onthefeasibilityofpoisoningtexttoimageaimodelsviaadversarialmislabeling",
-    "id": 1784,
+    "id": 1839,
     "title": "On the Feasibility of Poisoning Text-to-Image AI Models via Adversarial Mislabeling",
     "paper": "https://doi.org/10.1145/3719027.3744845",
     "method": "利用对抗扰动诱使视觉语言模型错误标注训练图像，研究文生图投毒可行性。",
@@ -6362,7 +6362,7 @@
   },
   {
     "key": "towardsbackdoorstealthinessinmodelparameterspace",
-    "id": 1785,
+    "id": 1840,
     "title": "Towards Backdoor Stealthiness in Model Parameter Space",
     "paper": "https://doi.org/10.1145/3719027.3744846",
     "method": "Grond同时优化输入、特征和参数空间隐蔽性以绕过多类后门防御。",
@@ -6388,7 +6388,7 @@
   },
   {
     "key": "apracticalandsecurebyzantinerobustaggregator",
-    "id": 1786,
+    "id": 1841,
     "title": "A Practical and Secure Byzantine Robust Aggregator",
     "paper": "https://doi.org/10.1145/3719027.3744851",
     "method": "安全地剔除高维更新离群点并聚合，抵御拜占庭参与方。",
@@ -6413,7 +6413,7 @@
   },
   {
     "key": "admpcasynchronousdynamicmpcwithguaranteedoutputdelivery",
-    "id": 1787,
+    "id": 1842,
     "title": "AD-MPC: Asynchronous Dynamic MPC with Guaranteed Output Delivery",
     "paper": "https://doi.org/10.1145/3719027.3765166",
     "method": "AD-MPC支持参与方动态变化的异步多方安全计算并保证输出交付。",
@@ -6436,7 +6436,7 @@
   },
   {
     "key": "indcpadofrelaxedfunctionalbootstrappinganewattackageneralfixandastrongermodel",
-    "id": 1788,
+    "id": 1843,
     "title": "IND-CPA-D of Relaxed Functional Bootstrapping: A New Attack, A General Fix, and A Stronger Model",
     "paper": "https://doi.org/10.1145/3719027.3765170",
     "method": "给出针对宽松函数自举的密钥恢复攻击、强化安全模型和通用修复。",
@@ -6462,7 +6462,7 @@
   },
   {
     "key": "securityanalysisofprivatelyverifiableprivacypass",
-    "id": 1789,
+    "id": 1844,
     "title": "Security Analysis of Privately Verifiable Privacy Pass",
     "paper": "https://doi.org/10.1145/3719027.3765172",
     "method": "形式分析私有可验证Privacy Pass及其元数据扩展的安全差异。",
@@ -6485,7 +6485,7 @@
   },
   {
     "key": "thresholdecdsaintworounds",
-    "id": 1790,
+    "id": 1845,
     "title": "Threshold ECDSA in Two Rounds",
     "paper": "https://doi.org/10.1145/3719027.3765176",
     "method": "构造首个达到最优门限、仅两轮交互的多方ECDSA签名协议。",
@@ -6508,7 +6508,7 @@
   },
   {
     "key": "fasthomomorphicevaluationoflwrbasedprfs",
-    "id": 1791,
+    "id": 1846,
     "title": "Fast Homomorphic Evaluation of LWR-based PRFs",
     "paper": "https://doi.org/10.1145/3719027.3765177",
     "method": "设计可在加密密钥上快速同态求值的LWR伪随机函数。",
@@ -6531,7 +6531,7 @@
   },
   {
     "key": "fastamortizedbootstrappingwithsmallkeysandpolynomialnoiseoverhead",
-    "id": 1792,
+    "id": 1847,
     "title": "Fast Amortized Bootstrapping with Small Keys and Polynomial Noise Overhead",
     "paper": "https://doi.org/10.1145/3719027.3765181",
     "method": "提出小密钥、每消息低同态操作数且仅多项式噪声的摊销自举。",
@@ -6554,7 +6554,7 @@
   },
   {
     "key": "thepowertoneverbewrongevasionsandanachronisticattacksagainstwebarchives",
-    "id": 1793,
+    "id": 1848,
     "title": "The Power to Never Be Wrong: Evasions and Anachronistic Attacks Against Web Archives",
     "paper": "https://doi.org/10.1145/3719027.3765051",
     "method": "提出归档规避与时代错置威胁模型，测试站点如何操纵被归档内容。",
@@ -6580,7 +6580,7 @@
   },
   {
     "key": "deepdiveintoinappbrowsersuncoveringhiddenpitfallsincertificatevalidation",
-    "id": 1794,
+    "id": 1849,
     "title": "Deep Dive into In-app Browsers: Uncovering Hidden Pitfalls in Certificate Validation",
     "paper": "https://doi.org/10.1145/3719027.3765215",
     "method": "FAITH统一控制iOS真机和Android模拟器信任锚，系统测试应用内浏览器证书验证。",
@@ -6606,7 +6606,7 @@
   },
   {
     "key": "gapdisgradientassistedperturbationdesignviasequenceeditingforwebsitefingerprintingdefense",
-    "id": 1795,
+    "id": 1850,
     "title": "GAPDiS: Gradient-Assisted Perturbation Design via Sequence Editing for Website Fingerprinting Defense",
     "paper": "https://doi.org/10.1145/3719027.3765084",
     "method": "GAPDiS以梯度对齐偏移和余弦奖励搜索离散流量序列扰动。",
@@ -6631,7 +6631,7 @@
   },
   {
     "key": "whatgetsmeasuredgetsmanagedmitigatingsupplychainattackswithalinkintegritymanagementsystem",
-    "id": 1796,
+    "id": 1851,
     "title": "What Gets Measured Gets Managed: Mitigating Supply Chain Attacks with a Link Integrity Management System",
     "paper": "https://doi.org/10.1145/3719027.3765094",
     "method": "设计链接完整性管理系统，持续验证网页加载的第三方资源。",
@@ -6656,7 +6656,7 @@
   },
   {
     "key": "inthedomwetrustexploringthehiddendangersofreadingfromthedomontheweb",
-    "id": 1797,
+    "id": 1852,
     "title": "In the DOM We Trust: Exploring the Hidden Dangers of Reading from the DOM on the Web",
     "paper": "https://doi.org/10.1145/3719027.3765117",
     "method": "联合静态与动态分析自动发现JavaScript对不可信DOM输入的安全敏感使用。",
@@ -6682,7 +6682,7 @@
   },
   {
     "key": "headersupdetectingsecurityheaderinconsistenciesinbrowsers",
-    "id": 1798,
+    "id": 1853,
     "title": "Head(er)s Up! Detecting Security Header Inconsistencies in Browsers",
     "paper": "https://doi.org/10.1145/3719027.3765119",
     "method": "生成安全头组合并跨浏览器差分测试解析与执行语义。",
@@ -6708,7 +6708,7 @@
   },
   {
     "key": "differentiationbasedextractionofproprietarydatafromfinetunedllms",
-    "id": 1799,
+    "id": 1854,
     "title": "Differentiation-Based Extraction of Proprietary Data from Fine-Tuned LLMs",
     "paper": "https://doi.org/10.1145/3719027.3744856",
     "method": "DDE利用微调前后置信度差异定向提取监督微调私有数据。",
@@ -6734,7 +6734,7 @@
   },
   {
     "key": "onesurrogatetofoolthemalluniversaltransferableandtargetedadversarialattackswithclip",
-    "id": 1800,
+    "id": 1855,
     "title": "One Surrogate to Fool Them All: Universal, Transferable, and Targeted Adversarial Attacks with CLIP",
     "paper": "https://doi.org/10.1145/3719027.3744859",
     "method": "UnivIntruder仅用公开CLIP和数据生成通用、定向且可迁移的扰动。",
@@ -6760,7 +6760,7 @@
   },
   {
     "key": "divtrackeeversusdyntrackerpromotingdiversityinantifacialrecognitionagainstdynamicfrstrategy",
-    "id": 1801,
+    "id": 1856,
     "title": "DivTrackee versus DynTracker: Promoting Diversity in Anti-Facial Recognition against Dynamic FR Strategy",
     "paper": "https://doi.org/10.1145/3719027.3744867",
     "method": "DynTracker动态更新人脸库以攻击反识别方法，DivTrackee以多样扰动进行防护。",
@@ -6786,7 +6786,7 @@
   },
   {
     "key": "whatspullingthestringsevaluatingintegrityandattributioninaitrainingandinferencethroughconceptshift",
-    "id": 1802,
+    "id": 1857,
     "title": "What's Pulling the Strings? Evaluating Integrity and Attribution in AI Training and Inference through Concept Shift",
     "paper": "https://doi.org/10.1145/3719027.3744868",
     "method": "ConceptLens用预训练多模态模型分析探针样本概念漂移，归因AI完整性威胁。",
@@ -6812,7 +6812,7 @@
   },
   {
     "key": "bustingthepaperballotvotingmeetsadversarialmachinelearning",
-    "id": 1803,
+    "id": 1858,
     "title": "Busting the Paper Ballot: Voting Meets Adversarial Machine Learning",
     "paper": "https://doi.org/10.1145/3719027.3744882",
     "method": "构建选票数据并生成可打印扫描的对抗选票，测试机器学习计票器。",
@@ -6837,7 +6837,7 @@
   },
   {
     "key": "filterflknowledgefilteringbaseddatafreebackdoordefenseforfederatedlearning",
-    "id": 1804,
+    "id": 1859,
     "title": "FilterFL: Knowledge Filtering-based Data-Free Backdoor Defense for Federated Learning",
     "paper": "https://doi.org/10.1145/3719027.3744883",
     "method": "FilterFL无需服务器数据即可识别并过滤携带后门知识的客户端模型。",
@@ -6863,7 +6863,7 @@
   },
   {
     "key": "ethicsincomputersecurityresearchadatadrivenassessmentofthepastthepresentandthepossiblefuture",
-    "id": 1805,
+    "id": 1860,
     "title": "Ethics in Computer Security Research: A Data-Driven Assessment of the Past, the Present, and the Possible Future",
     "paper": "https://doi.org/10.1145/3719027.3765071",
     "method": "以数据驱动方式梳理安全研究伦理讨论、实践标准和演化趋势。",
@@ -6886,7 +6886,7 @@
   },
   {
     "key": "layeredoverlappingandinconsistentalargescaleanalysisofthemultipleprivacypoliciesandcontrolsofusbanks",
-    "id": 1806,
+    "id": 1861,
     "title": "Layered, Overlapping, and Inconsistent: A Large-Scale Analysis of the Multiple Privacy Policies and Controls of U.S. Banks",
     "paper": "https://doi.org/10.1145/3719027.3765072",
     "method": "大规模比较美国银行跨网站、应用和法规层级的隐私政策与退出控件。",
@@ -6909,7 +6909,7 @@
   },
   {
     "key": "howblindandlowvisionusersmanagetheirpasswords",
-    "id": 1807,
+    "id": 1862,
     "title": "How Blind and Low-Vision Users Manage Their Passwords",
     "paper": "https://doi.org/10.1145/3719027.3765081",
     "method": "访谈盲人和低视力用户，研究其密码管理策略、无障碍障碍与信任。",
@@ -6932,7 +6932,7 @@
   },
   {
     "key": "adecadelonglandscapeofadvancedpersistentthreatslongitudinalanalysisandglobaltrends",
-    "id": 1808,
+    "id": 1863,
     "title": "A Decade-long Landscape of Advanced Persistent Threats: Longitudinal Analysis and Global Trends",
     "paper": "https://doi.org/10.1145/3719027.3765085",
     "method": "纵向汇总十年APT活动并以地图和流图呈现组织、目标与全球趋势。",
@@ -6958,7 +6958,7 @@
   },
   {
     "key": "unsafebenchbenchmarkingimagesafetyclassifiersonrealworldandaigeneratedimages",
-    "id": 1809,
+    "id": 1864,
     "title": "UnsafeBench: Benchmarking Image Safety Classifiers on Real-World and AI-Generated Images",
     "paper": "https://doi.org/10.1145/3719027.3765088",
     "method": "UnsafeBench统一评估图像安全分类器对真实与AI生成不安全内容的效果和鲁棒性。",
@@ -6984,7 +6984,7 @@
   },
   {
     "key": "theimportanceofbeingdiscretemeasuringtheimpactofdiscretizationinendtoenddifferentiallyprivatesyntheticdata",
-    "id": 1810,
+    "id": 1865,
     "title": "The Importance of Being Discrete: Measuring the Impact of Discretization in End-to-End Differentially Private Synthetic Data",
     "paper": "https://doi.org/10.1145/3719027.3765091",
     "method": "系统测量离散器和分箱数量对端到端差分隐私合成数据的影响。",
@@ -7009,7 +7009,7 @@
   },
   {
     "key": "asymmetryvulnerabilityandphysicalattacksononlinemapconstructionforautonomousdriving",
-    "id": 1811,
+    "id": 1866,
     "title": "Asymmetry Vulnerability and Physical Attacks on Online Map Construction for Autonomous Driving",
     "paper": "https://doi.org/10.1145/3719027.3765092",
     "method": "分析在线地图模型的对称结构偏置并构造数字与物理攻击。",
@@ -7035,7 +7035,7 @@
   },
   {
     "key": "pixnappingbringingpixelstealingoutofthestoneage",
-    "id": 1812,
+    "id": 1867,
     "title": "Pixnapping: Bringing Pixel Stealing out of the Stone Age",
     "paper": "https://doi.org/10.1145/3719027.3765093",
     "method": "Pixnapping利用Android显示侧信道从其他应用逐像素窃取敏感界面内容。",
@@ -7060,7 +7060,7 @@
   },
   {
     "key": "hwspyhandwritinginferencebytracingpentailmovements",
-    "id": 1813,
+    "id": 1868,
     "title": "HW-Spy: Handwriting Inference by Tracing Pen-Tail Movements",
     "paper": "https://doi.org/10.1145/3719027.3765109",
     "method": "HW-Spy在看不到笔尖和书写面时跟踪笔尾运动推断手写内容。",
@@ -7083,7 +7083,7 @@
   },
   {
     "key": "combatingfalsificationofspeechvideoswithliveopticalsignatures",
-    "id": 1814,
+    "id": 1869,
     "title": "Combating Falsification of Speech Videos with Live Optical Signatures",
     "paper": "https://doi.org/10.1145/3719027.3765112",
     "method": "VeriLight在拍摄时注入实时光学签名，验证讲话视频身份和运动真实性。",
@@ -7108,7 +7108,7 @@
   },
   {
     "key": "contesttamingthecyberphysicalinputspaceinfuzztestingwithcontroltheory",
-    "id": 1815,
+    "id": 1870,
     "title": "ConTest: Taming the Cyber-physical Input Space in Fuzz Testing with Control Theory",
     "paper": "https://doi.org/10.1145/3719027.3765129",
     "method": "ConTest用控制模型Lyapunov函数同时指导CPS缺陷判定和输入变异。",
@@ -7134,7 +7134,7 @@
   },
   {
     "key": "riscoverautomaticdiscoveryofuserexploitablearchitecturalsecurityvulnerabilitiesinclosedsourceriscvcpus",
-    "id": 1816,
+    "id": 1871,
     "title": "RISCover: Automatic Discovery of User-exploitable Architectural Security Vulnerabilities in Closed-Source RISC-V CPUs",
     "paper": "https://doi.org/10.1145/3719027.3765141",
     "method": "RISCover黑盒生成RISC-V指令序列，发现普通用户可利用的架构漏洞。",
@@ -7159,7 +7159,7 @@
   },
   {
     "key": "pickleballsecuredeserializationofpicklebasedmachinelearningmodels",
-    "id": 1817,
+    "id": 1872,
     "title": "PickleBall: Secure Deserialization of Pickle-based Machine Learning Models",
     "paper": "https://doi.org/10.1145/3719027.3765037",
     "method": "PickleBall透明限制pickle模型加载过程中的任意函数调用。",
@@ -7184,7 +7184,7 @@
   },
   {
     "key": "givellmsasecuritycoursesecuringretrievalaugmentedcodegenerationviaknowledgeinjection",
-    "id": 1818,
+    "id": 1873,
     "title": "Give LLMs a Security Course: Securing Retrieval-Augmented Code Generation via Knowledge Injection",
     "paper": "https://doi.org/10.1145/3719027.3765049",
     "method": "CodeGuarder把安全知识与功能代码共同注入检索增强代码生成。",
@@ -7210,7 +7210,7 @@
   },
   {
     "key": "beyondtagcollisionclusterbasedmemorymanagementfortagbasedsanitizers",
-    "id": 1819,
+    "id": 1874,
     "title": "Beyond Tag Collision: Cluster-based Memory Management for Tag-based Sanitizers",
     "paper": "https://doi.org/10.1145/3719027.3765059",
     "method": "ClusterTag按对象簇分配内存与标签，联合缓解时间和空间碰撞。",
@@ -7235,7 +7235,7 @@
   },
   {
     "key": "recoverfunctionsignaturefromcombinedconstraints",
-    "id": 1820,
+    "id": 1875,
     "title": "Recover Function Signature from Combined Constraints",
     "paper": "https://doi.org/10.1145/3719027.3765089",
     "method": "CDA融合多个反编译器约束恢复跨架构二进制函数签名。",
@@ -7261,7 +7261,7 @@
   },
   {
     "key": "dangersbehindaccesscontrolunderstandingandexploitingimplicitpermissionsinkubernetes",
-    "id": 1821,
+    "id": 1876,
     "title": "Dangers Behind Access Control: Understanding and Exploiting Implicit Permissions in Kubernetes",
     "paper": "https://doi.org/10.1145/3719027.3765106",
     "method": "联合静态分析与大模型发现并利用Kubernetes访问控制中的隐式权限。",
@@ -7287,7 +7287,7 @@
   },
   {
     "key": "tideanefficientkernellevelisolationexecutionenvironmentonaarch64viadynamicallyadjustingoutputaddresssize",
-    "id": 1822,
+    "id": 1877,
     "title": "Tide: An Efficient Kernel-level Isolation Execution Environment on AArch64 via Dynamically Adjusting Output Address Size",
     "paper": "https://doi.org/10.1145/3719027.3765111",
     "method": "Tide动态调整AArch64输出地址大小，把内核隔离检查卸载到硬件。",
@@ -7312,7 +7312,7 @@
   },
   {
     "key": "accountableliveness",
-    "id": 1823,
+    "id": 1878,
     "title": "Accountable Liveness",
     "paper": "https://doi.org/10.1145/3719027.3765032",
     "method": "定义x-部分同步网络并量化活性违例后可归责节点数量。",
@@ -7335,7 +7335,7 @@
   },
   {
     "key": "howtobeatnakamotointherace",
-    "id": 1824,
+    "id": 1879,
     "title": "How to Beat Nakamoto in the Race",
     "paper": "https://doi.org/10.1145/3719027.3765058",
     "method": "用MDP精确建模区块树、时间与攻击动作，求解最强Nakamoto安全攻击。",
@@ -7360,7 +7360,7 @@
   },
   {
     "key": "committeeselectionwithnonproportionalweights",
-    "id": 1825,
+    "id": 1880,
     "title": "Committee Selection with Non-Proportional Weights",
     "paper": "https://doi.org/10.1145/3719027.3765074",
     "method": "分析并设计非比例权重的PoS委员会选择机制。",
@@ -7383,7 +7383,7 @@
   },
   {
     "key": "elasticrestakingnetworksunitedwefallpartiallydividedwestand",
-    "id": 1826,
+    "id": 1881,
     "title": "Elastic Restaking Networks: United we fall, (partially) divided we stand",
     "paper": "https://doi.org/10.1145/3719027.3765077",
     "method": "弹性再质押允许超额分配并在损失后按剩余权益伸缩覆盖。",
@@ -7406,7 +7406,7 @@
   },
   {
     "key": "timetellsalldeanonymizationofblockchainrpcuserswithzerotransactionfee",
-    "id": 1827,
+    "id": 1882,
     "title": "Time Tells All: Deanonymization of Blockchain RPC Users with Zero Transaction Fee",
     "paper": "https://doi.org/10.1145/3719027.3765082",
     "method": "通过零费用探测和时间相关把区块链RPC用户IP关联到链上假名。",
@@ -7431,7 +7431,7 @@
   },
   {
     "key": "breakingomertaonthresholdcryptographysmartcollusionandwhistleblowing",
-    "id": 1828,
+    "id": 1883,
     "title": "Breaking Omert\\`{a}: On Threshold Cryptography, Smart Collusion, and Whistleblowing",
     "paper": "https://doi.org/10.1145/3719027.3765087",
     "method": "融合密码学与机制设计，让门限协议中的理性参与者可安全举报合谋。",
@@ -7454,7 +7454,7 @@
   },
   {
     "key": "harnessingvitalsignvibrationharmonicsforeffortlessandinbuiltxruserauthentication",
-    "id": 1829,
+    "id": 1884,
     "title": "Harnessing Vital Sign Vibration Harmonics for Effortless and Inbuilt XR User Authentication",
     "paper": "https://doi.org/10.1145/3719027.3765060",
     "method": "利用生命体征激发的振动谐波实现XR头显内置无感认证。",
@@ -7477,7 +7477,7 @@
   },
   {
     "key": "agentsentinelanendtoendandrealtimesecuritydefenseframeworkforcomputeruseagents",
-    "id": 1830,
+    "id": 1885,
     "title": "AgentSentinel: An End-to-End and Real-Time Security Defense Framework for Computer-Use Agents",
     "paper": "https://doi.org/10.1145/3719027.3765064",
     "method": "AgentSentinel端到端监控计算机使用代理并实时拦截危险工具操作。",
@@ -7503,7 +7503,7 @@
   },
   {
     "key": "sentryauthenticatingmachinelearningartifactsonthefly",
-    "id": 1831,
+    "id": 1886,
     "title": "Sentry: Authenticating Machine Learning Artifacts on the Fly",
     "paper": "https://doi.org/10.1145/3719027.3765070",
     "method": "Sentry在GPU上对数据集和模型执行在线密码签名与验证。",
@@ -7528,7 +7528,7 @@
   },
   {
     "key": "trainingrobustclassifiersforclassifyingencryptedtrafficunderdynamicnetworkconditions",
-    "id": 1832,
+    "id": 1887,
     "title": "Training Robust Classifiers for Classifying Encrypted Traffic under Dynamic Network Conditions",
     "paper": "https://doi.org/10.1145/3719027.3765073",
     "method": "MetaTraffic以元学习训练加密流量分类器适应动态网络条件。",
@@ -7554,7 +7554,7 @@
   },
   {
     "key": "adversarialobservationsinweatherforecasting",
-    "id": 1833,
+    "id": 1888,
     "title": "Adversarial Observations in Weather Forecasting",
     "paper": "https://doi.org/10.1145/3719027.3765076",
     "method": "构造针对自回归扩散天气模型的观测投毒，伪造极端气象事件。",
@@ -7579,7 +7579,7 @@
   },
   {
     "key": "coprimeacodesignframeworkforprivacypreservingmachinelearningonfpga",
-    "id": 1834,
+    "id": 1889,
     "title": "Co-Prime: A Co-design Framework for Privacy Preserving Machine Learning on FPGA",
     "paper": "https://doi.org/10.1145/3719027.3765090",
     "method": "Co-Prime在FPGA上协同设计三方安全计算的线性、非线性与网络模块。",
@@ -7602,7 +7602,7 @@
   },
   {
     "key": "fuzzyextractorsarepracticalcryptographicstrengthkeyderivationfromtheiris",
-    "id": 1835,
+    "id": 1890,
     "title": "Fuzzy Extractors are Practical: Cryptographic Strength Key Derivation from the Iris",
     "paper": "https://doi.org/10.1145/3719027.3765098",
     "method": "构建从虹膜稳定提取105位熵密码密钥的实用模糊提取器。",
@@ -7625,7 +7625,7 @@
   },
   {
     "key": "maytheforcenotbewithyoubruteforceresistantbiometricauthenticationandkeyreconstruction",
-    "id": 1836,
+    "id": 1891,
     "title": "May the Force Not Be With You: Brute-Force Resistant Biometric Authentication and Key Reconstruction",
     "paper": "https://doi.org/10.1145/3719027.3744886",
     "method": "设计可证明抗暴力猜测的生物认证与密钥重建协议。",
@@ -7650,7 +7650,7 @@
   },
   {
     "key": "committedvectorobliviouslinearevaluationanditsapplications",
-    "id": 1837,
+    "id": 1892,
     "title": "Committed Vector Oblivious Linear Evaluation and Its Applications",
     "paper": "https://doi.org/10.1145/3719027.3744887",
     "method": "定义C-VOLE，使预承诺向量可与多方生成一致的VOLE关联。",
@@ -7673,7 +7673,7 @@
   },
   {
     "key": "lodiatowardsoptimalsparsematrixvectormultiplicationforbatchedfullyhomomorphicencryption",
-    "id": 1838,
+    "id": 1893,
     "title": "Lodia: Towards Optimal Sparse Matrix-Vector Multiplication for Batched Fully Homomorphic Encryption",
     "paper": "https://doi.org/10.1145/3719027.3765025",
     "method": "Lodia为批处理全同态加密设计保密的稀疏矩阵向量乘法。",
@@ -7696,7 +7696,7 @@
   },
   {
     "key": "separatingbroadcastfromcheateridentification",
-    "id": 1839,
+    "id": 1894,
     "title": "Separating Broadcast from Cheater Identification",
     "paper": "https://doi.org/10.1145/3719027.3765041",
     "method": "提出PISA并构造无需传统广播的诚实多数门限ECDSA。",
@@ -7719,7 +7719,7 @@
   },
   {
     "key": "correlationawaresecuresortingandpermutationforiterativetwopartygraphanalysis",
-    "id": 1840,
+    "id": 1895,
     "title": "Correlation-Aware Secure Sorting and Permutation for Iterative Two-Party Graph Analysis",
     "paper": "https://doi.org/10.1145/3719027.3765050",
     "method": "PETAL复用迭代图计算中的相关性，并行优化安全排序与置换。",
@@ -7742,7 +7742,7 @@
   },
   {
     "key": "timingattacksondifferentialprivacyarepractical",
-    "id": 1841,
+    "id": 1896,
     "title": "Timing Attacks on Differential Privacy are Practical",
     "paper": "https://doi.org/10.1145/3719027.3765146",
     "method": "构建审计框架，通过可观察运行时间量化差分隐私实现的额外泄露。",
@@ -7767,7 +7767,7 @@
   },
   {
     "key": "slicedpiroffloadingheavyweightworkwithntt",
-    "id": 1842,
+    "id": 1897,
     "title": "SlicedPIR: Offloading Heavyweight Work with NTT",
     "paper": "https://doi.org/10.1145/3719027.3765154",
     "method": "SlicedPIR用数论变换切分并卸载分布式私有信息检索重计算。",
@@ -7790,7 +7790,7 @@
   },
   {
     "key": "bytebybyteunmaskingbrowserfingerprintingatthefunctionlevelusingv8bytecodetransformers",
-    "id": 1843,
+    "id": 1898,
     "title": "Byte by Byte: Unmasking Browser Fingerprinting at the Function Level using V8 Bytecode Transformers",
     "paper": "https://doi.org/10.1145/3719027.3765158",
     "method": "ByteDefender用V8字节码Transformer在函数级检测浏览器指纹代码。",
@@ -7816,7 +7816,7 @@
   },
   {
     "key": "optimalmechanismsforquantumlocaldifferentialprivacy",
-    "id": 1844,
+    "id": 1899,
     "title": "Optimal Mechanisms for Quantum Local Differential Privacy",
     "paper": "https://doi.org/10.1145/3719027.3765178",
     "method": "推导量子局部差分隐私下最优机制及退极化噪声参数。",
@@ -7839,7 +7839,7 @@
   },
   {
     "key": "competingforattentionaninterviewstudywithparticipantsofcryptographycompetitions",
-    "id": 1845,
+    "id": 1900,
     "title": "Competing for Attention: An Interview Study with Participants of Cryptography Competitions",
     "paper": "https://doi.org/10.1145/3719027.3765201",
     "method": "访谈密码竞赛参与者，分析组织、注意力和社会互动如何影响结果。",
@@ -7862,7 +7862,7 @@
   },
   {
     "key": "thorsecuretransformerinferencewithhomomorphicencryption",
-    "id": 1846,
+    "id": 1901,
     "title": "THOR: Secure Transformer Inference with Homomorphic Encryption",
     "paper": "https://doi.org/10.1145/3719027.3765150",
     "method": "THOR设计非交互全同态Transformer推理和专用矩阵乘算法。",
@@ -7885,7 +7885,7 @@
   },
   {
     "key": "optimisticsignaturefreereliablebroadcastanditsapplications",
-    "id": 1847,
+    "id": 1902,
     "title": "Optimistic, Signature-Free Reliable Broadcast and Its Applications",
     "paper": "https://doi.org/10.1145/3719027.3765220",
     "method": "设计乐观条件下两步终止且无需签名的可靠广播协议。",
@@ -7908,7 +7908,7 @@
   },
   {
     "key": "ghostcachetimerandcounterfreecacheattacksexploitingweakcoherenceonriscvandarmchips",
-    "id": 1848,
+    "id": 1903,
     "title": "GhostCache: Timer- and Counter-Free Cache Attacks Exploiting Weak Coherence on RISC-V and ARM Chips",
     "paper": "https://doi.org/10.1145/3719027.3744833",
     "method": "GhostCache利用RISC-V和ARM一级缓存弱一致性构造无计时器、无计数器攻击。",
@@ -7933,7 +7933,7 @@
   },
   {
     "key": "heracleschosenplaintextattackonamdsevsnp",
-    "id": 1849,
+    "id": 1904,
     "title": "Heracles: Chosen Plaintext Attack on AMD SEV-SNP",
     "paper": "https://doi.org/10.1145/3719027.3765209",
     "method": "Heracles在精确DRAM位置重加密客户数据，构造SEV-SNP选择明文预言。",
@@ -7958,7 +7958,7 @@
   },
   {
     "key": "towardsrealtimedefenseagainstobjectbasedlidarattacksinautonomousdriving",
-    "id": 1850,
+    "id": 1905,
     "title": "Towards Real-Time Defense against Object-Based LiDAR Attacks in Autonomous Driving",
     "paper": "https://doi.org/10.1145/3719027.3765227",
     "method": "实时检测环境中物理物体造成的LiDAR点云对抗操纵。",
@@ -7984,7 +7984,7 @@
   },
   {
     "key": "rmpocalypsehowacatch22breaksamdsevsnp",
-    "id": 1851,
+    "id": 1906,
     "title": "RMPocalypse: How a Catch-22 Breaks AMD SEV-SNP",
     "paper": "https://doi.org/10.1145/3719027.3765233",
     "method": "RMPocalypse利用x86核心对初始反向映射表状态的恶意控制攻击SEV-SNP。",
@@ -8009,7 +8009,7 @@
   },
   {
     "key": "dynamicvulnerabilitypatchingforheterogeneousembeddedsystemsusingstackframereconstruction",
-    "id": 1852,
+    "id": 1907,
     "title": "Dynamic Vulnerability Patching for Heterogeneous Embedded Systems Using Stack Frame Reconstruction",
     "paper": "https://doi.org/10.1145/3719027.3765200",
     "method": "StackPatch重建栈帧，为异构嵌入式系统生成低内存热补丁。",
@@ -8035,7 +8035,7 @@
   },
   {
     "key": "chekhovsgununcoveringhiddenrisksinmacosapplicationsandboxedpiddomainservices",
-    "id": 1853,
+    "id": 1908,
     "title": "Chekhov's Gun: Uncovering Hidden Risks in macOS Application-Sandboxed PID-Domain Services",
     "paper": "https://doi.org/10.1145/3719027.3765205",
     "method": "逆向macOS应用沙箱entitlement并检测PID域高权限服务攻击面。",
@@ -8060,7 +8060,7 @@
   },
   {
     "key": "asystemframeworktosymbolicallyexploreinteltdxmoduleexecution",
-    "id": 1854,
+    "id": 1909,
     "title": "A System Framework to Symbolically Explore Intel TDX Module Execution",
     "paper": "https://doi.org/10.1145/3719027.3765212",
     "method": "TDXplorer动态符号执行Intel TDX模块，系统探索可信计算基执行路径。",
@@ -8086,7 +8086,7 @@
   },
   {
     "key": "windowsplaysjengauncoveringdesignweaknessesinwindowsfilesystemsecurity",
-    "id": 1855,
+    "id": 1910,
     "title": "Windows plays Jenga: Uncovering Design Weaknesses in Windows File System Security",
     "paper": "https://doi.org/10.1145/3719027.3765217",
     "method": "以五步流程系统分析Windows文件系统长期累积的设计弱点。",
@@ -8112,7 +8112,7 @@
   },
   {
     "key": "forwardtohellonthepotentialsofmisusingtransparentdnsforwardersinreflectiveamplificationattacks",
-    "id": 1856,
+    "id": 1911,
     "title": "Forward to Hell? On the Potentials of Misusing Transparent DNS Forwarders in Reflective Amplification Attacks",
     "paper": "https://doi.org/10.1145/3719027.3765096",
     "method": "测量透明DNS转发器如何被滥用于反射放大并绕过递归解析器防火墙。",
@@ -8138,7 +8138,7 @@
   },
   {
     "key": "trainingwithonly10samplesmalicioustrafficdetectionviacrossmodalityfeaturefusion",
-    "id": 1857,
+    "id": 1912,
     "title": "Training with Only 1.0 ‰ Samples: Malicious Traffic Detection via Cross-Modality Feature Fusion",
     "paper": "https://doi.org/10.1145/3719027.3765143",
     "method": "tFusion融合包、流和主机多模态特征，以极少标注训练恶意流量检测器。",
@@ -8164,7 +8164,7 @@
   },
   {
     "key": "fingerprintingdeeppacketinspectiondevicesbytheirambiguities",
-    "id": 1858,
+    "id": 1913,
     "title": "Fingerprinting Deep Packet Inspection Devices by their Ambiguities",
     "paper": "https://doi.org/10.1145/3719027.3765145",
     "method": "利用协议解析歧义远程指纹识别不可直接扫描的深度包检测设备。",
@@ -8189,7 +8189,7 @@
   },
   {
     "key": "dontlookuptherearesensitiveinternallinksintheclearongeosatellites",
-    "id": 1859,
+    "id": 1914,
     "title": "Don't Look Up: There Are Sensitive Internal Links in the Clear on GEO Satellites",
     "paper": "https://doi.org/10.1145/3719027.3765198",
     "method": "构建通用异构协议解析器，被动测量GEO卫星明文敏感回传。",
@@ -8215,7 +8215,7 @@
   },
   {
     "key": "herecomestheaiwormpreventingthepropagationofadversarialselfreplicatingpromptswithingenaiecosystems",
-    "id": 1860,
+    "id": 1915,
     "title": "Here Comes the AI Worm: Preventing the Propagation of Adversarial Self-Replicating Prompts Within GenAI Ecosystems",
     "paper": "https://doi.org/10.1145/3719027.3765196",
     "method": "展示RAGworm在生成式AI应用间自复制，并以DonkeyRail检测阻断传播。",
@@ -8242,7 +8242,7 @@
   },
   {
     "key": "deeplearningfromimperfectlylabeledmalwaredata",
-    "id": 1861,
+    "id": 1916,
     "title": "Deep Learning from Imperfectly Labeled Malware Data",
     "paper": "https://doi.org/10.1145/3719027.3765197",
     "method": "SLB在训练恶意软件深度模型的同时迭代修正噪声标签。",
@@ -8268,7 +8268,7 @@
   },
   {
     "key": "prefercarepreferencedatasetcopyrightprotectioninllmalignmentbywatermarkinjectionandverification",
-    "id": 1862,
+    "id": 1917,
     "title": "PreferCare: Preference Dataset Copyright Protection in LLM Alignment by Watermark Injection and Verification",
     "paper": "https://doi.org/10.1145/3719027.3765223",
     "method": "PreferCare向偏好数据注入可验证水印以证明大模型对齐数据版权。",
@@ -8293,7 +8293,7 @@
   },
   {
     "key": "scopeexpandingclientsidepostprocessingforefficientprivacypreservingmodelinference",
-    "id": 1863,
+    "id": 1918,
     "title": "SCOPE: Expanding Client-Side Post-Processing for Efficient Privacy-Preserving Model Inference",
     "paper": "https://doi.org/10.1145/3719027.3765228",
     "method": "SCOPE扩大客户端可执行后处理，将部分安全推理运算移出昂贵协议。",
@@ -8316,7 +8316,7 @@
   },
   {
     "key": "phalanxanfhefriendlysnarkforverifiablecomputationonencrypteddata",
-    "id": 1864,
+    "id": 1919,
     "title": "Phalanx: An FHE-Friendly SNARK for Verifiable Computation on Encrypted Data",
     "paper": "https://doi.org/10.1145/3719027.3765226",
     "method": "Phalanx为同态执行SNARK证明设计更紧凑高效的FHE友好构造。",
@@ -8339,7 +8339,7 @@
   },
   {
     "key": "practicalzeroknowledgepiopformaliciouslysecuremultipartyhomomorphicencryption",
-    "id": 1865,
+    "id": 1920,
     "title": "Practical Zero-Knowledge PIOP for Maliciously Secure Multiparty Homomorphic Encryption",
     "paper": "https://doi.org/10.1145/3719027.3765229",
     "method": "构建面向多方同态密文与明文的实用零知识PIOP。",
@@ -8362,7 +8362,7 @@
   },
   {
     "key": "practicaltfheciphertextsanitizationforobliviouscircuitevaluation",
-    "id": 1866,
+    "id": 1921,
     "title": "Practical TFHE Ciphertext Sanitization for Oblivious Circuit Evaluation",
     "paper": "https://doi.org/10.1145/3719027.3765231",
     "method": "以一次TFHE自举和少量随机化净化密文，并配套零知识证明。",
@@ -8385,7 +8385,7 @@
   },
   {
     "key": "multipartyprivatesetoperationsfrompredicativezerosharing",
-    "id": 1867,
+    "id": 1922,
     "title": "Multi-Party Private Set Operations from Predicative Zero-Sharing",
     "paper": "https://doi.org/10.1145/3719027.3765234",
     "method": "基于谓词零共享统一支持多方集合公式的任意组合计算。",
@@ -8408,7 +8408,7 @@
   },
   {
     "key": "wpcweightplaintextcompressionforcnninferencebasedonrnsckks",
-    "id": 1868,
+    "id": 1923,
     "title": "WPC: Weight Plaintext Compression for CNN Inference based on RNS-CKKS",
     "paper": "https://doi.org/10.1145/3719027.3765022",
     "method": "WPC压缩RNS-CKKS同态CNN推理中的权重明文。",
@@ -8431,7 +8431,7 @@
   },
   {
     "key": "flippedragblackboxopinionmanipulationadversarialattackstoretrievalaugmentedgenerationmodels",
-    "id": 1869,
+    "id": 1924,
     "title": "FlippedRAG: Black-Box Opinion Manipulation Adversarial Attacks to Retrieval-Augmented Generation Models",
     "paper": "https://doi.org/10.1145/3719027.3765023",
     "method": "FlippedRAG通过可迁移文档扰动操纵黑盒RAG检索与最终观点。",
@@ -8457,7 +8457,7 @@
   },
   {
     "key": "mosformermaliciouslysecurethreepartyinferenceframeworkforlargetransformers",
-    "id": 1870,
+    "id": 1925,
     "title": "Mosformer: Maliciously Secure Three-Party Inference Framework for Large Transformers",
     "paper": "https://doi.org/10.1145/3719027.3765028",
     "method": "Mosformer以恶意安全三方计算支持BERT、GPT等大型Transformer推理。",
@@ -8480,7 +8480,7 @@
   },
   {
     "key": "dpimagebenchaunifiedbenchmarkfordifferentiallyprivateimagesynthesis",
-    "id": 1871,
+    "id": 1926,
     "title": "DPImageBench: A Unified Benchmark for Differentially Private Image Synthesis",
     "paper": "https://doi.org/10.1145/3719027.3765045",
     "method": "DPImageBench统一差分隐私图像合成的方法、数据与评价协议。",
@@ -8505,7 +8505,7 @@
   },
   {
     "key": "whatlurkswithinconceptauditingforshareddiffusionmodelsatscale",
-    "id": 1872,
+    "id": 1927,
     "title": "What Lurks Within? Concept Auditing for Shared Diffusion Models at Scale",
     "paper": "https://doi.org/10.1145/3719027.3765052",
     "method": "PAIA无需提示和图像，直接审计共享扩散模型是否含敏感概念。",
@@ -8531,7 +8531,7 @@
   },
   {
     "key": "provablerepairofdeepneuralnetworkdefectsbypreimagesynthesisandpropertyrefinement",
-    "id": 1873,
+    "id": 1928,
     "title": "Provable Repair of Deep Neural Network Defects by Preimage Synthesis and Property Refinement",
     "paper": "https://doi.org/10.1145/3719027.3765057",
     "method": "ProRepair合成性质前像并细化约束，可证明地修复多类神经网络缺陷。",
@@ -8557,7 +8557,7 @@
   },
   {
     "key": "dcmiadifferentialcalibrationmembershipinferenceattackagainstretrievalaugmentedgeneration",
-    "id": 1874,
+    "id": 1929,
     "title": "DCMI: A Differential Calibration Membership Inference Attack Against Retrieval-Augmented Generation",
     "paper": "https://doi.org/10.1145/3719027.3765103",
     "method": "DCMI差分校准检索文档影响，判断敏感记录是否属于RAG知识库。",
@@ -8583,7 +8583,7 @@
   },
   {
     "key": "canpersonalhealthinformationbesecuredinllmprivacyattackanddefenseinthemedicaldomain",
-    "id": 1875,
+    "id": 1930,
     "title": "Can Personal Health Information Be Secured in LLM? Privacy Attack and Defense in the Medical Domain",
     "paper": "https://doi.org/10.1145/3719027.3765105",
     "method": "构建医疗隐私泄露评测数据，并据此增强大模型防护。",
@@ -8609,7 +8609,7 @@
   },
   {
     "key": "onesidedboundednoisetheoryoptimizationalgorithmsandapplications",
-    "id": 1876,
+    "id": 1931,
     "title": "One-Sided Bounded Noise: Theory, Optimization Algorithms and Applications",
     "paper": "https://doi.org/10.1145/3719027.3765110",
     "method": "刻画并近似求解给定二阶矩和最大幅度预算下的最优单边噪声。",
@@ -8632,7 +8632,7 @@
   },
   {
     "key": "piixelleakspassiveidentificationofpersonallyidentifiableinformationleakagethroughmetapixel",
-    "id": 1877,
+    "id": 1932,
     "title": "PIIxel Leaks: Passive Identification of Personally Identifiable Information Leakage through Meta Pixel",
     "paper": "https://doi.org/10.1145/3719027.3765113",
     "method": "可扩展地被动识别Meta Pixel上传的表单PII和完整浏览轨迹。",
@@ -8657,7 +8657,7 @@
   },
   {
     "key": "amigosecuregroupmeshmessaginginrealisticprotestsettings",
-    "id": 1878,
+    "id": 1933,
     "title": "Amigo: Secure Group Mesh Messaging in Realistic Protest Settings",
     "paper": "https://doi.org/10.1145/3719027.3765133",
     "method": "Amigo以连续去中心化密钥协商和专用路由支持抗链路波动群组网状通信。",
@@ -8682,7 +8682,7 @@
   },
   {
     "key": "exposingprivacyrisksinanonymizingclinicaldatacombinatorialrefinementattacksonkanonymitywithoutauxiliaryinformation",
-    "id": 1879,
+    "id": 1934,
     "title": "Exposing Privacy Risks in Anonymizing Clinical Data: Combinatorial Refinement Attacks on k-Anonymity Without Auxiliary Information",
     "paper": "https://doi.org/10.1145/3719027.3765139",
     "method": "构造组合细化攻击，在无辅助信息时重识别k匿名临床微数据。",
@@ -8707,7 +8707,7 @@
   },
   {
     "key": "digitalsafetyforchildrenwithintellectualdisabilitieswhenusingmobiledevicesfromparentsandteachersperspectives",
-    "id": 1880,
+    "id": 1935,
     "title": "Digital Safety for Children with Intellectual Disabilities When Using Mobile Devices from Parents' and Teachers' Perspectives",
     "paper": "https://doi.org/10.1145/3719027.3765101",
     "method": "访谈家长与特教教师，分析智力障碍儿童使用移动设备的安全风险与支持。",
@@ -8730,7 +8730,7 @@
   },
   {
     "key": "virtualrealityrealproblemsalongitudinalsecurityanalysisofvrfirmware",
-    "id": 1881,
+    "id": 1936,
     "title": "Virtual Reality, Real Problems: A Longitudinal Security Analysis of VR Firmware",
     "paper": "https://doi.org/10.1145/3719027.3765102",
     "method": "纵向分析VR固件版本、漏洞与修复，刻画生态安全演化。",
@@ -8756,7 +8756,7 @@
   },
   {
     "key": "hiddeninplainbytesinvestigatinginterpersonalaccountcompromisewithdataexports",
-    "id": 1882,
+    "id": 1937,
     "title": "Hidden in Plain Bytes: Investigating Interpersonal Account Compromise with Data Exports",
     "paper": "https://doi.org/10.1145/3719027.3765147",
     "method": "研究如何用平台数据导出补充账户界面，调查亲密关系中的账户入侵。",
@@ -8781,7 +8781,7 @@
   },
   {
     "key": "howtodesignsecurehoneyvaultschemes",
-    "id": 1883,
+    "id": 1938,
     "title": "How to Design Secure Honey Vault Schemes",
     "paper": "https://doi.org/10.1145/3719027.3765162",
     "method": "建立原则化安全模型与设计准则，构造攻击者难辨真假的Honey Vault。",
@@ -8806,7 +8806,7 @@
   },
   {
     "key": "phishingsusceptibilityandtheineffectivenessofcommonantiphishinginterventionsinalargeuniversityhospital",
-    "id": 1884,
+    "id": 1939,
     "title": "Phishing Susceptibility and the (In-)Effectiveness of Common Anti-Phishing Interventions in a Large University Hospital",
     "paper": "https://doi.org/10.1145/3719027.3765164",
     "method": "在医院开展大规模钓鱼模拟，比较员工群体、邮件特征和常见干预。",
@@ -8831,7 +8831,7 @@
   },
   {
     "key": "youthsafeayouthcentricsafetybenchmarkandsafeguardmodelforlargelanguagemodels",
-    "id": 1885,
+    "id": 1940,
     "title": "YouthSafe: A Youth-Centric Safety Benchmark and Safeguard Model for Large Language Models",
     "paper": "https://doi.org/10.1145/3719027.3765168",
     "method": "构建YAIR青年风险基准并训练YouthSafe风险检测与分类模型。",
@@ -8857,7 +8857,7 @@
   },
   {
     "key": "gasliteingtheretrievalexploringvulnerabilitiesindenseembeddingbasedsearch",
-    "id": 1886,
+    "id": 1941,
     "title": "GASLITEing the Retrieval: Exploring Vulnerabilities in Dense Embedding-based Search",
     "paper": "https://doi.org/10.1145/3719027.3765095",
     "method": "GASLITE无需语料内容或模型修改即可生成高排名对抗段落。",
@@ -8883,7 +8883,7 @@
   },
   {
     "key": "thephantommenaceincryptobasedpethardeneddeeplearningmodelsinvisibleconfigurationinducedattacks",
-    "id": 1887,
+    "id": 1942,
     "title": "The Phantom Menace in Crypto-Based PET-Hardened Deep Learning Models: Invisible Configuration-Induced Attacks",
     "paper": "https://doi.org/10.1145/3719027.3765107",
     "method": "ConPETro操纵密码隐私技术与深度学习框架配置，向加固模型植入隐形攻击。",
@@ -8908,7 +8908,7 @@
   },
   {
     "key": "evaluatingtherobustnessofaproductionmalwaredetectionsystemtotransferableadversarialattacks",
-    "id": 1888,
+    "id": 1943,
     "title": "Evaluating the Robustness of a Production Malware Detection System to Transferable Adversarial Attacks",
     "paper": "https://doi.org/10.1145/3719027.3765118",
     "method": "对Gmail生产恶意软件管线实施可迁移攻击并设计缓解方案。",
@@ -8935,7 +8935,7 @@
   },
   {
     "key": "cascadingadversarialbiasfrominjectiontodistillationinlanguagemodels",
-    "id": 1889,
+    "id": 1944,
     "title": "Cascading Adversarial Bias from Injection to Distillation in Language Models",
     "paper": "https://doi.org/10.1145/3719027.3765122",
     "method": "研究注入上游模型的对抗偏见如何经知识蒸馏级联到学生模型。",
@@ -8961,7 +8961,7 @@
   },
   {
     "key": "youcantstealnothingmitigatingpromptleakagesinllmsviasystemvectors",
-    "id": 1890,
+    "id": 1945,
     "title": "You Can't Steal Nothing: Mitigating Prompt Leakages in LLMs via System Vectors",
     "paper": "https://doi.org/10.1145/3719027.3765124",
     "method": "SysVec把系统提示压缩为内部向量，减少可被文本攻击提取的内容。",
@@ -8987,7 +8987,7 @@
   },
   {
     "key": "exactrobustnesscertificationofknearestneighbors",
-    "id": 1891,
+    "id": 1946,
     "title": "Exact Robustness Certification of k-Nearest Neighbors",
     "paper": "https://doi.org/10.1145/3719027.3765140",
     "method": "构建k近邻分类器健全且完备的精确对抗鲁棒性认证。",
@@ -9012,7 +9012,7 @@
   },
   {
     "key": "iovalveleakagefreeiosandboxforlargescaleuntrusteddataprocessing",
-    "id": 1892,
+    "id": 1947,
     "title": "IOValve: Leakage-Free I/O Sandbox for Large-Scale Untrusted Data Processing",
     "paper": "https://doi.org/10.1145/3719027.3765121",
     "method": "IOValve隔离大规模不可信计算的I/O，阻止机密数据外泄。",
@@ -9038,7 +9038,7 @@
   },
   {
     "key": "badamlexploitinglegacyfirmwareinterfacestocompromiseconfidentialvirtualmachines",
-    "id": 1893,
+    "id": 1948,
     "title": "BadAML: Exploiting Legacy Firmware Interfaces to Compromise Confidential Virtual Machines",
     "paper": "https://doi.org/10.1145/3719027.3765123",
     "method": "BadAML利用旧固件接口绕过机密虚机证明，并以AML沙箱限制内存访问。",
@@ -9065,7 +9065,7 @@
   },
   {
     "key": "protocolawarefirmwarerehostingforeffectivefuzzingofembeddednetworkstacks",
-    "id": 1894,
+    "id": 1949,
     "title": "Protocol-Aware Firmware Rehosting for Effective Fuzzing of Embedded Network Stacks",
     "paper": "https://doi.org/10.1145/3719027.3765125",
     "method": "Pemu自动检测固件网络协议并在重托管环境中处理多层输入。",
@@ -9091,7 +9091,7 @@
   },
   {
     "key": "dynamicdetectionofvulnerabledmaraceconditions",
-    "id": 1895,
+    "id": 1950,
     "title": "Dynamic Detection of Vulnerable DMA Race Conditions",
     "paper": "https://doi.org/10.1145/3719027.3765126",
     "method": "DMARacer动态监控驱动DMA与CPU并发访问，检测可利用竞态。",
@@ -9117,7 +9117,7 @@
   },
   {
     "key": "attestablebuildscompilingverifiablebinariesonuntrustedsystemsusingtrustedexecutionenvironments",
-    "id": 1896,
+    "id": 1951,
     "title": "Attestable Builds: Compiling Verifiable Binaries on Untrusted Systems using Trusted Execution Environments",
     "paper": "https://doi.org/10.1145/3719027.3765128",
     "method": "在TEE中执行可证明构建，建立源码到二进制的强对应。",
@@ -9142,7 +9142,7 @@
   },
   {
     "key": "augmentingsearchbasedprogramsynthesiswithlocalinferencerulestoimproveblackboxdeobfuscation",
-    "id": 1897,
+    "id": 1952,
     "title": "Augmenting Search-based Program Synthesis with Local Inference Rules to Improve Black-box Deobfuscation",
     "paper": "https://doi.org/10.1145/3719027.3765134",
     "method": "XSmir把局部推理规则加入搜索式程序合成，扩展黑盒去混淆。",
@@ -9167,7 +9167,7 @@
   },
   {
     "key": "righttheshipassessingthelegitimacyofinvalidroutesinrpki",
-    "id": 1898,
+    "id": 1953,
     "title": "Right the Ship: Assessing the Legitimacy of Invalid Routes in RPKI",
     "paper": "https://doi.org/10.1145/3719027.3744853",
     "method": "测量全球路由表中的ROV无效路由，区分恶意与无害配置错误。",
@@ -9192,7 +9192,7 @@
   },
   {
     "key": "exploringandanalyzingcrosslayerdosattackagainstudpbasedservicesonlinux",
-    "id": 1899,
+    "id": 1954,
     "title": "Exploring and Analyzing Cross Layer DoS Attack Against UDP-based Services on Linux",
     "paper": "https://doi.org/10.1145/3719027.3744878",
     "method": "分析地址解析与Linux TCP/IP实现，构造跨层资源竞争DoS。",
@@ -9217,7 +9217,7 @@
   },
   {
     "key": "offpathtcpexploitspmtudbreakstcpconnectionisolationinipaddresssharingscenarios",
-    "id": 1900,
+    "id": 1955,
     "title": "Off-Path TCP Exploits: PMTUD Breaks TCP Connection Isolation in IP Address Sharing Scenarios",
     "paper": "https://doi.org/10.1145/3719027.3744888",
     "method": "揭示PMTUD在IP共享场景的设计缺陷并构造离路径TCP劫持。",
@@ -9242,7 +9242,7 @@
   },
   {
     "key": "sistaranefficientddosdetectionandmitigationframeworkutilizingprogrammabledataplanes",
-    "id": 1901,
+    "id": 1956,
     "title": "SISTAR: An Efficient DDoS Detection and Mitigation Framework Utilizing Programmable Data Planes",
     "paper": "https://doi.org/10.1145/3719027.3765046",
     "method": "SISTAR在可编程数据平面部署受约束阈值分段决策树。",
@@ -9267,7 +9267,7 @@
   },
   {
     "key": "scannergrouperageneralizableandeffectivescanningorganizationidentificationsystemtowardtheopenworld",
-    "id": 1902,
+    "id": 1957,
     "title": "ScannerGrouper: A Generalizable and Effective Scanning Organization Identification System Toward the Open World",
     "paper": "https://doi.org/10.1145/3719027.3765053",
     "method": "ScannerGrouper不依赖暗网传感器，在开放世界中识别扫描组织。",
@@ -9293,7 +9293,7 @@
   },
   {
     "key": "onthesecurityofsshclientsignatures",
-    "id": 1903,
+    "id": 1958,
     "title": "On the Security of SSH Client Signatures",
     "paper": "https://doi.org/10.1145/3719027.3765079",
     "method": "黑盒测试24款SSH客户端签名算法实现并分析随机数安全。",
@@ -9318,7 +9318,7 @@
   },
   {
     "key": "tossgarbledpirfromtableonlystacking",
-    "id": 1904,
+    "id": 1959,
     "title": "Toss: Garbled PIR from Table-Only Stacking",
     "paper": "https://doi.org/10.1145/3719027.3744831",
     "method": "Toss以仅表堆叠构造低带宽混淆电路私有信息检索。",
@@ -9341,7 +9341,7 @@
   },
   {
     "key": "securenoisesamplingfordifferentiallyprivatecollaborativelearning",
-    "id": 1905,
+    "id": 1960,
     "title": "Secure Noise Sampling for Differentially Private Collaborative Learning",
     "paper": "https://doi.org/10.1145/3719027.3744834",
     "method": "设计适配协作学习的MPC安全噪声采样协议。",
@@ -9364,7 +9364,7 @@
   },
   {
     "key": "postquantumthresholdringsignatureapplicationsfromvoleinthehead",
-    "id": 1906,
+    "id": 1961,
     "title": "Post-Quantum Threshold Ring Signature Applications from VOLE-in-the-Head",
     "paper": "https://doi.org/10.1145/3719027.3744854",
     "method": "基于AES单向性和VOLE-in-the-Head构造后量子门限环签名。",
@@ -9387,7 +9387,7 @@
   },
   {
     "key": "distanceawareotwithapplicationtofuzzypsi",
-    "id": 1907,
+    "id": 1962,
     "title": "Distance-Aware OT with Application to Fuzzy PSI",
     "paper": "https://doi.org/10.1145/3719027.3744857",
     "method": "构造支持多种距离度量的小域距离感知随机OT，并用于模糊PSI。",
@@ -9410,7 +9410,7 @@
   },
   {
     "key": "megablocksbreakingthelogarithmiciooverheadbarrierforobliviousram",
-    "id": 1908,
+    "id": 1963,
     "title": "MegaBlocks: Breaking the Logarithmic I/O-Overhead Barrier for Oblivious RAM",
     "paper": "https://doi.org/10.1145/3719027.3765159",
     "method": "MegaBlocks构造无需大客户端内存的实用分层ORAM并突破对数I/O开销。",
@@ -9433,7 +9433,7 @@
   },
   {
     "key": "cukemaconciseandunifiedhybridkeyencapsulationmechanism",
-    "id": 1909,
+    "id": 1964,
     "title": "CuKEM: A Concise and Unified Hybrid Key Encapsulation Mechanism",
     "paper": "https://doi.org/10.1145/3719027.3744863",
     "method": "CuKEM统一构造1CCA与CCA安全的经典—后量子混合密钥封装。",

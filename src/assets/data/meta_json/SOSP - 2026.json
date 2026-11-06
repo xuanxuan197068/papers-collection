@@ -1,0 +1,622 @@
+[
+  {
+    "id": 14934,
+    "year": 2026,
+    "title": "Janus: Multi-LLM Serving at Production Scale",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843867",
+    "abstract": "Production LLM serving multiplexes hundreds of heterogeneous models on shared clusters, exposing three challenges that existing systems fail to address simultaneously: unpredictable bursts, power-law application popularity, and heterogeneous yet complementary resource demands. We present Janus, a Service-Engine co-designed multi-model serving system built around dual-timescale scheduling. At the Service layer, a Model Scheduler driven by a Performance Oracle combines vector bin-packing every 30 seconds for steady-state colocation with elastic scaling every 0.5 seconds. A new LST-IMH Request Scheduler maximizes SLO attainment with a proven 2-approximation guarantee. At the Engine layer, xTensor virtualizes HBM, while a three-state model lifecycle and device-to-device (D2D) fork enable elastic multi-model colocation and sub-second burst scale-out. We deploy Janus on a 768-device production cluster serving 62 applications and 45.6 M requests/day, and evaluate it with a 603 K-request open-loop replay sampled from that production day. Janus maintains 0.97-1.0 SLO attainment, versus 0.80-0.92 for the strongest baseline, while using 13,440 device-hours/day, 27\\% less than static Serverless-LLM. Janus is available as open source at https://github.com/Janus2026/Janus.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14935,
+    "year": 2026,
+    "title": "Sandhi: Fine-Grained Merging for Memory Efficient Multi-Model Serving",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843911",
+    "abstract": "As autoregressive models become adept at handling various domain-specific tasks, it is necessary to deploy several fine-tuned models concurrently in real-world scenarios. Such deployments are limited by GPU memory, which dictates the cost (i.e., how many models can be hosted) and their performance (i.e., latency and throughput). In this paper, we propose model merging as a way to reduce the memory footprint of co-located models. While model merging in a traditional sense—where multiple models are combined to create a single model to instill emergent behaviors—may seem like a natural fit for memory reduction, we show that directly extending it results in unacceptable accuracy drops. We present Sandhi, a system that adaptively merges models, at a component granularity, while adhering to user's accuracy requirements. Our evaluation on 12 models spanning 3 model families across 9 different benchmarks shows that Sandhi reduces GPU memory footprint by up to 49.8\\%, which translates to improvements of up to 2.93{\\texttimes} in throughput and 2{\\texttimes} lower cost.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14936,
+    "year": 2026,
+    "title": "Batched in Back: Characterizing and Optimizing Offline LLM Inference in Production with ACDC",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843877",
+    "abstract": "Serving offline large language model (LLM) inference workloads (e.g., log summarization and bulk translation) can consume up to 30\\% of GPUs in production. Despite this significant share, the characteristics of offline inference remain largely understudied. In this paper, we start by analyzing 1.5 million tasks comprising 23 billion requests across text and multi-modal models. We discover that the key properties of offline workloads, namely inherent determinism and throughput orientation, are neither exploited by online LLM serving systems nor by existing offline serving frameworks.We design ACDC, a task-aware offline serving system that leverages these properties along three orthogonal axes, namely resource orchestration, cache management, and execution flow. ACDC has been deployed in production for over three months, achieving up to 3.9{\\texttimes} higher output cost-efficiency. Beyond isolated deployment, we further identify that online prefill stages leave up to 38.3\\% of capacity idle as resource bubbles. We design a hybrid-serving mechanism that harvests these bubbles for offline tasks, improving end-to-end throughput by up to 35.7\\% over the state-of-the-art alternative.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14937,
+    "year": 2026,
+    "title": "Taming Inference Workloads at Global Scale: Foundation Model Serving in Amazon Bedrock",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843855",
+    "abstract": "Foundation model (FM) inference platforms must manage scarce accelerator capacity distributed unevenly across regions. They must also handle requests whose token consumption varies widely and may be revealed progressively during generation, while sharing capacity across workloads with different latency and throughput objectives. This paper describes the architecture of the Workload Management System (WLM) deployed in Amazon Bedrock, which serves millions of inference requests per minute across more than 30 regions. The architecture follows two principles. First, decouple request ingress from execution to form a logical execution pool within permitted geographic and model-placement scopes, with prompt-cache stability as a first-class routing constraint. Second, favor bounded inconsistency with defense in depth over synchronous global coordination. WLM comprises five cooperating subsystems: admission control, traffic classification, cross-region routing, request scheduling, and orchestration. Admission and routing decisions use local or cached state; quota consumption is reconciled periodically across regions, while routing weights are refreshed off the request path from regional capacity and health signals. We evaluate WLM using production observations, benchmark measurements, and controlled load tests comparing bounded-staleness with synchronous admission. The evaluation characterizes accelerator utilization, cache stability, request latency, priority behavior, throughput, request-path overhead, quota-enforcement accuracy, and behavior under selected failures.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14938,
+    "year": 2026,
+    "title": "Beyond Utilization: Energy-Conscious GPU Sharing for Inference Serving",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843913",
+    "abstract": "GPUs are expensive, yet inference-serving GPU clusters remain heavily underutilized. To improve utilization, state-of-the-art systems adopt GPU multiplexing. However, optimizing solely for utilization can counterintuitively increase energy consumption. Designing policies that treat power and energy as first-order metrics requires understanding how deployment decisions—GPU allocation size, operating frequency, and batch size—affect energy, latency, and throughput. These relationships are complex, leading existing approaches to rely on extensive profiling. At scale, profiling becomes prohibitively expensive: each model can be deployed under hundreds of configurations, and profiling itself incurs significant energy cost, necessitating accurate yet energy-conscious methods. Further, such systems must model the power draw of colocated models on shared GPUs and adapt to dynamic workload fluctuations. We present EnerTune, an inference serving system that reduces energy consumption while meeting performance SLOs. EnerTune introduces analytical models to estimate per-model performance and power, and the power draw of colocated models on shared GPUs, and uses them in an energy-aware bin-packing algorithm to jointly determine model placement and configuration. EnerTune meets performance SLOs while reducing energy consumption by 1.4-2.3{\\texttimes} and power draw by 1.3-2.6{\\texttimes} over state-of-the-art baselines.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14939,
+    "year": 2026,
+    "title": "Big Bird: Resilient Privacy Budgeting Across Untrusted Web Domains",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843897",
+    "abstract": "The W3C Attribution API is an emerging standard for privacy-preserving advertising measurement. Its current privacy architecture enforces individual differential privacy (IDP) independently for each domain (e.g., an advertiser) issuing queries. We show that this guarantee is unsound under realistic system behavior: it fails under cross-querier data adaptivity and can also fail when shared limits are enforced across queriers. The issue is not the on-device accounting model itself - device-epoch IDP - but treating each querying domain in isolation. We propose Big Bird, a privacy-budget manager that makes global device-epoch IDP - enforced jointly across all domains - both sound and deployable for Attribution. Big Bird addresses the main obstacle to global enforcement in open multi-querier systems: denial-of-service depletion of a shared global budget by Sybil web domains. Its key insight is that benign Attribution workloads have a stock-and-flow structure: impressions create potential privacy loss, conversions realize it, and meaningful budget consumption should be tied to genuine user actions across distinct web domains. Big Bird enforces this structure with privacy-loss-based quotas on impression and conversion sites and a per-user-action cap on how many quotas can be activated, ensuring that adversarial impact scales with genuine user interactions rather than with the number of Sybil domains. We implement Big Bird in Rust, integrate it into Firefox's Attribution prototype, and evaluate it theoretically and empirically on real ad-tech data. We show that Big Bird provides rigorous global device-epoch IDP, formal resilience to depletion attacks, and utility for benign queriers under attack.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14940,
+    "year": 2026,
+    "title": "Cohort: Decentralized PIR",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843910",
+    "abstract": "Private Information Retrieval (PIR) underpins privacy-preserving applications such as private content delivery, contact discovery, and anonymous advertising, where users need to discreetly query a database. However, PIR usually relies on expensive fully homomorphic encryption and scales poorly with the database size, making it difficult to deploy at scale. As a result, most PIR-based systems are expected to have a single provider, or a few, bearing the operational costs of running a limited number of servers. Such deployments are susceptible to provider takedowns, churn, DoS, and censorship, making availability fragile.We present Cohort, a decentralized PIR protocol that distributes the database across multiple servers, eliminating vulnerabilities stemming from the provider bottleneck and sharing operational costs across many parties. Cohort integrates error correction directly into the BGV homomorphic encryption scheme, enabling clients to partition encrypted queries and read correct data even when up to 25\\% of servers return adversarial responses. Cohort also enables clients to generate publicly verifiable proofs of misbehavior without compromising query privacy, allowing the system to evict malicious servers. We implement Cohort in Go and show that asymptotic performance scales similarly to centralized PIR schemes with the database size, and the load on each Cohort server reduces proportionally to the number of servers in the system. Concretely, we measure that retrieving 16 KB from a 2 GB database takes under 170 ms. We demonstrate that this performance is sufficient to support a private news radio streaming service, illustrating that Cohort is practical for latency-sensitive applications.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14941,
+    "year": 2026,
+    "title": "CryptDough: A Unified Analytics Engine for Secure Multiparty Computation",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843909",
+    "abstract": "We present CryptDough, a unified analytics engine for secure multiparty computation (MPC). CryptDough enables multiple distrusting parties to jointly execute a data analysis pipeline on their private inputs and learn nothing beyond the result (e.g., aggregate statistics). Unlike existing MPC solutions that support a single threat model or workload type, CryptDough provides built-in support for cross-domain analytics (relational, time series, ML inference) under various threat models, all within the same system runtime.CryptDough contributes (i) a hierarchical system design that facilitates modularity and extensibility through progressive lowering of abstractions, and (ii) the concept of virtual vectors that enable users to write single-threaded code across all layers of the software stack, while pushing the complexity of communication, parallelization, and memory management down to the execution engine. We show that CryptDough generalizes the functionality of state-of-the-art MPC systems and remains competitive on the analytics they support, often outperforming them by more than 2{\\texttimes}.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14942,
+    "year": 2026,
+    "title": "DISCO*: Distributed and SCalable Oblivious Joins and Oblivious Primitives",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843862",
+    "abstract": "Trusted Execution Environments (TEEs) let clients outsource computation to untrusted clouds, but they remain vulnerable to side-channel and leakage-abuse attacks. Recent work closes this gap by combining hardware enclaves with oblivious computation, which offers strong security guarantees yet struggles to meet the performance and scalability demands of real-world deployments. In this work, we present DISCO, the first scalable, distributed, and fully oblivious database system that seamlessly combines hardware enclaves with cutting-edge oblivious primitives and novel optimizations that significantly reduce inter-server communication overheads. What distinguishes DISCO from prior work is a suite of distributed frameworks that unlock parallel computation and fundamentally shift the design paradigm of distributed oblivious systems, enabling practical deployment at scales that were unattainable with previous solutions. We provide a thorough evaluation of the performance of our system on both synthetic and real-world datasets. Our evaluation demonstrates that our design significantly reduces the gap between theory and practice, achieving 88{\\texttimes} speedup over Jodes and 180{\\texttimes} over SODA on non-foreign key joins with N = 225 elements. Most importantly, we report, for the first time, results for computations at the terabyte scale.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14943,
+    "year": 2026,
+    "title": "Cerium: A Multi-GPU Framework for Terabyte-Scale Encrypted Inference",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843864",
+    "abstract": "Encrypted AI using fully homomorphic encryption (FHE) enables inference directly over encrypted queries, providing strong privacy guarantees. However, its computational and memory overheads have limited practical deployment. Custom FHE accelerators improve performance, but rely on advanced manufacturing technologies that limit their accessibility. GPUs offer a more widely available alternative, yet achieving ASIC-class performance on GPUs is challenging. Large models such as LLMs compound these challenges by requiring optimized kernels, terabyte-scale memory management, and efficient execution across multiple devices.We present Cerium, a multi-GPU framework for large-scale FHE inference. Cerium combines a domain-specific language, an optimizing compiler, and a runtime system to automatically generate optimized GPU kernels, compress plaintext data, manage terabyte-scale memory footprints, and optimize multi-GPU communication.Implemented on NVIDIA GPUs, Cerium outperforms expert-written GPU libraries by up to 2.25{\\texttimes} and achieves performance competitive with state-of-the-art FHE ASICs, matching the CraterLake ASIC. It is the first GPU system to execute CKKS bootstrapping in under 10 milliseconds, achieving 7.5 milliseconds, and is the first to demonstrate encrypted inference for BERT-Base and Llama3-8B prefill in 8 seconds and 43 seconds, respectively. The Cerium framework is open-source and available at https://github.com/CMU-CAOS/Cerium",
+    "status": "notchecked"
+  },
+  {
+    "id": 14944,
+    "year": 2026,
+    "title": "Borges: A Low-Latency Distributed Shared Log on a CXL Memory/SSD Hybrid",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843906",
+    "abstract": "Fault-tolerant, distributed shared logs are a useful substrate for distributed applications, but existing designs coordinate shard servers, sequencers, and replicas over the network, so append and replay latency is dominated by message exchange. We present Borges, to our knowledge the first fault-tolerant shared log whose data and ordering state reside in a DRAM/SSD hybrid device accessed with Compute Express Link (CXL). Because current CXL pods lack inter-host cache coherence, Borges assigns every shared metadata word a single writer, atomically publishes each committed prefix as a matching global cut and stream index pair, and tracks each stream with compact byte offsets, so replay stays cheap even when a stream spans shards. We evaluate Borges on Samsung's CMM-H device against CXL ports of Scalog and Boki, using a linearizable lock, a key-value store, and a fault-tolerant workflow with exactly-once semantics. Borges achieves 2.87{\\texttimes} lower append p99 latency and 2.16{\\texttimes} higher throughput than the Scalog port, and for the Retwis workflow application it lowers p50 latency by 5.7{\\texttimes}/22.5{\\texttimes} relative to the Scalog/Boki ports.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14945,
+    "year": 2026,
+    "title": "Disk-Based LSMs: An Unexpectedly Good Index for Partly Coherent CXL Memory",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843886",
+    "abstract": "Abstract. We consider the design of an in-memory range index for systems with CXL shared memory in which only a small part of the memory is cache coherent. While existing index data structures can be ported to such a setting using a software-coherence approach, the result performs poorly. We find that the key reason is that such data structures have a large updatable surface area—the part of the data structure that can be modified in-place. We propose a new design that, perhaps surprisingly, is based on log-structured merge trees (LSMs)—data structures originally designed for disks rather than memory. We further enhance LSMs by allowing in-place updates to the upper level of the LSM. The resulting data structure outperforms state-of-the-art schemes based on Adaptive Radix Trees (ARTs) and B-trees ported to our setting, achieving up to 9.4{\\texttimes} higher peak throughput over in-memory indexes and up to 15.1{\\texttimes} over existing CXL systems.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14946,
+    "year": 2026,
+    "title": "StarfishOS: Revisiting Single System Image on CXL with State-Partitioned Microkernel",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843894",
+    "abstract": "Single System Image (SSI) offers an attractive OS abstraction that enables single-machine applications to transparently execute on multiple machines with improved resource utilization. The emergence of Compute Express Link (CXL) shifts cross-machine synchronization from message passing to coherent shared memory, which may help overcome SSI's long-standing adoption barrier caused by inefficient cross-machine message passing. However, placing state in slow CXL memory degrades performance and makes the system vulnerable to partial failures, since inconsistent CXL-resident state may block or crash the whole system.This paper notes that microkernels' minimized kernelspace state and capability-based state management allow easier state partitioning to minimize state on CXL. To this end, we propose a state-partitioned microkernel, and realize it in StarfishOS, the first OS-level SSI that leverages CXL shared memory for both high efficiency and partial failure resilience by keeping CXL state minimal and recoverable. Evaluations show that applications can transparently scale on StarfishOS with zero code changes, and achieve up to 5.2{\\texttimes} and 4.1{\\texttimes} the throughput of their distributed and CXL-optimized versions, respectively. Moreover, StarfishOS utilizes all stranded CPU resources by running applications across machines.StarfishOS is open source and available at https://github.com/starfishos-org/starfishos.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14947,
+    "year": 2026,
+    "title": "XTRA: Unifying Cache Coherence and Concurrency Control for Distributed Transactions in a CXL Pod",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843888",
+    "abstract": "Distributed transactions on CXL memory pools allow hosts to directly access shared data, bypassing message-based coordination. However, the limited cross-host hardware cache coherence (HCC) in CXL hinders synchronization for consistency and concurrency control across large memory pools. To overcome this limitation, we present XTRA, a novel synchronization architecture that efficiently scales CXL distributed TRAnsactions. XTRA decouples the synchronization state from individual data records, consolidating it into a compact directory within the HCC region, while keeping data in the large non-coherent pool. Distributed transactions leverage this decoupled directory to coordinate concurrent access across the entire shared pool. To ensure efficient and consistent access, XTRA unifies cache coherence with concurrency control by exploiting their semantic redundancy, directly repurposing transactional conflict detection to guarantee cache freshness lazily upon read. Furthermore, by using software mutual exclusion to manage the directory, XTRA's decoupled synchronization generalizes to commodity CXL memory without HCC, while preserving upper-layer protocols. Extensive evaluations demonstrate that XTRA improves throughput by up to 15.6{\\texttimes} over state-of-the-art systems and reduces P50/P99 latency by up to 4.0{\\texttimes}/283.9{\\texttimes}.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14948,
+    "year": 2026,
+    "title": "Scheduling Linux Threads under I/O Chiplet Wall Using cSwitch",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843889",
+    "abstract": "Chiplet-based processors have become the dominant architecture for modern servers, partitioning functionality across compute chiplets and a centralized I/O chiplet. While this design improves scalability, it introduces a new bottleneck— the I/O Chiplet Wall—where off-chip memory and device requests contend along a shared communication path through the I/O chiplet and interconnect fabric. Our characterization of an AMD EPYC processor shows that this bottleneck significantly impacts performance: it introduces non-trivial latency overheads, caps memory bandwidth, propagates congestion back to cores, reduces per-core effective bandwidth, and lacks traffic control. However, existing OS schedulers remain unaware of this bottleneck, leading to pathological scheduling behaviors and substantial inefficiencies.This paper presents cSwitch, a Linux scheduling framework that addresses the I/O Chiplet Wall. Our key insight is to model the I/O chiplet as a software switch that orchestrates thread-induced data movement. cSwitch represents threads as data flows (cFlows) annotated with communication features, transforming CPU scheduling into a flow scheduling problem and employing networking-inspired techniques. To realize this, we build an I/O Chiplet Loading Map to infer the runtime traffic load, define Chiplet Traffic Label to capture per-flow behavior, and design a cFlow scheduler that combines rate control, contention-aware refinement, and bandwidth-aware migration. Further, cSwitch supports coordinated workloads via MegaCFlow and provides a user-defined policy interface using sched_ext and eBPF. We build cSwitch and evaluate it against EEVDF, ARCAS, and Caladan+ across diverse workloads. Our experimental results show that cSwitch improves performance by up to 2.7{\\texttimes}, reduces latency and increases throughput under contention, and achieves better scalability with modest overheads.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14949,
+    "year": 2026,
+    "title": "Tierce: Observability-Driven Tiered Memory Management for Colocated Workloads",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843905",
+    "abstract": "Tiered memory systems rely on hardware signals to estimate page criticality and decide which pages should remain in fast memory. Colocation corrupts these estimates at two points: shared LLC interference changes whether accesses reach memory, and downstream memory contention changes their stall cost. Both effects blend colocated workloads' behavior into shared page-criticality estimates, creating a fundamental observability gap for tiered memory management.We present Tierce, an observability substrate for colocated tiered memory. Tierce estimates workload-local exposed stall by measuring per-workload memory-level parallelism and scoring pages by realized access latency. It bounds LLC interference with explicit cache-way allocation. Across 8 colocated pairs that run four foreground workloads against a bandwidth-intensive and a bursty, phase-varying co-runner, Tierce outperforms PACT, the best prior art, on every pair, by 2.2\\% to 12.6\\%.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14950,
+    "year": 2026,
+    "title": "GAZE: Rearchitecting Log-Structured Filesystem for Garbage Collection on Zoned Namespace Flash Storage",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843870",
+    "abstract": "We rearchitect the log-structured filesystem for garbage collection on zoned namespace flash storage. We find that the existing garbage collection mechanisms share three design principles that, while reasonable at small scale, become critical limitations when reclaiming gigabyte-scale zones: serial segment cleaning, page-cache-oriented page allocation, and blocking garbage collection. To address these limitations, we develop Pipelined Garbage Collection, Garbage Collection Page Pool, and Selective Blocking. Pipelined Garbage Collection restructures the garbage collection workflow into a four-stage pipeline, enabling concurrent execution of computation- and I/O-intensive stages. Garbage Collection Page Pool preallocates physical pages for garbage collection, avoiding expensive kernel services for allocating and managing pages. Selective Blocking exploits the delayed allocation mechanism of the filesystem, allowing buffered write requests to proceed during garbage collection instead of blocking all types of write() requests. GAZE outperforms F2FS with ZNS support, ZNS+, and P-GC by up to 3{\\texttimes} (FIO), ScaleLFS by up to 4.4{\\texttimes} (FIO), and IPLFS by up to 1.9{\\texttimes} (YCSB-A). GAZE reduces the garbage collection latency to $f13 of that of F2FS.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14951,
+    "year": 2026,
+    "title": "ProbeFS: Hierarchical DNA File Systems via Biochemical Content Addressability and Parallelism",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843890",
+    "abstract": "DNA storage offers exceptional density, durability, and energy efficiency, yet existing DNA file systems provide only flat storage abstractions with no hierarchical directory structure. Directly applying conventional hierarchy to DNA storage is impractical: hierarchy creates cross-file dependencies whose resolution demands multi-round DNA sequencing, either through sequential directory traversal at read time or cascading propagation at write time. We observe that two inherent biochemical properties of DNA—content-addressability via Watson-Crick base pairing and massive parallelism via concurrent molecular hybridization—can effectively address this overhead. We present ProbeFS, a hierarchical DNA file system co-designed with these properties. ProbeFS introduces path identifiers, a DNA encoding in which files sharing a common ancestor share subsequences, enabling (1) probe-based path resolution that locates files without directory traversal, (2) one-shot file retrieval that fetches entire directory subtrees in a single hybridization without knowing file identities in advance, and (3) chained delta updates that efficiently modify immutable DNA strands. Wet-lab experiments, thermodynamic simulations at scales up to 100K files, and in silico evaluation show that ProbeFS reduces read amplification by up to 5,124{\\texttimes} and serialized sequencing rounds by up to 54{\\texttimes}, achieving end-to-end retrieval latency of 1.3-2.7 hours—comparable to Amazon S3 Glacier Flexible Retrieval.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14952,
+    "year": 2026,
+    "title": "Don't Let AI Agents YOLO Your Files: Information and Control in Agent-Native Filesystems",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843858",
+    "abstract": "AI coding agents regularly misuse their filesystem access, causing data corruption, loss, and leakage. We conduct the first systematic study of this problem through an analysis of 290 public reports. Our study reveals two fundamental gaps: users and agents have limited information about filesystem effects and insufficient control over them.To close these gaps, we propose to shift information and control from agents to filesystems. We introduce agent-native filesystems and identify three primitives they should provide: introspect effects, undo mutations, and gate accesses. These primitives let agents operate autonomously while reserving user interaction for sensitive accesses and final review.We build YoloFS, an agent-native filesystem. YoloFS stages mutations until the user commits them, snapshots intermediate states for agent self-correction, and uses progressive permission to let users adapt access rules during execution. We evaluate YoloFS with a new methodology that captures interactions among the user, agent, and filesystem. On 11 tasks with hidden side effects, YoloFS enables agents to self-correct in 8 and stages all mutations for user review. On 112 routine tasks, YoloFS reduces user interaction while matching the baseline success rate.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14953,
+    "year": 2026,
+    "title": "TensorDex: A Compact, Tensor-Centric Storage System for Modern AI Models",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843872",
+    "abstract": "Modern model hubs store hundreds of petabytes of large language models (LLMs), with fine-tuned variants dominating the storage footprint. These variants contain substantial cross-model redundancy that delta compression can exploit by storing only the difference between a target and a reference model. However, compression effectiveness depends critically on choosing a similar reference. At model-hub scale, this is challenging because model lineage metadata is often missing or unreliable, and different tensors within the same model may be most similar to tensors from different models. Consequently, model-level pairing leaves substantial redundancy unexploited.We present TensorDex, a lossless, tensor-centric storage system that performs delta compression at tensor granularity. TensorDex decomposes models into tensors, uses compact bit-level fingerprints to predict tensor-pair compressibility, and incrementally organizes tensors into multi-center clusters to select effective bases as new models arrive. Evaluated on 2,890 randomly sampled Hugging Face models, Tensor-Dex reduces storage footprint by 70.5\\%, 37\\% lower than the state-of-the-art design. It achieves 22.9 GB/s compression and 28.4 GB/s decompression throughput, 3.86{\\texttimes} and 1.49{\\texttimes} faster than the next-best system, respectively.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14954,
+    "year": 2026,
+    "title": "VoliStorM: A Crash-Consistent I/O Cache with Two Kernels Instead of Two Caches",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843887",
+    "abstract": "A crash-consistent I/O cache is essential to ensure data integrity while optimizing performance. However, a general-purpose kernel fails to ensure integrity efficiently because of the high cost of synchronizing I/O requests with the many subsystems that rely on the cache. As a consequence, applications that must store data consistently mostly bypass the kernel I/O cache to implement a second cache in user space. This approach defeats the purpose of centralizing system mechanisms within the OS, induces overheads due to data copying and serialization, and leads to high engineering costs as user-space processes lack direct access to hardware features like page tables.In this paper, we address these drawbacks by doubling the number of kernels instead of doubling the number of caches. The first kernel is general-purpose, while the second provides an independent I/O stack tailored to efficiently ensure integrity. We implemented this design in VoliStorM using hardware virtualization. Our evaluation shows that, across databases, in-memory cache checkpointing, and language runtimes, VoliStorM outperforms the dual-cache approach while simplifying application code and improving code reuse.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14955,
+    "year": 2026,
+    "title": "AgileLog: A Forkable Shared Log for Agents on Data Streams",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843875",
+    "abstract": "In modern data-streaming systems, alongside traditional programs, a new type of entity has emerged that can interact with streaming data: AI agents. Unlike traditional programs, AI agents use LLM reasoning to accomplish high-level tasks specified in natural language over streaming data. Unfortunately, current streaming systems cannot fully support agents: they lack the fundamental mechanisms to avoid the performance interference caused by agentic tasks and to safely handle agentic writes. We argue that the shared log, the core abstraction underlying streaming data, must support creating forks of itself, and that such a forkable shared log serves as a great substrate for agents acting on streaming data. We propose AgileLog, a new shared log abstraction that provides novel forking primitives for agentic use cases. We design Bolt, a system that implements the AgileLog abstraction. Bolt uses many novel techniques to make forks cheap and to provide logical and performance isolation.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14956,
+    "year": 2026,
+    "title": "Computation Is Fast, Use Threadlet!: Efficient Threading for μs-Scale Computing via OS/Hardware Co-Design",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843863",
+    "abstract": "The conventional threading model multiplexes software threads onto hardware cores. This model inherently suffers from the overhead of 1) context switching, 2) scheduling, and 3) system event notifications (e.g., I/O interrupts). As computing enters μs-scale, such overheads become the key bottleneck of a wide range of domains: networking, concurrency control, and microservice scheduling, etc. Existing software solutions, such as cooperative scheduling and polling, sacrifice correctness and/or CPU efficiency, while hardware offers only point solutions with suboptimal performance.To eliminate the threading overheads without introducing difficult tradeoffs, our key insight is that hardware should directly expose schedulable, basic units of execution (i.e., software threads) instead of computational resources (i.e., cores). We propose threadlet, a new hardware abstraction that is lighter than a software thread by removing uncritical state (e.g., floating-point registers). A core caches a few active threadlets in its register file, while spilling the rest to the memory hierarchy. Thus, context switching incurs minimal overhead by simply resuming execution with the next threadlet's state. Moreover, threadlet comes with hardware support that can express diverse OS scheduling policies, enabling fast and flexible scheduling. Finally, as a hardware abstraction, threadlets directly interface with microarchitectural mechanisms (e.g., cache coherence) for efficient event notifications. We build a supporting architecture on an FPGA and a research OS for threadlet, outperforming prior works by 3{\\texttimes} to 47{\\texttimes} on real-world applications. Our artifact is publicly available at https://github.com/TELOS-syslab/Threadlet.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14957,
+    "year": 2026,
+    "title": "It's the Kernel's Fault! Custom Page Fault Handling With bpf_fault",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843896",
+    "abstract": "Page faults, which occur when a program accesses a virtual memory page that is not mapped to physical memory, are traditionally handled by the operating system. However, many applications benefit from running custom page fault handling logic. For example, some applications may seek to prefill newly faulted pages with content, or intercept writes in order to make a copy of the original contents. Linux's userfaultfd interface enables some of these use cases by offloading fault handling to userspace. Unfortunately, it suffers from significant limitations, namely high overhead, poor scalability, and a design that precludes its use in libraries.We present bpf_fault, a framework that allows applications to run page fault handlers directly within the Linux kernel using eBPF. By eliminating the overheads and complexity associated with userfaultfd, bpf_fault reduces fault latency by 2.8-6.7{\\texttimes} and eliminates userfaultfd's scalability bottleneck. We integrate bpf_fault with several applications, such as VM live snapshots in Firecracker and QEMU, which eliminates tail latency spikes caused by snapshots. By leveraging bpf_fault, we also design a novel lazy dynamic linking mechanism for Linux that defers relocations to fault time, a use case impossible with userfaultfd, which reduces dirty memory usage of widely used applications like Chrome and Clang by up to 50\\%. Together, these results demonstrate that eBPF-based fault handling can improve performance and reduce resource usage in widely deployed applications.To find fault is easy; to do better may be difficult.—Plutarch",
+    "status": "notchecked"
+  },
+  {
+    "id": 14958,
+    "year": 2026,
+    "title": "MCon: Building an Elastic Cloud for Android Applications with Framework Consolidation",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843866",
+    "abstract": "Cloud execution of mobile apps—running unmodified apps inside full mobile OSes on commodity servers—is gaining adoption for uses such as GUI agent training and large-scale app testing. These workloads are both temporally dynamic (from second-scale agent interactions to hour-long tests) and highly bursty (up to hundreds of concurrent jobs), demanding an elastic platform that can provision mobile environments both quickly and at high density. Existing stacks fall short because each tenant has a separate copy of the mobile framework (a large collection of shared libraries and system services), which is slow to start and heavy to keep.We present MCon, the first container system with the framework consolidation architecture: the framework is run as a shared, multi-tenant service instead of a per-tenant component. The core challenge is to practically enable per-tenant isolation on a large framework with no native multi-tenant support. MCon achieves this from outside the framework: we virtualize the IPC control path through which apps access shared framework services, and combine it with per-tenant virtual device slices to construct private views of framework and device resources. Compared to the best existing stacks, MCon achieves sub-second cold tenant allocation (15{\\texttimes} as fast), with 70\\%-82\\% less host memory and 1\\%-33\\% less GPU memory usage. MCon has been adopted by Infinigence AI.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14959,
+    "year": 2026,
+    "title": "Skill VM: Write Once, Run Everywhere Efficiently",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843874",
+    "abstract": "LLM agents increasingly adopt skills as a reusable unit of composition. While skills are shared across diverse agent platforms, current systems treat them as raw context, causing the same skill to behave inconsistently for different agents. This fragility undermines skill portability and execution efficiency.To address this challenge, we analyze 118,000 skills and draw inspiration from traditional compiler design. We treat skills as code and LLMs as heterogeneous processors. To make portability actionable, we decompose a skill's requirements into a set of primitive capabilities, and measure how well each model-harness pair supports them. Based on these capability profiles, we propose SkillVM, a compilation and runtime system designed for portable and efficient skill execution. At compile time, SkillVM performs capability-based compilation, environment binding, and concurrency extraction. At runtime, SkillVM applies JIT code solidification and adaptive recompilation for performance optimization.We evaluate SkillVM across ten LLMs of varying scales and four agent harnesses, covering SkillsBench and representative skill tasks. Results demonstrate that SkillVM significantly improves task completion rates across different models and environments while reducing token consumption by up to 40\\%. In terms of performance, SkillVM achieves up to 3.2{\\texttimes} speedup with enhanced parallelism, and 19-50{\\texttimes} latency reduction through code solidification.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14960,
+    "year": 2026,
+    "title": "Turning Linux into a High-Performance Library OS with Flux",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843881",
+    "abstract": "Modern high-performance applications increasingly bypass the host kernel for I/O and scheduling and rely on library OSes for operating-system services. High-performance library OSes are often built from scratch, but supporting unmodified applications requires reimplementing mature Linux semantics. Running Linux itself as a library OS avoids this cost, yet existing Linux-based designs remain slow. Our analysis of LKL shows that the main bottlenecks lie in the surrounding user-space runtime rather than Linux subsystems.We present Flux, a Linux-based library OS that reduces the runtime bottlenecks while keeping Linux subsystems largely intact. Flux redesigns scheduling, user-space interrupt delivery, and syscall paths, and introduces a new process abstraction that supports Linux fork semantics without giving up direct-call syscalls. Flux improves Nginx throughput by up to 18.5{\\texttimes} over Linux, and approaches Junction's Memcached throughput under a 100μs p99 latency target, showing that Linux can provide a high-performance library OS without rebuilding Linux functionality from scratch.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14961,
+    "year": 2026,
+    "title": "You Can Always Get What You Want: CPU Virtualization Made Fast and Free",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843895",
+    "abstract": "Dedicated VMs provide near bare-metal performance through CPU pinning, interrupt passthrough, and idle passthrough. In conventional deployments, however, these optimizations lock physical cores to individual VMs and prevent CPU sharing. In one of the world's largest cloud platforms, 74\\% of Dedicated VMs average below 10\\% CPU utilization, yet they occupy 95\\% of the physical infrastructure. This paper describes more than three years of deployment experience with Dynamic-Dedicated VMs (DDVMs) to safely reclaim this spare capacity. DDVMs combine workload-signature profiling, mediated posted interrupts, and occupancy-aware idle reclamation to dynamically share CPU cores while preserving Dedicated-VM-level SLOs. The challenge lies not in any single mechanism, but in making conservative, production-safe sharing decisions: identifying when sharing is safe, bounding interrupt latency when vCPUs are preempted, and recovering quickly when conditions change. Deployed across 37 regions and 92,000 servers, DDVMs improve CPU utilization by 10.5\\% at a 1.1{\\texttimes} oversubscription ratio, while keeping SLO scores within the 20\\% latency-tolerance threshold and the mature-deployment performance-related ticket rate at 0.00035\\%.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14962,
+    "year": 2026,
+    "title": "DiFlow: A System for Micro-Serving Text-to-image Diffusion Workflows",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843880",
+    "abstract": "Text-to-image generation executes a diffusion workflow comprising multiple models centered on a base diffusion model. Existing serving systems treat each workflow as an opaque monolith, provisioning, placing, and scaling all constituent models together, which obscures internal dataflow, prevents model sharing, and enforces coarse-grained resource management. In this paper, we make a case for micro-serving diffusion workflows with DiFlow, a system that decomposes a workflow into loosely coupled model-execution nodes that can be independently managed and scheduled. By explicitly managing individual model inference, DiFlow unlocks cluster-scale optimizations, including per-model scaling, model sharing, and adaptive model parallelism. Collectively, DiFlow outperforms existing diffusion workflow serving systems, sustaining up to 3{\\texttimes} higher request rates and tolerating up to 8{\\texttimes} higher burst traffic. We have open-sourced DiFlow at https://github.com/diflow-project/diflow.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14963,
+    "year": 2026,
+    "title": "LMTracer: Fine-Grained and Real-Time Performance Profiling for Production LLM Systems",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843871",
+    "abstract": "Training and serving large language models (LLMs) has become a core business for AI providers. To ensure a high-quality user experience while optimizing infrastructure costs, providers need to closely monitor the performance of LLM executions in production. However, existing performance profiling tools fall short in this context, as they are either too coarse-grained to capture performance bottlenecks, or too intrusive to avoid significant performance degradation.This paper presents LMTracer, a fine-grained and real-time performance profiling framework for production LLM services. We find that the inefficiency of existing techniques mainly stems from disruptions in highly asynchronous GPU execution flows. To address this, our key idea is to embed profiling logic into the execution through graph-embedded probing. This is achieved by compiling lightweight probe kernels that realize profiling logic as special trace nodes in GPU execution graphs, and streaming buffered profiling data to CPUs on demand to keep the execution of user kernels uninterrupted. LMTracer has been deployed in production for eight months. It incurs only 0.9\\% average overhead across various LLM workloads (e.g., training, serving, and fine-tuning), and has proactively uncovered 15 performance issues. After fixing these issues, we observed 21.2\\% latency reduction and 24.5\\% throughput improvement for LLM services.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14964,
+    "year": 2026,
+    "title": "Scalable Context Orchestration for Serving LLMs Over Voice",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843860",
+    "abstract": "Voice AI applications are gaining popularity as advances in large language models (LLMs) enable more natural and accessible spoken interactions. Serving these applications requires accounting not only for what users say, but also for how they speak (e.g., speaking rate) and the conditions under which their audio is captured and transmitted (e.g., background noise and packet loss). However, existing LLM systems represent conversation context as a flat, growing sequence of messages, leaving voice-specific context implicit in the audio. As a result, they can generate responses that are poorly aligned with user preferences, degrade interaction quality under adverse environmental conditions, and incur high costs over long voice sessions.We present llmovoice, a context-management middleware that explicitly models voice context and orchestrates its use. At each turn, llmovoice constructs a bounded voice context from the current user input, relevant interaction history, and explicit paralinguistic and environmental states. It then uses the serving LLM to reason over this context and generate runtime directives that guide how the system responds. We evaluate llmovoice on real-world voice applications and benchmarks. It reduces speaking-rate alignment error by 52.4\\%, lowers the false-interruption rate from 46.0\\% to 0.9\\% under packet loss, and reduces model usage cost by 79.2\\%. For long sessions, llmovoice reduces per-turn cost by up to 24.9{\\texttimes} while retaining up to 98.7\\% of baseline answer quality.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14965,
+    "year": 2026,
+    "title": "TuxBot: Semantic-Aware Online OS Tuning with LLMs",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843885",
+    "abstract": "Online OS tuning can improve long-running services, but existing tuners are not well suited for live hosts. They treat scheduler, power, memory, and I/O controls as black-box variables and optimize a scalar reward. This approach ignores cross-knob policy structure, breaks down when application metrics are unavailable, and can push a running service into degraded regions that persist after a bad setting is removed. We present TuxBot, a bounded LLM-based tuner for steady-state online OS tuning. TuxBot constructs a structured decision context from telemetry, knob schemas, recent trajectories, and prior sessions; pairs low-latency and deeper reasoning models; and applies only typed, validated knob updates. TuxBot is able to reason about knob semantics, subsystem interactions, and indirect performance signals without granting the model unconstrained host control.Across 13 live workloads from five benchmark suites, tuning up to 41 Linux parameters, TuxBot consistently outperforms prior tuners while avoiding catastrophic configurations. On the 11 workloads where baselines do not fail catastrophically, TuxBot improves stable-phase performance by 87.2\\% over defaults, compared with 50.5\\% for MLOS, the strongest non-LLM baseline; on the remaining two workloads, baselines enter severe-degradation regions that TuxBot avoids altogether. Remarkably, using only machine-level metrics, TuxBot still achieves a 64.0\\% improvement, outperforming MLOS with access to direct application-level metrics.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14966,
+    "year": 2026,
+    "title": "StreamEP: Straggler-Tolerant MoE Decoding without Communication Barriers",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843869",
+    "abstract": "Mixture-of-Experts (MoE) models use expert parallelism (EP) to distribute experts across GPUs, relying on collective communication that synchronizes every device at every layer. To minimize communication latency, hyperscalers provision abundant network bandwidth in data centers and deploy MoE-optimized stacks that require Hopper-generation GPU features. But on commodity GPU clusters with shared and nonuniform interconnects, this communication barrier serializes execution behind the slowest transfer.We present stream expert parallelism (StreamEP), a paradigm that removes the collective communication barrier entirely: each GPU independently receives tokens, executes the appropriate layer, and forwards results as they become ready. We build StreamInfer, a serving system that realizes StreamEP on vanilla NCCL. StreamInfer introduces per-layer token queues for asynchronous token management, a defragmenting scheduler that consolidates partial batches while guaranteeing forward progress, and a two-phase communicator for asynchronous and variable-size GPU-to-GPU transfers. On 16{\\texttimes}L40S and 16{\\texttimes}A100 clusters with 200 Gbps inter-node networking, StreamInfer achieves up to 1.7{\\texttimes} higher decoding throughput than traditional EP, demonstrating that efficient large-scale MoE serving is achievable on commodity hardware.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14967,
+    "year": 2026,
+    "title": "I3DP: Neuro-Symbolic Inductive Invariant Inference for Distributed Protocols",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843876",
+    "abstract": "Distributed protocols are notoriously difficult to verify correctly. Proving safety typically requires inductive invariants that both imply the desired property and are preserved by every protocol transition; yet inferring such invariants remains a major bottleneck: existing approaches either restrict the protocol models to a decidable fragment of first-order logic or demand expert-crafted templates.We present I3DP, a neuro-symbolic framework that synthesizes inductive invariants by executing an IC3-style process over TLA+ states with the assistance of large language models (LLMs). At large, I3DP combines a symbolic IC3 controller which decomposes invariant synthesis into focused blocking tasks, and an LLM which provides protocol-level reasoning that IC3 alone lacks for TLA+ specifications. This integration enables a disciplined yet flexible search for invariants without imposing logical restrictions or requiring manual templates.We evaluate I3DP on 29 distributed protocols spanning consensus, reconfiguration, and client-server systems, and compare it against Endive, IC3PO, SWISS, DuoAI, and P-FOLIC3. I3DP discovers candidate invariants for all 29 protocols. Among them, MongoLoglessDynamicRaft models the core mechanism of an industrial-scale Raft-based reconfiguration protocol, and none of the compared tools reports a solution for it. In each case, the invariants synthesized on finite instances are shown in TLAPS to be inductive for the full unbounded protocol, thereby establishing safety.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14968,
+    "year": 2026,
+    "title": "Lion: Modular Verification of Async Runtime Liveness",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843879",
+    "abstract": "Asynchronous programming (async) is the dominant paradigm for developing high-performance systems, where concurrent tasks voluntarily yield control to an async runtime when resources are unavailable. These programs expect a fundamental liveness promise from the runtime: every task that yields will eventually be resumed when its awaited event fires. A single scheduling bug can silently break this contract, leaving tasks permanently stalled with no observable symptoms, such as a crash or error trace, to signal the failure. We present a general parametric specification framework and methodology for discharging this promise in runtimes composed of multiple interacting modules. Our approach introduces an append-only logical event log that abstracts implementation details and enables a Kamp-style translation of Linear Temporal Logic (LTL) into First-Order Logic. This enables deductive program verifiers to reason about progress via monotonic timestamps without needing native temporal logic support. Our main liveness theorem abstracts over the sufficient conditions, such as environmental assumptions and calling conventions, allowing these proof obligations to be instantiated for different runtime implementations. We demonstrate this framework via Lion, a Tokio-compatible runtime in Rust verified using Verus. By establishing a bijective mapping between log events and concrete actions, we prove that Lion maintains the liveness contract and measure at least 95\\% of unverified-runtime throughput on nine real-world workloads.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14969,
+    "year": 2026,
+    "title": "Sockeye: Bug-finding and proofs for platform configurations and hardware based on reference manuals",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843883",
+    "abstract": "The ever increasing complexity of hardware platforms poses a challenge to systems programmers. Correctly programming a multitude of components, providing functionality and security, is difficult: semantics of individual units are described in prose, underspecified, and prone to inaccuracies. Rigorous statements about platform security are often impossible.We are the first to address this problem for closed-source hardware platforms, by introducing a domain-specific language to formally describe hardware semantics based on hardware-reference manuals, assumptions about software behavior, and desired security properties. We demonstrate the practicality of our approach by creating machine-readable specifications for a diverse set of eight platforms from their reference manuals, and formally proving their (in-)security. In addition to security proofs about memory confidentiality and integrity, we discover a handful of documentation errors. Finally, our analysis also revealed a vulnerability on a real-world server chip, which was confirmed by the vendor to apply to a wide family of deployed network appliances. Our tooling offers system integrators a way of formally describing security properties for whole platforms, and the means to find counterexamples, or proving them correct.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14970,
+    "year": 2026,
+    "title": "Verifying a high-performance distributed transaction system using permissioned state machines",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843873",
+    "abstract": "Tulip is a high-performance distributed transaction system that uses sharding for scalability, replication within each shard for fault tolerance, and TAPIR-style inconsistent replication for high performance. Tulip comes with a machine-checked proof of correctness showing that its implementation meets a simple specification identical to a local strictly serializable transaction system, abstracting away implementation details such as crash recovery, multi-versioning, replication, sharding, and coordinator recovery.The contribution of this paper is the permissioned state machine (PSM) approach, which extends TLA-style protocol reasoning with ideas from concurrent separation logic. PSM enables the developer to specify and verify complex protocols, such as Tulip, by breaking them down into smaller modules. PSM makes all dependencies between modules explicit using permissions, which limits the ways these modules can interact, and thereby reduces proof effort.The prototype of Tulip consists of 3,956 lines of Go code, achieving performance competitive with that of TAPIR. Tulip's proof is decomposed into 10 types of modules; the majority of logical proof steps (“actions”) involve just one module, demonstrating that PSM enables local reasoning.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14971,
+    "year": 2026,
+    "title": "Validating a High-Performance Cloud Object Store with Lightweight Formal Methods",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843899",
+    "abstract": "We report on our experience validating S3 Express One Zone, a high-performance Amazon S3 storage class launched in November 2023. We focused on its distributed metadata index, which implements a hierarchical namespace using distributed transactions. We check strong consistency and durability under crashes, network delays, and timeouts. Building on our prior work on lightweight formal methods, we combined executable reference models with property-based testing and stateless model checking. Applying these techniques to a production distributed system required three new techniques: a white-box approach to checking serializability; compositional validation of the data and control planes; and long-running canaries that use reference models to check correctness across deployments. We extended Shuttle, our open-source stateless checker, to support a production async Rust runtime and failure injection, including cancelled operations and timeouts. Our main finding is that this approach is sustainable at engineering scale. After launch, the engineering team took ownership of models and test infrastructure, increasing its share of validation commits from 41\\% to 84\\% and independently extending the models for conditional writes, object append, and atomic rename, with little involvement from the formal methods team.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14972,
+    "year": 2026,
+    "title": "Welder: Compositional Liveness Verification of Cluster Control Planes",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843868",
+    "abstract": "We present the first compositional approach to formally verifying cluster control planes such as Kubernetes. Control planes are large, distributed systems composed of interacting controllers with subtle liveness and safety dependencies. Our approach, Welder, emphasizes compositionality to make verification manageable and scalable. Welder makes threefold contributions on specification, proof, and implementation. First, Welder provides a general specification called Compositional REconciliation (CORE). CORE states that a set of controllers collectively reconcile the cluster state correctly, precluding bugs in both individual controllers and cross-controller interactions. CORE is an open specification that enables compositional verification: if two compatible sets of controllers each implement CORE, so does their composition. Second, Welder introduces new proof techniques for compositional liveness reasoning about controller interactions, including liveness dependencies and interference. Third, we mechanize Welder as a framework and use it to implement and verify a fraction of the Kubernetes control plane—three core controllers and one custom controller. The verified controllers can readily be deployed in Kubernetes platforms with comparable performance to (unverified) official ones. Welder enables a progressive way to verify cluster control planes by gradually verifying that each controller implements CORE.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14973,
+    "year": 2026,
+    "title": "Pirateship: Append-Only Ledgers for (Mostly) Trusted Execution Environments",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843903",
+    "abstract": "Distributed ledgers are increasingly relied upon by industry to provide trustworthy accountability, strong integrity-protection, and high availability for critical data without centralizing trust. Recently, distributed append-only logs are opting for a layered approach, combining crash-fault-tolerant (CFT) consensus with hardware-based Trusted Execution Environments (TEEs) for greater resiliency. Unfortunately, hardware TEEs can be subject to (rare) attacks, undermining the very guarantees that distributed ledgers are carefully designed to achieve. In response, we present Pirateship, a new distributed consensus protocol that cautiously trusts the guarantees of TEEs. Pirateship carefully embeds a Byzantine fault-tolerant (BFT) protocol inside of a CFT protocol with no additional messages. This is made possible through careful refactoring of both the CFT and BFT protocols such that their structure aligns. Pirateship achieves performance in line with regular TEE-enabled consensus protocols, while guaranteeing integrity in the face of TEE platform compromises.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14974,
+    "year": 2026,
+    "title": "DDB: Source-Level Interactive Debugging for Distributed Applications",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843853",
+    "abstract": "Interactive debugging is an effective tool for understanding program behavior at the source level, allowing developers to pause execution, navigate the call stack, and inspect runtime state. However, interactive debuggers are designed for single-process execution, and interactive debugging has been widely considered impractical for distributed systems. Call stacks stop at process boundaries, debugging state fails to survive infrastructure dynamics, and, most critically, debugger-induced execution pauses trigger catastrophic timeout cascades that destroy the intended debug flow. Consequently, developers are forced to abandon live hypothesis testing in favor of unwieldy and iterative log-and-redeploy cycles.We present DDB, a source-level interactive debugger that extends interactive debugging capabilities to distributed applications. We show that each of these challenges admits a targeted solution. To bridge disjoint processes, Distributed Backtrace (DBT) embeds compact causality metadata in every RPC and reconstructs a unified call stack across RPC boundaries. To manage the lifecycle of a distributed session, an intent-preserving control plane automatically coordinates and propagates breakpoints across dynamic process sets. To make pausing safe, Pause-Erased Time (PET) virtualizes each process's clock, decoupling logical time from physical pauses and preventing timeout cascades. DDB integrates with an RPC framework in 10-60 lines of code. Evaluated on gRPC, ServiceWeaver, Nu, and Quicksand across up to 122 processes, DDB achieves 30 ms median cross-RPC backtrace latency, sub-5 ms time jump under repeated execution pauses, and adds 1-5\\% throughput overhead, comparable to attaching a single-process debugger. In a controlled user study, DDB achieves a 100\\% fault localization success rate (compared to 38.5\\% for baseline tools) with a median localization time of ~8 minutes.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14975,
+    "year": 2026,
+    "title": "Sintr: Safe Interactive Transactions in the Presence of Byzantine Clients",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843865",
+    "abstract": "Byzantine fault-tolerant (BFT) systems are, in principle, an appealing foundation for transactional applications involving mutually distrustful participants. Yet their adoption has been hampered by two persistent stumbling blocks—performance and developer convenience—which are often in tension with one another. Recent systems show promising progress on both fronts by shifting to a client-centric architecture; clients execute transactions locally and concurrently, while the system resolves any data conflicts to maintain database serializability. We argue that, in its current form, this approach introduces a critical vulnerability: it leaves the integrity of the database exposed to Byzantine clients, which may issue malicious or incorrect transactions. We address this threat with Sintr, a framework that prevents Byzantine clients from compromising database integrity by executing rogue transactions. Sintr combines redundant execution to validate transaction outcomes with a flexible, heterogeneous policy framework for expressing an application's data integrity requirements. We apply Sintr to harden several existing BFT database systems and find that it imposes only modest overheads—3\\%-16\\% in throughput and 3\\%-21\\% in latency.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14976,
+    "year": 2026,
+    "title": "Smaran: Serving Authenticated Time-Travel Queries",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843882",
+    "abstract": "Time-travel queries ask what data looked like at a past time or over an interval. Modern databases support time-travel queries, but this support is insufficient for applications that cannot trust the query server, such as secure messaging and decentralized applications, where clients need proofs that the returned results are correct. Existing approaches either require aggregating evidence from multiple auditors, incur per-step proof costs that scale linearly with history length, or impose massive storage and communication costs.In this paper, we introduce Smaran, an authenticated data structure that enables servers to answer time-travel queries efficiently with a constant number of fixed-size proofs, independent of the query range. Smaran achieves this through a novel integration of segment trees with vector commitments, sidestepping scalability challenges as history grows via a hierarchical architecture, and avoiding redundancy by introducing versioned vector commitments.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14977,
+    "year": 2026,
+    "title": "RPCShield: Defending Microservices Against Cascading Failures",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843878",
+    "abstract": "Microservice-based systems are tightly interdependent. A failure in one service can propagate to a dependent service, potentially bringing down critical, user-facing functionality. We have developed and deployed RPCShield, a suite of program analyses for Go and Java that detects such cascading-failure risks. RPCShield uses static program analysis to track error and exception propagation through service code. Two insights make this practical. First, error propagation needs to be only checked per service, so the analysis is intra-service and avoids inter-service analysis entirely. Second, deciding the property counterfactually, by asking whether an endpoint could have succeeded had a given call succeeded, attributes the failure to the specific responsible dependency rather than to every dependency whose error reaches the caller. We have deployed RPCShield at Uber, across a fleet of over 6K microservices. Since deployment, it has detected over 3,800 cascading failure risks, of which service owners have already remediated more than 1,300. Manual review indicates that RPCShield has a false positive rate of around 5\\%.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14978,
+    "year": 2026,
+    "title": "QProf: Fleetwide Transitive Cost Profiling of Warehouse-Scale Services",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843854",
+    "abstract": "Warehouse-scale services form the backbone of major cloud services relied on by billions of users every day. As these systems grow increasingly complex, understanding them and finding opportunities for optimization becomes more and more difficult. In this paper, we present QProf, a distributed systems profiler built upon RPC tracing. Going well beyond prior work that focuses on fleetwide profiling of single programs, QProf focuses on cost profiling of entire services. By treating a distributed program as if it were a single process, QProf can produce call-graph profiles of entire systems, so it can measure the transitive cost of services through the entire stack of backend dependencies. QProf is backed by a novel tracing mechanism called skeletal tracing which is exceedingly low-overhead and invisible to applications, ensuring that tracing minimally perturbs application behavior. An ambient per-query CPU profiler ensures high profiling coverage across thousands of microservices without manual instrumentation, and new fan-in APIs provide support for representing batched requests in a tracing data model that is tree-centric. QProf processes billions of traces per day to produce aggregated datasets which can be queried by engineers. Despite the sampled nature of traces, QProf is highly accurate in measuring QPS and CPU across thousands of microservices in an extremely diverse datacenter fleet. QProf has been deployed for every job in Google's production fleet for several years. It has a myriad of use cases, and we present several case studies showing how it has been used to find the “room-at-the-top” in complex systems and optimize them across many dimensions.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14979,
+    "year": 2026,
+    "title": "Anchor: Mitigating GPU Shallow Disruptions with Decoupled Memory",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843892",
+    "abstract": "Job failures are frequent in large-scale GPU clusters for LLM workloads, leading to significant resource wastage. The vast majority of these are shallow disruptions (e.g., software errors or updates), where only the worker process crashes while the underlying GPU and OS kernel remain intact. Existing recovery systems, however, are failure-agnostic, relying on heavyweight checkpointing that forces a full, slow state reload even when the data could have survived on the GPU.In this paper, we propose Anchor, a system that avoids this overhead by decoupling memory ownership from the failure-prone worker process. Anchor uses a daemon process to manage GPU memory. Leveraging the GPU's native IPC memory mechanism, Anchor enables a restarted worker to remap and reuse the daemon-managed memory with no overhead on the normal execution path. To make this idea practical for real-world ML applications, Anchor introduces an access-path-based identity resolution mechanism to remap logical tensors to their physical memory objects after restart. Anchor also provides lightweight, application-aware consistency protocols to ensure data integrity with little overhead. We integrate Anchor into DeepSpeed and vLLM. Our evaluation demonstrates recovery acceleration, with recovery time reduced by 60.7\\% for inference and 26.6\\% for training on average. For Qwen3-235B inference, Anchor reduces the recovery time from 143.78 s to 27.85 s.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14980,
+    "year": 2026,
+    "title": "Linux AGX: An Adaptive GPU eXtension to Linux Fair Scheduling for Physical AI and Robotic Systems",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843893",
+    "abstract": "Linux fair scheduling (EEVDF in kernel ≥ 6.6, CFS in older releases) is the default time-sharing policy on many production robots. ML-driven robotic pipelines, combining perception, planning, and on-device LLM/VLM inference, create workloads in which short CPU preparation steps gate GPU launches and the active task graph reconfigures at runtime as scenes change, humans intervene, or new behaviors are triggered. Because Linux fair scheduling observes only CPU service and sleep-wake events, it cannot identify GPU-gating feeder slices or adapt as the critical path shifts, leading to avoidable GPU idle time and inflated end-to-end latency on single-GPU embedded platforms.We present AGX (Adaptive GPU eXtension), a lightweight, scheduler-agnostic mechanism that preserves Linux fair scheduling's pick logic, virtual-deadline computation, and fairness semantics while making its weight interface GPU-, dependency-, and adaptation-aware. A user-space profiler periodically computes a bounded per-task importance score, which the kernel applies as an effective weight, requiring no new queues, locks, or vendor-specific paths. AGX tracks the evolving critical path online without manual retuning. We prove that AGX preserves proportional fairness under effective weights and bounds competition-induced GPU launch delay, yielding a K-independent bound when the bounded boost is not clipped and bounded coalescing otherwise. AGX instantiates on EEVDF, specializes to CFS, and generalizes to any proportional-share fair scheduler.Experiments on three NVIDIA platforms across fuzz-generated DAGs, realistic robotic pipelines, background CPU-pressure stress tests, and a physical TurtleBot stack show that AGX reduces makespan by 6.0-20.0\\% and raises average GPU utilization by 7.6-22.1\\% relative to vanilla EEVDF. Under background CPU pressure, AGX cuts p99 perception-to-control latency by 38.5\\% and deadline misses by 33.8 percentage points while preserving CPU-only fairness. AGX incurs minimal overhead and remains a drop-in extension that degrades cleanly to vanilla behavior.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14981,
+    "year": 2026,
+    "title": "TensorHub: Scalable and Elastic Weight Transfer for LLM RL Training",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843859",
+    "abstract": "Modern LLM reinforcement learning (RL) workloads require a high-performance weight transfer system to scale training across heterogeneous compute resources. However, efficiently transferring terabyte-scale model weights across thousands of GPUs remains challenging because the system must accommodate clusters that dynamically scale up and down while keeping coordination, data movement, and storage overhead low.We introduce Reference-Oriented Storage (ROS), a new storage abstraction for RL weight transfer that exploits highly replicated model weights in place. ROS presents the illusion that certain versions of the model weights are stored and can be fetched on demand. Underneath, ROS does not physically store any copies of the weights; instead, it tracks the workers that hold these weights on GPUs for inference. Upon request, ROS directly uses them to serve reads. We build TensorHub, a production-quality system that instantiates the ROS idea with topology-aware transfer, model-parallel consistency, and fault tolerance. Evaluation shows that TensorHub saturates RDMA bandwidth and adapts to three distinct rollout workloads with minimal engineering effort. Specifically, TensorHub reduces total GPU stall time by up to 6.7{\\texttimes} for standalone rollouts, accelerates weight updates for elastic rollouts by up to 4.8{\\texttimes}, and cuts cross-datacenter rollout stall time by up to 19{\\texttimes}. TensorHub has been deployed in ByteDance production to support cutting-edge RL training.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14982,
+    "year": 2026,
+    "title": "A Few GPUs, A Whole Lotta Scale: Faithful LLM Training Emulation with CrystalLLM",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843852",
+    "abstract": "Large language model (LLM) training today runs on clusters spanning thousands of GPUs. While this scale enables rapid model advances, developing, debugging, and performance-tuning, the training framework inevitably becomes complex and costly. This is because engineers often need to reproduce production behaviors to diagnose failures or evaluate optimizations, thereby demanding frequent and even exclusive access to production-scale clusters—which becomes increasingly hard given that the majority of GPUs are already committed to production workloads. Simulation relies on complex performance models that are difficult to maintain, and downscaled experiments often fail to capture scale-dependent behaviors.We present CrystalLLM to decouple large-scale execution from the need to access large clusters, enabling engineers to run and observe ranks of interest under faithful large-scale behavior using only a few GPUs. CrystalLLM constructs a high-fidelity execution graph via a slicing-based approach that captures computation, communication, and dependencies of the target scale. Then, CrystalLLM performs hybrid emulation where selected ranks execute the original program while the remaining are replayed as virtual participants.Experiments on large-scale LLM training workloads show that CrystalLLM accurately reproduces performance and memory behavior, achieving only 0.58\\% average error in iteration time and less than 0.01\\% error in peak GPU memory usage. CrystalLLM can emulate clusters of up to 8192 GPUs using fewer than 1\\% of the physical GPUs required by the original deployment.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14983,
+    "year": 2026,
+    "title": "LLM-42: Enabling Determinism in LLM Inference with Verified Speculation",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843901",
+    "abstract": "In LLM inference, the same prompt often returns different outputs across different runs. At the system level, this non-determinism arises from floating-point non-associativity interacting with dynamic batching and GPU kernels whose reduction orders vary with batch size. A straightforward way to eliminate nondeterminism is to disable dynamic batching, but doing so severely degrades throughput. Another approach is to make the kernels batch-invariant; however, this tightly couples determinism to kernel design, requires new implementations, and imposes fixed overheads regardless of how much of the workload actually requires determinism.Inspired by self-speculative decoding, we present LLM-42 — a scheduling-based approach to enable determinism in LLM inference. Our key observation is that a given sequence of tokens is likely to emit the same next token across multiple runs, even with dynamic batching. Moreover, most GPU kernels use the same reduction schedules for all inputs of a given shape. Leveraging these insights, LLM-42 decodes tokens using a nondeterministic fast path and enforces determinism through a verify-rollback protocol. The verifier replays fast path tokens under a fixed batch size to obtain a deterministic reference output, commits tokens that match the reference, and rolls back those that do not. LLM-42 reuses many existing kernels unchanged and incurs overhead only proportional to the fraction of traffic that requires determinism.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14984,
+    "year": 2026,
+    "title": "Ahead-of-Time Analysis of Shell Program Effects",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843861",
+    "abstract": "The Unix shell remains a core system substrate across system administration, automation, and software development. Shell programs, however, are prone to subtle, severe, and often irreversible effects that are difficult to predict. The challenge stems from the shell's unique execution model, its reliance on external computation and state, its highly dynamic expansion semantics, and the complex interactions among these features. This paper presents SaSh, a system that statically analyzes shell programs to identify errors in their execution before they occur. SaSh introduces an optimistic symbolic execution engine for shell programs that limits path explosion and focuses on high-impact failures. It tracks the effects of external commands over a filesystem model, and approximates shell word expansion using a tailored abstract domain. SaSh quickly identifies bugs even in large programs with a risk-directed exploration strategy, steering its analysis to program fragments likely to exhibit dangerous behavior. Applied to 61 buggy programs, including several high-profile disasters, SaSh identifies all but one instance of unwanted behavior with no false positives, going far beyond the current state-of-the-art. Furthermore, SaSh has already yielded 104 new bug reports in 50 open-source projects such as PyTorch, the P4 compiler, Kubernetes, and vLLM, including bugs that can lead to irreversible data loss.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14985,
+    "year": 2026,
+    "title": "Testing Custom Control Planes Without the Cluster",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843898",
+    "abstract": "Modern cloud infrastructure is increasingly managed by software. On platforms like Kubernetes, the control plane maintains desired system state through controllers: software components that continuously monitor cluster resources and reconcile them toward a declared specification. This pattern has proven effective, and a thriving ecosystem of projects now compose controllers into custom control planes (CCPs) to automate tasks such as managing application delivery, scaling infrastructure dynamically, and composing cloud provider APIs into higher-level abstractions. The correctness of a CCP, however, depends on how its constituent controllers interact at run time. Bugs arise from implicit assumptions about these interactions that do not hold under all possible executions. As such, finding them requires enumerating the space of possible executions and searching it systematically, which is infeasible in a live cluster environment. In this paper, we present Kamera, a system for testing CCPs that uses partial simulation to execute the code of multiple interacting controllers against a lightweight model of the Kubernetes runtime. Thus far, Kamera has found 31 new bugs in five popular CCP projects and achieves a 1,781{\\texttimes} speedup over existing cluster-based controller testing approaches.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14986,
+    "year": 2026,
+    "title": "On-site, Non-speculative Failure Diagnosis with CLODS",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843912",
+    "abstract": "Diagnosing complex production failures is a notoriously difficult task. The bottleneck of diagnosing these failures is often wild goose chases: developers make incorrect hypotheses about the root cause, leading to time and effort spent in verifying these hypotheses, ultimately realizing they were wrong. This is caused by speculations not backed by sufficient evidence because there is insufficient diagnostic data.We present CLODS, a closed-loop on-site diagnostic tool that can diagnose production failures without going into any wild goose chases. CLODS has a feedback loop of static analysis and logging placement that runs completely on-site giving it the advantages of: 1) Real-time diagnosis 2) Preserving the failure environment and input 3) Eliminating log aggregation costs. CLODS is evaluated on both large-scale distributed systems like YARN, Cassandra, Hadoop HDFS and the Android ecosystem on Element bugs.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14987,
+    "year": 2026,
+    "title": "State-Aware Fuzzing of JavaScript Engines with LLM-Guided Instrumentation",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843900",
+    "abstract": "The security of the modern web depends on the correctness of JavaScript (JS) engines, yet these complex systems remain vulnerable to high-impact bugs. A critical limitation of state-of-the-art fuzzers is the coverage plateau: once a fuzzer saturates the control-flow graph, edge coverage loses its ability to guide discovery. Because complex engine behaviors, such as JIT optimization tiers and hidden class transitions, often share identical edge coverage, standard coverage metrics are blind to the distinct internal states required to trigger deep errors. To bridge this gap, we present StateLens, a framework that employs Large Language Models (LLM) to automate the discovery of deep internal states. Blindly placing instrumentation probes at all states is infeasible due to the vast state space and the high runtime overhead. State-Lens introduces a novel agent-based reasoning pipeline that emulates the intuition of a security researcher. By iteratively traversing code and developer comments, our agents intelligently select high-value instrumentation targets, effectively separating logic-driving states from irrelevant data. This results in synthesizable, high-signal feedback probes that map the engine's hidden configurations. This instrumentation feeds a dual-feedback mechanism, effectively guiding the fuzzer toward unexplored engine semantics. Our evaluation confirms that StateLens significantly outperforms state-of-the-art fuzzers and uncovers 68 new bugs.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14988,
+    "year": 2026,
+    "title": "Tamias: Feedback-Guided Systematic Concurrency Exploration for Transparent Distributed System Fuzzing",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843891",
+    "abstract": "Existing distributed system fuzzers are limited by coarsegrained, nondeterministic event control and weak support for systematic schedule mutation. They rely on timing perturbations (e.g., injecting delays), which can influence execution but do not precisely realize the fine-grained event orderings that trigger many distributed bugs. In addition, they do not integrate systematic schedule exploration with mutation, making exploration less effective in large search spaces.This paper presents Tamias, the first distributed system testing tool to integrate transparent, feedback-guided input exploration with systematic concurrency exploration. Tamias is built on two insights: effective distributed-system fuzzing requires feedback determinism rather than full execution determinism, and systematic scheduling algorithms can be integrated with feedback-guided mutation through a replay-explore strategy that allows them to benefit from prior executions while jointly exploring the input and schedule spaces. Guided by these insights, Tamias combines lightweight feedback-deterministic transparent event control with feedback-guided input and concurrency exploration, enabling effective distributed system testing.We evaluate Tamias on six widely used distributed systems implemented in C/C++ and Go, without requiring source-code modifications. Tamias found 12 new bugs across mature releases. Our ablation study shows that replay-explore mutation improves branch coverage by up to 22\\% and also improves bug-finding effectiveness. Tamias improves branch coverage over the state of the art and achieves feedback determinism for branch coverage on all evaluated target systems.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14989,
+    "year": 2026,
+    "title": "Validating Rust Compilers with Trait-Type Constraint Graph",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843907",
+    "abstract": "Rust is increasingly adopted in safety-critical systems software, making the reliability of its compiler particularly important. Defects in the Rust compiler can lead to incorrect compiler behavior and compromise the reliability of the compilation process. Systematic validation of the compiler is therefore imperative. Through an empirical analysis of real-world Rust compiler bugs, we find that the trait mechanism remains a primary source of hard-to-detect compiler bugs that existing validation tools consistently miss. To address this, we propose a validation methodology based on a novel concept of Trait-Type Constraint Graph (TTCG), a graph that captures semantic relationships between traits and types and enables the derivation of the Trait Constraint Space (TCS) for systematic exploration. Guided by TTCG, our tool TraitFuzzer first leverages large language models to rewrite seed programs into trait-dense forms, and then applies TTCG-guided mutations to drive the compiler toward under-tested trait-solving logic and cross-feature interactions. In total, TraitFuzzer has discovered 51 bugs, 45 of which have already been confirmed. Further analysis reveals that 41 bugs can only be triggered with trait structures. More importantly, none of these bugs can be detected by the baseline approaches. Our tool, together with the reported bugs, has also received positive feedback from the community.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14990,
+    "year": 2026,
+    "title": "Efficient GPU Multitasking with Morphable Kernels",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843904",
+    "abstract": "GPU multitasking offers a promising approach to improving hardware utilization by co-locating concurrent workloads on the same device. However, achieving high resource utilization with minimized interference requires fine-grained, adaptive scheduling. Existing scheduling solutions are fundamentally constrained by a rigid assumption: once a kernel is launched, its resource footprint remains fixed throughout its execution. Consequently, they either rely on static resource pre-partitioning, which lacks the flexibility to adapt to rapid workload changes, or adopt kernel-slicing techniques, which achieve fine-grained control at the cost of prohibitive kernel launch overheads.In this paper, we break this constraint by introducing morphable kernels, a new software abstraction that allows a kernel to dynamically yield or reclaim compute resources on the fly without additional launches. Building on this abstraction, we design MorphX, a GPU multitasking system that embraces the runtime adjustability of kernels as the first principle. MorphX transparently transforms traditional kernels into morphable ones at compile time, and leverages an in-place profiling mechanism to orchestrate fine-grained scheduling based on real-time resource contention. Evaluation under various scenarios shows that MorphX can improve background task throughput by 2.24x under the same foreground task latency, compared to existing systems.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14991,
+    "year": 2026,
+    "title": "Ave: Guiding Agentic GPU Optimization Using Data-Flow Invariants",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843902",
+    "abstract": "LLM coding agents can generate correct GPU kernels, yet their performance still lags behind expert libraries. Achieving peak GPU throughput requires coordinating low-level transformations such as shared-memory staging, software pipelining, and instruction scheduling. Unit tests and performance profiles provide only sparse end-to-end feedback, leaving agents unable to localize violations of the global constraints that these transformations must preserve.We present Ave, an agentic framework that uses data-flow invariants as compile-time guardrails for kernel optimization. These invariants specify relationships among data values that must hold throughout execution. Ave's tile-based Pythonic DSL exposes hardware instructions and compiler policies while abstracting complex memory layout encodings as tiles. Tag functions assign symbolic labels derived from selected logical coordinates and expressions. The compiler propagates these labels through data and control flow, and tag assertions enforce required relationships among them at use sites. The compiler checks these assertions with a tractable, flow-sensitive, path-insensitive analysis backed by an SMT solver, returning concrete assignments that witness abstract violations and guide repairs with no runtime overhead. An in-context reinforcement learning (ICRL) planner proposes optimizations from a curated knowledge base. A lowering agent implements them and instantiates their invariants.We evaluate Ave on AMD MI300X across GEMM, flash attention, and MoE, which together account for up to 90\\% of GPU time in LLM inference. With GPT-5.6 Sol, its optimized kernels achieve 89-99\\% of the effective throughput of state-of-the-art hand-optimized libraries and improve geometric-mean throughput by 1.62-1176{\\texttimes} over uncontaminated agentic baselines. On 200 KernelBench tasks, with GPT-5.6 Sol and in-context DSL examples, Ave produces valid kernels within three attempts for 100\\% of Level 1 and 88\\% of Level 2 problems. Ave is open source at https://github.com/causalflowai/avelang.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14992,
+    "year": 2026,
+    "title": "Taming Dynamism on GPUs: Cross-SM Kernel Fusion via SM Cooperation and Just-in-Time Reduction",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843857",
+    "abstract": "Modern LLM architectures and systems render GPU kernel input shapes increasingly dynamic, e.g., conditional expert routing in MoE and batches with variable-length sequences. This dynamism degrades performance in both expert-tuned kernels and compiler frameworks. We identify the root cause as dynamic cross-SM data dependencies across execution phases, which force distinct phases into separate kernels for correctness. The resulting kernel boundaries amplify intra-phase workload imbalance across SMs, and compel intermediate states to expensive round trips through off-chip memory.We propose cross-SM kernel fusion, which pushes kernel fusion boundary from traditional intra-SM scope to the entire GPU. Instead of enforcing dependencies via kernel boundaries, it utilizes dynamic SM cooperation and just-in-time reduction. We present MeldKernel (Meld for short), a compiler framework realizing cross-SM fusion for dynamic workloads. First, utilizing GPU on-chip interconnects, Meld enables finegrained SM cooperation, which decomposes coarse-grained, phase-level dependencies into sub-task-level ones, transforming sequential kernels into a fluid, cross-SM pipeline. This further enables just-in-time reduction, facilitating waiting-free and localized state reduction via asynchronous communication. Second, to handle workload dynamism, we propose a decoupled execution model. Developers declaratively define computation logic, while the hardware mapping and inter-SM cooperation are deferred to runtime and adapted to input shapes. Meld accelerates critical workloads like decoding attention by 1.3{\\texttimes} on average over the best solutions. Meld shifts GPU execution from a BSP-centric model toward fine-grained, dataflow-driven execution.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14993,
+    "year": 2026,
+    "title": "M2K: Making the Model-Kernel Interface Explicit for Reliable CUDA Kernel Verification",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843908",
+    "abstract": "Large language model (LLM) inference systems rely on CUDA kernels for core GPU computations, yet the interface between models and kernels is implicit and poorly specified. Models and kernels evolve independently and often make incompatible assumptions about tensor shapes and input sizes, leading to subtle memory bugs in CUDA kernels. These bugs can crash inference services, corrupt model weights, or be exploited by remote adversaries. Existing techniques either incur prohibitive runtime overhead, require specialized hardware, or fail to handle dynamic tensor shapes and variable kernel launch configurations, leaving the CUDA memory bugs largely unaddressed.This paper presents M2K, a fully automated framework that makes the model-kernel interface explicit and leverages it to detect memory bugs in CUDA kernels used in LLM inference systems. M2K consists of two components. HFProbe traces model execution without GPU hardware, classifies kernel arguments into model-fixed and user-variable, and emits symbolic constraints that capture the interface. cuK-LEE then performs symbolic execution on CUDA kernels to pinpoint memory bugs under the interface constraints, modeling tensors as disjoint memory regions and treating thread identifiers symbolically to scale to thousands of threads. In the evaluation, M2K discovers 181 previously unknown bugs in real LLM inference systems, while producing only nine false positives, demonstrating its effectiveness.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14994,
+    "year": 2026,
+    "title": "Wavel: A Fast and Efficient Compilation System for Wafer-Scale Accelerators",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843884",
+    "abstract": "Wafer-scale accelerators offer a new scaling point for AI infrastructure, but they also create a new compilation regime: communication cost varies sharply with location, and the space of possible placements and execution schedules is enormous. Existing GPU, distributed, and vendor compilation systems largely retain a sharding-oriented view and therefore fail to fully leverage these emerging accelerators, leaving the dominant physical scheduling decisions unresolved.We make a key observation: at wafer scale, the central complexity of compilation shifts from finding a logical shard plan to constructing an executable schedule that fixes placement, layout alignment, and execution ordering. Based on this observation, we present Wavel, a fast and efficient compilation system for wafer-scale accelerators. Wavel introduces MeshIR to make executable schedules explicit, constructs them through two legal locality-preserving primitives, CUT and TUNE, and uses physical cost evaluation with structured pruning to keep search practical. On WSE-3 hardware, Wavel delivers 1.31{\\texttimes}-1.35{\\texttimes} higher mean per-setting throughput than the expert-optimized WaferLLM and up to 1.85{\\texttimes} speedup over the Full-Chip baseline on dense models; calibrated cost-model results predict a 2.97{\\texttimes} speedup on MoE workloads over the same baseline.",
+    "status": "notchecked"
+  },
+  {
+    "id": 14995,
+    "year": 2026,
+    "title": "MeshRT: Compile-Time Governed Wafer-Scale Runtime for Low-Latency High-Throughput Inference",
+    "category": "system",
+    "publication": "SOSP",
+    "paper": "https://doi.org/10.1145/3830418.3843856",
+    "abstract": "Wafer-scale accelerators promise ultra-low-latency AI inference, but current system stacks still carry an unsustainably high cost premium. The reason is that many current and emerging inference techniques, such as batching and MoE, introduce runtime dynamism that existing wafer-scale systems cannot support efficiently. As a result, they must choose between two unsatisfactory options: accept suboptimal latency, or preserve low latency by restricting dynamic techniques, thereby limiting the models they can support and reducing aggregate throughput. This tradeoff significantly increases the cost of low-latency serving.We present MeshRT, the first wafer-scale system to achieve both ultra-low latency and high throughput for LLM inference. MeshRT achieves this via a novel system architecture, which we call compile-time governance of runtime dynamism. This architecture features new system abstractions and mechanisms that enable MeshRT to compile dynamic events arising from LLM inference directly into per-core schedules, enabling asynchronous and decentralized execution with low runtime overhead. Implemented on a commodity wafer-scale accelerator, MeshRT preserves ultra-low latency while improving throughput by up to 56{\\texttimes} over the state-of-the-art system for wafer-scale accelerators. Against measured single-instance SGLang results on H200, MeshRT achieves 4.5-7.0{\\texttimes} lower latency. Under ideal linear scaling of those GPU measurements to an area-normalized H200 cluster, MeshRT achieves 1.6-12.1{\\texttimes} higher decode energy efficiency in the low-latency regime.",
+    "status": "notchecked"
+  }
+]

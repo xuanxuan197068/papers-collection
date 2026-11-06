@@ -38,11 +38,12 @@ No `.env` is needed for this fork's flows (`--llm-analyze` and `--zip`/`--unzip`
 - Stage 1 groups atoms by type/name/target/action and counts distinct papers as the primary unit; Stage 2 reconstructs the ordered atom chain for the method card. The quality gate requires 100% row coverage, identity agreement, and schema validity, with separate v2 coverage and empty/partial/other audits.
 - `radar/maps/` — direction maps (Stage 1, two-part: neutral + lens-combined). `radar/cards/` — method cards (Stage 2). `radar/state/` — read/pick status + missing-abstracts log.
 
-Extra information never goes into `src/assets/data/` files — those keep the upstream schema.
+Extra information never goes into `src/assets/data/` files — those keep the upstream schema. (Sole deliberate exception: the fork's `main.py` writes an additive-optional `generated_at` timestamp into `data-statistics.json`; the Dashboard falls back to `—` when the field is absent, so upstream-regenerated data stays compatible.)
 
 ### Frontend notes (fork)
 
 - **Method Index page** (`/paper/method-index`, `src/views/paper/MethodIndex.vue`) browses `radar/index/` files with search + lens filter; shows a "not generated yet" prompt when a venue-year has no index.
+- **Daily Random page** (`/paper/random`, `src/views/paper/RandomPaper.vue`) draws a date-seeded weighted sample (Efraimidis–Spirakis over cyrb53 hashes; pure helpers in `src/composables/useDailySample.js`) from the last N years of `data.json`, then enriches drawn cards with meta_json abstracts + radar/index atoms — joined on the normalized-title key, **never** on radar `id` (stale snapshot). The read ledger lives in IndexedDB (`readPapers` key, same shape as `radar/state/read_status.json` entries; export-only, the browser never writes that file). Sampling knobs (`randomSampleCount/YearsBack/ExcludeRead/CategoryWeights/KeywordBoost`) live in Settings.
 - Venue→category grouping in `ViewAbstract.vue` / `MethodIndex.vue` and the `Trends.vue` category labels are **data-driven** (from `data-statistics.json` overview) with fallbacks, so adding a new venue/category (e.g. `ai-ml`, `journal`) doesn't break the menu or charts; `main.py`'s trend palette cycles, so a category may hold >6 venues.
 - **Journals** use `category: journal` (grouped under "安全期刊" / "Security Journals"). DBLP indexes journals by volume not year, so each journal site needs a per-year `dblp_toc` override (e.g. TIFS: `journals/tifs/tifs21` = vol 21 = 2026). The fetcher already parses both `<inproceedings>` (confs) and `<article>` (journals). UI wording on shared pages is venue-neutral ("会议/期刊").
 - Prod data URLs (`ViewAbstract.vue`, `Search.vue`) point at this fork's raw GitHub, not upstream.

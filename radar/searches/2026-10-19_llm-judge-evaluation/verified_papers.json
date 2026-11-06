@@ -1,0 +1,136 @@
+{
+  "reviewed_on": "2026-10-19",
+  "scope": "selected examples; not exhaustive",
+  "papers": [
+    {
+      "id": 9794,
+      "title": "Source Code Summarization in the Era of Large Language Models",
+      "publication": "ICSE",
+      "year": 2025,
+      "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11029737",
+      "source_file": "ICSE - 2025.json",
+      "group": "experimental_judge",
+      "reviewed_full_text": "https://arxiv.org/html/2407.07959"
+    },
+    {
+      "id": 9776,
+      "title": "An Exploratory Study of ML Sketches and Visual Code Assistants",
+      "publication": "ICSE",
+      "year": 2025,
+      "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11029898",
+      "source_file": "ICSE - 2025.json",
+      "group": "experimental_judge",
+      "reviewed_full_text": "https://arxiv.org/html/2412.13386"
+    },
+    {
+      "id": 4408,
+      "title": "SoK: Data Reconstruction Attacks Against Machine Learning Models: Definition, Metrics, and Benchmark",
+      "publication": "USENIX Sec",
+      "year": 2025,
+      "paper": "https://www.usenix.org/conference/usenixsecurity25/presentation/wen",
+      "source_file": "USENIX Sec - 2025.json",
+      "group": "experimental_judge",
+      "reviewed_full_text": "https://www.usenix.org/system/files/usenixsecurity25-wen.pdf"
+    },
+    {
+      "id": 4245,
+      "title": "Great, Now Write an Article About That: The Crescendo Multi-Turn LLM Jailbreak Attack",
+      "publication": "USENIX Sec",
+      "year": 2025,
+      "paper": "https://www.usenix.org/conference/usenixsecurity25/presentation/russinovich",
+      "source_file": "USENIX Sec - 2025.json",
+      "group": "experimental_judge",
+      "reviewed_full_text": "https://www.usenix.org/system/files/usenixsecurity25-russinovich.pdf"
+    },
+    {
+      "id": 4244,
+      "title": "PAPILLON: Efficient and Stealthy Fuzz Testing-Powered Jailbreaks for LLMs",
+      "publication": "USENIX Sec",
+      "year": 2025,
+      "paper": "https://www.usenix.org/conference/usenixsecurity25/presentation/gong-xueluan",
+      "source_file": "USENIX Sec - 2025.json",
+      "group": "experimental_judge",
+      "reviewed_full_text": "https://www.usenix.org/system/files/usenixsecurity25-gong-xueluan.pdf"
+    },
+    {
+      "id": 4246,
+      "title": "SelfDefend: LLMs Can Defend Themselves against Jailbreaking in a Practical Manner",
+      "publication": "USENIX Sec",
+      "year": 2025,
+      "paper": "https://www.usenix.org/conference/usenixsecurity25/presentation/wang-xunguang",
+      "source_file": "USENIX Sec - 2025.json",
+      "group": "experimental_judge",
+      "reviewed_full_text": "https://www.usenix.org/system/files/usenixsecurity25-wang-xunguang.pdf"
+    },
+    {
+      "id": 4136,
+      "title": "Refusal Is Not an Option: Unlearning Safety Alignment of Large Language Models",
+      "publication": "USENIX Sec",
+      "year": 2025,
+      "paper": "https://www.usenix.org/conference/usenixsecurity25/presentation/song-minkyoo",
+      "source_file": "USENIX Sec - 2025.json",
+      "group": "experimental_judge",
+      "reviewed_full_text": "https://www.usenix.org/system/files/usenixsecurity25-song-minkyoo.pdf"
+    },
+    {
+      "id": 4241,
+      "title": "TwinBreak: Jailbreaking LLM Security Alignments based on Twin Prompts",
+      "publication": "USENIX Sec",
+      "year": 2025,
+      "paper": "https://www.usenix.org/conference/usenixsecurity25/presentation/krauss",
+      "source_file": "USENIX Sec - 2025.json",
+      "group": "experimental_judge",
+      "reviewed_full_text": "https://www.usenix.org/system/files/usenixsecurity25-krauss.pdf"
+    },
+    {
+      "id": 11535,
+      "title": "Can LLMs Replace Human Evaluators? An Empirical Study of LLM-as-a-Judge in Software Engineering",
+      "publication": "ISSTA",
+      "year": 2025,
+      "paper": "https://doi.org/10.1145/3728963",
+      "source_file": "ISSTA - 2025.json",
+      "group": "judge_method_research",
+      "reviewed_full_text": "https://arxiv.org/html/2502.06193"
+    },
+    {
+      "id": 8084,
+      "title": "SE-Jury: An LLM-as-Ensemble-Judge Metric for Narrowing the Gap with Human Evaluation in SE",
+      "publication": "ASE",
+      "year": 2025,
+      "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334309",
+      "source_file": "ASE - 2025.json",
+      "group": "judge_method_research",
+      "reviewed_full_text": "https://arxiv.org/html/2505.20854"
+    },
+    {
+      "id": 7891,
+      "title": "Code-DiTing: Automatic Evaluation of Code Generation without References or Test Cases",
+      "publication": "ASE",
+      "year": 2025,
+      "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334693",
+      "source_file": "ASE - 2025.json",
+      "group": "judge_method_research",
+      "reviewed_full_text": "https://arxiv.org/html/2505.19502"
+    },
+    {
+      "id": 11543,
+      "title": "S-Eval: Towards Automated and Comprehensive Safety Evaluation for Large Language Models",
+      "publication": "ISSTA",
+      "year": 2025,
+      "paper": "https://doi.org/10.1145/3728971",
+      "source_file": "ISSTA - 2025.json",
+      "group": "judge_method_research",
+      "reviewed_full_text": "https://arxiv.org/html/2405.14191"
+    },
+    {
+      "id": 366,
+      "title": "GPTracker: A Large-Scale Measurement of Misused GPTs",
+      "publication": "IEEE S&P",
+      "year": 2025,
+      "paper": "https://doi.ieeecomputersociety.org/10.1109/SP61157.2025.00118",
+      "source_file": "IEEE S&P - 2025.json",
+      "group": "adjacent_measurement",
+      "reviewed_full_text": "https://xinyueshen.me/static/papers/SP25-GPTracker.pdf"
+    }
+  ]
+}

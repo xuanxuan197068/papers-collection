@@ -1,0 +1,272 @@
+[
+  {
+    "id": 17990,
+    "year": 2006,
+    "title": "Rethink the sync",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1298455.1298457",
+    "abstract": "We introduce external synchrony, a new model for local file I/O that provides the reliability and simplicity of synchronous I/O, yet also closely approximates the performance of asynchronous I/O. An external observer cannot distinguish the output of a computer with an externally synchronous file system from the output of a computer with a synchronous file system. No application modification is required to use an externally synchronous file system: in fact, application developers can program to the simpler synchronous I/O abstraction and still receive excellent performance. We have implemented an externally synchronous file system for Linux, called xsyncfs. Xsyncfs provides the same durability and ordering guarantees as those provided by a synchronously mounted ext3 file system. Yet, even for I/O-intensive benchmarks, xsyncfs performance is within 7\\% of ext3 mounted asynchronously. Compared to ext3 mounted synchronously, xsyncfs is up to two orders of magnitude faster.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17991,
+    "year": 2006,
+    "title": "Type-safe disks",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1298455.1298458",
+    "abstract": "We present the notion of a type-safe disk (TSD). Unlike a traditional disk system, a TSD is aware of the pointer relationships between disk blocks that are imposed by higher layers such as the file system. A TSD utilizes this knowledge in two key ways. First, it enables active enforcement of invariants on data access based on the pointer relationships, resulting in better security and integrity. Second, it enables semantics-aware optimizations within the disk system. Through case studies, we demonstrate the benefits of TSDs and show that a TSD presents a simple yet effective general interface to build the next generation of storage systems.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17992,
+    "year": 2006,
+    "title": "Stasis: flexible transactional storage",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1298455.1298459",
+    "abstract": "An increasing range of applications requires robust support for atomic, durable and concurrent transactions. Databases provide the default solution, but force applications to interact via SQL and to forfeit control over data layout and access mechanisms. We argue there is a gap between DBMSs and file systems that limits designers of data-oriented applications.Stasis is a storage framework that incorporates ideas from traditional write-ahead logging algorithms and file systems. It provides applications with flexible control over data structures, data layout, robustness, and performance. Stasis enables the development of unforeseen variants on transactional storage by generalizing write-ahead logging algorithms. Our partial implementation of these ideas already provides specialized (and cleaner) semantics to applications.We evaluate the performance of a traditional transactional storage system based on Stasis, and show that it performs favorably relative to existing systems. We present examples that make use of custom access methods, modified buffer manager semantics, direct log file manipulation, and LSN-free pages. These examples facilitate sophisticated performance optimizations such as zero-copy I/O. These extensions are composable, easy to implement and significantly improve performance.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17993,
+    "year": 2006,
+    "title": "SafeDrive: safe and recoverable extensions using language-based techniques",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1298455.1298461",
+    "abstract": "We present SafeDrive, a system for detecting and recovering from type safety violations in software extensions. SafeDrive has low overhead and requires minimal changes to existing source code. To achieve this result, SafeDrive uses a novel type system that provides fine-grained isolation for existing extensions written in C. In addition, SafeDrive tracks invariants using simple wrappers for the host system API and restores them when recovering from a violation. This approach achieves fine-grained memory error detection and recovery with few code changes and at a significantly lower performance cost than existing solutions based on hardware-enforced domains, such as Nooks [33], L4 [21], and Xen [13], or software-enforced domains, such as SFI [35]. The principles used in SafeDrive can be applied to any large system with loadable, error-prone extension modules.In this paper we describe our experience using SafeDrive for protection and recovery of a variety of Linux device drivers. In order to apply SafeDrive to these device drivers, we had to change less than 4\\% of the source code. SafeDrive recovered from all 44 crashes due to injected faults in a network card driver. In experiments with 6 different drivers, we observed increases in kernel CPU utilization of 4--23\\% with no noticeable degradation in end-to-end performance.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17994,
+    "year": 2006,
+    "title": "BrowserShield: vulnerability-driven filtering of dynamic HTML",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1298455.1298462",
+    "abstract": "Vulnerability-driven filtering of network data can offer a fast and easy-to-deploy alternative or intermediary to software patching, as exemplified in Shield [43]. In this paper, we take Shield's vision to a new domain, inspecting and cleansing not just static content, but also dynamic content. The dynamic content we target is the dynamic HTML in web pages, which have become a popular vector for attacks. The key challenge in filtering dynamic HTML is that it is undecidable to statically determine whether an embedded script will exploit the browser at run-time. We avoid this undecidability problem by rewriting web pages and any embedded scripts into safe equivalents, inserting checks so that the filtering is done at run-time. The rewritten pages contain logic for recursively applying run-time checks to dynamically generated or modified web content, based on known vulnerabilities. We have built and evaluated BrowserShield, a system that performs this dynamic instrumentation of embedded scripts, and that admits policies for customized run-time actions like vulnerability-driven filtering.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17995,
+    "year": 2006,
+    "title": "XFI: software guards for system address spaces",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1298455.1298463",
+    "abstract": "XFI is a comprehensive protection system that offers both flexible access control and fundamental integrity guarantees, at any privilege level and even for legacy code in commodity systems. For this purpose, XFI combines static analysis with inline software guards and a two-stack execution model. We have implemented XFI for Windows on the x86 architecture using binary rewriting and a simple, stand-alone verifier; the implementation's correctness depends on the verifier, but not on the rewriter. We have applied XFI to software such as device drivers and multimedia codecs. The resulting modules function safely within both kernel and user-mode address spaces, with only modest enforcement overheads.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17996,
+    "year": 2006,
+    "title": "Operating system profiling via latency analysis",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1298455.1298465",
+    "abstract": "Operating systems are complex and their behavior depends on many factors. Source code, if available, does not directly help one to understand the OS's behavior, as the behavior depends on actual workloads and external inputs. Runtime profiling is a key technique to prove new concepts, debug problems, and optimize performance. Unfortunately, existing profiling methods are lacking in important areas---they do not provide enough information about the OS's behavior, they require OS modification and therefore are not portable, or they incur high overheads thus perturbing the profiled OS.We developed OSprof: a versatile, portable, and efficient OS profiling method based on latency distributions analysis. OSprof automatically selects important profiles for subsequent visual analysis. We have demonstrated that a suitable workload can be used to profile virtually any OS component. OSprof is portable because it can intercept operations and measure OS behavior from user-level or from inside the kernel without requiring source code. OSprof has typical CPU time overheads below 4\\%. In this paper we describe our techniques and demonstrate their usefulness through a series of profiles conducted on Linux, FreeBSD, and Windows, including client/server scenarios. We discovered and investigated a number of interesting interactions, including scheduler behavior, multi-modal I/O distributions, and a previously unknown lock contention, which we fixed.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17997,
+    "year": 2006,
+    "title": "CRAMM: virtual memory support for garbage-collected applications",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1298455.1298466",
+    "abstract": "Existing virtual memory systems usually work well with applications written in C and C++, but they do not provide adequate support for garbage-collected applications. The performance of garbage-collected applications is sensitive to heap size. Larger heaps reduce the frequency of garbage collections, making them run several times faster. However, if the heap is too large to fit in the available RAM, garbage collection can trigger thrashing. Existing Java virtual machines attempt to adapt their application heap sizes to fit in RAM, but suffer performance degradations of up to 94\\% when subjected to bursts of memory pressure.We present CRAMM (Cooperative Robust Automatic Memory Management), a system that solves these problems. CRAMM consists of two parts: (1) a new virtual memory system that collects detailed reference information for (2) an analytical model tailored to the underlying garbage collection algorithm. The CRAMM virtual memory system tracks recent reference behavior with low overhead. The CRAMM heap sizing model uses this information to compute a heap size that maximizes throughput while minimizing paging. We present extensive empirical results demonstrating CRAMM's ability to maintain high performance in the face of changing application and system load.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17998,
+    "year": 2006,
+    "title": "Flight data recorder: monitoring persistent-state interactions to improve systems management",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1298455.1298467",
+    "abstract": "Mismanagement of the persistent state of a system---all the executable files, configuration settings and other data that govern how a system functions---causes reliability problems, security vulnerabilities, and drives up operation costs. Recent research traces persistent state interactions---how state is read, modified, etc.---to help troubleshooting, change management and malware mitigation, but has been limited by the difficulty of collecting, storing, and analyzing the 10s to 100s of millions of daily events that occur on a single machine, much less the 1000s or more machines in many computing environments.We present the Flight Data Recorder (FDR) that enables always-on tracing, storage and analysis of persistent state interactions. FDR uses a domain-specific log format, tailored to observed file system workloads and common systems management queries. Our lossless log format compresses logs to only 0.5--0.9 bytes per interaction. In this log format, 1000 machine-days of logs---over 25 billion events---can be analyzed in less than 30 minutes. We report on our deployment of FDR to 207 production machines at MSN, and show that a single centralized collection machine can potentially scale to collecting and analyzing the complete records of persistent state interactions from 4000+ machines. Furthermore, our tracing technology is shipping as part of the Windows Vista OS.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17999,
+    "year": 2006,
+    "title": "EXPLODE: a lightweight, general system for finding serious storage system errors",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1298455.1298469",
+    "abstract": "Storage systems such as file systems, databases, and RAID systems have a simple, basic contract: you give them data, they do not lose or corrupt it. Often they store the only copy, making its irrevocable loss almost arbitrarily bad. Unfortunately, their code is exceptionally hard to get right, since it must correctly recover from any crash at any program point, no matter how their state was smeared across volatile and persistent memory.This paper describes EXPLODE, a system that makes it easy to systematically check real storage systems for errors. It takes user-written, potentially system-specific checkers and uses them to drive a storage system into tricky corner cases, including crash recovery errors. EXPLODE uses a novel adaptation of ideas from model checking, a comprehensive, heavy-weight formal verification technique, that makes its checking more systematic (and hopefully more effective) than a pure testing approach while being just as lightweight.EXPLODE is effective. It found serious bugs in a broad range of real storage systems (without requiring source code): three version control systems, Berkeley DB, an NFS implementation, ten file systems, a RAID system, and the popular VMware GSX virtual machine. We found bugs in every system we checked, 36 bugs in total, typically with little effort.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18000,
+    "year": 2006,
+    "title": "Securing software by enforcing data-flow integrity",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1298455.1298470",
+    "abstract": "Software attacks often subvert the intended data-flow in a vulnerable program. For example, attackers exploit buffer overflows and format string vulnerabilities to write data to unintended locations. We present a simple technique that prevents these attacks by enforcing data-flow integrity. It computes a data-flow graph using static analysis, and it instruments the program to ensure that the flow of data at runtime is allowed by the data-flow graph. We describe an efficient implementation of data-flow integrity enforcement that uses static analysis to reduce instrumentation overhead. This implementation can be used in practice to detect a broad class of attacks and errors because it can be applied automatically to C and C++ programs without modifications, it does not have false positives, and it has low overhead.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18001,
+    "year": 2006,
+    "title": "From uncertainty to belief: inferring the specification within",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1298455.1298471",
+    "abstract": "Automatic tools for finding software errors require a set of specifications before they can check code: if they do not know what to check, they cannot find bugs. This paper presents a novel framework based on factor graphs for automatically inferring specifications directly from programs. The key strength of the approach is that it can incorporate many disparate sources of evidence, allowing us to squeeze significantly more information from our observations than previously published techniques.We illustrate the strengths of our approach by applying it to the problem of inferring what functions in C programs allocate and release resources. We evaluated its effectiveness on five codebases: SDL, OpenSSH, GIMP, and the OS kernels for Linux and Mac OS X (XNU). For each codebase, starting with zero initially provided annotations, we observed an inferred annotation accuracy of 80--90\\%, with often near perfect accuracy for functions called as little asfive times. Many of the inferred allocator and deallocator functions are functions for which we both lack the implementation and are rarely called---in some cases functions with at most one or two callsites. Finally, with the inferred annotations we quickly found both missing and incorrect properties in a specification used by a commercial static bug-finding tool.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18002,
+    "year": 2006,
+    "title": "HQ replication: a hybrid quorum protocol for byzantine fault tolerance",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1298455.1298473",
+    "abstract": "There are currently two approaches to providing Byzantine-fault-tolerant state machine replication: a replica-based approach, e.g., BFT, that uses communication between replicas to agree on a proposed ordering of requests, and a quorum-based approach, such as Q/U, in which clients contact replicas directly to optimistically execute operations. Both approaches have shortcomings: the quadratic cost of inter-replica communication is un-necessary when there is no contention, and Q/U requires a large number of replicas and performs poorly under contention.We present HQ, a hybrid Byzantine-fault-tolerant state machine replication protocol that overcomes these problems. HQ employs a lightweight quorum-based protocol when there is no contention, but uses BFT to resolve contention when it arises. Furthermore, HQ uses only 3f + 1 replicas to tolerate f faults, providing optimal resilience to node failures.We implemented a prototype of HQ, and we compare its performance to BFT and Q/U analytically and experimentally. Additionally, in this work we use a new implementation of BFT designed to scale as the number of faults increases. Our results show that both HQ and our new implementation of BFT scale as f increases; additionally our hybrid approach of using BFT to handle contention works well.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18003,
+    "year": 2006,
+    "title": "BAR gossip",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1298455.1298474",
+    "abstract": "We present the first peer-to-peer data streaming application that guarantees predictable throughput and low latency in the BAR (Byzantine/Altruistic/Rational) model, in which non-altruistic nodes can behave in ways that are self-serving (rational) or arbitrarily malicious (Byzantine). At the core of our solution is a BAR-tolerant version of gossip, a well-known technique for scalable and reliable data dissemination. BAR Gossip relies on verifiable pseudo-random partner selection to eliminate non-determinism that can be used to game the system while maintaining the robustness and rapid convergence of traditional gossip. A novel fair enough exchange primitive entices cooperation among selfish nodes on short timescales, avoiding the need for long-term node reputations. Our initial experience provides evidence for BAR Gossip's robustness. Our BAR-tolerant streaming application provides over 99\\% convergence for broadcast updates when all clients are selfish but not colluding, and over 95\\% convergence when up to 40\\% of clients collude while the rest follow the protocol. BAR Gossip also performs well when the client population consists of both selfish and Byzantine nodes, achieving over 93\\% convergence even when 20\\% of the nodes are Byzantine.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18004,
+    "year": 2006,
+    "title": "Bigtable: a distributed storage system for structured data",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1298455.1298475",
+    "abstract": "Bigtable is a distributed storage system for managing structured data that is designed to scale to a very large size: petabytes of data across thousands of commodity servers. Many projects at Google store data in Bigtable, including web indexing, Google Earth, and Google Finance. These applications place very different demands on Bigtable, both in terms of data size (from URLs to web pages to satellite imagery) and latency requirements (from backend bulk processing to real-time data serving). Despite these varied demands, Bigtable has successfully provided a flexible, high-performance solution for all of these Google products. In this paper we describe the simple data model provided by Bigtable, which gives clients dynamic control over data layout and format, and we describe the design and implementation of Bigtable.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18005,
+    "year": 2006,
+    "title": "EnsemBlue: integrating distributed storage and consumer electronics",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1298455.1298477",
+    "abstract": "EnsemBlue is a distributed file system for personal multimedia that incorporates both general-purpose computers and consumer electronic devices (CEDs). Ensem-Blue leverages the capabilities of a few general-purpose computers to make CEDs first class clients of the file system. It supports namespace diversity by translating between its distributed namespace and the local namespaces of CEDs. It supports extensibility through persistent queries, a robust event notification mechanism that leverages the underlying cache consistency protocols of the file system. Finally, it allows mobile clients to self-organize and share data through device ensembles. Our results show that these features impose little overhead, yet they enable the integration of emerging platforms such as digital cameras, MP3 players, and DVRs.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18006,
+    "year": 2006,
+    "title": "Persistent personal names for globally connected mobile devices",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1298455.1298478",
+    "abstract": "The Unmanaged Internet Architecture (UIA) provides zero-configuration connectivity among mobile devices through personal names. Users assign personal names through an ad hoc device introduction process requiring no central allocation. Once assigned, names bind securely to the global identities of their target devices independent of network location. Each user manages one namespace, shared among all the user's devices and always available on each device. Users can also name other users to share resources with trusted acquaintances. Devices with naming relationships automatically arrange connectivity when possible, both in ad hoc networks and using global infrastructure when available. A UIA prototype demonstrates these capabilities using optimistic replication for name resolution and group management and a routing algorithm exploiting the user's social network for connectivity.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18007,
+    "year": 2006,
+    "title": "A modular network layer for sensorsets",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1298455.1298479",
+    "abstract": "An overall sensornet architecture would help tame the increasingly complex structure of wireless sensornet software and help foster greater interoperability between different codebases. A previous step in this direction is the Sensornet Protocol (SP), a unifying link-abstraction layer. This paper takes the natural next step by proposing a modular network-layer for sensornets that sits atop SP. This modularity eases implementation of new protocols by increasing code reuse, and enables co-existing protocols to share and reduce code and resources consumed at run-time. We demonstrate how current protocols can be decomposed into this modular structure and show that the costs, in performance and code footprint, are minimal relative to their monolithic counterparts.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18008,
+    "year": 2006,
+    "title": "Making information flow explicit in HiStar",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1298455.1298481",
+    "abstract": "HiStar is a new operating system designed to minimize the amount of code that must be trusted. HiStar provides strict information flow control, which allows users to specify precise data security policies without unduly limiting the structure of applications. HiStar's security features make it possible to implement a Unix-like environment with acceptable performance almost entirely in an untrusted user-level library. The system has no notion of superuser and no fully trusted code other than the kernel. HiStar's features permit several novel applications, including an entirely untrusted login process, separation of data between virtual private networks, and privacy-preserving, untrusted virus scanners.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18009,
+    "year": 2006,
+    "title": "Splitting interfaces: making trust between applications and operating systems configurable",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1298455.1298482",
+    "abstract": "In current commodity systems, applications have no way of limiting their trust in the underlying operating system (OS), leaving them at the complete mercy of an attacker who gains control over the OS. In this work, we describe the design and implementation of Proxos, a system that allows applications to configure their trust in the OS by partitioning the system call interface into trusted and untrusted components. System call routing rules that indicate which system calls are to be handled by the un-trusted commodity OS, and which are to be handled by a trusted private OS, are specified by the application developer. We find that rather than defining a new system call interface, routing system calls of an existing interface allows applications currently targeted towards commodity operating systems to isolate their most sensitive components from the commodity OS with only minor source code modifications.We have built a prototype of our system on top of the Xen Virtual Machine Monitor with Linux as the commodity OS. In practice, we find that the system call routing rules are short and simple -- on the order of 10's of lines of code. In addition, applications in Proxos incur only modest performance overhead, with most of the cost resulting from inter-VM context switches.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18010,
+    "year": 2006,
+    "title": "Connection handoff policies for TCP offload network interfaces",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1298455.1298483",
+    "abstract": "This paper presents three policies for effectively utilizing TCP offload network interfaces that support connection handoff. These policies allow connection handoff to reduce the computation and memory bandwidth requirements for packet processing on the host processor without causing the resource constraints on the network interface to limit overall system performance. First, prioritizing packet processing on the network interface ensures that its TCP processing does not harm performance of the connections on the host operating system. Second, dynamically adapting the number of connections on the network interface to the current load avoids overloading the network interface. Third, the operating system can predict connection lifetimes to select long-lived connections for handoff to better utilize the network interface. The use of the first two policies improves web server throughput by 12--31\\% over the baseline throughput achieved without offload. The third policy helps improve performance when the network interface can only handle a small number of connections at a time. Furthermore, by using a faster offload processor, offloading can improve server throughput by 33--72\\%.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18011,
+    "year": 2006,
+    "title": "Ceph: a scalable, high-performance distributed file system",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1298455.1298485",
+    "abstract": "We have developed Ceph, a distributed file system that provides excellent performance, reliability, and scalability. Ceph maximizes the separation between data and metadata management by replacing allocation tables with a pseudo-random data distribution function (CRUSH) designed for heterogeneous and dynamic clusters of unreliable object storage devices (OSDs). We leverage device intelligence by distributing data replication, failure detection and recovery to semi-autonomous OSDs running a specialized local object file system. A dynamic distributed metadata cluster provides extremely efficient metadata management and seamlessly adapts to a wide range of general purpose and scientific computing file system workloads. Performance measurements under a variety of workloads show that Ceph has excellent I/O performance and scalable metadata management, supporting more than 250,000 metadata operations per second.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18012,
+    "year": 2006,
+    "title": "Distributed directory service in the Farsite file system",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1298455.1298486",
+    "abstract": "We present the design, implementation, and evaluation of a fully distributed directory service for Farsite, a logically centralized file system that is physically implemented on a loosely coupled network of desktop computers. Prior to this work, the Farsite system included distributed mechanisms for file content but centralized mechanisms for file metadata. Our distributed directory service introduces tree-structured file identifiers that support dynamically partitioning metadata at arbitrary granularity, recursive path leases for scalably maintaining name-space consistency, and a protocol for consistently performing operations on files managed by separate machines. It also mitigates metadata hotspots via file-field leases and the new mechanism of disjunctive leases. We experimentally show that Farsite can dynamically partition file-system metadata while maintaining full file-system semantics.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18013,
+    "year": 2006,
+    "title": "The Chubby lock service for loosely-coupled distributed systems",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1298455.1298487",
+    "abstract": "We describe our experiences with the Chubby lock service, which is intended to provide coarse-grained locking as well as reliable (though low-volume) storage for a loosely-coupled distributed system. Chubby provides an interface much like a distributed file system with advisory locks, but the design emphasis is on availability and reliability, as opposed to high performance. Many instances of the service have been used for over a year, with several of them each handling a few tens of thousands of clients concurrently. The paper describes the initial design and expected use, compares it with actual use, and explains how the design had to be modified to accommodate the differences.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18014,
+    "year": 2006,
+    "title": "Experiences building PlanetLab",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1298455.1298489",
+    "abstract": "This paper reports our experiences building PlanetLab over the last four years. It identifies the requirements that shaped PlanetLab, explains the design decisions that resulted from resolving conflicts among these requirements, and reports our experience implementing and supporting the system. Due in large part to the nature of the \"PlanetLab experiment,\" the discussion focuses on synthesis rather than new techniques, balancing system-wide considerations rather than improving performance along a single dimension, and learning from feedback from a live system rather than controlled experiments using synthetic workloads.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18015,
+    "year": 2006,
+    "title": "iPlane: an information plane for distributed services",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1298455.1298490",
+    "abstract": "In this paper, we present the design, implementation, and evaluation of iPlane, a scalable service providing accurate predictions of Internet path performance for emerging overlay services. Unlike the more common black box latency prediction techniques in use today, iPlane adopts a structural approach and predicts end-to-end path performance by composing the performance of measured segments of Internet paths. For the paths we observed, this method allows us to accurately and efficiently predict latency, bandwidth, capacity and loss rates between arbitrary Internet hosts. We demonstrate the feasibility and utility of the iPlane service by applying it to several representative overlay services in use today: content distribution, swarming peer-to-peer filesharing, and voice-over-IP. In each case, using iPlane's predictions leads to improved overlay performance.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18016,
+    "year": 2006,
+    "title": "Fidelity and yield in a volcano monitoring sensor network",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1298455.1298491",
+    "abstract": "We present a science-centric evaluation of a 19-day sensor network deployment at Reventador, an active volcano in Ecuador. Each of the 16 sensors continuously sampled seismic and acoustic data at 100 Hz. Nodes used an event-detection algorithm to trigger on interesting volcanic activity and initiate reliable data transfer to the base station. During the deployment, the network recorded 229 earthquakes, eruptions, and other seismoacoustic events.The science requirements of reliable data collection, accurate event detection, and high timing precision drive sensor networks in new directions for geophysical monitoring. The main contribution of this paper is an evaluation of the sensor network as a scientific instrument, holding it to the standards of existing instrumentation in terms of data fidelity (the quality and accuracy of the recorded signals) and yield (the quantity of the captured data). We describe an approach to time rectification of the acquired signals that can recover accurate timing despite failures of the underlying time synchronization protocol. In addition, we perform a detailed study of the sensor network's data using a direct comparison to a standalone data logger, as well as an investigation of seismic and acoustic wave arrival times across the network.",
+    "status": "notchecked"
+  }
+]

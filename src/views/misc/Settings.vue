@@ -7,7 +7,10 @@ import ToggleSwitch from 'primevue/ToggleSwitch';
 import Divider from 'primevue/divider';
 import Skeleton from 'primevue/skeleton';
 import InputText from 'primevue/inputtext';
+import InputNumber from 'primevue/inputnumber';
+import Slider from 'primevue/slider';
 import Tag from 'primevue/tag';
+import paperStatis from '@/assets/data/data-statistics.json';
 
 import {
     applySettingsToRuntime,
@@ -102,6 +105,36 @@ function removeKeyword(word) {
     const next = (form.value.keywords || []).filter((k) => k !== word);
     form.value = { ...form.value, keywords: next };
 }
+
+// Daily random sampling: category list is data-driven from the statistics
+// overview so a new venue category automatically gets a weight slider.
+const CATEGORY_LABEL_KEYS = {
+    'top-tier': 'abstract.topTier',
+    'software-engineering': 'abstract.softwareEngineering',
+    system: 'abstract.system',
+    'ai-ml': 'abstract.aiMl',
+    journal: 'abstract.journal'
+};
+const categoryLabel = (category) => (CATEGORY_LABEL_KEYS[category] ? t(CATEGORY_LABEL_KEYS[category]) : category);
+const weightCategories = computed(() => {
+    const seen = [];
+    (paperStatis.overview || []).forEach((entry) => {
+        if (entry.category && !seen.includes(entry.category)) seen.push(entry.category);
+    });
+    return seen;
+});
+
+function categoryWeight(category) {
+    const value = Number(form.value.randomCategoryWeights?.[category]);
+    return Number.isFinite(value) ? value : 1;
+}
+
+function setCategoryWeight(category, value) {
+    form.value = {
+        ...form.value,
+        randomCategoryWeights: { ...(form.value.randomCategoryWeights || {}), [category]: value }
+    };
+}
 </script>
 
 <template>
@@ -188,6 +221,60 @@ function removeKeyword(word) {
                             icon="pi pi-times"
                             @click="removeKeyword(word)"
                         />
+                    </div>
+                </div>
+
+                <Divider />
+
+                <div>
+                    <p class="text-sm font-semibold mb-1">{{ t('settings.form.randomSection.label') }}</p>
+                    <p class="text-muted-color text-sm m-0">{{ t('settings.form.randomSection.desc') }}</p>
+                </div>
+
+                <div class="flex items-start justify-between gap-3 flex-wrap">
+                    <div>
+                        <p class="text-sm font-medium mb-1">{{ t('settings.form.randomSampleCount.label') }}</p>
+                        <p class="text-muted-color text-sm m-0">{{ t('settings.form.randomSampleCount.desc') }}</p>
+                    </div>
+                    <InputNumber v-model="form.randomSampleCount" :min="1" :max="20" show-buttons :input-style="{ width: '4.5rem' }" />
+                </div>
+
+                <div class="flex items-start justify-between gap-3 flex-wrap">
+                    <div>
+                        <p class="text-sm font-medium mb-1">{{ t('settings.form.randomYearsBack.label') }}</p>
+                        <p class="text-muted-color text-sm m-0">{{ t('settings.form.randomYearsBack.desc') }}</p>
+                    </div>
+                    <InputNumber v-model="form.randomYearsBack" :min="1" :max="10" show-buttons :input-style="{ width: '4.5rem' }" />
+                </div>
+
+                <div class="flex items-start justify-between gap-3 flex-wrap">
+                    <div>
+                        <p class="text-sm font-medium mb-1">{{ t('settings.form.randomExcludeRead.label') }}</p>
+                        <p class="text-muted-color text-sm m-0">{{ t('settings.form.randomExcludeRead.desc') }}</p>
+                    </div>
+                    <ToggleSwitch v-model="form.randomExcludeRead" />
+                </div>
+
+                <div class="flex items-start justify-between gap-3 flex-wrap">
+                    <div>
+                        <p class="text-sm font-medium mb-1">{{ t('settings.form.randomKeywordBoost.label') }}</p>
+                        <p class="text-muted-color text-sm m-0">{{ t('settings.form.randomKeywordBoost.desc') }}</p>
+                    </div>
+                    <div class="flex items-center gap-3 w-56">
+                        <Slider v-model="form.randomKeywordBoost" :min="1" :max="3" :step="0.1" class="flex-1" />
+                        <span class="text-sm w-10 text-right">{{ Number(form.randomKeywordBoost || 1.5).toFixed(1) }}×</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <div>
+                        <p class="text-sm font-medium mb-1">{{ t('settings.form.randomCategoryWeights.label') }}</p>
+                        <p class="text-muted-color text-sm m-0">{{ t('settings.form.randomCategoryWeights.desc') }}</p>
+                    </div>
+                    <div v-for="cat in weightCategories" :key="cat" class="flex items-center gap-3">
+                        <span class="text-sm w-28 shrink-0">{{ categoryLabel(cat) }}</span>
+                        <Slider :model-value="categoryWeight(cat)" :min="0.5" :max="3" :step="0.1" class="flex-1 max-w-72" @update:model-value="setCategoryWeight(cat, $event)" />
+                        <span class="text-sm w-10 text-right">{{ categoryWeight(cat).toFixed(1) }}×</span>
                     </div>
                 </div>
             </div>

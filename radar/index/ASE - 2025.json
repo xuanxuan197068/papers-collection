@@ -1,7 +1,7 @@
 [
   {
     "key": "alertguardianintelligentalertlifecyclemanagementforlargescalecloudsystems",
-    "id": 7744,
+    "id": 8076,
     "title": "AlertGuardian: Intelligent Alert Life-Cycle Management for Large-scale Cloud Systems",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334669",
     "method": "以图模型、RAG 大模型和多智能体反馈串联告警去噪、摘要与规则优化。",
@@ -44,7 +44,7 @@
   },
   {
     "key": "argusresilienceorientedsafetyassuranceframeworkforendtoendadss",
-    "id": 7745,
+    "id": 8077,
     "title": "Argus: Resilience-Oriented Safety Assurance Framework for End-to-End ADSs",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334287",
     "method": "运行时持续监测端到端自动驾驶轨迹，并在危险时由缓解器接管。",
@@ -78,7 +78,7 @@
   },
   {
     "key": "vulr2areasoningllmforautomatedvulnerabilityrepair",
-    "id": 7746,
+    "id": 8078,
     "title": "Vul-R2: A Reasoning LLM for Automated Vulnerability Repair",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334337",
     "method": "构造并筛选漏洞推理数据监督微调，再用课程式可验证奖励强化训练修复模型。",
@@ -112,7 +112,7 @@
   },
   {
     "key": "mimicintegratingdiversepersonalitytraitsforbettergametestingusinglargelanguagemodel",
-    "id": 7747,
+    "id": 8079,
     "title": "MIMIC: Integrating Diverse Personality Traits for Better Game Testing Using Large Language Model",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334487",
     "method": "把多样人格特征注入大模型游戏代理，使同一情境产生不同游玩策略。",
@@ -135,7 +135,7 @@
   },
   {
     "key": "learningfromthepastrealworldexploitmigrationforsmartcontractpocgeneration",
-    "id": 7748,
+    "id": 8080,
     "title": "Learning from the Past: Real-World Exploit Migration for Smart Contract PoC Generation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334698",
     "method": "从历史真实PoC抽象攻击模板，按克隆与属性可行性适配新合约并在仿真环境验证。",
@@ -179,7 +179,7 @@
   },
   {
     "key": "propagationbasedvulnerabilityimpactassessmentforsoftwaresupplychains",
-    "id": 7749,
+    "id": 8081,
     "title": "Propagation-Based Vulnerability Impact Assessment for Software Supply Chains",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334530",
     "method": "在生态系统调用图上分层工作列表传播漏洞，并用VPSS量化动态影响。",
@@ -211,7 +211,7 @@
   },
   {
     "key": "debundetectingbundledjavascriptlibrariesonwebusingpropertyordergraphs",
-    "id": 7750,
+    "id": 8082,
     "title": "Debun: Detecting Bundled JavaScript Libraries on Web using Property-Order Graphs",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334587",
     "method": "提取函数内属性操作名称与执行顺序构成指纹图，识别打包后的库及版本。",
@@ -234,7 +234,7 @@
   },
   {
     "key": "whenallclosefailsroundofferrorestimationfordeeplearningprograms",
-    "id": 7751,
+    "id": 8083,
     "title": "When AllClose Fails: Round-Off Error Estimation for Deep Learning Programs",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334424",
     "method": "组合动态区间算术与舍入误差分析，估计等价深度学习实现的最大输出误差。",
@@ -257,7 +257,7 @@
   },
   {
     "key": "faultseekerllmempoweredframeworkforblockchaintransactionfaultlocalization",
-    "id": 7752,
+    "id": 8084,
     "title": "Faultseeker: LLM-Empowered Framework for Blockchain Transaction Fault Localization",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334320",
     "method": "先做交易级取证缩小范围，再由编排器协调专长代理持续定位多合约故障。",
@@ -291,7 +291,7 @@
   },
   {
     "key": "satelightasatelliteapplicationupdateframeworkforsatellitecomputing",
-    "id": 7753,
+    "id": 8085,
     "title": "SateLight: A Satellite Application Update Framework for Satellite Computing",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334499",
     "method": "以容器封装卫星应用，结合内容感知差分、细粒度重构和分层容错恢复。",
@@ -332,7 +332,7 @@
   },
   {
     "key": "diagnosingperformancedifferencesinmodelcheckersviaruntimeguidedproblemgeneration",
-    "id": 7754,
+    "id": 8086,
     "title": "Diagnosing Performance Differences in Model Checkers via Runtime-Guided Problem Generation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334686",
     "method": "以目标检查器运行时反馈进化小型硬件模型检查问题，再跨同类算法检查器暴露性能差异。",
@@ -364,7 +364,7 @@
   },
   {
     "key": "longcodezipcompresslongcontextforcodelanguagemodels",
-    "id": 7755,
+    "id": 8087,
     "title": "LongCodeZip: Compress Long Context for Code Language Models",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334583",
     "method": "先按指令条件困惑度筛选函数，再按块困惑度和自适应预算细化压缩代码上下文。",
@@ -405,7 +405,7 @@
   },
   {
     "key": "codeditingautomaticevaluationofcodegenerationwithoutreferencesortestcases",
-    "id": 7756,
+    "id": 8088,
     "title": "Code-DiTing: Automatic Evaluation of Code Generation without References or Test Cases",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334693",
     "method": "把大推理模型的判断过程蒸馏到小型代码评估模型，并以多数投票推断。",
@@ -437,7 +437,7 @@
   },
   {
     "key": "anempiricalstudyofknowledgetransferinaipairprogramming",
-    "id": 7757,
+    "id": 8089,
     "title": "An Empirical Study of Knowledge Transfer in AI Pair Programming",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334486",
     "method": "对比人—人结对与人—Copilot完成同一任务时的知识转移事件。",
@@ -460,7 +460,7 @@
   },
   {
     "key": "wiredforreuseautomatingcontextawarecodeadaptationinidesviallmbasedagent",
-    "id": 7758,
+    "id": 8090,
     "title": "Wired for Reuse: Automating Context-Aware Code Adaptation in IDEs via LLM-Based Agent",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334399",
     "method": "把代码接线建模为RAG填空，由大模型代理检索局部上下文并替换未解析变量。",
@@ -492,7 +492,7 @@
   },
   {
     "key": "myproductivityisboostedbutdemystifyingusersperceptiononaicodingassistants",
-    "id": 7759,
+    "id": 8091,
     "title": "\"My productivity is boosted, but …\" Demystifying Users’ Perception on AI Coding Assistants",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334533",
     "method": "收集VS Code市场真实评论，人工标注用户态度并归纳编码助手关注点。",
@@ -515,7 +515,7 @@
   },
   {
     "key": "findingbugsinwebassemblyinterfacetypebindinggenerators",
-    "id": 7760,
+    "id": 8092,
     "title": "Finding Bugs in WebAssembly Interface Type Binding Generators",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334429",
     "method": "用不同语言的WIT绑定生成器产生等价组件，随机差分比较其运行行为。",
@@ -538,7 +538,7 @@
   },
   {
     "key": "r3benchreproduciblerealworldreverseengineeringdatasetforsymbolrecovery",
-    "id": 7761,
+    "id": 8093,
     "title": "R3-Bench: Reproducible Real-world Reverse Engineering Dataset for Symbol Recovery",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334366",
     "method": "用AST-Align跨架构、跨语言对齐源码与二进制表达式，构建可复现符号恢复数据集。",
@@ -570,7 +570,7 @@
   },
   {
     "key": "reliaacceleratingtheanalysisofcloudaccesscontrolpolicies",
-    "id": 7762,
+    "id": 8094,
     "title": "Relia: Accelerating the Analysis of Cloud Access Control Policies",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334240",
     "method": "预计算正则字符串等价类并编码为整数，把策略正则约束重写为等价整数约束。",
@@ -602,7 +602,7 @@
   },
   {
     "key": "interaction2codebenchmarkingmllmbasedinteractivewebpagecodegenerationfrominteractiveprototyping",
-    "id": 7763,
+    "id": 8095,
     "title": "Interaction2Code: Benchmarking MLLM-based Interactive Webpage Code Generation from Interactive Prototyping",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334714",
     "method": "构建包含交互原型的网页生成基准，并用自动指标和人工评估诊断、缓解多模态模型失败。",
@@ -634,7 +634,7 @@
   },
   {
     "key": "defects4cbenchmarkinglargelanguagemodelrepaircapabilitywithccbugs",
-    "id": 7764,
+    "id": 8096,
     "title": "Defects4C: Benchmarking Large Language Model Repair Capability with C/C++ Bugs",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334503",
     "method": "从真实C/C++仓库筛选可执行缺陷函数及复现测试，形成LLM程序修复基准。",
@@ -666,7 +666,7 @@
   },
   {
     "key": "evolutionawareheuristicsforgr1realizabilitychecking",
-    "id": 7765,
+    "id": 8097,
     "title": "Evolution-Aware Heuristics for GR(1) Realizability Checking",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334501",
     "method": "计算前后规格的局部语义差异，并安全复用上次可实现性检查的中间数据。",
@@ -698,7 +698,7 @@
   },
   {
     "key": "dollmsgenerateusefultestoraclesanempiricalstudywithanunbiaseddataset",
-    "id": 7766,
+    "id": 8098,
     "title": "Do LLMs Generate Useful Test Oracles? An Empirical Study with an Unbiased Dataset",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334509",
     "method": "用训练截止日之后的Java测试预言数据，比较LLM生成预言与人工预言的变异得分。",
@@ -721,7 +721,7 @@
   },
   {
     "key": "loupeendtoendlearningofloopunrollingheuristicsforabstractinterpretation",
-    "id": 7767,
+    "id": 8099,
     "title": "Loupe: End-to-End Learning of Loop Unrolling Heuristics for Abstract Interpretation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334363",
     "method": "让图神经网络从程序图直接学习循环展开决策，并由静态分析器自动标注训练样本。",
@@ -753,7 +753,7 @@
   },
   {
     "key": "advancingbinarycodesimilaritydetectionviacontextcontentfusionandllmverification",
-    "id": 7768,
+    "id": 8100,
     "title": "Advancing Binary Code Similarity Detection via Context-Content Fusion and LLM Verification",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334248",
     "method": "把二进制函数依赖上下文与内容相似度融合缩小候选，再由LLM验证并解释。",
@@ -785,7 +785,7 @@
   },
   {
     "key": "prefgenapreferencedrivenmethodologyforsecureyetgasefficientsmartcontractgeneration",
-    "id": 7769,
+    "id": 8101,
     "title": "PrefGen: A Preference-Driven Methodology for Secure Yet Gas-Efficient Smart Contract Generation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334688",
     "method": "将功能、编译、燃气和安全量化指标纳入DPO，联合优化Solidity代码生成。",
@@ -817,7 +817,7 @@
   },
   {
     "key": "logmoelightweightexpertmixtureforcrosssystemloganomalydetection",
-    "id": 7770,
+    "id": 8102,
     "title": "LogMoE: Lightweight Expert Mixture for Cross-System Log Anomaly Detection",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334514",
     "method": "以多个成熟系统的标注日志训练轻量专家，再由门控混合迁移到未见目标系统。",
@@ -851,7 +851,7 @@
   },
   {
     "key": "riskestimationindifferentialfuzzingviaextremevaluetheory",
-    "id": 7771,
+    "id": 8103,
     "title": "Risk Estimation in Differential Fuzzing via Extreme Value Theory",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334570",
     "method": "用极值理论拟合差分模糊测试观测差异的尾部，估计继续运行发现更大缺陷的风险。",
@@ -883,7 +883,7 @@
   },
   {
     "key": "enhancingllmswithstagedgroupinganddehallucinationforheaderfiledecomposition",
-    "id": 7772,
+    "id": 8104,
     "title": "Enhancing LLMs with Staged Grouping and Dehallucination for Header File Decomposition",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334283",
     "method": "先按传统相似度聚合代码实体，再让LLM做语义分组，并用静态分析事实校验修正。",
@@ -915,7 +915,7 @@
   },
   {
     "key": "automatedrepairofambiguousproblemdescriptionsforllmbasedcodegeneration",
-    "id": 7773,
+    "id": 8105,
     "title": "Automated Repair of Ambiguous Problem Descriptions for LLM-Based Code Generation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334557",
     "method": "先以测试和程序修复调整描述诱导的程序分布，再用对比规格推断改写自然语言。",
@@ -947,7 +947,7 @@
   },
   {
     "key": "towardsmoreaccuratestaticanalysisfortaintstylebugdetectioninlinuxkernel",
-    "id": 7774,
+    "id": 8106,
     "title": "Towards More Accurate Static Analysis for Taint-Style Bug Detection in Linux Kernel",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334600",
     "method": "在传统静态分析候选后，以结构化LLM推理评估安全影响并核验源码约束。",
@@ -972,7 +972,7 @@
   },
   {
     "key": "democratizingthecryptocurrencyecosystembyjustintimetransformationofminingprograms",
-    "id": 7775,
+    "id": 8107,
     "title": "Democratizing the Cryptocurrency Ecosystem by Just-In-Time Transformation of Mining Programs",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334723",
     "method": "运行时识别并合并同构挖矿指令，以符号约束保证Web架构上的JIT变换正确。",
@@ -1004,7 +1004,7 @@
   },
   {
     "key": "fromsparsetostructuredadiffusionenhancedandfeaturealignedframeworkforcoincidentalcorrectnessdetection",
-    "id": 7776,
+    "id": 8108,
     "title": "From Sparse to Structured: A Diffusion-Enhanced and Feature-Aligned Framework for Coincidental Correctness Detection",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334293",
     "method": "扩散生成补充稀少的偶然正确样本，并以MMD对齐生成与真实特征分布。",
@@ -1036,7 +1036,7 @@
   },
   {
     "key": "profmaldetectingmaliciousnpmpackagesbythesynergybetweenstaticanddynamicanalysis",
-    "id": 7777,
+    "id": 8109,
     "title": "ProfMal: Detecting Malicious NPM Packages by the Synergy between Static and Dynamic Analysis",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334642",
     "method": "以对象敏感静态分析构建行为图，再用动态执行补全未解析调用并训练图分类器。",
@@ -1070,7 +1070,7 @@
   },
   {
     "key": "whyaiagentsstillneedyoufindingsfromdeveloperagentcollaborationsinthewild",
-    "id": 7778,
+    "id": 8110,
     "title": "Why AI Agents Still Need You: Findings from Developer-Agent Collaborations in the Wild",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334577",
     "method": "观察开发者用IDE内代理解决熟悉仓库的真实问题，比较协作方式与成功情况。",
@@ -1093,7 +1093,7 @@
   },
   {
     "key": "tensorguardgradientbasedmodelfingerprintingforllmsimilaritydetectionandfamilyclassification",
-    "id": 7779,
+    "id": 8111,
     "title": "TensorGuard: Gradient-Based Model Fingerprinting for LLM Similarity Detection and Family Classification",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334251",
     "method": "分析随机输入扰动在各张量层引起的梯度响应，构建模型内生指纹并聚类家族。",
@@ -1125,7 +1125,7 @@
   },
   {
     "key": "uncoveringpromptelementscloningsystempromptsfrombehavioraltraces",
-    "id": 7780,
+    "id": 8112,
     "title": "Uncovering Prompt Elements: Cloning System Prompts from Behavioral Traces",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334253",
     "method": "把系统行为分解为语义元素，以选择性查询诱导行为轨迹并聚合成等效提示。",
@@ -1150,7 +1150,7 @@
   },
   {
     "key": "comprehendimitateandthenupdateunleashingthepowerofllmsintestsuiteevolution",
-    "id": 7781,
+    "id": 8113,
     "title": "Comprehend, Imitate, and then Update: Unleashing the Power of LLMs in Test Suite Evolution",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334264",
     "method": "让LLM先理解代码修改、检索相似示例模仿，再更新过时的方法级测试。",
@@ -1173,7 +1173,7 @@
   },
   {
     "key": "vrexploreramodelbasedapproachforsemiautomatedtestingofvirtualrealityscenes",
-    "id": 7782,
+    "id": 8114,
     "title": "VRExplorer: A Model-based Approach for Semi-Automated Testing of Virtual Reality Scenes",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334628",
     "method": "用EAT统一建模VR实体、动作和任务，以NavMesh寻路和概率状态机系统探索场景。",
@@ -1216,7 +1216,7 @@
   },
   {
     "key": "rsfuzzarobustnessguidedswarmfuzzingframeworkbasedonbehavioralconstraints",
-    "id": 7783,
+    "id": 8115,
     "title": "RSFuzz: A Robustness-Guided Swarm Fuzzing Framework Based on Behavioral Constraints",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334416",
     "method": "以行为约束鲁棒度量化群体状态，聚焦关键节点并生成单/多攻击者扰动场景。",
@@ -1261,7 +1261,7 @@
   },
   {
     "key": "provablefairnessrepairfordeepneuralnetworks",
-    "id": 7784,
+    "id": 8116,
     "title": "Provable Fairness Repair for Deep Neural Networks",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334285",
     "method": "用区间界传播覆盖偏置样本邻域，并将公平约束与模型修改统一编码为MILP求解。",
@@ -1295,7 +1295,7 @@
   },
   {
     "key": "glasswingatailoredstaticanalysisapproachforflutterandroidapps",
-    "id": 7785,
+    "id": 8117,
     "title": "GlassWing: A Tailored Static Analysis Approach for Flutter Android Apps",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334412",
     "method": "以数据流提取Flutter程序语义，显式恢复Dart到DEX的隐式跨语言调用。",
@@ -1318,7 +1318,7 @@
   },
   {
     "key": "rustassuredifferentialsymbolictestingforllmtranspiledctorustcode",
-    "id": 7786,
+    "id": 8118,
     "title": "RustAssure: Differential Symbolic Testing for LLM-Transpiled C-to-Rust Code",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334436",
     "method": "用提示工程生成惯用安全Rust，再以差分符号测试比较原C与转译函数语义。",
@@ -1350,7 +1350,7 @@
   },
   {
     "key": "dnafuzzdescriptorawarefuzzingforusbdrivers",
-    "id": 7787,
+    "id": 8119,
     "title": "DNAFuzz: Descriptor-Aware Fuzzing for USB Drivers",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334375",
     "method": "从USB规范解析描述符字段与语义，并据此定制变异策略生成有效载荷。",
@@ -1375,7 +1375,7 @@
   },
   {
     "key": "securitydebtinllmagentapplicationsameasurementstudyofvulnerabilitiesandmitigationtradeoffs",
-    "id": 7788,
+    "id": 8120,
     "title": "Security Debt in LLM Agent Applications: A Measurement Study of Vulnerabilities and Mitigation Trade-offs",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334323",
     "method": "分析真实代理应用漏洞、开发者响应与缓解实践，归纳组件级类型、根因和权衡。",
@@ -1398,7 +1398,7 @@
   },
   {
     "key": "ssrsafeguardingstakingrewardsbydefininganddetectinglogicaldefectsindefistaking",
-    "id": 7789,
+    "id": 8121,
     "title": "SSR: Safeguarding Staking Rewards by Defining and Detecting Logical Defects in DeFi Staking",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334683",
     "method": "从事故和审计报告定义质押逻辑缺陷，再由LLM抽取质押逻辑建模并静态检测。",
@@ -1432,7 +1432,7 @@
   },
   {
     "key": "editfusionresolvingcodemergeconflictsviaeditselection",
-    "id": 7790,
+    "id": 8122,
     "title": "EditFusion: Resolving Code Merge Conflicts via Edit Selection",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334381",
     "method": "把冲突拆成开发者原子行级编辑，深度模型逐个决定接受或拒绝并组合结果。",
@@ -1464,7 +1464,7 @@
   },
   {
     "key": "automaticfixingofmissingdependencyerrors",
-    "id": 7791,
+    "id": 8123,
     "title": "Automatic Fixing of Missing Dependency Errors",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334645",
     "method": "按错误报告构造目标声明图、识别Makefile依赖声明风格，再自动提示生成同风格补丁。",
@@ -1496,7 +1496,7 @@
   },
   {
     "key": "rustrepotransrepositorylevelcontextcodetranslationbenchmarktargetingrust",
-    "id": 7792,
+    "id": 8124,
     "title": "RustRepoTrans: Repository-level Context Code Translation Benchmark Targeting Rust",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334552",
     "method": "构建包含依赖、跨模块引用和架构差异的增量仓库级Rust翻译任务并细粒度评测。",
@@ -1528,7 +1528,7 @@
   },
   {
     "key": "enhancingllmsabilitytogeneratemorerepositoryawareunitteststhroughprecisecontextinjection",
-    "id": 7793,
+    "id": 8125,
     "title": "Enhancing LLM’s Ability to Generate More Repository-Aware Unit Tests Through Precise Context Injection",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334603",
     "method": "在LLM遇到未知标识符时调用语言服务器动态获取定义和注释，精准补充仓库上下文。",
@@ -1551,7 +1551,7 @@
   },
   {
     "key": "findingbugsinmlircompilerinfrastructurevialoweringspaceexploration",
-    "id": 7794,
+    "id": 8126,
     "title": "Finding Bugs in MLIR Compiler Infrastructure via Lowering Space Exploration",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334563",
     "method": "反馈调度逐步构造同一程序的多条有效lowering路径，并差分比较执行结果。",
@@ -1583,7 +1583,7 @@
   },
   {
     "key": "binstructbinarystructurerecoverycombiningstaticanalysisandsemantics",
-    "id": 7795,
+    "id": 8127,
     "title": "BinStruct: Binary Structure Recovery Combining Static Analysis and Semantics",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334428",
     "method": "融合数据引用、函数调用和LLM语义恢复文件，再以结构—语义共识聚类模块。",
@@ -1615,7 +1615,7 @@
   },
   {
     "key": "unitedwestandtowardsendtoendlogbasedfaultdiagnosisviainteractivemultitasklearning",
-    "id": 7796,
+    "id": 8128,
     "title": "United We Stand: Towards End-to-End Log-based Fault Diagnosis via Interactive Multi-Task Learning",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334674",
     "method": "在数据、特征和诊断结果层双向交互异常检测与根因定位任务。",
@@ -1638,7 +1638,7 @@
   },
   {
     "key": "triangleempoweringincidenttriagewithmultiagent",
-    "id": 7797,
+    "id": 8129,
     "title": "Triangle: Empowering Incident Triage with Multi-Agent",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334691",
     "method": "用语义蒸馏统一异构事件信息，多角色代理协商跨团队知识并自动收集排障与缓解信息。",
@@ -1681,7 +1681,7 @@
   },
   {
     "key": "navigatingthelabyrinthpathsensitiveunittestgenerationwithlargelanguagemodels",
-    "id": 7798,
+    "id": 8130,
     "title": "Navigating the Labyrinth: Path-Sensitive Unit Test Generation with Large Language Models",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334655",
     "method": "提取Java项目代码知识并蒸馏为结构化提示，引导LLM面向深层控制流生成测试。",
@@ -1704,7 +1704,7 @@
   },
   {
     "key": "logactionconsistentcrosssystemanomalydetectionthroughlogsviaactivedomainadaptation",
-    "id": 7799,
+    "id": 8131,
     "title": "LogAction: Consistent Cross-system Anomaly Detection through Logs via Active Domain Adaptation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334497",
     "method": "用成熟源系统训练基础模型，再以自由能和不确定性采样少量标注目标域边界日志。",
@@ -1738,7 +1738,7 @@
   },
   {
     "key": "whencontrolflowsdeviatedirectedgreyboxfuzzingwithprobabilisticreachabilityanalysis",
-    "id": 7800,
+    "id": 8132,
     "title": "When Control Flows Deviate: Directed Grey-box Fuzzing with Probabilistic Reachability Analysis",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334417",
     "method": "贝叶斯融合静态先验和动态观测估计间接边可信度，再在动态区域图上计算概率可达适应度。",
@@ -1772,7 +1772,7 @@
   },
   {
     "key": "improvingllmbasedlogparsingbylearningfromerrorsinreasoningtraces",
-    "id": 7801,
+    "id": 8133,
     "title": "Improving LLM-based Log Parsing by Learning from Errors in Reasoning Traces",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334402",
     "method": "分析错误解析对应的推理轨迹归纳原因，再按错误类型生成日志变体微调模型。",
@@ -1804,7 +1804,7 @@
   },
   {
     "key": "watsonacognitiveobservabilityframeworkforthereasoningofllmpoweredagents",
-    "id": 7802,
+    "id": 8134,
     "title": "Watson: A Cognitive Observability Framework for the Reasoning of LLM-Powered Agents",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334632",
     "method": "不改变代理行为地使用提示归因，事后重建其隐式推理轨迹供调试和纠正。",
@@ -1827,7 +1827,7 @@
   },
   {
     "key": "speculativeautomatedrefactoringofimperativedeeplearningprogramstographexecution",
-    "id": 7803,
+    "id": 8135,
     "title": "Speculative Automated Refactoring of Imperative Deep Learning Programs to Graph Execution",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334300",
     "method": "静态分析Python张量与副作用，辅以关键词推测难例并推荐可图执行的函数。",
@@ -1859,7 +1859,7 @@
   },
   {
     "key": "dualfuzzdetectingvulnerabilityinwifinicsthroughdualdirectionalfuzzing",
-    "id": 7804,
+    "id": 8136,
     "title": "DualFuzz: Detecting Vulnerability in Wi-Fi NICs through Dual-Directional Fuzzing",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334315",
     "method": "自动识别Wi-Fi收发交互建模，以时延引导协同探索并实时判定活性和等价异常。",
@@ -1902,7 +1902,7 @@
   },
   {
     "key": "draincodestealthyenergyconsumptionattacksonretrievalaugmentedcodegenerationviacontextpoisoning",
-    "id": 7805,
+    "id": 8137,
     "title": "DrainCode: Stealthy Energy Consumption Attacks on Retrieval-Augmented Code Generation via Context Poisoning",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334259",
     "method": "以变异策略向检索上下文植入毒化内容，诱导代码LLM输出更长结果并消耗资源。",
@@ -1927,7 +1927,7 @@
   },
   {
     "key": "hitthebullseyeonthefirstshotimprovingllmsusingmultisampleselfrewardfeedbackforvulnerabilityrepair",
-    "id": 7806,
+    "id": 8138,
     "title": "Hit The Bullseye On The First Shot: Improving LLMs Using Multi-Sample Self-Reward Feedback for Vulnerability Repair",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334322",
     "method": "先以漏洞领域数据监督微调，再利用正确和错误补丁进行多样本自奖励反馈训练。",
@@ -1962,7 +1962,7 @@
   },
   {
     "key": "letthecodespeakincorporatingprogramdynamicstateforbettermethodlevelfaultlocalization",
-    "id": 7807,
+    "id": 8139,
     "title": "Let the Code Speak: Incorporating Program Dynamic State for Better Method-Level Fault Localization",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334296",
     "method": "故障定位代理提出疑点，打印调试代理通过多轮运行状态观测验证并反馈。",
@@ -1996,7 +1996,7 @@
   },
   {
     "key": "executionawareprogramreductionforwebassemblyviarecordandreplay",
-    "id": 7808,
+    "id": 8140,
     "title": "Execution-Aware Program Reduction for WebAssembly via Record and Replay",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334546",
     "method": "记录错误程序执行，隔离触发函数并重放其与其余程序交互，必要时再做混合缩减。",
@@ -2028,7 +2028,7 @@
   },
   {
     "key": "repairingleaksinresourcewrappers",
-    "id": 7809,
+    "id": 8141,
     "title": "Repairing Leaks in Resource Wrappers",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334447",
     "method": "在修复流水线中推断资源管理规格、变换程序并以字段包含分析跟踪包装器资源生命周期。",
@@ -2069,7 +2069,7 @@
   },
   {
     "key": "pseudofixrefactoringdistortedstructuresindecompiledcpseudocode",
-    "id": 7810,
+    "id": 8142,
     "title": "PseudoFix: Refactoring Distorted Structures in Decompiled C Pseudocode",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334626",
     "method": "先开放编码建立反编译结构畸变分类，再语义检索相关示例供LLM上下文重构。",
@@ -2101,7 +2101,7 @@
   },
   {
     "key": "dlbenchacomprehensivebenchmarkforsqltranslationwithlargelanguagemodels",
-    "id": 7811,
+    "id": 8143,
     "title": "DLBench: A Comprehensive Benchmark for SQL Translation with Large Language Models",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334627",
     "method": "构建真实查询与广覆盖方言两类数据，经标准、解析器和人机标注多步校验。",
@@ -2133,7 +2133,7 @@
   },
   {
     "key": "anempiricalstudyofpythonlibrarymigrationusinglargelanguagemodels",
-    "id": 7812,
+    "id": 8144,
     "title": "An Empirical Study of Python Library Migration Using Large Language Models",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334199",
     "method": "让三种LLM执行真实Python库迁移，以开发者修改对齐和客户端测试双重验证。",
@@ -2165,7 +2165,7 @@
   },
   {
     "key": "appbdsllmpowereddescriptionsynthesisforsensitivebehaviorsinmobileapps",
-    "id": 7813,
+    "id": 8145,
     "title": "AppBDS: LLM-Powered Description Synthesis for Sensitive Behaviors in Mobile Apps",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334675",
     "method": "融合代码语义、UI上下文、隐私政策和相似应用知识，让LLM解释敏感权限行为。",
@@ -2197,7 +2197,7 @@
   },
   {
     "key": "linebreakerfindingtokeninconsistencybugswithlargelanguagemodels",
-    "id": 7814,
+    "id": 8146,
     "title": "LineBreaker: Finding Token-Inconsistency Bugs with Large Language Models",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334273",
     "method": "用小型高效代码模型级联过滤低风险片段，再聚焦语义令牌不一致检测。",
@@ -2222,7 +2222,7 @@
   },
   {
     "key": "profilecoverageusingandroidcompilationprofilestoevaluatedynamictesting",
-    "id": 7815,
+    "id": 8147,
     "title": "Profile Coverage: Using Android Compilation Profiles to Evaluate Dynamic Testing",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334694",
     "method": "利用Google Play云编译画像近似真实用户执行方法，定义画像覆盖并以uprobes轻量追踪。",
@@ -2254,7 +2254,7 @@
   },
   {
     "key": "laresllmdrivencodeslicesemanticsearchforpatchpresencetesting",
-    "id": 7816,
+    "id": 8148,
     "title": "Lares: LLM-driven Code Slice Semantic Search for Patch Presence Testing",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334274",
     "method": "直接从补丁源码提取切片特征，在目标二进制伪代码中做语义搜索，并以LLM和SMT复核。",
@@ -2288,7 +2288,7 @@
   },
   {
     "key": "exploringstatictaintanalysisinllmsadynamicbenchmarkingframeworkformeasurementandenhancement",
-    "id": 7817,
+    "id": 8149,
     "title": "Exploring Static Taint Analysis in LLMs: A Dynamic Benchmarking Framework for Measurement and Enhancement",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334601",
     "method": "建模影响LLM污点分析的因素，按基本单元生成目标化基准并用轻量动态污点验证。",
@@ -2331,7 +2331,7 @@
   },
   {
     "key": "demystifyingopenzeppelinsownvulnerabilitiesandanalyzingtheirpropagationinsmartcontracts",
-    "id": 7818,
+    "id": 8150,
     "title": "Demystifying OpenZeppelin’s Own Vulnerabilities and Analyzing Their Propagation in Smart Contracts",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334413",
     "method": "人工审查历史版本形成漏洞—修复对，再用变化事实结构匹配第三方合约中的传播实例。",
@@ -2363,7 +2363,7 @@
   },
   {
     "key": "iknowanintentguidedchatbotforcloudoperationswithretrievalaugmentedgeneration",
-    "id": 7819,
+    "id": 8151,
     "title": "iKnow: an Intent-Guided Chatbot for Cloud Operations with Retrieval-Augmented Generation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334651",
     "method": "先识别云运维问答意图，再按意图重写查询、检索文档并检测知识缺口。",
@@ -2386,7 +2386,7 @@
   },
   {
     "key": "aligncoderaligningretrievalwithtargetintentforrepositorylevelcodecompletion",
-    "id": 7820,
+    "id": 8152,
     "title": "AlignCoder: Aligning Retrieval with Target Intent for Repository-Level Code Completion",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334411",
     "method": "用多候选补全增强查询以贴近目标意图，并以强化学习训练利用推断信息的检索器。",
@@ -2420,7 +2420,7 @@
   },
   {
     "key": "coveragebasedharmfulnesstestingforllmcodetransformation",
-    "id": 7821,
+    "id": 8153,
     "title": "Coverage-Based Harmfulness Testing for LLM Code Transformation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334609",
     "method": "从变换分类合成带有害词的提示，驱动语义保持代码变换并以输出伤害而非绕过与否评价。",
@@ -2463,7 +2463,7 @@
   },
   {
     "key": "noteverypatchisanislandllmenhancedidentificationofmultiplevulnerabilitypatches",
-    "id": 7822,
+    "id": 8154,
     "title": "Not Every Patch is an Island: LLM-Enhanced Identification of Multiple Vulnerability Patches",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334340",
     "method": "先以启发特征筛高相关提交，再由LLM预测漏洞—提交及提交—提交关系并分组排序。",
@@ -2495,7 +2495,7 @@
   },
   {
     "key": "automatedinlinecommentsmelldetectionandrepairwithlargelanguagemodels",
-    "id": 7823,
+    "id": 8155,
     "title": "Automated Inline Comment Smell Detection and Repair with Large Language Models",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334256",
     "method": "扩充修复真值数据，多次比较四种LLM的零/少样本异味检测并串联最佳检测到修复。",
@@ -2527,7 +2527,7 @@
   },
   {
     "key": "programmersvisualattentiononfunctioncallgraphsduringcodesummarization",
-    "id": 7824,
+    "id": 8156,
     "title": "Programmers’ Visual Attention on Function Call Graphs During Code Summarization",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334538",
     "method": "用调用图覆盖、遍历深度等指标重分析并扩展眼动数据，关联视觉策略与摘要质量。",
@@ -2550,7 +2550,7 @@
   },
   {
     "key": "anllmbasedmultiagentframeworkforagileeffortestimation",
-    "id": 7825,
+    "id": 8157,
     "title": "An LLM-based multi-agent framework for agile effort estimation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334617",
     "method": "让多个LLM代理与开发者协调、讨论用户故事并以共识给出敏捷工作量估计。",
@@ -2575,7 +2575,7 @@
   },
   {
     "key": "promfuzzleveragingllmdrivenandbugorientedcompositeanalysisfordetectingfunctionalbugsinsmartcontracts",
-    "id": 7826,
+    "id": 8158,
     "title": "PromFuzz: Leveraging LLM-Driven and Bug-Oriented Composite Analysis for Detecting Functional Bugs in Smart Contracts",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334537",
     "method": "双代理定位可疑函数，分阶段生成不变量检查器，再以业务逻辑引导定向模糊测试。",
@@ -2620,7 +2620,7 @@
   },
   {
     "key": "losverlinelevelmodifiabilitysignalguidedvulnerabilitydetectionandclassification",
-    "id": 7827,
+    "id": 8159,
     "title": "LOSVER: Line-Level Modifiability Signal-Guided Vulnerability Detection and Classification",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334430",
     "method": "先定位未来更可能被修改的代码行，再提高其权重引导预训练模型检测与分类漏洞。",
@@ -2645,7 +2645,7 @@
   },
   {
     "key": "alargescalestudyofaibasedbinaryfunctionsimilaritydetectiontechniquesforsecurityresearchersandpractitioners",
-    "id": 7828,
+    "id": 8160,
     "title": "A Large Scale Study of AI-based Binary Function Similarity Detection Techniques for Security Researchers and Practitioners",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334478",
     "method": "构建大规模能力与IoT漏洞两类数据集，系统测量九种二进制函数相似工具并组合其结果。",
@@ -2677,7 +2677,7 @@
   },
   {
     "key": "debcovdiffdifferentialtestingofcoveragemeasurementtoolsonrealworldprojects",
-    "id": 7829,
+    "id": 8161,
     "title": "DebCovDiff: Differential Testing of Coverage Measurement Tools on Real-World Projects",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334524",
     "method": "以Debian包为程序差分比较Gcov与LLVM-cov，并用稳健预言处理呈现差异和非确定性。",
@@ -2709,7 +2709,7 @@
   },
   {
     "key": "zenddiffdifferentialtestingofphpinterpreter",
-    "id": 7830,
+    "id": 8162,
     "title": "ZendDiff: Differential Testing of PHP Interpreter",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334388",
     "method": "差分比较PHP的JIT与非JIT执行，辅以状态探针、JIT感知变异和双重验证。",
@@ -2750,7 +2750,7 @@
   },
   {
     "key": "bcfuzzbytecodedrivenfuzzingforjavascriptengines",
-    "id": 7831,
+    "id": 8163,
     "title": "BCFuzz: Bytecode-Driven Fuzzing for JavaScript Engines",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334349",
     "method": "探测特定字节码生成条件，并按字节码频率定制种子保留、调度和变异。",
@@ -2784,7 +2784,7 @@
   },
   {
     "key": "coorlogefficientgeneralizableloganomalydetectionviaadaptivecoordinatorinsoftwareevolution",
-    "id": 7832,
+    "id": 8164,
     "title": "CoorLog: Efficient-Generalizable Log Anomaly Detection via Adaptive Coordinator in Software Evolution",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334611",
     "method": "协调器识别日志演化，常规日志交小模型、演化日志交LLM，并把LLM判断蒸馏回小模型。",
@@ -2818,7 +2818,7 @@
   },
   {
     "key": "guifuzzunleashinggreyboxfuzzingondesktopgraphicaluserinterfacingapplications",
-    "id": 7833,
+    "id": 8165,
     "title": "GUIFuzz++: Unleashing Grey-box Fuzzing on Desktop Graphical User Interfacing Applications",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334307",
     "method": "用中间解释器把AFL++随机输入转换为桌面GUI操作，并借助无障碍技术提高交互精度。",
@@ -2850,7 +2850,7 @@
   },
   {
     "key": "hypergraphneuralnetworkbasedmultigranularrootcauselocalizationformicroservicesystems",
-    "id": 7834,
+    "id": 8166,
     "title": "Hypergraph Neural Network-based Multi-Granular Root Cause Localization for Microservice Systems",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334405",
     "method": "以实例为节点、部署/隶属/依赖为超边建模故障状态，再联合超图网络和MLP定位根因。",
@@ -2882,7 +2882,7 @@
   },
   {
     "key": "seeingisfixingcrossmodalreasoningwithmultimodalllmsforvisualsoftwareissuerepair",
-    "id": 7835,
+    "id": 8167,
     "title": "Seeing is Fixing: Cross-Modal Reasoning with Multimodal LLMs for Visual Software Issue Repair",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334310",
     "method": "从问题截图生成可执行复现场景，打补丁后回放并捕获新GUI图像验证视觉修复。",
@@ -2916,7 +2916,7 @@
   },
   {
     "key": "whenautonomousvehiclemeetsv2xcooperativeperceptionhowfararewe",
-    "id": 7836,
+    "id": 8168,
     "title": "When Autonomous Vehicle Meets V2X Cooperative Perception: How Far Are We?",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11338520",
     "method": "归纳六类协同感知错误，系统改变传感器、通信主体、融合方式和干扰条件评测。",
@@ -2950,7 +2950,7 @@
   },
   {
     "key": "backdoorsincodesummarizershowbadisit",
-    "id": 7837,
+    "id": 8169,
     "title": "Backdoors in Code Summarizers: How Bad Is It?",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334656",
     "method": "系统改变数据、模型和推断因素，测量极低投毒率下代码摘要后门植入与防御效果。",
@@ -2984,7 +2984,7 @@
   },
   {
     "key": "adaptevalabenchmarkforevaluatinglargelanguagemodelsoncodesnippetadaptation",
-    "id": 7838,
+    "id": 8170,
     "title": "AdaptEval: A Benchmark for Evaluating Large Language Models on Code Snippet Adaptation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334689",
     "method": "从Stack Overflow和GitHub构建真实上下文任务，以任务/适配双层标注和两级测试评价。",
@@ -3016,7 +3016,7 @@
   },
   {
     "key": "bridgingnaturallanguageandformalspecificationautomatedtranslationofsoftwarerequirementstoltlviahierarchicalsemanticsdecompositionusingllms",
-    "id": 7839,
+    "id": 8171,
     "title": "Bridging Natural Language and Formal Specification–Automated Translation of Software Requirements to LTL via Hierarchical Semantics Decomposition Using LLMs",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334235",
     "method": "用LLM把需求分解为OnionL层次语义中间表示，再用确定性规则合成LTL。",
@@ -3048,7 +3048,7 @@
   },
   {
     "key": "rfcauditaiagentforauditingprotocolimplementationsagainstrfcspecifications",
-    "id": 7840,
+    "id": 8172,
     "title": "RFCAudit: AI Agent for Auditing Protocol Implementations Against RFC Specifications",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334718",
     "method": "索引代理分层摘要协议代码，检测代理按需检索结构和函数并与RFC行为核对。",
@@ -3083,7 +3083,7 @@
   },
   {
     "key": "rfcscopedetectinglogicalambiguitiesininternetprotocolspecifications",
-    "id": 7841,
+    "id": 8173,
     "title": "RFCScope: Detecting Logical Ambiguities in Internet Protocol Specifications",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334266",
     "method": "从历史勘误归纳歧义类型，构造跨文档上下文、语义分区并以类型提示检测和推理过滤。",
@@ -3115,7 +3115,7 @@
   },
   {
     "key": "protectingsourcecodeprivacywhenhuntingmemorybugs",
-    "id": 7842,
+    "id": 8174,
     "title": "Protecting Source Code Privacy When Hunting Memory Bugs",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334312",
     "method": "选择性裁剪二进制调试信息，并把类型信息最小化归约为集合覆盖近似求解。",
@@ -3147,7 +3147,7 @@
   },
   {
     "key": "whatsdatsmelluntanglingandweavingthedisjointassertiontangletestsmell",
-    "id": 7843,
+    "id": 8175,
     "title": "What’s DAT Smell? Untangling and Weaving the Disjoint Assertion Tangle Test Smell",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334242",
     "method": "程序分析识别验证无关行为的测试，将其拆分后再把相似逻辑编织成参数化测试。",
@@ -3179,7 +3179,7 @@
   },
   {
     "key": "smtgazerlearningtoschedulesmtalgorithmsviabayesianoptimization",
-    "id": 7844,
+    "id": 8176,
     "title": "SMTgazer: Learning to Schedule SMT Algorithms via Bayesian Optimization",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334368",
     "method": "把多求解器顺序调度建模为超参数优化，以贝叶斯搜索、聚类和集成代理求全局方案。",
@@ -3222,7 +3222,7 @@
   },
   {
     "key": "agenticspecificationgeneratorformoveprograms",
-    "id": 7845,
+    "id": 8177,
     "title": "Agentic Specification Generator for Move Programs",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334481",
     "method": "以面向规格语言特性的模块化代理生成Move规格，并利用验证工具链反馈迭代。",
@@ -3254,7 +3254,7 @@
   },
   {
     "key": "amplefinegrainedfileaccesspoliciesforserverapplications",
-    "id": 7846,
+    "id": 8178,
     "title": "AMPLE: Fine-grained File Access Policies for Server Applications",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334498",
     "method": "静态分析所有路径并仅执行服务器初始化阶段补充运行时路径，自动提取最小文件访问策略。",
@@ -3288,7 +3288,7 @@
   },
   {
     "key": "detectingsemanticclonesofunseenfunctionality",
-    "id": 7847,
+    "id": 8179,
     "title": "Detecting Semantic Clones of Unseen Functionality",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334643",
     "method": "重测模型对未见功能克隆的表现，并以对比分类器或对比上下文学习增强泛化。",
@@ -3322,7 +3322,7 @@
   },
   {
     "key": "efficientandverifiableproofloggingformaxsatsolving",
-    "id": 7848,
+    "id": 8180,
     "title": "Efficient and Verifiable Proof Logging for MaxSAT Solving",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334432",
     "method": "为core-guided OLL定义MaxSAT原生推理规则，并以文本和紧凑二进制DAG记录最优性证明。",
@@ -3354,7 +3354,7 @@
   },
   {
     "key": "fgitfaultguidedfinetuningforcodegeneration",
-    "id": 7849,
+    "id": 8181,
     "title": "FGit: Fault-Guided Fine-Tuning for Code Generation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334630",
     "method": "从正确与近似错误实现提取行/令牌差异，并动态提高错误敏感片段的训练损失权重。",
@@ -3388,7 +3388,7 @@
   },
   {
     "key": "destabilizingneuronstogeneratechallengingneuralnetworkverificationbenchmarks",
-    "id": 7850,
+    "id": 8182,
     "title": "Destabilizing Neurons to Generate Challenging Neural Network Verification Benchmarks",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334329",
     "method": "在保持网络语义与真值不变的前提下，有策略地把稳定ReLU神经元变为不稳定以调节难度。",
@@ -3413,7 +3413,7 @@
   },
   {
     "key": "satoristatictestoraclegenerationforrestapis",
-    "id": 7851,
+    "id": 8183,
     "title": "SATORI: Static Test Oracle Generation for REST APIs",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334625",
     "method": "让LLM从OpenAPI响应字段名和描述推断预期行为，再转换为可执行Postman断言。",
@@ -3445,7 +3445,7 @@
   },
   {
     "key": "learningprojectwisesubsequentcodeeditsviainterleavingneuralbasedinductionandtoolbaseddeduction",
-    "id": 7852,
+    "id": 8184,
     "title": "Learning Project-wise Subsequent Code Edits via Interleaving Neural-based Induction and Tool-based Deduction",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334574",
     "method": "学习何时用神经模型预测语义编辑、何时调用IDE工具演绎语法编辑，并采用细粒度编辑表示。",
@@ -3486,7 +3486,7 @@
   },
   {
     "key": "nateanetworkawaretestingenhancerfornetworkrelatedfaultdetectioninandroidapps",
-    "id": 7853,
+    "id": 8185,
     "title": "NATE: A Network-Aware Testing Enhancer for Network-Related Fault Detection in Android Apps",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334452",
     "method": "从真实网络缺陷归纳触发模式，以好奇心驱动强化学习引导测试并注入网络事件。",
@@ -3520,7 +3520,7 @@
   },
   {
     "key": "westspecificationbasedtestgenerationforwebassembly",
-    "id": 7854,
+    "id": 8186,
     "title": "WEST: Specification-Based Test Generation for WebAssembly",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334667",
     "method": "从SpecTec机械化规格读取语法、验证和执行语义，按可插拔策略生成定制Wasm测试。",
@@ -3554,7 +3554,7 @@
   },
   {
     "key": "veriexploitautomaticbugreproductioninsmartcontractsviallmsandformalmethods",
-    "id": 7855,
+    "id": 8187,
     "title": "VeriExploit: Automatic Bug Reproduction in Smart Contracts via LLMs and Formal Methods",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334383",
     "method": "从漏洞合约和反例出发，联合形式方法与LLM生成、验证和迭代攻击合约及执行序列。",
@@ -3589,7 +3589,7 @@
   },
   {
     "key": "recheckingrecheckrequestsincontinuousintegrationanempiricalstudyofopenstack",
-    "id": 7856,
+    "id": 8188,
     "title": "Rechecking Recheck Requests in Continuous Integration: An Empirical Study of OpenStack",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334289",
     "method": "在OpenStack大规模recheck历史上拟合统计模型，预测重试会成功还是再次失败。",
@@ -3612,7 +3612,7 @@
   },
   {
     "key": "hierarchicalknowledgeinjectionforimprovingllmbasedprogramrepair",
-    "id": 7857,
+    "id": 8189,
     "title": "Hierarchical Knowledge Injection for Improving LLM-based Program Repair",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334717",
     "method": "按缺陷、仓库、项目三层逐步向LLM注入函数、依赖、历史、文档和既有修复知识。",
@@ -3635,7 +3635,7 @@
   },
   {
     "key": "vertpolyglotverifiedequivalentrusttranspilationwithlargelanguagemodels",
-    "id": 7858,
+    "id": 8190,
     "title": "VERT: Polyglot Verified Equivalent Rust Transpilation with Large Language Models",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334597",
     "method": "将源程序编译到Wasm得到Rust预言实现，由LLM生成惯用候选并以模型检查验证等价。",
@@ -3676,7 +3676,7 @@
   },
   {
     "key": "scalecircscalingtheanalysisovercircomcircuits",
-    "id": 7859,
+    "id": 8191,
     "title": "ScaleCirc: Scaling the Analysis over Circom Circuits",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334720",
     "method": "以电路去重管理重复分析，并结合源码语义传播约束性以扩展Circom检查。",
@@ -3708,7 +3708,7 @@
   },
   {
     "key": "aligningllmstofullyutilizethecrossfilecontextinrepositorylevelcodecompletion",
-    "id": 7860,
+    "id": 8192,
     "title": "Aligning LLMs to Fully Utilize the Cross-file Context in Repository-level Code Completion",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334425",
     "method": "构造长跨文件上下文和上下文感知目标的CoLA-132K，并以两阶段训练校准模型注意。",
@@ -3742,7 +3742,7 @@
   },
   {
     "key": "cotunecoevolutionaryconfigurationtuning",
-    "id": 7861,
+    "id": 8193,
     "title": "CoTune: Co-evolutionary Configuration Tuning",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334616",
     "method": "让系统配置与辅助性能要求共同演化，在目标要求过严或误导时提供替代引导。",
@@ -3765,7 +3765,7 @@
   },
   {
     "key": "siftingtruthfromcoincidencesatwostagepositiveandunlabeledlearningmodelforcoincidentalcorrectnessdetection",
-    "id": 7862,
+    "id": 8194,
     "title": "Sifting Truth from Coincidences: A Two-Stage Positive and Unlabeled Learning Model for Coincidental Correctness Detection",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334663",
     "method": "把失败测试作为正例、其余作为未标注，先选高质量伪负例再做弱监督对比学习。",
@@ -3797,7 +3797,7 @@
   },
   {
     "key": "improvingnlsatfornonlinearrealarithmetic",
-    "id": 7863,
+    "id": 8195,
     "title": "Improving NLSAT for Nonlinear Real Arithmetic",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334661",
     "method": "在NLSAT决策中加入影响算术变量的子句信息，以可行集前瞻和算术传播选择分支。",
@@ -3829,7 +3829,7 @@
   },
   {
     "key": "findinginsecurestatedependencyindappsviamultisourcetracingandsemanticenrichment",
-    "id": 7864,
+    "id": 8196,
     "title": "Finding Insecure State Dependency in DApps via Multi-Source Tracing and Semantic Enrichment",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334491",
     "method": "InsFinder 联合跨 DApp 动态污点、多源映射语义增强和细粒度访问控制静态分析，检测不安全状态依赖。",
@@ -3864,7 +3864,7 @@
   },
   {
     "key": "forcratautomaticioapitranslationfromctorustviaoriginandcapabilityanalysis",
-    "id": 7865,
+    "id": 8197,
     "title": "Forcrat: Automatic I/O API Translation from C to Rust via Origin and Capability Analysis",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334512",
     "method": "Forcrat 以来源与能力分析恢复流的输入输出属性，并用错误来源分析把 libc I/O 调用替换为 Rust std。",
@@ -3898,7 +3898,7 @@
   },
   {
     "key": "itsnoteasybeinggreenontheenergyefficiencyofprogramminglanguages",
-    "id": 7866,
+    "id": 8198,
     "title": "It’s Not Easy Being Green: On the Energy Efficiency of Programming Languages",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334459",
     "method": "建立编程语言选择与能耗的因果模型，并控制实现、应用代码、活跃核心和内存活动后复现实验。",
@@ -3921,7 +3921,7 @@
   },
   {
     "key": "beliefpropagationwithlocalstructureanditsapplicationsinprogramanalysis",
-    "id": 7867,
+    "id": 8199,
     "title": "Belief Propagation with Local Structure and Its Applications in Program Analysis",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334350",
     "method": "用 if-then 规则编码概率约束的局部结构，并据此加速 loopy belief propagation 的边际推断。",
@@ -3944,7 +3944,7 @@
   },
   {
     "key": "cryptbaradependencyguideddetectionofpythoncryptographicapimisuses",
-    "id": 7868,
+    "id": 8200,
     "title": "Cryptbara: Dependency-Guided Detection of Python Cryptographic API Misuses",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334701",
     "method": "Cryptbara 静态抽取 Python 加密对象的过程内和跨过程依赖，编码为富上下文提示供 LLM 做语义误用判断。",
@@ -3969,7 +3969,7 @@
   },
   {
     "key": "imufuzzerresiliencebaseddiscoveryofsignalinjectionattacksonroboticaerialvehicles",
-    "id": 7869,
+    "id": 8201,
     "title": "IMUFuzzer: Resilience-based Discovery of Signal Injection Attacks on Robotic Aerial Vehicles",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334621",
     "method": "IMUFuzzer 在高保真模拟器生成 IMU 噪声和飞行任务路径，以飞行器攻击韧性反馈引导模糊搜索。",
@@ -3995,7 +3995,7 @@
   },
   {
     "key": "beyondstaticguiagentevolvingllmbasedguitestingviadynamicmemory",
-    "id": 7870,
+    "id": 8202,
     "title": "Beyond Static GUI Agent: Evolving LLM-based GUI Testing via Dynamic Memory",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334687",
     "method": "MemoDroid 以情节、反思和策略三层动态记忆积累测试轨迹、问题模式与跨应用探索策略，并运行时检索注入提示。",
@@ -4020,7 +4020,7 @@
   },
   {
     "key": "terminatorenablingefficientfuzzingofclosedsourceguiprogramsbyautomaticcoverageguidedtermination",
-    "id": 7871,
+    "id": 8203,
     "title": "Terminator: Enabling Efficient Fuzzing of Closed-Source GUI Programs by Automatic Coverage-Guided Termination",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334615",
     "method": "Terminator 修改闭源 GUI 程序二进制，在无需用户交互且覆盖停止增长时自动终止每次文件处理执行。",
@@ -4045,7 +4045,7 @@
   },
   {
     "key": "characterizingmultihunkpatchesdivergenceproximityandllmrepairchallenges",
-    "id": 7872,
+    "id": 8204,
     "title": "Characterizing Multi-Hunk Patches: Divergence, Proximity, and LLM Repair Challenges",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334668",
     "method": "构建 Hunk4J，并以 hunk divergence 和 spatial proximity 量化多处分散补丁的编辑差异与空间分布。",
@@ -4079,7 +4079,7 @@
   },
   {
     "key": "factalignedandtemplateconstrainedstaticanalyzerruleenhancementwithllms",
-    "id": 7873,
+    "id": 8205,
     "title": "Fact-Aligned and Template-Constrained Static Analyzer Rule Enhancement with LLMs",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334250",
     "method": "RuleRefiner 以动态画像做规则-代码事实对齐，用差分故障定位锁定错误源，再以目标模板约束 LLM 修改。",
@@ -4104,7 +4104,7 @@
   },
   {
     "key": "whenfasterisntgreenerthehiddencostsofllmbasedcodeoptimization",
-    "id": 7874,
+    "id": 8206,
     "title": "When Faster Isn’t Greener: The Hidden Costs of LLM-Based Code Optimization",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334535",
     "method": "在 EvalPerf 上同时测量 LLM 代码优化的生成能耗、运行性能和正确性，并提出能源收支平衡执行次数指标。",
@@ -4127,7 +4127,7 @@
   },
   {
     "key": "leveragingmixtureofexpertsframeworkforsmartcontractvulnerabilityrepairwithlargelanguagemodel",
-    "id": 7875,
+    "id": 8207,
     "title": "Leveraging Mixture-of-Experts Framework for Smart Contract Vulnerability Repair with Large Language Model",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334222",
     "method": "MoEFix 将漏洞分入类型子空间，由漏洞感知路由器调用专门专家并端到端生成安全合约。",
@@ -4152,7 +4152,7 @@
   },
   {
     "key": "uncoveringdiscriminationclustersquantifyingandexplainingsystematicfairnessviolations",
-    "id": 7876,
+    "id": 8208,
     "title": "Uncovering Discrimination Clusters: Quantifying and Explaining Systematic Fairness Violations",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334575",
     "method": "HyFair 用 SMT/MILP 证明个体公平性，再以随机搜索发现受保护属性扰动形成的多结果聚类，并生成决策树解释。",
@@ -4184,7 +4184,7 @@
   },
   {
     "key": "demystifyingcookiesharingrisksinwebviewbasedmobileappinappecosystems",
-    "id": 7877,
+    "id": 8209,
     "title": "Demystifying Cookie Sharing Risks in WebView-based Mobile App-in-app Ecosystems",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334470",
     "method": "MiCoScan 建模共享 WebView 上下文聚类，并以跨 WebView 数据流分析检测敏感 cookie 的跨小程序传输。",
@@ -4219,7 +4219,7 @@
   },
   {
     "key": "adperfinvestigatingandtestingperformanceinautonomousdrivingsystems",
-    "id": 7878,
+    "id": 8210,
     "title": "ADPerf: Investigating and Testing Performance in Autonomous Driving Systems",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334384",
     "method": "ADPerf 根据真实点云特征生成能放大障碍检测延迟的测试，并观测延迟向轨迹预测等下游模块传播。",
@@ -4244,7 +4244,7 @@
   },
   {
     "key": "fixingbrokengraphsllmpoweredautomaticcodeoptimizationfordnnprograms",
-    "id": 7879,
+    "id": 8211,
     "title": "Fixing Broken Graphs: LLM-Powered Automatic Code Optimization for DNN Programs",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334418",
     "method": "GraphGlue 由多代理挖掘 computation graph break 原因，并以拒绝采样的自纠错在调试与再生成间迭代修复 DNN 代码。",
@@ -4279,7 +4279,7 @@
   },
   {
     "key": "functionclusteringbasedfuzzingterminationtowardsmarterearlystopping",
-    "id": 7880,
+    "id": 8212,
     "title": "Function Clustering-Based Fuzzing Termination: Toward Smarter Early Stopping",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334636",
     "method": "用语言模型编码函数，以多指标融合确定聚类数，并依据功能簇的漏洞分布决定模糊测试早停。",
@@ -4304,7 +4304,7 @@
   },
   {
     "key": "cross2ohenablingseamlessportingofccsoftwarelibrariestoopenharmony",
-    "id": 7881,
+    "id": 8213,
     "title": "Cross2OH: Enabling Seamless Porting of C/C++ Software Libraries to OpenHarmony",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334403",
     "method": "Cross2OH 从 92 个移植案例建立适配知识库，并以静态分析检测、修补八类 Linux-to-OpenHarmony 兼容问题。",
@@ -4329,7 +4329,7 @@
   },
   {
     "key": "hybridsimdasupercsimdlibrarywithintegratedautotuningcapabilities",
-    "id": 7882,
+    "id": 8214,
     "title": "HybridSIMD: A Super C++ SIMD Library with Integrated Auto-tuning Capabilities",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334306",
     "method": "HybridSIMD 以统一接口和算子级协作后端组合现有 SIMD 库，再用层次搜索自动调优实现选择。",
@@ -4361,7 +4361,7 @@
   },
   {
     "key": "demystifyingcrosslanguageccbinariesarobustsoftwarecomponentanalysisapproach",
-    "id": 7883,
+    "id": 8215,
     "title": "Demystifying Cross-Language C/C++ Binaries: A Robust Software Component Analysis Approach",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334590",
     "method": "DeeperBin 过滤 FFI 与公共函数噪声，自动提取版本字符串正则，并用最小描述长度生成区分性第三方库特征。",
@@ -4387,7 +4387,7 @@
   },
   {
     "key": "detectingvariousdefipricemanipulationswithllmreasoning",
-    "id": 7884,
+    "id": 8216,
     "title": "Detecting Various DeFi Price Manipulations with LLM Reasoning",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334472",
     "method": "DeFiScope 用 Foundry 合成链上数据微调价格专属大模型，从合约抽象定价逻辑并结合恢复的高层操作匹配操纵模式。",
@@ -4421,7 +4421,7 @@
   },
   {
     "key": "multidimensionalassessmentofcrowdsourcedtestingreportsviallms",
-    "id": 7885,
+    "id": 8217,
     "title": "Multi-dimensional Assessment of Crowdsourced Testing Reports via LLMs",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334445",
     "method": "让大模型从文本性、充分性和竞争性三个维度综合评估众包测试报告质量。",
@@ -4444,7 +4444,7 @@
   },
   {
     "key": "argtestingqueryrewritersviaabstractruleguidedfuzzing",
-    "id": 7886,
+    "id": 8218,
     "title": "ARG: Testing Query Rewriters via Abstract Rule Guided Fuzzing",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334334",
     "method": "ARG 把查询重写触发模式和变换统一为抽象规则，以规则覆盖反馈动态优先生成未探索查询。",
@@ -4467,7 +4467,7 @@
   },
   {
     "key": "ontheinsecurityofnonresettabledeviceidentifiersincustomandroidsystems",
-    "id": 7887,
+    "id": 8219,
     "title": "On the (In)Security of Non-resettable Device Identifiers in Custom Android Systems",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334468",
     "method": "IDRADAR 可扩展分析定制 Android ROM 的系统属性与设置，识别保存不可重置标识且访问控制不足的隐蔽通道。",
@@ -4492,7 +4492,7 @@
   },
   {
     "key": "peacetowardsefficientprojectlevelefficiencyoptimizationviahybridcodeediting",
-    "id": 7888,
+    "id": 8220,
     "title": "PEACE: Towards Efficient Project-Level Efficiency Optimization via Hybrid Code Editing",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334295",
     "method": "PEACE 按依赖构建优化函数序列，识别有效关联编辑，并迭代执行保证项目完整性的效率优化。",
@@ -4526,7 +4526,7 @@
   },
   {
     "key": "mctsrefinedcothighqualityfinetuningdataforllmbasedrepositoryissueresolution",
-    "id": 7889,
+    "id": 8221,
     "title": "MCTS-Refined CoT: High-Quality Fine-Tuning Data for LLM-Based Repository Issue Resolution",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334706",
     "method": "MCTS-REFINE 将 issue 解决分为文件定位、故障定位与补丁生成，并用反思拒绝采样逐步验证和修正推理链。",
@@ -4549,7 +4549,7 @@
   },
   {
     "key": "canmambabebetteranexperimentalevaluationofmambaincodeintelligence",
-    "id": 7890,
+    "id": 8222,
     "title": "Can Mamba Be Better? An Experimental Evaluation of Mamba in Code Intelligence",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334474",
     "method": "从头预训练 Mamba 和 Mamba-2 代码模型，在全量与参数高效微调、低资源和扩展规模设置下对比 Transformer。",
@@ -4572,7 +4572,7 @@
   },
   {
     "key": "orfuzzfuzzingtheothersideofllmsafetytestingoverrefusal",
-    "id": 7891,
+    "id": 8223,
     "title": "ORFuzz: Fuzzing the \"Other Side\" of LLM Safety - Testing Over-Refusal",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334477",
     "method": "ORFuzz 以安全类别选择种子，用推理大模型自适应优化变异，并由人类对齐 OR-Judge 判定良性请求的过度拒绝。",
@@ -4608,7 +4608,7 @@
   },
   {
     "key": "codingfuseefficientfusionofcodepretrainedmodelsforclassificationtasks",
-    "id": 7892,
+    "id": 8224,
     "title": "Coding-Fuse: Efficient Fusion of Code Pre-Trained Models for Classification Tasks",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334555",
     "method": "Coding-Fuse 用证据理论选择各代码预训练模型最适配标签的层，再以软投票融合这些层的输出。",
@@ -4631,7 +4631,7 @@
   },
   {
     "key": "diplomatistwhatdocrosslanguagedependenciesreflectsoftwareecosystemhealth",
-    "id": 7893,
+    "id": 8225,
     "title": "Diplomatist: What Do Cross-language Dependencies Reflect Software Ecosystem Health?",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334465",
     "method": "Diplomatist 分析跨语言调用 API，并以知识仓库标准化多种 guest 语言的库版本特征，构建完整跨生态依赖图。",
@@ -4657,7 +4657,7 @@
   },
   {
     "key": "automateddetectionofwebapplicationnavigationbarriersforscreenreaderusers",
-    "id": 7894,
+    "id": 8226,
     "title": "Automated Detection of Web Application Navigation Barriers for Screen Reader Users",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334511",
     "method": "A11yNavigator 驱动 NVDA 模拟 Tab、方向键和快速导航，检查界面元素能否被屏幕阅读器定位和激活。",
@@ -4680,7 +4680,7 @@
   },
   {
     "key": "semguardrealtimesemanticevaluatorforcorrectingllmgeneratedcode",
-    "id": 7895,
+    "id": 8227,
     "title": "SemGuard: Real-Time Semantic Evaluator for Correcting LLM-Generated Code",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334346",
     "method": "SemGuard 在大模型解码器中嵌入行级语义评价器，发现部分代码偏离后回滚到错误行并引导再生成。",
@@ -4714,7 +4714,7 @@
   },
   {
     "key": "defects4logbenchmarkingllmsforloggingcodedefectdetectionandreasoning",
-    "id": 7896,
+    "id": 8228,
     "title": "Defects4Log: Benchmarking LLMs for Logging Code Defect Detection and Reasoning",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334466",
     "method": "构建含七类模式、十四个场景的 Defects4Log，并系统比较提示策略和上下文知识对大模型日志缺陷推理的影响。",
@@ -4739,7 +4739,7 @@
   },
   {
     "key": "efficientunderstandingofmachinelearningmodelmispredictions",
-    "id": 7897,
+    "id": 8229,
     "title": "Efficient Understanding of Machine Learning Model Mispredictions",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334517",
     "method": "MMDFAST 先筛选最影响误预测的特征，再以决策树替代昂贵规则集学习生成解释。",
@@ -4762,7 +4762,7 @@
   },
   {
     "key": "vrtestsniffertestsmelldetectorforvirtualrealityvrsoftwareprojects",
-    "id": 7898,
+    "id": 8230,
     "title": "VRTestSniffer: Test Smell Detector for Virtual Reality (VR) Software Projects",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334364",
     "method": "VRTestSniffer 联合 AST、控制流图和数据流图，静态检测 Unity VR 测试的十七类异味。",
@@ -4785,7 +4785,7 @@
   },
   {
     "key": "nonterminationwitnessesandtheirvalidation",
-    "id": 7899,
+    "id": 8231,
     "title": "Non-termination Witnesses and Their Validation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334721",
     "method": "扩展 witness format 2.0 为非终止证书定义清晰语义，并总结生成与验证方法及工具支持。",
@@ -4808,7 +4808,7 @@
   },
   {
     "key": "automatedgenerationofissuereproducingtestsbycombiningllmsandsearchbasedtesting",
-    "id": 7900,
+    "id": 8232,
     "title": "Automated Generation of Issue-Reproducing Tests by Combining LLMs and Search-Based Testing",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334449",
     "method": "BLAST 用 Git 历史、静态分析和搜索测试补充 issue/patch 上下文，并把 LLM 种子反序列化后交给 SBST 优化复现测试。",
@@ -4831,7 +4831,7 @@
   },
   {
     "key": "havewesolvedaccesscontrolvulnerabilitydetectioninsmartcontractsabenchmarkstudy",
-    "id": 7901,
+    "id": 8233,
     "title": "Have We Solved Access Control Vulnerability Detection in Smart Contracts? A Benchmark Study",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334489",
     "method": "整理 180 个真实访问控制漏洞，按根因构建分类，并评测六种工具与多种大模型的召回、盲点和规模限制。",
@@ -4857,7 +4857,7 @@
   },
   {
     "key": "explainablefaultlocalizationforprogrammingassignmentsviallmguidedannotation",
-    "id": 7902,
+    "id": 8234,
     "title": "Explainable Fault Localization for Programming Assignments via LLM-Guided Annotation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334657",
     "method": "FLAME 让大模型在代码中直接标注故障行并生成解释，再以加权多模型投票汇总每行可疑度。",
@@ -4891,7 +4891,7 @@
   },
   {
     "key": "interpretablevulnerabilitydetectionreports",
-    "id": 7903,
+    "id": 8235,
     "title": "Interpretable Vulnerability Detection Reports",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334493",
     "method": "SECGen 按解释性约定解析静态分析输出，重组为结构化漏洞描述和可操作修复建议，并自动验证格式合规。",
@@ -4916,7 +4916,7 @@
   },
   {
     "key": "characterizingandrepairingcolorrelatedaccessibilityissuesinandroidapps",
-    "id": 7904,
+    "id": 8236,
     "title": "Characterizing and Repairing Color-Related Accessibility Issues in Android Apps",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334532",
     "method": "先从真实修复归纳开发者选色策略，DroidPalette 再结合 Android 与第三方库的候选属性自动生成颜色补丁。",
@@ -4939,7 +4939,7 @@
   },
   {
     "key": "demystifyingtheevolutionofneuralnetworkswithbomanalysisinsightsfromalargescalestudyof55997githubrepositories",
-    "id": 7905,
+    "id": 8237,
     "title": "Demystifying the Evolution of Neural Networks with BOM Analysis: Insights from a Large-Scale Study of 55,997 GitHub Repositories",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334220",
     "method": "构建包含第三方库、预训练模型和模块的 NNBOM 数据库，并分析神经网络软件规模、复用和跨领域依赖演化。",
@@ -4962,7 +4962,7 @@
   },
   {
     "key": "firmprojdetectingfirmwareleakageiniotupdateprocessesviacompanionappanalysis",
-    "id": 7906,
+    "id": 8238,
     "title": "FirmProj: Detecting Firmware Leakage in IoT Update Processes via Companion App Analysis",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334440",
     "method": "FirmProj 联合静态分析与大模型，从 IoT 配套应用定位 DFU 模块、提取固件文件并识别更新验证漏洞。",
@@ -4988,7 +4988,7 @@
   },
   {
     "key": "whyismytransactionriskyunderstandingsmartcontractsemanticsandinteractionsinthenftecosystem",
-    "id": 7907,
+    "id": 8239,
     "title": "Why Is My Transaction Risky? Understanding Smart Contract Semantics and Interactions in the NFT Ecosystem",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334602",
     "method": "在近一亿笔以太坊交易上刻画 NFT 合约语义、字节码多样性与交互模式，并比较风险和非风险交易。",
@@ -5011,7 +5011,7 @@
   },
   {
     "key": "breakingthetrafficbarrierunveilingmultiformatofprotocolsviaautonomousprogramexploration",
-    "id": 7908,
+    "id": 8240,
     "title": "Breaking the Traffic Barrier: Unveiling Multi-Format of Protocols via Autonomous Program Exploration",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334354",
     "method": "ProbePRE 以隐式数据流增强执行跟踪，从不同程序结构抽取约束并组合生成有效数据包，自主探索多条解析路径。",
@@ -5037,7 +5037,7 @@
   },
   {
     "key": "spec2codemappingprotocolspecificationtofunctionlevelcodeimplementation",
-    "id": 7909,
+    "id": 8241,
     "title": "Spec2Code: Mapping Protocol Specification to Function-Level Code Implementation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334548",
     "method": "Spec2Code 抽取结构化 RFC 要求和函数表示，经相关性过滤与聚类降候选，再让 LLM 做约束级关系匹配。",
@@ -5062,7 +5062,7 @@
   },
   {
     "key": "usingfourieranalysisandmutantclusteringtoacceleratednnmutationtesting",
-    "id": 7910,
+    "id": 8242,
     "title": "Using Fourier Analysis and Mutant Clustering to Accelerate DNN Mutation Testing",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334573",
     "method": "DM# 用少量数据点的傅里叶特征量化 DNN mutant 行为，聚类相似 mutant 并只测试每簇代表。",
@@ -5085,7 +5085,7 @@
   },
   {
     "key": "patagentautoformalizationformodelchecking",
-    "id": 7911,
+    "id": 8243,
     "title": "PAT-Agent: Autoformalization for Model Checking",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334568",
     "method": "PAT-Agent 由规划 LLM 提取建模元素，代码生成 LLM 合成形式模型，再用 PAT 验证属性并以反例循环修复。",
@@ -5119,7 +5119,7 @@
   },
   {
     "key": "towardsgeneralizableinstructionvulnerabilitypredictionviallmenhancedcoderepresentation",
-    "id": 7912,
+    "id": 8244,
     "title": "Towards Generalizable Instruction Vulnerability Prediction via LLM-Enhanced Code Representation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334462",
     "method": "CIVP 用大模型提取指令语义，构建执行图并以多跳扩散 GraphSAGE 和伪标签预测 bit-flip 脆弱指令。",
@@ -5154,7 +5154,7 @@
   },
   {
     "key": "dontmesswithbroscheeseanempiricalstudyofresourceconflictinandroidmultiwindow",
-    "id": 7913,
+    "id": 8245,
     "title": "Don’t Mess with Bro’s Cheese! An Empirical Study of Resource Conflict in Android Multi-window",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334722",
     "method": "从根因将多窗口资源冲突分为三类，并开发 MRC-Detector 静态识别多个应用并发访问同一系统资源。",
@@ -5179,7 +5179,7 @@
   },
   {
     "key": "flakyguardautomaticallyfixingflakytestsatindustryscale",
-    "id": 7914,
+    "id": 8246,
     "title": "FlakyGuard: Automatically Fixing Flaky Tests at Industry Scale",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334450",
     "method": "FlakyGuard 把代码建模为图并选择性探索，只向大模型提供修复 flaky test 所需的最相关生产与测试上下文。",
@@ -5202,7 +5202,7 @@
   },
   {
     "key": "spinnerdetectinglockingviolationsintheebpfruntime",
-    "id": 7915,
+    "id": 8247,
     "title": "Spinner: Detecting Locking Violations in the eBPF Runtime",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334301",
     "method": "Spinner 静态检查 eBPF helper 的执行上下文锁原语匹配，并识别可由嵌套 eBPF 程序递归调用的锁。",
@@ -5227,7 +5227,7 @@
   },
   {
     "key": "alteredhistoriesinversioncontrolsystemrepositoriesevidencefromthetrenches",
-    "id": 7916,
+    "id": 8248,
     "title": "Altered Histories in Version Control System Repositories: Evidence from the Trenches",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334612",
     "method": "在 Software Heritage 保存的 1.11 亿仓库中识别和分类 Git 历史改写，并以 GitHistorian 自动描述公开仓库变更。",
@@ -5252,7 +5252,7 @@
   },
   {
     "key": "generatingfailurebasedoraclestosupporttestingofreportedbugsinandroidapps",
-    "id": 7917,
+    "id": 8249,
     "title": "Generating Failure-Based Oracles to Support Testing of Reported Bugs in Android Apps",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334637",
     "method": "AndroB2O 结合 bug 报告与失败界面，先定位相关 GUI 元素，再依据属性生成确认失败不存在的断言 oracle。",
@@ -5275,7 +5275,7 @@
   },
   {
     "key": "lspfuzzhuntingbugsinlanguageservers",
-    "id": 7918,
+    "id": 8250,
     "title": "LspFuzz: Hunting Bugs in Language Servers",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334451",
     "method": "LspFuzz 先对源码做语法感知变异，再按变异上下文调度编辑器操作，联合探索 LSP 输入组合。",
@@ -5300,7 +5300,7 @@
   },
   {
     "key": "llmpoweredmultiagentcollaborationforintelligentindustrialoncallautomation",
-    "id": 7919,
+    "id": 8251,
     "title": "LLM-Powered Multi-Agent Collaboration for Intelligent Industrial On-Call Automation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334482",
     "method": "OncallX 以知识库和多轮对话增强请求，由多个专家代理通过树搜索协作生成处置方案，未解决时自动分派团队。",
@@ -5326,7 +5326,7 @@
   },
   {
     "key": "enhancingllmtodecompileoptimizedptxtoreadablecudafortensorprograms",
-    "id": 7920,
+    "id": 8252,
     "title": "Enhancing LLM to Decompile Optimized PTX to Readable CUDA for Tensor Programs",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334294",
     "method": "PtxDec 用编译器增强构建 40 万 CUDA-PTX 对，并以 loop reroll 生成 Rolled-PTX 简化展开代码后训练大模型反编译。",
@@ -5360,7 +5360,7 @@
   },
   {
     "key": "mixtureofexpertslowrankadaptationformultilingualcodesummarization",
-    "id": 7921,
+    "id": 8253,
     "title": "Mixture-of-Experts Low-Rank Adaptation for Multilingual Code Summarization",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334619",
     "method": "MMLoRA 组合通用 LoRA 专家与语言专属专家，并用 expert loss 保持专家多样性和训练平衡。",
@@ -5385,7 +5385,7 @@
   },
   {
     "key": "automatedrepairofopenidconnectprograms",
-    "id": 7922,
+    "id": 8254,
     "title": "Automated Repair of OpenID Connect Programs",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334406",
     "method": "AuthFix 以反例引导串联故障定位、LLM 补丁合成和补丁验证，并用 Petri 网模型检查器建模 OpenID 交互。",
@@ -5410,7 +5410,7 @@
   },
   {
     "key": "latraatemplatebasedlanguageagnostictransformationframeworkforeffectiveprogramreduction",
-    "id": 7923,
+    "id": 8255,
     "title": "Latra: A Template-Based Language-Agnostic Transformation Framework for Effective Program Reduction",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334681",
     "method": "Latra 在语言无关缩减器中加入基于简单匹配重写 DSL 的用户模板，以低工程成本提供语言专属变换。",
@@ -5435,7 +5435,7 @@
   },
   {
     "key": "fasterruntimeverificationduringtestingviafeedbackguidedselectivemonitoring",
-    "id": 7924,
+    "id": 8256,
     "title": "Faster Runtime Verification during Testing via Feedback-Guided Selective Monitoring",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334469",
     "method": "Valg 将选择性创建运行时监控器建模为双臂 bandit，根据历史冗余反馈奖励必要监控、惩罚重复监控。",
@@ -5460,7 +5460,7 @@
   },
   {
     "key": "fastcoderacceleratingrepositorylevelcodegenerationviaefficientretrievalandverification",
-    "id": 7925,
+    "id": 8257,
     "title": "FastCoder: Accelerating Repository-level Code Generation via Efficient Retrieval and Verification",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334326",
     "method": "FastCoder 从通用与项目专属多源库检索草稿序列，通过时机控制、并行检索和上下文偏好缓存加速 draft-verification 解码。",
@@ -5483,7 +5483,7 @@
   },
   {
     "key": "effectivecodemembershipinferenceforcodecompletionmodelsviaadversarialprompts",
-    "id": 7926,
+    "id": 8258,
     "title": "Effective Code Membership Inference for Code Completion Models via Adversarial Prompts",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334379",
     "method": "AdvPrompt-MIA 用代码特定对抗提示诱导补全输出变化，将其与真值差异编码为特征训练成员分类器。",
@@ -5509,7 +5509,7 @@
   },
   {
     "key": "spiceanautomatedswebenchlabelingpipelineforissueclaritytestcoverageandeffortestimation",
-    "id": 7927,
+    "id": 8259,
     "title": "SPICE: An Automated SWE-Bench Labeling Pipeline for Issue Clarity, Test Coverage, and Effort Estimation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334598",
     "method": "SPICE 结合上下文感知代码导航、带理由提示和多轮共识，自动标注 issue 清晰度、测试覆盖与修复工作量。",
@@ -5532,7 +5532,7 @@
   },
   {
     "key": "onthecorrectnessofsoftwaremerge",
-    "id": 7928,
+    "id": 8260,
     "title": "On the Correctness of Software Merge",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334536",
     "method": "以可解析性和由范畴论 pushout 定义的 universality 建立合并正确性准则，并据此实现结构化合并工具 d3j。",
@@ -5555,7 +5555,7 @@
   },
   {
     "key": "incrementalprogramanalysisinthewildanempiricalstudyonrealworldprogramchanges",
-    "id": 7929,
+    "id": 8261,
     "title": "Incremental Program Analysis in the Wild: An Empirical Study on Real-World Program Changes",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334347",
     "method": "建立真实程序变更基准自动构建管线和统一增量评测框架，在四千余提交上系统比较 IPA 工具。",
@@ -5578,7 +5578,7 @@
   },
   {
     "key": "polyglotanextensibleframeworktobenchmarkcodetranslationwithllms",
-    "id": 7930,
+    "id": 8262,
     "title": "Polyglot: An Extensible Framework to Benchmark Code Translation with LLMs",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334550",
     "method": "Polyglot 基于 CodeNet 自动评估跨语言生成的语法正确、执行可靠、语义保持和静态代码指标。",
@@ -5603,7 +5603,7 @@
   },
   {
     "key": "interleavedlearningandexplorationaselfadaptivefuzztestingframeworkformlir",
-    "id": 7931,
+    "id": 8263,
     "title": "Interleaved Learning and Exploration: A Self-Adaptive Fuzz Testing Framework for MLIR",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334665",
     "method": "FLEX 用神经程序生成、扰动采样和反馈增强循环，在崩溃与非崩溃样例上持续学习 MLIR 语法语义。",
@@ -5629,7 +5629,7 @@
   },
   {
     "key": "failmapperautomatedgenerationofunittestsguidedbyfailurescenarios",
-    "id": 7932,
+    "id": 8264,
     "title": "FailMapper: Automated Generation of Unit Tests Guided by Failure Scenarios",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334488",
     "method": "FailMapper 把缺陷结果归纳为九类失败场景和触发策略，并用蒙特卡洛树搜索探索可能导致失败的故障。",
@@ -5652,7 +5652,7 @@
   },
   {
     "key": "llmsforautomatedunittestgenerationandassessmentinjavatheagonetestframework",
-    "id": 7933,
+    "id": 8265,
     "title": "LLMs for Automated Unit Test Generation and Assessment in Java: The AgoneTest Framework",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334272",
     "method": "AgoneTest 提供标准端到端流水线，用 CLASSES2TEST、覆盖、突变分数和测试异味比较模型与提示生成的 Java 测试。",
@@ -5675,7 +5675,7 @@
   },
   {
     "key": "deepexploitorllmenhancedautomatedexploitationofdeeplinkattackinhybridapps",
-    "id": 7934,
+    "id": 8266,
     "title": "DeepExploitor: LLM-Enhanced Automated Exploitation of DeepLink Attack in Hybrid Apps",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334584",
     "method": "DeepExploitor 静态抽取混合应用路由和输入解析约束，让 LLM 求解有效 DeepLink，再变异可信域绕过 allowlist。",
@@ -5709,7 +5709,7 @@
   },
   {
     "key": "anagentbasedevaluationframeworkforcomplexcodegeneration",
-    "id": 7935,
+    "id": 8267,
     "title": "An Agent-based Evaluation Framework for Complex Code Generation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334422",
     "method": "CodeVisionary 先按需求制定评测计划并逐步蒸馏多维上下文，再由多个评判代理自主评分、协商共识和总结。",
@@ -5734,7 +5734,7 @@
   },
   {
     "key": "tokensugarmakingsourcecodesweeterforllmsthroughtokenefficientshorthand",
-    "id": 7936,
+    "id": 8268,
     "title": "Token Sugar: Making Source Code Sweeter for LLMs through Token-Efficient Shorthand",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334281",
     "method": "从代码语料挖掘高频、耗 token 模式，映射为可逆唯一 shorthand，并以变换数据预训练大模型。",
@@ -5757,7 +5757,7 @@
   },
   {
     "key": "advancingautomatedethicalprofilinginseazeroshotevaluationofllmreasoning",
-    "id": 7937,
+    "id": 8269,
     "title": "Advancing Automated Ethical Profiling in SE: a Zero-Shot Evaluation of LLM Reasoning",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334414",
     "method": "自动提示 16 个大模型对真实伦理场景选择理论、判断可接受性并解释，再与伦理专家选择比较一致性。",
@@ -5780,7 +5780,7 @@
   },
   {
     "key": "exactinferenceforquantumcircuitsatestingoracleforquantumsoftwarestacks",
-    "id": 7938,
+    "id": 8270,
     "title": "Exact Inference for Quantum Circuits: A Testing Oracle for Quantum Software Stacks",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334221",
     "method": "QASMInfer 将 OpenQASM 去糖到经 Coq 机械证明的核心语言，精确计算动态量子电路结果概率分布作为统一 oracle。",
@@ -5803,7 +5803,7 @@
   },
   {
     "key": "evaluatingandimprovingframeworkbasedparallelcodecompletionwithlargelanguagemodels",
-    "id": 7939,
+    "id": 8271,
     "title": "Evaluating and Improving Framework-based Parallel Code Completion with Large Language Models",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334593",
     "method": "构建六框架并行代码对数据集，并用 HPCL 课程微调依次学习插入点、框架选择和并行指令补全。",
@@ -5828,7 +5828,7 @@
   },
   {
     "key": "thefaultinourstats",
-    "id": 7940,
+    "id": 8272,
     "title": "The Fault in our Stats",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334421",
     "method": "stat-lint 把 Python 数据科学程序转换为统计中间表示 SIR，静态检查方法假设、多重比较校正和残差验证义务。",
@@ -5851,7 +5851,7 @@
   },
   {
     "key": "unittestupdatethroughllmdrivencontextcollectionanderrortypeawarerefinement",
-    "id": 7941,
+    "id": 8273,
     "title": "Unit Test Update through LLM-Driven Context Collection and Error-Type-Aware Refinement",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334559",
     "method": "TestUpdater 让 LLM 分析生产代码变更、收集过滤相关上下文，分步修补或增强测试，再按执行错误类型迭代细化。",
@@ -5885,7 +5885,7 @@
   },
   {
     "key": "onautomatingconfigurationdependencyvalidationviaretrievalaugmentedgeneration",
-    "id": 7942,
+    "id": 8274,
     "title": "On Automating Configuration Dependency Validation via Retrieval-Augmented Generation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334571",
     "method": "实证比较 vanilla LLM、通用 RAG 和依据失败质性分析定制上下文的 RAG，对跨技术配置依赖进行验证。",
@@ -5908,7 +5908,7 @@
   },
   {
     "key": "automatedinsertionofflushesandfencesforpersistency",
-    "id": 7943,
+    "id": 8275,
     "title": "Automated Insertion of Flushes and Fences for Persistency",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334229",
     "method": "PMRobust 编译器以针对新分配对象优化的静态分析，自动插入持久内存所需 flush 和 fence。",
@@ -5933,7 +5933,7 @@
   },
   {
     "key": "solekeruncoveringvulnerabilitiesinsolanasmartcontracts",
-    "id": 7944,
+    "id": 8276,
     "title": "Soleker: Uncovering Vulnerabilities in Solana Smart Contracts",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334576",
     "method": "从 Solana bytecode 提取区块链交互指令的局部语义特征，并用 prefix-guided graph learning 检测漏洞。",
@@ -5958,7 +5958,7 @@
   },
   {
     "key": "actaintagentbasedtaintanalysisforaccesscontrolvulnerabilitiesinsmartcontracts",
-    "id": 7945,
+    "id": 8277,
     "title": "ACTaint: Agent-Based Taint Analysis for Access Control Vulnerabilities in Smart Contracts",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334673",
     "method": "静态分析引导 sink agent，再由 taint agent 检查不可信 source 到 sink 的数据流。",
@@ -5984,7 +5984,7 @@
   },
   {
     "key": "driftdebugbasedtraceinferenceforfirmwaretesting",
-    "id": 7946,
+    "id": 8278,
     "title": "DRIFT: Debug-based Trace Inference for Firmware Testing",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334624",
     "method": "链式触发 Cortex-M Debug Monitor 中断，让固件自追踪并支持 semihosting 模糊测试。",
@@ -6009,7 +6009,7 @@
   },
   {
     "key": "wingmuzzblackboxtestingofiotprotocolsviatwodimensionalfuzzingschedule",
-    "id": 7947,
+    "id": 8279,
     "title": "WingMuzz: Blackbox Testing of IoT Protocols via Two-dimensional Fuzzing Schedule",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334343",
     "method": "用对应开源实现的 greybox 覆盖反馈指导闭源 IoT 协议，并二维调度 wingmate 与测试输入。",
@@ -6034,7 +6034,7 @@
   },
   {
     "key": "ontherobustnessevaluationof3dobstacledetectionagainstspecificationsinautonomousdriving",
-    "id": 7948,
+    "id": 8280,
     "title": "On the Robustness Evaluation of 3D Obstacle Detection Against Specifications in Autonomous Driving",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334247",
     "method": "依据 LiDAR 规格、颜色和材质知识生成点云扰动，并追踪检测偏差向轨迹预测传播。",
@@ -6059,7 +6059,7 @@
   },
   {
     "key": "sejuryanllmasensemblejudgemetricfornarrowingthegapwithhumanevaluationinse",
-    "id": 7949,
+    "id": 8281,
     "title": "SE-Jury: An LLM-as-Ensemble-Judge Metric for Narrowing the Gap with Human Evaluation in SE",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334309",
     "method": "建立五种独立 LLM judging 策略，并动态选择最合适子集集成软件制品正确性分数。",
@@ -6084,7 +6084,7 @@
   },
   {
     "key": "efficienteditacceleratingcodeeditingviaeditorientedspeculativedecoding",
-    "id": 7950,
+    "id": 8282,
     "title": "EfficientEdit: Accelerating Code Editing via Edit-Oriented Speculative Decoding",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334358",
     "method": "复用未改原代码、预测编辑位置，并以 edit-oriented draft 与动态验证执行投机解码。",
@@ -6107,7 +6107,7 @@
   },
   {
     "key": "autofidadaptiveandnoiseawarefidelitymeasurementforquantumprogramsviacircuitgraphanalysis",
-    "id": 7951,
+    "id": 8283,
     "title": "AutoFid: Adaptive and Noise-Aware Fidelity Measurement for Quantum Programs via Circuit Graph Analysis",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334407",
     "method": "用电路 DAG 随机游走与 transpilation-aware 硬件特征估计预算，再以置信区间动态早停。",
@@ -6130,7 +6130,7 @@
   },
   {
     "key": "usingactivelearningtotrainpredictivemutationtestingwithminimaldata",
-    "id": 7952,
+    "id": 8284,
     "title": "Using Active Learning to Train Predictive Mutation Testing with Minimal Data",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334622",
     "method": "以主动学习选择最有信息和困难的 mutant 执行，用少量 kill status 训练预测式 mutation testing。",
@@ -6153,7 +6153,7 @@
   },
   {
     "key": "quanbenchbenchmarkingquantumcodegenerationwithlargelanguagemodels",
-    "id": 7953,
+    "id": 8285,
     "title": "QuanBench: Benchmarking Quantum Code Generation with Large Language Models",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334507",
     "method": "构建含可执行标准答案的 44 项量子编程基准，并联合 Pass@K 与 process fidelity 评价。",
@@ -6176,7 +6176,7 @@
   },
   {
     "key": "howbigistheautomatoncertifiedlowerboundsonthesizeofpresburgerdfas",
-    "id": 7954,
+    "id": 8286,
     "title": "How Big is the Automaton? Certified Lower Bounds on the Size of Presburger DFAs",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334328",
     "method": "自动计算 Presburger 公式最小 DFA 大小下界，并生成可独立验证、可合并的证书。",
@@ -6199,7 +6199,7 @@
   },
   {
     "key": "understandingresourceinjectionvulnerabilitiesinkubernetesecosystems",
-    "id": 7955,
+    "id": 8287,
     "title": "Understanding Resource Injection Vulnerabilities in Kubernetes Ecosystems",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334658",
     "method": "系统编码 125 个 Kubernetes resource injection 漏洞的字段、根因、特权操作、条件和修复。",
@@ -6224,7 +6224,7 @@
   },
   {
     "key": "fromcharacterstostructurerethinkingrealtimecollaborativeprogrammingmodels",
-    "id": 7956,
+    "id": 8288,
     "title": "From Characters to Structure: Rethinking Real-Time Collaborative Programming Models",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334453",
     "method": "仅传播语法有效的结构化代码修改，而非每次击键。",
@@ -6247,7 +6247,7 @@
   },
   {
     "key": "statefieldcoverageametricfororaclequality",
-    "id": 7957,
+    "id": 8289,
     "title": "State Field Coverage: A Metric for Oracle Quality",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334305",
     "method": "静态计算测试 oracle 可能访问的对象字段比例，以未检查字段指导 oracle 改进。",
@@ -6270,7 +6270,7 @@
   },
   {
     "key": "palmsynergizingprogramanalysisandllmstoenhancerustunittestcoverage",
-    "id": 7958,
+    "id": 8290,
     "title": "PALM: Synergizing Program Analysis and LLMs to Enhance Rust Unit Test Coverage",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334728",
     "method": "程序分析提取分支路径约束和上下文，再动态构造 prompt 引导 LLM 生成 Rust 单测。",
@@ -6293,7 +6293,7 @@
   },
   {
     "key": "tephraprincipleddiscoveryoffuzzerlimitations",
-    "id": 7959,
+    "id": 8291,
     "title": "Tephra: Principled Discovery of Fuzzer Limitations",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334676",
     "method": "用语义引导综合生成无缺陷但含多样 obstacle 的程序，统计评价 fuzzer 绕过能力。",
@@ -6318,7 +6318,7 @@
   },
   {
     "key": "hfuzzertestinglargelanguagemodelsforpackagehallucinationsviaphrasebasedfuzzing",
-    "id": 7960,
+    "id": 8292,
     "title": "HFuzzer: Testing Large Language Models for Package Hallucinations via Phrase-based Fuzzing",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334594",
     "method": "从包信息与任务提取相关 phrase，生成多样编码/配置任务并 fuzz LLM 的虚假包推荐。",
@@ -6344,7 +6344,7 @@
   },
   {
     "key": "llmbasedidentificationofnullpointerexceptionpatches",
-    "id": 7961,
+    "id": 8293,
     "title": "LLM-Based Identification of Null Pointer Exception Patches",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334495",
     "method": "筛选优质示例、扩充上下文知识库、优先排序 commit 并以反馈迭代纠正分类。",
@@ -6367,7 +6367,7 @@
   },
   {
     "key": "rootcauseanalysisofriscvbuildfailuresviallmandmctsreasoning",
-    "id": 7962,
+    "id": 8294,
     "title": "Root Cause Analysis of RISC-V Build Failures via LLM and MCTS Reasoning",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334506",
     "method": "RV-LAD 压缩并分阶段检测日志异常，再由 MCTS-RCA 联合知识库进行 LLM 引导多源搜索。",
@@ -6390,7 +6390,7 @@
   },
   {
     "key": "understandingfeaturerequestpracticeongithubviaalargescaleempiricalstudy",
-    "id": 7963,
+    "id": 8295,
     "title": "Understanding Feature Request Practice on GitHub via a Large-Scale Empirical Study",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334316",
     "method": "分析 825 个仓库 140 万 issue 的标签、生命周期趋势、解决与参与因素。",
@@ -6413,7 +6413,7 @@
   },
   {
     "key": "whichisbetterforreducingoutdatedandvulnerabledependenciespinningorfloatingƒ",
-    "id": 7964,
+    "id": 8296,
     "title": "Which Is Better For Reducing Outdated and Vulnerable Dependencies: Pinning or Floatingƒ",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334547",
     "method": "统计三大生态约束使用与变更，并以 survival analysis 建模依赖变旧或含漏洞的状态转移。",
@@ -6438,7 +6438,7 @@
   },
   {
     "key": "amultimodalityevaluationoftherealitygapinautonomousdrivingsystems",
-    "id": 7965,
+    "id": 8297,
     "title": "A Multi-Modality Evaluation of the Reality Gap in Autonomous Driving Systems",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334703",
     "method": "以实体小车和数字孪生对比 SiL、ViL、mixed reality 与全现实测试，分解执行、感知和行为 gap。",
@@ -6464,7 +6464,7 @@
   },
   {
     "key": "policondconditionawareontologydrivenllmsforprivacypolicycontradictionanalysis",
-    "id": 7966,
+    "id": 8298,
     "title": "PoliCond: Condition-Aware Ontology-Driven LLMs for Privacy Policy Contradiction Analysis",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334262",
     "method": "把条件感知 tuple、领域 ontology 与 LLM 结合，区分不同情境下的数据实践。",
@@ -6487,7 +6487,7 @@
   },
   {
     "key": "reflectiveunittestgenerationforprecisetypeerrordetectionwithlargelanguagemodels",
-    "id": 7967,
+    "id": 8299,
     "title": "Reflective Unit Test Generation for Precise Type Error Detection with Large Language Models",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334592",
     "method": "逐步分析类型约束并以反思验证引导 LLM 生成能触发 Python type error 的测试。",
@@ -6510,7 +6510,7 @@
   },
   {
     "key": "understandingsoftwareengineeringagentsastudyofthoughtactionresulttrajectories",
-    "id": 7968,
+    "id": 8300,
     "title": "Understanding Software Engineering Agents: A Study of Thought-Action-Result Trajectories",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334353",
     "method": "统一三种 SE agent 交互日志，量化 thought-action-result 结构并质性评估连贯性和反馈利用。",
@@ -6533,7 +6533,7 @@
   },
   {
     "key": "solcontractevalabenchmarkforevaluatingcontractlevelsoliditycodegeneration",
-    "id": 7969,
+    "id": 8301,
     "title": "SolContractEval: A Benchmark for Evaluating Contract-Level Solidity Code Generation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334324",
     "method": "从链上合约构建 124 个合约级任务，并用历史交易 replay 自动验证功能正确性。",
@@ -6558,7 +6558,7 @@
   },
   {
     "key": "llmportcrossfilepatchportingviataskdecompositionandselfcorrection",
-    "id": 7970,
+    "id": 8302,
     "title": "LLMPort: Cross-file Patch Porting via Task Decomposition and Self-correction",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334236",
     "method": "把跨文件安全补丁拆成原子代码单元，提取最小上下文并逐子任务 progressive self-correction。",
@@ -6584,7 +6584,7 @@
   },
   {
     "key": "difffixincrementallyfixingastdiffsviacontextandtypeinformation",
-    "id": 7971,
+    "id": 8303,
     "title": "DiffFix: Incrementally Fixing AST Diffs via Context and Type Information",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334623",
     "method": "利用节点上下文和类型约束迭代修正五种 ASTDiff 工具产生的不准确映射。",
@@ -6607,7 +6607,7 @@
   },
   {
     "key": "bettersafethansorrypreventingpolicyviolationsthroughpredictiverootcauseanalysisforiotsystems",
-    "id": 7972,
+    "id": 8304,
     "title": "Better Safe than Sorry: Preventing Policy Violations through Predictive Root-Cause-Analysis for IoT Systems",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334342",
     "method": "在已预测违规前提下分析当前 IoT 状态，以机器学习选择最优补救动作并解释根因。",
@@ -6632,7 +6632,7 @@
   },
   {
     "key": "metamorphictestingforaudiocontentmoderationsoftware",
-    "id": 7973,
+    "id": 8305,
     "title": "Metamorphic Testing for Audio Content Moderation Software",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334513",
     "method": "定义 14 个音频特征与启发式 metamorphic relation，生成语义仍有害但更易逃逸的测试。",
@@ -6658,7 +6658,7 @@
   },
   {
     "key": "automatedcombinatorialtestgenerationforalloy",
-    "id": 7974,
+    "id": 8306,
     "title": "Automated Combinatorial Test Generation for Alloy",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334715",
     "method": "自动按 Alloy 规格元素划分状态空间，以 t-wise 组合准则和增量 SAT 生成测试。",
@@ -6681,7 +6681,7 @@
   },
   {
     "key": "thecostofdowngradingbuildsystemsacasestudyofkubernetes",
-    "id": 7975,
+    "id": 8307,
     "title": "The Cost of Downgrading Build Systems : A Case Study of Kubernetes",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334660",
     "method": "复现 Kubernetes 从 Bazel 到 Go Build 期间完整/增量构建，并在四个项目复制比较。",
@@ -6704,7 +6704,7 @@
   },
   {
     "key": "epsoacachingbasedefficientsuperoptimizerforbpfbytecode",
-    "id": 7976,
+    "id": 8308,
     "title": "EPSO: A Caching-Based Efficient Superoptimizer for BPF Bytecode",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334267",
     "method": "离线 superoptimization 发现 eBPF rewrite rule，再缓存复用以低在线开销优化。",
@@ -6727,7 +6727,7 @@
   },
   {
     "key": "whendoeswasmmalwaredetectionfailasystematicanalysisoftheirrobustnesstoevasion",
-    "id": 7977,
+    "id": 8309,
     "title": "When Does Wasm Malware Detection Fail? A Systematic Analysis of Their Robustness to Evasion",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334336",
     "method": "用 22 种语义保持变换生成 48840 个 Wasm 变体，系统比较六类 detector 的规避鲁棒性。",
@@ -6754,7 +6754,7 @@
   },
   {
     "key": "vulnerabilityaffectedversionsidentificationhowfararewe",
-    "id": 7978,
+    "id": 8310,
     "title": "Vulnerability-Affected Versions Identification: How Far Are We?",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334369",
     "method": "构建 1128 个真实 C/C++ 漏洞基准，从四维系统评估 tracing/matching 两范式 12 个工具。",
@@ -6780,7 +6780,7 @@
   },
   {
     "key": "lauraenhancingcodereviewgenerationwithcontextenrichedretrievalaugmentedllm",
-    "id": 7979,
+    "id": 8311,
     "title": "LAURA: Enhancing Code Review Generation with Context-Enriched Retrieval-Augmented LLM",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334572",
     "method": "检索 review exemplar，增强代码变更上下文和历史审查知识，并系统引导 LLM 生成评论。",
@@ -6803,7 +6803,7 @@
   },
   {
     "key": "yourbuildscriptsstinkthestateofcodesmellsinbuildscripts",
-    "id": 7980,
+    "id": 8312,
     "title": "Your Build Scripts Stink: The State of Code Smells in Build Scripts",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334409",
     "method": "从 2000 个 issue 质性归纳 smell，再用 Sniffer 静态扫描四类构建脚本并通过用户研究验证。",
@@ -6826,7 +6826,7 @@
   },
   {
     "key": "mockingbirdefficientexcessivedataexposuresdetectionviadynamiccodeinstrumentation",
-    "id": 7981,
+    "id": 8313,
     "title": "Mockingbird: Efficient Excessive Data Exposures Detection via Dynamic Code Instrumentation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334357",
     "method": "以静态辅助和 JavaScript Proxy 动态 taint tracking，识别 API 返回但客户端功能从未消费的数据。",
@@ -6851,7 +6851,7 @@
   },
   {
     "key": "realisticcodebenchtowardsmorerealisticevaluationoflargelanguagemodelsforcodegeneration",
-    "id": 7982,
+    "id": 8314,
     "title": "RealisticCodeBench: Towards More Realistic Evaluation of Large Language Models for Code Generation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334662",
     "method": "从 GitHub 中标记为 ChatGPT/Copilot 生成的代码挖掘真实任务，补充参考实现、测试和多语言翻译。",
@@ -6876,7 +6876,7 @@
   },
   {
     "key": "issuelocalizationviallmdriveniterativecodegraphsearching",
-    "id": 7983,
+    "id": 8315,
     "title": "Issue Localization via LLM-Driven Iterative Code Graph Searching",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334338",
     "method": "先在动态 module call graph 广搜文件，再扩展 function graph 深搜，并以 pruner 与短上下文 reflection 控制方向和格式。",
@@ -6899,7 +6899,7 @@
   },
   {
     "key": "clarifyingsemanticsofincontextexamplesforunittestgeneration",
-    "id": 7984,
+    "id": 8316,
     "title": "Clarifying Semantics of In-Context Examples for Unit Test Generation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334234",
     "method": "以程序分析和 LLM rewriting 把复杂测试拆成语义清晰、效果保持的 ICL 示例。",
@@ -6922,7 +6922,7 @@
   },
   {
     "key": "whostoblamerethinkingthebrittlenessofautomatedwebguitestingfromapragmaticperspective",
-    "id": 7985,
+    "id": 8317,
     "title": "Who’s to Blame? Rethinking the Brittleness of Automated Web GUI Testing from a Pragmatic Perspective",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334505",
     "method": "复现 Mind2Web legacy test 在当前网页的失败，纵向分析脆弱性根因并测试带诊断语境的 LLM 修复。",
@@ -6945,7 +6945,7 @@
   },
   {
     "key": "amurfixingmultiresourceleaksguidedbyresourceflowanalysis",
-    "id": 7986,
+    "id": 8318,
     "title": "Amur: Fixing Multi-Resource Leaks Guided by Resource Flow Analysis",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334565",
     "method": "用流敏感、跨资源 RFA 识别 leak point 和依赖，并以语义约束指导 LLM patch。",
@@ -6968,7 +6968,7 @@
   },
   {
     "key": "algernonaflagguidedhybridfuzzerforunlockinghiddenprogrampaths",
-    "id": 7987,
+    "id": 8319,
     "title": "Algernon: A Flag-Guided Hybrid Fuzzer for Unlocking Hidden Program Paths",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334345",
     "method": "预分析 flag variable 与 guarded branch，构建 FDG 并将复杂检查拆成原子约束顺序求解。",
@@ -6993,7 +6993,7 @@
   },
   {
     "key": "agentsinthesandboxendtoendcrashbugreproductionforminecraft",
-    "id": 7988,
+    "id": 8320,
     "title": "Agents in the Sandbox: End-to-End Crash Bug Reproduction for Minecraft",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334697",
     "method": "先用 LLM 与 Minecraft Wiki 将报告结构化为 S2R，再由视觉 LLM agent 和 macro API 在游戏中执行。",
@@ -7018,7 +7018,7 @@
   },
   {
     "key": "llmassistedsynthesisofhighassurancecprograms",
-    "id": 7989,
+    "id": 8321,
     "title": "LLM-Assisted Synthesis of High-Assurance C Programs",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334588",
     "method": "一个 LLM 生成受语法约束的 C 候选，另一个辅助 Rocq proof，并与符号推理协同 discharge obligation。",
@@ -7043,7 +7043,7 @@
   },
   {
     "key": "howcaninfrastructureascodeacceleratedatacenterbringupsacasestudyatbytedance",
-    "id": 7990,
+    "id": 8322,
     "title": "How Can Infrastructure as Code Accelerate Data Center Bring-ups? A Case Study at ByteDance",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334649",
     "method": "ByteRollout 接收定制基础设施配置，按 intent 自动解析依赖顺序并执行新数据中心部署。",
@@ -7066,7 +7066,7 @@
   },
   {
     "key": "jsidentifyv2leveragingdynamicmemoryfingerprintingforminigameplagiarismdetection",
-    "id": 7991,
+    "id": 8323,
     "title": "JSidentify-V2: Leveraging Dynamic Memory Fingerprinting for Mini-Game Plagiarism Detection",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334226",
     "method": "静态插桩寻找 memory invariant，自适应切 hot object，构建 memory dependency graph 并匹配运行行为。",
@@ -7089,7 +7089,7 @@
   },
   {
     "key": "practicalescapeofexplorationtarpitsforminigametestinginanindustrialsetting",
-    "id": 7992,
+    "id": 8324,
     "title": "Practical Escape of Exploration Tarpits for Mini-Game Testing in an Industrial Setting",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334494",
     "method": "监控测试并检测滑动视觉提示，用多启发式重建轨迹后反复执行直至逃离 tarpit。",
@@ -7112,7 +7112,7 @@
   },
   {
     "key": "industrypracticeofllmassistedprotocolfuzzingforcommercialcommunicationmodules",
-    "id": 7993,
+    "id": 8325,
     "title": "Industry Practice of LLM-Assisted Protocol Fuzzing for Commercial Communication Modules",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334423",
     "method": "RAG-LLM 生成协议模板，GPIO 收集覆盖，历史测试知识库引导 hybrid mutation 并贯通软硬件 CI/CD。",
@@ -7137,7 +7137,7 @@
   },
   {
     "key": "harmobridgebridgingarktsandccforcrosslanguagestaticanalysisonharmonyos",
-    "id": 7994,
+    "id": 8326,
     "title": "HarmoBridge: Bridging ArkTS and C/C++ for Cross-Language Static Analysis on HarmonyOS",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334699",
     "method": "从 C/C++ 源码或 binary 提取 dataflow summary，以 SumIR 表达 Node-API 并转换为 ArkIR function body。",
@@ -7162,7 +7162,7 @@
   },
   {
     "key": "apkarmorlowcostlightweightantidecompilationtechniquesforandroidapps",
-    "id": 7995,
+    "id": 8327,
     "title": "APKARMOR: Low-Cost Lightweight Anti-Decompilation Techniques for Android Apps",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334528",
     "method": "系统分析反编译器解析假设，并向 APK/Manifest 注入七类结构异常触发工具漏洞。",
@@ -7187,7 +7187,7 @@
   },
   {
     "key": "kaiopsaplatformsolutionofendtoendmultimodalaiopsforaitrainingatscale",
-    "id": 7996,
+    "id": 8328,
     "title": "KAIOPS: A Platform Solution of End-to-End Multi-Modal AIOps for AI Training at Scale",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334302",
     "method": "以 Temporal Context Encoding 和动态类别权重检测故障，再用 KG+LLM 自动 RCA 与生成处理方案。",
@@ -7212,7 +7212,7 @@
   },
   {
     "key": "icodereviewerimprovingsecurecodereviewwithmixtureofprompts",
-    "id": 7997,
+    "id": 8329,
     "title": "iCodeReviewer: Improving Secure Code Review with Mixture of Prompts",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334620",
     "method": "为不同安全问题设计 dynamic prompt expert，并按输入代码特征只激活必要专家。",
@@ -7238,7 +7238,7 @@
   },
   {
     "key": "shouldweevaluatellmbasedsecurityanalysisapproachesonopensourcesystems",
-    "id": 7998,
+    "id": 8330,
     "title": "Should We Evaluate LLM Based Security Analysis Approaches on Open Source Systems?",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334389",
     "method": "在开放 CWE-Bench-Java、闭源 TS-Vuls 及按 CVE 日期切分数据上比较五种 frontier LLM。",
@@ -7264,7 +7264,7 @@
   },
   {
     "key": "tronfuzzinglinuxnetworkstackviaprotocolsystemcallpayloadsynthesis",
-    "id": 7999,
+    "id": 8331,
     "title": "Tron: Fuzzing Linux Network Stack via Protocol-System Call Payload Synthesis",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334647",
     "method": "依据 protocol structure 综合 syscall-packet 双输入序列并用运行反馈探索 state transition。",
@@ -7289,7 +7289,7 @@
   },
   {
     "key": "trioxpertanautomatedincidentmanagementframeworkformicroservicesystem",
-    "id": 8000,
+    "id": 8332,
     "title": "TrioXpert: An Automated Incident Management Framework for Microservice System",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334579",
     "method": "为 metrics、logs、traces 分建 pipeline，再由 LLM collaborative reasoning 同时完成 AD、FT、RCL 并给证据。",
@@ -7315,7 +7315,7 @@
   },
   {
     "key": "metricsdrivenreengineeringandcontinuouscodeimprovementatmeta",
-    "id": 8001,
+    "id": 8333,
     "title": "Metrics Driven Reengineering and Continuous Code Improvement at Meta",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334454",
     "method": "与 Meta 工程师行动研究并分析代码变更历史，以混合方法刻画持续改进实践及影响。",
@@ -7338,7 +7338,7 @@
   },
   {
     "key": "contextsensitivepointeranalysisforarkts",
-    "id": 8002,
+    "id": 8334,
     "title": "Context-Sensitive Pointer Analysis for ArkTS",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334534",
     "method": "以 ArkTS 专属 heap object model 和可扩展 plugin 构建 context-sensitive pointer analysis。",
@@ -7363,7 +7363,7 @@
   },
   {
     "key": "minukudetectingdiversedisplayissuesinmobileappswithsmallscaledataset",
-    "id": 8003,
+    "id": 8335,
     "title": "Minuku: Detecting Diverse Display Issues in Mobile Apps with Small-scale Dataset",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334566",
     "method": "微调 VLM 学习 expected UI display 和 commonsense violation，以小数据识别遮挡、缺失和溢出。",
@@ -7388,7 +7388,7 @@
   },
   {
     "key": "contextawarecodellmevictionforaiassistedcoding",
-    "id": 8004,
+    "id": 8336,
     "title": "Context-Aware CodeLLM Eviction for AI-assisted Coding",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334370",
     "method": "综合加载时间、任务时延敏感性、输出长度和滑窗需求预测选择自托管 CodeLLM eviction。",
@@ -7411,7 +7411,7 @@
   },
   {
     "key": "logpilotintentawareandscalablealertdiagnosisforlargescaleonlineservicesystems",
-    "id": 8005,
+    "id": 8337,
     "title": "LogPilot: Intent-aware and Scalable Alert Diagnosis for Large-scale Online Service Systems",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334679",
     "method": "解析 PromQL alert intent 定位因果日志，将请求重构为空时 chain 并聚类后给 LLM 代表样本。",
@@ -7436,7 +7436,7 @@
   },
   {
     "key": "streamliningacceptancetestgenerationformobileapplicationsthroughlargelanguagemodelsanindustrialcasestudy",
-    "id": 8006,
+    "id": 8338,
     "title": "Streamlining Acceptance Test Generation for Mobile Applications Through Large Language Models: An Industrial Case Study",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334650",
     "method": "用专用 LLM 从 JIRA requirement 和近期代码变更生成 Gherkin、Page Object 与可执行 UI test。",
@@ -7459,7 +7459,7 @@
   },
   {
     "key": "anempiricalstudyonuioverlapinopenharmonyapplications",
-    "id": 8007,
+    "id": 8339,
     "title": "An Empirical Study on UI Overlap in OpenHarmony Applications",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334419",
     "method": "以三层 taxonomy 分类三千多万 overlap，并用多模态 VLM 工具 HCO-Eye 检测高成本遮挡。",
@@ -7482,7 +7482,7 @@
   },
   {
     "key": "multimodalrequirementsdatabasedacceptancecriteriagenerationusingllms",
-    "id": 8008,
+    "id": 8340,
     "title": "Multi-Modal Requirements Data-based Acceptance Criteria Generation using LLMs",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334518",
     "method": "以 multimodal RAG 联合检索 textual document 与 UI visual context 生成 acceptance criteria。",
@@ -7505,7 +7505,7 @@
   },
   {
     "key": "promptwithmeinidestructuredpromptmanagementforllmdrivensoftwareengineering",
-    "id": 8009,
+    "id": 8341,
     "title": "Prompt-with-Me: in-IDE Structured Prompt Management for LLM-Driven Software Engineering",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334255",
     "method": "在 IDE 内按 intent、角色、生命周期和 prompt type 自动分类，并建议改写、脱敏和模板复用。",
@@ -7528,7 +7528,7 @@
   },
   {
     "key": "bridgingresearchandpracticeinsimulationbasedtestingofindustrialrobotnavigationsystems",
-    "id": 8010,
+    "id": 8342,
     "title": "Bridging Research and Practice in Simulation-based Testing of Industrial Robot Navigation Systems",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334268",
     "method": "以 search-based algorithm 自动生成困难避障场景，并将 Surrealist 从 UAV 迁移到 ANYmal 工业巡检。",
@@ -7554,7 +7554,7 @@
   },
   {
     "key": "acharacterizationstudyofbugsinllmagentworkfloworchestrationframeworks",
-    "id": 8011,
+    "id": 8343,
     "title": "A Characterization Study of Bugs in LLM Agent Workflow Orchestration Frameworks",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334467",
     "method": "抽象 agent framework 四类组件，并从 1577 个 PR 标注 1026 个 bug 的九类根因和六类症状。",
@@ -7579,7 +7579,7 @@
   },
   {
     "key": "adaptiveguardtowardsadaptiveruntimesafetyforllmpoweredsoftware",
-    "id": 8012,
+    "id": 8344,
     "title": "AdaptiveGuard: Towards Adaptive Runtime Safety for LLM-Powered Software",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334241",
     "method": "将新 jailbreak 识别为 OOD，并用 continual learning 在部署后快速更新 guardrail。",
@@ -7605,7 +7605,7 @@
   },
   {
     "key": "unlockingreproducibilityautomatingrebuildprocessforopensourcesoftware",
-    "id": 8013,
+    "id": 8345,
     "title": "Unlocking Reproducibility: Automating re-Build Process for Open-Source Software",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334351",
     "method": "扩展 Macaron 自动定位源码、从 GitHub Actions 抽取 build spec 并重建 Maven artifact 及依赖图。",
@@ -7630,7 +7630,7 @@
   },
   {
     "key": "outofdistributiondetectioninselfadaptiverobotswithaipowereddigitaltwins",
-    "id": 8014,
+    "id": 8346,
     "title": "Out of Distribution Detection in Self-adaptive Robots with AI-powered Digital Twins",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334331",
     "method": "Transformer digital twin 预测机器人状态，以 reconstruction error 和 Monte Carlo dropout variance 检测 OOD。",
@@ -7657,7 +7657,7 @@
   },
   {
     "key": "datadependencyawarecodegenerationfromenhancedumlsequencediagrams",
-    "id": 8015,
+    "id": 8347,
     "title": "Data Dependency-Aware Code Generation from Enhanced UML Sequence Diagrams",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334303",
     "method": "用决策表和 API spec 增强 UML sequence diagram，先受约束推理 data dependency graph 再生成代码。",
@@ -7680,7 +7680,7 @@
   },
   {
     "key": "automatedproactiveloggingqualityimprovementforlargescalecodebases",
-    "id": 8016,
+    "id": 8348,
     "title": "Automated Proactive Logging Quality Improvement for Large-Scale Codebases",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334644",
     "method": "先按工业原则发现 logging gap，再级联 structure-aware RAG grounding、过滤误报并生成完整 patch。",
@@ -7703,7 +7703,7 @@
   },
   {
     "key": "fromredundancytoefficiencyexploitingshareduiinteractionstowardsefficientllmbasedtesting",
-    "id": 8017,
+    "id": 8349,
     "title": "From Redundancy to Efficiency: Exploiting Shared UI Interactions towards Efficient LLM-Based Testing",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334344",
     "method": "以语义标注 UI Transition Graph 检测测试间共享 interaction，每种交互仅询问 LLM 一次并复用。",
@@ -7726,7 +7726,7 @@
   },
   {
     "key": "automatedpromptgenerationforcodeintelligenceanempiricalstudyandexperienceinwechat",
-    "id": 8018,
+    "id": 8350,
     "title": "Automated Prompt Generation for Code Intelligence: An Empirical study and Experience in WeChat",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334258",
     "method": "分别评估 instruction generation 与 multi-step reasoning，并组合两部分最佳方法自动生成代码任务 prompt。",
@@ -7749,7 +7749,7 @@
   },
   {
     "key": "fromtechnicalexcellencetopracticaladoptionlessonslearnedbuildinganmlenhancedtraceanalysistool",
-    "id": 8019,
+    "id": 8351,
     "title": "From Technical Excellence to Practical Adoption: Lessons Learned Building an ML-Enhanced Trace Analysis Tool",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334725",
     "method": "一年协作开发 TMLL，通过专家反馈、基金会集成和 40 人调查提炼 adoption-focused design。",
@@ -7772,7 +7772,7 @@
   },
   {
     "key": "evaluatinglargelanguagemodelsforfunctionalandmaintainablecodeinindustrialsettingsacasestudyatasml",
-    "id": 8020,
+    "id": 8352,
     "title": "Evaluating Large Language Models for Functional and Maintainable Code in Industrial Settings: A Case Study at ASML",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334558",
     "method": "为 ASML 闭源代码构建 benchmark 与 build@k，比较 prompt、模型类型和规模的集成成功。",
@@ -7797,7 +7797,7 @@
   },
   {
     "key": "bitsaifixllmdrivenapproachforautomatedlinterrorresolutioninpractice",
-    "id": 8021,
+    "id": 8353,
     "title": "BitsAI-Fix: LLM-Driven Approach for Automated Lint Error Resolution in Practice",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334231",
     "method": "tree-sitter 扩上下文、模型生成 search-replace patch、lint 重验，并以 progressive RL 持续学习线上可验证样本。",
@@ -7822,7 +7822,7 @@
   },
   {
     "key": "adaptiveperformanceregressiondetectionusingasemisupervisedsiamesenetwork",
-    "id": 8022,
+    "id": 8354,
     "title": "Adaptive Performance Regression Detection Using A Semi-Supervised Siamese Network",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334319",
     "method": "共享权重双 LSTM 融合 KPI 与 workload context，并以增强、加权 loss 和 pseudo-label 半监督学习。",
@@ -7847,7 +7847,7 @@
   },
   {
     "key": "treerankerfastandmodelagnosticrankingsystemforcodesuggestionsinides",
-    "id": 8023,
+    "id": 8355,
     "title": "TreeRanker: Fast and Model-Agnostic Ranking System for Code Suggestions in IDEs",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334427",
     "method": "把全部静态 completion 组织为 prefix tree，以一次 greedy decoding 收集 token score 并排序。",
@@ -7872,7 +7872,7 @@
   },
   {
     "key": "evaluatinglargelanguagemodelsfortimeseriesanomalydetectioninaerospacesoftware",
-    "id": 8024,
+    "id": 8356,
     "title": "Evaluating Large Language Models for Time Series Anomaly Detection in Aerospace Software",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334410",
     "method": "构建 ATSADBench，并以 direct/prediction 两范式及 alarm accuracy、latency、contiguity 评价 LLM。",
@@ -7898,7 +7898,7 @@
   },
   {
     "key": "errorprismreconstructingerrorpropagationpathsincloudservicesystems",
-    "id": 8025,
+    "id": 8357,
     "title": "ErrorPrism: Reconstructing Error Propagation Paths in Cloud Service Systems",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334380",
     "method": "静态构建 call graph 并映射 log string 缩小搜索，再由 LLM agent 反向迭代重建多跳 error path。",
@@ -7923,7 +7923,7 @@
   },
   {
     "key": "llmassistedindustrialscaledifferentialtestingofpackageincompatibilitiesinlinuxdistributions",
-    "id": 8026,
+    "id": 8358,
     "title": "LLM-assisted Industrial-Scale Differential Testing of Package Incompatibilities in Linux Distributions",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334393",
     "method": "用 LLM 辅助 Linux 发行版版本升级/迁移的工业差分测试并筛选行为差异报告。",
@@ -7946,7 +7946,7 @@
   },
   {
     "key": "shrunkyetcompletecodeshrinkingresilientandroidthirdpartylibrarydetection",
-    "id": 8027,
+    "id": 8359,
     "title": "Shrunk, Yet Complete: Code Shrinking-Resilient Android Third-Party Library Detection",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334437",
     "method": "在 method 级匹配功能完整 module，并以 context-enhanced coarse-to-fine filtering 抵抗 shrinking 和 obfuscation。",
@@ -7971,7 +7971,7 @@
   },
   {
     "key": "tuningllmbasedcodeoptimizationviametapromptinganindustrialperspective",
-    "id": 8028,
+    "id": 8360,
     "title": "Tuning LLM-based Code Optimization via Meta-Prompting: An Industrial Perspective",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334408",
     "method": "综合项目 metadata、任务要求和模型语境动态综合跨 LLM 的优化 prompt。",
@@ -7996,7 +7996,7 @@
   },
   {
     "key": "elementawarefinetuningofvisionlanguagemodelsforcostefficientguitestinginanindustrialsetting",
-    "id": 8029,
+    "id": 8361,
     "title": "Element-Aware Fine-Tuning of Vision-Language Models for Cost-Efficient GUI Testing in an Industrial Setting",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334646",
     "method": "先检测截图离散 UI element，再编码每个 element 并与文字指令融合直接分类动作。",
@@ -8019,7 +8019,7 @@
   },
   {
     "key": "autoplcgeneratingvendorawarestructuredtextforprogrammablelogiccontrollers",
-    "id": 8030,
+    "id": 8362,
     "title": "AutoPLC: Generating Vendor-Aware Structured Text for Programmable Logic Controllers",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334685",
     "method": "构建 vendor API/case 库，以分步规划、case reranking、API 推荐和 IDE 动态验证生成 ST。",
@@ -8042,7 +8042,7 @@
   },
   {
     "key": "intellitopoaniacgenerationserviceforindustrialnetworktopologyconstruction",
-    "id": 8031,
+    "id": 8363,
     "title": "IntelliTopo: An IaC Generation Service for Industrial Network Topology Construction",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334228",
     "method": "语义解析完整 topology，并检索行业 device image 后生成可执行 IaC。",
@@ -8067,7 +8067,7 @@
   },
   {
     "key": "rpglinuxkernelfuzzingguidedbydistributionspecificruntimeparameterinterfaces",
-    "id": 8032,
+    "id": 8364,
     "title": "RPG: Linux Kernel Fuzzing Guided by Distribution-Specific Runtime Parameter Interfaces",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334372",
     "method": "提取发行版专属 runtime parameter，LLM+调优数据库建模取值范围，并以函数 CFG 引导测试。",
@@ -8092,7 +8092,7 @@
   },
   {
     "key": "daleqexplainableequivalenceforjavabytecode",
-    "id": 8033,
+    "id": 8365,
     "title": "DALEQ - Explainable Equivalence for Java Bytecode",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334484",
     "method": "把 Java bytecode 反汇编成关系数据库，以 Datalog rule 规范化并附 proof 判断 class 等价。",
@@ -8117,7 +8117,7 @@
   },
   {
     "key": "m2qcodeamodeldrivenframeworkforgeneratingmultiplatformquantumprograms",
-    "id": 8034,
+    "id": 8366,
     "title": "M2QCode: A Model-Driven Framework for Generating Multi-Platform Quantum Programs",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334640",
     "method": "以 model-driven development 结构化设计量子系统，并自动生成多种 QPL 代码。",
@@ -8140,7 +8140,7 @@
   },
   {
     "key": "scopeevaluatingandenhancingpermissionexplanationtransparencyinmobileapps",
-    "id": 8035,
+    "id": 8367,
     "title": "SCOPE: Evaluating and Enhancing Permission Explanation Transparency in Mobile Apps",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334596",
     "method": "四个 agent 分别提取多模态说明、分析语言、动态推断 API purpose 并生成自适应报告。",
@@ -8166,7 +8166,7 @@
   },
   {
     "key": "thegolddiggerinthedarkforestindustrialscalemevanalysisinethereum",
-    "id": 8036,
+    "id": 8368,
     "title": "The Gold Digger in the Dark Forest: Industrial-Scale MEV Analysis in Ethereum",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334448",
     "method": "用 graph-based profitability algorithm 替代 heuristic，自动识别持续演化的 MEV。",
@@ -8191,7 +8191,7 @@
   },
   {
     "key": "repomasterevalevaluatingcodecompletionviarealworldrepositories",
-    "id": 8037,
+    "id": 8369,
     "title": "RepoMasterEval: Evaluating Code Completion via Real-World Repositories",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334249",
     "method": "从真实 repository mask code snippet，并用 mutation testing 强化现有 test suite 的判别力。",
@@ -8214,7 +8214,7 @@
   },
   {
     "key": "securingmillionsofdecentralizedidentitiesinalipaysuperappwithendtoendformalverification",
-    "id": 8038,
+    "id": 8370,
     "title": "Securing Millions of Decentralized Identities in Alipay Super App with End-to-End Formal Verification",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334361",
     "method": "Tamarin 验证 IIFAA DID 设计，再将 I/O spec 翻译成 VeriFast function spec 验证实现一致。",
@@ -8239,7 +8239,7 @@
   },
   {
     "key": "quantummachinelearningbasedtestoracleforautonomousmobilerobots",
-    "id": 8039,
+    "id": 8371,
     "title": "Quantum Machine Learning-based Test Oracle for Autonomous Mobile Robots",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334659",
     "method": "以 quantum reservoir computing 和 residual-style neural network 混合预测机器人期望行为。",
@@ -8264,7 +8264,7 @@
   },
   {
     "key": "securingselfmanagedthirdpartylibraries",
-    "id": 8040,
+    "id": 8372,
     "title": "Securing Self-Managed Third-Party Libraries",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334545",
     "method": "用组织自管 library whitelist 适配 generic vulnerability report matching，并按阈值过滤结果。",
@@ -8289,7 +8289,7 @@
   },
   {
     "key": "mobileupregidentifyinguserperceivedperformanceregressionsinmobileosversions",
-    "id": 8041,
+    "id": 8373,
     "title": "MobileUPReg: Identifying User-Perceived Performance Regressions in Mobile OS Versions",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334515",
     "method": "黑盒运行相同 app 跨 OS 版本，比对 response、finish、launch time 和 dropped frame。",
@@ -8312,7 +8312,7 @@
   },
   {
     "key": "thinkinglongernotlargerenhancingsoftwareengineeringagentsviascalingtesttimecompute",
-    "id": 8042,
+    "id": 8374,
     "title": "Thinking Longer, Not Larger: Enhancing Software Engineering Agents via Scaling Test-Time Compute",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334237",
     "method": "内部用真实 repo synthesis/rejection sampling 强化 reasoning trajectory，外部以 reward+execution 搜索关键决策。",
@@ -8335,7 +8335,7 @@
   },
   {
     "key": "logsageanllmbasedframeworkforcicdfailuredetectionandremediationwithindustrialvalidation",
-    "id": 8043,
+    "id": 8375,
     "title": "LogSage: An LLM-Based Framework for CI/CD Failure Detection and Remediation with Industrial Validation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334373",
     "method": "token-efficient 过滤日志、结构化 prompt 做 RCA、RAG 复用历史 fix 并 tool-call 自动执行。",
@@ -8360,7 +8360,7 @@
   },
   {
     "key": "kairastatisticalandcausalapproachtopinpointingstragglersindistributedmodeltraining",
-    "id": 8044,
+    "id": 8376,
     "title": "Kair: A Statistical and Causal Approach to Pinpointing Stragglers in Distributed Model Training",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334606",
     "method": "先以 KS statistic 找异常 worker，再因果 path tracing 定位具体 computation/communication 操作。",
@@ -8385,7 +8385,7 @@
   },
   {
     "key": "whattypesofcodereviewcommentsdodevelopersmostfrequentlyresolve",
-    "id": 8045,
+    "id": 8377,
     "title": "What Types of Code Review Comments Do Developers Most Frequently Resolve?",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334442",
     "method": "定义五类 review comment taxonomy，用 LLM-as-Judge 分类并测量人类/模型评论被解决的比例。",
@@ -8408,7 +8408,7 @@
   },
   {
     "key": "towardsreliablellmbasedexamgenerationlessonslearnedandopenchallengesinanindustrialproject",
-    "id": 8046,
+    "id": 8378,
     "title": "Towards Reliable LLM-based Exam Generation Lessons Learned and Open Challenges in an Industrial Project",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334308",
     "method": "在工业项目中以正确性和语言质量指标比较 16 种 LLM 与五种专用模型生成选择题。",
@@ -8431,7 +8431,7 @@
   },
   {
     "key": "accelerationofautomotivesoftwaredevelopmentbyretrievalaugmentedintegrationtestscriptgeneration",
-    "id": 8047,
+    "id": 8379,
     "title": "Acceleration of Automotive Software Development by Retrieval Augmented Integration Test Script Generation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334404",
     "method": "将 API manual 与 workflow knowledge 建为 task-oriented vector store，以 code prefix prompt 生成 ECU test script。",
@@ -8454,7 +8454,7 @@
   },
   {
     "key": "sgcraspecificationgroundedframeworkfortrustworthyllmcodereview",
-    "id": 8048,
+    "id": 8380,
     "title": "SGCR: A Specification-Grounded Framework for Trustworthy LLM Code Review",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334311",
     "method": "显式路径确定性执行人写规则，隐式路径启发式发现并验证规则外 issue。",
@@ -8479,7 +8479,7 @@
   },
   {
     "key": "walkthetalkisyourlogbasedsoftwarereliabilitymaintenancesystemreallyreliable",
-    "id": 8049,
+    "id": 8381,
     "title": "Walk the Talk: Is Your Log-based Software Reliability Maintenance System Really Reliable?",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334223",
     "method": "基于 SRE 调研定义 diagnostic faithfulness，并用 causality-guided attention 与 adversarial consistency 训练 FaithLog。",
@@ -8504,7 +8504,7 @@
   },
   {
     "key": "frommodulestomarketplacesavisionforcomposablecapabilitysharingacrossorganizations",
-    "id": 8050,
+    "id": 8382,
     "title": "From Modules to Marketplaces: A Vision for Composable Capability Sharing Across Organizations",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334522",
     "method": "提出跨组织 capability marketplace，用语义、contract、trust、interface verification 与 lifecycle governance 支持组合。",
@@ -8527,7 +8527,7 @@
   },
   {
     "key": "measuringsoftwareresilienceusingsociallyawaretruckfactorestimation",
-    "id": 8051,
+    "id": 8383,
     "title": "Measuring Software Resilience Using Socially Aware Truck Factor Estimation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334610",
     "method": "用 GitHub issue 社交网络 centrality 和 interaction signal 估计 Truck Factor contributor。",
@@ -8552,7 +8552,7 @@
   },
   {
     "key": "interactionawarepatchassessmentformultifaultautomatedprogramrepair",
-    "id": 8052,
+    "id": 8384,
     "title": "Interaction-Aware Patch Assessment for Multi-Fault Automated Program Repair",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334567",
     "method": "建立五类 fault-interaction-aware patch assessment taxonomy 与形式模型，决定各策略何时应用。",
@@ -8575,7 +8575,7 @@
   },
   {
     "key": "debuggingtheundebuggablewhymultifaultprogramsbreakdebuggingandrepairtools",
-    "id": 8053,
+    "id": 8385,
     "title": "Debugging the Undebuggable: Why Multi-Fault Programs Break Debugging and Repair Tools",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334386",
     "method": "形式化 masking、synergy、cascading 等 fault interaction，并将故障表示为影响网络。",
@@ -8598,7 +8598,7 @@
   },
   {
     "key": "howdoeschatgptmakeassumptionswhencreatingerroneousprograms",
-    "id": 8054,
+    "id": 8386,
     "title": "How Does ChatGPT Make Assumptions When Creating Erroneous Programs?",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334520",
     "method": "要求 GPT-4o 同时生成解法和三项关键 assumption，并对 17 个失败程序及 51 个假设归因。",
@@ -8621,7 +8621,7 @@
   },
   {
     "key": "llmbaseddynamicdifferentialtestingfordatabaseconnectorswithreinforcementlearningguidedpromptselection",
-    "id": 8055,
+    "id": 8387,
     "title": "LLM-based Dynamic Differential Testing for Database Connectors with Reinforcement Learning-Guided Prompt Selection",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334652",
     "method": "参数化 domain prompt 生成 connector test，跨实现差分执行，再由 RL 按行为反馈选下一轮 prompt。",
@@ -8647,7 +8647,7 @@
   },
   {
     "key": "uncoveringsystematicfailuresofllmsinverifyingcodeagainstnaturallanguagespecifications",
-    "id": 8056,
+    "id": 8388,
     "title": "Uncovering Systematic Failures of LLMs in Verifying Code Against Natural Language Specifications",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334374",
     "method": "统一 prompt 测试 LLM 判断 code-NL requirement 对齐，并分析复杂解释/修正 prompt 反而增错的根因。",
@@ -8672,7 +8672,7 @@
   },
   {
     "key": "ismeasurementenoughrethinkingoutputvalidationinquantumprogramtesting",
-    "id": 8057,
+    "id": 8389,
     "title": "Is Measurement Enough? Rethinking Output Validation in Quantum Program Testing",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334299",
     "method": "分类文献中的 distribution/value measurement validation，并与 statevector validation 系统比较。",
@@ -8695,7 +8695,7 @@
   },
   {
     "key": "thefutureofsoftwaretransparencybridgingunderstandingmeasurementandpractice",
-    "id": 8058,
+    "id": 8390,
     "title": "The Future of Software Transparency: Bridging Understanding, Measurement, and Practice",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334523",
     "method": "分析学界与工业 landscape，并调研 academics/developers 评价透明度定义和量化框架愿景。",
@@ -8718,7 +8718,7 @@
   },
   {
     "key": "faultinjectionforsimulinkbasedcpsmodelsinsightsandfuturedirections",
-    "id": 8059,
+    "id": 8391,
     "title": "Fault Injection for Simulink-based CPS Models: Insights and Future Directions",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334475",
     "method": "分析现有 Simulink CPS fault injection 的不足并归纳挑战与未来研究路线。",
@@ -8734,7 +8734,7 @@
   },
   {
     "key": "taminguncertaintyviaautomationobservinganalyzingandoptimizingagenticaisystems",
-    "id": 8060,
+    "id": 8392,
     "title": "Taming Uncertainty via Automation: Observing, Analyzing, and Optimizing Agentic AI Systems",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334254",
     "method": "提出六阶段 AgentOps pipeline：行为观测、指标、问题检测、RCA、建议和 runtime automation。",
@@ -8760,7 +8760,7 @@
   },
   {
     "key": "detectingandrepairingincompletesoftwarerequirementswithmultillmensembles",
-    "id": 8061,
+    "id": 8393,
     "title": "Detecting and Repairing Incomplete Software Requirements with Multi-LLM Ensembles",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334724",
     "method": "三个互补 LLM 并行做外部/内部完整性检查，以 majority、weighted 或 meta-fusion 聚合并建议缺失需求。",
@@ -8785,7 +8785,7 @@
   },
   {
     "key": "linguistictheoriescoincidewithmisformalizationintemporallogic",
-    "id": 8062,
+    "id": 8394,
     "title": "Linguistic Theories Coincide with Misformalization in Temporal Logic",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334431",
     "method": "从丰富话语附加意义的语言现象角度重分析 LTL formalization mistake 数据。",
@@ -8808,7 +8808,7 @@
   },
   {
     "key": "exploringautonomousagentsacloserlookatwhytheyfailwhencompletingtasks",
-    "id": 8063,
+    "id": 8395,
     "title": "Exploring Autonomous Agents: A Closer Look at Why They Fail When Completing Tasks",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334580",
     "method": "构建 34 个可编程任务 benchmark，并按 planning、execution、response 三层分析 agent failure。",
@@ -8833,7 +8833,7 @@
   },
   {
     "key": "llmpoweredfullyautomatedchaosengineeringtowardsenablinganyonetobuildresilientsoftwaresystemsatlowcost",
-    "id": 8064,
+    "id": 8396,
     "title": "LLM-Powered Fully Automated Chaos Engineering: Towards Enabling Anyone to Build Resilient Software Systems at Low Cost",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334278",
     "method": "ChaosEater 以预定义智能体工作流把 Kubernetes 混沌工程周期分解给大模型自动执行。",
@@ -8858,7 +8858,7 @@
   },
   {
     "key": "unseendatadetectionusingroutingentropyinmixtureofexpertsforautonomousvehicles",
-    "id": 8065,
+    "id": 8397,
     "title": "Unseen Data Detection using Routing Entropy in Mixture-of-Experts for Autonomous Vehicles",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334435",
     "method": "利用混合专家模型内部路由分数的熵检测自动驾驶感知中的分布外输入。",
@@ -8892,7 +8892,7 @@
   },
   {
     "key": "codeactracognitivesimulationframeworkforhumanattentionincodereading",
-    "id": 8066,
+    "id": 8398,
     "title": "CodeACT-R: A Cognitive Simulation Framework for Human Attention in Code Reading",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334702",
     "method": "基于 ACT-R 认知架构和少量眼动数据模拟程序员阅读代码时的视觉注意轨迹。",
@@ -8915,7 +8915,7 @@
   },
   {
     "key": "envisioningintelligentrequirementsengineeringviaknowledgeguidedmultiagentcollaboration",
-    "id": 8067,
+    "id": 8399,
     "title": "Envisioning Intelligent Requirements Engineering via Knowledge-Guided Multi-Agent Collaboration",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334508",
     "method": "KGMAF 以六个知识注入的大模型智能体、共享制品池和人工反馈协同开发需求规格。",
@@ -8949,7 +8949,7 @@
   },
   {
     "key": "novaqimprovingquantumprogramtestingthroughdiversityguidedtestcasegeneration",
-    "id": 8068,
+    "id": 8400,
     "title": "NovaQ: Improving Quantum Program Testing through Diversity-Guided Test Case Generation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334356",
     "method": "NovaQ 通过参数变异生成量子态，并按内部状态新颖度选择覆盖稀疏区域的测试输入。",
@@ -8981,7 +8981,7 @@
   },
   {
     "key": "whenabstractionbreaksphysicsrethinkingmodulardesigninquantumsoftware",
-    "id": 8069,
+    "id": 8401,
     "title": "When Abstraction Breaks Physics: Rethinking Modular Design in Quantum Software",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334639",
     "method": "分析经典抽象与量子物理语义的冲突，归纳失败类型并提出物理健全的模块设计原则。",
@@ -9013,7 +9013,7 @@
   },
   {
     "key": "towardsautomatedgovernanceadslforhumanagentcollaborationinsoftwareprojects",
-    "id": 8070,
+    "id": 8402,
     "title": "Towards Automated Governance: A DSL for Human-Agent Collaboration in Software Projects",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334605",
     "method": "提出面向人类与 AI 智能体协作的软件治理领域专用语言。",
@@ -9036,7 +9036,7 @@
   },
   {
     "key": "simulatedinteractivedebugging",
-    "id": 8071,
+    "id": 8403,
     "title": "Simulated Interactive Debugging",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334463",
     "method": "结合传统故障定位与大模型，以自动断点和聊天交互逐步指导学生调试。",
@@ -9059,7 +9059,7 @@
   },
   {
     "key": "llmguidedgeneticimprovementenvisioningsemanticawareautomatedsoftwareevolution",
-    "id": 8072,
+    "id": 8404,
     "title": "LLM-Guided Genetic Improvement: Envisioning Semantic Aware Automated Software Evolution",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334562",
     "method": "PatchCat 自动聚类大模型生成的补丁，为遗传改进搜索提供语义类别和无效编辑信号。",
@@ -9082,7 +9082,7 @@
   },
   {
     "key": "confusetaintexploitingvulnerabilitiestobypassdynamictaintanalysis",
-    "id": 8073,
+    "id": 8405,
     "title": "ConfuseTaint: Exploiting Vulnerabilities to Bypass Dynamic Taint Analysis",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334608",
     "method": "ConfuseTaint 利用类型混淆造成宽内存覆写，破坏影子内存中的污点标签而不改变程序语义。",
@@ -9105,7 +9105,7 @@
   },
   {
     "key": "humaninthelooporaclelearningforsimulationbasedtesting",
-    "id": 8074,
+    "id": 8406,
     "title": "Human-In-The-Loop Oracle Learning for Simulation-Based Testing",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334554",
     "method": "提出将人工反馈嵌入测试预言学习的概念框架，以较少标注区分机器人行为优劣。",
@@ -9128,7 +9128,7 @@
   },
   {
     "key": "tetherapersonalizedsupportassistantforsoftwareengineerswithadhd",
-    "id": 8075,
+    "id": 8407,
     "title": "Tether: A Personalized Support Assistant for Software Engineers with ADHD",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334591",
     "method": "Tether 融合本地活动监控、检索增强生成与游戏化，为 ADHD 软件工程师提供上下文支持。",
@@ -9151,7 +9151,7 @@
   },
   {
     "key": "measuringllmcodegenerationstabilityviastructuralentropy",
-    "id": 8076,
+    "id": 8408,
     "title": "Measuring LLM Code Generation Stability via Structural Entropy",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334330",
     "method": "将生成程序的深度受限 AST 子树建模为分布，用散度和交叉熵比衡量结构稳定性。",
@@ -9174,7 +9174,7 @@
   },
   {
     "key": "multipleschemaconformantdeclarativecodegeneration",
-    "id": 8077,
+    "id": 8409,
     "title": "Multiple Schema-Conformant Declarative Code Generation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334710",
     "method": "让大模型为企业任务选择多个适配模式，并在各模式约束下生成对应声明式代码片段。",
@@ -9197,7 +9197,7 @@
   },
   {
     "key": "requirementsdevelopmentandformalizationforreliablecodegenerationamultiagentvision",
-    "id": 8078,
+    "id": 8410,
     "title": "Requirements Development and Formalization for Reliable Code Generation: A Multi-Agent Vision",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334634",
     "method": "ReDeFo 以三个知识增强智能体和形式规格贯通需求开发到代码生成。",
@@ -9231,7 +9231,7 @@
   },
   {
     "key": "idbfuzzwebstoragedatabasefuzzingwithcontrollablesemantics",
-    "id": 8079,
+    "id": 8411,
     "title": "IDBFuzz: Web Storage DataBase Fuzzing with Controllable Semantics",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334561",
     "method": "IDBFuzz 用分层中间表示和全局数据库快照生成语义可控的 IndexedDB 测试种子。",
@@ -9263,7 +9263,7 @@
   },
   {
     "key": "staintdetectingsecondordervulnerabilitiesinphpapplicationswithllmassistedbidirectionalstatictaintanalysis",
-    "id": 8080,
+    "id": 8412,
     "title": "STaint: Detecting Second-Order Vulnerabilities in PHP Applications with LLM-Assisted Bi-Directional Static Taint Analysis",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334678",
     "method": "STaint 用大模型语义推理辅助双向静态污点分析，重建经数据库存取的二阶污点流。",
@@ -9295,7 +9295,7 @@
   },
   {
     "key": "vesselataxonomyofreproducibilityissuesforcontainerimages",
-    "id": 8081,
+    "id": 8413,
     "title": "Vessel: A Taxonomy of Reproducibility Issues for Container Images",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334265",
     "method": "构建容器镜像不可复现问题分类法，并由 Vessel Diff 自动判别失败类型和严重度。",
@@ -9327,7 +9327,7 @@
   },
   {
     "key": "autonomousagentsforaccessibilitysimulatingvisualimpairmentsinwebinterfaces",
-    "id": 8082,
+    "id": 8414,
     "title": "Autonomous Agents for Accessibility: Simulating Visual Impairments in Web Interfaces",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334260",
     "method": "多模态自主智能体通过视觉损伤滤镜、键盘与屏幕阅读器模拟无代码访问的网页交互。",
@@ -9350,7 +9350,7 @@
   },
   {
     "key": "arewesolidyetanempiricalstudyonpromptingllmstodetectdesignprincipleviolations",
-    "id": 8083,
+    "id": 8415,
     "title": "Are We SOLID Yet? An Empirical Study on Prompting LLMs to Detect Design Principle Violations",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334443",
     "method": "在人工验证的多语言样例上系统比较四种大模型与四类提示策略检测 SOLID 违规。",
@@ -9373,7 +9373,7 @@
   },
   {
     "key": "ramltowardretrievalaugmentedlocalizationofmaliciouspayloadsinandroidapps",
-    "id": 8084,
+    "id": 8416,
     "title": "RAML: Toward Retrieval-Augmented Localization of Malicious Payloads in Android Apps",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334391",
     "method": "RAML 将 Smali 类描述向量化检索、由大模型重排，再在方法级定位并解释恶意载荷。",
@@ -9405,7 +9405,7 @@
   },
   {
     "key": "asecuremockingapproachtowardssoftwaresupplychainsecurity",
-    "id": 8085,
+    "id": 8417,
     "title": "A Secure Mocking Approach towards Software Supply Chain Security",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334521",
     "method": "以受安全策略约束的 secure mock 替代原组件，并把构造形式化为约束满足问题。",
@@ -9437,7 +9437,7 @@
   },
   {
     "key": "androflevolutionarydrivenfaultlocalizationforandroidapps",
-    "id": 8086,
+    "id": 8418,
     "title": "AndroFL: Evolutionary-Driven Fault Localization for Android Apps",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334680",
     "method": "AndroFL 用可配置适应度的进化测试生成器驱动统计故障定位并排序可疑位置。",
@@ -9469,7 +9469,7 @@
   },
   {
     "key": "vuscanextensibleresearchplatformforjavabasedstaticanalysis",
-    "id": 8087,
+    "id": 8419,
     "title": "VUSC: An Extensible Research Platform for Java-Based Static Analysis",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334525",
     "method": "VUSC 以插件架构集成调用图、污点和值分析，为 Java 与 Android 漏洞研究提供静态分析平台。",
@@ -9492,7 +9492,7 @@
   },
   {
     "key": "designatoratoolsetforautomatedganenhancedsearchbasedtestingandretrainingofdnnsinmartianenvironments",
-    "id": 8088,
+    "id": 8420,
     "title": "DESIGNATOR: a Toolset for Automated GAN-enhanced Search-based Testing and Retraining of DNNs in Martian Environments",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334539",
     "method": "DESIGNATOR 结合火星环境仿真、GAN 和搜索式输入生成，为视觉 DNN 构造测试与再训练数据。",
@@ -9524,7 +9524,7 @@
   },
   {
     "key": "alargescaleevolvabledatasetformodelcontextprotocolecosystemandsecurityanalysis",
-    "id": 8089,
+    "id": 8421,
     "title": "A Large-Scale Evolvable Dataset for Model Context Protocol Ecosystem and Security Analysis",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334298",
     "method": "MCPCORPUS 归一化采集 MCP 服务端和客户端，并提供自动同步、检查与搜索工具。",
@@ -9556,7 +9556,7 @@
   },
   {
     "key": "litterboxanextensibleframeworkforllmenhancedscratchstaticcodeanalysis",
-    "id": 8090,
+    "id": 8422,
     "title": "LitterBox+: An Extensible Framework for LLM-enhanced Scratch Static Code Analysis",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334290",
     "method": "LitterBox+ 将 Scratch 积木代码转成文本，结合既有静态分析与大模型问答和修复生成。",
@@ -9588,7 +9588,7 @@
   },
   {
     "key": "codegenlinkatooltofindthelikelyoriginandlicenseofautomaticallygeneratedcode",
-    "id": 8091,
+    "id": 8423,
     "title": "CodeGenLink: A Tool to Find the Likely Origin and License of Automatically Generated Code",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334233",
     "method": "CodeGenLink 由大模型联网检索相似代码候选，再以代码相似度过滤并返回可能来源和许可证。",
@@ -9620,7 +9620,7 @@
   },
   {
     "key": "pygresstoolforanalyzingtheprogressionofcodeproficiencyinpythonossprojects",
-    "id": 8092,
+    "id": 8424,
     "title": "PyGress: Tool for Analyzing the Progression of Code Proficiency in Python OSS Projects",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334705",
     "method": "PyGress 抽取 GitHub 提交历史，以 pycefr 评估并可视化个人与项目的 Python 代码熟练度演进。",
@@ -9652,7 +9652,7 @@
   },
   {
     "key": "flowstriderlowfrictioncontinuousthreatmodeling",
-    "id": 8093,
+    "id": 8425,
     "title": "FlowStrider: Low-Friction Continuous Threat Modeling",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334490",
     "method": "FlowStrider 以可脚本化、可接入 CI/CD 的实践工作流持续执行架构威胁建模。",
@@ -9677,7 +9677,7 @@
   },
   {
     "key": "towardscontextawaremobileprivacynoticeimplementationofadeployablecontextualprivacypoliciesgenerator",
-    "id": 8094,
+    "id": 8426,
     "title": "Towards Context-aware Mobile Privacy Notice: Implementation of A Deployable Contextual Privacy Policies Generator",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334385",
     "method": "PrivScan 捕获实时 Android 截图识别个人数据相关控件，并按当前界面生成简短隐私提示。",
@@ -9709,7 +9709,7 @@
   },
   {
     "key": "agentdroidamultiagenttoolfordetectingfraudulentandroidapplications",
-    "id": 8095,
+    "id": 8427,
     "title": "AgentDroid: A Multi-Agent Tool for Detecting Fraudulent Android Applications",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334677",
     "method": "AgentDroid 抽取 Android 应用多模态数据，让多个专职大模型智能体协作判别欺诈。",
@@ -9743,7 +9743,7 @@
   },
   {
     "key": "xrinttestanautomatedframeworkforuserinteractiontestinginextendedrealityapplications",
-    "id": 8096,
+    "id": 8428,
     "title": "XRintTest: An Automated Framework for User Interaction Testing in Extended Reality Applications",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334684",
     "method": "XRintTest 构造 XR 用户交互图，自动探索 Unity 场景并合成六自由度设备交互。",
@@ -9775,7 +9775,7 @@
   },
   {
     "key": "refuzzerfeedbackdrivenapproachtoenhancevalidityofllmgeneratedtestprograms",
-    "id": 8097,
+    "id": 8429,
     "title": "ReFuzzer: Feedback-Driven Approach to Enhance Validity of LLM-Generated Test Programs",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334633",
     "method": "ReFuzzer 以本地大模型反馈循环检测并修正编译及运行违规，再把有效程序送入编译器模糊测试。",
@@ -9807,7 +9807,7 @@
   },
   {
     "key": "priotestciefficienttestcaseprioritizationingithubworkflowsforcioptimization",
-    "id": 8098,
+    "id": 8430,
     "title": "PrioTestCI: Efficient Test Case Prioritization in GitHub Workflows for CI Optimization",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334426",
     "method": "PrioTestCI 追踪提交间测试结果，优先重跑历史失败用例并在再次失败时提前终止。",
@@ -9839,7 +9839,7 @@
   },
   {
     "key": "deeptxrealtimetransactionriskanalysisviamultimodalfeaturesandllmreasoning",
-    "id": 8099,
+    "id": 8431,
     "title": "DeepTx: Real-Time Transaction Risk Analysis via Multi-Modal Features and LLM Reasoning",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334581",
     "method": "DeepTx 仿真待签交易并抽取行为、上下文与界面特征，由多个大模型共识和自反思判断风险。",
@@ -9874,7 +9874,7 @@
   },
   {
     "key": "fettfaultinjectionasaneducationalandtrainingtoolincybersecurity",
-    "id": 8100,
+    "id": 8432,
     "title": "FETT: Fault Injection as an Educational and Training Tool in Cybersecurity",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334365",
     "method": "FETT 在保持核心功能的同时，模块化地向真实 Django 应用注入 OWASP 风格漏洞以生成训练挑战。",
@@ -9899,7 +9899,7 @@
   },
   {
     "key": "wibewatermarksforgeneratedimagesbenchmarkingevaluation",
-    "id": 8101,
+    "id": 8433,
     "title": "WIBE: Watermarks for generated Images – Benchmarking & Evaluation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334362",
     "method": "WIBE 以 YAML 配置和插件架构统一运行图像水印方法、攻击、数据集与指标。",
@@ -9931,7 +9931,7 @@
   },
   {
     "key": "ormorpheraninteractiveframeworkforormtranslationandoptimization",
-    "id": 8102,
+    "id": 8434,
     "title": "ORMorpher: An Interactive Framework for ORM Translation and Optimization",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334286",
     "method": "ORMorpher 在异构 ORM 间执行结构化代码转换，并按用户约束选择资源更合适的框架。",
@@ -9963,7 +9963,7 @@
   },
   {
     "key": "buildroidaselfcorrectingllmagentforautomatedandroidbuilds",
-    "id": 8103,
+    "id": 8435,
     "title": "BuilDroid: A Self-Correcting LLM Agent for Automated Android Builds",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334635",
     "method": "BuilDroid 在隔离环境中反复执行 Android 构建、捕获错误并以启发式或大模型推理自动修正。",
@@ -9986,7 +9986,7 @@
   },
   {
     "key": "chrysalisalightweightloggingandreplayframeworkformetamorphictestinginpython",
-    "id": 8104,
+    "id": 8436,
     "title": "Chrysalis: A Lightweight Logging and Replay Framework for Metamorphic Testing in Python",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334420",
     "method": "Chrysalis 记录输入变换全历史并可重放失败路径，以自定义变换和不变量组织 Python 蜕变测试。",
@@ -10018,7 +10018,7 @@
   },
   {
     "key": "bashirilearningfailureoraclesfromexecutionfeatures",
-    "id": 8105,
+    "id": 8437,
     "title": "BASHIRI: Learning Failure Oracles from Execution Features",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334479",
     "method": "BASHIRI 从带标签测试运行中采集执行特征，并训练可解释模型作为失败预言。",
@@ -10041,7 +10041,7 @@
   },
   {
     "key": "guirerankenhancingguiretrievalwithmultimodalllmbasedreranking",
-    "id": 8106,
+    "id": 8438,
     "title": "GUI-ReRank: Enhancing GUI Retrieval with Multi-Modal LLM-based Reranking",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334397",
     "method": "GUI-ReRank 先用嵌入模型快速约束检索，再由多模态大模型重排，并支持任意 GUI 库注释与索引。",
@@ -10084,7 +10084,7 @@
   },
   {
     "key": "eyenavaccessiblewebpageinteractionandtestingusingeyetrackingandnlp",
-    "id": 8107,
+    "id": 8439,
     "title": "EyeNav: Accessible Webpage Interaction and Testing using Eye-tracking and NLP",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334504",
     "method": "EyeNav 结合眼动指针控制与自然语言意图理解，并用录制重放生成网页自动测试脚本。",
@@ -10116,7 +10116,7 @@
   },
   {
     "key": "dsboxadataselectionframeworkforefficientdeepcodelearning",
-    "id": 8108,
+    "id": 8440,
     "title": "DSBox: A Data Selection Framework for Efficient Deep Code Learning",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334230",
     "method": "DSBox 统一封装基于不确定性、代表性和质量的二十种数据选择方法。",
@@ -10139,7 +10139,7 @@
   },
   {
     "key": "bengqlanextensiblebenchmarkingframeworkforautomatedgraphqltesting",
-    "id": 8109,
+    "id": 8441,
     "title": "BenGQL: An Extensible Benchmarking Framework for Automated GraphQL Testing",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334631",
     "method": "BenGQL 汇集 23 个代表性开源 GraphQL 服务，并提供统一运行、分析与扩展测试工具的基础设施。",
@@ -10171,7 +10171,7 @@
   },
   {
     "key": "pytrimapracticaltoolforreducingpythondependencybloat",
-    "id": 8110,
+    "id": 8442,
     "title": "PyTrim: A Practical Tool for Reducing Python Dependency Bloat",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334292",
     "method": "PyTrim 以动态分析补强未用依赖检测，并跨 Python 源码和配置文件自动删除导入与包声明。",
@@ -10203,7 +10203,7 @@
   },
   {
     "key": "osspreyaidrivenforecastingandinterventionforossprojectsustainability",
-    "id": 8111,
+    "id": 8443,
     "title": "OSSPREY: AI-Driven Forecasting and Intervention for OSS Project Sustainability",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334666",
     "method": "OSSPREY 汇集 GitHub 社会技术时序数据，用 Transformer 逐月预测可持续性并推荐研究证据支持的干预。",
@@ -10235,7 +10235,7 @@
   },
   {
     "key": "evaluatingprogramcoverageforcodemodeltraining",
-    "id": 8112,
+    "id": 8444,
     "title": "Evaluating Program Coverage for Code-Model Training",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334586",
     "method": "以 Coverage Tree 紧凑表示 COBOL 程序集覆盖的语法构造，并生成语句补齐缺口。",
@@ -10267,7 +10267,7 @@
   },
   {
     "key": "trustvisamultidimensionaltrustworthinessevaluationframeworkforlargelanguagemodels",
-    "id": 8113,
+    "id": 8445,
     "title": "TrustVis: A Multi-Dimensional Trustworthiness Evaluation Framework for Large Language Models",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334355",
     "method": "TrustVis 施加 AutoDAN 等扰动并汇集多种评估方法投票，以交互可视化呈现大模型安全与稳健性。",
@@ -10299,7 +10299,7 @@
   },
   {
     "key": "metamorphictestingofdeepreinforcementlearningagentswithmdpmorph",
-    "id": 8114,
+    "id": 8446,
     "title": "Metamorphic Testing of Deep Reinforcement Learning Agents with MDPMorph",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334245",
     "method": "MDPMorph 从被测深度强化学习系统生成蜕变测试与变异体，学习九条 MDP 时序关系阈值并判定执行一致性。",
@@ -10342,7 +10342,7 @@
   },
   {
     "key": "apidachatstructuredsynthesisofapisearchdialoguestobootstrapconversationalagents",
-    "id": 8115,
+    "id": 8447,
     "title": "APIDA-Chat: Structured Synthesis of API Search Dialogues to Bootstrap Conversational Agents",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334569",
     "method": "APIDA-Chat 先由对话规划器和教师模型生成金集微调小模型，再用规划器与本地学生模型低成本扩展 API 对话。",
@@ -10374,7 +10374,7 @@
   },
   {
     "key": "quirxamutationbasedframeworkforevaluatingpromptrobustnessinllmbasedsoftware",
-    "id": 8116,
+    "id": 8448,
     "title": "Quirx: A Mutation-Based Framework for Evaluating Prompt Robustness in LLM-based Software",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334607",
     "method": "Quirx 对提示施加词汇、语义与结构三维变异，并用多层相似度分析跨模型响应一致性。",
@@ -10406,7 +10406,7 @@
   },
   {
     "key": "trainingcontrolascodetowardsadeclarativesolutiontocontroltraining",
-    "id": 8117,
+    "id": 8449,
     "title": "Training-Control-as-Code: Towards a declarative solution to control training",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334543",
     "method": "TrAC 允许用户以声明式代码分析训练状态、标记异常并在批量训练中实施干预。",
@@ -10438,7 +10438,7 @@
   },
   {
     "key": "llmorphautomatedmetamorphictestingoflargelanguagemodels",
-    "id": 8118,
+    "id": 8450,
     "title": "LLMorph: Automated Metamorphic Testing of Large Language Models",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334332",
     "method": "LLMorph 依据蜕变关系从源输入生成后续输入，通过输出不一致在无需人工标签时发现大模型错误。",
@@ -10470,7 +10470,7 @@
   },
   {
     "key": "stackplaggerasystemforidentifyingaicodeplagiarismonstackoverflow",
-    "id": 8119,
+    "id": 8451,
     "title": "StackPlagger: A System for Identifying AI-Code Plagiarism on Stack Overflow",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334444",
     "method": "StackPlagger 在对抗提示生成的 SO-ChatGPT 代码对上融合风格特征与预训练嵌入，并在浏览器中标记 AI 代码。",
@@ -10511,7 +10511,7 @@
   },
   {
     "key": "claraadeveloperscompanionforcodecomprehensionandanalysis",
-    "id": 8120,
+    "id": 8452,
     "title": "Clara: A Developer’s Companion for Code Comprehension and Analysis",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334224",
     "method": "CLARA 以浏览器扩展调用推理模型，在无需预先搭建项目时提供代码理解、重构和质量属性检测。",
@@ -10534,7 +10534,7 @@
   },
   {
     "key": "proxifyabytecodeanalysistoolfordetectingandclassifyingproxycontractsinethereumsmartcontracts",
-    "id": 8121,
+    "id": 8453,
     "title": "PROXiFY: A Bytecode Analysis Tool for Detecting and Classifying Proxy Contracts in Ethereum Smart Contracts",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334527",
     "method": "PROXiFY 直接分析以太坊字节码检测并分类代理合约，无需节点、源码、交易历史或定制 EVM。",
@@ -10557,7 +10557,7 @@
   },
   {
     "key": "evalsmartanllmbasedframeworkforevaluatingsmartcontractgeneratedcomments",
-    "id": 8122,
+    "id": 8454,
     "title": "evalSmarT: An LLM-Based Framework for Evaluating Smart Contract Generated Comments",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334446",
     "method": "evalSmarT 组合约四十种大模型与十种提示策略形成 400 余种评估器配置，衡量智能合约生成注释。",
@@ -10589,7 +10589,7 @@
   },
   {
     "key": "verificationandclassificationofexploitsfornodejsvulnerabilities",
-    "id": 8123,
+    "id": 8455,
     "title": "Verification and Classification of Exploits for Node.js Vulnerabilities",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334585",
     "method": "在执行前插桩目标 sink API 及相关对象，运行时捕获调用与参数以验证并分类 Node.js 漏洞利用。",
@@ -10623,7 +10623,7 @@
   },
   {
     "key": "firstorderquantifiedseparatorinalloyanalyzer",
-    "id": 8124,
+    "id": 8456,
     "title": "First-Order Quantified Separator in Alloy Analyzer",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334648",
     "method": "Folloy 在 Alloy 中声明式建模一阶逻辑语法和语义，将示例规格学习转为约束满足并用 Max-SAT 最小化公式。",
@@ -10655,7 +10655,7 @@
   },
   {
     "key": "understandinguncertaintyinllms",
-    "id": 8125,
+    "id": 8457,
     "title": "Understanding Uncertainty In LLMs",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334526",
     "method": "系统综述 45 篇以上研究，按偶然与认知不确定性梳理概率建模、置信估计和校准方法。",
@@ -10678,7 +10678,7 @@
   },
   {
     "key": "dynamictestingofguiexercisesinheadlessenvironments",
-    "id": 8126,
+    "id": 8458,
     "title": "Dynamic Testing of GUI Exercises in Headless Environments",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334516",
     "method": "在无图形子系统环境中模拟 GUI 用户交互并检查应用状态，以自动批改编程练习。",
@@ -10701,7 +10701,7 @@
   },
   {
     "key": "detectingvulnerabilitiesfromissuereportsforinternetofthings",
-    "id": 8127,
+    "id": 8459,
     "title": "Detecting Vulnerabilities from Issue Reports for Internet-of-Things",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334304",
     "method": "在 Eclipse IoT 问题报告上比较 NLP 特征机器学习与 BERT 微调，识别漏洞指示型 issue。",
@@ -10733,7 +10733,7 @@
   },
   {
     "key": "humancenteredevaluationofrestapifuzzingtoolsbridgingacademiaandindustry",
-    "id": 8128,
+    "id": 8460,
     "title": "Human-Centered Evaluation of REST API Fuzzing Tools: Bridging Academia and Industry",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334726",
     "method": "规划以综述、受控学生实验和工业现场研究三阶段评估 REST API 模糊工具的人因与技术表现。",
@@ -10758,7 +10758,7 @@
   },
   {
     "key": "testingautonomousdrivingsystemsthroughblindspotguidedfuzzing",
-    "id": 8129,
+    "id": 8461,
     "title": "Testing Autonomous Driving Systems Through Blind-Spot Guided Fuzzing",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334496",
     "method": "OS-Fuzz 从事故报告生成真实种子，以多目标优化演化动态和静态遮挡场景，并用统一遮挡模型指导探索。",
@@ -10799,7 +10799,7 @@
   },
   {
     "key": "detectingandmitigatinginconsistenciesbetweencodedocumentationandtests",
-    "id": 8130,
+    "id": 8462,
     "title": "Detecting and Mitigating Inconsistencies Between Code, Documentation and Tests",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334480",
     "method": "计划分别再生代码、文档或测试，与原制品交叉验证以三角定位不一致并降低误报。",
@@ -10822,7 +10822,7 @@
   },
   {
     "key": "securetransactionsemanticsanalysisvulnerabilitydetectionandattackmodeling",
-    "id": 8131,
+    "id": 8463,
     "title": "Secure Transaction Semantics: Analysis, Vulnerability Detection, and Attack Modeling",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334485",
     "method": "建立交易级语义框架比较链上真实执行与链下解释，用于检测漏洞、合成攻击并解释不一致。",
@@ -10857,7 +10857,7 @@
   },
   {
     "key": "improvingqualityofllmcodegenerationinlowresourceprogramminglanguagesviauncertaintyestimation",
-    "id": 8132,
+    "id": 8464,
     "title": "Improving Quality of LLM Code Generation in Low-Resource Programming Languages via Uncertainty Estimation",
     "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11334246",
     "method": "拟用不确定性估计筛选合成数据、安排课程、调整解码并作为强化学习奖励，改善低资源语言代码生成。",

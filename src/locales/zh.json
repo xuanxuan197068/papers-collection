@@ -21,6 +21,7 @@
         "trends": "近年录用趋势",
         "abstract": "论文摘要",
         "methodIndex": "方法索引",
+        "randomPaper": "每日随机",
         "submissionTimeline": "会议全流程时间线",
         "reputation": "名望",
         "awards": "获奖论文",
@@ -175,6 +176,30 @@
                 "desc": "在标题/摘要中高亮这些词语。可添加多个，会使用主题色高亮。",
                 "placeholder": "输入关键词回车添加",
                 "add": "添加"
+            },
+            "randomSection": {
+                "label": "每日随机抽取",
+                "desc": "每日随机页的抽样池与权重设置。"
+            },
+            "randomSampleCount": {
+                "label": "每日抽取数量",
+                "desc": "每日随机页每批抽取的论文数量。"
+            },
+            "randomYearsBack": {
+                "label": "抽样年份范围",
+                "desc": "仅将最近 N 年的论文纳入抽样池。"
+            },
+            "randomExcludeRead": {
+                "label": "排除已读论文",
+                "desc": "已标记为已读的论文不再进入抽样池。"
+            },
+            "randomCategoryWeights": {
+                "label": "类别权重",
+                "desc": "各类别的相对抽样权重（0.5–3.0，默认 1.0）。权重有钳制，任何论文都保有保底概率。"
+            },
+            "randomKeywordBoost": {
+                "label": "关键词加权",
+                "desc": "标题命中任一偏好关键词时的权重倍率（1.0–3.0）。"
             }
         },
         "actions": {
@@ -279,6 +304,44 @@
             "user-study": "用户研究",
             "other": "其他",
             "legacy": "旧版概述"
+        }
+    },
+    "randomPaper": {
+        "title": "每日随机论文",
+        "subtitle": "按日期种子从近 {years} 年论文中抽取，同一天内保持同一批。",
+        "loading": "正在加载论文数据...",
+        "loadFailed": "论文数据加载失败。",
+        "retry": "重试",
+        "degradedNotice": "完整数据加载失败——正在使用内置预览子集（{count} 篇）抽样。",
+        "poolCount": "今日抽样池共 {count} 篇",
+        "reshuffle": "换一批",
+        "notEnough": "未读论文仅剩 {count} 篇。",
+        "emptyPool": {
+            "title": "抽样池已空",
+            "desc": "池内论文均已标记已读。可关闭“排除已读”或清空已读列表。"
+        },
+        "excludeRead": "排除已读",
+        "markRead": "标记已读",
+        "markUnread": "取消已读",
+        "readBadge": "已读",
+        "abstractTitle": "摘要",
+        "abstractLoading": "正在加载摘要...",
+        "copyAbstract": "复制摘要",
+        "methodTitle": "方法索引",
+        "noIndex": "{venue} 尚未建立方法索引。",
+        "readManager": {
+            "count": "已读 {count} 篇",
+            "export": "导出 JSON",
+            "exportEmpty": "暂无已读记录可导出。",
+            "clear": "清空",
+            "clearTitle": "清空已读列表",
+            "clearMessage": "确定移除全部 {count} 条已读记录？此操作不可恢复。",
+            "cleared": "已清空已读列表"
+        },
+        "toast": {
+            "saveFailed": "已读状态保存失败",
+            "abstractCopied": "摘要已复制",
+            "copyFailed": "摘要复制失败，请重试"
         }
     },
     "awards": {

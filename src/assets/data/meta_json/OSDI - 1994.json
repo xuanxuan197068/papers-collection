@@ -1,0 +1,192 @@
+[
+  {
+    "id": 18068,
+    "year": 1994,
+    "title": "Lottery scheduling: flexible proportional-share resource management",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1267638.1267639",
+    "abstract": "This paper presents lottery scheduling, a novel randomized resource allocation mechanism. Lottery scheduling provides efficient, responsive control over the relative execution rates of computations. Such control is beyond the capabilities of conventional schedulers, and is desirable in systems that service requests of varying importance, such as databases, media-based applications, and networks. Lottery scheduling also supports modular resource management by enabling concurrent modules to insulate their resource allocation policies from one another. A currency abstraction is introduced to flexibly name, share, and protect resource rights. We also show that lottery scheduling can be generalized to manage many diverse resources, such as I/O bandwidth, memory, and access to locks. We have implemented a prototype lottery scheduler for the Mach 3.0 microkernel, and found that it provides flexible and responsive control over the relative execution rates of a wide range of applications. The overhead imposed by our unoptimized prototype is comparable to that of the standard Mach timesharing policy.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18069,
+    "year": 1994,
+    "title": "Scheduling for reduced CPU energy",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1267638.1267640",
+    "abstract": "The energy usage of computer systems is becoming more important, especially for battery operated systems. Displays, disks, and cpus, in that order, use the most energy. Reducing the energy used by displays and disks has been studied elsewhere; this paper considers a new method for reducing the energy used by the cpu. We introduce a new metric for cpu energy performance, millions-of-instructions-per-joule (MIPJ). We examine a class of methods to reduce MIPJ that are characterized by dynamic control of system clock speed by the operating system scheduler. Reducing clock speed alone does not reduce MIPJ, since to do the same work the system must run longer. However, a number of methods are available for reducing energy with reduced clock-speed, such as reducing the voltage [Chandrakasan et al 1992][Horowitz 1993] or using reversible [Younis and Knight 1993] or adiabatic logic [Athas et al 1994].What are the right scheduling algorithms for taking advantage of reduced clock-speed, especially in the presence of applications demanding ever more instructions-per-second? We consider several methods for varying the clock speed dynamically under control of the operating system, and examine the performance of these methods against workstation traces. The primary result is that by adjusting the clock speed at a fine grain, substantial CPU energy can be saved with a limited impact on performance.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18070,
+    "year": 1994,
+    "title": "Storage alternatives for mobile computers",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1267638.1267641",
+    "abstract": "Mobile computers such as notebooks, subnotebooks, and palmtops require low weight, low power consumption, and good interactive performance. These requirements impose many challenges on architectures and operating systems. This paper investigates three alternative storage devices for mobile computers: magnetic hard disks, flash memory disk emulators, and flash memory cards.We have used hardware measurements and trace-driven simulation to evaluate each of the alternative storage devices and their related design strategies. Hardware measurements on an HP OmniBook 300 highlight differences in the performance of the three devices as used on the Omnibook, especially the poor performance of version 2.00 of the Microsoft Flash File System [11] when accessing large files. The traces used in our study came from different environments, including mobile computers (Macintosh Power-Books) and desktop computers (running Windows or HPUX), as well as synthetic workloads. Our simulation study shows that flash memory can reduce energy consumption by an order of magnitude, compared to magnetic disk, while providing good read performance and acceptable write performance. These energy savings can translate into a 22\\% extension of battery life. We also find that the amount of unused memory in a flash memory card has a substantial impact on energy consumption, performance, and endurance: compared to low storage utilizations (40\\% full), running flash memory near its capacity (95\\% full) can increase energy consumption by 70-190\\%, degrade write response time by 30\\%, and decrease the lifetime of the memory card by up to a third. For flash disks, asynchronous erasure can improve write response time by a factor of 2.5.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18071,
+    "year": 1994,
+    "title": "Opportunistic log: efficient installation reads in a reliable storage server",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1267638.1267642",
+    "abstract": "In a distributed storage system, client caches managed on the basis of small granularity objects can provide better memory utilization then page-based caches. However, object servers, unlike page servers, must perform additional disk reads. These installation reads are required to install modified objects onto their corresponding disk pages. The opportunistic log is a new technique that significantly reduces the cost of installation reads. It defers the installation reads, removing them from the modification commit path, and manages a large pool of pending installation reads that can be scheduled efficiently.Using simulations, we show that the opportunistic log substantially enhances the I/O performance of reliable storage servers. An object server without the opportunistic log requires much better client caching to outperform a page server. With an opportunistic log, only a small client cache improvement suffices.Our results imply that efficient scheduling of installation reads can substantially improve the performance of large-scale storage systems and therefore introduces a new performance tradeoff between page-based and object-based architectures.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18072,
+    "year": 1994,
+    "title": "Metadata update performance in file systems",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1267638.1267643",
+    "abstract": "Structural changes, such as file creation and block allocation, have consistently been identified as file system performance problems in many user environments. We compare several implementations that maintain metadata integrity in the event of a system failure but do not require changes to the on-disk structures. In one set of schemes, the file system uses asynchronous writes and passes ordering requirements to the disk scheduler. These scheduler-enforced ordering schemes outperform the conventional approach (synchronous writes) by more than 30 percent for metadata update intensive benchmarks, but are suboptimal mainly due to their inability to safely use delayed writes when ordering is required. We therefore introduce soft updates, an implementation that asymptotically approaches memory-based file system performance (within 5 percent) while providing stronger integrity and security guarantees than most UNIX file systems. For metadata update in-tensive benchmarks, this improves performance by more than a factor of two when compared to the conventional approach.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18073,
+    "year": 1994,
+    "title": "Disk-directed I/O for MIMD multiprocessors",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1267638.1267644",
+    "abstract": "Many scientific applications that run on today's multiprocessors, such as weather forecasting and seismic analysis, are bottlenecked by their file-I/O needs. Even if the multiprocessor is configured with sufficient I/O hardware, the file-system software often fails to provide the available bandwidth to the application. Although libraries and enhanced file-system interfaces can make a significant improvement, we believe that fundamental changes are needed in the file-server software. We propose a new technique, disk-directed I/O, to allow the disk servers to determine the flow of data for maximum performance. Our simulations show that tremendous performance gains are possible. Indeed, disk-directed I/O provided consistent high performance that was largely independent of data distribution, obtained up to 93\\% of peak disk bandwidth, and was as much as 16 times faster than traditional parallel file systems.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18074,
+    "year": 1994,
+    "title": "Message-driven relaxed consistency in a software distributed shared memory",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1267638.1267645",
+    "abstract": "Message-passing and distributed shared memory have their respective advantages and disadvantages in distributed parallel programming. We approach the problem of integrating both mechanisms into a single system by proposing a new message-driven coherency mechanism. Messages carrying explicit causality annotations are exchanged to trigger memory coherency actions. By adding annotations to standard message-based protocols, it is easy to construct efficient implementations of common synchronization and communication mechanisms. Because these are user-level messages, the set of available primitives is extended easily with language-or application-specific mechanisms. CarlOS, an experimental prototype for evaluating this approach, is derived from the lazy release consistent memory of TreadMarks. We describe the message-driven coherency memory model used in CarlOS, and we examine the performance of several applications.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18075,
+    "year": 1994,
+    "title": "Software write detection for a distributed shared memory",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1267638.1267646",
+    "abstract": "Most software-based distributed shared memory (DSM) systems rely on the operating system's virtual memory interface to detect writes to shared data. Strategies based on virtual memory page protection create two problems for a DSM system. First, writes can have high overhead since they are detected with a page fault. As a result, a page must be written many times to amortize the cost of that fault. Second, the size of a virtual memory page is too big to serve as a unit of coherency, inducing false sharing. Mechanisms to handle false sharing can increase runtime overhead and may cause data to be unnecessarily communicated between processors.In this paper, we present a new method for write detection that solves these problems. Our method relies on the compiler and runtime system to detect writes to shared data without invoking the operating system. We measure and compare implementations of a distributed shared memory system using both strategies, virtual memory and compiler/runtime, running a range of applications on a small scale distributed memory multicomputer. We show that the new method has low average write latency and supports fine-grained sharing with low overhead. Further, we show that the dominant cost of write detection with either strategy is due to the mechanism used to handle fine-grain sharing.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18076,
+    "year": 1994,
+    "title": "The design and evaluation of a shared object system for distributed memory machines",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1267638.1267647",
+    "abstract": "This paper describes the design and evaluation of SAM, a shared object system for distributed memory machines. SAM is a portable run-time system that provides a global name space and automatic caching of shared data. SAM incorporates mechanisms to address the problem of high communication overheads on distributed memory machines; these mechanisms include tying synchronization to data access, chaotic access to data, prefetching of data, and pushing of data to remote processors. SAM has been implemented on the CM-5, Intel iPSC/860 and Paragon, IBM SP1, and networks of workstations running PVM. SAM applications run on all these platforms without modification.This paper provides an extensive analysis on several complex scientific algorithms written in SAM on a variety of hardware platforms. We find that the performance of these SAM applications depends fundamentally on the scalability of the underlying parallel algorithm, and whether the algorithm's communication requirements can be satisfied by the hardware. Our experience suggests that SAM is successful in allowing programmers to use distributed memory machines effectively with much less programming effort than required today.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18077,
+    "year": 1994,
+    "title": "Performance issues in parallelized network protocols",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1267638.1267648",
+    "abstract": "Parallel processing has been proposed as a means of improving network protocol throughput. Several different strategies have been taken towards parallelizing protocols. A relatively popular approach is packet-level parallelism, where packets are distributed across processors.This paper provides an experimental performance study of packet-level parallelism on a contemporary shared-memory multiprocessor. We examine several unexplored areas in packet-level parallelism and investigate how various protocol structuring and implementation techniques can affect performance. We study TCP/IP and UDP/IP protocol stacks, implemented with a parallel version of the x-kernel running in user space on Silicon Graphics multiprocessors.Our results show that only limited packet-level parallelism can be achieved within a single connection under TCP, but that using multiple connections can improve available parallelism. We also demonstrate that packet ordering plays a key role in determining single-connection TCP performance, that careful use of locks is a necessity, and that selective exploitation of caching can improve throughput. We also describe experiments that compare parallel protocol performance on two generations of a parallel machine and show how computer architectural trends can influence performance.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18078,
+    "year": 1994,
+    "title": "Experiences with locking in a NUMA multiprocessor operating system kernel",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1267638.1267649",
+    "abstract": "We describe the locking architecture of a new operating system, HURRICANE, designed for large scale shared-memory multiprocessors. Many papers already describe kernel locking techniques, and some of the techniques we use have been previously described by others. However, our work is novel in the particular combination of techniques used, as well as several of the individual techniques themselves. Moreover, it is the way the techniques work together that is the source of our performance advantages and scalability. Briefly, we use: • a hybrid coarse-grain/fine-grain locking strategy that has the low latency and space overhead of a coarse-grain locking strategy while having the high concurrency of a fine-grain locking strategy; • replication of data structures to increase access bandwidth and improve concurrency; • a clustered kernel that bounds the number of processors that can compete for a lock so as to reduce second order effects such as memory and interconnect contention; • Distributed Locks to further reduce second order effects, with modifications that reduce the uncontended latency of these locks to close to that of spin locks.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18079,
+    "year": 1994,
+    "title": "HiPEC: high performance external virtual memory caching",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1267638.1267650",
+    "abstract": "Traditional operating systems use a fixed LRU-like page replacement policy and centralized frame pool that cannot properly serve all types of memory access patterns of various applications As a result many memory-intensive applications such as databases multimedia applications and scientific simulators induce excessive page faults and page replacement when running on top of existing operating systems.This paper presents a High Performance External virtual memory Caching mechanism (HiPEC) to provide applications with their own specific page replacement management. The user specific policy programmed in the HiPEC command set is stored in user address space. When a page fault occurs the kernel fetches and interprets the corresponding policy commands to perform the user specific page replacement management. Experimental results show that HiPEC induces little overhead and can significantly improve performance for memory-intensive applications.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18080,
+    "year": 1994,
+    "title": "Implementation and performance of application-controlled file caching",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1267638.1267651",
+    "abstract": "Traditional file system implementations do not allow applications to control file caching replacement decisions. We have implemented two-level replacement, a scheme that allows applications to control their own cache replacement, while letting the kernel control the allocation of cache space among processes. We designed an interface to let applications exert control on replacement via a set of directives to the kernel. This is effective and requires low overhead.We demonstrate that for applications that do not perform well under traditional caching policies, the combination of good application-chosen replacement strategies, and our kernel allocation policy LRU-SP, can reduce the number of block I/Os by up to 80\\%, and can reduce the elapsed time by up to 45\\%. We also show that LRU-SP is crucial to the performance improvement for multiple concurrent applications: LRU-SP fairly distributes cache blocks and offers protection against foolish applications.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18081,
+    "year": 1994,
+    "title": "A caching model of operating system kernel functionality",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1267638.1267652",
+    "abstract": "Operating system research has endeavored to develop micro-kernels that provide modularity, reliability and security improvements over conventional monolithic kernels. However, the resulting kernels have been slower, larger and more error-prone than desired. These efforts have also failed to provide sufficient application control of resource management required by sophisticated applications.This paper describes a caching model of operating system functionality as implemented in the Cache Kernel, the supervisor-mode component of the V++ operating system. The Cache Kernel caches operating system objects such as threads and address spaces just as conventional hardware caches memory data. User-mode application kernels handle the loading and writeback of these objects, implementing application-specific management policies and mechanisms. Experience with implementing the Cache Kernel and measurements of its performance on a multiprocessor suggest that the caching model can provide competitive performance with conventional monolithic operating systems, yet provides application-level control of system resources, better modularity, better scalability, smaller size and a basis for fault containment.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18082,
+    "year": 1994,
+    "title": "Distributed filaments: efficient fine-grain parallelism on a cluster of workstations",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1267638.1267653",
+    "abstract": "A fine-grain parallel program is one in which processes are typically small ranging from a few to a few hundred instructions. Fine-grain parallelism arises naturally in many situations such as iterative grid computations recursive fork/join programs the bodies of parallel FOR loops and the implicit parallelism in functional or dataflow languages. It is useful both to describe massively parallel computations and as a target for code generation by compilers. However fine-grain parallelism has long been thought to be inefficient due to the overheads of process creation context switching, and synchronization. This paper describes a software kernel. Distributed Filaments (DF) that implements fine-grain parallelism both portably and efficiently on a workstation cluster DF runs on existing off-the-shelf hardware and software. It has a simple interface so it is easy to use. DF achieves e ciency by using stateless threads on each node overlapping communication and computation, employing a new reliable datagram communication protocol and automatically balancing the work generated by fork/join computations.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18083,
+    "year": 1994,
+    "title": "Integrating coherency and recoverability in distributed systems",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1267638.1267654",
+    "abstract": "We propose a technique for maintaining coherency of a transactional distributed shared memory, used by applications accessing a shared persistent store. Our goal is to improve support for fine-grained distributed data sharing in collaborative design applications, such as CAD systems and software development environments. In contrast, traditional research in distributed shared memory has focused on supporting parallel programs; in this paper, we show how distributed programs can benefit from this shared-memory abstraction as well.Our approach, called log-based coherency, integrates coherency support with a standard mechanism for ensuring recoverability of persistent data. In our system, transaction logs are the basis of both recoverability and coherency. We have prototyped log-based coherency as a set of extensions to RVM [Satyanarayanan et al. 94], a runtime package supporting recoverable virtual memory. Our prototype adds coherency support to RVM in a simple way that does not require changes to existing RVM applications. We report on our prototype and its performance, and discuss its relationship to other DSM systems.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18084,
+    "year": 1994,
+    "title": "Garbage collection and DSM consistency",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1267638.1267655",
+    "abstract": "This paper presents the design of a copying garbage collector for persistent distributed shared objects in a loosely coupled network with weakly consistent distributed shared memory (DSM). The main goal of the design for this garbage collector is to minimize the communication overhead due to collection between nodes of the system, and to avoid any interference with the DSM memory consistency protocol. Our design is based on the observation that, in a weakly consistent DSM system, the memory consistency requirements of the garbage collector are less strict than those of the applications. Thus, the garbage collector reclaims objects independently of other copies of the same objects without interfering with the DSM consistency protocol. Furthermore, our design does not require reliable communication support, and is capable of reclaiming distributed cycles of dead objects.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18085,
+    "year": 1994,
+    "title": "Software prefetching and caching for translation lookaside buffers",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1267638.1267656",
+    "abstract": "A number of interacting trends in operating system structure, processor architecture, and memory systems are increasing both the rate of translation lookaside buffer (TLB) misses and the cost of servicing amiss. This paper presents two novel software schemes, implemented under Mach 3.0, to decrease both the number and the cost of kernel TLB misses (i.e., misses on kernel data structures, including user page tables). The first scheme is a new use of prefetching for TLB entries on the IPC path, and the second scheme is a new use of software caching of TLB entries for hierarchical page table organizations.For a range of applications, prefetching decreases the number of kernel TLB misses by 40\\% to 50\\%, and caching decreases TLB penalties by providing a fast path for over 90\\% of the misses. Our caching scheme also decreases the number of nested TLB traps due to the page table hierarchy, reducing the number of kernel TLB miss traps for applications by 20\\% to 40\\%. Prefetching and caching, when used alone, each improve application performance by up to 3.5\\%; when used together, they improve application performance by up to 3\\%. On synthetic benchmarks that involve frequent communication among several different address spaces (and thus put more pressure on the TLB), prefetching improves overall performance by about 6\\%, caching improves overall performance by about 10\\%, and the two used together improve overall performance by about 12\\%.Our techniques are very effective in reducing kernel TLB penalties, which currently range from 1\\% to 5\\% of application runtime for the benchmarks studied. Since processor speeds continue to increase relative to memory speeds, our schemes should be even more effective in improving application performance in future architectures.",
+    "status": "notchecked"
+  },
+  {
+    "id": 18086,
+    "year": 1994,
+    "title": "Cooperative caching: using remote client memory to improve file system performance",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1267638.1267657",
+    "abstract": "Emerging high-speed networks will allow machines to access remote data nearly as quickly as they can access local data. This trend motivates the use of cooperative caching: coordinating the file caches of many machines distributed on a LAN to form a more effective overall file cache. In this paper we examine four cooperative caching algorithms using a trace-driven simulation study. These simulations indicate that for the systems studied cooperative caching can halve the number of disk accesses, improving file system read response time by as much as 73\\%. Based on these simulations we conclude that cooperative caching can significantly improve file system read response time and that relatively simple cooperative caching algorithms are sufficient to realize most of the potential performance gain.",
+    "status": "notchecked"
+  }
+]

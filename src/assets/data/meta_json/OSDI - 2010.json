@@ -1,0 +1,302 @@
+[
+  {
+    "id": 17934,
+    "year": 2010,
+    "title": "An analysis of Linux scalability to many cores",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924944",
+    "abstract": "This paper analyzes the scalability of seven system applications (Exim, memcached, Apache, PostgreSQL, gmake, Psearchy, and MapReduce) running on Linux on a 48- core computer. Except for gmake, all applications trigger scalability bottlenecks inside a recent Linux kernel. Using mostly standard parallel programming techniques-- this paper introduces one new technique, sloppy counters-- these bottlenecks can be removed from the kernel or avoided by changing the applications slightly. Modifying the kernel required in total 3002 lines of code changes. A speculative conclusion from this analysis is that there is no scalability reason to give up on traditional operating system organizations just yet.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17935,
+    "year": 2010,
+    "title": "Trust and protection in the Illinois browser operating system",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924945",
+    "abstract": "Current web browsers are complex, have enormous trusted computing bases, and provide attackers with easy access to modern computer systems. In this paper we introduce the Illinois Browser Operating System (IBOS), a new operating system and a new browser that reduces the trusted computing base for web browsers. In our architecture we expose browser-level abstractions at the lowest software layer, enabling us to remove almost all traditional OS components and services from our trusted computing base by mapping browser abstractions to hardware abstractions directly. We show that this architecture is flexible enough to enable new browser security policies, can still support traditional applications, and adds little overhead to the overall browsing experience.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17936,
+    "year": 2010,
+    "title": "FlexSC: flexible system call scheduling with exception-less system calls",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924946",
+    "abstract": "For the past 30+ years, system calls have been the de facto interface used by applications to request services from the operating system kernel. System calls have almost universally been implemented as a synchronous mechanism, where a special processor instruction is used to yield userspace execution to the kernel. In the first part of this paper, we evaluate the performance impact of traditional synchronous system calls on system intensive workloads. We show that synchronous system calls negatively affect performance in a significant way, primarily because of pipeline flushing and pollution of key processor structures (e.g., TLB, data and instruction caches, etc.).We propose a new mechanism for applications to request services from the operating system kernel: exception-less system calls. They improve processor efficiency by enabling flexibility in the scheduling of operating system work, which in turn can lead to significantly increased temporal and spacial locality of execution in both user and kernel space, thus reducing pollution effects on processor structures. Exception-less system calls are particularly effective on multicore processors. They primarily target highly threaded server applications, such as Web servers and database servers.We present FlexSC, an implementation of exceptionless system calls in the Linux kernel, and an accompanying user-mode thread package (FlexSC-Threads), binary compatible with POSIX threads, that translates legacy synchronous system calls into exception-less ones transparently to applications. We show how FlexSC improves performance of Apache by up to 116\\%, MySQL by up to 40\\%, and BIND by up to 105\\% while requiring no modifications to the applications.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17937,
+    "year": 2010,
+    "title": "Finding a needle in Haystack: facebook's photo storage",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924947",
+    "abstract": "This paper describes Haystack, an object storage system optimized for Facebook's Photos application. Facebook currently stores over 260 billion images, which translates to over 20 petabytes of data. Users upload one billion new photos (∼60 terabytes) each week and Facebook serves over one million images per second at peak. Haystack provides a less expensive and higher performing solution than our previous approach, which leveraged network attached storage appliances over NFS. Our key observation is that this traditional design incurs an excessive number of disk operations because of metadata lookups. We carefully reduce this per photo metadata so that Haystack storage machines can perform all metadata lookups in main memory. This choice conserves disk operations for reading actual data and thus increases overall throughput.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17938,
+    "year": 2010,
+    "title": "Availability in globally distributed storage systems",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924948",
+    "abstract": "Highly available cloud storage is often implemented with complex, multi-tiered distributed systems built on top of clusters of commodity servers and disk drives. Sophisticated management, load balancing and recovery techniques are needed to achieve high performance and availability amidst an abundance of failure sources that include software, hardware, network connectivity, and power issues. While there is a relative wealth of failure studies of individual components of storage systems, such as disk drives, relatively little has been reported so far on the overall availability behavior of large cloudbased storage services.We characterize the availability properties of cloud storage systems based on an extensive one year study of Google's main storage infrastructure and present statistical models that enable further insight into the impact of multiple design choices, such as data placement and replication strategies. With these models we compare data availability under a variety of system parameters given the real patterns of failures observed in our fleet.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17939,
+    "year": 2010,
+    "title": "Nectar: automatic management of data and computation in datacenters",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924949",
+    "abstract": "Managing data and computation is at the heart of datacenter computing. Manual management of data can lead to data loss, wasteful consumption of storage, and laborious bookkeeping. Lack of proper management of computation can result in lost opportunities to share common computations across multiple jobs or to compute results incrementally.Nectar is a system designed to address the aforementioned problems. It automates and unifies the management of data and computation within a datacenter. In Nectar, data and computation are treated interchangeably by associating data with its computation. Derived datasets, which are the results of computations, are uniquely identified by the programs that produce them, and together with their programs, are automatically managed by a datacenter wide caching service. Any derived dataset can be transparently regenerated by reexecuting its program, and any computation can be transparently avoided by using previously cached results. This enables us to greatly improve datacenter management and resource utilization: obsolete or infrequently used derived datasets are automatically garbage collected, and shared common computations are computed only once and reused by others.This paper describes the design and implementation of Nectar, and reports on our evaluation of the system using analytic studies of logs from several production clusters and an actual deployment on a 240-node cluster.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17940,
+    "year": 2010,
+    "title": "Intrusion recovery using selective re-execution",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924950",
+    "abstract": "RETRO repairs a desktop or server after an adversary compromises it, by undoing the adversary's changes while preserving legitimate user actions, with minimal user involvement. During normal operation, RETRO records an action history graph, which is a detailed dependency graph describing the system's execution. RETRO uses refinement to describe graph objects and actions at multiple levels of abstraction, which allows for precise dependencies. During repair, RETRO uses the action history graph to undo an unwanted action and its indirect effects by first rolling back its direct effects, and then reexecuting legitimate actions that were influenced by that change. To minimize user involvement and re-execution, RETRO uses predicates to selectively re-execute only actions that were semantically affected by the adversary's changes, and uses compensating actions to handle external effects.An evaluation of a prototype of RETRO for Linux with 2 real-world attacks, 2 synthesized challenge attacks, and 6 attacks from previous work, shows that RETRO can often repair the system without user involvement, and avoids false positives and negatives from previous solutions. These benefits come at the cost of 35-127\\% in execution time overhead and of 4-150 GB of log space per day, depending on the workload. For example, a HotCRP paper submission web site incurs 35\\% slowdown and generates 4 GB of logs per day under the workload from 30 minutes prior to the SOSP 2007 deadline.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17941,
+    "year": 2010,
+    "title": "Static checking of dynamically-varying security policies in database-backed applications",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924951",
+    "abstract": "We present a system for sound static checking of security policies for database-backed Web applications. Our tool checks a combination of access control and information flow policies, where the policies vary based on database contents. For instance, one or more database tables may represent an access control matrix, controlling who may read or write which cells of these and other tables. Using symbolic evaluation and automated theorem-proving, our tool checks these policies statically, requiring no program annotations (beyond the policies themselves) and adding no run-time overhead. Specifications come in the form of SQL queries as policies: for instance, an application's confidentiality policy is a fixed set of queries, whose results provide an upper bound on what information may be released to the user. To provide userdependent policies, we allow queries to depend on what secrets the user knows. We have used our prototype implementation to check several programs representative of the data-centric Web applications that are common today.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17942,
+    "year": 2010,
+    "title": "Accountable virtual machines",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924952",
+    "abstract": "In this paper, we introduce accountable virtual machines (AVMs). Like ordinary virtual machines, AVMs can execute binary software images in a virtualized copy of a computer system; in addition, they can record non-repudiable information that allows auditors to subsequently check whether the software behaved as intended. AVMs provide strong accountability, which is important, for instance, in distributed systems where different hosts and organizations do not necessarily trust each other, or where software is hosted on third-party operated platforms. AVMs can provide accountability for unmodified binary images and do not require trusted hardware. To demonstrate that AVMs are practical, we have designed and implemented a prototype AVM monitor based on VMware Workstation, and used it to detect several existing cheats in Counterstrike, a popular online multi-player game.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17943,
+    "year": 2010,
+    "title": "Bypassing races in live applications with execution filters",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924953",
+    "abstract": "Deployed multithreaded applications contain many races because these applications are difficult to write, test, and debug. Worse, the number of races in deployed applications may drastically increase due to the rise of multicore hardware and the immaturity of current race detectors.LOOM is a \"live-workaround\" system designed to quickly and safely bypass application races at runtime. LOOM provides a flexible and safe language for developers to write execution filters that explicitly synchronize code. It then uses an evacuation algorithm to safely install the filters to live applications to avoid races. It reduces its performance overhead using hybrid instrumentation that combines static and dynamic instrumentation.We evaluated LOOM on nine real races from a diverse set of six applications, including MySQL and Apache. Our results show that (1) LOOM can safely fix all evaluated races in a timely manner, thereby increasing application availability; (2) LOOM incurs little performance overhead; (3) LOOM scales well with the number of application threads; and (4) LOOM is easy to use.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17944,
+    "year": 2010,
+    "title": "Effective data-race detection for the kernel",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924954",
+    "abstract": "Data races are an important class of concurrency errors where two threads erroneously access a shared memory location without appropriate synchronization. This paper presents DataCollider, a lightweight and effective technique for dynamically detecting data races in kernel modules. Unlike existing data-race detection techniques, DataCollider is oblivious to the synchronization protocols (such as locking disciplines) the program uses to protect shared memory accesses. This is particularly important for low-level kernel code that uses a myriad of complex architecture/device specific synchronization mechanisms. To reduce the runtime overhead, DataCollider randomly samples a small percentage of memory accesses as candidates for data-race detection. The key novelty of DataCollider is that it uses breakpoint facilities already supported by many hardware architectures to achieve negligible runtime overheads. We have implemented DataCollider for the Windows 7 kernel and have found 25 confirmed erroneous data races of which 12 have already been fixed.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17945,
+    "year": 2010,
+    "title": "Ad hoc synchronization considered harmful",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924955",
+    "abstract": "Many synchronizations in existing multi-threaded programs are implemented in an ad hoc way. The first part of this paper does a comprehensive characteristic study of ad hoc synchronizations in concurrent programs. By studying 229 ad hoc synchronizations in 12 programs of various types (server, desktop and scientific), including Apache, MySQL, Mozilla, etc., we find several interesting and perhaps alarming characteristics: (1) Every studied application uses ad hoc synchronizations. Specifically, there are 6-83 ad hoc synchronizations in each program. (2) Ad hoc synchronizations are error-prone. Significant percentages (22-67\\%) of these ad hoc synchronizations introduced bugs or severe performance issues. (3) Ad hoc synchronization implementations are diverse and many of them cannot be easily recognized as synchronizations, i.e. have poor readability and maintainability.The second part of our work builds a tool called SyncFinder to automatically identify and annotate ad hoc synchronizations in concurrent programswritten in C/C++ to assist programmers in porting their code to better structured implementations, while also enabling other tools to recognize them as synchronizations. Our evaluation using 25 concurrent programs shows that, on average, SyncFinder can automatically identify 96\\% of ad hoc synchronizations with 6\\% false positives.We also build two use cases to leverage SyncFinder's auto-annotation. The first one uses annotation to detect 5 deadlocks (including 2 new ones) and 16 potential issues missed by previous analysis tools in Apache, MySQL and Mozilla. The second use case reduces Valgrind data race checker's false positive rates by 43-86\\%.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17946,
+    "year": 2010,
+    "title": "Deterministic process groups in dOS",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924956",
+    "abstract": "Current multiprocessor systems execute parallel and concurrent software nondeterministically: even when given precisely the same input, two executions of the same program may produce different output. This severely complicates debugging, testing, and automatic replication for fault-tolerance. Previous efforts to address this issue have focused primarily on record and replay, but making execution actually deterministic would address the problem at the root.Our goals in this work are twofold: (1) to provide fully deterministic execution of arbitrary, unmodified, multithreaded programs as an OS service; and (2) to make all sources of intentional nondeterminism, such as network I/O, be explicit and controllable. To this end we propose a new OS abstraction, the Deterministic Process Group (DPG). All communication between threads and processes internal to a DPG happens deterministically, including implicit communication via shared-memory accesses, as well as communication via OS channels such as pipes, signals, and the filesystem. To deal with fundamentally nondeterministic external events, our abstraction includes the shim layer, a programmable interface that interposes on all interaction between a DPG and the external world, making determinism useful even for reactive applications.We implemented the DPG abstraction as an extension to Linux and demonstrate its benefits with three use cases: plain deterministic execution; replicated execution; and record and replay by logging just external input. We evaluated our implementation on both parallel and reactive workloads, including Apache, Chromium, and PARSEC.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17947,
+    "year": 2010,
+    "title": "Efficient system-enforced deterministic parallelism",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924957",
+    "abstract": "Deterministic execution offers many benefits for debugging, fault tolerance, and security. Current methods of executing parallel programs deterministically, however, often incur high costs, allow misbehaved software to defeat repeatability, and transform time-dependent races into input- or path-dependent races without eliminating them. We introduce a new parallel programming model addressing these issues, and use Determinator, a proof-of-concept OS, to demonstrate the model's practicality. Determinator's microkernel API provides only \"shared-nothing\" address spaces and deterministic interprocess communication primitives to make execution of all unprivileged code--well-behaved or not-- precisely repeatable. Atop this microkernel, Determinator's user-level runtime adapts optimistic replication techniques to offer a private workspace model for both thread-level and process-level parallel programing. This model avoids the introduction of read/write data races, and converts write/write races into reliably-detected conflicts. Coarse-grained parallel benchmarks perform and scale comparably to nondeterministic systems, on both multicore PCs and across nodes in a distributed cluster.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17948,
+    "year": 2010,
+    "title": "Stable deterministic multithreading through schedule memoization",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924958",
+    "abstract": "A deterministic multithreading (DMT) system eliminates nondeterminism in thread scheduling, simplifying the development of multithreaded programs. However, existing DMT systems are unstable; they may force a program to (ad)venture into vastly different schedules even for slightly different inputs or execution environments, defeating many benefits of determinism. Moreover, few existing DMT systems work with server programs whose inputs arrive continuously and nondeterministically.TERN is a stable DMT system. The key novelty in TERN is the idea of schedule memoization that memoizes past working schedules and reuses them on future inputs, making program behaviors stable across different inputs. A second novelty in TERN is the idea of windowing that extends schedule memoization to server programs by splitting continuous request streams into windows of requests. Our TERN implementation runs on Linux. It operates as user-space schedulers, requiring no changes to the OS and only a few lines of changes to the application programs. We evaluated TERN on a diverse set of 14 programs (e.g., Apache and MySQL) with real and synthetic workloads. Our results show that TERN is easy to use, makes programs more deterministic and stable, and has reasonable overhead.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17949,
+    "year": 2010,
+    "title": "Enabling configuration-independent automation by non-expert users",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924959",
+    "abstract": "The Internet has allowed collaboration on an unprecedented scale. Wikipedia, Luis Von Ahn's ESP game, and reCAPTCHA have proven that tasks typically performed by expensive in-house or outsourced teams can instead be delegated to the mass of Internet computer users. These success stories show the opportunity for crowd-sourcing other tasks, such as allowing computer users to help each other answer questions like \"How do I make my computer do X?\". The current approach to crowd-sourcing IT tasks, however, limits users to text descriptions of task solutions, which is both ineffective and frustrating. We propose instead, to allow the mass of Internet users to help each other answer how-to computer questions by actually performing the task rather than documenting its solution.This paper presents KarDo, a system that takes as input traces of low-level user actions that perform a task on individual computers, and produces an automated solution to the task that works on a wide variety of computer configurations. Our core contributions are machine learning and static analysis algorithms that infer state and action dependencies without requiring any modifications to the operating system or applications.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17950,
+    "year": 2010,
+    "title": "Automating configuration troubleshooting with dynamic information flow analysis",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924960",
+    "abstract": "Software misconfigurations are time-consuming and enormously frustrating to troubleshoot. In this paper, we show that dynamic information flow analysis helps solve these problems by pinpointing the root cause of configuration errors. We have built a tool called ConfAid that instruments application binaries to monitor the causal dependencies introduced through control and data flow as the program executes -- ConfAid uses these dependencies to link the erroneous behavior to specific tokens in configuration files. Our results using ConfAid to solve misconfigurations in OpenSSH, Apache, and Postfix show that ConfAid identifies the source of the misconfiguration as the first or second most likely root cause for 18 out of 18 real-world configuration errors and for 55 out of 60 randomly generated errors. ConfAid runs in only a few minutes, making it an attractive alternative to manual debugging.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17951,
+    "year": 2010,
+    "title": "Large-scale incremental processing using distributed transactions and notifications",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924961",
+    "abstract": "Updating an index of the web as documents are crawled requires continuously transforming a large repository of existing documents as new documents arrive. This task is one example of a class of data processing tasks that transform a large repository of data via small, independent mutations. These tasks lie in a gap between the capabilities of existing infrastructure. Databases do not meet the storage or throughput requirements of these tasks: Google's indexing system stores tens of petabytes of data and processes billions of updates per day on thousands of machines. MapReduce and other batch-processing systems cannot process small updates individually as they rely on creating large batches for efficiency.We have built Percolator, a system for incrementally processing updates to a large data set, and deployed it to create the Google web search index. By replacing a batch-based indexing system with an indexing system based on incremental processing using Percolator, we process the same number of documents per day, while reducing the average age of documents in Google search results by 50\\%.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17952,
+    "year": 2010,
+    "title": "Reining in the outliers in map-reduce clusters using Mantri",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924962",
+    "abstract": "Experience froman operational Map-Reduce cluster reveals that outliers significantly prolong job completion. The causes for outliers include run-time contention for processor, memory and other resources, disk failures, varying bandwidth and congestion along network paths and, imbalance in task workload. We present Mantri, a system that monitors tasks and culls outliers using cause- and resource-aware techniques. Mantri's strategies include restarting outliers, network-aware placement of tasks and protecting outputs of valuable tasks. Using real-time progress reports, Mantri detects and acts on outliers early in their lifetime. Early action frees up resources that can be used by subsequent tasks and expedites the job overall. Acting based on the causes and the resource and opportunity cost of actions lets Mantri improve over prior work that only duplicates the laggards. Deployment in Bing's production clusters and trace-driven simulations show that Mantri improves job completion times by 32\\%.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17953,
+    "year": 2010,
+    "title": "Transactional consistency and automatic management in an application data cache",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924963",
+    "abstract": "Distributed in-memory application data caches like memcached are a popular solution for scaling database-driven web sites. These systems are easy to add to existing deployments, and increase performance significantly by reducing load on both the database and application servers. Unfortunately, such caches do not integrate well with the database or the application. They cannot maintain transactional consistency across the entire system, violating the isolation properties of the underlying database. They leave the application responsible for locating data in the cache and keeping it up to date, a frequent source of application complexity and programming errors.Addressing both of these problems, we introduce a transactional cache, TxCache, with a simple programming model. TxCache ensures that any data seen within a transaction, whether it comes from the cache or the database, reflects a slightly stale but consistent snapshot of the database. TxCache makes it easy to add caching to an application by simply designating functions as cacheable; it automatically caches their results, and invalidates the cached data as the underlying database changes. Our experiments found that adding TxCache increased the throughput of a web application by up to 5.2\\texttimes{}, only slightly less than a non-transactional cache, showing that consistency does not have to come at the price of performance.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17954,
+    "year": 2010,
+    "title": "Piccolo: building fast, distributed programs with partitioned tables",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924964",
+    "abstract": "Piccolo is a new data-centric programming model for writing parallel in-memory applications in data centers. Unlike existing data-flow models, Piccolo allows computation running on different machines to share distributed, mutable state via a key-value table interface. Piccolo enables efficient application implementations. In particular, applications can specify locality policies to exploit the locality of shared state access and Piccolo's run-time automatically resolves write-write conflicts using user-defined accumulation functions.Using Piccolo, we have implemented applications for several problem domains, including the PageRank algorithm, k-means clustering and a distributed crawler. Experiments using 100 Amazon EC2 instances and a 12 machine cluster show Piccolo to be faster than existing data flow models for many problems, while providing similar fault-tolerance guarantees and a convenient programming interface.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17955,
+    "year": 2010,
+    "title": "Depot: cloud storage with minimal trust",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924965",
+    "abstract": "The paper describes the design, implementation, and evaluation of Depot, a cloud storage system that minimizes trust assumptions. Depot tolerates buggy or malicious behavior by any number of clients or servers, yet it provides safety and liveness guarantees to correct clients. Depot provides these guarantees using a two-layer architecture. First, Depot ensures that the updates observed by correct nodes are consistently ordered under Fork-Join-Causal consistency (FJC). FJC is a slight weakening of causal consistency that can be both safe and live despite faulty nodes. Second, Depot implements protocols that use this consistent ordering of updates to provide other desirable consistency, staleness, durability, and recovery properties. Our evaluation suggests that the costs of these guarantees are modest and that Depot can tolerate faults and maintain good availability, latency, overhead, and staleness even when significant faults occur.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17956,
+    "year": 2010,
+    "title": "Comet: an active distributed key-value store",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924966",
+    "abstract": "Distributed key-value storage systems are widely used in corporations and across the Internet. Our research seeks to greatly expand the application space for key-value storage systems through application-specific customization. We designed and implemented Comet, an extensible, distributed key-value store. Each Comet node stores a collection of active storage objects (ASOs) that consist of a key, a value, and a set of handlers. Comet handlers run as a result of timers or storage operations, such as get or put, allowing an ASO to take dynamic, application-specific actions to customize its behavior. Handlers are written in a simple sandboxed extension language, providing properties of safety and isolation.We implemented a Comet prototype for the Vuze DHT, deployed Comet nodes on Vuze from PlanetLab, and built and evaluated over a dozen Comet applications. Our experience demonstrates that simple, safe, and restricted extensibility can significantly increase the power and range of applications that can run on distributed active storage systems. This approach facilitates the sharing of a single storage system by applications with diverse needs, allowing them to reap the consolidation benefits inherent in today's massive clouds.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17957,
+    "year": 2010,
+    "title": "SPORC: group collaboration using untrusted cloud resources",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924967",
+    "abstract": "Cloud-based services are an attractive deployment model for user-facing applications like word processing and calendaring. Unlike desktop applications, cloud services allow multiple users to edit shared state concurrently and in real-time, while being scalable, highly available, and globally accessible. Unfortunately, these benefits come at the cost of fully trusting cloud providers with potentially sensitive and important data.To overcome this strict tradeoff, we present SPORC, a generic framework for building a wide variety of collaborative applications with untrusted servers. In SPORC, a server observes only encrypted data and cannot deviate from correct execution without being detected. SPORC allows concurrent, low-latency editing of shared state, permits disconnected operation, and supports dynamic access control even in the presence of concurrency. We demonstrate SPORC's flexibility through two prototype applications: a causally-consistent key-value store and a browser-based collaborative text editor.Conceptually, SPORC illustrates the complementary benefits of operational transformation (OT) and fork* consistency. The former allows SPORC clients to execute concurrent operations without locking and to resolve any resulting conflicts automatically. The latter prevents a misbehaving server from equivocating about the order of operations unless it is willing to fork clients into disjoint sets. Notably, unlike previous systems, SPORC can automatically recover from such malicious forks by leveraging OT's conflict resolution mechanism.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17958,
+    "year": 2010,
+    "title": "Onix: a distributed control platform for large-scale production networks",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924968",
+    "abstract": "Computer networks lack a general control paradigm, as traditional networks do not provide any network-wide management abstractions. As a result, each new function (such as routing) must provide its own state distribution, element discovery, and failure recovery mechanisms. We believe this lack of a common control platform has significantly hindered the development of flexible, reliable and feature-rich network control planes.To address this, we present Onix, a platform on top of which a network control plane can be implemented as a distributed system. Control planes written within Onix operate on a global view of the network, and use basic state distribution primitives provided by the platform. Thus Onix provides a general API for control plane implementations, while allowing them to make their own trade-offs among consistency, durability, and scalability.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17959,
+    "year": 2010,
+    "title": "Can the production network be the testbed?",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924969",
+    "abstract": "A persistent problem in computer network research is validation. When deciding how to evaluate a new feature or bug fix, a researcher or operator must trade-off realism (in terms of scale, actual user traffic, real equipment) and cost (larger scale costs more money, real user traffic likely requires downtime, and real equipment requires vendor adoption which can take years). Building a realistic testbed is hard because \"real\" networking takes place on closed, commercial switches and routers with special purpose hardware. But if we build our testbed from software switches, they run several orders of magnitude slower. Even if we build a realistic network testbed, it is hard to scale, because it is special purpose and is in addition to the regular network. It needs its own location, support and dedicated links. For a testbed to have global reach takes investment beyond the reach of most researchers.In this paper, we describe a way to build a testbed that is embedded in--and thus grows with--the network. The technique--embodied in our first prototype, FlowVisor--slices the network hardware by placing a layer between the control plane and the data plane. We demonstrate that FlowVisor slices our own production network, with legacy protocols running in their own protected slice, alongside experiments created by researchers. The basic idea is that if unmodified hardware supports some basic primitives (in our prototype, Open-Flow, but others are possible), then a worldwide testbed can ride on the coat-tails of deployments, at no extra expense. Further, we evaluate the performance impact and describe how FlowVisor is deployed at seven other campuses as part of a wider evaluation platform.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17960,
+    "year": 2010,
+    "title": "Building extensible networks with rule-based forwarding",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924970",
+    "abstract": "We present a network design that provides flexible and policy-compliant forwarding. Our proposal centers around a new architectural concept: that of packet rules. A rule is a simple if-then-else construct that describes the manner in which the network should - or should not - forward packets. A packet identifies the rule by which it is to be forwarded and routers forward each packet in accordance with its associated rule. Each packet rule is certified, guaranteeing that all parties involved in forwarding a packet agree with the packet's rule. Packets containing uncertified rules are simply dropped in the network. We present the design, implementation and evaluation of a Rule-Based Forwarding (RBF) architecture. We demonstrate flexibility by illustrating how RBF supports a variety of use cases including content caching, middlebox selection and DDoS protection. Using our prototype router implementation we show that the overhead RBF imposes is within the capabilities of modern network equipment.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17961,
+    "year": 2010,
+    "title": "TaintDroid: an information-flow tracking system for realtime privacy monitoring on smartphones",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924971",
+    "abstract": "Today's smartphone operating systems frequently fail to provide users with adequate control over and visibility into how third-party applications use their private data. We address these shortcomings with TaintDroid, an efficient, system-wide dynamic taint tracking and analysis system capable of simultaneously tracking multiple sources of sensitive data. TaintDroid provides realtime analysis by leveraging Android's virtualized execution environment. TaintDroid incurs only 14\\% performance overhead on a CPU-bound micro-benchmark and imposes negligible overhead on interactive third-party applications. Using TaintDroid to monitor the behavior of 30 popular third-party Android applications, we found 68 instances of potential misuse of users' private information across 20 applications. Monitoring sensitive data with TaintDroid provides informed use of third-party applications for phone users and valuable input for smartphone security service firms seeking to identify misbehaving applications.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17962,
+    "year": 2010,
+    "title": "StarTrack next generation: a scalable infrastructure for track-based applications",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924972",
+    "abstract": "StarTrack was the first service designed to manage tracks of GPS location coordinates obtained from mobile devices and to facilitate the construction of track-based applications. Our early attempts to build practical applications on StarTrack revealed substantial efficiency and scalability problems, including frequent client-server roundtrips, unnecessary data transfers, costly similarity comparisons involving thousands of tracks, and poor fault-tolerance. To remedy these limitations, we revised the overall system architecture, API, and implementation. The API was extended to operate on collections of tracks rather than individual tracks, delay query execution, and permit caching of query results. New data structures, namely track trees, were introduced to speed the common operation of searching for similar tracks. Map matching algorithms were adopted to convert each track into a more compact and canonical sequence of road segments. And the underlying track database was partitioned and replicated among multiple servers. Altogether, these changes not only simplified the construction of track-based applications, which we confirmed by building applications using our new API, but also resulted in considerable performance gains. Measurements of similarity queries, for example, show two to three orders of magnitude improvement in query times.",
+    "status": "notchecked"
+  },
+  {
+    "id": 17963,
+    "year": 2010,
+    "title": "The turtles project: design and implementation of nested virtualization",
+    "category": "system",
+    "publication": "OSDI",
+    "paper": "https://dl.acm.org/doi/10.5555/1924943.1924973",
+    "abstract": "In classical machine virtualization, a hypervisor runs multiple operating systems simultaneously, each on its own virtual machine. In nested virtualization, a hypervisor can run multiple other hypervisors with their associated virtual machines. As operating systems gain hypervisor functionality--Microsoft Windows 7 already runs Windows XP in a virtual machine--nested virtualization will become necessary in hypervisors that wish to host them. We present the design, implementation, analysis, and evaluation of high-performance nested virtualization on Intel x86-based systems. The Turtles project, which is part of the Linux/KVM hypervisor, runs multiple unmodified hypervisors (e.g., KVM and VMware) and operating systems (e.g., Linux and Windows). Despite the lack of architectural support for nested virtualization in the x86 architecture, it can achieve performance that is within 6-8\\% of single-level (non-nested) virtualization for common workloads, through multi-dimensional paging for MMU virtualization and multi-level device assignment for I/O virtualization.",
+    "status": "notchecked"
+  }
+]

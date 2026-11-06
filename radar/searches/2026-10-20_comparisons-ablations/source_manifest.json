@@ -1,0 +1,178 @@
+[
+  {
+    "key": "cpds",
+    "url": "https://www.usenix.org/system/files/usenixsecurity25-guan.pdf",
+    "resolved_url": "https://www.usenix.org/system/files/usenixsecurity25-guan.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "sha256": "f1666ee4a3f8207e42b761255d7298efc7a45aeb73fa59c84ab3d4ebd68aa585"
+  },
+  {
+    "key": "cheat",
+    "url": "https://www.usenix.org/system/files/usenixsecurity25-ayzenshteyn.pdf",
+    "resolved_url": "https://www.usenix.org/system/files/usenixsecurity25-ayzenshteyn.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "sha256": "6d28561e978618737ba04bb16ad5dfad9f97fa07c03c63ad2a4989c1b1516cf1"
+  },
+  {
+    "key": "honeyplc",
+    "url": "https://carlosrubiomedrano.com/publications/honeyPLC-next-generation-ccs2020.pdf",
+    "resolved_url": "https://carlosrubiomedrano.com/publications/honeyPLC-next-generation-ccs2020.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "sha256": "6595701ff850e7dbe8de3ee098fd68f552aac45847a3d4462dd569f686ebaba3"
+  },
+  {
+    "key": "subplay",
+    "url": "https://arxiv.org/html/2402.03741",
+    "resolved_url": "https://arxiv.org/html/2402.03741",
+    "status": "ok",
+    "kind": "html",
+    "sha256": "82badc367c293f706ee8d287abde22d99527ba21ee5ba77cbe804fd44bd11a4f"
+  },
+  {
+    "key": "incalmo",
+    "url": "https://arxiv.org/html/2501.16466v4",
+    "resolved_url": "https://arxiv.org/html/2501.16466v4",
+    "status": "ok",
+    "kind": "html",
+    "sha256": "83a4e6d3f2d5304f1701690efe7e251a7229f75a8bf8327ba06aa22fb121c4a1"
+  },
+  {
+    "key": "depcomm",
+    "url": "https://par.nsf.gov/servlets/purl/10287251",
+    "resolved_url": "https://par.nsf.gov/servlets/purl/10287251",
+    "status": "ok",
+    "kind": "pdf",
+    "sha256": "0ce799d821854eee93359cce932f66048fb9ed934bd3a6eff1cfd88c8f3e2bff"
+  },
+  {
+    "key": "chimera",
+    "url": "https://www.ndss-symposium.org/wp-content/uploads/2026-f375-paper.pdf",
+    "resolved_url": "https://www.ndss-symposium.org/wp-content/uploads/2026-f375-paper.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "sha256": "8e51dbb0083ae4f4f58d2f1acc4d65d612f4fd88a99ff93457b5c48a492518cc"
+  },
+  {
+    "key": "honeysat",
+    "url": "https://www.ndss-symposium.org/wp-content/uploads/2026-f537-paper.pdf",
+    "resolved_url": "https://www.ndss-symposium.org/wp-content/uploads/2026-f537-paper.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "sha256": "992161a3b194a444ad9c9aca5aef4ea528266d9f82c2fcce6e367bd314a0070e"
+  },
+  {
+    "key": "marg",
+    "url": "https://yepangliu.github.io/files/ASE2024-MARG.pdf",
+    "resolved_url": "https://yepangliu.github.io/files/ASE2024-MARG.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "sha256": "89e8bc1f31f7a7caf751c4df69688049cb4b5be0b1ead69b12a403e1b6cd5088"
+  },
+  {
+    "key": "sejury",
+    "url": "https://arxiv.org/html/2505.20854",
+    "resolved_url": "https://arxiv.org/html/2505.20854",
+    "status": "ok",
+    "kind": "html",
+    "sha256": "4650056e64bdff5940651d625125b260202c0f7dac7b4581069f2dbf19abcecb"
+  },
+  {
+    "key": "autoresttest",
+    "url": "https://arxiv.org/html/2411.07098",
+    "resolved_url": "https://arxiv.org/html/2411.07098",
+    "status": "ok",
+    "kind": "html",
+    "sha256": "dde68936b2dac46ff27a01d1b8dad8c7354f612a484a24ea55380ae3ced0e450"
+  },
+  {
+    "key": "judge",
+    "url": "https://arxiv.org/html/2502.06193",
+    "resolved_url": "https://arxiv.org/html/2502.06193",
+    "status": "ok",
+    "kind": "html",
+    "sha256": "578ab7db83f8b705870497301f2f0e035c929db2f98995fca445e4680cc14e25"
+  },
+  {
+    "key": "pwn",
+    "url": "https://arxiv.org/pdf/2308.00121",
+    "resolved_url": "https://arxiv.org/pdf/2308.00121",
+    "status": "ok",
+    "kind": "pdf",
+    "sha256": "2690e4e30125b73f658b1545412829cd23a3dd7f540306d8e7ba22811b4f466e"
+  },
+  {
+    "key": "fleetio",
+    "url": "https://snir.cs.illinois.edu/listed/fleetIO.pdf",
+    "resolved_url": "https://snir.cs.illinois.edu/listed/fleetIO.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "sha256": "802f8dfffdfb93721f2b8a0f1c0e04cda5f6d7394e7126cb065b895ffcc8a90c"
+  },
+  {
+    "key": "potemkin",
+    "url": "https://web.stanford.edu/class/archive/cs/cs240/cs240.1086/readings/potemkin.pdf",
+    "resolved_url": "https://web.stanford.edu/class/archive/cs/cs240/cs240.1086/readings/potemkin.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "sha256": "63958700db1c15cb2c7bba528096f04138b92ceae6dbbefabf2ed490fba27a35"
+  },
+  {
+    "key": "backtracker",
+    "url": "https://www.cs.rochester.edu/meetings/sosp2003/papers/p190-king.pdf",
+    "resolved_url": "https://www.cs.rochester.edu/meetings/sosp2003/papers/p190-king.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "sha256": "286f035fece4e0f9992b1e805404e10f0efff9ce6192c872a924f44046f90bbb"
+  },
+  {
+    "key": "codesummary",
+    "url": "https://arxiv.org/html/2312.15475",
+    "resolved_url": "https://arxiv.org/html/2312.15475",
+    "status": "ok",
+    "kind": "html",
+    "sha256": "492764868ed2da3a06eaa3a3d6e03c975b4bfee3b2c8f93916bf8fb8364a6ed2"
+  },
+  {
+    "key": "mulberry",
+    "url": "https://zishenwan.github.io/publication/ASPLOS24_mulberry_slide.pdf",
+    "resolved_url": "https://zishenwan.github.io/publication/ASPLOS24_mulberry_slide.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "sha256": "fe571d09831a3e9c1ac1dcd729d5af4ae30a8c9cf48e3e97d6c55c0431d91499"
+  },
+  {
+    "key": "mtas",
+    "url": "https://dl.acm.org/doi/pdf/10.1145/3660820",
+    "status": "error",
+    "error": "403 Client Error: Forbidden for url: https://dl.acm.org/doi/pdf/10.1145/3660820"
+  },
+  {
+    "key": "mastest",
+    "url": "https://is.cas.cn/ztzl2016/2024xsnh/2024hbzs/202408/P020240828564827483868.pdf",
+    "status": "error",
+    "error": "404 Client Error: Not Found for url: https://is.cas.cn/ztzl2016/2024xsnh/2024hbzs/202408/P020240828564827483868.pdf"
+  },
+  {
+    "key": "disguise",
+    "url": "https://ieeexplore.ieee.org/document/11218933/",
+    "status": "error",
+    "error": "Document is empty"
+  },
+  {
+    "key": "cdsmg",
+    "url": "https://doi.org/10.1109/TIFS.2026.3664334",
+    "status": "error",
+    "error": "Document is empty"
+  },
+  {
+    "key": "automaltool",
+    "url": "https://nesa.zju.edu.cn/download/auto_20260505_T-IFS-23770_CameraReady.pdf",
+    "resolved_url": "https://nesa.zju.edu.cn/download/auto_20260505_T-IFS-23770_CameraReady.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "sha256": "74bf7efb5af1b7bbe14a001cc5680040840ce46ee634a1cd8e042c2f94d2f79a"
+  }
+]
